@@ -1,0 +1,180 @@
+{
+  "surah_metadata": {
+    "surah_number": 85,
+    "name_arabic": "البُرُوج",
+    "name_transliteration": "Al-Buruj",
+    "name_burmese_title": "စူရဟ် အလ်-ဗုရူးဂျ် (နက္ခတ်တာရာတန်းများ)",
+    "meaning_of_title": {
+      "english": "The Great Stars / The Constellations",
+      "burmese": "နက္ခတ်တာရာတန်းများ (သို့မဟုတ်) ကောင်းကင်ယံရှိ ပြာသာဒ်ကြီးများ"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 22,
+    "summary_burmese": "ဤစူရဟ်တွင် ကောင်းကင်ယံရှိ နက္ခတ်တာရာများကို ကျိန်ဆို၍ သစ္စာတရားကို ယုံကြည်သူများအား မီးကျင်းကြီးများအတွင်း ပစ်ထည့်ကာ ရက်စက်စွာ ညှဉ်းပန်းနှိပ်စက်ခဲ့ကြသော ရှေးခေတ် အာဏာရှင် ဖိနှိပ်သူများ (ကျင်းတူးသူများ) ၏ ဖြစ်စဉ်ကို ဖော်ပြထားပါသည်။ ယုံကြည်သူတို့၏ သည်းခံမှုကို ချီးမွမ်းထားပြီး၊ နှိပ်စက်သူများ ငရဲမီးခံရမည်ဖြစ်ကြောင်းနှင့် သဒ္ဓါတရားစွဲကိုင်သူများ ဂျန္နသ်သုခဘုံ ရရှိမည့်အကြောင်း ပါရှိပါသည်။ ထို့ပြင် ဖာရော (ဖိရ်အောင်န်) နှင့် သမူးဒ် စသည့် သမိုင်းဝင် တပ်မတော်ကြီးများ၏ နိဂုံးကို သတိပေးလျက် ကုရ်အာန်ကျမ်းတော်မြတ်သည် လှပစင်ကြယ်စွာ ထိန်းသိမ်းထားသော ကျမ်းဖြစ်ကြောင်း ဖော်ပြထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "وَالسَّمَاءِ ذَاتِ الْبُرُوجِ",
+      "english_translation": "By the sky containing great stars,",
+      "burmese_translation": "နက္ခတ်တာရာတန်းများ ပြည့်နှက်နေသော ကောင်းကင်ယံကို ကျိန်ဆိုတော်မူ၏။",
+      "burmese_transliteration": "ဝစ် စမာအိ ဇာသိလ် ဗုရူးဂျ်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "وَالْيَوْمِ الْمَوْعُودِ",
+      "english_translation": "And [by] the Promised Day,",
+      "burmese_translation": "ကတိပြုထားပြီးဖြစ်သော (တရားစီရင်ရာ) နေ့ကိုလည်းကောင်း၊",
+      "burmese_transliteration": "ဝါလ် ယောင်မီးလ် မောဝ်ဥူးဒ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "وَشَاهِدٍ وَمَشْهُودٍ",
+      "english_translation": "And [by] the witness and what is witnessed,",
+      "burmese_translation": "သက်သေခံသူနှင့် သက်သေခံခြင်း ခံရသည့်အရာကိုလည်းကောင်း (ကျိန်ဆိုတော်မူ၏)။",
+      "burmese_transliteration": "ဝါ ရှာဟိဒင်း ဝါ မရှ်ဟူးဒ်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "قُتِلَ أَصْحَابُ الْأُخْدُودِ",
+      "english_translation": "Cursed were the companions of the trench -",
+      "burmese_translation": "မီးကျင်းတူးဖျက်ခဲ့ကြသူ (ဖိနှိပ်သူ) တို့သည် ပျက်စီးခြင်းသို့ ရောက်ကြရလေပြီ။",
+      "burmese_transliteration": "ကုသိလာ အာဆ်ဟာဗုလ် အုခ်ဒူးဒ်"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "النَّارِ ذَاتِ الْوَقُودِ",
+      "english_translation": "[Containing] the fire full of fuel,",
+      "burmese_translation": "ထင်းလောင်စာများဖြင့် ရဲရဲတောက်နေသော မီးကျင်း (ကို ပြုလုပ်ခဲ့သူများဖြစ်၏)။",
+      "burmese_transliteration": "အန် နာရိ ဇာသိလ် ဝါကူးဒ်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "إِذْ هُمْ عَلَيْهَا قُعُودٌ",
+      "english_translation": "When they were sitting near it,",
+      "burmese_translation": "ထိုစဉ်က သူတို့သည် မီးကျင်း၏ ဘေးပတ်လည်၌ ထိုင်ကြည့်နေကြ၏။",
+      "burmese_transliteration": "အိဇ် ဟုမ် အာလိုင်းဟာ ကုဥူးဒ်"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِالْمُؤْمِنِينَ شُهُودٌ",
+      "english_translation": "And they, to what they were doing against the believers, were witnesses.",
+      "burmese_translation": "သူတို့သည် ယုံကြည်သူ သဒ္ဓါတရားထားရှိသူများအပေါ် ကျူးလွန်ပြုမူနေသမျှကို ကိုယ်တိုင် သက်သေအဖြစ် ကြည့်ရှုနေခဲ့ကြ၏။",
+      "burmese_transliteration": "ဝါ ဟုမ် အာလာ မာ ယဖ်အာလူနာ ဗိလ်မုအ်မိနီးနာ ရှုဟူးဒ်"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَن يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ",
+      "english_translation": "And they resented them not except because they believed in Allah, the Exalted in Might, the Praiseworthy,",
+      "burmese_translation": "သူတို့သည် ယုံကြည်သူများအား ရန်ငြိုးဖွဲ့ နှိပ်စက်ကြခြင်းမှာ အခြားကြောင့်မဟုတ်၊ တန်ခိုးတေဇော် မဟာကရုဏာရှင် ချီးမွမ်းဖွယ်ရာ အလ္လာဟ်အရှင်မြတ်အား ယုံကြည်ကြသောကြောင့်သာ ဖြစ်၏။",
+      "burmese_transliteration": "ဝါ မာ နာကာမူ မင်းဟုမ် အိလ်လာ အန်း ယုအ်မိနူး ဗိလ္လာဟိလ် အာဇီးဇိလ် ဟာမီးဒ်"
+    },
+    {
+      "verse_number": 9,
+      "arabic": "الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+      "english_translation": "To whom belongs the dominion of the heavens and the earth. And Allah, over all things, is Witness.",
+      "burmese_translation": "ထိုအရှင်သည် ကောင်းကင်ဘုံများနှင့် ကမ္ဘာမြေ၏ အချုပ်အခြာအာဏာကို စိုးပိုင်တော်မူသော အရှင်ဖြစ်၏။ အလ္လာဟ်အရှင်မြတ်သည် အရာခပ်သိမ်းကို ကြည့်ရှုမြင်ပြင်တော်မူသော အရှင်ဖြစ်ပေ၏။",
+      "burmese_transliteration": "အလ္လာဇီး လာဟု မုလ်ကုစ် စမာဝါသိ ဝါလ် အာရ်ဿ၊ ဝါလ္လာဟု အာလာ ကုလ္လိ ရှိုင်အင်း ရှာဟီးဒ်"
+    },
+    {
+      "verse_number": 10,
+      "arabic": "إِنَّ الَّذِينَ فَتَنُوا الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَرِيقِ",
+      "english_translation": "Indeed, those who have tortured the believing men and believing women and then have not repented will have the punishment of Hell, and they will have the punishment of the Burning Fire.",
+      "burmese_translation": "ဧကန်မလွဲ ယုံကြည်သူ အမျိုးသား၊ အမျိုးသမီးများအား ညှဉ်းပန်းနှိပ်စက်ကြပြီး နောက်နောင် မနောင်တရ (တောင်ဗဟ်မပြု) ကြသော သူတို့အတွက် ဂျဟန္နမ်ငရဲ၏ အပြစ်ဒဏ်ရှိပေမည်။ ထို့ပြင် လောင်ကျွမ်းစေသော မီးပြစ်ဒဏ်သည်လည်း သူတို့အတွက် ရှိပေမည်။",
+      "burmese_transliteration": "အင်းနလ် လာဇီးနာ ဖာသာနုလ် မုအ်မိနီးနာ ဝါလ် မုအ်မိနာသိ သုမ်မာ လမ် ယသူးဗူး ဖာလာဟုမ် အာဇာဗု ဂျာဟန်းနာမော ဝါ လာဟုမ် အာဇာဗုလ် ဟာရီးက်"
+    },
+    {
+      "verse_number": 11,
+      "arabic": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ ۚ ذَٰلِكَ الْفَوْزُ الْكَبِيرُ",
+      "english_translation": "Indeed, those who have believed and done righteous deeds will have gardens beneath which rivers flow. That is the great attainment.",
+      "burmese_translation": "ဧကန်မလွဲ ယုံကြည်ခြင်း သဒ္ဓါတရား ထားရှိကြပြီး ကောင်းမြတ်သော အကျင့်သီလများကို ဆောက်တည်ကြသူများအတွက် အောက်ခြေ၌ ရေစီးမြောင်းများ စီးဆင်းလျက်ရှိသော ဂျန္နသ်သုခဘုံများ ရှိပေမည်။ ယင်းသည်ပင်လျှင် ကြီးမားလှသော အောင်မြင်မှုဖြစ်၏။",
+      "burmese_transliteration": "အင်းနလ် လာဇီးနာ အာမနူး ဝါ အာမိလုစ် ဆောလိဟာသိ လာဟုမ် ဂျန်းနာသုန်း သဂျ်ရီး မင်း သဟ်သိဟာလ် အန်းဟာရု၊ ဇာလိကားလ် ဖောဝ်ဇုလ် ကာဗီးရ်"
+    },
+    {
+      "verse_number": 12,
+      "arabic": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
+      "english_translation": "Indeed, the vengeance of your Lord is severe.",
+      "burmese_translation": "ဧကန်စင်စစ် အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ဖမ်းဆီးကွပ်မျက်တော်မူမှုသည် အလွန်တရာ ပြင်းထန်လှပေ၏။",
+      "burmese_transliteration": "အင်းနာ ဗသ်ရှာ ရဗ်ဗိကာ လာရှာဒီးဒ်"
+    },
+    {
+      "verse_number": 13,
+      "arabic": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
+      "english_translation": "Indeed, it is He who originates [creation] and repeats.",
+      "burmese_translation": "ဧကန်မလွဲ ထိုအရှင်သည် စတင်ဖန်ဆင်းတော်မူ၍ ပြန်လည်ရှင်သန်စေတော်မူသော အရှင်ဖြစ်၏။",
+      "burmese_transliteration": "အင်းနဟု ဟူဝါ ယုဗ်ဒိဥု ဝါ ယုအီးဒ်"
+    },
+    {
+      "verse_number": 14,
+      "arabic": "وَهُوَ الْغَفُورُ الْوَدُودُ",
+      "english_translation": "And He is the Forgiving, the Loving,",
+      "burmese_translation": "ထိုအရှင်သည် အလွန်တရာ ငဲ့ညှာချမ်းသာပေးတော်မူသောအရှင်၊ အလွန်တရာ ချစ်ခင်ကြင်နာတော်မူသောအရှင် ဖြစ်၏။",
+      "burmese_transliteration": "ဝါ ဟူဝါလ် ဂါဖူးရုလ် ဝါဒူးဒ်"
+    },
+    {
+      "verse_number": 15,
+      "arabic": "ذُو الْعَرْشِ الْمَجِيدُ",
+      "english_translation": "Lord of the Throne, the Glorious,",
+      "burmese_translation": "မြင့်မြတ်လှသော အာရ်ရှ် (ပလ္လင်တော်) ကို စိုးပိုင်တော်မူသော အရှင်ဖြစ်၏။",
+      "burmese_transliteration": "ဇူးလ် အာရ်ရှိလ် မာဂျီးဒ်"
+    },
+    {
+      "verse_number": 16,
+      "arabic": "فَعَّالٌ لِّمَا يُرِيدُ",
+      "english_translation": "Effecter of what He intends.",
+      "burmese_translation": "မိမိ အလိုရှိသမျှကို အကောင်အထည်ဖော် စီမံဆောင်ရွက်တော်မူသော အရှင်ဖြစ်၏။",
+      "burmese_transliteration": "ဖာအ်အာလုန်း လိမာ ယုရီးဒ်"
+    },
+    {
+      "verse_number": 17,
+      "arabic": "هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ",
+      "english_translation": "Has there reached you the story of the forces -",
+      "burmese_translation": "(အို တမန်တော်) ထို (ငြင်းပယ်ခဲ့ကြသော) စစ်တပ်ကြီးများ၏ အကြောင်းရင်း အဖြစ်အပျက်သည် အသင့်ထံ သတင်းရောက်ရှိခဲ့ပါသလော။",
+      "burmese_transliteration": "ဟလ် အာသာကာ ဟာဒီးသုလ် ဂျုနူးဒ်"
+    },
+    {
+      "verse_number": 18,
+      "arabic": "فِرْعَوْنَ وَثَمُودَ",
+      "english_translation": "[Of] Pharaoh and Thamud?",
+      "burmese_translation": "(ယင်းတို့မှာ) ဖာရော (ဖိရ်အောင်န်) နှင့် သမူးဒ် အမျိုးသားတို့ပင် ဖြစ်ကြ၏။",
+      "burmese_transliteration": "ဖိရ်အောဝ်နာ ဝါ သမူဒ်"
+    },
+    {
+      "verse_number": 19,
+      "arabic": "بَلِ الَّذِينَ كَفَرُوا فِي تَكْذِيبٍ",
+      "english_translation": "But they who disbelieve are in [persistent] denial,",
+      "burmese_translation": "သို့ရာတွင် သစ္စာငြင်းပယ်သူတို့သည် အမှန်တရားကို ငြင်းဆန်ပယ်ရှားခြင်း၌သာ တည်ရှိနေကြ၏။",
+      "burmese_transliteration": "ဗလိလ် လာဇီးနာ ကာဖာရူး ဖီး သက္ကဇီးဗ်"
+    },
+    {
+      "verse_number": 20,
+      "arabic": "وَاللَّهُ مِن وَرَائِهِم مُّحِيطٌ",
+      "english_translation": "While Allah encompasses them from behind.",
+      "burmese_translation": "စင်စစ် အလ္လာဟ်အရှင်မြတ်သည် သူတို့၏ နောက်ကွယ်မှ အလုံးစုံကို လွှမ်းမိုးဝန်းရံလျက် ရှိတော်မူ၏။",
+      "burmese_transliteration": "ဝါလ္လာဟု မင်း ဝါရာအိဟိမ် မုဟီးသ်"
+    },
+    {
+      "verse_number": 21,
+      "arabic": "بَلْ هُوَ قُرْآنٌ مَّجِيدٌ",
+      "english_translation": "But this is an honored Quran",
+      "burmese_translation": "အမှန်စင်စစ် ဤသည်မှာ အလွန်တရာ မြင့်မြတ်လှသော ကုရ်အာန်ကျမ်းတော်မြတ်ဖြစ်၏။",
+      "burmese_transliteration": "ဗလ် ဟူဝါ ကုရ်အာနုန်း မာဂျီးဒ်"
+    },
+    {
+      "verse_number": 22,
+      "arabic": "فِي لَوْحٍ مَّحْفُوظٍ",
+      "english_translation": "[Inscribed] in a Preserved Slate.",
+      "burmese_translation": "စောင့်ရှောက်ထိန်းသိမ်းထားသော သင်ပုန်းတော် (လောင်ဟိ မဟ်ဖူးဇ်) ၌ ကိန်းဝပ်တည်ရှိပေသတည်း။",
+      "burmese_transliteration": "ဖီး လောဝ်ဟင်း မဟ်ဖူးဇ်"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+const surahs = (await getCollection("surahs")).sort(
+	(a, b) =>
+		a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
+);
+---
+
+<Layout
+	title="Selected Surahs | Hikmah"
+	description="Read and listen to selected Surahs with Arabic, Burmese translation, transliteration, and English meaning."
+>
+	<section class="page-hero">
+		<div class="shell narrow">
+			<p class="section-kicker">الْقُرْآنُ الْكَرِيمُ</p><h1>
+				ကုရ်အာန် ကျမ်းတော်မြတ်
+			</h1><p>
+				ရွေးချယ်ထားသော စူရဟ်များကို အာရဗီစာသား၊ မြန်မာဘာသာပြန်နှင့်
+				အသံဖိုင်များဖြင့် လေ့လာနိုင်ပါသည်။
+			</p>
+		</div>
+	</section>
+	<section class="shell content-section">
+		<div class="library-toolbar">
+			<div>
+				<span class="result-count">{surahs.length} စူရဟ်များ</span><h2
+					class="sr-only"
+				>
+					Surah library
+				</h2>
+			</div>
+			<label class="search-field"
+				><span class="sr-only">စူရဟ် ရှာရန်</span><span
+					aria-hidden="true">⌕</span
+				><input
+					type="search"
+					placeholder="စူရဟ် ရှာရန်..."
+					data-search-input
+				/></label
+			>
+		</div>
+		<ul class="surah-list" data-search-list>
+			{
+				surahs.map((surah) => {
+					const meta = surah.data.surah_metadata;
+					return (
+						<li
+							data-searchable={`${meta.name_transliteration} ${meta.name_burmese_title} ${meta.meaning_of_title.english}`}
+						>
+							<a href={`/surahs/${surah.id}/`}>
+								<span class="surah-number">
+									{String(meta.surah_number).padStart(2, "0")}
+								</span>
+								<span class="surah-title">
+									<>
+										<strong>
+											{meta.name_burmese_title}
+										</strong>
+										<small>
+											{meta.name_transliteration} ·{" "}
+											{meta.meaning_of_title.english}
+										</small>
+									</>
+								</span>
+								<span
+									class="arabic surah-arabic"
+									lang="ar"
+									dir="rtl"
+								>
+									{meta.name_arabic}
+								</span>
+								<span class="surah-meta">
+									{meta.total_verses} အာယသ်{" "}
+									<b aria-hidden="true">→</b>
+								</span>
+							</a>
+						</li>
+					);
+				})
+			}
+		</ul>
+		<p class="empty-state" hidden data-empty-state>
+			ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ် မတွေ့ပါ။
+		</p>
+	</section>
+	<script>
+		const input = document.querySelector<HTMLInputElement>(
+			"[data-search-input]",
+		);
+		const items = [
+			...document.querySelectorAll<HTMLElement>("[data-searchable]"),
+		];
+		const empty = document.querySelector<HTMLElement>("[data-empty-state]");
+		input?.addEventListener("input", () => {
+			const term = input.value.trim().toLowerCase();
+			let visible = 0;
+			items.forEach((item) => {
+				const matches =
+					item.dataset.searchable?.toLowerCase().includes(term) ??
+					false;
+				item.hidden = !matches;
+				if (matches) visible += 1;
+			});
+			if (empty) empty.hidden = visible !== 0;
+		});
+	</script>
+</Layout>

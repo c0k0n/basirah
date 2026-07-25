@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+const names = (await getCollection("names"))[0]?.data;
+if (!names) throw new Error("Names of Allah content could not be loaded.");
+---
+
+<Layout
+	title="The Beautiful Names of Allah | Hikmah"
+	description="Learn the beautiful names of Allah with Arabic, Burmese transliteration, and Burmese and English meanings."
+>
+	<section class="page-hero page-hero--names">
+		<div class="shell narrow">
+			<p class="section-kicker">أَسْمَاءُ اللَّهِ الْحُسْنَى</p><h1>
+				{names.metadata.title_burmese}
+			</h1><p>{names.metadata.summary_burmese}</p>
+		</div>
+	</section>
+	<section class="shell content-section">
+		<div class="library-toolbar">
+			<p class="result-count">{names.names.length} နာမတော်များ</p><label
+				class="search-field"
+				><span class="sr-only">နာမတော် ရှာရန်</span><span
+					aria-hidden="true">⌕</span
+				><input
+					type="search"
+					placeholder="နာမတော် ရှာရန်..."
+					data-search-input
+				/></label>
+		</div>
+		<ol class="names-grid" data-search-list>
+			{
+				names.names.map((name) => (
+					<li
+						class="name-card"
+						data-searchable={`${name.transliteration} ${name.burmese_transliteration} ${name.burmese_meaning} ${name.english_meaning}`}
+					>
+						<>
+							<span class="name-number">
+								{String(name.number).padStart(2, "0")}
+							</span>
+							<p class="arabic" lang="ar" dir="rtl">
+								{name.arabic}
+							</p>
+							<h2>{name.transliteration}</h2>
+							<p class="name-mm">
+								{name.burmese_transliteration}
+							</p>
+							<p>{name.burmese_meaning}</p>
+							<small>{name.english_meaning}</small>
+						</>
+					</li>
+				))
+			}
+		</ol>
+		<p class="empty-state" hidden data-empty-state>
+			ရှာဖွေမှုနှင့် ကိုက်ညီသော နာမတော် မတွေ့ပါ။
+		</p>
+	</section>
+	<script>
+		const input = document.querySelector<HTMLInputElement>(
+			"[data-search-input]",
+		);
+		const items = [
+			...document.querySelectorAll<HTMLElement>("[data-searchable]"),
+		];
+		const empty = document.querySelector<HTMLElement>("[data-empty-state]");
+		input?.addEventListener("input", () => {
+			const term = input.value.trim().toLowerCase();
+			let visible = 0;
+			items.forEach((item) => {
+				const matches =
+					item.dataset.searchable?.toLowerCase().includes(term) ??
+					false;
+				item.hidden = !matches;
+				if (matches) visible += 1;
+			});
+			if (empty) empty.hidden = visible !== 0;
+		});
+	</script>
+</Layout>

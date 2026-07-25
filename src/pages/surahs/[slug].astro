@@ -1,0 +1,141 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+	const surahs = await getCollection("surahs");
+	return surahs.map((surah) => ({
+		params: { slug: surah.id },
+		props: { surah },
+	}));
+}
+
+const { surah } = Astro.props as { surah: CollectionEntry<"surahs"> };
+const meta = surah.data.surah_metadata;
+const audioFiles = import.meta.glob(
+	"../../assets/content/essential-surahs/surah-audio/*.mp3",
+	{
+		eager: true,
+		import: "default",
+	},
+) as Record<string, string>;
+const normalise = (value: string) =>
+	value
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "")
+		.toLowerCase()
+		.replace(/[^a-z0-9]/g, "");
+const audioSource = Object.entries(audioFiles).find(([path]) =>
+	normalise(path).includes(normalise(meta.name_transliteration)),
+)?.[1];
+---
+
+<Layout
+	title={`${meta.name_transliteration} — ${meta.meaning_of_title.english} | Hikmah`}
+	description={meta.summary_burmese}
+>
+	<section class="surah-hero">
+		<div class="shell surah-hero-inner">
+			<a class="back-link" href="/surahs/">← စူရဟ်များအားလုံး</a>
+			<div class="surah-hero-grid">
+				<div>
+					<p class="section-kicker">
+						စူရဟ် {meta.surah_number} · {
+							meta.revelation_place.burmese
+						}
+					</p><h1>{meta.name_burmese_title}</h1><p
+						class="surah-english"
+					>
+						{meta.name_transliteration} — {
+							meta.meaning_of_title.english
+						}
+					</p><p class="surah-summary">{meta.summary_burmese}</p>
+				</div>
+				<p class="arabic surah-display-arabic" lang="ar" dir="rtl">
+					{meta.name_arabic}
+				</p>
+			</div>
+			<div class="surah-facts">
+				<span><strong>{meta.total_verses}</strong> အာယသ်</span><span
+					><strong>{meta.revelation_place.english}</strong> revelation</span
+				>{
+					audioSource && (
+						<span>
+							<strong>Audio</strong> available
+						</span>
+					)
+				}
+			</div>
+		</div>
+	</section>
+	<section class="shell reading-layout">
+		<aside class="reading-aside">
+			<div>
+				<span class="section-kicker">စူရဟ် {meta.surah_number}</span
+				><strong>{meta.name_transliteration}</strong><p>
+					{meta.total_verses} အာယသ်
+				</p>
+			</div>{
+				audioSource && (
+					<audio controls preload="metadata">
+						<source src={audioSource} type="audio/mpeg" />
+						Your browser does not support audio playback.
+					</audio>
+				)
+			}
+		</aside>
+		<article class="verses">
+			{
+				surah.data.bismillah && (
+					<section class="bismillah">
+						<>
+							<p class="arabic" lang="ar" dir="rtl">
+								{surah.data.bismillah.arabic}
+							</p>
+							<p>{surah.data.bismillah.burmese_translation}</p>
+						</>
+					</section>
+				)
+			}
+			{
+				surah.data.verses.map((verse) => (
+					<section class="verse-row">
+						<>
+							<div
+								class="verse-index"
+								aria-label={`Verse ${verse.verse_number}`}
+							>
+								{verse.verse_number}
+							</div>
+							<div>
+								<>
+									<p
+										class="arabic verse-arabic"
+										lang="ar"
+										dir="rtl"
+									>
+										{verse.arabic}
+									</p>
+									<p class="transliteration">
+										{verse.burmese_transliteration}
+									</p>
+									<p class="verse-mm">
+										{verse.burmese_translation}
+									</p>
+									<details>
+										<>
+											<summary>
+												English translation
+											</summary>
+											<p>{verse.english_translation}</p>
+										</>
+									</details>
+								</>
+							</div>
+						</>
+					</section>
+				))
+			}
+		</article>
+	</section>
+</Layout>

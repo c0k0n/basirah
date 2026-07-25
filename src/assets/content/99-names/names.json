@@ -1,0 +1,810 @@
+{
+  "metadata": {
+    "title_arabic": "أَسْمَاءُ اللَّهِ الْحُسْنَى",
+    "title_transliteration": "Asmāʾullāh al-Ḥusnā",
+    "title_burmese": "အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၉၉) ပါး",
+    "summary_burmese": "အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များသည် အရှင်မြတ်၏ ပြည့်စုံသော ဂုဏ်တော်များနှင့် အမြင့်မြတ်ဆုံး အရည်အသွေးများကို ဖော်ပြထားပါသည်။ နာမတော်တစ်ပါးချင်းစီသည် အရှင်မြတ်၏ ဂုဏ်တော်တစ်ရပ်ကို ထင်ဟပ်ဖော်ပြပြီး မွတ်စလင်များအနေဖြင့် ထိုနာမတော်များကို သိရှိနားလည်ကာ ယင်းတို့ဖြင့် အရှင်မြတ်အား ခေါ်ယူဆုတောင်းရန် တိုက်တွန်းထားပါသည်။"
+  },
+  "names": [
+    {
+      "number": 1,
+      "arabic": "اللَّه",
+      "transliteration": "Allāh",
+      "english_meaning": "Allah (The One True God)",
+      "burmese_meaning": "အလ္လာဟ်အရှင်မြတ် (ကိုးကွယ်ထိုက်သော တစ်ဆူတည်းသော စစ်မှန်သည့် အရှင်မြတ်)",
+      "burmese_transliteration": "အလ္လာဟ်"
+    },
+    {
+      "number": 2,
+      "arabic": "الرَّحْمَٰنُ",
+      "transliteration": "Ar-Raḥmān",
+      "english_meaning": "The Entirely Merciful",
+      "burmese_meaning": "အနန္တဂရုဏာတော် အပြည့်အဝရှိတော်မူသော အရှင်",
+      "burmese_transliteration": "အရ်-ရဟ်မာန်"
+    },
+    {
+      "number": 3,
+      "arabic": "الرَّحِيمُ",
+      "transliteration": "Ar-Raḥīm",
+      "english_meaning": "The Especially Merciful",
+      "burmese_meaning": "အထူးသနားညှာတာတော်မူသော အရှင်",
+      "burmese_transliteration": "အရ်-ရဟီးမ်"
+    },
+    {
+      "number": 4,
+      "arabic": "الْمَلِكُ",
+      "transliteration": "Al-Malik",
+      "english_meaning": "The Sovereign King",
+      "burmese_meaning": "စကြဝဠာတစ်ခုလုံးကို အကြွင်းမဲ့ အုပ်စိုးတော်မူသော ဘုရင်",
+      "burmese_transliteration": "အလ်-မလိက်"
+    },
+    {
+      "number": 5,
+      "arabic": "الْقُدُّوسُ",
+      "transliteration": "Al-Quddūs",
+      "english_meaning": "The Most Holy",
+      "burmese_meaning": "အပြစ်အနာအဆာနှင့် ချို့ယွင်းချက်အလုံးစုံမှ ကင်းစင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကုဒ္ဒူးစ်"
+    },
+    {
+      "number": 6,
+      "arabic": "السَّلَامُ",
+      "transliteration": "As-Salām",
+      "english_meaning": "The Source of Peace",
+      "burmese_meaning": "ငြိမ်းချမ်းမှုနှင့် လုံခြုံအေးချမ်းမှုတို့၏ အရင်းအမြစ်ဖြစ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အစ်-ဆလာမ်"
+    },
+    {
+      "number": 7,
+      "arabic": "الْمُؤْمِنُ",
+      "transliteration": "Al-Muʾmin",
+      "english_meaning": "The Granter of Security and Faith",
+      "burmese_meaning": "လုံခြုံစိတ်ချမှုနှင့် ယုံကြည်မှုကို ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုအ်မင်"
+    },
+    {
+      "number": 8,
+      "arabic": "الْمُهَيْمِنُ",
+      "transliteration": "Al-Muhaymin",
+      "english_meaning": "The Guardian, The Overseer",
+      "burmese_meaning": "အရာခပ်သိမ်းကို စောင့်ရှောက်၊ ထိန်းသိမ်း၊ ကြီးကြပ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဟိုင်မင်"
+    },
+    {
+      "number": 9,
+      "arabic": "الْعَزِيزُ",
+      "transliteration": "Al-ʿAzīz",
+      "english_meaning": "The Almighty",
+      "burmese_meaning": "တန်ခိုးအာနုဘော် အကြီးမြတ်ဆုံးနှင့် အနိုင်ယူ၍မရသော အရှင်",
+      "burmese_transliteration": "အလ်-အဇီးဇ်"
+    },
+    {
+      "number": 10,
+      "arabic": "الْجَبَّارُ",
+      "transliteration": "Al-Jabbār",
+      "english_meaning": "The Compeller, The Restorer",
+      "burmese_meaning": "အလိုတော်အတိုင်း အရာခပ်သိမ်းကို ဖြစ်စေတော်မူပြီး ချို့တဲ့ပျက်စီးမှုကို ပြည့်စုံစေတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဂျဗ္ဗားရ်"
+    },
+    {
+      "number": 11,
+      "arabic": "الْمُتَكَبِّرُ",
+      "transliteration": "Al-Mutakabbir",
+      "english_meaning": "The Supreme, The Truly Great",
+      "burmese_meaning": "ဘုန်းအာနုဘော်နှင့် ကြီးမြတ်ခြင်း အလုံးစုံကို ပိုင်ဆိုင်တော်မူသော အမြင့်မြတ်ဆုံး အရှင်",
+      "burmese_transliteration": "အလ်-မုတကဗ္ဗိရ်"
+    },
+    {
+      "number": 12,
+      "arabic": "الْخَالِقُ",
+      "transliteration": "Al-Khāliq",
+      "english_meaning": "The Creator",
+      "burmese_meaning": "အရာခပ်သိမ်းကို မရှိရာမှ ဖန်ဆင်းတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ခါလိက်"
+    },
+    {
+      "number": 13,
+      "arabic": "الْبَارِئُ",
+      "transliteration": "Al-Bāriʾ",
+      "english_meaning": "The Originator",
+      "burmese_meaning": "ဖန်ဆင်းသမျှကို ပြည့်စုံညီညွတ်စွာ ပေါ်ပေါက်ဖြစ်တည်စေတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဘာရိအ်"
+    },
+    {
+      "number": 14,
+      "arabic": "الْمُصَوِّرُ",
+      "transliteration": "Al-Muṣawwir",
+      "english_meaning": "The Fashioner",
+      "burmese_meaning": "ဖန်ဆင်းသမျှအား မိမိအလိုတော်အတိုင်း ပုံသဏ္ဍာန်နှင့် အသွင်အပြင် ပေးတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဆွဝ်ဝိရ်"
+    },
+    {
+      "number": 15,
+      "arabic": "الْغَفَّارُ",
+      "transliteration": "Al-Ghaffār",
+      "english_meaning": "The Constantly Forgiving",
+      "burmese_meaning": "နောင်တရသူတို့၏ အပြစ်များကို အကြိမ်ကြိမ် ခွင့်လွှတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဂဖ္ဖားရ်"
+    },
+    {
+      "number": 16,
+      "arabic": "الْقَهَّارُ",
+      "transliteration": "Al-Qahhār",
+      "english_meaning": "The All-Prevailing",
+      "burmese_meaning": "အရာခပ်သိမ်းအပေါ် အကြွင်းမဲ့ အနိုင်ရ၍ စိုးမိုးတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကဟ်ဟားရ်"
+    },
+    {
+      "number": 17,
+      "arabic": "الْوَهَّابُ",
+      "transliteration": "Al-Wahhāb",
+      "english_meaning": "The Supreme Bestower",
+      "burmese_meaning": "အကျိုးကျေးဇူးနှင့် ဆုကျေးဇူးများကို အကန့်အသတ်မရှိ ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝဟ်ဟားဗ်"
+    },
+    {
+      "number": 18,
+      "arabic": "الرَّزَّاقُ",
+      "transliteration": "Ar-Razzāq",
+      "english_meaning": "The Ultimate Provider",
+      "burmese_meaning": "ဖန်ဆင်းခံအားလုံး၏ စားနပ်ရိက္ခာနှင့် အသက်မွေးဝမ်းကျောင်းကို ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အရ်-ရဇ္ဇာက်"
+    },
+    {
+      "number": 19,
+      "arabic": "الْفَتَّاحُ",
+      "transliteration": "Al-Fattāḥ",
+      "english_meaning": "The Opener, The Granter of Victory",
+      "burmese_meaning": "တံခါးများကို ဖွင့်ပေးတော်မူပြီး အမှန်တရားဖြင့် စီရင်ဆုံးဖြတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဖတ္တာဟ်"
+    },
+    {
+      "number": 20,
+      "arabic": "الْعَلِيمُ",
+      "transliteration": "Al-ʿAlīm",
+      "english_meaning": "The All-Knowing",
+      "burmese_meaning": "အတိတ်၊ ပစ္စုပ္ပန်၊ အနာဂတ်နှင့် အရာခပ်သိမ်းကို အကြွင်းမဲ့ သိတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-အလီးမ်"
+    },
+    {
+      "number": 21,
+      "arabic": "الْقَابِضُ",
+      "transliteration": "Al-Qābiḍ",
+      "english_meaning": "The Withholder",
+      "burmese_meaning": "မိမိအလိုတော်နှင့် ဉာဏ်ပညာအတိုင်း အရာများကို ကန့်သတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကာဗိဒ်"
+    },
+    {
+      "number": 22,
+      "arabic": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "english_meaning": "The Expander, The One Who Gives Abundance",
+      "burmese_meaning": "မိမိအလိုတော်နှင့်အညီ ကျေးဇူးတော်၊ ရိဇ်က်နှင့် အကျိုးကျေးဇူးများကို ချဲ့ထွင်ပေးတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဘာစိသ်"
+    },
+    {
+      "number": 23,
+      "arabic": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "english_meaning": "The One Who Lowers",
+      "burmese_meaning": "မိမိ၏ တရားမျှတသော ဉာဏ်ပညာဖြင့် အဆင့်အတန်းများကို လျှော့ချတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ခါဖိဒ်"
+    },
+    {
+      "number": 24,
+      "arabic": "الرَّافِعُ",
+      "transliteration": "Ar-Rāfiʿ",
+      "english_meaning": "The One Who Raises",
+      "burmese_meaning": "မိမိအလိုတော်နှင့်အညီ အဆင့်အတန်းများကို မြှင့်တင်ပေးတော်မူသော အရှင်",
+      "burmese_transliteration": "အရ်-ရာဖိအ်"
+    },
+    {
+      "number": 25,
+      "arabic": "الْمُعِزُّ",
+      "transliteration": "Al-Muʿizz",
+      "english_meaning": "The Bestower of Honor",
+      "burmese_meaning": "ဂုဏ်သိက္ခာနှင့် အမြင့်တင်ခြင်းကို ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုအိဇ်"
+    },
+    {
+      "number": 26,
+      "arabic": "الْمُذِلُّ",
+      "transliteration": "Al-Mudhill",
+      "english_meaning": "The One Who Humiliates",
+      "burmese_meaning": "မိမိ၏ တရားမျှတမှုအရ မာနထောင်လွှားသူတို့အား နှိမ့်ချတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဇိလ်"
+    },
+    {
+      "number": 27,
+      "arabic": "السَّمِيعُ",
+      "transliteration": "As-Samīʿ",
+      "english_meaning": "The All-Hearing",
+      "burmese_meaning": "အသံအားလုံးကို အပြည့်အဝ ကြားတော်မူသော အရှင်",
+      "burmese_transliteration": "အစ်-ဆမီးအ်"
+    },
+    {
+      "number": 28,
+      "arabic": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "english_meaning": "The All-Seeing",
+      "burmese_meaning": "အရာခပ်သိမ်းကို အပြည့်အဝ မြင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဘဆီးရ်"
+    },
+    {
+      "number": 29,
+      "arabic": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "english_meaning": "The Judge, The Perfect Arbitrator",
+      "burmese_meaning": "အမြင့်မြတ်ဆုံး ဆုံးဖြတ်တော်မူသူနှင့် အပြည့်စုံဆုံး တရားစီရင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟကမ်"
+    },
+    {
+      "number": 30,
+      "arabic": "الْعَدْلُ",
+      "transliteration": "Al-ʿAdl",
+      "english_meaning": "The Utterly Just",
+      "burmese_meaning": "တရားမျှတခြင်း အပြည့်အဝရှိတော်မူပြီး မည်သည့်မတရားမှုမျှ မပြုတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-အဒ်လ်"
+    },
+    {
+      "number": 31,
+      "arabic": "اللَّطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "english_meaning": "The Most Gentle, The Subtle One",
+      "burmese_meaning": "အလွန်နူးညံ့သိမ်မွေ့တော်မူပြီး မမြင်နိုင်သော နည်းလမ်းများဖြင့် ကျေးဇူးတော်ကို ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-လတီးဖ်"
+    },
+    {
+      "number": 32,
+      "arabic": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "english_meaning": "The All-Aware",
+      "burmese_meaning": "အတွင်းအပြင် လျှို့ဝှက်သော အရာအားလုံး၏ အနက်အဓိပ္ပာယ်ကို အပြည့်အဝ သိတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ခဘီးရ်"
+    },
+    {
+      "number": 33,
+      "arabic": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "english_meaning": "The Most Forbearing",
+      "burmese_meaning": "အပြစ်ပြုသူများအပေါ် ချက်ချင်းအပြစ်ပေးခြင်းမပြုဘဲ သည်းခံတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟလီးမ်"
+    },
+    {
+      "number": 34,
+      "arabic": "الْعَظِيمُ",
+      "transliteration": "Al-ʿAẓīm",
+      "english_meaning": "The Magnificent, The Supreme",
+      "burmese_meaning": "ကြီးမြတ်ခြင်းနှင့် အမြင့်မြတ်ခြင်း အလုံးစုံကို ပိုင်ဆိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-အဇီးမ်"
+    },
+    {
+      "number": 35,
+      "arabic": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "english_meaning": "The Most Forgiving",
+      "burmese_meaning": "အပြစ်များကို အလွန်အမင်း ခွင့်လွှတ်ဖုံးကွယ်ပေးတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဂဖူးရ်"
+    },
+    {
+      "number": 36,
+      "arabic": "الشَّكُورُ",
+      "transliteration": "Ash-Shakūr",
+      "english_meaning": "The Most Appreciative",
+      "burmese_meaning": "ကျေးဇူးတင်စရာ အနည်းငယ်သော ကောင်းမှုကိုပင် အလွန်ကြီးမားသော ဆုလာဘ်ဖြင့် ပြန်လည်ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အရှ်-ရှကူးရ်"
+    },
+    {
+      "number": 37,
+      "arabic": "الْعَلِيُّ",
+      "transliteration": "Al-ʿAliyy",
+      "english_meaning": "The Most High",
+      "burmese_meaning": "အမြင့်ဆုံး အဆင့်အတန်းနှင့် အမြင့်မြတ်ဆုံး ဂုဏ်တော်ကို ပိုင်ဆိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-အလီးယ်"
+    },
+    {
+      "number": 38,
+      "arabic": "الْكَبِيرُ",
+      "transliteration": "Al-Kabīr",
+      "english_meaning": "The Most Great",
+      "burmese_meaning": "ကြီးမြတ်ခြင်းတွင် အမြင့်ဆုံးဖြစ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကဘီးရ်"
+    },
+    {
+      "number": 39,
+      "arabic": "الْحَفِيظُ",
+      "transliteration": "Al-Ḥafīẓ",
+      "english_meaning": "The Preserver, The Protector",
+      "burmese_meaning": "အရာခပ်သိမ်းကို စောင့်ရှောက်ကာ ကာကွယ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟဖီးဇ်"
+    },
+    {
+      "number": 40,
+      "arabic": "الْمُقِيتُ",
+      "transliteration": "Al-Muqīt",
+      "english_meaning": "The Sustainer, The Nourisher",
+      "burmese_meaning": "ဖန်ဆင်းခံအားလုံး၏ လိုအပ်ချက်များကို ဖြည့်ဆည်းပေးတော်မူပြီး ထောက်ပံ့တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုကီးတ်"
+    },
+    {
+      "number": 41,
+      "arabic": "الْحَسِيبُ",
+      "transliteration": "Al-Ḥasīb",
+      "english_meaning": "The Reckoner, The Sufficient One",
+      "burmese_meaning": "အရာခပ်သိမ်းကို စာရင်းယူတော်မူပြီး မိမိကို အားကိုးသူများအတွက် လုံလောက်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟစီးဘ်"
+    },
+    {
+      "number": 42,
+      "arabic": "الْجَلِيلُ",
+      "transliteration": "Al-Jalīl",
+      "english_meaning": "The Majestic",
+      "burmese_meaning": "ဘုန်းအာနုဘော်နှင့် ဂုဏ်သိက္ခာ အလွန်ကြီးမြတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဂျလီးလ်"
+    },
+    {
+      "number": 43,
+      "arabic": "الْكَرِيمُ",
+      "transliteration": "Al-Karīm",
+      "english_meaning": "The Most Generous, The Most Noble",
+      "burmese_meaning": "အလွန်ရက်ရောတော်မူပြီး ဂုဏ်သိက္ခာအမြင့်ဆုံး ပိုင်ဆိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကရီးမ်"
+    },
+    {
+      "number": 44,
+      "arabic": "الرَّقِيبُ",
+      "transliteration": "Ar-Raqīb",
+      "english_meaning": "The Watchful",
+      "burmese_meaning": "အရာခပ်သိမ်းကို အမြဲစောင့်ကြည့်တော်မူပြီး မည်သည့်အရာမျှ မလွတ်ကင်းနိုင်သော အရှင်",
+      "burmese_transliteration": "အရ်-ရကီးဘ်"
+    },
+    {
+      "number": 45,
+      "arabic": "الْمُجِيبُ",
+      "transliteration": "Al-Mujīb",
+      "english_meaning": "The Responsive One",
+      "burmese_meaning": "ဆုတောင်းသူတို့၏ ဆုတောင်းချက်များကို ကြားနာ၍ တုံ့ပြန်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဂျီးဘ်"
+    },
+    {
+      "number": 46,
+      "arabic": "الْوَاسِعُ",
+      "transliteration": "Al-Wāsiʿ",
+      "english_meaning": "The All-Encompassing, The Vast",
+      "burmese_meaning": "ဂုဏ်တော်၊ ဉာဏ်ပညာနှင့် ကရုဏာတော်တို့ အကန့်အသတ်မရှိ ကျယ်ပြန့်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝါစိအ်"
+    },
+    {
+      "number": 47,
+      "arabic": "الْحَكِيمُ",
+      "transliteration": "Al-Ḥakīm",
+      "english_meaning": "The All-Wise",
+      "burmese_meaning": "အမိန့်တော်၊ ဆုံးဖြတ်ချက်နှင့် လုပ်ဆောင်မှုတိုင်းတွင် ပြည့်စုံသော ဉာဏ်ပညာရှိတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟကီးမ်"
+    },
+    {
+      "number": 48,
+      "arabic": "الْوَدُودُ",
+      "transliteration": "Al-Wadūd",
+      "english_meaning": "The Most Loving",
+      "burmese_meaning": "ချစ်ခြင်းမေတ္တာ အပြည့်အဝရှိတော်မူပြီး မိမိ၏ ကျေးကျွန်များကို ချစ်ခင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝဒူးဒ်"
+    },
+    {
+      "number": 49,
+      "arabic": "الْمَجِيدُ",
+      "transliteration": "Al-Majīd",
+      "english_meaning": "The Most Glorious",
+      "burmese_meaning": "ဂုဏ်ကျက်သရေနှင့် ဘုန်းတော် အလွန်မြင့်မြတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မဂျီးဒ်"
+    },
+    {
+      "number": 50,
+      "arabic": "الْبَاعِثُ",
+      "transliteration": "Al-Bāʿith",
+      "english_meaning": "The Resurrector, The Awakener",
+      "burmese_meaning": "သေဆုံးသူများကို ပြန်လည်ရှင်သန်စေပြီး ထမြောက်စေတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဘာအိသ်"
+    },
+    {
+      "number": 51,
+      "arabic": "الشَّهِيدُ",
+      "transliteration": "Ash-Shahīd",
+      "english_meaning": "The Witness",
+      "burmese_meaning": "အရာခပ်သိမ်းကို သိမြင်၍ အားလုံးအပေါ် သက်သေခံတော်မူသော အရှင်",
+      "burmese_transliteration": "အရှ်-ရှဟီးဒ်"
+    },
+    {
+      "number": 52,
+      "arabic": "الْحَقُّ",
+      "transliteration": "Al-Ḥaqq",
+      "english_meaning": "The Ultimate Truth",
+      "burmese_meaning": "အမှန်တရား၏ အရင်းမြစ်ဖြစ်တော်မူပြီး အမှန်ဆုံးသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟက်"
+    },
+    {
+      "number": 53,
+      "arabic": "الْوَكِيلُ",
+      "transliteration": "Al-Wakīl",
+      "english_meaning": "The Trustee, The One Who Can Be Relied Upon",
+      "burmese_meaning": "အားကိုးယုံကြည်အပ်နှံထိုက်ပြီး အရာခပ်သိမ်းကို စီမံတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝကီးလ်"
+    },
+    {
+      "number": 54,
+      "arabic": "الْقَوِيُّ",
+      "transliteration": "Al-Qawiyy",
+      "english_meaning": "The All-Strong",
+      "burmese_meaning": "အင်အားနှင့် တန်ခိုးအာနုဘော် အပြည့်အဝ ပိုင်ဆိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကဝီးယ်"
+    },
+    {
+      "number": 55,
+      "arabic": "الْمَتِينُ",
+      "transliteration": "Al-Matīn",
+      "english_meaning": "The Firm, The Steadfast",
+      "burmese_meaning": "အင်အားတော် ခိုင်မာပြည့်စုံပြီး မည်သည့်အရာမျှ အားနည်းစေနိုင်ခြင်း မရှိသော အရှင်",
+      "burmese_transliteration": "အလ်-မတီးန်"
+    },
+    {
+      "number": 56,
+      "arabic": "الْوَلِيُّ",
+      "transliteration": "Al-Waliyy",
+      "english_meaning": "The Protecting Friend, The Patron",
+      "burmese_meaning": "ယုံကြည်သူတို့၏ အုပ်ထိန်းကာကွယ်သူနှင့် အနီးကပ် ကူညီစောင့်ရှောက်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝလီးယ်"
+    },
+    {
+      "number": 57,
+      "arabic": "الْحَمِيدُ",
+      "transliteration": "Al-Ḥamīd",
+      "english_meaning": "The Praiseworthy",
+      "burmese_meaning": "ချီးမွမ်းခြင်းနှင့် ဂုဏ်ပြုခြင်းအားလုံးနှင့် ထိုက်တန်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟမီးဒ်"
+    },
+    {
+      "number": 58,
+      "arabic": "الْمُحْصِي",
+      "transliteration": "Al-Muḥṣī",
+      "english_meaning": "The All-Enumerator",
+      "burmese_meaning": "အရာခပ်သိမ်းကို ရေတွက်မှတ်သားထားတော်မူပြီး မည်သည့်အရာမျှ မလွတ်ကင်းသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဟ်ဆီး"
+    },
+    {
+      "number": 59,
+      "arabic": "الْمُبْدِئُ",
+      "transliteration": "Al-Mubdiʾ",
+      "english_meaning": "The Originator",
+      "burmese_meaning": "ဖန်ဆင်းခြင်းကို ပထမဆုံး စတင်ဖြစ်ပေါ်စေတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဘ်ဒီအ်"
+    },
+    {
+      "number": 60,
+      "arabic": "الْمُعِيدُ",
+      "transliteration": "Al-Muʿīd",
+      "english_meaning": "The Restorer, The Reproducer",
+      "burmese_meaning": "ဖန်ဆင်းမှုကို ပြန်လည်ဖြစ်ပေါ်စေပြီး သေဆုံးပြီးနောက် ပြန်လည်ရှင်သန်စေတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုအီးဒ်"
+    },
+    {
+      "number": 61,
+      "arabic": "الْمُحْيِي",
+      "transliteration": "Al-Muḥyī",
+      "english_meaning": "The Giver of Life",
+      "burmese_meaning": "အသက်ရှင်ခြင်းကို ပေးသနားတော်မူပြီး သေဆုံးသောအရာများကို အသက်ပြန်လည်ပေးနိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဟ်ယီး"
+    },
+    {
+      "number": 62,
+      "arabic": "الْمُمِيتُ",
+      "transliteration": "Al-Mumīt",
+      "english_meaning": "The Bringer of Death",
+      "burmese_meaning": "အသေခြင်းကို သတ်မှတ်တော်မူပြီး သက်ရှိသတ္တဝါများ၏ အဆုံးကို စီမံတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုမီးတ်"
+    },
+    {
+      "number": 63,
+      "arabic": "الْحَيُّ",
+      "transliteration": "Al-Ḥayy",
+      "english_meaning": "The Ever-Living",
+      "burmese_meaning": "အမြဲအသက်ရှင်တော်မူပြီး မည်သည့်အချိန်တွင်မျှ သေဆုံးခြင်း သို့မဟုတ် ပျက်စီးခြင်း မရှိသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟယ့်"
+    },
+    {
+      "number": 64,
+      "arabic": "الْقَيُّومُ",
+      "transliteration": "Al-Qayyūm",
+      "english_meaning": "The Self-Sustaining, The Sustainer of All",
+      "burmese_meaning": "မိမိကိုယ်တိုင် အမှီအခိုကင်းတော်မူပြီး ဖန်ဆင်းခံအားလုံးကို ထိန်းသိမ်းစောင့်ရှောက်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကယူးမ်"
+    },
+    {
+      "number": 65,
+      "arabic": "الْوَاجِدُ",
+      "transliteration": "Al-Wājid",
+      "english_meaning": "The Finder, The One Who Lacks Nothing",
+      "burmese_meaning": "မည်သည့်အရာမျှ လိုအပ်မှုမရှိဘဲ အရာခပ်သိမ်းကို ပိုင်ဆိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝါဂျိဒ်"
+    },
+    {
+      "number": 66,
+      "arabic": "الْمَاجِدُ",
+      "transliteration": "Al-Mājid",
+      "english_meaning": "The Glorious, The Noble",
+      "burmese_meaning": "ဂုဏ်ကျက်သရေ၊ မြင့်မြတ်မှုနှင့် ဂုဏ်တော်တို့ အလွန်ပြည့်စုံတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မာဂျိဒ်"
+    },
+    {
+      "number": 67,
+      "arabic": "الْوَاحِدُ",
+      "transliteration": "Al-Wāḥid",
+      "english_meaning": "The One",
+      "burmese_meaning": "တစ်ပါးတည်းသော အရှင်ဖြစ်တော်မူပြီး မည်သည့်အရာနှင့်မျှ မျှဝေတူညီခြင်း မရှိသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝါဟိဒ်"
+    },
+    {
+      "number": 68,
+      "arabic": "الْأَحَدُ",
+      "transliteration": "Al-Aḥad",
+      "english_meaning": "The Unique One, The Absolutely One",
+      "burmese_meaning": "တစ်ဆူတည်းသော၊ ထူးခြားမတူညီသော အရှင်ဖြစ်တော်မူပြီး တစ်စုံတစ်ရာနှင့်မျှ နှိုင်းယှဉ်၍မရသော အရှင်",
+      "burmese_transliteration": "အလ်-အဟဒ်"
+    },
+    {
+      "number": 69,
+      "arabic": "الصَّمَدُ",
+      "transliteration": "Aṣ-Ṣamad",
+      "english_meaning": "The Eternal Refuge, The One Upon Whom All Depend",
+      "burmese_meaning": "အရာခပ်သိမ်းက အားကိုးမှီခိုရပြီး မိမိကိုယ်တိုင် မည်သူ့ကိုမျှ မလိုအပ်သော အရှင်",
+      "burmese_transliteration": "အဆ်-ဆမဒ်"
+    },
+    {
+      "number": 70,
+      "arabic": "الْقَادِرُ",
+      "transliteration": "Al-Qādir",
+      "english_meaning": "The All-Powerful",
+      "burmese_meaning": "အရာခပ်သိမ်းကို ပြုလုပ်နိုင်စွမ်းရှိပြီး အကြွင်းမဲ့ တန်ခိုးပိုင်ဆိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ကာဒိရ်"
+    },
+    {
+      "number": 71,
+      "arabic": "الْمُقْتَدِرُ",
+      "transliteration": "Al-Muqtadir",
+      "english_meaning": "The All-Determining, The Powerful",
+      "burmese_meaning": "အရာခပ်သိမ်းအပေါ် အကြွင်းမဲ့ အာဏာနှင့် စွမ်းအားပိုင်ဆိုင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုက်တဒိရ်"
+    },
+    {
+      "number": 72,
+      "arabic": "الْمُقَدِّمُ",
+      "transliteration": "Al-Muqaddim",
+      "english_meaning": "The One Who Advances",
+      "burmese_meaning": "မိမိ၏ ဉာဏ်ပညာနှင့် အလိုတော်အတိုင်း အရာများကို ရှေ့သို့ တင်ပေးတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုကဒ္ဒိမ်"
+    },
+    {
+      "number": 73,
+      "arabic": "الْمُؤَخِّرُ",
+      "transliteration": "Al-Muʾakhkhir",
+      "english_meaning": "The One Who Delays",
+      "burmese_meaning": "မိမိ၏ ဉာဏ်ပညာနှင့် အလိုတော်အတိုင်း အရာများကို နောက်ကျစေတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုအက္ခိရ်"
+    },
+    {
+      "number": 74,
+      "arabic": "الْأَوَّلُ",
+      "transliteration": "Al-Awwal",
+      "english_meaning": "The First",
+      "burmese_meaning": "အရာခပ်သိမ်းမတိုင်မီ အစဦးဖြစ်တော်မူပြီး မည်သည့်အရာကမျှ အရှင်မြတ်ထက် ရှေ့မရောက်နိုင်သော အရှင်",
+      "burmese_transliteration": "အလ်-အဝ်ဝလ်"
+    },
+    {
+      "number": 75,
+      "arabic": "الْآخِرُ",
+      "transliteration": "Al-Ākhir",
+      "english_meaning": "The Last",
+      "burmese_meaning": "အရာခပ်သိမ်း၏ နောက်ဆုံးတွင် တည်ရှိတော်မူပြီး မည်သည့်အရာကမျှ အရှင်မြတ်၏ နောက်မဖြစ်နိုင်သော အရှင်",
+      "burmese_transliteration": "အလ်-အာခိရ်"
+    },
+    {
+      "number": 76,
+      "arabic": "الظَّاهِرُ",
+      "transliteration": "Aẓ-Ẓāhir",
+      "english_meaning": "The Manifest, The Most Apparent",
+      "burmese_meaning": "အထက်တန်းမြင့်မြတ်တော်မူပြီး အရှင်မြတ်၏ အာယတ်တော်များမှတစ်ဆင့် ထင်ရှားတော်မူသော အရှင်",
+      "burmese_transliteration": "အဇ်-ဇာဟိရ်"
+    },
+    {
+      "number": 77,
+      "arabic": "الْبَاطِنُ",
+      "transliteration": "Al-Bāṭin",
+      "english_meaning": "The Hidden, The Inner",
+      "burmese_meaning": "မျက်စိဖြင့် မမြင်နိုင်သော်လည်း အရာခပ်သိမ်း၏ အတွင်းနက်ရှိုင်းသော အမှန်တရားကို သိရှိတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဘာသင်"
+    },
+    {
+      "number": 78,
+      "arabic": "الْوَالِي",
+      "transliteration": "Al-Wālī",
+      "english_meaning": "The Governor, The Ruler",
+      "burmese_meaning": "အရာခပ်သိမ်းကို အုပ်ချုပ်စီမံတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝါလီ"
+    },
+    {
+      "number": 79,
+      "arabic": "الْمُتَعَالِي",
+      "transliteration": "Al-Mutaʿālī",
+      "english_meaning": "The Most Exalted",
+      "burmese_meaning": "အရာအားလုံးထက် အမြင့်မြတ်ဆုံးဖြစ်တော်မူပြီး ချို့ယွင်းချက်အားလုံးမှ ကင်းစင်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုတာအာလီ"
+    },
+    {
+      "number": 80,
+      "arabic": "الْبَرُّ",
+      "transliteration": "Al-Barr",
+      "english_meaning": "The Source of All Goodness, The Most Kind",
+      "burmese_meaning": "ကျေးဇူးတော်၊ ကောင်းမြတ်မှုနှင့် ကြင်နာမှုတို့ကို အလွန်ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဗရ်"
+    },
+    {
+      "number": 81,
+      "arabic": "التَّوَّابُ",
+      "transliteration": "At-Tawwāb",
+      "english_meaning": "The Accepter of Repentance",
+      "burmese_meaning": "နောင်တရ၍ အရှင်မြတ်ထံ ပြန်လည်လှည့်လာသူများ၏ တောင်ပန်ခြင်းကို လက်ခံတော်မူသော အရှင်",
+      "burmese_transliteration": "အတ်-တဝါဗ်"
+    },
+    {
+      "number": 82,
+      "arabic": "الْمُنْتَقِمُ",
+      "transliteration": "Al-Muntaqim",
+      "english_meaning": "The Avenger, The One Who Gives Retribution",
+      "burmese_meaning": "တရားမျှတမှုအရ မတရားမှုကျူးလွန်သူများကို ပြန်လည်တုံ့ပြန်အရေးယူတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုန်တကိမ်"
+    },
+    {
+      "number": 83,
+      "arabic": "الْعَفُوُّ",
+      "transliteration": "Al-ʿAfūw",
+      "english_meaning": "The Pardoner, The One Who Erases Sins",
+      "burmese_meaning": "အပြစ်များကို ဖျက်ပယ်၍ ခွင့်လွှတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-အဖူးဝ်"
+    },
+    {
+      "number": 84,
+      "arabic": "الرَّؤُوفُ",
+      "transliteration": "Ar-Raʾūf",
+      "english_meaning": "The Most Kind, The Most Compassionate",
+      "burmese_meaning": "ဖန်ဆင်းခံများအပေါ် အလွန်နူးညံ့ကြင်နာတော်မူသော အရှင်",
+      "burmese_transliteration": "အရ်-ရအူးဖ်"
+    },
+    {
+      "number": 85,
+      "arabic": "مَالِكُ الْمُلْكِ",
+      "transliteration": "Mālik-ul-Mulk",
+      "english_meaning": "Owner of All Sovereignty",
+      "burmese_meaning": "အုပ်စိုးခြင်းနှင့် အာဏာပိုင်ဆိုင်မှုအားလုံး၏ အရှင်ပိုင်ရှင်ဖြစ်တော်မူသော အရှင်",
+      "burmese_transliteration": "မာလိကူလ်-မုလ်က်"
+    },
+    {
+      "number": 86,
+      "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      "transliteration": "Dhūl-Jalāli wal-Ikrām",
+      "english_meaning": "The Possessor of Majesty and Honor",
+      "burmese_meaning": "ဘုန်းအာနုဘော်နှင့် ဂုဏ်ကျက်သရေတို့၏ ပိုင်ရှင်ဖြစ်တော်မူသော အရှင်",
+      "burmese_transliteration": "ဇုလ်-ဂျလာလိ ဝလ်-အိက်ရမ်"
+    },
+    {
+      "number": 87,
+      "arabic": "الْمُقْسِطُ",
+      "transliteration": "Al-Muqsiṭ",
+      "english_meaning": "The Equitable, The Just",
+      "burmese_meaning": "အပြည့်အဝ တရားမျှတစွာ စီရင်ဆုံးဖြတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုက်စိသ်"
+    },
+    {
+      "number": 88,
+      "arabic": "الْجَامِعُ",
+      "transliteration": "Al-Jāmiʿ",
+      "english_meaning": "The Gatherer",
+      "burmese_meaning": "အရာခပ်သိမ်းကို စုစည်းတော်မူပြီး ရှင်ပြန်ထမြောက်ရာနေ့တွင် လူသားအားလုံးကို စုရုံးစေတော်မူမည့် အရှင်",
+      "burmese_transliteration": "အလ်-ဂျာမိအ်"
+    },
+    {
+      "number": 89,
+      "arabic": "الْغَنِيُّ",
+      "transliteration": "Al-Ghaniyy",
+      "english_meaning": "The Self-Sufficient, The Free of All Need",
+      "burmese_meaning": "မည်သည့်အရာကိုမျှ မလိုအပ်ဘဲ အရာခပ်သိမ်းက အရှင်မြတ်ကိုသာ လိုအပ်ကြသော အရှင်",
+      "burmese_transliteration": "အလ်-ဂနီးယ်"
+    },
+    {
+      "number": 90,
+      "arabic": "الْمُغْنِي",
+      "transliteration": "Al-Mughnī",
+      "english_meaning": "The Enricher, The One Who Grants Sufficiency",
+      "burmese_meaning": "မိမိအလိုတော်ရှိသူများအား လုံလောက်မှုနှင့် ကြွယ်ဝမှုကို ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မုဂ်နီး"
+    },
+    {
+      "number": 91,
+      "arabic": "الْمَانِعُ",
+      "transliteration": "Al-Māniʿ",
+      "english_meaning": "The Withholder, The Preventer",
+      "burmese_meaning": "မိမိ၏ ဉာဏ်ပညာနှင့် အလိုတော်အတိုင်း အရာများကို တားဆီးကာကွယ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-မာနိအ်"
+    },
+    {
+      "number": 92,
+      "arabic": "الضَّارُّ",
+      "transliteration": "Aḍ-Ḍārr",
+      "english_meaning": "The One Who Allows Harm According to His Wisdom",
+      "burmese_meaning": "မိမိ၏ အဆုံးမဲ့ ဉာဏ်ပညာနှင့် တရားမျှတမှုအရ ဖြစ်ပေါ်လာသော စမ်းသပ်မှုများကို ခွင့်ပြုတော်မူသော အရှင်",
+      "burmese_transliteration": "အဒ်-ဒါရ်"
+    },
+    {
+      "number": 93,
+      "arabic": "النَّافِعُ",
+      "transliteration": "An-Nāfiʿ",
+      "english_meaning": "The Bestower of Benefit",
+      "burmese_meaning": "အကျိုးကျေးဇူးနှင့် ကောင်းမြတ်မှုများကို ပေးသနားတော်မူသော အရှင်",
+      "burmese_transliteration": "အန်-နာဖိအ်"
+    },
+    {
+      "number": 94,
+      "arabic": "النُّورُ",
+      "transliteration": "An-Nūr",
+      "english_meaning": "The Light",
+      "burmese_meaning": "မိုးကောင်းကင်နှင့် မြေကြီးတို့၏ အလင်းတော်ဖြစ်တော်မူပြီး လမ်းမှန်ကို ထွန်းလင်းပေးတော်မူသော အရှင်",
+      "burmese_transliteration": "အန်-နူးရ်"
+    },
+    {
+      "number": 95,
+      "arabic": "الْهَادِي",
+      "transliteration": "Al-Hādī",
+      "english_meaning": "The Guide",
+      "burmese_meaning": "အမှန်တရားနှင့် ဖြောင့်မတ်သော လမ်းသို့ လမ်းညွှန်ပေးတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဟာဒီ"
+    },
+    {
+      "number": 96,
+      "arabic": "الْبَدِيعُ",
+      "transliteration": "Al-Badīʿ",
+      "english_meaning": "The Originator, The Incomparable Creator",
+      "burmese_meaning": "ယခင်ပုံစံမရှိဘဲ ထူးခြားစွာ ဖန်ဆင်းတော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဘဒီအ်"
+    },
+    {
+      "number": 97,
+      "arabic": "الْبَاقِي",
+      "transliteration": "Al-Bāqī",
+      "english_meaning": "The Everlasting",
+      "burmese_meaning": "အမြဲတည်တော်မူပြီး မည်သည့်အရာမျှ ပျောက်ကွယ်သွားစေနိုင်ခြင်း မရှိသော အရှင်",
+      "burmese_transliteration": "အလ်-ဘာကီ"
+    },
+    {
+      "number": 98,
+      "arabic": "الْوَارِثُ",
+      "transliteration": "Al-Wārith",
+      "english_meaning": "The Inheritor, The Ultimate Owner",
+      "burmese_meaning": "အရာခပ်သိမ်း၏ နောက်ဆုံးပိုင်ရှင်နှင့် အမွေခံအရှင်ဖြစ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အလ်-ဝါရိသ်"
+    },
+    {
+      "number": 99,
+      "arabic": "الرَّشِيدُ",
+      "transliteration": "Ar-Rashīd",
+      "english_meaning": "The Guide to the Right Way, The Perfectly Wise",
+      "burmese_meaning": "အမှန်ကန်ဆုံးသော လမ်းကို ညွှန်ပြတော်မူပြီး အရာခပ်သိမ်းကို ပြည့်စုံသော ဉာဏ်ပညာဖြင့် စီမံတော်မူသော အရှင်",
+      "burmese_transliteration": "အရ်-ရရှီးဒ်"
+    },
+    {
+      "number": 100,
+      "arabic": "الصَّبُورُ",
+      "transliteration": "Aṣ-Ṣabūr",
+      "english_meaning": "The Most Patient, The Most Forbearing",
+      "burmese_meaning": "အလွန်သည်းခံတော်မူပြီး အလျင်စလို အပြစ်ပေးခြင်းမပြုဘဲ မိမိ၏ ဉာဏ်ပညာနှင့် အချိန်အခါအတိုင်း ဆုံးဖြတ်တော်မူသော အရှင်",
+      "burmese_transliteration": "အဆ်-ဆဘူးရ်"
+    }
+  ]
+}

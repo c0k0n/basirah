@@ -1,0 +1,92 @@
+---
+import { Font } from "astro:assets";
+import "../styles/global.css";
+
+interface Props {
+	title?: string;
+	description?: string;
+	currentPath?: string;
+}
+
+const {
+	title = "Hikmah — Islamic knowledge in Burmese",
+	description = "A calm, accessible library of the Qur’an, essential duas, and the beautiful names of Allah for Myanmar Muslims.",
+	currentPath = Astro.url.pathname,
+} = Astro.props;
+
+const navigation = [
+	{ href: "/surahs/", label: "ကုရ်အာန်", english: "Qur’an" },
+	{ href: "/duas/", label: "ဒိုအာ", english: "Duas" },
+	{ href: "/names/", label: "နာမတော် ၉၉ ပါး", english: "99 Names" },
+];
+---
+
+<!doctype html>
+<html lang="my">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#123c35" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="canonical" href={new URL(currentPath, Astro.site)} />
+		<title>{title}</title>
+		<Font
+			cssVariable="--font-myanmar"
+			preload={[{ weight: 400 }, { weight: 700 }]}
+		/>
+		<Font cssVariable="--font-arabic" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">အကြောင်းအရာသို့ ကျော်ရန်</a>
+		<header class="site-header">
+			<div class="shell header-inner">
+				<a class="brand" href="/" aria-label="Hikmah home">
+					<span class="brand-mark" aria-hidden="true">ه</span>
+					<span>
+						<strong>Hikmah</strong>
+						<small>အလင်းရောင်ကို မျှဝေခြင်း</small>
+					</span>
+				</a>
+				<nav aria-label="Main navigation">
+					<ul class="primary-nav">
+						{
+							navigation.map((item) => (
+								<li>
+									<a
+										href={item.href}
+										aria-current={
+											currentPath.startsWith(item.href)
+												? "page"
+												: undefined
+										}
+									>
+										<>
+											<span>{item.label}</span>
+											<small>{item.english}</small>
+										</>
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main-content"><slot /></main>
+		<footer class="site-footer">
+			<div class="shell footer-inner">
+				<div>
+					<p class="footer-logo">Hikmah</p>
+					<p>
+						မြန်မာမွတ်စလင်များအတွက် သင်ယူခြင်း၊
+						ပြန်လည်သတိရခြင်းနှင့် မျှဝေခြင်း နေရာတစ်ခု။
+					</p>
+				</div>
+				<p class="footer-note">အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့်</p>
+			</div>
+		</footer>
+	</body>
+</html>
