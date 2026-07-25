@@ -1,13 +1,15 @@
 // @ts-check
-import { defineConfig, fontProviders } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
+import { defineConfig, fontProviders } from 'astro/config';
 
-// Static output keeps the knowledge library fast, inexpensive, and deployable to Pages.
 export default defineConfig({
 	output: 'static',
-	site: 'https://hikmah.sanctum.workers.dev', // Replace with the production domain before launch.
+	site: 'https://hikmah.sanctum.workers.dev',
 	integrations: [sitemap()],
+	vite: { plugins: [tailwindcss()] },
+	adapter: cloudflare(),
 	fonts: [
 		{
 			name: 'Noto Sans Myanmar',
@@ -15,7 +17,7 @@ export default defineConfig({
 			provider: fontProviders.google(),
 			weights: [400, 500, 600, 700],
 			styles: ['normal'],
-			subsets: ['latin', 'myanmar'],
+			subsets: ['myanmar'],
 			fallbacks: ['sans-serif'],
 		},
 		{
@@ -28,5 +30,4 @@ export default defineConfig({
 			fallbacks: ['serif'],
 		},
 	],
-	vite: { plugins: [tailwindcss()] },
 });
