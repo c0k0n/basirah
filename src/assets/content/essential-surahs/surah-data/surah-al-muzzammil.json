@@ -1,0 +1,166 @@
+{
+  "surah_metadata": {
+    "surah_number": 73,
+    "name_arabic": "المُزَّمِّل",
+    "name_transliteration": "Al-Muzzammil",
+    "name_burmese_title": "စူရဟ် အလ်-မုဇ်ဇမ္မိလ် (ခြုံထည် လွှမ်းခြုံထားသူ)",
+    "meaning_of_title": {
+      "english": "The Enshrouded One / The Wrapped in Garments",
+      "burmese": "အဝတ်အထည် လွှမ်းခြုံရုံထားသောသူ"
+    },
+    "revelation_place": {
+      "english": "Meccan (Verse 20 is Madinan)",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (အာယသ်အမှတ် ၂၀ သည် မဒီနဟ်မြို့၌ ကျရောက်ခဲ့သည်)"
+    },
+    "total_verses": 20,
+    "summary_burmese": "ဤစူရဟ်တွင် အလ္လာဟ်အရှင်မြတ်သည် တမန်တော်မြတ် မုဟမ္မဒ် (ဆွလ္လလ္လာဟု အလိုင်ဟိ ဝစလ္လမ်) အား ညဉ့်ယံဝတ်ပြုမှု (သဟဂျ်ဂျွဒ်) ထကြွဆောက်တည်ရန်နှင့် ကုရ်အာန်ကျမ်းစာတော်အား ပီသမှန်ကန်စွာ စည်းဝါးကျ ရွတ်ဖတ်ပူဇော်ရန် အမိန့်ပေးညွှန်ကြားထားပါသည်။ ညဉ့်ဝတ်ပြုခြင်းသည် စိတ်ဝိညာဉ်ကို ကြံ့ခိုင်စေပြီး လေးလံသော တာဝန်များကို ထမ်းဆောင်ရာတွင် ခွန်အားဖြစ်စေကြောင်း ဖော်ပြထား၏။ ထို့ပြင် ငြင်းပယ်သူတို့၏ စော်ကားမှုများကို သည်းခံရန်၊ တာဝန်ဝတ္တရားများကို ကျေပွန်စွာ ထမ်းဆောင်ရန်နှင့် သေခြင်းတရားမရောက်မီ ကောင်းမှုဒါနများ ပြုလုပ်ကြရန် နှိုးဆော်ထားပါသည်။ နိဂုံးချုပ်အာယသ်၌ အရှင်မြတ်သည် မူလက ထိန်းသိမ်းရန် ခက်ခဲသော ညဉ့်ဝတ်ပြုမှုတာဝန်ကို လွယ်ကူသက်သာအောင် လျှော့ပေါ့ပေးတော်မူကြောင်း ဖော်ပြထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "يَا أَيُّهَا الْمُزَّمِّلُ",
+      "english_translation": "O you wrapped in garments,",
+      "burmese_translation": "အို (ခြုံထည်) လွှမ်းခြုံရုံထားသောသူ (တမန်တော်မြတ်)၊",
+      "burmese_transliteration": "ယား အိုက်ယုဟာလ် မုဇ်ဇမ္မိလ်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "قُمِ اللَّيْلَ إِلَّا قَلِيلًا",
+      "english_translation": "Arise [to pray] the night, except for a little -",
+      "burmese_translation": "ညဉ့်အချိန်၌ (ဝတ်ပြုရန်) ထရပ်ပါလော့၊ နည်းပါးသော အချိန်မှအပ။",
+      "burmese_transliteration": "ကုမိလ် လိုင်းလာ အိလ်လာ ကလီးလာ"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "نِّصْفَهُ أَوِ انقُصْ مِنْهُ قَلِيلًا",
+      "english_translation": "Half of it - or subtract from it a little",
+      "burmese_translation": "ည၏ ထက်ဝက်မျှ (ထရပ်ပါလော့)၊ သို့မဟုတ် ယင်းထက် နည်းနည်း လျှော့ပါလော့၊",
+      "burmese_transliteration": "နိွဆ်ဖာဟူ အဝိန်းကုွဆ် မိန်းဟု ကလီးလာ"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "أَوْ زِدْ عَلَيْهِ وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا",
+      "english_translation": "Or add to it, and recite the Qur'an with measured recitation.",
+      "burmese_translation": "သို့မဟုတ် ယင်းထက် တိုးပါလော့။ ထို့ပြင် ကုရ်အာန်ကျမ်းစာတော်ကို စည်းဝါးကျကျ ပီသစွာ ရွတ်ဖတ် ပူဇော်ပါလော့။",
+      "burmese_transliteration": "အောဝ် ဇိဒ် အာလိုင်းဟိ ဝါ ရသ်သိလိလ် ကုရ်အာန သရ်သီးလာ"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "إِنَّا سَنُلْقِي عَلَيْكَ قَوْلًا ثَقِيلًا",
+      "english_translation": "Indeed, We shall cast upon you a heavy word.",
+      "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်သည် အသင်၏အပေါ်သို့ လေးလံလှသော မိန့်တော်မူချက် (ကုရ်အာန်ကျမ်း) ကို ထုတ်ပြန် ပေးသနားတော်မူမည် ဖြစ်၏။",
+      "burmese_transliteration": "အိန်းနား စာနုလ်ကီး အာလိုင်းကာ ကောဝ်လန်း သကီးလာ"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "إِنَّ نَاشِئَةَ اللَّيْلِ هِيَ أَشَدُّ وَطْئًا وَأَقْوَمُ قِيلًا",
+      "english_translation": "Indeed, the hours of the night are more effective for concurrence [of heart and tongue] and more suitable for words.",
+      "burmese_translation": "ဧကန်စင်စစ် ညဉ့်ယံ၌ (ဝတ်ပြုရန်) ထကြွခြင်းသည် စိတ်နှလုံး စုစည်းမှုအတွက် အထိရောက်ဆုံးဖြစ်ပြီး စကားပြောဆို (ရွတ်ဖတ်) ရန်အတွက်လည်း အသင့်တော်ဆုံး ဖြစ်၏။",
+      "burmese_transliteration": "အိန်းနား နားရှိအာသလ် လိုင်းလိ ဟိယာ အာရှဒ်ဒု ဝါသ်အန်း ဝါ အာကွာမူ ကီးလာ"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "إِنَّ لَكَ فِي النَّهَارِ سَبْحًا طَوِيلًا",
+      "english_translation": "Indeed, for you by day is prolonged occupation.",
+      "burmese_translation": "ဧကန်စင်စစ် အသင်၌ နေ့အခါတွင် ရှည်လျားသော တာဝန် အလုပ်အကိုင်များ ရှိပေ၏။",
+      "burmese_transliteration": "အိန်းနား လာကာ ဖိန်း နဟာရိ စဗ်ဟန်း သဝီးလာ"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "وَاذْكُرِ اسْمَ رَبِّكَ وَتَبَتَّلْ إِلَيْهِ تَبْتِيلًا",
+      "english_translation": "And remember the name of your Lord and devote yourself to Him with [complete] devotion.",
+      "burmese_translation": "ထို့ပြင် အသင်သည် မိမိ၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ နာမတော်ကို သတိရ အောက်မေ့ပါလော့။ ထို့ပြင် သီးသန့် မြှုပ်နှံ၍ ထိုအရှင်၏ ထံတော်သို့ စိတ်ရောကိုယ်ပါ အပြည့်အဝ ဆက်ကပ်ပါလော့။",
+      "burmese_transliteration": "ဝါဇ်ကုရိ စမ ရဗ်ဗိကာ ဝါ သဗသ်သလ် အိလိုင်းဟိ သဗ်သီးလာ"
+    },
+    {
+      "verse_number": 9,
+      "arabic": "رَّبُّ الْمَشْرِقِ وَالْمَغْرِبِ لَا إِلَٰهَ إِلَّا هُوَ فَاتَّخِذْهُ وَكِيلًا",
+      "english_translation": "[He is] the Lord of the East and the West; there is no deity except Him, so take Him as Disposer of affairs.",
+      "burmese_translation": "(ထိုအရှင်သည်) အရှေ့အရပ်နှင့် အနောက်အရပ်တို့၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်ဖြစ်တော်မူ၏။ ထိုအရှင်မှအပ အခြား ကိုးကွယ်ရာ အမှန် မရှိပါ။ သို့ဖြစ်၍ ထိုအရှင်အားသာလျှင် ယုံကြည်အားထားရာအဖြစ် အမှီပြု ကိုးကွယ်ပါလော့။",
+      "burmese_transliteration": "ရဗ်ဗုလ် မရှ်ရိကိ ဝါလ် မဂ်ရိဗိ လာ အိလားဟာ အိလ်လာ ဟူးဝါ ဖသ်သာခိဇ်ဟု ဝါကီးလာ"
+    },
+    {
+      "verse_number": 10,
+      "arabic": "وَاصْبِرْ عَلَىٰ مَا يَقُولُونَ وَاهْجُرْهُمْ هَجْرًا جَمِيلًا",
+      "english_translation": "And be patient over what they say and avoid them with gracious avoidance.",
+      "burmese_translation": "ထို့ပြင် သူတို့ ပြောဆိုသမျှတို့ကို သည်းခံပါလော့။ သူတို့အား သိမ်မွေ့ ပြေပြစ်သော စွန့်ခွာခြင်းဖြင့် စွန့်ခွာပါလော့။",
+      "burmese_transliteration": "ဝါ ဆွဗိရ် အာလာ မာ ယကူးလူးနာ ဝါဟ်ဂျုရ်ဟုမ် ဟဲဂျ်ရန်း ဂျမီးလာ"
+    },
+    {
+      "verse_number": 11,
+      "arabic": "وَذَرْنِي وَالْمُكَذِّبِينَ أُولِي النَّعْمَةِ وَمَهِّلْهُمْ قَلِيلًا",
+      "english_translation": "And leave Me with the deniers, the possessors of ease, and allow them a little time.",
+      "burmese_translation": "ထို့ပြင် (အို တမန်တော်) သာယာဝပြောသော စည်းစိမ်ရှင် ငြင်းပယ်သူတို့၏ အရေးကို ငါအရှင်မြတ်ထံသာ လွှဲအပ်ထားပါလော့။ သူတို့ကို ခဏမျှ အချိန်ဆိုင်းပေးထားပါလော့။",
+      "burmese_transliteration": "ဝါ ဇရ်နီး ဝါလ် မုကဇ်ဇိဗီးနာ အူးလိန်း နာအ်မာသိ ဝါ မဟ်ဟိလ်ဟုမ် ကလီးလာ"
+    },
+    {
+      "verse_number": 12,
+      "arabic": "إِنَّ لَدَيْنَا أَنكَالًا وَجَحِيمًا",
+      "english_translation": "Indeed, with Us [for them] are shackles and burning fire",
+      "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်၏ ထံတော်၌ (သူတို့အတွက်) လေးလံသော သံကြိုးကျောင်းများနှင့် ရဲရဲတောက် ငရဲမီး ရှိပေ၏။",
+      "burmese_transliteration": "အိန်းနား လာဒိုင်းနား အန်းကားလန်း ဝါ ဂျဟီးမာ"
+    },
+    {
+      "verse_number": 13,
+      "arabic": "وَطَعَامًا ذَا غُصَّةٍ وَعَذَابًا أَلِيمًا",
+      "english_translation": "And food that chokes and a painful punishment -",
+      "burmese_translation": "ထို့ပြင် လည်ချောင်း၌ သို့တစ်မြို့ တို့တစ်မြို့ တစ်ဆို့နေမည့် အာဟာရနှင့် နာကျင်ဖွယ်ရာ ပြစ်ဒဏ်တို့သည်လည်း ရှိပေ၏။",
+      "burmese_transliteration": "ဝါ သအားမန်း ဇား ဂုဿသင်း ဝါ အာဇားဗန်း အာလီးမာ"
+    },
+    {
+      "verse_number": 14,
+      "arabic": "يَوْمَ تَرْجُفُ الْأَرْضُ وَالْجِبَالُ وَكَانَتِ الْجِبَالُ كَثِيبًا مَّهِيلًا",
+      "english_translation": "On the Day the earth and the mountains will shake and the mountains will become a heap of sand pouring down.",
+      "burmese_translation": "ထိုနေ့၌ ကမ္ဘာမြေနှင့် တောင်တန်းတို့သည် ပြင်းထန်စွာ တုန်လှုပ်ကြမည်ဖြစ်ပြီး၊ တောင်တန်းများသည် လွင့်ပါးပြိုကျနေသော သဲပုံများကဲ့သို့ ဖြစ်သွားကြပေအံ့။",
+      "burmese_transliteration": "ယောဝ်မာ သရ်ဂျုဖုလ် အာရ်ဿု ဝါလ် ဂျိဗားလု ဝါ ကားနာသီးလ် ဂျိဗားလု ကသီးဗန်း မဟီးလာ"
+    },
+    {
+      "verse_number": 15,
+      "arabic": "إِنَّا أَرْسَلْنَا إِلَيْكُمْ رَسُولًا شَاهِدًا عَلَيْكُمْ كَمَا أَرْسَلْنَا إِلَىٰ فِرْعَوْنَ رَسُولًا",
+      "english_translation": "Indeed, We have sent to you a Messenger as a witness upon you just as We sent to Pharaoh a messenger.",
+      "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်သည် ဖိရ်အောင်န် (ဖာရောဘုရင်) ထံသို့ ရစူးလ်တမန်တော်တစ်ပါးကို စေလွှတ်ခဲ့သကဲ့သို့ သင်တို့ထံသို့လည်း သင်တို့အပေါ် သက်သေခံမည့် ရစူးလ်တမန်တော်တစ်ပါး စေလွှတ်တော်မူခဲ့ပြီ ဖြစ်၏။",
+      "burmese_transliteration": "အိန်းနား အာရ်စလ်နား အိလိုင်းကုမ် ရာစူးလန်း ရှားဟိဒန်း အာလိုင်းကုမ် ကာမား အာရ်စလ်နား အိလာ ဖိရ်အောဝ်နာ ရာစူးလာ"
+    },
+    {
+      "verse_number": 16,
+      "arabic": "فَعَصَىٰ فِرْعَوْنُ الرَّسُولَ فَأَخَذْنَاهُ أَخْذًا وَبِيلًا",
+      "english_translation": "But Pharaoh disobeyed the messenger, so We seized him with a ruinous seizure.",
+      "burmese_translation": "သို့သော် ဖိရ်အောင်န်သည် ထိုတမန်တော်အား မနာခံဘဲ ဖောက်ပြန်ခဲ့သဖြင့် ငါအရှင်မြတ်သည် သူအား ပြင်းထန်လှစွာသော ပြစ်ဒဏ်ဖြင့် အရေးယူ တိုက်ဖျက်တော်မူခဲ့၏။",
+      "burmese_transliteration": "ဖာအာဆွာ ဖိရ်အောဝ်နုရ် ရာစူးလာ ဖာအာခါဇ်နားဟု အာခ်ဇန်း ဝါဗီးလာ"
+    },
+    {
+      "verse_number": 17,
+      "arabic": "فَكَيْفَ تَتَّقُونَ إِن كَفَرْتُمْ يَوْمًا يَجْعَلُ الْوِلْدَانَ شِيبًا",
+      "english_translation": "Then how can you fear, if you disbelieve, a Day that will make the children white-haired?",
+      "burmese_translation": "သို့ပါလျက် သင်တို့သည် သစ္စာငြင်းပယ်နေကြပါက ကလေးငယ်များကိုပင် ဆံပင်ဖြူအိုမင်းသွားစေမည့် ထိုနေ့ (၏ ပြစ်ဒဏ်) မှ မည်သို့လျှင် ကာကွယ်လွတ်မြောက်နိုင်ကြပါမည်နည်း။",
+      "burmese_transliteration": "ဖာကိုင်းဖာ သသ်သာကူးနာ အိန်း ကာဖရ်သုမ် ယောဝ်မန်း ယဂျ်အာလုလ် ဝိလ်ဒားနာ ရှီးဗာ"
+    },
+    {
+      "verse_number": 18,
+      "arabic": "السَّمَاءُ مُنفَطِرٌ بِهِ ۚ كَانَ وَعْدُهُ مَفْعُولًا",
+      "english_translation": "The heaven will break apart therefrom; ever is His promise fulfilled.",
+      "burmese_translation": "ကောင်းကင်ဘုံသည် ထိုနေ့၏ ပြင်းထန်မှုကြောင့် ကွဲအက်သွားပေအံ့။ အရှင်မြတ်၏ ကတိတော်သည် မလွဲမသွေ ပြည့်ဝစုံလင်မည့် အရာဖြစ်၏။",
+      "burmese_transliteration": "အစ် စမားအု မုန်းဖာသိရုမ် ဗိဟီ၊ ကားနာ ဝါအ်ဒုဟူး မဖ်အူးလာ"
+    },
+    {
+      "verse_number": 19,
+      "arabic": "إِنَّ هَٰذِهِ تَذْكِرَةٌ ۖ فَمَن شَاءَ اتَّخَذَ إِلَىٰ رَبِّهِ سَبِيلًا",
+      "english_translation": "Indeed, this is a reminder, so whoever wills may take to his Lord a way.",
+      "burmese_translation": "ဧကန်စင်စစ် ဤသည်မှာ ဆုံးမသတိပေးချက် ဖြစ်၏။ သို့ဖြစ်၍ အလိုရှိသူသည် မိမိ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်သို့ ရောက်ရှိရာ လမ်းစဉ်ကို ရွေးချယ်နိုင်ပေ၏။",
+      "burmese_transliteration": "အိန်းနား ဟားဇိဟီ သဇ်ကိရား၊ ဖာမန် ရှားအတ် သာခါဇာ အိလာ ရဗ်ဗိဟီ စဗီးလာ"
+    },
+    {
+      "verse_number": 20,
+      "arabic": "۞ إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَيِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ ۚ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ ۚ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ ۖ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ ۚ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ ۙ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ ۙ وَءَاخَرُونَ يُقَـٰتِلُونَ فِى سَبِيلِ ٱللَّهِ ۖ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ ۚ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا ۚ وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا ۚ وَٱسْتَغْفِرُوا۟ ٱللَّهَ ۖ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ",
+      "english_translation": "Indeed, your Lord knows that you stand in prayer for nearly two-thirds of the night, sometimes half of it, and sometimes one-third of it, along with a group of those who are with you. Allah alone determines the measure of the night and the day. He knows that you cannot maintain such a strict measure consistently, so He has turned to you in mercy. Therefore, recite from the Qur'an whatever is easy for you. He knows that among you are those who are ill, others who travel through the land seeking Allah's bounty, and others who strive in the cause of Allah. So recite whatever is easy from it, establish the prayer, give zakah, and lend to Allah a goodly loan. Whatever good you send ahead for yourselves, you will find it with Allah as something far better and greater in reward. And seek Allah's forgiveness. Indeed, Allah is All-Forgiving, Most Merciful.",
+      "burmese_translation": "အမှန်စင်စစ် သင်၏အရှင်မြတ်သည် သင်သည် ည၏ သုံးပုံနှစ်ပုံနီးပါး၊ တစ်ဝက်ခန့် သို့မဟုတ် သုံးပုံတစ်ပုံခန့်၌ ရပ်တည်ဝတ်ပြုကြောင်းကိုလည်းကောင်း၊ သင်နှင့်အတူရှိသော ယုံကြည်သူအုပ်စုတစ်စုလည်း ထိုသို့ပြုကြောင်းကိုလည်းကောင်း သိတော်မူ၏။ ညနှင့်နေ့၏ အချိန်အတိုင်းအတာကို အလ္လာဟ်သာလျှင် သတ်မှတ်တော်မူ၏။ ထိုအတိုင်းအတာကို အမြဲတမ်း တိတိကျကျ ထိန်းသိမ်းနိုင်မည်မဟုတ်ကြောင်းကို သိတော်မူသဖြင့် သင်တို့အပေါ် ကရုဏာထားတော်မူ၏။ ထို့ကြောင့် ကုရ်အာန်မှ မိမိတို့အတွက် လွယ်ကူသလောက်ကို ဖတ်ရွတ်ကြလော့။ သင်တို့အနက် အချို့မှာ ဖျားနာနေကြမည်ကိုလည်းကောင်း၊ အချို့မှာ အလ္လာဟ်၏ ကျေးဇူးတော်ကို ရှာဖွေရန် မြေပြင်ပေါ်တွင် ခရီးသွားနေကြမည်ကိုလည်းကောင်း၊ အချို့မှာ အလ္လာဟ်၏ လမ်းစဉ်၌ ကြိုးပမ်းနေကြမည်ကိုလည်းကောင်း သိတော်မူ၏။ သို့ဖြစ်၍ ထိုကုရ်အာန်မှ လွယ်ကူသလောက်ကို ဖတ်ရွတ်ကြလော့။ ဆွလာဟ်ကို မှန်ကန်စွာ တည်ဆောက်ကြလော့၊ ဇကာဟ်ကို ပေးဆောင်ကြလော့၊ အလ္လာဟ်ထံသို့ ကောင်းမြတ်သော ချေးငွေတစ်ရပ်ကို ချေးပေးကြလော့။ မိမိတို့အတွက် ကြိုတင်ပို့နှံထားသော ကောင်းမှုမှန်သမျှကို အလ္လာဟ်ထံတွင် ပိုမိုကောင်းမြတ်၍ ဆုလာဘ်ပိုမိုကြီးမားသောအရာအဖြစ် တွေ့ရှိကြမည်။ ထို့ပြင် အလ္လာဟ်ထံတွင် ခွင့်လွှတ်မှုကို တောင်းခံကြလော့။ အမှန်စင်စစ် အလ္လာဟ်သည် အလွန်ခွင့်လွှတ်တော်မူသောအရှင်၊ အလွန်ကရုဏာတော်ရှိသောအရှင် ဖြစ်တော်မူ၏။",
+      "burmese_transliteration": "အင်န်န ရဗ္ဗက ယအ်လမု အန်နက တကူမု အဒ်နာ မင် သုလုသိုင်လ် လိုင်လိ ဝနစ်ဖဟူ ဝသုလုသဟူ ဝတောအိဖတုန် မိနလ်လဇီန မအက။ ဝလ္လာဟု ယုကဒ္ဒိရုလ် လိုင်လ ဝန်နဟား။ အလိမ အလ်လန် တုဟ်ဆူဟု ဖတာဘ အလိုင်ကွမ်။ ဖက်ရအူ မာ တယဆ္ဆရ မိနလ် ကုရ်အာန်။ အလိမ အန် ဆယကူနု မင်ကွမ် မရ်ဒါ။ ဝအာခရူန ယဒ်ရိဘူန ဖိလ် အရ်ဒ် ယဗ်တဂူန မင် ဖဒ်လိလ္လာဟ်။ ဝအာခရူန ယုကာတိလူန ဖီ ဆဘီလိလ္လာဟ်။ ဖက်ရအူ မာ တယဆ္ဆရ မင်ဟု။ ဝအကီမုစ္ ဆလာဟ် ဝအာတုဇ် ဇကာဟ် ဝအကရိဒုလ္လာဟ ကရ်ဒန် ဟစနန်။ ဝမာ တုကဒ္ဒိမူ လိအန်ဖုစီကွမ် မင် ခိုင်ရင် တဂျိဒူဟု အင်ဒလ္လာဟ် ဟုဝ ခိုင်ရန် ဝအအ်ဇမ အဂ်ရန်။ ဝစ္စတဂ်ဖိရုလ္လာဟ်။ အင်န်နလ္လာဟ ဂဖူရုရ် ရဟီးမ်။"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "surah_metadata": {
+    "surah_number": 1,
+    "name_arabic": "الفَاتِحَة",
+    "name_transliteration": "Al-Fatihah",
+    "name_burmese_title": "စူရဟ် အလ်-ဖာသိဟာဟ် (စတင်ဖွင့်လှစ်သော စူရဟ်)",
+    "meaning_of_title": {
+      "english": "The Opening",
+      "burmese": "စတင်ဖွင့်လှစ်သော စူရဟ် / ကျမ်းစာအုပ်၏ နိဒါန်း"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 7,
+    "summary_burmese": "ဤစူရဟ်သည် ကုရ်အာန်ကျမ်းတော်မြတ်၏ ပထမဦးဆုံး ပရိုဂရမ်စတင်ရာ နိဒါန်းစူရဟ်ဖြစ်ပြီး 'အုမ်မုလ် ကိသာဗ်' (ကျမ်း၏ အမိ) ဟုလည်း ခေါ်ဆိုကြပါသည်။ အစ္စလာမ်သာသနာ၏ အခြေခံမူများဖြစ်သော အလ္လာဟ်အရှင်မြတ်၏ အနန္တဂရုဏာတော်၊ စက္ကဝါအပေါင်းကို စိုးပိုင်တော်မူမှု၊ တရားစီရင်ရာနေ့၏ အရှင်ဖြစ်မှုတို့ကို ချီးမွမ်းဖော်ပြထားပါသည်။ လူသားတို့အား အရှင်မြတ်တစ်ဆူတည်းကိုသာ ဝတ်ပြုရန်နှင့် ကူညီမစမှု တောင်းခံရန်၊ ထို့ပြင် မှန်ကန်သော ဖြောင့်မတ်သော လမ်းစဉ် (စိရားသွလ် မုစသက်ကီးမ်) သို့ လမ်းညွှန်ပေးသနားတော်မူပါရန် တောင်းဆုပြုနည်းကို သင်ကြားပေးထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+      "english_translation": "[All] praise is [due] to Allah, Lord of the worlds -",
+      "burmese_translation": "အလုံးစုံသော ချီးမွမ်းထောပနာခေါ်ဆိုခြင်းသည် စကြဝဠာအပေါင်းတို့အား ဖန်ဆင်းမွေးမြူတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ အဖို့ရာသာ ဖြစ်၏။",
+      "burmese_transliteration": "အလ် ဟမ်ဒု လိလ္လာဟိ ရဗ်ဗိလ် အာလာမီးန်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "english_translation": "The Entirely Merciful, the Especially Merciful,",
+      "burmese_translation": "(ထိုအရှင်သည်) အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အရှင်ဖြစ်တော်မူ၏။",
+      "burmese_transliteration": "အာ ရဟ်မာနိရ် ရဟီးမ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+      "english_translation": "Sovereign of the Day of Recompense.",
+      "burmese_translation": "(ထို့ပြင်) တရားစီရင် ဆုပေးဒဏ်ပေးရာ နေ့၏ အရှင်သခင်လည်း ဖြစ်တော်မူ၏။",
+      "burmese_transliteration": "မာလိကိ ယောင်မစ် ဒီးန်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "english_translation": "It is You we worship and You we ask for help.",
+      "burmese_translation": "ကျွန်ုပ်တို့သည် အရှင်မြတ်တစ်ဆူတည်းအားသာ ဝတ်ပြုကိုးကွယ်ကြပါ၏၊ ထို့ပြင် အရှင်မြတ်ထံတော်မှသာ ကူညီမစမှုကို တောင်းခံကြပါ၏။",
+      "burmese_transliteration": "အိယျာကာ နအ်ဗုဒု ဝါ အိယျာကာ နက်စသအီးန်"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "english_translation": "Guide us to the straight path -",
+      "burmese_translation": "ကျွန်ုပ်တို့အား မှန်ကန်ဖြောင့်မတ်သော လမ်းစဉ်သို့ လမ်းညွှန်ပြသတော်မူပါ၊",
+      "burmese_transliteration": "အိဟ်ဒိနက် ဆိရားသွလ် မုစသက်ကီးမ်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "english_translation": "The path of those upon whom You have bestowed favor, Not of those who have evoked [Your] anger or of those who are astray.",
+      "burmese_translation": "အရှင်မြတ်၏ အနန္တ ကရုဏာတော်နှင့် ချီးမြှောက်ခြင်း ခံရသူတို့၏ လမ်းစဉ်သို့ (လမ်းညွှန်တော်မူပါ)၊ အမျက်ဒေါသ သင့်ရောက်ခြင်း ခံရသူတို့၏ လမ်းစဉ်လည်းမဟုတ်၊ လမ်းမှားသို့ ရောက်ရှိသွားသူတို့၏ လမ်းစဉ်လည်း မဟုတ်သော (ဖြောင့်မတ်သော လမ်းစဉ်သို့ လမ်းညွှန်တော်မူပါ)။",
+      "burmese_transliteration": "ဆိရားသွလ် လာဇီးနာ အန်းအမ်သဲ အာလိုင်းဟိမ် ဂိုဏ်ရီးလ် မဂ်ဿူးဗိ အာလိုင်းဟိမ် ဝါ လာဿောဝ်လီးန်"
+    }
+  ]
+}

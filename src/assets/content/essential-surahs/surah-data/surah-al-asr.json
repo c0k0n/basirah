@@ -1,0 +1,47 @@
+{
+  "surah_metadata": {
+    "surah_number": 103,
+    "name_arabic": "العَصْر",
+    "name_transliteration": "Al-'Asr",
+    "name_burmese_title": "စူရဟ် အလ်-အဆွရ် (ခေတ်ကာလ / ညနေခင်း)",
+    "meaning_of_title": {
+      "english": "The Declining Day / Time",
+      "burmese": "ခေတ်ကာလ (သို့မဟုတ်) ညနေခင်း အချိန်"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 3,
+    "summary_burmese": "ဤစူရဟ်သည် တိုတောင်းသော်လည်း အစ္စလာမ်သာသနာ၏ အနှစ်သာရတစ်ခုလုံးကို လွှမ်းခြုံထားသော စူရဟ်ဖြစ်ပါသည်။ အလ္လာဟ်အရှင်မြတ်သည် ခေတ်ကာလအချိန်ကို ကျိန်ဆို၍ ကာလ၏ ကုန်လွန်မှုတွင် လူသားအားလုံးသည် ဆုံးရှုံးပျက်စီးခြင်း၌ ရှိနေကြကြောင်း၊ သို့သော် သဒ္ဓါတရားထားရှိသူများ၊ ကောင်းမှုပြုသူများ၊ သစ္စာတရားနှင့် သည်းခံခြင်းတရားတို့ကို အပြန်အလှန် ဆုံးမတိုက်တွန်းသူများသာလျှင် ထိုဆုံးရှုံးခြင်းမှ ကင်းလွတ်မည်ဖြစ်ကြောင်း သွန်သင်ထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "وَالْعَصْرِ",
+      "english_translation": "By time,",
+      "burmese_translation": "ကုန်လွန်သွားသော ခေတ်ကာလအချိန်ကို ကျိန်ဆိုတော်မူ၏။",
+      "burmese_transliteration": "ဝလ် အာဆွရ်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ",
+      "english_translation": "Indeed, mankind is in loss,",
+      "burmese_translation": "ဧကန်မလွဲ လူသားမှန်သမျှသည် ကြီးမားလှသော ဆုံးရှုံးပျက်စီးခြင်း၌ တည်ရှိနေကြ၏။",
+      "burmese_transliteration": "အင်းနလ် အင်းစာနာ လာဖီး ခူစရ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
+      "english_translation": "Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+      "burmese_translation": "သို့သော် ယုံကြည်ခြင်း သဒ္ဓါတရား ထားရှိကြသူများ၊ ကောင်းမြတ်သော အကျင့်သီလများကို ဆောက်တည်ကြသူများ၊ သစ္စာတရားကို အပြန်အလှန် တိုက်တွန်းကြသူများနှင့် သည်းခံခြင်းတရားကို အပြန်အလှန် ဆုံးမကြသူများမှအပ (အခြားသူအားလုံး ဆုံးရှုံးကြရမည်)။",
+      "burmese_transliteration": "အိလ်လလ် လာဇီးနာ အာမနူး ဝါ အာမိလုစ် ဆောလိဟာသိ ဝါ သဝါဆောဝ် ဗိလ်ဟက်ကိ ဝါ သဝါဆောဝ် ဗိစ်ဆွဗ်ရ်"
+    }
+  ]
+}

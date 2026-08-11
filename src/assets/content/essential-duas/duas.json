@@ -51,7 +51,7 @@
       "arabic": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
       "burmese_pronunciation": "လာဟောင်လ ဝလာကူဝသ အိလ္လာဗိလ္လာဟိလ် အလီးယိလ် အဇီးမ်။",
       "english_meaning": "There is no might and no power except through Allah, the Most High, the Most Great.",
-      "burmese_meaning": "အလွန်မြင့်မြတ်တော်မူ၍ ကြီးမြတ်တော်မူသော အလ္လာဟ်အရှင်မြတ်၏ ခွင့်ပြုချက်နှင့် စွမ်းအားတော်မှတစ်ပါး မည်သည့်ပြောင်းလဲမှုနှင့် စွမ်းအားမျှ မရှိပါ။"
+      "burmese_meaning": "အမြင့်မြတ်ဆုံး၊ အကြီးမြတ်ဆုံး ဖြစ်တော်မူသော အလ္လာဟ်အရှင်မြတ်မှတစ်ပါး မည်သည့်အခြေအနေပြောင်းလဲနိုင်စွမ်းနှင့် အားအင်မျှ မရှိပါ။"
     },
     {
       "id": 6,
@@ -59,7 +59,7 @@
       "title_en": "Prophet Musa's Supplication for All Good",
       "arabic": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
       "burmese_pronunciation": "ရတ်ဗီ အင်းနီ လိမာ အန်ဇလ်သ အိလိုင်ယ မင်န် ခိုင်ရင်န် ဖကီးရ်။",
-      "english_meaning": "\"My Lord, indeed I am in desperate need of whatever good You send down to me.\"",
+      "english_meaning": "My Lord, indeed I am in desperate need of whatever good You send down to me.",
       "burmese_meaning": "အို-ကျွန်ုပ်၏အရှင်၊ အရှင်မြတ်က ကျွန်ုပ်ထံသို့ ချီးမြှင့်ပေးသနားမည့် မည်သည့်ကောင်းမြတ်ခြင်း (နိအ်မသ်) ကိုမဆို ကျွန်ုပ်သည် အလွန်အမင်း လိုအပ်နေသူ ဖြစ်ပါသည်။"
     },
     {
@@ -102,10 +102,10 @@
       "id": 11,
       "title_mm": "ဒိုအာအလ်ကရ်ဗ် (ကြီးမားသော စိတ်ဆင်းရဲဒုက္ခများ ကြုံတွေ့ရချိန်တွင် ဖတ်ရန်ဒိုအာ)",
       "title_en": "Dua al-Karb (Supplication in Times of Great Distress)",
-      "arabic": "لَا إِلَهَ إِلَّا اللَّهُ الْحَلِيمُ الْكَرِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ",
-      "burmese_pronunciation": "လာအိလာဟ အိလ္လာလ္လာဟုလ် ဟလီးမုလ် ကရီးမ်၊ လာအိလာဟ အိလ္လာလ္လာဟု ရတ်ဗုလ် အရ်ရှီလ် အဇီးမ်။",
-      "english_meaning": "There is no deity worthy of worship except Allah, the Most Forbearing, the Most Generous. There is no deity worthy of worship except Allah, the Lord of the Magnificent Throne.",
-      "burmese_meaning": "သည်းခံတော်မူသောအရှင်၊ ရက်ရောစွာပေးကမ်းတော်မူသောအရှင် အလ္လာဟ်အရှင်မြတ်မှတစ်ပါး ကိုးကွယ်ရာအစစ်အမှန်မရှိပါ။ ကြီးမြတ်လှစွာသော အဲရ်ရှ် (ပလ္လင်တော်) ၏ အရှင်သခင်ဖြစ်တော်မူသော အလ္လာဟ်အရှင်မြတ်မှတစ်ပါး ကိုးကွယ်ရာအစစ်အမှန်မရှိပါ။"
+      "arabic": "لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ",
+      "burmese_pronunciation": "လာအိလာဟ အိလ္လာလ္လာဟုလ် အဇီးမ်း ဟလီးမုလ်၊ လာအိလာဟ အိလ္လာလ္လာဟု ရတ်ဗုလ် အရ်ရှီလ် အဇီးမ်၊ လာအိလာဟ အိလ္လာလ္လာဟု ရတ်ဗုလ် စမာဝါသိ ဝရတ်ဗုလ် အရ်ဇ် ဝရတ်ဗုလ် အရ်ရှီလ် ကရီးမ်။",
+      "english_meaning": "There is no deity worthy of worship except Allah, the Most Magnifient, the Most Forbearing. There is no deity worthy of worship except Allah, the Lord of the Magnificent Throne. There is no deity worthy of worship except Allah, the Lord of the heavens, the Lord of the earth, and the Lord of the Noble Throne.",
+      "burmese_meaning": "အလွန်ကြီးမြတ်ပြီး သည်းခံခွင့်လွှတ်တော်မူသော အလ္လာဟ်အရှင်မြတ်မှလွဲ၍ အခြားကိုးကွယ်ရာ အစစ်အမှန် မရှိပါ။ ကြီးကျယ်ခမ်းနားသော ပလ္လင်တော် (အာရှ်) ၏ အရှင်သခင်ဖြစ်တော်မူသော အလ္လာဟ်အရှင်မြတ်မှလွဲ၍ အခြားကိုးကွယ်ရာ အစစ်အမှန် မရှိပါ။ ကောင်းကင်ဘုံများ၊ ကမ္ဘာမြေကြီးနှင့် မြတ်နိုးဖွယ် ဂုဏ်အသရေရှိသော ပလ္လင်တော်တို့၏ အရှင်သခင်ဖြစ်တော်မူသော အလ္လာဟ်အရှင်မြတ်မှလွဲ၍ အခြားကိုးကွယ်ရာ အစစ်အမှန် မရှိပါ။"
     },
     {
       "id": 12,

@@ -1,0 +1,103 @@
+{
+  "surah_metadata": {
+    "surah_number": 101,
+    "name_arabic": "القارِعَة",
+    "name_transliteration": "Al-Qari'ah",
+    "name_burmese_title": "စူရဟ် အလ်-ကာရိအဟ် (တုန်လှုပ်ချောက်ခြားစေသော ကိယာမသ်နေ့)",
+    "meaning_of_title": {
+      "english": "The Striking Hour / The Calamity",
+      "burmese": "စိတ်နှလုံးများကို ပြင်းထန်စွာ တုန်လှုပ် ရိုက်ခတ်စေသော နေ့"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 11,
+    "summary_burmese": "ဤစူရဟ်သည် ကိယာမသ် တရားစီရင်ရာနေ့၏ ထောက်ချောက်ဖွယ်ရာ စတင်ပုံကို မီးမောင်းထိုးပြထားပါသည်။ ထိုနေ့၌ လူသားများသည် လွင့်ပါးနေသော ပိုးဖလံကောင်များကဲ့သို့ ဖြစ်ကြမည်ဖြစ်ပြီး၊ တောင်တန်းကြီးများသည်လည်း လွင့်ပျံနေသော သိုးမွေးမျှင်များကဲ့သို့ ပျက်စီးသွားကြမည်ဖြစ်ကြောင်း ဖော်ပြထား၏။ ထို့နောက် လူသားတို့၏ ကောင်းမှု၊ မကောင်းမှု ချိန်ခွင်လျှာ စိစစ်ခြင်းခံရမည်ဖြစ်ပြီး၊ ကောင်းမှုချိန်ခွင် လေးလံသူတို့သည် သုခဘုံ၌ စည်းစိမ် ခံစားကြရမည်ဖြစ်ကာ ကောင်းမှုချိန်ခွင် ပေါ့ပါးသူတို့သည် ပြင်းထန်လှစွာသော 'ဟာဝိယဟ်' ငရဲမီးအတွင်း သက်ဆင်းကြရမည်ဖြစ်ကြောင်း သတိပေးနှိုးဆော်ထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "الْقَارِعَةُ",
+      "english_translation": "The Striking Hour!",
+      "burmese_translation": "ပြင်းထန်စွာ ရိုက်ခတ် တုန်လှုပ်စေသော ကိယာမသ်နေ့၊",
+      "burmese_transliteration": "အလ် ကားရိအာဟ်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "مَا الْقَارِعَةُ",
+      "english_translation": "What is the Striking Hour?",
+      "burmese_translation": "ထို ပြင်းထန်စွာ ရိုက်ခတ် တုန်လှုပ်စေသောနေ့ ဆိုသည်မှာ မည်သည့်အရာ ဖြစ်သနည်း။",
+      "burmese_transliteration": "မာလ် ကားရိအာဟ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "وَمَا أَدْرَاكَ مَا الْقَارِعَةُ",
+      "english_translation": "And what can make you know what is the Striking Hour?",
+      "burmese_translation": "ထို ပြင်းထန်စွာ ရိုက်ခတ် တုန်လှုပ်စေသောနေ့ ဆိုသည်မှာ မည်သည့်အရာဖြစ်ကြောင်း အသင် သိပါသလော။",
+      "burmese_transliteration": "ဝါ မာ အာဒ်ရားကာ မာလ် ကားရိအာဟ်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِ",
+      "english_translation": "It is the Day when people will be like moths dispersed,",
+      "burmese_translation": "ထိုနေ့၌ လူသားတို့သည် လွင့်ပါးပျံ့လွင့်နေကြသော ပိုးဖလံကောင်များကဲ့သို့ ဖြစ်ကြပေအံ့။",
+      "burmese_transliteration": "ယောဝ်မာ ယကူးနုန်း နားစု ကာလ် ဖားရားရှ်အိလ် မဗ်သူသ်"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنفُوشِ",
+      "english_translation": "And the mountains will be like wool, fluffed up.",
+      "burmese_translation": "ထို့ပြင် တောင်တန်းကြီးများသည်လည်း ဖွာထွက် ပျံ့လွင့်နေသော သိုးမွေးမျှင်များကဲ့သို့ ဖြစ်သွားကြပေအံ့။",
+      "burmese_transliteration": "ဝါ သကူးနုလ် ဂျိဗားလု ကာလ် အိဟ်နိလ် မန်းဖူးရှ်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "فَأَمَّا مَن ثَقُلَتْ مَوَازِينُهُ",
+      "english_translation": "Then as for him whose scales are heavy [with good deeds],",
+      "burmese_translation": "သို့ဖြစ်၍ အကြင်သူ၏ ကောင်းမှုချိန်ခွင် လေးလံခဲ့ပါလျှင်၊",
+      "burmese_transliteration": "ဖာ အမ်မာ မန် သကုလသ် မဝါဇီးနုဟူး"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+      "english_translation": "He will be in a pleasant life.",
+      "burmese_translation": "ထိုသူသည် သဘောကျ နှစ်သက်ဖွယ်ကောင်းသော (ဂျန္နသ်) စည်းစိမ်ချမ်းသာအတွင်း၌ ရှိပေအံ့။",
+      "burmese_transliteration": "ဖာ ဟူးဝါ ဖီး အီးရှသင်း ရားဒိယဟ်"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+      "english_translation": "But as for him whose scales are light,",
+      "burmese_translation": "သို့သော် အကြင်သူ၏ ကောင်းမှုချိန်ခွင် ပေါ့ပါးခဲ့ပါလျှင်၊",
+      "burmese_transliteration": "ဝါ အမ်မာ မန် ခပ်ဖာသ် မဝါဇီးနုဟူး"
+    },
+    {
+      "verse_number": 9,
+      "arabic": "فَأُمُّهُ هَاوِيَةٌ",
+      "english_translation": "His refuge will be an abyss.",
+      "burmese_translation": "ထိုသူ၏ သွားရောက် ခိုလှုံရာဌာနမှာ 'ဟာဝိယဟ်' (နက်ရှိုင်းလှစွာသော ငရဲတွင်း) ပင် ဖြစ်ပေအံ့။",
+      "burmese_transliteration": "ဖာ အုမ်မုဟူး ဟားဝိယဟ်"
+    },
+    {
+      "verse_number": 10,
+      "arabic": "وَمَا أَدْرَاكَ مَا هِيَهْ",
+      "english_translation": "And what can make you know what that is?",
+      "burmese_translation": "ထို 'ဟာဝိယဟ်' ဆိုသည်မှာ မည်သည့်အရာဖြစ်ကြောင်း အသင် သိပါသလော။",
+      "burmese_transliteration": "ဝါ မာ အာဒ်ရားကာ မာ ဟိယဟ်"
+    },
+    {
+      "verse_number": 11,
+      "arabic": "نَارٌ حَامِيَةٌ",
+      "english_translation": "It is a Fire, intensely hot.",
+      "burmese_translation": "ယင်းသည် ပြင်းထန်လှစွာ ပူလောင်သောအနီရောင် ငရဲမီးပင် ဖြစ်ပေသတည်း။",
+      "burmese_transliteration": "နားရုန်း ဟားမိယဟ်"
+    }
+  ]
+}

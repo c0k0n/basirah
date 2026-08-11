@@ -1,0 +1,306 @@
+{
+  "surah_metadata": {
+    "surah_number": 78,
+    "name_arabic": "النَّبَأ",
+    "name_transliteration": "An-Naba'",
+    "name_burmese_title": "စူရဟ် အန်-နဗာအ် (ကြီးကျယ်လှသော သတင်း)",
+    "meaning_of_title": {
+      "english": "The Tidings / The Great News",
+      "burmese": "ကြီးကျယ်လှသော သတင်း"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 40,
+    "summary_burmese": "ဤစူရဟ်သည် ကိယာမသ် ထမြောက်ရာနေ့နှင့် ပတ်သက်၍ သစ္စာငင်းပယ်သူတို့ အငြင်းပွားနေကြသည့် သတင်းကြီးအကြောင်းဖြင့် စတင်ထားပါသည်။ အလ္လာဟ်အရှင်မြတ်သည် ကမ္ဘာမြေ၊ တောင်တန်းများ၊ ည၊ နေ့၊ မိုးကောင်းကင်နှင့် မိုးရေတို့ကို ဖန်ဆင်းတော်မူခဲ့ပုံ သာဓကများဖြင့် မိမိ၏ တန်ခိုးတော်ကို မီးမောင်းထိုးပြထား၏။ ထို့နောက် တရားစီရင်ရာနေ့၏ ဖြစ်ပျက်ပုံများ၊ သစ္စာငြင်းပယ်သူတို့ ကြုံတွေ့ရမည့် 'ဂျဟန္နမ်' ငရဲမီး၏ ပြစ်ဒဏ်များနှင့် ပြစ်မှားစော်ကားသူတို့အတွက် ပြင်ဆင်ထားသော သုခဘုံ (ဂျန္နသ်) ၏ စည်းစိမ်ချမ်းသာများကို အသေးစိတ် ဖော်ပြထားပါသည်။ နိဂုံး၌ ထိုနေ့၏ ဧကန်အမှန် ရောက်ရှိလာမည်ဖြစ်ကြောင်းနှင့် သစ္စာငြင်းပယ်သူတို့ နောင်တကြီးစွာ ရကြမည်ဖြစ်ကြောင်း သတိပေးထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "عَمَّ يَتَسَاءَلُونَ",
+      "english_translation": "About what are they asking one another?",
+      "burmese_translation": "၎င်းတို့သည် မည်သည့်အရာနှင့် ပတ်သက်၍ တစ်ဦးကိုတစ်ဦး မေးမြန်းနေကြသနည်း။",
+      "burmese_transliteration": "အမ်မါ ယားသာစာအာလူန်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "عَنِ النَّبَإِ الْعَظِيمِ",
+      "english_translation": "About the great news -",
+      "burmese_translation": "ကြီးကျယ်လှသော သတင်းကြီး (ကိယာမသ်နေ့) နှင့် ပတ်သက်၍ပင် ဖြစ်၏။",
+      "burmese_transliteration": "အာနိန် နာဗာအိလ် အာဇီးမ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "الَّذِي هُمْ فِيهِ مُخْتَلِفُونَ",
+      "english_translation": "That over which they are in disagreement.",
+      "burmese_translation": "အကြင် သတင်းနှင့် ပတ်သက်၍ ၎င်းတို့သည် သဘောထား ကွဲလွဲနေကြ၏။",
+      "burmese_transliteration": "အဲလ္လာဇီး ဟုမ် ဖီးဟိ မုခ်သါလိဖူးန်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "كَلَّا سَيَعْلَمُونَ",
+      "english_translation": "No! They are going to know.",
+      "burmese_translation": "အလျဉ်း မဟုတ်ပါ၊ မကြာမီ ၎င်းတို့ (အမှန်တရားကို) သိရှိကြရပေအံ့။",
+      "burmese_transliteration": "ကဲလ္လာ စာယအ်လာမူန်"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "ثُمَّ كَلَّا سَيَعْلَمُونَ",
+      "english_translation": "Then, no! They are going to know.",
+      "burmese_translation": "တစ်ဖန် အလျဉ်း မဟုတ်ပါ၊ မကြာမီ ၎င်းတို့ သိရှိကြရပေအံ့။",
+      "burmese_transliteration": "သုမ်မာ ကဲလ္လာ စာယအ်လာမူန်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "أَلَمْ نَجْعَلِ الْأَرْضَ مِهَادًا",
+      "english_translation": "Have We not made the earth a resting place?",
+      "burmese_translation": "ငါအရှင်မြတ်သည် ကမ္ဘာမြေကို နေထိုင်စရာ အခင်းအဖြစ် ဖန်ဆင်းပေးတော်မမူခဲ့ပါလော။",
+      "burmese_transliteration": "အာလမ် နဂျ်အာလိလ် အာရ်ဿ မိဟာဒါ"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "وَالْجِبَالَ أَوْتَادًا",
+      "english_translation": "And the mountains as stakes?",
+      "burmese_translation": "ထို့ပြင် တောင်တန်းကြီးများကိုလည်း (မြေပြင်ငြိမ်သက်စေရန်) သပ်များအဖြစ် စိုက်ထူပေးတော်မမူခဲ့ပါလော။",
+      "burmese_transliteration": "ဝါလ် ဂျိဗားလာ အောဝ်သားဒါ"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "وَخَلَقْنَاكُمْ أَزْوَاجًا",
+      "english_translation": "And We created you in pairs,",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် သင်တို့အား အစုံလိုက် (ယောက်ျား၊ မိန်းမ) ဖန်ဆင်းတော်မူခဲ့၏။",
+      "burmese_transliteration": "ဝါ ခါလာက်နားကုမ် အာဇ်ဝါဂျာ"
+    },
+    {
+      "verse_number": 9,
+      "arabic": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا",
+      "english_translation": "And made your sleep [a means for] rest,",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် သင်တို့၏ အိပ်စက်ခြင်းကို မောပန်းဖြေစရာ ပြုလုပ်ပေးတော်မူခဲ့၏။",
+      "burmese_transliteration": "ဝါ ဂျာအာလ်နား နောဝ်မကုမ် စုဗားသား"
+    },
+    {
+      "verse_number": 10,
+      "arabic": "وَجَعَلْنَا اللَّيْلَ لِبَاسًا",
+      "english_translation": "And made the night as clothing,",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် ညဉ့်အခါကို ဖုံးလွှမ်းစရာ အဝတ်အထည် သဖွယ် ပြုလုပ်ပေးတော်မူခဲ့၏။",
+      "burmese_transliteration": "ဝါ ဂျာအာလ်နား လိုင်းလာ လိဗားစာ"
+    },
+    {
+      "verse_number": 11,
+      "arabic": "وَجَعَلْنَا النَّهَارَ مَعَاشًا",
+      "english_translation": "And made the day for livelihood,",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် နေ့အခါကို ဝမ်းစာ ရှာဖွေရာအချိန် ပြုလုပ်ပေးတော်မူခဲ့၏။",
+      "burmese_transliteration": "ဝါ ဂျာအာလ်နား နဟာရာ မအားရှာ"
+    },
+    {
+      "verse_number": 12,
+      "arabic": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا",
+      "english_translation": "And constructed above you seven strong [heavens],",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် သင်တို့၏ အထက်၌ ခိုင်ခံ့သော ကောင်းကင်ဘုံ ခုနစ်ထပ်ကို တည်ဆောက်တော်မူခဲ့၏။",
+      "burmese_transliteration": "ဝါ ဗာနိုင်းနား ဖောဝ်ကာကုမ် စဗ်အန်း ရှီးဒါဒါ"
+    },
+    {
+      "verse_number": 13,
+      "arabic": "وَجَعَلْنَا سِرَاجًا وَهَّاجًا",
+      "english_translation": "And made [therein] a burning lamp,",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် (နေမင်းတည်းဟူသော) ပူပြင်း တောက်ပသော ဆီမီးတိုင်ကိုလည်း ပြုလုပ်ပေးတော်မူခဲ့၏။",
+      "burmese_transliteration": "ဝါ ဂျာအာလ်နား စိရားဂျန်း ဝါဟ်ဟာဂျာ"
+    },
+    {
+      "verse_number": 14,
+      "arabic": "وَأَنزَلْنَا مِنَ الْمُعْصِرَاتِ مَاءً ثَجَّاجًا",
+      "english_translation": "And sent down, from the rain clouds, pouring water",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် မိုးတိမ်များထဲမှ သဲသဲမဲမဲ ရွာသွန်းသော မိုးရေကို သက်ဆင်းစေတော်မူခဲ့၏။",
+      "burmese_transliteration": "ဝါ အန်းဇလ်နား မိနလ် မုအ်ဆိရားသိ မားအန်း သဂျ်ဂျာဂျာ"
+    },
+    {
+      "verse_number": 15,
+      "arabic": "لِّنُخْرِجَ بِهِ حَبًّا وَنَبَاتًا",
+      "english_translation": "That We may bring forth thereby grain and vegetation",
+      "burmese_translation": "ယင်းမိုးရေဖြင့် နှံစားသီးနှံများနှင့် အပင်မျိုးစုံတို့အား ထွက်ရှိစေရန် ဖြစ်၏။",
+      "burmese_transliteration": "လိနုခ်ရိဂျာ ဗိဟီး ဟဗ်ဗန်း ဝါ နားဗားသား"
+    },
+    {
+      "verse_number": 16,
+      "arabic": "وَجَنَّاتٍ أَلْفَافًا",
+      "english_translation": "And gardens of entwined growth.",
+      "burmese_translation": "ထို့ပြင် ထူထပ် ပစ်ပေါင်းနေသော ဥယျာဉ်ခြံများကိုလည်း (ထွက်ရှိစေရန် ဖြစ်၏)။",
+      "burmese_transliteration": "ဝါ ဂျန်းနားသင်း အလ်ဖားဖာ"
+    },
+    {
+      "verse_number": 17,
+      "arabic": "إِنَّ يَوْمَ الْفَصْلِ كَانَ مِيقَاتًا",
+      "english_translation": "Indeed, the Day of Judgement is an appointed time -",
+      "burmese_translation": "ဧကန်စင်စစ် ဆုံးဖြတ်စီရင်ရာနေ့သည် အချိန်ကာလ သတ်မှတ်ပြီး ဖြစ်၏။",
+      "burmese_transliteration": "အင်းနာ ယောဝ်မလ် ဖဆ်လိ ကားနာ မီးကားသား"
+    },
+    {
+      "verse_number": 18,
+      "arabic": "يَوْمَ يُنفَخُ فِي الصُّورِ فَتَأْتُونَ أَفْوَاجًا",
+      "english_translation": "The Day the Horn is blown and you will come forth in crowds,",
+      "burmese_translation": "ထိုနေ့၌ တံပိုးခရာ မှုတ်ထုတ်ခြင်း ခံရမည်ဖြစ်ပြီး သင်တို့သည် အုပ်စုအလိုက် လာရောက်ကြရပေအံ့။",
+      "burmese_transliteration": "ယောဝ်မာ ယုန်းဖားခု ဖိစ် ဆူးရိ ဖားသဲသူးနာ အဖ်ဝါဂျာ"
+    },
+    {
+      "verse_number": 19,
+      "arabic": "وَفُتِحَتِ السَّمَاءُ فَكَانَتْ أَبْوَابًا",
+      "english_translation": "And the heaven is opened and will become gateways,",
+      "burmese_translation": "ထို့ပြင် ကောင်းကင်ဘုံသည် ပွင့်သွားမည်ဖြစ်ပြီး တံခါးပေါက်များ ဖြစ်သွားပေအံ့။",
+      "burmese_transliteration": "ဝါ ဖုသိဟာသီးစ် စမားဥ ဖားကားနသ် အဗ်ဝါဗာ"
+    },
+    {
+      "verse_number": 20,
+      "arabic": "وَسُيِّرَتِ الْجِبَالُ فَكَانَتْ سَرَابًا",
+      "english_translation": "And the mountains are removed and will be but a mirage.",
+      "burmese_translation": "ထို့ပြင် တောင်တန်းကြီးများသည် လွင့်ပါးသွားကြမည်ဖြစ်ပြီး တံလျှပ်မျှသာ ဖြစ်သွားပေအံ့။",
+      "burmese_transliteration": "ဝါ စုယျိရားသီးလ် ဂျိဗားလု ဖားကားနသ် စရားဗာ"
+    },
+    {
+      "verse_number": 21,
+      "arabic": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا",
+      "english_translation": "Indeed, Hell has been lying in wait",
+      "burmese_translation": "ဧကန်စင်စစ် 'ဂျဟန္နမ်' ငရဲသည် ချောင်းမြောင်းစောင့်ဆိုင်းရာဌာန ဖြစ်ပေ၏။",
+      "burmese_transliteration": "အင်းနာ ဂျာဟန်းနားမား ကားနသ် မိရ်ဆားဒါ"
+    },
+    {
+      "verse_number": 22,
+      "arabic": "لِّلطَّاغِينَ مَآبًا",
+      "english_translation": "For the transgressors, a place of return,",
+      "burmese_translation": "စည်းဖောက် စော်ကားသူတို့အတွက် ပြန်လည်ရောက်ရှိရာ ဌာနဖြစ်၏။",
+      "burmese_transliteration": "လိသ် သားဃီးနာ မားအားဗာ"
+    },
+    {
+      "verse_number": 23,
+      "arabic": "لَّابِثِينَ فِيهَا أَحْقَابًا",
+      "english_translation": "In which they will remain for ages.",
+      "burmese_translation": "၎င်းတို့သည် ထိုငရဲ၌ ကာလရှည်လျားစွာ နေထိုင်ကြရပေအံ့။",
+      "burmese_transliteration": "လားဗိသီးနာ ဖီးဟာ အဟ်ကားဗာ"
+    },
+    {
+      "verse_number": 24,
+      "arabic": "لَّا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا",
+      "english_translation": "They will not taste therein any coolness or drink",
+      "burmese_translation": "၎င်းတို့သည် ထိုငရဲ၌ အေးမြမှုကိုလည်းကောင်း၊ သောက်စရာ ရေကိုလည်းကောင်း မြည်းစမ်းကြရမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "လာ ယားဇူးကူးနာ ဖီးဟာ ဗရ်ဒန်း ဝါ လာ ရှရားဗာ"
+    },
+    {
+      "verse_number": 25,
+      "arabic": "إِلَّا حَمِيمًا وَغَسَّاقًا",
+      "english_translation": "Except scalding water and foul purulence -",
+      "burmese_translation": "ဆူပွက်နေသော ရေနွေးနှင့် ပြည်ပုပ် ရေပုပ်မှအပ၊",
+      "burmese_transliteration": "အိလ်လာ ဟာမီးမန်း ဝါ ဂါစ်စါကား"
+    },
+    {
+      "verse_number": 26,
+      "arabic": "جَزَاءً وِفَاقًا",
+      "english_translation": "An appropriate recompense.",
+      "burmese_translation": "(ယင်းသည် ၎င်းတို့၏ ပြုလုပ်မှုများနှင့်) လျှော်ညီစွန့်သော ပြစ်ဒဏ်ပင် ဖြစ်၏။",
+      "burmese_transliteration": "ဂျာဇားအန်း ဝိဖားကား"
+    },
+    {
+      "verse_number": 27,
+      "arabic": "إِنَّهُمْ كَانُوا لَا يَرْجُونَ حِسَابًا",
+      "english_translation": "Indeed, they were not expecting an account",
+      "burmese_translation": "ဧကန်စင်စစ် ၎င်းတို့သည် စာရင်းစိစစ် စစ်ဆေးခြင်း ခံရမည်ကို မမျှော်လင့်ခဲ့ကြပေ။",
+      "burmese_transliteration": "အင်းနားဟုမ် ကားနူး လာ ယရ်ဂျူးနာ ဟိစာဗာ"
+    },
+    {
+      "verse_number": 28,
+      "arabic": "وَكَذَّبُوا بِآيَاتِنَا كِذَّابًا",
+      "english_translation": "And denied Our verses with total denial.",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်၏ သက်သေလက္ခဏာများကို လုံးဝ ငြင်းပယ်ခဲ့ကြ၏။",
+      "burmese_transliteration": "ဝါ ကက်ဇ်ဇာဗူး ဗိအာယားသိနား ကိဇ်ဇားဗာ"
+    },
+    {
+      "verse_number": 29,
+      "arabic": "وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ كِتَابًا",
+      "english_translation": "But all things We have enumerated in a book.",
+      "burmese_translation": "သို့သော် ငါအရှင်မြတ်သည် အရာရာတိုင်းကို မှတ်တမ်းစာအုပ်၌ ရေတွက် မှတ်တမ်းတင်ထားပြီး ဖြစ်၏။",
+      "burmese_transliteration": "ဝါ ကုလ်လာ ရှိုင်းအိန်း အဟ်ဆွိုင်းနားဟု ကိသားဗာ"
+    },
+    {
+      "verse_number": 30,
+      "arabic": "فَذُوقُوا فَلَن نَّزِيدَكُمْ إِلَّا عَذَابًا",
+      "english_translation": "So taste [the penalty], and never will We increase you except in punishment.",
+      "burmese_translation": "သို့ဖြစ်၍ သင်တို့ မြည်းစမ်းကြပါလော့၊ ငါအရှင်မြတ်သည် သင်တို့အား ပြစ်ဒဏ်မှအပ အခြားမည်သည့်အရာကိုမျှ တိုးပွားစေမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ဖားဇူးကူး ဖာ လန်း နဇီးဒါကုမ် အိလ်လာ အာဇားဗာ"
+    },
+    {
+      "verse_number": 31,
+      "arabic": "إِنَّ لِلْمُتَّقِينَ مَفَازًا",
+      "english_translation": "Indeed, for the righteous is attainment -",
+      "burmese_translation": "ဧကန်စင်စစ် ပြစ်မှုဒုစရိုက်မှ ရှောင်ကြဉ်သော သူတို့အတွက် အောင်မြင်မှု (သုခဘုံ) ရှိပေ၏။",
+      "burmese_transliteration": "အင်းနာ လိလ် မုသ်သာကီးနာ မာဖားဇာ"
+    },
+    {
+      "verse_number": 32,
+      "arabic": "حَدَائِقَ وَأَعْنَابًا",
+      "english_translation": "Gardens and grapevines",
+      "burmese_translation": "ဥယျာဉ်ခြံများနှင့် စပျစ်သီးများ၊",
+      "burmese_transliteration": "ဟာဒါအိကာ ဝါ အာအ်နားဗာ"
+    },
+    {
+      "verse_number": 33,
+      "arabic": "وَكَوَاعِبَ أَتْرَابًا",
+      "english_translation": "And full-bosomed maidens of equal age",
+      "burmese_translation": "ထို့ပြင် အသက်အရွယ် တူညီကြသော ပျိုကညာများ၊",
+      "burmese_transliteration": "ဝါ ကာဝါအိဗာ အသ်ရားဗာ"
+    },
+    {
+      "verse_number": 34,
+      "arabic": "وَكَأْسًا دِهَاقًا",
+      "english_translation": "And a full cup",
+      "burmese_translation": "ထို့ပြင် ပြည့်လျှံနေသော ဖလားခွက်များ (ရှိကြပေအံ့)။",
+      "burmese_transliteration": "ဝါ ကဲအ်စန်း ဒိဟာကား"
+    },
+    {
+      "verse_number": 35,
+      "arabic": "لَّا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّابًا",
+      "english_translation": "They will not hear therein any ill speech or falsehood -",
+      "burmese_translation": "၎င်းတို့သည် ထို၌ အလကားစကားကိုလည်းကောင်း၊ မုသားစကားကိုလည်းကောင်း ကြားကြရမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "လာ ယစ်မားအူးနာ ဖီးဟာ လဂ်ဝန်း ဝါ လာ ကိဇ်ဇားဗာ"
+    },
+    {
+      "verse_number": 36,
+      "arabic": "جَزَاءً مِّن رَّبِّكَ عَطَاءً حِسَابًا",
+      "english_translation": "As recompense from your Lord, a generous gift [according to] account,",
+      "burmese_translation": "(ယင်းသည်) အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်မှ အထူး ပေးသနားတော်မူသော ထိုက်တန်လှသည့် အကျိုးဆုလာဘ် ဖြစ်၏။",
+      "burmese_transliteration": "ဂျာဇားအန်း မိန်း ရဗ်ဗိကာ အားသါအန်း ဟိစာဗာ"
+    },
+    {
+      "verse_number": 37,
+      "arabic": "رَّبِّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الرَّحْمَٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا",
+      "english_translation": "[From] the Lord of the heavens and the earth and whatever is between them, the Entirely Merciful; they have no power from Him to speak.",
+      "burmese_translation": "(ထိုအရှင်သည်) ကောင်းကင်များ၊ ကမ္ဘာမြေနှင့် ထိုနှစ်ခုကြားရှိ အရာခပ်သိမ်းတို့၏ ဖန်ဆင်းမွေးမြူတော်မူသော အနန္တဂရုဏာတော်ရှင် ဖြစ်တော်မူ၏။ ၎င်းတို့သည် ထိုအရှင်၏ ထံတော်၌ စကားပြောဆိုခွင့် လုံးဝ ရရှိကြမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ရဗ်ဗိစ် စမားဝါသိ ဝါလ် အာရ်ဿိ ဝါ မာ ဗိုင်းနဟာမား ရဟ်မာနိ လာ ယမ်လိကူးနာ မိန်းဟု ခိသါဗာ"
+    },
+    {
+      "verse_number": 38,
+      "arabic": "يَوْمَ يَقُومُ الرُّوحُ وَالْمَلَائِكَةُ صَفًّا ۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَٰنُ وَقَالَ صَوَابًا",
+      "english_translation": "The Day that the Spirit and the angels will stand in rows, they will not speak except one to whom the Entirely Merciful has given permission, and he will say what is correct.",
+      "burmese_translation": "ထိုနေ့၌ 'ရူးဟ်' (ဂျိဗ်ရီးလ် တမန်တော်) နှင့် မလာအိကဟ် ကောင်းကင်တမန်တို့သည် တန်းစီ၍ ရပ်ကြရမည် ဖြစ်၏။ အနန္တဂရုဏာတော်ရှင်၏ ခွင့်ပြုမိန့် ရရှိသူနှင့် မှန်ကန်သော စကားကို ပြောဆိုသူမှအပ မည်သူမျှ စကားပြောဆိုနိုင်ကြမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ယောဝ်မာ ယကူးမုရ် ရူးဟု ဝါလ် မလာအိကာသု ဆွဖ်ဖန်း လာ ယားသါကဲလ်လာမူးနာ အိလ်လာ မန် အာဇိနာ လာဟုရ် ရဟ်မာနု ဝါ ကားလာ ဆွဝါဗာ"
+    },
+    {
+      "verse_number": 39,
+      "arabic": "ذَٰلِكَ الْيَوْمُ الْحَقُّ ۖ فَمَن شَاءَ اتَّخَذَ إِلَىٰ رَبِّهِ مَآبًا",
+      "english_translation": "That is the True Day; so he who wills may take to his Lord a return.",
+      "burmese_translation": "ယင်းနေ့သည် မလွဲဧကန် ရောက်ရှိလာမည့် နေ့မှန် ဖြစ်၏။ သို့ဖြစ်၍ အလိုရှိသူတိုင်း မိမိ၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်သို့ ပြန်လည်ဆိုက်ရောက်ရာ လမ်းစဉ်ကို ခံယူဆောက်တည်နိုင်ပေသည်။",
+      "burmese_transliteration": "ဇားလိကာလ် ယောဝ်မုလ် ဟက်ကု ဖားမန် ရှားအတ် သာခါဇာ အိလာ ရဗ်ဗိဟီး မားအားဗာ"
+    },
+    {
+      "verse_number": 40,
+      "arabic": "إِنَّا أَنذَرْنَاكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنظُرُ الْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ الْكَافِرُ يَا لَيْتَنِي كُنتُ تُرَابًا",
+      "english_translation": "Indeed, We have warned you of a near punishment on the Day when a man will observe what his hands have put forth and the disbeliever will say, \"Oh, I wish that I were dust!\"",
+      "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်သည် သင်တို့အား နီးကပ်စွာသော ပြစ်ဒဏ်အကြောင်း သတိပေးနှိုးဆော်ခဲ့ပြီး ဖြစ်၏။ ထိုနေ့၌ လူသည် မိမိလက်နှစ်ဖက်ဖြင့် ရှေးဦးပြုလုပ်ခဲ့သမျှကို တွေ့မြင်ရမည်ဖြစ်ပြီး၊ သစ္စာငြင်းပယ်သူက \"အို... ငါသည် မြေမှုန့်မျှသာ ဖြစ်ခဲ့ပါမူ အကောင်းသား\" ဟု လိုလားတောင့်တ ပြောဆိုပေအံ့။",
+      "burmese_transliteration": "အင်းနား အန်းဇရ်နားကုမ် အာဇားဗန်း ကာရီးဗန်း ယောဝ်မာ ယန်းဇုရုလ် မာရ်ဥ မာ ကဒ်ဒါမသ် ယားဒါဟု ဝါ ယကူးလုလ် ကားဖိရု ယား လိုင်းသါနီး ကုန့်သု သုရားဗာ"
+    }
+  ]
+}

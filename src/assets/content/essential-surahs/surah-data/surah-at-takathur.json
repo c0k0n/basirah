@@ -1,0 +1,82 @@
+{
+  "surah_metadata": {
+    "surah_number": 102,
+    "name_arabic": "التَّكَاثُر",
+    "name_transliteration": "At-Takathur",
+    "name_burmese_title": "စူရဟ် အသ်-သကားသုရ် (ဥစ္စာပစ္စည်းပြိုင်ဆိုင်ခြင်း စူရဟ်)",
+    "meaning_of_title": {
+      "english": "Competition for Increase / Worldly Increase",
+      "burmese": "ဥစ္စာပစ္စည်းနှင့် စည်းစိမ်ပြိုင်ဆိုင်ကြွားဝါခြင်း"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 8,
+    "summary_burmese": "ဤစူရဟ်သည် လောကီစည်းစိမ်၊ ဥစ္စာပစ္စည်းများနှင့် သားသမီးဦးရေ ပွားများပြိုင်ဆိုင်ကြွားဝါမှု၌ အချိန်ဖြုန်းကာ တမလွန်ဘဝကို မေ့လျော့နေကြသော လူသားတို့၏ သဘာဝကို သတိပေးနှိုးဆော်ထားပါသည်။ လူသားတို့သည် သင်္ချိုင်းတွင်းသို့ မရောက်မချင်း ဤသို့ ယှဉ်ပြိုင်ကြွားဝါနေကြမည်ဖြစ်သော်လည်း၊ သေလွန်ပြီးနောက် စိစစ်မေးမြန်းခံရမည့် ကိယာမသ်နေ့ အမှန်တရားကို တွေ့မြင်ကြရမည်ဖြစ်ကြောင်း၊ ငရဲမီးကို မျက်ဝါးထင်ထင် မြင်တွေ့ရမည်ဖြစ်ကြောင်းနှင့် လောကီဘဝ၌ စံစားခဲ့ရသော စည်းစိမ်ချမ်းသာ အသီးသီးအတွက် အလ္လာဟ်အရှင်မြတ်၏ ထံတော်၌ အသေးစိတ် စစ်ဆေးမေးမြန်းခြင်း ခံကြရမည်ဖြစ်ကြောင်း သတိပေးထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "أَلْهَاكُمُ التَّكَاثُرُ",
+      "english_translation": "Competition for increase diverts you,",
+      "burmese_translation": "(စည်းစိမ်ဥစ္စာ နှင့် ပစ္စည်းဥစ္စာ) များပြားပြိုင်ဆိုင်လိုမှုသည် သင်တို့အား (အလ္လာဟ်အရှင်မြတ်အား သတိရအောက်မေ့ခြင်းမှ) မေ့လျော့စေခဲ့ပြီ။",
+      "burmese_transliteration": "အဲလ်ဟာကုမုသ် သကားသုရ်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "حَتَّىٰ زُرْتُمُ الْمَقَابِرَ",
+      "english_translation": "Until you visit the graveyards.",
+      "burmese_translation": "သင်တို့သည် သင်္ချိုင်းဂူများသို့ ရောက်ရှိသွားကြသည်အထိ (ထိုသို့ မေ့လျော့နေခဲ့ကြ၏)။",
+      "burmese_transliteration": "ဟသ်သား ဇုရ်သုမုလ် မကါဗိရ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "كَلَّا سَوْفَ تَعْلَمُونَ",
+      "english_translation": "No! You are going to know.",
+      "burmese_translation": "အမှန်တကယ် မဟုတ်ပေ၊ သင်တို့သည် မကြာမီ (မိမိတို့ ပြုလုပ်ခဲ့သမျှ၏ အကျိုးဆက်ကို) အတိအကျ သိရှိကြရပေအံ့။",
+      "burmese_transliteration": "ကဲလ်လား စောဝ်ဖ သအ်လမူးန"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+      "english_translation": "Then no! You are going to know.",
+      "burmese_translation": "ထို့ပြင် အမှန်တကယ် မဟုတ်ပေ၊ သင်တို့သည် မကြာမီ (ထပ်မံ၍) အတိအကျ သိရှိကြရပေအံ့။",
+      "burmese_transliteration": "သုမ်မ ကဲလ်လား စောဝ်ဖ သအ်လမူးန"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ",
+      "english_translation": "No! If you only knew with knowledge of certainty...",
+      "burmese_translation": "အမှန်တကယ် မဟုတ်ပေ၊ သင်တို့သည် သေချာရေရာသော အသိပညာ (အိုင်းနုလ် ယကီးန်) ဖြင့်သာ အမှန်အတိုင်း သိရှိခဲ့ကြပါမူ (ဤသို့ ပြုလုပ်ကြမည် မဟုတ်ပေ)။",
+      "burmese_transliteration": "ကဲလ်လား လောဝ် သအ်လမူးန အိလ်မလ် ယကီးန်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "لَتَرَوُنَّ الْجَحِيمَ",
+      "english_translation": "You will surely see the Hellfire.",
+      "burmese_translation": "ဧကန်မလွဲ သင်တို့သည် 'ဂျဟီးမ်' ငရဲမီးကို မြင်တွေ့ကြရပေအံ့။",
+      "burmese_transliteration": "လသရားဝုန်းနလ် ဂျဟီးမ်"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ",
+      "english_translation": "Then you will surely see it with the eye of certainty.",
+      "burmese_translation": "ထို့နောက် သင်တို့သည် ယင်းငရဲမီးကို မိမိတို့ မျက်စိဖြင့် ထင်းလင်းစွာ တကယ့်အရှိအတိုင်း ဧကန်မလွဲ မြင်တွေ့ကြရပေအံ့။",
+      "burmese_transliteration": "သုမ်မ လသရားဝုန်းနဟာ အိုင်းနလ် ယကီးန်"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ",
+      "english_translation": "Then you will surely be asked that Day about pleasure.",
+      "burmese_translation": "ထို့နောက် ထိုနေ့၌ သင်တို့ ခံစားစံစားခဲ့ကြသော စည်းစိမ်ချမ်းသာ အပေါင်းနှင့် ပတ်သက်၍ ဧကန်မလွဲ မေးမြန်းစစ်ဆေးခြင်း ခံကြရပေအံ့။",
+      "burmese_transliteration": "သုမ်မ လသုစ်အလုန်းန ယောဝ်မအိဇိန်း အာနိန နအီးမ်"
+    }
+  ]
+}

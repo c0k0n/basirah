@@ -1,22 +1,31 @@
-# build output
-dist/
+# project metadata
+AGENTS.md
+CLAUDE.md
+intent.txt
+
+# data and helpers
+data/
+python_helpers/
+
+# dependencies
+node_modules/
+
+# environment variables
+.env
+.env.production
 
 # generated types
 .astro/
 .wrangler/
 
-# dependencies
-node_modules/
+# build output
+dist/
 
 # logs
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-
-# environment variables
-.env
-.env.production
 
 # macOS-specific files
 .DS_Store
@@ -24,10 +33,6 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
+# package manager files
 pnpm-lock.yaml
 pnpm-workspace.yaml
-
-intent.txt
-
-CLAUDE.md
-AGENTS.md

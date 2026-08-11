@@ -1,0 +1,54 @@
+{
+  "surah_metadata": {
+    "surah_number": 106,
+    "name_arabic": "قُرَيْش",
+    "name_transliteration": "Quraysh",
+    "name_burmese_title": "စူရဟ် ကုရိုင်ရှ် (ကုရိုင်ရှ်မျိုးနွယ်)",
+    "meaning_of_title": {
+      "english": "Quraysh",
+      "burmese": "ကုရိုင်ရှ်မျိုးနွယ်"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 4,
+    "summary_burmese": "ဤစူရဟ်သည် မက္ကဟ်မြို့ရှိ ကုရိုင်ရှ်မျိုးနွယ်အပေါ် အလ္လာဟ်အရှင်မြတ် ချီးမြှင့်တော်မူခဲ့သော ကျေးဇူးတော်များကို သတိပေးထားပါသည်။ သူတို့သည် ဆောင်းရာသီနှင့် နွေရာသီ ကုန်သွယ်ရေးခရီးစဉ်များကို လုံခြုံစွာ သွားလာနိုင်ခဲ့ကြပြီး စားဝတ်နေရေးနှင့် လုံခြုံအေးချမ်းမှုတို့ကို ရရှိခဲ့ကြသည်။ ထို့ကြောင့် ထိုကျေးဇူးတော်များကို ပေးသနားတော်မူသော ကအ်ဗဟ်အိမ်တော်၏ အရှင်ဖြစ်တော်မူသော အလ္လာဟ်အရှင်မြတ်တစ်ပါးတည်းကိုသာ ကိုးကွယ်ဆည်းကပ်ရန် ဤစူရဟ်က တိုက်တွန်းထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "لِإِيلَافِ قُرَيْشٍ",
+      "english_translation": "For the accustomed security of Quraysh,",
+      "burmese_translation": "ကုရိုင်ရှ်မျိုးနွယ်အား လုံခြုံစိတ်ချစွာ နေထိုင်နိုင်စေရန်နှင့် အကျွမ်းတဝင် အဆင်ပြေစေရန်အတွက်၊",
+      "burmese_transliteration": "လိအီလာဖိ ကုရိုင်ရှ်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ",
+      "english_translation": "Their accustomed security in the caravan journeys of winter and summer,",
+      "burmese_translation": "သူတို့၏ ဆောင်းရာသီနှင့် နွေရာသီ ကုန်သွယ်ရေးခရီးစဉ်များကို လုံခြုံအေးချမ်းစွာ သွားလာနိုင်စေရန် ကျေးဇူးပြုတော်မူခဲ့သည်။",
+      "burmese_transliteration": "အီလာဖိဟိမ် ရိဟ်လတရှ် ရိတာအိ ဝပ်စ် ဆိုင်ဖ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ",
+      "english_translation": "So let them worship the Lord of this House,",
+      "burmese_translation": "သို့ဖြစ်၍ သူတို့သည် ဤမြင့်မြတ်သော အိမ်တော် (ကအ်ဗဟ်) ၏ အရှင်မြတ်ကိုသာ ကိုးကွယ်ဆည်းကပ်ကြပါစေ။",
+      "burmese_transliteration": "ဖလ်ယအ်ဗုဒူ ရဗ္ဗ ဟာဇလ် ဘိုင်တ်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ",
+      "english_translation": "Who fed them against hunger and granted them security from fear.",
+      "burmese_translation": "ထိုအရှင်သည် သူတို့အား ဆာလောင်မှုမှ အစားအစာပေးတော်မူခဲ့ပြီး၊ ကြောက်ရွံ့မှုမှလည်း လုံခြုံအေးချမ်းစေတော်မူသော အရှင်ဖြစ်တော်မူ၏။",
+      "burmese_transliteration": "အလ်လာဇီ အတ်အမဟုမ် မင် ဂျူအ်အင် ဝါအာမနဟုမ် မင် ခေါဖ်"
+    }
+  ]
+}

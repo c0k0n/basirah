@@ -1,0 +1,75 @@
+{
+  "surah_metadata": {
+    "surah_number": 107,
+    "name_arabic": "المَاعُون",
+    "name_transliteration": "Al-Ma'un",
+    "name_burmese_title": "စူရဟ် အလ်-မားအူးန် (အသေးအဖွဲ လူသုံးကုန် ပစ္စည်းများ)",
+    "meaning_of_title": {
+      "english": "Small Kindnesses / Neighborly Needs",
+      "burmese": "အသေးအဖွဲ ကူညီထောက်ပံ့မှု သို့မဟုတ် အိမ်နီးနားချင်းသုံး ပစ္စည်းများ"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 7,
+    "summary_burmese": "ဤစူရဟ်တွင် သာသနာနှင့် တရားစီရင်ရာနေ့ကို ငြင်းပယ်သူတို့၏ ယုတ်မာသော စရိုက်လက္ခဏာများကို မီးမောင်းထိုးပြထားပါသည်။ ထိုသူတို့သည် မိဘမဲ့ကလေးများအား ကြမ်းတမ်းစွာ နှင်ထုတ်ခြင်း၊ ဆင်းရဲနွမ်းပါးသူများအား ကျွေးမွေးလှူဒါန်းရန် အားမပေးခြင်းတို့ ပြုကြ၏။ ထို့ပြင် မိမိတို့၏ ဆွလာသ် ဝတ်ပြုမှုအပေါ် မေ့လျော့လျက် ဟန်ပြဝတ်ပြုသူများ၊ အိမ်နီးနားချင်းများ၏ အသေးအဖွဲ အကူအညီနှင့် ပစ္စည်းငှားရမ်းမှုများကိုပင် ငြင်းပယ် တွန့်တိုသူတို့၏ ဆိုးရွားလှသော အပြုအမူများကို သတိပေး ဆုံးမထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ",
+      "english_translation": "Have you seen the one who denies the Recompense?",
+      "burmese_translation": "(အို တမန်တော်) တရားစီရင်ရာနေ့ကို မဟုတ်မှန်ဟု ငြင်းပယ်သူအား အသင် မြင်တွေ့ဖူးပါသလော။",
+      "burmese_transliteration": "အာရားအိုက်သလ် လာဇီး ယုကဇ်ဇိဗု ဗိဒ်ဒီးန်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ",
+      "english_translation": "For that is the one who drives away the orphan",
+      "burmese_translation": "ထိုသူသည်ကား မိဘမဲ့ကလေးအား (ရက်စက် ကြမ်းတမ်းစွာ) နှင်ထုတ်သောသူ ဖြစ်၏။",
+      "burmese_transliteration": "ဖာဇာလိကလ် လာဇီး ယဒုအ်အုလ် ယသီးမ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ",
+      "english_translation": "And does not encourage the feeding of the needy.",
+      "burmese_translation": "ထို့ပြင် ဆင်းရဲနွမ်းပါးသူများအား အာဟာရ ကျွေးမွေးလှူဒါန်းရန်အတွက်လည်း အားပေး တိုက်တွန်းခြင်း မပြုပေ။",
+      "burmese_transliteration": "ဝါ လာ ယဟုဿု အာလာ သအားမိလ် မိစကီးန်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+      "english_translation": "So woe to those who pray",
+      "burmese_translation": "သို့ဖြစ်၍ ဆွလာသ် ဝတ်ပြုသူအချို့အတွက် သက်ဆင်းရာ ငရဲတွင်း (ပျက်စီးခြင်း) သည် ရှိပေ၏။",
+      "burmese_transliteration": "ဖာဝေလုလ် လိလ်မုဆွလ္လီးန်"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+      "english_translation": "[Those] who are heedless of their prayer -",
+      "burmese_translation": "ထိုသူတို့သည် မိမိတို့၏ ဆွလာသ် ဝတ်ပြုမှုအပေါ် မေ့လျော့ ပေါ့ဆနေသူများ ဖြစ်ကြ၏။",
+      "burmese_transliteration": "အလ္လာဇီးနာ ဟုမ် အန်း ဆွလာသိဟိမ် စာဟူးန်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "الَّذِينَ هُمْ يُرَاءُونَ",
+      "english_translation": "Those who make a show [of their deeds]",
+      "burmese_translation": "ထိုသူတို့သည် (မိမိတို့ ဝတ်ပြုမှုကို သူတစ်ပါး မြင်စေရန်) ဟန်ပြ ပြုလုပ်နေကြသူများ ဖြစ်ကြ၏။",
+      "burmese_transliteration": "အလ္လာဇီးနာ ဟုမ် ယုရားအူးန်"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "وَيَمْنَعُونَ الْمَاعُونَ",
+      "english_translation": "And withhold simple assistance.",
+      "burmese_translation": "ထို့ပြင် အသေးအဖွဲ လူသုံးကုန် ပစ္စည်း (အကူအညီ) များကိုပင် ပေးကမ်း ငှားရမ်းရန် တွန့်တို ငြင်းပယ်ကြသူများ ဖြစ်ကြပေသတည်း။",
+      "burmese_transliteration": "ဝါ ယမ်နာအူးနလ် မားအူးန်"
+    }
+  ]
+}

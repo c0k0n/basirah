@@ -1,5 +1,4 @@
 // @ts-check
-import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig, fontProviders } from 'astro/config';
@@ -9,7 +8,6 @@ export default defineConfig({
 	site: 'https://hikmah.sanctum.workers.dev',
 	integrations: [sitemap()],
 	vite: { plugins: [tailwindcss()] },
-	adapter: cloudflare(),
 	fonts: [
 		{
 			name: 'Noto Sans Myanmar',

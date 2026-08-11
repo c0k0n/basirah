@@ -1,0 +1,229 @@
+{
+  "surah_metadata": {
+    "surah_number": 81,
+    "name_arabic": "التَّكْوِير",
+    "name_transliteration": "At-Takwir",
+    "name_burmese_title": "စူရဟ် အသ်-သက္ကဝီးရ် (လိပ်ယူစွန့်ပစ်ခြင်း စူရဟ်)",
+    "meaning_of_title": {
+      "english": "The Overthrowing / The Folding Up",
+      "burmese": "လိပ်ယူစွန့်ပစ်ခြင်း (အလင်းရောင် ကွယ်ပျောက်ခြင်း)"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 29,
+    "summary_burmese": "ဤစူရဟ်သည် ကိယာမသ် တရားစီရင်ရာနေ့ ကျရောက်သောအခါ ဖြစ်ပေါ်လာမည့် စကြဝဠာဆိုင်ရာ ကြီးမားသော ပြောင်းလဲမှုများကို ကွက်ကွက်ကွင်းကွင်း ဖော်ပြထားပါသည်။ နေ၊ လ၊ ကြယ်များ အလင်းကွယ်ပျောက်ခြင်း၊ တောင်တန်းများ ပြိုပျက်ခြင်း၊ သမုဒ္ဒရာများ မီးဟုန်းဟုန်းတောက်ခြင်းနှင့် စိတ္တဇ အပြစ်မဲ့ အသက်ရှင်လျက် မြှုပ်နှံခံခဲ့ရသော မိန်းကလေးများအတွက် စိစစ်မေးမြန်းခံရမည့် အခြေအနေများကို အမိန့်ရှိထား၏။ ဒုတိယပိုင်း၌ ကုရ်အာန်ကျမ်းတော်မြတ်သည် မြင့်မြတ်လှသော ကောင်းကင်တမန် ဂျိဗ်ရီးလ်မှတစ်ဆင့် တမန်တော်မြတ်ထံ ဆင်းသက်လာသော စစ်မှန်သည့် အလ္လာဟ်အရှင်မြတ်၏ မိန့်မှာချက်ဖြစ်ကြောင်းနှင့် စိတ္တဇ မကောင်းဆိုးဝါး၏ သွေးထိုးမှု မဟုတ်ကြောင်း အတည်ပြု မိန့်ကြားထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "إِذَا الشَّمْسُ كُوِّرَتْ",
+      "english_translation": "When the sun is wrapped up [in darkness],",
+      "burmese_translation": "နေမင်း၏ အလင်းရောင် လိပ်ယူဖုံးလွှမ်းခြင်း ခံရသောအခါ၊",
+      "burmese_transliteration": "အိဇသ် ရှမ်စု ကုဝွဲိရသ်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "وَإِذَا النُّجُومُ انكَدَرَتْ",
+      "english_translation": "And when the stars fall, losing their light,",
+      "burmese_translation": "ကြယ်တာရာတို့ ကြွေလွင့် ကြွေကျသွားသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇန် နုဂျူးမုန်း ကဒါရသ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "وَإِذَا الْجِبَالُ سُيِّرَتْ",
+      "english_translation": "And when the mountains are removed,",
+      "burmese_translation": "တောင်တန်းကြီးများ ရွှေ့လျားပြိုပျက်သွားသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇလ် ဂျိဗားလု စုယျိရသ်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "وَإِذَا الْعِشَارُ عُطِّلَتْ",
+      "english_translation": "And when full-term pregnant camels are neglected,",
+      "burmese_translation": "ဆယ်လလွယ် ကိုယ်ဝန်ဆောင် ကုလားအုတ်မများ (တန်ဖိုးရှိသော စည်းစိမ်များ) ကို စွန့်ပစ် လျစ်လျူရှုခြင်း ခံရသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇလ် အိရှားရု အုသ်သိလသ်"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "وَإِذَا الْوُحُوشُ حُشِرَتْ",
+      "english_translation": "And when the wild beasts are gathered,",
+      "burmese_translation": "တောရိုင်း တိရစ္ဆာန်အပေါင်းတို့ (ကြောက်ရွံ့စွာဖြင့်) စုဝေးရောက်ရှိလာသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇလ် ဝုဟူးရှု ဟုရှိရသ်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "وَإِذَا الْبِحَارُ سُجِّرَتْ",
+      "english_translation": "And when the seas are set on fire,",
+      "burmese_translation": "သမုဒ္ဒရာ ပင်လယ်ရေတို့ မီးဟုန်းဟုန်း တောက်လောင်ကြွပွက်လာသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇလ် ဗိဟာရု စုဂျ်ဂျိရသ်"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "وَإِذَا النُّفُوسُ زُوِّجَتْ",
+      "english_translation": "And when the souls are paired,",
+      "burmese_translation": "ဝိညာဉ်များ (မိမိတို့နှင့် သက်ဆိုင်ရာ ခန္ဓာကိုယ်များ သို့မဟုတ် တူညီရာ အုပ်စုများနှင့်) ပေါင်းစည်းပေးခြင်း ခံရသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇန် နုဖူးစု ဇုဝွဲိဂျသ်"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "وَإِذَا الْمَوْءُودَةُ سُئِلَتْ",
+      "english_translation": "And when the girl child buried alive is asked,",
+      "burmese_translation": "အသက်ရှင်လျက် မြှုပ်နှံခြင်း ခံခဲ့ရသော မိန်းကလေးငယ်အား မေးမြန်းခြင်း ခံရသောအခါ -",
+      "burmese_transliteration": "ဝါ အိဇလ် မောဝ်အူးဒသု စုအိလသ်"
+    },
+    {
+      "verse_number": 9,
+      "arabic": "بِأَيِّ ذَنبٍ قُتِلَتْ",
+      "english_translation": "For what sin she was killed,",
+      "burmese_translation": "\"မည်သည့် ပြစ်မှုကြောင့် မိမိ သတ်ဖြတ်ခြင်း ခံခဲ့ရပါသနည်း\" ဟု (မေးမြန်းခံရသောအခါ)၊",
+      "burmese_transliteration": "ဗိအယျိ ဇမ်ဗိန်း ကုသိလသ်"
+    },
+    {
+      "verse_number": 10,
+      "arabic": "وَإِذَا الصُّحُفُ نُشِرَتْ",
+      "english_translation": "And when the pages are made public,",
+      "burmese_translation": "(ပြုမူခဲ့သမျှ) စာရင်းဇယား မှတ်တမ်းလွှာများ ဖြန့်ခင်းပြသခြင်း ခံရသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇစ် ဆုဟုဖု နုရှိရသ်"
+    },
+    {
+      "verse_number": 11,
+      "arabic": "وَإِذَا السَّمَاءُ كُشِطَتْ",
+      "english_translation": "And when the sky is stripped away,",
+      "burmese_translation": "ကောင်းကင်ဘုံ ခွာယူလှန်ပစ်ခြင်း ခံရသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇစ် စမားအု ကုရှိသသ်"
+    },
+    {
+      "verse_number": 12,
+      "arabic": "وَإِذَا الْجَحِيمُ سُعِّرَتْ",
+      "english_translation": "And when Hellfire is set ablaze,",
+      "burmese_translation": "'ဂျဟီးမ်' ငရဲမီး ဟုန်းဟုန်းတောက်လောင်အောင် ရဲရဲညှီးစေခြင်း ခံရသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇလ် ဂျဟီးမု စုအ်အိရသ်"
+    },
+    {
+      "verse_number": 13,
+      "arabic": "وَإِذَا الْجَنَّةُ أُزْلِفَتْ",
+      "english_translation": "And when Paradise is brought near,",
+      "burmese_translation": "'ဂျန္နသ်' သုခဘုံ နီးကပ်စွာ ဆောင်ကြဉ်းပေးခြင်း ခံရသောအခါ၊",
+      "burmese_transliteration": "ဝါ အိဇလ် ဂျန်းနသု အုဇ်လိဖသ်"
+    },
+    {
+      "verse_number": 14,
+      "arabic": "عَلِمَتْ نَفْسٌ مَّا أَحْضَرَتْ",
+      "english_translation": "A soul will know what it has brought [with it].",
+      "burmese_translation": "လူတိုင်းသည် မိမိ (တမလွန်ဘဝအတွက်) ရှေ့သို့ ယူဆောင်ခဲ့သော အရာများကို အတိအကျ သိရှိသွားပေအံ့။",
+      "burmese_transliteration": "အာလိမသ် နဖ်စုန်း မား အဲဟ်ဿရားသ်"
+    },
+    {
+      "verse_number": 15,
+      "arabic": "فَلَا أُقْسِمُ بِالْخُنَّسِ",
+      "english_translation": "So I swear by the retreating stars -",
+      "burmese_translation": "ငါအရှင်မြတ်သည် (နေ့အခါ ပုန်းကွယ်) အလင်းပျောက်သွားကြသော ကြယ်များကို အဓိဋ္ဌာန်ပြုပါ၏။",
+      "burmese_transliteration": "ဖလာ အုက်သိမု ဗိလ် ခုန်းနသ်"
+    },
+    {
+      "verse_number": 16,
+      "arabic": "الْجَوَارِ الْكُنَّسِ",
+      "english_translation": "Those that run [their courses] and disappear -",
+      "burmese_translation": "(မိမိတို့ လမ်းကြောင်းအတိုင်း) ကူးခတ်သွားလာပြီး (ပြန်လည်) ပုန်းကွယ်သွားကြသော ကြယ်များကိုလည်းကောင်း၊",
+      "burmese_transliteration": "အဲလ် ဂျဝါရိလ် ကုန်းနသ်"
+    },
+    {
+      "verse_number": 17,
+      "arabic": "وَاللَّيْلِ إِذَا عَسْعَسَ",
+      "english_translation": "And by the night as it closes in,",
+      "burmese_translation": "ဝင်ရောက်ကွယ်ပျောက်သွားသော ညဉ့်အခါကိုလည်းကောင်း၊",
+      "burmese_transliteration": "ဝဲလ် လိုင်းလိ အိဇား အာစ်အာစ်"
+    },
+    {
+      "verse_number": 18,
+      "arabic": "وَالصُّبْحِ إِذَا تَنَفَّسَ",
+      "english_translation": "And by the dawn when it breathes,",
+      "burmese_translation": "အလင်းရောင် သက်ဝင်လှုပ်ရှားလာသော နံနက်ခင်းကိုလည်းကောင်း (အဓိဋ္ဌာန်ပြုပါ၏)။",
+      "burmese_transliteration": "ဝေါစ် ဆုဗ်ဟိ အိဇား သနဖ်ဖသ်"
+    },
+    {
+      "verse_number": 19,
+      "arabic": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+      "english_translation": "[That] indeed, the Qur'an is a word [conveyed by] a noble messenger,",
+      "burmese_translation": "ဧကန်စင်စစ် ဤ (ကုရ်အာန်) သည် မြင့်မြတ်မွန်မြတ်သော ကောင်းကင်တမန် (ဂျိဗ်ရီးလ်) ယူဆောင်လာသော စကားတော် ဧကန်ဖြစ်၏။",
+      "burmese_transliteration": "အိန်းနဟု လကောဝ်လု ရစူးလိန်း ကရီးမ်"
+    },
+    {
+      "verse_number": 20,
+      "arabic": "ذِي قُوَّةٍ عِندَ ذِي الْعَرْشِ مَكِينٍ",
+      "english_translation": "[Who is] possessed of power and with the Owner of the Throne, secure [in position],",
+      "burmese_translation": "ထိုကောင်းကင်တမန်သည် ခွန်အားကြီးမားသူ၊ 'အရ်ရှ်' ပလ္လင်တော်၏ ပိုင်ရှင်အရှင်မြတ်ထံတော်၌ အဆင့်အတန်း မြင့်မားစွာ နေရာရရှိထားသူ၊",
+      "burmese_transliteration": "ဇီး ကူးဝွဲသိန်း အိန်းဒ ဇိလ် အာရ်ရှိ မကီးန်"
+    },
+    {
+      "verse_number": 21,
+      "arabic": "مُّطَاعٍ ثَمَّ أَمِينٍ",
+      "english_translation": "Obeyed there [in the heavens] and trustworthy.",
+      "burmese_translation": "(ကောင်းကင်ဘုံ၌) နာခံခြင်းခံရသူ၊ သစ္စာသမာဓိနှင့် ပြည့်စုံသူ ဖြစ်ပေ၏။",
+      "burmese_transliteration": "မုသါအိန်း သမ်မ အမီးန်"
+    },
+    {
+      "verse_number": 22,
+      "arabic": "وَمَا صَاحِبُكُم بِمَجْنُونٍ",
+      "english_translation": "And your companion [Muhammad] is not mad.",
+      "burmese_translation": "ထို့ပြင် သင်တို့၏ အပေါင်းအဖော် (တမန်တော်မြတ် မုဟမ္မဒ်) သည် စိတ္တဇရူးသွပ်သူ မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝါ မာ ဆားဟိဗုကုမ် ဗိမဂျ်နူးန်"
+    },
+    {
+      "verse_number": 23,
+      "arabic": "وَلَقَدْ رَآهُ بِالْأُفُقِ الْمُبِينِ",
+      "english_translation": "And he has already seen Gabriel in the clear horizon.",
+      "burmese_translation": "ဧကန်အမှန် တမန်တော်သည် ထိုကောင်းကင်တမန် (ဂျိဗ်ရီးလ်) အား ထင်းလင်းသော မိုးကောင်းကင် အစွန်း၌ (မူလရူပက္ခန္ဓာအတိုင်း) တွေ့မြင်ခဲ့ပြီး ဖြစ်၏။",
+      "burmese_transliteration": "ဝါ လကဒ် ရအာဟု ဗိလ် အုဖုကိလ် မုဗီးန်"
+    },
+    {
+      "verse_number": 24,
+      "arabic": "وَمَا هُوَ عَلَى الْغَيْبِ بِضَنِينٍ",
+      "english_translation": "And Muhammad is not a withholding disclosure of the unseen.",
+      "burmese_translation": "ထို့ပြင် ထိုတမန်တော်သည် အကွယ်၌ရှိသော သတင်းစကားများ (ဝဟ်ယီ) ကို လျှို့ဝှက် ကန့်သတ်ထားသူ မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝါ မာ ဟုဝ အာလယ် ဃိုင်းဗိ ဗိဇနီးန်"
+    },
+    {
+      "verse_number": 25,
+      "arabic": "وَمَا هُوَ بِقَوْلِ شَيْطَانٍ رَّجِيمٍ",
+      "english_translation": "And the Qur'an is not the word of a devil, expelled [from the heavens].",
+      "burmese_translation": "ထို့ပြင် ဤ (ကုရ်အာန်) သည် အနှင်ထုတ်ခြင်း ခံရသော မိစ္ဆာစိတ္တဇ မကောင်းဆိုးဝါး၏ စကား မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝါ မာ ဟုဝ ဗိကောဝ်လိ ရှိုင်းသွာနိရ် ရဂျီးမ်"
+    },
+    {
+      "verse_number": 26,
+      "arabic": "فَأَيْنَ تَذْهَبُونَ",
+      "english_translation": "So where are you going?",
+      "burmese_translation": "သို့ဖြစ်ပါက သင်တို့သည် မည်သည့်ဘက်သို့ ဦးလှည့်သွားနေကြသနည်း။",
+      "burmese_transliteration": "ဖအိုင်းန သဇ်ဟဗူးန်"
+    },
+    {
+      "verse_number": 27,
+      "arabic": "إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَالَمِينَ",
+      "english_translation": "It is not except a reminder to the worlds",
+      "burmese_translation": "ဤ (ကုရ်အာန်) သည် လောကခပ်သိမ်းတို့အတွက် ဆုံးမသတိပေးချက် မဟုတ်ဘဲ အခြားမဟုတ်ပေ။",
+      "burmese_transliteration": "အိန်း ဟုဝ အိလ်လာ ဇိကြ်ရုလ် လိလ်အာလမီးန်"
+    },
+    {
+      "verse_number": 28,
+      "arabic": "لِمَن شَاءَ مِنكُمْ أَن يَسْتَقِيمَ",
+      "english_translation": "For whoever leaves to take a straight course.",
+      "burmese_translation": "သင်တို့အနက်မှ ဖြောင့်မတ်သော လမ်းစဉ်ပေါ်၌ တည့်တည့်မတ်မတ် လျှောက်လှမ်းလိုသူအတွက် ဖြစ်၏။",
+      "burmese_transliteration": "လိမန် ရှားအ မိန်းကုမ် အန်း ယသ်သကီးမ်"
+    },
+    {
+      "verse_number": 29,
+      "arabic": "وَمَا تَشَاءُونَ إِلَّا أَن يَشَاءَ اللَّهُ رَبُّ الْعَالَمِينَ",
+      "english_translation": "And you do not will except that Allah wills - Lord of the worlds.",
+      "burmese_translation": "သို့သော် လောကခပ်သိမ်းတို့ကို ဖန်ဆင်းမွေးမြူတော်မူသော အလ္လာဟ်အရှင်မြတ်က အလိုရှိတော်မမူသမျှ သင်တို့သည် မည်သည့်အရာကိုမျှ အလိုရှိနိုင်ကြမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝါ မာ သရှားအူးန အိလ်လာ အန်း ယရှားအလ္လာဟု ရဗ်ဗုလ် အာလမီးန်"
+    }
+  ]
+}

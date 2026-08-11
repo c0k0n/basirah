@@ -1,0 +1,173 @@
+{
+  "surah_metadata": {
+    "surah_number": 92,
+    "name_arabic": "الليل",
+    "name_transliteration": "Al-Layl",
+    "name_burmese_title": "စူရဟ် အလ်-လိုင်းလ် (ညဉ့်ယံ)",
+    "meaning_of_title": {
+      "english": "The Night",
+      "burmese": "ညဉ့်ယံ"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+    },
+    "total_verses": 21,
+    "summary_burmese": "ဤစူရဟ်တွင် အလ္လာဟ်အရှင်မြတ်သည် ညဉ့်ယံ၊ နေ့အလင်းရောင်နှင့် အထီးအမ တို့ကို ကျိန်ဆို၍ လူသားတို့၏ ကြိုးပမ်းအားထုတ်မှုများနှင့် လျှောက်လှမ်းရာ လမ်းစဉ်များသည် ကွဲပြားခြားနားကြောင်း မီးမောင်းထိုးပြထားပါသည်။ မိမိဥစ္စာဓနကို လှူဒါန်း၍ အရှင်မြတ်ကို ကြောက်ရွံ့ပြီး ကောင်းမှုကို အမှန်ဟု လက်ခံသူအတွက် သုခချမ်းသာလမ်းစဉ်ကို လွယ်ကူစေမည်ဖြစ်ကြောင်းနှင့် မိမိဥစ္စာကို တွန့်တို၍ မာနထောင်လွှားကာ ကောင်းမှုကို ငြင်းပယ်သူအတွက် ဆင်းရဲဒုက္ခလမ်းစဉ်သို့ ရောက်ရှိမည်ဖြစ်ကြောင်း သတိပေးထားပါသည်။ နိဂုံးချုပ်၌ အရှင်မြတ်၏ နှစ်သက်လိုလားမှုကိုသာ မျှော်ကိုး၍ လှူဒါန်းသူသည် မကြာမီ လုံးဝ ကျေနပ်နှစ်သိမ့်မှု ရရှိမည်ဖြစ်ကြောင်း ဖော်ပြထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "وَاللَّيْلِ إِذَا يَغْشَىٰ",
+      "english_translation": "By the night when it covers,",
+      "burmese_translation": "ဖုံးလွှမ်းသွားသော ညဉ့်ယံကို ကျိန်ဆိုတော်မူ၏၊",
+      "burmese_transliteration": "ဝါလ် လိုင်းလိ အိဇာ ယဂ်ရှာ"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "وَالنَّهَارِ إِذَا تَجَلَّىٰ",
+      "english_translation": "And [by] the day when it appears,",
+      "burmese_translation": "ထွန်းလင်းတောက်ပလာသော နေ့အလင်းရောင်ကို ကျိန်ဆိုတော်မူ၏၊",
+      "burmese_transliteration": "ဝါန် နဟာရိ အိဇာ သဂျလ်လာ"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "وَمَا خَلَقَ الذَّكَرَ وَالْأُنثَىٰ",
+      "english_translation": "And [by] He who created the male and the female,",
+      "burmese_translation": "ထို့ပြင် အထီးနှင့် အမကို ဖန်ဆင်းတော်မူသော အရှင်ကို ကျိန်ဆိုတော်မူ၏၊",
+      "burmese_transliteration": "ဝါ မာ ခါလာကက် ဇာကာရာ ဝါလ် အုန်းသာ"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
+      "english_translation": "Indeed, your efforts are diverse.",
+      "burmese_translation": "ဧကန်စင်စစ် သင်တို့၏ ကြိုးပမ်းအားထုတ်မှုများသည် (ရည်ရွယ်ချက်နှင့် အကျိုးဆက်အားဖြင့်) ကွဲပြားခြားနားကြပေ၏။",
+      "burmese_transliteration": "အင်းနာ စအ်ယာကုမ် လာရှသ်သာ"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "فَأَمَّا مَنْ أَعْطَىٰ وَاتَّقَىٰ",
+      "english_translation": "As for he who gives and fears Allah,",
+      "burmese_translation": "သို့ဖြစ်၍ မိမိဥစ္စာဓနကို လှူဒါန်းစွန့်လွှတ်၍ အလ္လာဟ်အရှင်မြတ်ကို ကြောက်ရွံ့ရိုသေသူ၊",
+      "burmese_transliteration": "ဖာ အမ်မာ မန် အာအ်သွာ ဝါသ်သကာ"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "وَصَدَّقَ بِالْحُسْنَىٰ",
+      "english_translation": "And believes in the best [reward],",
+      "burmese_translation": "ထို့ပြင် အကောင်းမြတ်ဆုံးသော (သောင်ဟီးဒ် တရားနှင့် ဆုလာဘ်) ကို မှန်ကန်ကြောင်း ယုံကြည်လက်ခံသူသည်မူကား၊",
+      "burmese_transliteration": "ဝါ ဆဒ်ဒါကာ ဗိလ် ဟုစနာ"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "فَسَنُيَسِّرُهُ لِلْيُسْرَىٰ",
+      "english_translation": "We will ease him toward ease.",
+      "burmese_translation": "ငါအရှင်မြတ်သည် ထိုသူအား ငြိမ်းချမ်းသာယာသော (သုခ) လမ်းစဉ်သို့ လျှောက်လှမ်းရန် လွယ်ကူစေတော်မူအံ့။",
+      "burmese_transliteration": "ဖာ စနုယက်သိရုဟု လိလ် ယုစရာ"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "وَأَمَّا مَن بَخِلَ وَاسْتَغْنَىٰ",
+      "english_translation": "But as for he who withheld and considered himself free of need,",
+      "burmese_translation": "သို့သော် တွန့်တိုကုတ်ကပ်၍ မိမိကိုယ်ကို မလိုအပ်ဟု မာနထောင်လွှားသူ၊",
+      "burmese_transliteration": "ဝါ အမ်မာ မင်း ဗာခိလာ ဝါစသဂ်နာ"
+    },
+    {
+      "verse_number": 9,
+      "arabic": "وَكَذَّبَ بِالْحُسْنَىٰ",
+      "english_translation": "And denied the best [reward],",
+      "burmese_translation": "ထို့ပြင် အကောင်းမြတ်ဆုံးသော (အမှန်တရား) ကို မဟုတ်မှန်ဟု ငြင်းပယ်သူသည်မူကား၊",
+      "burmese_transliteration": "ဝါ ကက်ဇာဗာ ဗိလ် ဟုစနာ"
+    },
+    {
+      "verse_number": 10,
+      "arabic": "فَسَنُيَسِّرُهُ لِلْعُسْرَىٰ",
+      "english_translation": "We will ease him toward difficulty.",
+      "burmese_translation": "ငါအရှင်မြတ်သည် ထိုသူအား ဆင်းရဲဒုက္ခ လမ်းစဉ်သို့ ရောက်ရှိရန် လွယ်ကူစေတော်မူအံ့။",
+      "burmese_transliteration": "ဖာ စနုယက်သိရုဟု လိလ် အုစရာ"
+    },
+    {
+      "verse_number": 11,
+      "arabic": "وَمَا يُغْنِي عَنْهُ مَالُهُ إِذَا تَرَدَّىٰ",
+      "english_translation": "And his wealth will not avail him when he falls.",
+      "burmese_translation": "ထိုသူသည် (ငရဲတွင်းသို့) ကျဆင်းပျက်စီးသွားသောအခါ မိမိ၏ ဥစ္စာဓနသည် ထိုသူ့အတွက် မည်သို့မျှ အကျိုးပြုနိုင်မည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝါ မာ ယုဂ်နီ အန်းဟု မာလူဟူး အိဇာ သရဒ်ဒါ"
+    },
+    {
+      "verse_number": 12,
+      "arabic": "إِنَّ عَلَيْنَا لَلْهُدَىٰ",
+      "english_translation": "Indeed, upon Us is guidance.",
+      "burmese_translation": "ဧကန်စင်စစ် မှန်ကန်သော တရားလမ်းစဉ်ကို ညွှန်ပြရန်မှာ ငါအရှင်မြတ်၏ တာဝန်သာလျှင် ဖြစ်၏။",
+      "burmese_transliteration": "အင်းနာ အာလိုင်းနာ လာလ် ဟုဒါ"
+    },
+    {
+      "verse_number": 13,
+      "arabic": "وَإِنَّ لَنَا لَلْآخِرَةَ وَالْأُولَىٰ",
+      "english_translation": "And indeed, to Us belongs the Hereafter and the first [life].",
+      "burmese_translation": "ထို့ပြင် ဧကန်စင်စစ် နောင်တမလွန်ဘဝနှင့် ပထမဘဝ (လောကီဘဝ) အပေါင်းတို့သည် ငါအရှင်မြတ် ပိုင်ဆိုင်တော်မူသော အရာများသာ ဖြစ်ကြ၏။",
+      "burmese_transliteration": "ဝါ အင်းနာ လာနာ လာလ် အာခိရာသာ ဝါလ် အူးလာ"
+    },
+    {
+      "verse_number": 14,
+      "arabic": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ",
+      "english_translation": "So I have warned you of a Fire which is blazing.",
+      "burmese_translation": "သို့ဖြစ်၍ ငါအရှင်မြတ်သည် သင်တို့အား ရဲရဲတောက် လောင်ကျွမ်းနေသော ငရဲမီးနှင့် ပတ်သက်၍ သတိပေး နှိုးဆော်တော်မူခဲ့ပြီး ဖြစ်၏။",
+      "burmese_transliteration": "ဖာ အန်းဇာရ်သုကုမ် နာရန် သလာဇ်ဇာ"
+    },
+    {
+      "verse_number": 15,
+      "arabic": "لَا يَصْلَاهَا إِلَّا الْأَشْقَى",
+      "english_translation": "None will burn therein except the most wretched One,",
+      "burmese_translation": "အယုတ်မာဆုံး၊ အကံဆိုးဆုံးသူမှအပ မည်သူမျှ ထိုငရဲမီးအတွင်းသို့ ဝင်ရောက် လောင်ကျွမ်းရမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "လာ ယဆ်လာဟာ အိလ်လာလ် အရှ်ကာ"
+    },
+    {
+      "verse_number": 16,
+      "arabic": "الَّذِي كَذَّبَ وَتَوَلَّىٰ",
+      "english_translation": "Who denied and turned away.",
+      "burmese_translation": "ထိုသူသည် (အမှန်တရားကို) မဟုတ်မှန်ဟု ငြင်းပယ်ခဲ့၍ (လမ်းမှန်မှ) ကျောခိုင်း လှည့်ထွက်ခဲ့သူ ဖြစ်၏။",
+      "burmese_transliteration": "အလ္လာဇီး ကက်ဇာဗာ ဝါ သဝါလ်လာ"
+    },
+    {
+      "verse_number": 17,
+      "arabic": "وَسَيُجَنَّبُهَا الْأَتْقَى",
+      "english_translation": "But the righteous one will be spared it -",
+      "burmese_translation": "သို့ရာတွင် အရှင်မြတ်ကို အလွန်တရာ ကြောက်ရွံ့ရိုသေသူသည်ကား ထိုငရဲမီးမှ ကင်းဝေးစေခြင်း ခံရအံ့။",
+      "burmese_transliteration": "ဝါ စယုဂျန်နာဗုဟာလ် အသ်ကာ"
+    },
+    {
+      "verse_number": 18,
+      "arabic": "الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّىٰ",
+      "english_translation": "[He] who gives [from] his wealth to purify himself,",
+      "burmese_translation": "ထိုသူသည် မိမိ၏ စိတ်နှလုံးကို သန့်စင်စေရန်အတွက် မိမိဥစ္စာဓနကို လှူဒါန်းစွန့်လွှတ်သူ ဖြစ်၏။",
+      "burmese_transliteration": "အလ္လာဇီး ယုအ်သီး မာလာဟု ယသာဇက်ကာ"
+    },
+    {
+      "verse_number": 19,
+      "arabic": "وَمَا لِأَحَدٍ عِندَهُ مِن نِّعْمَةٍ تُجْزَىٰ",
+      "english_translation": "And not for any favor owed to him to be compensated,",
+      "burmese_translation": "ထို့ပြင် ထိုသူ့ထံ၌ မည်သူတစ်ဦးတစ်ယောက်၏ ကျေးဇူးတုံ့ပြန်ရန် တာဝန် ရှိနေ၍လည်း မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝါ မာ လိအာဟာဒင်း အိန်းဒာဟု မင်း နိအ်မသင်း သုဂျ်ဇာ"
+    },
+    {
+      "verse_number": 20,
+      "arabic": "إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَىٰ",
+      "english_translation": "But only seeking the countenance of his Lord, the Most High.",
+      "burmese_translation": "မြင့်မြတ်လှစွာသော မိမိ၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ နှစ်သက်လိုလားတော်မူမှုကို မျှော်ကိုး၍သာ (လှူဒါန်းခြင်း ဖြစ်၏)။",
+      "burmese_transliteration": "အိလ်လဗ် သိဂါအာ ဝဂျ်ဟိ ရဗ်ဗိဟိလ် အာအ်လာ"
+    },
+    {
+      "verse_number": 21,
+      "arabic": "وَلَسَوْفَ يَرْضَىٰ",
+      "english_translation": "And he is going to be satisfied.",
+      "burmese_translation": "ထို့ပြင် မကြာမီ ထိုသူသည် (အရှင်မြတ် ချီးမြှင့်မည့် အကျိုးတုံ့ပြန်မှုကြောင့်) လုံးဝ ကျေနပ်နှစ်သိမ့်မှု ရရှိပေသတည်း။",
+      "burmese_transliteration": "ဝါ လာသောဝ်ဖာ ယရ်ဿာ"
+    }
+  ]
+}
