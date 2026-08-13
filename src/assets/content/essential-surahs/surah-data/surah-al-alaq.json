@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 1,
     "total_verses": 19,
     "summary_burmese": "ဤစူရဟ်သည် တမန်တော်မုဟမ္မဒ် (ဆွ) ထံ ပထမဆုံး ကျရောက်ခဲ့သော ဝဟ်ယီ (ဗျာဒိတ်တော်) ၏ အစဖြစ်သည့် အာယတ်တော် ၅ ပုဒ် ပါဝင်သော စူရဟ်ဖြစ်ပါသည်။ လူသား၏ ဖန်ဆင်းခံရမှု၊ စာပေသင်ကြားမှုနှင့် အသိပညာ၏ အရေးပါပုံကို စတင်ဖော်ပြထားပြီး၊ နောက်ပိုင်း အာယတ်တော်များတွင် မိမိကိုယ်ကို ဖူလုံလှပြီဟု ထင်မှတ်ကာ မာန်မာနထက်သန်ပြီး အမှန်တရားကို တားဆီးသူ (အဗူဂျာဟိလ်) ၏ လမ်းမှားရောက်မှုကို သတိပေးစွပ်စွဲထားပါသည်။ စူရဟ်၏ နောက်ဆုံးအာယတ်တွင် အလ္လာဟ်အရှင်မြတ်အား စူဂျူးဒ် (ဦးခေါင်းမြေထိ ဝတ်ပြုခြင်း) ပြု၍ နီးကပ်စွာ တည်ရှိရန် မိန့်မှာထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,133 +25,133 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
-      "english_translation": "Read in the name of your Lord who created -",
+      "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+      "english_translation": "Recite in the name of your Lord who created",
       "burmese_translation": "အရာခပ်သိမ်းကို ဖန်ဆင်းတော်မူသော အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ နာမတော်ဖြင့် ရွတ်ဖတ်ပါလေ။",
       "burmese_transliteration": "အိကြ်ရအ် ဗိစမိ ရဗ်ဗိကားလ် လာဇီး ခါလာက်"
     },
     {
       "verse_number": 2,
-      "arabic": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
-      "english_translation": "Created man from a clinging clot.",
+      "arabic": "خَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ",
+      "english_translation": "Created man from a clinging substance.",
       "burmese_translation": "ထိုအရှင်သည် လူသားအား ကပ်တွယ်နေသော သုတ်သွေးခဲမှ ဖန်ဆင်းတော်မူခဲ့၏။",
       "burmese_transliteration": "ခါလာကလ် အင်းစာနာ မင်း အာလခ်"
     },
     {
       "verse_number": 3,
-      "arabic": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ",
-      "english_translation": "Read, and your Lord is the Most Generous -",
+      "arabic": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
+      "english_translation": "Recite, and your Lord is the most Generous -",
       "burmese_translation": "ရွတ်ဖတ်ပါလေ၊ အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်သည် အလွန်တရာ ရက်ရောသဒ္ဓါ တန်ခိုးကြီးမြတ်တော်မူသော အရှင်ဖြစ်၏။",
       "burmese_transliteration": "အိကြ်ရအ် ဝါ ရဗ်ဗုကားလ် အက္ကရမ်"
     },
     {
       "verse_number": 4,
-      "arabic": "الَّذِي عَلَّمَ بِالْقَلَمِ",
-      "english_translation": "Who taught by the pen -",
+      "arabic": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+      "english_translation": "Who taught by the pen",
       "burmese_translation": "ထိုအရှင်သည် ကလောင်တံဖြင့် (စာပေအသိပညာကို) သင်ကြားပေးတော်မူခဲ့၏။",
       "burmese_transliteration": "အလ္လာဇီး အာလ္လာမော ဗိလ်ကာလာမ်"
     },
     {
       "verse_number": 5,
-      "arabic": "عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ",
+      "arabic": "عَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
       "english_translation": "Taught man that which he knew not.",
       "burmese_translation": "လူသားအား သူ မသိသေးသော အရာများကို သင်ကြားပေးတော်မူခဲ့၏။",
       "burmese_transliteration": "အာလ္လာမလ် အင်းစာနာ မာ လမ် ယအ်လမ်"
     },
     {
       "verse_number": 6,
-      "arabic": "كَلَّا إِنَّ الْإِنسَانَ لَيَطْغَىٰ",
+      "arabic": "كَلَّآ إِنَّ ٱلْإِنسَـٰنَ لَيَطْغَىٰٓ",
       "english_translation": "No! [But] indeed, man transgresses",
       "burmese_translation": "အမှန်စင်စစ် လူသားသည် စည်းကမ်းဖောက်ဖျက်၍ သောင်းကျန်းကြမ်းကြုတ်တတ်၏။",
       "burmese_transliteration": "ကလ်လာ အင်းနလ် အင်းစာနာ လာယတ်ဂ်ဟာ"
     },
     {
       "verse_number": 7,
-      "arabic": "أَن رَّآهُ اسْتَغْنَىٰ",
+      "arabic": "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ",
       "english_translation": "Because he sees himself self-sufficient.",
       "burmese_translation": "အကြောင်းမူကား မိမိကိုယ်ကို ဖူလုံကြွယ်ဝပြီဟု ထင်မှတ်မိသောကြောင့်ဖြစ်၏။",
       "burmese_transliteration": "အန်း ရအာဟု စသက်ဂ်နာ"
     },
     {
       "verse_number": 8,
-      "arabic": "إِنَّ إِلَىٰ رَبِّكَ الرُّجْعَىٰ",
+      "arabic": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ",
       "english_translation": "Indeed, to your Lord is the return.",
       "burmese_translation": "ဧကန်မလွဲ အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်ထံတော်သို့သာ ပြန်လည်ရောက်ရှိကြရမည် ဖြစ်ပေ၏။",
       "burmese_transliteration": "အင်းနာ အိလာ ရဗ်ဗိကား ရုဂျ်အာ"
     },
     {
       "verse_number": 9,
-      "arabic": "أَرَأَيْتَ الَّذِي يَنْهَىٰ",
+      "arabic": "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ",
       "english_translation": "Have you seen the one who forbids",
       "burmese_translation": "(အို တမန်တော်) တားဆီးပိတ်ပင်သောသူကို အသင် မြင်တွေ့ပါသလော။",
       "burmese_transliteration": "အာ ရအိုင်သလ် လာဇီး ယန်းဟာ"
     },
     {
       "verse_number": 10,
-      "arabic": "عَبْدًا إِذَا صَلَّىٰ",
+      "arabic": "عَبْدًا إِذَا صَلَّىٰٓ",
       "english_translation": "A servant when he prays?",
       "burmese_translation": "ကျွန်တစ်ဦး (ကျေးဇူးတော်ရှင်၏ တမန်တော်) ဆလားသ် ဝတ်ပြုဆုတောင်းသည့်အခါ၌ (တားဆီးသူကို မြင်ပါသလော)။",
       "burmese_transliteration": "အာဗ်ဒန်း အိဇာ ဆောလ္လာ"
     },
     {
       "verse_number": 11,
-      "arabic": "أَرَأَيْتَ إِن كَانَ عَلَى الْهُدَىٰ",
+      "arabic": "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ",
       "english_translation": "Have you seen if he is upon guidance",
       "burmese_translation": "စဉ်းစားကြည့်ပါ၊ ထို (ဝတ်ပြုသူ) တမန်တော်သည် တရားလမ်းမှန်ပေါ်၌ ရှိနေပါလျှင်၊",
       "burmese_transliteration": "အာ ရအိုင်သာ အင်း ကာနာ အာလောလ် ဟုဒါ"
     },
     {
       "verse_number": 12,
-      "arabic": "أَوْ أَمَرَ بِالتَّقْوَىٰ",
-      "english_translation": "Or enjoining righteousness?",
+      "arabic": "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ",
+      "english_translation": "Or enjoins righteousness?",
       "burmese_translation": "သို့မဟုတ် သူသည် ပြစ်မှုဒုစရိုက်မှ ရှောင်ကြဉ်ရန် ဆုံးမညွှန်ပြနေပါလျှင် (မည်သို့ရှိမည်နည်း)။",
       "burmese_transliteration": "အော် အာမော ရာ ဗိသ်သက်ခ်ဝါ"
     },
     {
       "verse_number": 13,
-      "arabic": "أَرَأَيْتَ إِن كَذَّبَ وَتَوَلَّىٰ",
+      "arabic": "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
       "english_translation": "Have you seen if he denies and turns away -",
       "burmese_translation": "စဉ်းစားကြည့်ပါ၊ ထို (တားဆီးသူ) သည် သစ္စာတရားကို ငြင်းပယ်၍ ကျောခိုင်းလှည့်ထွက်သွားပါလျှင်၊",
       "burmese_transliteration": "အာ ရအိုင်သာ အင်း ကက်ဇာဗာ ဝါ သဝါလ္လာ"
     },
     {
       "verse_number": 14,
-      "arabic": "أَلَمْ يَعْلَم بِأَنَّ اللَّهَ يَرَىٰ",
+      "arabic": "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
       "english_translation": "Does he not know that Allah sees?",
       "burmese_translation": "အလ္လာဟ်အရှင်မြတ်သည် (သူပြုသမျှကို) ကြည့်ရှုမြင်ပြင်တော်မူနေသည်ကို ထိုသူ မသိလေသလော။",
       "burmese_transliteration": "အာလမ် ယအ်လမ် ဗိအန်းနလ် လ္လာဟာ ယရာ"
     },
     {
       "verse_number": 15,
-      "arabic": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًا بِالنَّاصِيَةِ",
-      "english_translation": "No! If he does not desist, We will surely drag him by the forelock -",
+      "arabic": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ",
+      "english_translation": "No! If he does not desist, We will surely drag him by the forelock",
       "burmese_translation": "မပြုအပ်ပေ၊ အကယ်၍ ထိုသူသည် (ဤမိုက်မဲမှုမှ) မရပ်တန့်ပါက ငါအရှင်မြတ်သည် သူ၏ ဦးစွန်းဆံပင်မှ ဆွဲကိုင်၍ ဆွဲငင်တော်မူမည်။",
       "burmese_transliteration": "ကလ်လာ လအင်း လမ် ယန်းသဟိ လာနက်စဖာအန်း ဗိန် နာဆိယာဟ်"
     },
     {
       "verse_number": 16,
-      "arabic": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
-      "english_translation": "A lying, sinful forelock.",
+      "arabic": "نَاصِيَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+      "english_translation": "A lying, sinning forelock.",
       "burmese_translation": "မုသားပြောဆိုသူ၊ ပြစ်မှုဒုစရိုက် ကျူးလွန်သူ၏ ဦးစွန်းဆံပင်မှ (ဆွဲငင်တော်မူမည်)။",
       "burmese_transliteration": "နာဆိယာသင်း ကာဇိဗသင်း ခါသိအာဟ်"
     },
     {
       "verse_number": 17,
-      "arabic": "فَلْيَدْعُ نَادِيَهُ",
+      "arabic": "فَلْيَدْعُ نَادِيَهُۥ",
       "english_translation": "Then let him call his associates;",
       "burmese_translation": "သို့ဖြစ်ရာ ထိုသူသည် မိမိ၏ အပေါင်းအသင်း ကူညီသူများကို ခေါ်ယူပါစေ။",
       "burmese_transliteration": "ဖလ်ယဒ်ဥု နာဒိယားဟ်"
     },
     {
       "verse_number": 18,
-      "arabic": "سَنَدْعُ الزَّبَانِيَةَ",
-      "english_translation": "We will call the angels of punishment.",
+      "arabic": "سَنَدْعُ ٱلزَّبَانِيَةَ",
+      "english_translation": "We will call the angels of Hell.",
       "burmese_translation": "ငါအရှင်မြတ်သည်လည်း (ငရဲထိန်း) အပါယ်ရဟန်းကင်းများကို ခေါ်ယူတော်မူအံ့။",
       "burmese_transliteration": "စာနဒ်ဥုဇ် ဇာဘာနိယားဟ်"
     },
     {
       "verse_number": 19,
-      "arabic": "كَلَّا لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِب ۩",
+      "arabic": "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩",
       "english_translation": "No! Do not obey him. But prostrate and draw near [to Allah].",
       "burmese_translation": "စူးစမ်းကြည့်ပါ၊ အသင်သည် ထိုသူ၏ စကားကို မနာခံပါနှင့်။ အလ္လာဟ်အရှင်မြတ်အား ဦးခေါင်းမြေထိ ဝတ်ပြုဆုတောင်း၍ နီးကပ်စွာ တည်ရှိပါလေ။",
       "burmese_transliteration": "ကလ်လာ လာ သုသိအ်ဟု ဝါစဂျုဒ် ဝါက်သရိဗ်"

@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 68,
     "total_verses": 26,
     "summary_burmese": "ဤစူရဟ်တွင် ကိယာမသ် တရားစီရင်ရာနေ့၏ ဖြစ်ပျက်ပုံကို နှိုင်းယှဉ်၍ သရုပ်ဖော်ထားပါသည်။ မကောင်းမှုပြုသူ ငရဲသားတို့၏ ဝေဒနာ ခံစားရပုံ၊ ပူပြင်းလှသော မီးနှိပ်စက်မှု၊ ခါးသီးလှသော အစားအစာများအကြောင်းနှင့် အခြားတစ်ဖက်တွင် ယုံကြည်သူ ဂျန္နသ်သုခဘုံသားတို့၏ ငြိမ်းချမ်းသာယာမှု၊ မြင့်မားသော စည်းစိမ်ချမ်းသာများကို ရှင်းလင်းစွာ ဖော်ပြထားသည်။ ထို့ပြင် အလ္လာဟ်အရှင်မြတ်၏ ဖန်ဆင်းကွပ်ကဲမှုကို သဲကန္တာရ ကုလားအုတ်၊ ကောင်းကင်ယံ၊ တောင်တန်းများနှင့် ကမ္ဘာမြေတို့ဖြင့် သာဓကပြ၍ သတိပေးထားပြီး၊ တမန်တော်မြတ်အား သာသနာကို ဆုံးမတိုက်တွန်းရန်သာ တာဝန်ရှိကြောင်းနှင့် အားလုံး၏ ပြန်လည်စစ်ဆေးရာမှာ အရှင်မြတ်ထံတော်၌သာ ဖြစ်ကြောင်း နိဂုံးချုပ်ထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,21 +25,21 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "هَلْ أَتَاكَ حَدِيثُ الْغَاشِيَةِ",
-      "english_translation": "Has there reached you the report of the Overwhelming Event?",
+      "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+      "english_translation": "Has there reached you the report of the Overwhelming [event]?",
       "burmese_translation": "(အို တမန်တော်) လွှမ်းမိုးဖုံးအုပ်လာမည့် (ကိယာမသ်နေ့ ဘေးဒဏ်ကြီး) ၏ သတင်းအကြောင်းအရာသည် အသင့်ထံ ရောက်ရှိခဲ့ပါသလော။",
       "burmese_transliteration": "ဟလ် အာသာကာ ဟာဒီးသုလ် ဂါရှိယားဟ်"
     },
     {
       "verse_number": 2,
-      "arabic": "وُجُوهٌ يَوْمَئِذٍ خَاشِعَةٌ",
+      "arabic": "وُجُوهٌ يَوْمَئِذٍ خَـٰشِعَةٌ",
       "english_translation": "[Some] faces, that Day, will be humbled,",
       "burmese_translation": "ထိုနေ့၌ အချို့သော မျက်နှာများသည် အရှက်တကွဲ ငြိမ်ဝပ်ဆင်းရဲလျက် ရှိကြအံ့။",
       "burmese_transliteration": "ဝုဂျူးဟုန် ယောင်မအိဇင်း ခါရှိအာဟ်"
     },
     {
       "verse_number": 3,
-      "arabic": "عَامِلَةٌ نَّاصِبَةٌ",
+      "arabic": "عَامِلَةٌ نَّاصِبَةٌ",
       "english_translation": "Working [hard] and exhausted.",
       "burmese_translation": "ပင်ပန်းကြီးစွာ အလုပ်လုပ်ခဲ့ကြသော်လည်း အချည်းနှီး ပင်ပန်းနွမ်းနယ်ခဲ့ကြရသူများ ဖြစ်အံ့။",
       "burmese_transliteration": "အာမိလာသုန်း နာဆိဗားဟ်"
@@ -46,55 +47,55 @@
     {
       "verse_number": 4,
       "arabic": "تَصْلَىٰ نَارًا حَامِيَةً",
-      "english_translation": "They will burn in a intensely hot Fire.",
+      "english_translation": "They will [enter to] burn in an intensely hot Fire.",
       "burmese_translation": "သူတို့သည် အလွန်တရာ ပူပြင်းလှသော မီးတောက်အတွင်း၌ လောင်ကျွမ်းကြရအံ့။",
       "burmese_transliteration": "သဆ်လာ နာရန် ဟာမိယားဟ်"
     },
     {
       "verse_number": 5,
-      "arabic": "تُسْقَىٰ مِنْ عَيْنٍ آنِيَةٍ",
+      "arabic": "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ",
       "english_translation": "They will be given drink from a boiling spring.",
       "burmese_translation": "သူတို့အား အလွန် ပူပွက်နေသော စမ်းရေတွင်းမှ သောက်ရေ တိုက်ကမ်းခြင်း ခံရအံ့။",
       "burmese_transliteration": "သုစကာ မင်း အိုင်နင်း အာနိယားဟ်"
     },
     {
       "verse_number": 6,
-      "arabic": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
-      "english_translation": "For them there will be no food except from a thorny plant,",
+      "arabic": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
+      "english_translation": "For them there will be no food except from a poisonous, thorny plant",
       "burmese_translation": "သူတို့အတွက် ဆူးရှိသော သစ်ပင် ခြောက်သွေ့အပင် (ဿရီးအ်) မှအပ အခြား မည်သည့် အာဟာရမျှ ရှိမည် မဟုတ်ပေ။",
       "burmese_transliteration": "လိုက်စာ လာဟုမ် သအားမုန်း အိလ်လာ မင်း ဿရီးအ်"
     },
     {
       "verse_number": 7,
-      "arabic": "لَّا يُسْمِنُ وَلَا يُغْنِي مِن جُوعٍ",
+      "arabic": "لَّا يُسْمِنُ وَلَا يُغْنِى مِن جُوعٍ",
       "english_translation": "Which neither nourishes nor avails against hunger.",
       "burmese_translation": "ယင်းသည် ခန္ဓာကိုယ်ကိုလည်း ဝဖြိုးစေမည် မဟုတ်သလို၊ ငတ်မွတ်ခေါင်းပါးမှုကိုလည်း ပြေပျောက်စေမည် မဟုတ်ပေ။",
       "burmese_transliteration": "လာ ယုစမိနု ဝါ လာ ယုဂ်နီး မင်း ဂျူးအ်"
     },
     {
       "verse_number": 8,
-      "arabic": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
-      "english_translation": "[Other] faces, that Day, will show pleasure,",
+      "arabic": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
+      "english_translation": "[Other] faces, that Day, will show pleasure.",
       "burmese_translation": "ထိုနေ့၌ အချို့သော မျက်နှာများသည်မူကား ပျော်ရွှင်ကြည်နူး ချမ်းမြေ့လျက် ရှိကြအံ့။",
       "burmese_transliteration": "ဝုဂျူးဟုန် ယောင်မအိဇင်း နာအိမားဟ်"
     },
     {
       "verse_number": 9,
-      "arabic": "لِّسَعْيِهَا رَاضِيَةٌ",
-      "english_translation": "With their effort satisfied,",
+      "arabic": "لِّسَعْيِهَا رَاضِيَةٌ",
+      "english_translation": "With their effort [they are] satisfied",
       "burmese_translation": "မိမိတို့၏ (ဘဝ၌) ကြိုးပမ်းအားထုတ်ခဲ့မှုများအတွက် ကျေနပ်အားရလျက် ရှိကြအံ့။",
       "burmese_transliteration": "လိစာအ်ယိဟာ ရာဒိယားဟ်"
     },
     {
       "verse_number": 10,
-      "arabic": "فِي جَنَّةٍ عَالِيَةٍ",
+      "arabic": "فِى جَنَّةٍ عَالِيَةٍ",
       "english_translation": "In an elevated garden,",
       "burmese_translation": "မြင့်မြတ်လှသော ဂျန္နသ် သုခဘုံ၌ စံပယ်ကြရအံ့။",
       "burmese_transliteration": "ဖီး ဂျန်းနာသင်း အာလိယားဟ်"
     },
     {
       "verse_number": 11,
-      "arabic": "لَّا تَسْمَعُ فِيهَا لَاغِيَةً",
+      "arabic": "لَّا تَسْمَعُ فِيهَا لَـٰغِيَةً",
       "english_translation": "Wherein they will hear no unsuitable speech.",
       "burmese_translation": "ထိုဘုံ၌ သူတို့သည် မည်သည့် အဓိပ္ပာယ်မရှိသော အဓိပ္ပာယ်မဲ့ စကားကိုမျှ ကြားရမည် မဟုတ်ပေ။",
       "burmese_transliteration": "လာ သစမအု ဖီးဟာ လာဂိယားဟ်"
@@ -108,98 +109,98 @@
     },
     {
       "verse_number": 13,
-      "arabic": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
-      "english_translation": "Within it are couches raised high,",
+      "arabic": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
+      "english_translation": "Within it are couches raised high",
       "burmese_translation": "ထိုဘုံ၌ မြင့်မားသော ညောင်စောင်း တင်ပလ္လင်များ ရှိအံ့။",
       "burmese_transliteration": "ဖီးဟာ စုရုရုန်း မရ်ဖူးအာဟ်"
     },
     {
       "verse_number": 14,
-      "arabic": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
-      "english_translation": "And cups put in place,",
+      "arabic": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
+      "english_translation": "And cups put in place",
       "burmese_translation": "အသင့်ပြင်ထားသော သောက်ဖလားခွက်များ ရှိအံ့။",
       "burmese_transliteration": "ဝါ အခ်ဝါဗုန်း မောဝ်ဿူးအာဟ်"
     },
     {
       "verse_number": 15,
       "arabic": "وَنَمَارِقُ مَصْفُوفَةٌ",
-      "english_translation": "And cushions set in rows,",
+      "english_translation": "And cushions lined up",
       "burmese_translation": "အတန်းလိုက် စီရီထားသော မှီအုံးများ ရှိအံ့။",
       "burmese_transliteration": "ဝါ နာမာရိကု မဆ်ဖူးဖားဟ်"
     },
     {
       "verse_number": 16,
-      "arabic": "وَزَرَابِيُّ مَبْثُوثَةٌ",
+      "arabic": "وَزَرَابِىُّ مَبْثُوثَةٌ",
       "english_translation": "And carpets spread around.",
       "burmese_translation": "ခင်းကျင်းထားသော ကော်ဇော ကော်ဇောနီများ ရှိအံ့။",
       "burmese_transliteration": "ဝါ ဇာရာဗိယျု မဗ်သူသ်သားဟ်"
     },
     {
       "verse_number": 17,
-      "arabic": "أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
+      "arabic": "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ",
       "english_translation": "Then do they not look at the camels - how they are created?",
       "burmese_translation": "သူတို့သည် ကုလားအုတ်များအား မည်သို့ မည်ပုံ ဖန်ဆင်းထားတော်မူသည်ကို ကြည့်ရှုစဉ်းစားခြင်း မပြုကြပါသလော။",
       "burmese_transliteration": "အာဖာ လာ ယန်းဇုရူးနာ အိလာလ် အိဗိလိ ကိုင်းဖာ ခူလိကသ်"
     },
     {
       "verse_number": 18,
-      "arabic": "وَإِلَى السَّمَاءِ كَيْفَ رُفِعَتْ",
+      "arabic": "وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ",
       "english_translation": "And at the sky - how it is raised?",
       "burmese_translation": "ထို့ပြင် ကောင်းကင်ယံကို မည်သို့ မြှင့်တင်ထားတော်မူသည်ကို လည်းကောင်း၊",
       "burmese_transliteration": "ဝါ အိလပ် စမာအိ ကိုင်းဖာ ရုဖိအသ်"
     },
     {
       "verse_number": 19,
-      "arabic": "وَإِلَى الْجِبَالِ كَيْفَ نُصِبَتْ",
+      "arabic": "وَإِلَى ٱلْجِبَالِ كَيْفَ نُصِبَتْ",
       "english_translation": "And at the mountains - how they are erected?",
       "burmese_translation": "ထို့ပြင် တောင်တန်းကြီးများကို မည်သို့ စိုက်ထူစိုက်ကားထားတော်မူသည်ကို လည်းကောင်း၊",
       "burmese_transliteration": "ဝါ အိလာလ် ဂျိဗာလိ ကိုင်းဖာ နုဆိဗသ်"
     },
     {
       "verse_number": 20,
-      "arabic": "وَإِلَى الْأَرْضِ كَيْفَ سُطِحَتْ",
+      "arabic": "وَإِلَى ٱلْأَرْضِ كَيْفَ سُطِحَتْ",
       "english_translation": "And at the earth - how it is spread out?",
       "burmese_translation": "ထို့ပြင် ကမ္ဘာမြေကြီးကို မည်သို့ ဖြန့်ခင်းပေးထားတော်မူသည်ကို လည်းကောင်း (ကြည့်ရှုစဉ်းစားခြင်း မပြုကြပါသလော)။",
       "burmese_transliteration": "ဝါ အိလာလ် အာရ်ဿိ ကိုင်းဖာ စုသိဟသ်"
     },
     {
       "verse_number": 21,
-      "arabic": "فَذَكِّرْ إِنَّمَا أَنتَ مُذَكِّرٌ",
-      "english_translation": "So remind, [O Muhammad]; you are only a reminder.",
+      "arabic": "فَذَكِّرْ إِنَّمَآ أَنتَ مُذَكِّرٌ",
+      "english_translation": "So remind, [O Muḥammad]; you are only a reminder.",
       "burmese_translation": "သို့ဖြစ်ပါ၍ (အို တမန်တော်) အသင်သည် ဆုံးမဩဝါဒ ပေးပါလော့။ ဧကန်စင်စစ် အသင်သည် ဆုံးမဩဝါဒ ပေးသူတစ်ဦးမျှသာ ဖြစ်၏။",
       "burmese_transliteration": "ဖာ ဇက်ကိရ် အင်းနာမာ အန်သာ မုဇက်ကိရ်"
     },
     {
       "verse_number": 22,
-      "arabic": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
+      "arabic": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
       "english_translation": "You are not over them a controller.",
       "burmese_translation": "အသင်သည် သူတို့အပေါ်၌ အာဏာလွှမ်းမိုး အနိုင်အထက် ပြုသူ မဟုတ်ပေ။",
       "burmese_transliteration": "လိုက်စာ အာလိုင်းဟိမ် ဗိမုဆွိုင်သိရ်"
     },
     {
       "verse_number": 23,
-      "arabic": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
-      "english_translation": "However, whoever turns away and disbelieves -",
+      "arabic": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
+      "english_translation": "However, he who turns away and disbelieves",
       "burmese_translation": "သို့ရာတွင် မည်သူမဆို ကျောခိုင်းလှည့်ထွက်၍ သစ္စာငြင်းပယ်ခဲ့ပါမူ၊",
       "burmese_transliteration": "အိလ်လာ မန် သဝါလာ ဝါ ကာဖာရ်"
     },
     {
       "verse_number": 24,
-      "arabic": "فَيُعَذِّبُهُ اللَّهُ الْعَذَابَ الْأَكْبَرَ",
+      "arabic": "فَيُعَذِّبُهُ ٱللَّهُ ٱلْعَذَابَ ٱلْأَكْبَرَ",
       "english_translation": "Then Allah will punish him with the greatest punishment.",
       "burmese_translation": "အလ္လာဟ်အရှင်မြတ်သည် ထိုသူအား ကြီးမားလှသော အပြစ်ဒဏ်ဖြင့် နှိပ်ကွပ်တော်မူမည် ဖြစ်၏။",
       "burmese_transliteration": "ဖာ ယုအာဇ်ဇိဗုဟုလ် လ္လာဟုလ် အာဇာဗလ် အခ်ဗာရ်"
     },
     {
       "verse_number": 25,
-      "arabic": "إِنَّ إِلَيْنَا إِيَابَهُمْ",
+      "arabic": "إِنَّ إِلَيْنَآ إِيَابَهُمْ",
       "english_translation": "Indeed, to Us is their return.",
       "burmese_translation": "ဧကန်စင်စစ် သူတို့ ပြန်လည်ရောက်ရှိရာသည် ငါအရှင်မြတ်ထံတော်သို့သာ ဖြစ်၏။",
       "burmese_transliteration": "အင်းနာ အိလိုင်းနာ အိယာဗာဟုမ်"
     },
     {
       "verse_number": 26,
-      "arabic": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
+      "arabic": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
       "english_translation": "Then indeed, upon Us is their account.",
       "burmese_translation": "ထို့ပြင် သူတို့၏ အကုသိုလ် ကောင်းမှုစာရင်းများကို စစ်ဆေးရန် တာဝန်သည်လည်း ငါအရှင်မြတ်၏ အပေါ်၌သာ ရှိပေသတည်း။",
       "burmese_transliteration": "သုမ်မာ အင်းနာ အာလိုင်းနာ ဟိစာဗာဟုမ်"

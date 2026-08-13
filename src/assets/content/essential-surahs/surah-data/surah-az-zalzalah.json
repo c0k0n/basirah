@@ -9,14 +9,15 @@
       "burmese": "မြေငလျင်ကြီး"
     },
     "revelation_place": {
-      "english": "Medinan",
+      "english": "Madinan",
       "burmese": "မဒီနဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မဒနီ)"
     },
+    "revelation_order": 93,
     "total_verses": 8,
     "summary_burmese": "ဤစူရဟ်သည် ကိယာမသ်နေ့တွင် ဖြစ်ပေါ်လာမည့် အလွန်ပြင်းထန်သော မြေငလျင်ကြီးနှင့် ကမ္ဘာမြေကြီးက မိမိအတွင်းရှိ အရာအားလုံးကို ထုတ်ဖော်ပြသမည့် အခြေအနေကို ဖော်ပြထားပါသည်။ ထိုနေ့တွင် လူသားအားလုံးသည် မိမိတို့၏ လုပ်ရပ်များကို မြင်တွေ့ရမည်ဖြစ်ပြီး၊ အဏုမြူမှုန်မျှသာရှိသော ကောင်းမှု သို့မဟုတ် မကောင်းမှုတစ်ခုပင် ဖြစ်စေ မည်သည့်အရာမျှ လျှို့ဝှက်ထားမည်မဟုတ်ဘဲ အပြည့်အဝ ထုတ်ဖော်ပြသခံရမည်ဖြစ်ကြောင်း သတိပေးထားသော စူရဟ်ဖြစ်ပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,57 +25,57 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا",
-      "english_translation": "When the earth is shaken with its final earthquake,",
+      "arabic": "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "english_translation": "When the earth is shaken with its [final] earthquake",
       "burmese_translation": "မြေကြီးသည် မိမိအတွက် သတ်မှတ်ထားသော အလွန်ပြင်းထန်သည့် မြေငလျင်ဖြင့် လှုပ်ခါခံရသောအခါ၊",
       "burmese_transliteration": "အိဇာ ဇုလ်ဇိလတိလ် အရ်ဒု ဇိလ်ဇာလဟာ"
     },
     {
       "verse_number": 2,
-      "arabic": "وَأَخْرَجَتِ الْأَرْضُ أَثْقَالَهَا",
-      "english_translation": "And the earth brings forth its burdens,",
+      "arabic": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+      "english_translation": "And the earth discharges its burdens",
       "burmese_translation": "မြေကြီးသည် မိမိအတွင်းရှိ ဝန်ထုပ်ဝန်ပိုးများ (သေဆုံးသူများနှင့် လျှို့ဝှက်ထားသမျှ) ကို ထုတ်ဖော်ပေးသောအခါ၊",
       "burmese_transliteration": "ဝါအခ်ရာဂျတိလ် အရ်ဒု အသ်ကာလဟာ"
     },
     {
       "verse_number": 3,
-      "arabic": "وَقَالَ الْإِنسَانُ مَا لَهَا",
-      "english_translation": "And mankind asks, 'What is happening to it?'",
+      "arabic": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
+      "english_translation": "And man says, \"What is [wrong] with it?\" -",
       "burmese_translation": "လူသားက 'ဤမြေကြီး၌ အဘယ်အရာ ဖြစ်ပျက်နေသနည်း' ဟု မေးမြန်းလိမ့်မည်။",
       "burmese_transliteration": "ဝါကာလလ် အင်စာနု မာလဟာ"
     },
     {
       "verse_number": 4,
-      "arabic": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
-      "english_translation": "On that Day it will tell all its news,",
+      "arabic": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+      "english_translation": "That Day, it will report its news",
       "burmese_translation": "ထိုနေ့တွင် မြေကြီးသည် မိမိ၏ သတင်းအချက်အလက်များအားလုံးကို ဖော်ပြပြောဆိုလိမ့်မည်။",
       "burmese_transliteration": "ယောမအိဇင် တုဟဒ်ဒိသု အခ်ဘာရဟာ"
     },
     {
       "verse_number": 5,
       "arabic": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
-      "english_translation": "Because your Lord will have inspired it.",
+      "english_translation": "Because your Lord has inspired [i.e., commanded] it.",
       "burmese_translation": "အကြောင်းမှာ သင်၏အရှင်မြတ်က ထိုမြေကြီးအား ထိုသို့ ပြောဆိုရန် အမိန့်ပေးတော်မူသောကြောင့် ဖြစ်သည်။",
       "burmese_transliteration": "ဗိအန်န ရဗ္ဗက အဝ်ဟာ လဟာ"
     },
     {
       "verse_number": 6,
-      "arabic": "يَوْمَئِذٍ يَصْدُرُ النَّاسُ أَشْتَاتًا لِّيُرَوْا أَعْمَالَهُمْ",
-      "english_translation": "On that Day people will depart in separate groups to be shown their deeds.",
+      "arabic": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
+      "english_translation": "That Day, the people will depart separated [into categories] to be shown [the result of] their deeds.",
       "burmese_translation": "ထိုနေ့တွင် လူသားများသည် မိမိတို့၏ လုပ်ရပ်များကို မြင်တွေ့စေရန် အုပ်စုအသီးသီး ခွဲ၍ ထွက်လာကြလိမ့်မည်။",
       "burmese_transliteration": "ယောမအိဇင် ယပ်စ်ဒုရုန် နာစု အရှ်တာတန် လီယူရဝ် အအ်မာလဟုမ်"
     },
     {
       "verse_number": 7,
-      "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ",
-      "english_translation": "So whoever does even an atom's weight of good will see it.",
+      "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+      "english_translation": "So whoever does an atom's weight of good will see it,",
       "burmese_translation": "သို့ဖြစ်၍ အဏုမြူမှုန်မျှ အလေးချိန်ရှိသော ကောင်းမှုတစ်ခုကို ပြုလုပ်သူသည် ထိုကောင်းမှုကို မလွဲမသွေ မြင်တွေ့ရလိမ့်မည်။",
       "burmese_transliteration": "ဖမန် ယအ်မလ် မိသ်ကာလ ဇရ်ရတင် ခိုင်ရန် ယရဟ်"
     },
     {
       "verse_number": 8,
-      "arabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ",
-      "english_translation": "And whoever does even an atom's weight of evil will see it.",
+      "arabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+      "english_translation": "And whoever does an atom's weight of evil will see it.",
       "burmese_translation": "ထို့အတူ အဏုမြူမှုန်မျှ အလေးချိန်ရှိသော မကောင်းမှုတစ်ခုကို ပြုလုပ်သူသည်လည်း ထိုမကောင်းမှုကို မလွဲမသွေ မြင်တွေ့ရလိမ့်မည်။",
       "burmese_transliteration": "ဝမန် ယအ်မလ် မိသ်ကာလ ဇရ်ရတင် ရှရ်ရန် ယရဟ်"
     }

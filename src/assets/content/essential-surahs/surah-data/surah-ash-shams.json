@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 26,
     "total_verses": 15,
     "summary_burmese": "ဤစူရဟ်သည် နေ၊ လ၊ နေ့၊ ည၊ ကောင်းကင်၊ ကမ္ဘာမြေနှင့် လူသား၏ ဝိညာဉ်အပါအဝင် အလ္လာဟ်အရှင်မြတ်၏ အံ့ဩဖွယ် ဖန်ဆင်းမှု သာဓက (၉) ခုကို ထပ်ခါတလွန် အဓိဋ္ဌာန်ပြု၍ စတင်ထားပါသည်။ ထို့နောက် မိမိ၏ စိတ်ဝိညာဉ်ကို သန့်စင်စုံလင်စေသောသူသည် အောင်မြင်မှု ရရှိမည်ဖြစ်ပြီး၊ ယင်းအား ပြစ်မှုဒုစရိုက်များဖြင့် ညစ်နူးစေသူသည် ပျက်စီးခြင်းသို့ ရောက်ရှိမည်ဖြစ်ကြောင်း အလေးပေး ဖော်ပြထား၏။ နိဂုံး၌ အလ္လာဟ်အရှင်မြတ်၏ သာဓကအဖြစ် စေလွှတ်သော ကုလားအုတ်မကို သတ်ဖြတ်ကာ မာနထောင်လွှားခဲ့သဖြင့် အပြီးသတ် ဖျက်ဆီးခြင်း ခံခဲ့ရသော 'သမူးဒ်' လူမျိုးတို့၏ သမိုင်းဝင် သင်ခန်းစာကို သတိပေးထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,105 +25,105 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "وَالشَّمْسِ وَضُحَاهَا",
-      "english_translation": "By the sun and its brightness,",
+      "arabic": "وَٱلشَّمْسِ وَضُحَىٰهَا",
+      "english_translation": "By the sun and its brightness",
       "burmese_translation": "နေမင်းနှင့် ယင်း၏ တောက်ပသော နံနက်ခင်း အလင်းရောင်ကို အဓိဋ္ဌာန်ပြုပါ၏။",
       "burmese_transliteration": "ဝရှ် ရှမ်သိ ဝါ ဒုဟာဟာ"
     },
     {
       "verse_number": 2,
-      "arabic": "وَالْقَمَرِ إِذَا تَلَاهَا",
-      "english_translation": "And [by] the moon when it follows it,",
+      "arabic": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
+      "english_translation": "And [by] the moon when it follows it",
       "burmese_translation": "ထို့ပြင် နေမင်း၏ နောက်သို့ ထွက်ပေါ် လိုက်ပါလာသော လမင်းကိုလည်းကောင်း၊",
       "burmese_transliteration": "ဝါလ် ကာမရိ အိဇား သလားဟာ"
     },
     {
       "verse_number": 3,
-      "arabic": "وَالنَّهَارِ إِذَا جَلَّاهَا",
-      "english_translation": "And [by] the day when it displays it,",
+      "arabic": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+      "english_translation": "And [by] the day when it displays it",
       "burmese_translation": "ထို့ပြင် ယင်း (နေမင်း/ကမ္ဘာမြေ) ကို ထင်းလင်း ပေါ်လွင်စေသော နေ့အခါကိုလည်းကောင်း၊",
       "burmese_transliteration": "ဝမ် နဟာရိ အိဇား ဂျဲလ်လားဟာ"
     },
     {
       "verse_number": 4,
-      "arabic": "وَاللَّيْلِ إِذَا يَغْشَاهَا",
-      "english_translation": "And [by] the night when it covers it,",
+      "arabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
+      "english_translation": "And [by] the night when it covers [i.e., conceals] it",
       "burmese_translation": "ထို့ပြင် ယင်းကို ဖုံးလွှမ်း မှောင်မိုက်သွားစေသော ညဉ့်အခါကိုလည်းကောင်း၊",
       "burmese_transliteration": "ဝဲလ် လိုင်းလိ အိဇား ယဂ်ရှားဟာ"
     },
     {
       "verse_number": 5,
-      "arabic": "وَالسَّمَاءِ وَمَا بَنَاهَا",
-      "english_translation": "And [by] the sky and He who constructed it,",
+      "arabic": "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا",
+      "english_translation": "And [by] the sky and He who constructed it",
       "burmese_translation": "ထို့ပြင် ကောင်းကင်ဘုံနှင့် ယင်းကို တည်ဆောက်တော်မူသော အရှင်ကိုလည်းကောင်း၊",
       "burmese_transliteration": "ဝသ် စမားအိ ဝါ မာ ဗနားဟာ"
     },
     {
       "verse_number": 6,
-      "arabic": "وَالْأَرْضِ وَمَا طَحَاهَا",
-      "english_translation": "And [by] the earth and He who spread it,",
+      "arabic": "وَٱلْأَرْضِ وَمَا طَحَىٰهَا",
+      "english_translation": "And [by] the earth and He who spread it",
       "burmese_translation": "ထို့ပြင် ကမ္ဘာမြေနှင့် ယင်းကို ဖြန့်ခင်းပေးတော်မူသော အရှင်ကိုလည်းကောင်း၊",
       "burmese_transliteration": "ဝါလ် အာရ်ဿိ ဝါ မာ သဟာဟာ"
     },
     {
       "verse_number": 7,
-      "arabic": "وَنَفْسٍ وَمَا سَوَّاهَا",
-      "english_translation": "And [by] the soul and He who proportioned it,",
+      "arabic": "وَنَفْسٍ وَمَا سَوَّىٰهَا",
+      "english_translation": "And [by] the soul and He who proportioned it",
       "burmese_translation": "ထို့ပြင် လူတယောက်၏ စိတ်ဝိညာဉ်နှင့် ယင်းကို အချိုးအစားကျ သန့်စင်အောင် ဖန်ဆင်းတော်မူသော အရှင်ကိုလည်းကောင်း (အဓိဋ္ဌာန်ပြုပါ၏)။",
       "burmese_transliteration": "ဝါ နဖ်စိန်း ဝါ မာ စဝွဲာဟာ"
     },
     {
       "verse_number": 8,
-      "arabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+      "arabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا",
       "english_translation": "And inspired it [with discernment of] its wickedness and its righteousness,",
       "burmese_translation": "ထို့နောက် ထိုအရှင်သည် ထိုစိတ်ဝိညာဉ်အား ယင်း၏ မကောင်းမှု ဒုစရိုက်လမ်းနှင့် ကောင်းမှု တရားလမ်းတို့ကို နားလည်သိမြင်စေတော်မူခဲ့၏။",
       "burmese_transliteration": "ဖအလ်ဟမဟာ ဖုဂျူးရားဟာ ဝါ သက္ဝါဟာ"
     },
     {
       "verse_number": 9,
-      "arabic": "قَدْ أَفْلَحَ مَن زَكَّاهَا",
+      "arabic": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
       "english_translation": "He has succeeded who purifies it,",
       "burmese_translation": "ဧကန်မလွဲ မိမိ၏ စိတ်ဝိညာဉ်ကို သန့်စင်အောင် ပြုလုပ်သောသူသည် အောင်မြင်မှု ရရှိပေပြီ။",
       "burmese_transliteration": "ကဒ် အဖ်လာဟာ မန် ဇက်ကားဟာ"
     },
     {
       "verse_number": 10,
-      "arabic": "وَقَدْ خَابَ مَن دَسَّاهَا",
+      "arabic": "وَقَدْ خَابَ مَن دَسَّىٰهَا",
       "english_translation": "And he has failed who instills it [with corruption].",
       "burmese_translation": "ထို့ပြင် မိမိ၏ စိတ်ဝိညာဉ်ကို မကောင်းမှုဖြင့် ဖုံးလွှမ်း ညစ်နူးစေသူသည် အရှုံးကြီး ရှုံးပေပြီ။",
       "burmese_transliteration": "ဝါ ကဒ် ခါဗ မန် ဒတ်စာဟာ"
     },
     {
       "verse_number": 11,
-      "arabic": "كَذَّبَتْ ثَمُودُ بِطَغْوَاهَا",
-      "english_translation": "Thamud denied [their prophet] by reason of their transgression,",
+      "arabic": "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ",
+      "english_translation": "Thamūd denied [their prophet] by reason of their transgression,",
       "burmese_translation": "'သမူးဒ်' လူမျိုးတို့သည် မိမိတို့၏ စည်းဖောက် မာနထောင်လွှားမှုကြောင့် (အမှန်တရားကို) ငြင်းပယ်ခဲ့ကြ၏။",
       "burmese_transliteration": "ကက်ဇ်ဇဗသ် သမူးဒု ဗိသဂ်ဝါဟာ"
     },
     {
       "verse_number": 12,
-      "arabic": "إِذِ انبَعَثَ أَشْقَاهَا",
+      "arabic": "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا",
       "english_translation": "When the most wretched of them was sent forth.",
       "burmese_translation": "ထိုသူတို့အနက် အဆိုးရွားဆုံး၊ အယုတ်မာဆုံးသူ ထကြွသောင်းကျန်းလာသောအခါ၌ ဖြစ်၏။",
       "burmese_transliteration": "အိဇိန်း ဗအာသ အရှ်ကားဟာ"
     },
     {
       "verse_number": 13,
-      "arabic": "فَقَالَ لَهُمْ رَسُولُ اللَّهِ نَاقَةَ اللَّهِ وَسُقْيَاهَا",
-      "english_translation": "And the messenger of Allah said to them, \"[Do not harm] the she-camel of Allah or her drink.\"",
+      "arabic": "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَـٰهَا",
+      "english_translation": "And the messenger of Allah [i.e., Ṣāliḥ] said to them, \"[Do not harm] the she-camel of Allah or [prevent her from] her drink.\"",
       "burmese_translation": "ထိုအခါ အလ္လာဟ်အရှင်မြတ်၏ ရစူးလ် တမန်တော် (ဆွာလိဟ်) က ၎င်းတို့အား \"အလ္လာဟ်အရှင်မြတ်၏ ကုလားအုတ်မကို ဘေးမပြုကြနှင့်၊ ယင်း၏ ရေသောက်ချိန်ကိုလည်း မတားဆီးကြနှင့်\" ဟု မိန့်ကြားခဲ့၏။",
       "burmese_transliteration": "ဖကားလာ လဟုမ် ရစူးလုလ္လာဟိ နားကာသလ္လာဟိ ဝါ စုက်ယာဟာ"
     },
     {
       "verse_number": 14,
-      "arabic": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنبِهِمْ فَسَوَّاهَا",
+      "arabic": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا",
       "english_translation": "But they denied him and hamstrung her. So their Lord brought down upon them destruction for their sin and made it equal [upon all of them].",
       "burmese_translation": "သို့သော် ၎င်းတို့သည် တမန်တော်အား မဟုတ်မှန်ဟု ငြင်းပယ်ကြပြီး ထိုကုလားအုတ်မကို သတ်ဖြတ်ခဲ့ကြ၏။ သို့ဖြစ်၍ ၎င်းတို့၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်သည် ၎င်းတို့၏ ပြစ်မှုကြောင့် ၎င်းတို့အပေါ် ပြာကျ ပျက်စီးခြင်း ပြစ်ဒဏ်ကို သက်ဆင်းစေခဲ့ပြီး တစ်ယောက်မကျန် ညီတူညီမျှ ချေမှုန်းတော်မူခဲ့၏။",
       "burmese_transliteration": "ဖကက်ဇ်ဇဗူးဟု ဖအာကာရူးဟာ ဖဒမ်ဒမာ အာလိုင်းဟိမ် ရဗ်ဗုဟုမ် ဗိဇမ်ဗိဟိမ် ဖစဝွဲာဟာ"
     },
     {
       "verse_number": 15,
-      "arabic": "وَلَا يَخَافُ عُقْبَاهَا",
+      "arabic": "وَلَا يَخَافُ عُقْبَـٰهَا",
       "english_translation": "And He does not fear the consequence thereof.",
       "burmese_translation": "ထို့ပြင် ထိုအရှင်သည် ယင်းသို့ ချေမှုန်း အပြစ်ပေးခြင်း၏ အကျိုးဆက်ကို စိုးရိမ်တော်မူသည် မဟုတ်ပေ။",
       "burmese_transliteration": "ဝါ လာ ယခါဖု အုက်ဗားဟာ"

@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 86,
     "total_verses": 36,
     "summary_burmese": "ဤစူရဟ်သည် အရောင်းအဝယ် ပြုလုပ်ရာ၌ သူတစ်ပါးထံမှ ဝယ်ယူလျှင် ပြည့်စုံစွာ ယူပြီး မိမိတို့ တိုင်းတာ ချိန်တွယ် ပေးရချိန်တွင် လျှော့ချ လိမ်လည်ကြသူများအား ပြင်းထန်စွာ သတိပေးခြင်းဖြင့် စတင်ထားပါသည်။ ထိုသို့ ပြုလုပ်သူတို့သည် ကိယာမသ် စိစစ်မေးမြန်းရာနေ့ကို သတိမရကြပါသလောဟု မေးခွန်းထုတ်ထား၏။ ဆက်လက်၍ မကောင်းမှုပြုသူတို့၏ မှတ်တမ်းသည် 'စိဂျ်ဂျီးန်' ၌ ရှိပြီး၊ ကောင်းမှုပြုသူတို့၏ မှတ်တမ်းသည် မြင့်မြတ်လှသော 'အိလ္လီးယီးန်' ၌ ရှိကြောင်း ဖော်ပြထားပါသည်။ သုခဘုံ၌ စည်းစိမ်ခံစားရမည့် သူတော်စင်တို့၏ ချမ်းသာသုခများနှင့် လောကီဘဝ၌ မုအ်မင်န်များအား လှောင်ပြောင်ခဲ့ကြသော သစ္စာငြင်းပယ်သူတို့သည် ကိယာမသ်နေ့တွင် တုံ့ပြန် အရေးယူခြင်း ခံရမည်ဖြစ်ကြောင်း မီးမောင်းထိုးပြထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,29 +25,29 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "وَيْلٌ لِّلْمُطَفِّفِينَ",
-      "english_translation": "Woe to those who give short measure,",
+      "arabic": "وَيْلٌ لِّلْمُطَفِّفِينَ",
+      "english_translation": "Woe to those who give less [than due],",
       "burmese_translation": "တိုင်းတာ ချိန်တွယ်ရာ၌ လျှော့ယူ လိမ်လည်သူတို့အတွက် သက်ဆင်းရာ ငရဲတွင်း (ပျက်စီးခြင်း) သည် ရှိပေ၏။",
       "burmese_transliteration": "ဝေလုလ် လိလ်မုသွဖ်ဖိဖီးန်"
     },
     {
       "verse_number": 2,
-      "arabic": "الَّذِينَ إِذَا اكْتَالُوا عَلَى النَّاسِ يَسْتَوْفُونَ",
+      "arabic": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ",
       "english_translation": "Who, when they take a measure from people, take in full.",
       "burmese_translation": "ထိုသူတို့သည် သူတစ်ပါးထံမှ ချိန်တွယ် တိုင်းတာယူကြသောအခါ ပြည့်စုံစွာ တောင်းခံယူကြ၏။",
       "burmese_transliteration": "အလ္လာဇီးနာ အိဇက် သာလူ အာလန် နားစိ ယစသော်ဖူးန်"
     },
     {
       "verse_number": 3,
-      "arabic": "وَإِذَا كَالُوهُمْ أَوْ وَزَنُوهُمْ يُخْسِرُونَ",
+      "arabic": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
       "english_translation": "But if they give by measure or by weight to them, they cause loss.",
       "burmese_translation": "သို့သော် သူတို့သည် သူတစ်ပါးအား တိုင်းတာ ပေးကြသောအခါ သို့မဟုတ် ချိန်တွယ် ပေးကြသောအခါ လျှော့ချ၍ လိမ်လည်ကြ၏။",
       "burmese_transliteration": "ဝါ အိဇာ ကားလူဟုမ် အောဝ် ဝါဇားနူးဟုမ် ယုခ်သိရူးန်"
     },
     {
       "verse_number": 4,
-      "arabic": "أَلَا يَظُنُّ أُولَٰئِكَ أَنَّهُم مَّبْعُوثُونَ",
-      "english_translation": "Do those not think that they will be resurrected",
+      "arabic": "أَلَا يَظُنُّ أُو۟لَـٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ",
+      "english_translation": "Do they not think that they will be resurrected",
       "burmese_translation": "ထိုသူတို့သည် မိမိတို့ ပြန်လည် ရှင်ပြန်ထမြောက်စေခြင်း ခံရမည်ကို စိတ်ထဲ၌ပင် မထင်မှတ်ကြပါသလော၊",
       "burmese_transliteration": "အာလား ယဇွုန်းနု အူးလားအိကာ အန်းနာဟုမ် မာဗ်အူးသူးန်"
     },
@@ -59,217 +60,217 @@
     },
     {
       "verse_number": 6,
-      "arabic": "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ",
+      "arabic": "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَـٰلَمِينَ",
       "english_translation": "The Day when mankind will stand before the Lord of the worlds?",
       "burmese_translation": "ထိုနေ့၌ လူသားတို့သည် စကြာဝဠာ အပေါင်းကို ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်မှောက်၌ ထရပ်ကြရပေအံ့။",
       "burmese_transliteration": "ယောဝ်မာ ယကူးမုန်း နားစု လိရဗ်ဗိလ် အာလာမီးန်"
     },
     {
       "verse_number": 7,
-      "arabic": "كَلَّا إِنَّ كِتَابَ الْفُجَّارِ لَفِي سِجِّينٍ",
+      "arabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ",
       "english_translation": "No! Indeed, the record of the wicked is in sijjeen.",
       "burmese_translation": "အမှန်စင်စစ် ယင်းသို့ မဟုတ်ပေ။ ဧကန်စင်စစ် မကောင်းမှုပြုသူတို့၏ စာရင်း မှတ်တမ်းသည် 'စိဂျ်ဂျီးန်' (အနက်ရှိုင်းဆုံး ငရဲမှတ်တမ်း) ၌ ရှိပေ၏။",
       "burmese_transliteration": "ကာလ်လာ အင်းနာ ကိသာဗာလ် ဖုဂျ်ဂျာရိ လာဖီး စိဂျ်ဂျီးန်"
     },
     {
       "verse_number": 8,
-      "arabic": "وَمَا أَدْرَاكَ مَا سِجِّينٌ",
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ",
       "english_translation": "And what can make you know what is sijjeen?",
       "burmese_translation": "'စိဂျ်ဂျီးန်' ဆိုသည်မှာ မည်သည့်အရာဖြစ်ကြောင်း အသင် သိပါသလော။",
       "burmese_transliteration": "ဝါ မာ အာဒ်ရားကာ မာ စိဂျ်ဂျီးန်"
     },
     {
       "verse_number": 9,
-      "arabic": "كِتَابٌ مَّرْقُومٌ",
-      "english_translation": "It is a register inscribed.",
+      "arabic": "كِتَـٰبٌ مَّرْقُومٌ",
+      "english_translation": "It is [their destination recorded in] a register inscribed.",
       "burmese_translation": "ယင်းသည် စာလုံးပေါင်း ရေးထွင်းမှတ်တမ်းတင်ထားသော စာအုပ် မှတ်တမ်းဖြစ်၏။",
       "burmese_transliteration": "ကိသာဗုမ် မရ်ကူးမ်"
     },
     {
       "verse_number": 10,
-      "arabic": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "arabic": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
       "english_translation": "Woe, that Day, to the deniers,",
       "burmese_translation": "ထိုနေ့၌ (အမှန်တရားကို) မဟုတ်မှန်ဟု ငြင်းပယ်သူတို့အတွက် ပျက်စီးခြင်းသည် ရှိပေ၏။",
       "burmese_transliteration": "ဝေလုယ် ယောဝ်မအိဇိလ် လိလ်မုကဇ်ဇိဗီးန်"
     },
     {
       "verse_number": 11,
-      "arabic": "الَّذِينَ يُكَذِّبُونَ بِيَوْمِ الدِّينِ",
+      "arabic": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ",
       "english_translation": "Who deny the Day of Recompense.",
       "burmese_translation": "ထိုသူတို့သည် တရားစီရင်ရာနေ့ကို မဟုတ်မှန်ဟု ငြင်းပယ်နေကြသူများ ဖြစ်ကြ၏။",
       "burmese_transliteration": "အလ္လာဇီးနာ ယုကဇ်ဇိဗူးနာ ဗိယောဝ်မိတ် ဒီးန်"
     },
     {
       "verse_number": 12,
-      "arabic": "وَمَا يُكَذِّبُ بِهِ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ",
-      "english_translation": "And none denies it except every sinful transgressor.",
+      "arabic": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ",
+      "english_translation": "And none deny it except every sinful transgressor.",
       "burmese_translation": "အစည်းအဖောက် ကျူးလွန်သူ၊ ပြစ်မှုဒုစရိုက် ပြုသူတိုင်းမှအပ မည်သူမျှ ယင်းကို မဟုတ်မှန်ဟု ငြင်းပယ်လိမ့်မည် မဟုတ်ပေ။",
       "burmese_transliteration": "ဝါ မာ ယုကဇ်ဇိဗု ဗိဟီ အိလ်လာ ကုလ်လု မုအ်သာဒင်း အာသီးမ်"
     },
     {
       "verse_number": 13,
-      "arabic": "إِذَا تُتْلَىٰ عَلَيْهِ آيَاتُنَا قَالَ أَسَاطِيرُ الْأَوَّلِينَ",
+      "arabic": "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا قَالَ أَسَـٰطِيرُ ٱلْأَوَّلِينَ",
       "english_translation": "When Our verses are recited to him, he says, \"Legends of the former peoples.\"",
       "burmese_translation": "ထိုသူ့ထံ၌ ငါအရှင်မြတ်၏ အာယသ်တော်များကို ရွတ်ဖတ်ပြသောအခါ \"ယင်းတို့သည် ရှေးဟောင်း လူတို့၏ ပုံပြင်ဒဏ္ဍာရီများသာ ဖြစ်သည်\" ဟု ပြောဆို၏။",
       "burmese_transliteration": "အိဇာ သုသ်လား အာလိုင်းဟိ အာယားသူနား ကားလာ အာစာသီးရုလ် အောဝ်ဝါလီးန်"
     },
     {
       "verse_number": 14,
-      "arabic": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا يَكْسِبُونَ",
+      "arabic": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ",
       "english_translation": "No! Rather, the stain has covered their hearts of that which they were earning.",
       "burmese_translation": "အမှန်စင်စစ် ယင်းသို့ မဟုတ်ပေ။ စက်ဆုပ်ဖွယ် သူတို့ ပြုလုပ်ရှာဖွေခဲ့ကြသော ဒုစရိုက်များကြောင့် သူတို့၏ စိတ်နှလုံးများအပေါ်၌ ဂျေးကြေးများ ဖုံးလွှမ်းသွားခဲ့ပြီ ဖြစ်၏။",
       "burmese_transliteration": "ကာလ်လာ ဗာလ် ရားနာ အာလာ ကူးလူဗိဟိမ် မာ ကားနူး ယက္ကသိဗူးန်"
     },
     {
       "verse_number": 15,
-      "arabic": "كَلَّا إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ",
+      "arabic": "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ",
       "english_translation": "No! Indeed, from their Lord, that Day, they will be partitioned.",
       "burmese_translation": "အမှန်စင်စစ် ယင်းသို့ မဟုတ်ပေ။ ဧကန်စင်စစ် ထိုနေ့၌ သူတို့သည် မိမိတို့၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ဖူးတွေ့ခွင့်မှ ကာကွယ် တားဆီးခြင်း ခံကြရပေအံ့။",
       "burmese_transliteration": "ကာလ်လာ အင်းနာဟုမ် အန်း ရဗ်ဗိဟိမ် ယောဝ်မအိဇိလ် လာမဟ်ဂျူးဗူးန်"
     },
     {
       "verse_number": 16,
-      "arabic": "ثُمَّ إِنَّهُمْ لَصَالُو الْجَحِيمِ",
-      "english_translation": "Then indeed, they will burn in Hellfire.",
+      "arabic": "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ",
+      "english_translation": "Then indeed, they will [enter and] burn in Hellfire.",
       "burmese_translation": "ထို့နောက် ဧကန်မလွဲ သူတို့သည် ရဲရဲတောက် ငရဲမီးအတွင်းသို့ ဝင်ရောက် လောင်ကျွမ်းကြရပေအံ့။",
       "burmese_transliteration": "သုမ်မာ အင်းနာဟုမ် လာဆားလူလ် ဂျဟာအီးမ်"
     },
     {
       "verse_number": 17,
-      "arabic": "ثُمَّ يُقَالُ هَٰذَا الَّذِي كُنتُم بِهِ تُكَذِّبُونَ",
+      "arabic": "ثُمَّ يُقَالُ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ",
       "english_translation": "Then it will be said [to them], \"This is what you used to deny.\"",
       "burmese_translation": "ထို့နောက် (သူတို့အား) \"ဤသည်မှာ သင်တို့ မဟုတ်မှန်ဟု ငြင်းပယ်ခဲ့ကြသော အရာပင် ဖြစ်သည်\" ဟု ပြောကြားခြင်း ခံရပေအံ့။",
       "burmese_transliteration": "သုမ်မာ ယုကားလု ဟားဇာလ် လာဇီး ကုန်းသုမ် ဗိဟီ သုကဇ်ဇိဗူးန်"
     },
     {
       "verse_number": 18,
-      "arabic": "كَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ",
-      "english_translation": "No! Indeed, the record of the righteous is in 'illiyyun.",
+      "arabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ",
+      "english_translation": "No! Indeed, the record of the righteous is in ʿilliyyūn.",
       "burmese_translation": "အမှန်စင်စစ် ယင်းသို့ မဟုတ်ပေ။ ဧကန်စင်စစ် သူတော်စင်တို့၏ စာရင်း မှတ်တမ်းသည် 'အိလ္လီးယီးန်' (အမြင့်မြတ်ဆုံး ကောင်းကင်ဘုံ မှတ်တမ်း) ၌ ရှိပေ၏။",
       "burmese_transliteration": "ကာလ်လာ အင်းနာ ကိသာဗာလ် အာဗ်ရားရိ လာဖီး အိလ္လီးယီးန်"
     },
     {
       "verse_number": 19,
-      "arabic": "وَمَا أَدْرَاكَ مَا عِلِّيُّونَ",
-      "english_translation": "And what can make you know what is 'illiyyun?",
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ",
+      "english_translation": "And what can make you know what is ʿilliyyūn?",
       "burmese_translation": "'အိလ္လီးယီးန်' ဆိုသည်မှာ မည်သည့်အရာဖြစ်ကြောင်း အသင် သိပါသလော။",
       "burmese_transliteration": "ဝါ မာ အာဒ်ရားကာ မာ အိလ္လီးယူးန်"
     },
     {
       "verse_number": 20,
-      "arabic": "كِتَابٌ مَّرْقُومٌ",
-      "english_translation": "It is a register inscribed",
+      "arabic": "كِتَـٰبٌ مَّرْقُومٌ",
+      "english_translation": "It is [their destination recorded in] a register inscribed",
       "burmese_translation": "ယင်းသည် စာလုံးပေါင်း ရေးထွင်းမှတ်တမ်းတင်ထားသော စာအုပ် မှတ်တမ်းဖြစ်၏။",
       "burmese_transliteration": "ကိသာဗုမ် မရ်ကူးမ်"
     },
     {
       "verse_number": 21,
-      "arabic": "يَشْهَدُهُ الْمُقَرَّبُونَ",
+      "arabic": "يَشْهَدُهُ ٱلْمُقَرَّبُونَ",
       "english_translation": "Which is witnessed by those brought near [to Allah].",
       "burmese_translation": "အရှင်မြတ်နှင့် နီးကပ်စွာ တည်ရှိကြသော (မလာအိကဟ် ကောင်းကင်တမန်) တို့သည် ယင်းမှတ်တမ်းအား သက်သေအဖြစ် စောင့်ကြည့်ကြ၏။",
       "burmese_transliteration": "ယရှ်ဟဒုဟုလ် မုကားရ်ရားဗူးန်"
     },
     {
       "verse_number": 22,
-      "arabic": "إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ",
-      "english_translation": "Indeed, the righteous will be in pleasure,",
+      "arabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+      "english_translation": "Indeed, the righteous will be in pleasure",
       "burmese_translation": "ဧကန်စင်စစ် သူတော်စင်တို့သည် အတိုင်းအဆမဲ့ သုခစိမ်ချမ်းသာများအတွင်း၌ ရှိကြပေအံ့။",
       "burmese_transliteration": "အင်းနာလ် အာဗ်ရားရာ လာဖီး နာအီးမ်"
     },
     {
       "verse_number": 23,
-      "arabic": "عَلَى الْأَرَائِكِ يَنظُرُونَ",
+      "arabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
       "english_translation": "On adorned couches, observing.",
       "burmese_translation": "သူတို့သည် တန်ဆာဆင်ထားသော ပလ္လင် ညောင်စောင်းများပေါ်၌ စည်းစိမ် ခံစားကြည့်ရှုနေကြအံ့။",
       "burmese_transliteration": "အာလာလ် အာရားအိကိ ယန်းဇုရူးန်"
     },
     {
       "verse_number": 24,
-      "arabic": "تَعْرِفُ فِي وُجُوهِهِمْ نَضْرَةَ النَّعِيمِ",
+      "arabic": "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ",
       "english_translation": "You will recognize in their faces the radiance of pleasure.",
       "burmese_translation": "အသင်သည် သူတို့၏ မျက်နှာများပေါ်၌ စည်းစိမ်ချမ်းသာ၏ ကြည်လင် တောက်ပမှုကို မြင်တွေ့ရပေအံ့။",
       "burmese_transliteration": "သအ်ရိဖု ဖီး ဝုဂျူးဟိဟိမ် နဿ်ရားသန် နာအီးမ်"
     },
     {
       "verse_number": 25,
-      "arabic": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ",
-      "english_translation": "They will be given to drink of [pure] wine [which was] sealed,",
+      "arabic": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ",
+      "english_translation": "They will be given to drink [pure] wine [which was] sealed.",
       "burmese_translation": "သူတို့အား တံဆိပ်ခတ် ပိတ်ဆို့ထားသော သန့်ရှင်းစင်ကြယ်လှသော သောက်ဖွယ် (ဂျန္နသ်၏ ဂျာရဗ်) ကို သောက်သုံးစေကြအံ့။",
       "burmese_transliteration": "ယုစကောဝ်နာ မိန်း ရာဟီးက္ကင်း မခ်သူးမ်"
     },
     {
       "verse_number": 26,
-      "arabic": "خِتَامُهُ مِسْكٌ ۚ وَفِي ذَٰلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ",
+      "arabic": "خِتَـٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَـٰفِسُونَ",
       "english_translation": "The last of it is musk. So for this let the competitors compete.",
       "burmese_translation": "ယင်း၏ တံဆိပ်မှာ ကတ္တူရီနံ့ မွှေးကြိုင်လှ၏။ သို့ဖြစ်၍ ပြိုင်ဆိုင်လိုသူတို့သည် ဤအရာ၌သာလျှင် ပြိုင်ဆိုင်ကြပါစေ။",
       "burmese_transliteration": "ခိသားမူဟု မိစက်၊ ဝါ ဖီး ဇားလိကာ ဖာလ်ယားသနားဖာစိလ် မုသနားဖိစူးန်"
     },
     {
       "verse_number": 27,
-      "arabic": "وَمِزَاجُهُ مِن تَسْنِيمٍ",
-      "english_translation": "And its mixture is of Tasneem -",
+      "arabic": "وَمِزَاجُهُۥ مِن تَسْنِيمٍ",
+      "english_translation": "And its mixture is of Tasneem,",
       "burmese_translation": "ထို့ပြင် ယင်းသောက်ဖွယ်၌ ရောစပ်ထားသော စမ်းရေမှာ 'သစနီးမ်' စမ်းရေတွင်းမှ ဖြစ်၏။",
       "burmese_transliteration": "ဝါ မိဇားဂျူးဟု မိန်း သစနီးမ်"
     },
     {
       "verse_number": 28,
-      "arabic": "عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَ",
+      "arabic": "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ",
       "english_translation": "A spring from which those near [to Allah] drink.",
       "burmese_translation": "ယင်းသည် အရှင်မြတ်နှင့် နီးကပ်စွာ တည်ရှိသူတို့ တိုက်ရိုက် သောက်သုံးကြသော စမ်းရေတွင်း ဖြစ်၏။",
       "burmese_transliteration": "အိုင်းနန်း ယရှ်ရားဗု ဗိဟာလ် မုကားရ်ရားဗူးန်"
     },
     {
       "verse_number": 29,
-      "arabic": "إِنَّ الَّذِينَ أَجْرَمُوا كَانُوا مِنَ الَّذِينَ آمَنُوا يَضْحَكُونَ",
+      "arabic": "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ",
       "english_translation": "Indeed, those who committed crimes used to laugh at those who believed.",
       "burmese_translation": "ဧကန်စင်စစ် ပြစ်မှုကျူးလွန်ခဲ့ကြသော သစ္စာငင်းပယ်သူတို့သည် သက်ဝင်ယုံကြည်သူ မုအ်မင်န်တို့အား (လောကီဘဝ၌) လှောင်ပြောင် ရယ်မောလေ့ ရှိခဲ့ကြ၏။",
       "burmese_transliteration": "အင်းနဲလ် လာဇီးနာ အာဂျ်ရားမူး ကားနူး မိနဲလ် လာဇီးနာ အာမာနူး ယဿ်ဟာကူးန်"
     },
     {
       "verse_number": 30,
-      "arabic": "وَإِذَا مَرُّوا بِهِمْ يَتَغَامَزُونَ",
-      "english_translation": "And when they passed by them, they would exchange glances.",
+      "arabic": "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ",
+      "english_translation": "And when they passed by them, they would exchange derisive glances.",
       "burmese_translation": "ထို့ပြင် မုအ်မင်န်တို့သည် သူတို့၏ အနီးမှ ဖြတ်သန်းသွားသောအခါ သူတို့သည် (မထက်မဲ့မြင် ပြုသောအားဖြင့်) မျက်စိမှိတ် ပြကြ၏။",
       "burmese_transliteration": "ဝါ အိဇာ မာရ်ရူး ဗိဟိမ် ယသာဂါးမာဇူးန်"
     },
     {
       "verse_number": 31,
-      "arabic": "وَإِذَا انقَلَبُوا إِلَىٰ أَهْلِهِمُ انقَلَبُوا فَكِهِينَ",
-      "english_translation": "And when they returned to their people, they returned jesting.",
+      "arabic": "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ",
+      "english_translation": "And when they returned to their people, they would return jesting.",
       "burmese_translation": "ထို့ပြင် သူတို့သည် မိမိတို့၏ ဆွေမျိုးသားချင်းများထံသို့ ပြန်လည်ရောက်ရှိကြသောအခါ ဝမ်းမြောက်ဝမ်းသာစွာ (လှောင်ပြောင်ပြောဆို၍) ပြန်ကြ၏။",
       "burmese_transliteration": "ဝါ အိဇန်း ကာလာဗူး အိလာ အာဟ်လိဟိမုန်း ကာလာဗူး ဖာကိဟီးန်"
     },
     {
       "verse_number": 32,
-      "arabic": "وَإِذَا رَأَوْهُمْ قَالُوا إِنَّ هَٰؤُلَاءِ لَضَالُّونَ",
-      "english_translation": "And when they saw them, they said, \"Indeed, these are truly lost.\"",
+      "arabic": "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ",
+      "english_translation": "And when they saw them, they would say, \"Indeed, those are truly lost.\"",
       "burmese_translation": "ထို့ပြင် သူတို့သည် မုအ်မင်န်တို့ကို မြင်တွေ့ကြသောအခါ \"ဧကန်စင်စစ် ဤသူတို့သည် လမ်းမှန်မှ ပျောက်ကွယ် လမ်းလွဲနေသူများ ဖြစ်ကြသည်\" ဟု ပြောဆိုကြ၏။",
       "burmese_transliteration": "ဝါ အိဇာ ရာအောဝ်ဟုမ် ကားလူး အင်းနာ ဟားအူးလားအိ လာဿားလ်လူးန်"
     },
     {
       "verse_number": 33,
-      "arabic": "وَمَا أُرْسِلُوا عَلَيْهِمْ حَافِظِينَ",
+      "arabic": "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَـٰفِظِينَ",
       "english_translation": "But they had not been sent as guardians over them.",
       "burmese_translation": "အမှန်စင်စစ် သူတို့သည် ထိုမုအ်မင်န်တို့အပေါ်၌ အကဲခတ် စောင့်ကြည့်သူများအဖြစ် စေလွှတ်ခြင်း ခံခဲ့ရသည် မဟုတ်ပေ။",
       "burmese_transliteration": "ဝါ မာ အုရ်စိလူ အာလိုင်းဟိမ် ဟားဖိဇီးန်"
     },
     {
       "verse_number": 34,
-      "arabic": "فَالْيَوْمَ الَّذِينَ آمَنُوا مِنَ الْكُفَّارِ يَضْحَكُونَ",
+      "arabic": "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ",
       "english_translation": "So Today those who believed are laughing at the disbelievers,",
       "burmese_translation": "သို့ဖြစ်ပါ၍ ယနေ့ (ကိယာမသ်နေ့) ၌ သက်ဝင်ယုံကြည်သူ မုအ်မင်န်တို့သည် သစ္စာငြင်းပယ်သူတို့အား (ပြန်လည်) လှောင်ပြောင် ရယ်မောကြပေအံ့။",
       "burmese_transliteration": "ဖာလ်ယောဝ်မဲလ် လာဇီးနာ အာမာနူး မိနဲလ် ကုတ်ဖားရိ ယဿ်ဟာကူးန်"
     },
     {
       "verse_number": 35,
-      "arabic": "عَلَى الْأَرَائِكِ يَنظُرُونَ",
+      "arabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
       "english_translation": "On adorned couches, observing.",
       "burmese_translation": "သူတို့သည် တန်ဆာဆင်ထားသော ပလ္လင် ညောင်စောင်းများပေါ်၌ စည်းစိမ် ခံစားကြည့်ရှုနေကြအံ့။",
       "burmese_transliteration": "အာလာလ် အာရားအိကိ ယန်းဇုရူးန်"
     },
     {
       "verse_number": 36,
-      "arabic": "هَلْ ثُوِّبَ الْكُفَّارُ مَا كَانُوا يَفْعَلُونَ",
+      "arabic": "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ",
       "english_translation": "Have the disbelievers [not] been rewarded [this Day] for what they used to do?",
       "burmese_translation": "သစ္စာငြင်းပယ်သူတို့သည် မိမိတို့ ပြုလုပ်လေ့ရှိခဲ့သမျှတို့အတွက် အကျိုးတုံ့ပြန်မှု (ပြစ်ဒဏ်) ကို သင့်တင့်စွာ ရရှိကြပြီ မဟုတ်ပါသလော။",
       "burmese_transliteration": "ဟာလ် သုဝင်းဗာလ် ကုတ်ဖားရု မာ ကားနူး ယဖ်အလူးန်"

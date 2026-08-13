@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 35,
     "total_verses": 20,
     "summary_burmese": "ဤစူရဟ်တွင် မြင့်မြတ်လှသော မက္ကဟ်မြို့တော်ကို ကျိန်ဆို၍ လူသားတို့၏ ဘဝသည် ရောဂါ၊ ဒုက္ခ၊ ရုန်းကန်လှုပ်ရှားမှုများဖြင့် ပြည့်နှက်နေကြောင်း ဖော်ပြထားပါသည်။ အလ္လာဟ်အရှင်မြတ်သည် လူသားအား ပစ္စည်းဥစ္စာဖြုန်းတီးခြင်းထက် ဆင်းရဲသားများ၊ မိဘမဲ့များအား ကူညီစောင့်ရှောက်ခြင်း၊ ကျေးကျွန်များကို လွတ်မြောက်စေခြင်း စသည့် ခက်ခဲသော လမ်းကြောင်းကောင်းကို ရွေးချယ်ရန် သွန်သင်ထားသည်။ အဆုံး၌ အမှန်တရားကို လိုက်နာသူများ အောင်မြင်မည့်အကြောင်းနှင့် ငြင်းပယ်သူများ ငရဲမီး၌ အပြစ်ဒဏ်ခံရမည်ဖြစ်ကြောင်း မီးမောင်းထိုးပြထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,56 +25,56 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "لَا أُقْسِمُ بِهَٰذَا الْبَلَدِ",
-      "english_translation": "I swear by this city,",
+      "arabic": "لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
+      "english_translation": "I swear by this city [i.e., Makkah]",
       "burmese_translation": "ငါအရှင်မြတ်သည် ဤ (မက္ကဟ်) မြို့တော်ကို ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "လာ အုက်သိမု ဗိဟာဇာလ် ဗာလဒ်"
     },
     {
       "verse_number": 2,
-      "arabic": "وَأَنتَ حِلٌّ بِهَٰذَا الْبَلَدِ",
-      "english_translation": "And you, [O Muhammad], are free of restriction in this city -",
+      "arabic": "وَأَنتَ حِلٌّۢ بِهَـٰذَا ٱلْبَلَدِ",
+      "english_translation": "And you, [O Muḥammad], are free of restriction in this city",
       "burmese_translation": "(အို တမန်တော်) အသင်သည်လည်း ဤမြို့တော်၌ စိတ်တိုင်းကျ ကိန်းဝပ်စံပယ်လျက် ရှိပေ၏။",
       "burmese_transliteration": "ဝါ အန်သာ ဟိလ်လုန်း ဗိဟာဇာလ် ဗာလဒ်"
     },
     {
       "verse_number": 3,
       "arabic": "وَوَالِدٍ وَمَا وَلَدَ",
-      "english_translation": "And [by] the father and that which he fathered,",
+      "english_translation": "And [by] the father and that which was born [of him],",
       "burmese_translation": "သားသမီးများ၏ ဖခင်နှင့် ထိုဖခင်မှ ပေါက်ဖွားလာသော သားသမီးများကိုလည်း ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "ဝါ ဝါလိဒင်း ဝါ မာ ဝါလဒ်"
     },
     {
       "verse_number": 4,
-      "arabic": "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي كَبَدٍ",
+      "arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِى كَبَدٍ",
       "english_translation": "We have certainly created man into hardship.",
       "burmese_translation": "ဧကန်အမှန် ငါအရှင်မြတ်သည် လူသားအား ရုန်းကန်လှုပ်ရှား ဒုက္ခခံရမှု အပြည့်ဖြင့် ဖန်ဆင်းတော်မူခဲ့၏။",
       "burmese_transliteration": "လာကဒ် ခါလာက်နာလ် အင်းစာနာ ဖီး ကာဗာဒ်"
     },
     {
       "verse_number": 5,
-      "arabic": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ",
+      "arabic": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ",
       "english_translation": "Does he think that never will anyone overcome him?",
       "burmese_translation": "ထိုလူသားသည် မိမိအပေါ်၌ မည်သူမျှ တန်ခိုးလွှမ်းမိုးနိုင်မည် မဟုတ်ဟု ထင်မှတ်နေသလော။",
       "burmese_transliteration": "အာ ယဟ်စာဗု အန်း လန်း ယက်က်ဒိရာ အာလိုင်းဟိ အာဟတ်ဒ်"
     },
     {
       "verse_number": 6,
-      "arabic": "يَقُولُ أَهْلَكْتُ مَالًا لُُّبَدًا",
-      "english_translation": "He says, \"I have spent abundant wealth.\"",
+      "arabic": "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا",
+      "english_translation": "He says, \"I have spent wealth in abundance.\"",
       "burmese_translation": "သူက \"ငါသည် များပြားလှစွာသော စည်းစိမ်ဥစ္စာများကို သုံးစွဲဖြုန်းတီးပစ်ခဲ့ပြီ\" ဟု ပြောဆို၏။",
       "burmese_transliteration": "ယကူးလု အာဟ်လကားသု မာလန်း လုဗာဒါ"
     },
     {
       "verse_number": 7,
-      "arabic": "أَيَحْسَبُ أَن لَّمْ يَرَهُ أَحَدٌ",
+      "arabic": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
       "english_translation": "Does he think that no one has seen him?",
       "burmese_translation": "သူ့အား မည်သူမျှ ကြည့်ရှုမြင်တွေ့ခဲ့ခြင်း မရှိဟု ထိုသူ ထင်မှတ်နေသလော။",
       "burmese_transliteration": "အာ ယဟ်စာဗု အန်း လမ် ယရာဟု အာဟတ်ဒ်"
     },
     {
       "verse_number": 8,
-      "arabic": "أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ",
+      "arabic": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
       "english_translation": "Have We not made for him two eyes?",
       "burmese_translation": "ငါအရှင်မြတ်သည် သူ၏အတွက် မျက်စိနှစ်လုံးကို ဖန်တီးပေးတော်မမူခဲ့ပါသလော။",
       "burmese_transliteration": "အာလမ် နဂျ်အလ် လာဟူ အိုင်နိုင်းန်"
@@ -87,35 +88,35 @@
     },
     {
       "verse_number": 10,
-      "arabic": "وَهَدَيْنَاهُ النَّجْدَيْنِ",
+      "arabic": "وَهَدَيْنَـٰهُ ٱلنَّجْدَيْنِ",
       "english_translation": "And have shown him the two ways?",
       "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် သူ၏အတွက် (ကောင်း၊ ဆိုး) လမ်းနှစ်သွယ်ကိုလည်း ထင်ရှားစွာ ညွှန်ပြတော်မူခဲ့၏။",
       "burmese_transliteration": "ဝါ ဟာဒိုင်းနားဟုန် နဂျ်ဒိုင်းန်"
     },
     {
       "verse_number": 11,
-      "arabic": "فَلَا اقْتَحَمَ الْعَقَبَةَ",
+      "arabic": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
       "english_translation": "But he has not broken through the difficult pass.",
       "burmese_translation": "သို့ရာတွင် ထိုသူသည် ခက်ခဲလှသော တောင်ကြားလမ်း (ကောင်းမှုလမ်း) သို့ တက်လှမ်းကျော်ဖြတ်ခြင်း မပြုခဲ့ပေ။",
       "burmese_transliteration": "ဖာ လာက်သာဟာမလ် အာကာဗာဟ်"
     },
     {
       "verse_number": 12,
-      "arabic": "وَمَا أَدْرَاكَ مَا الْعَقَبَةُ",
-      "english_translation": "And what can make you know what is the difficult pass?",
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+      "english_translation": "And what can make you know what is [breaking through] the difficult pass?",
       "burmese_translation": "ထိုခက်ခဲသော တောင်ကြားလမ်း ဆိုသည်မှာ မည်သည့်အရာဖြစ်ကြောင်း အသင် မည်သို့သိနိုင်အံ့နည်း။",
       "burmese_transliteration": "ဝါ မာ အာဒ်ရာကာ မောလ် အာကာဗာဟ်"
     },
     {
       "verse_number": 13,
-      "arabic": "فَكُّ رَقَبَةٍ",
+      "arabic": "فَكُّ رَقَبَةٍ",
       "english_translation": "It is the freeing of a slave",
       "burmese_translation": "ယင်းသည်ကား ကျေးကျွန်တစ်ဦးအား (ကျွန်ဘဝမှ) လွတ်မြောက်စေခြင်း ဖြစ်၏။",
       "burmese_transliteration": "ဖက်ကု ရာကာဗာဟ်"
     },
     {
       "verse_number": 14,
-      "arabic": "أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ",
+      "arabic": "أَوْ إِطْعَـٰمٌ فِى يَوْمٍ ذِى مَسْغَبَةٍ",
       "english_translation": "Or feeding on a day of severe hunger",
       "burmese_translation": "သို့မဟုတ် ငတ်မွတ်ခေါင်းပါးသော နေ့၌ အာဟာရ ကျွေးမွေးလှူဒါန်းခြင်း ဖြစ်၏၊",
       "burmese_transliteration": "အော် အိသ်အာမုန်း ဖီး ယောင်မင်း ဇီး မက်စဂါဗာဟ်"
@@ -123,42 +124,42 @@
     {
       "verse_number": 15,
       "arabic": "يَتِيمًا ذَا مَقْرَبَةٍ",
-      "english_translation": "An orphan who is a near relative",
+      "english_translation": "An orphan of near relationship",
       "burmese_translation": "ဆွေမျိုးတော်စပ်သော မိဘမဲ့ကလေးငယ်အား လည်းကောင်း၊",
       "burmese_transliteration": "ယသီးမန်း ဇာ မက်ကြ်ရာဗာဟ်"
     },
     {
       "verse_number": 16,
       "arabic": "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ",
-      "english_translation": "Or a needy person in misery.",
+      "english_translation": "Or a needy person in misery",
       "burmese_translation": "သို့မဟုတ် မြေကြီးပေါ်၌ လူးလှိမ့်နေရရှာသော ဆင်းရဲနွမ်းပါးသူအား လည်းကောင်း (ကျွေးမွေးခြင်း ဖြစ်၏)။",
       "burmese_transliteration": "အော် မိစကီးနန်း ဇာ မတ်သ်ရာဗာဟ်"
     },
     {
       "verse_number": 17,
-      "arabic": "ثُمَّ كَانَ مِنَ الَّذِينَ آمَنُوا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِ",
-      "english_translation": "And then being one of those who believed and advised one another to patience and advised one another to compassion.",
+      "arabic": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+      "english_translation": "And then being among those who believed and advised one another to patience and advised one another to compassion.",
       "burmese_translation": "ထို့ပြင် ထိုသူသည် ယုံကြည်ခြင်း သဒ္ဓါတရား ထားရှိသူများ၊ အပြန်အလှန် သည်းခံခြင်းတရား ဆုံးမကြသူများနှင့် အပြန်အလှန် ကရုဏာတရား ထားရှိရန် တိုက်တွန်းကြသူများတွင် ပါဝင်သူဖြစ်ရမည်။",
       "burmese_transliteration": "သုမ်မာ ကာနာ မိနလ် လာဇီးနာ အာမနူး ဝါ သဝါဆောဝ် ဗိစ်ဆွဗ်ရိ ဝါ သဝါဆောဝ် ဗိလ်မရ်ဟာမားဟ်"
     },
     {
       "verse_number": 18,
-      "arabic": "أُولَٰئِكَ أَصْحَابُ الْمَيْمَنَةِ",
+      "arabic": "أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلْمَيْمَنَةِ",
       "english_translation": "Those are the companions of the right.",
       "burmese_translation": "ထိုသူတို့သည်ကား ယာဘက်တော်သား (မင်္ဂလာအပေါင်းနှင့် ပြည့်စုံသူ) များ ဖြစ်ကြကုန်သတည်း။",
       "burmese_transliteration": "ဥူလာအိကာ အာဆ်ဟာဗုလ် မိုင်မာနားဟ်"
     },
     {
       "verse_number": 19,
-      "arabic": "وَالَّذِينَ كَفَرُوا بِآيَاتِنَا هُمْ أَصْحَابُ الْمَشْأَمَةِ",
-      "english_translation": "But those who disbelieved in Our signs - they are the companions of the left.",
+      "arabic": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَـٰتِنَا هُمْ أَصْحَـٰبُ ٱلْمَشْـَٔمَةِ",
+      "english_translation": "But they who disbelieved in Our signs - those are the companions of the left.",
       "burmese_translation": "သို့သော် ငါအရှင်မြတ်၏ သက်သေလက္ခဏာတော်များကို ငြင်းပယ်ကြသူများမူကား ဝဲဘက်တော်သား (အကံဆိုးသူ) များ ဖြစ်ကြ၏။",
       "burmese_transliteration": "ဝါလ် လာဇီးနာ ကာဖာရူး ဗိအာယာသိနာ ဟုမ် အာဆ်ဟာဗုလ် မရှ်အာမားဟ်"
     },
     {
       "verse_number": 20,
-      "arabic": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌ",
-      "english_translation": "Over them will be Fire closed over.",
+      "arabic": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌۢ",
+      "english_translation": "Over them will be fire closed in.",
       "burmese_translation": "သူတို့အပေါ်၌ ထပ်မံပိတ်ဖုံးထားသော ငရဲမီးဘေးသည် ကိန်းဝပ်လျက် ရှိပေမည်။",
       "burmese_transliteration": "အာလိုင်းဟိမ် နာရုန်း မုအ်ဆာဒါဟ်"
     }

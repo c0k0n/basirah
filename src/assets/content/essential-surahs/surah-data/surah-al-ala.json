@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 8,
     "total_verses": 19,
     "summary_burmese": "ဤစူရဟ်တွင် အလွန်မြင့်မြတ်တော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ကို သန့်ရှင်းစင်ကြယ်စေရန် မိန့်မှာထားပြီး၊ အရှင်မြတ်၏ ဖန်ဆင်းမှု၊ စီမံဖန်တီးမှုနှင့် သဘာဝတရား၏ နိယာမများကို ဖော်ပြထားပါသည်။ ထို့အပြင် ကုရ်အာန်ကျမ်းတော်မြတ်ကို တမန်တော်မေ့လျော့မည်မဟုတ်ကြောင်း ကတိပြုထားပြီး၊ ဆုံးမဩဝါဒကို လက်ခံသူတို့ အောင်မြင်မည့်အကြောင်းနှင့် လောကီဘဝထက် နောင်တမလွန်ဘဝ၏ သာလွန်ပုံကို အိဗ်ရာဟီးမ်နှင့် မူဆာ တမန်တော်တို့၏ ကျမ်းစောင်များပါ သွန်သင်ချက်များနှင့် နှိုင်းယှဉ်ဖော်ပြထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,133 +25,133 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى",
+      "arabic": "سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
       "english_translation": "Exalt the name of your Lord, the Most High,",
       "burmese_translation": "အမြင့်မြတ်ဆုံးဖြစ်တော်မူသော အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသောအရှင်၏ နာမတော်ကို သန့်ရှင်းစင်ကြယ်ကြောင်း ထုတ်ဖော်ကြွေးကြော်ပါလေ။",
       "burmese_transliteration": "စဗ်ဗိဟိ စမာ ရဗ်ဗိကာလ် အအ်လာ"
     },
     {
       "verse_number": 2,
-      "arabic": "الَّذِي خَلَقَ فَسَوَّىٰ",
-      "english_translation": "Who created and proportioned,",
+      "arabic": "ٱلَّذِى خَلَقَ فَسَوَّىٰ",
+      "english_translation": "Who created and proportioned",
       "burmese_translation": "ထိုအရှင်သည် အရာခပ်သိမ်းကို ဖန်ဆင်း၍ အချိုးအစားကျနစွာ စီရင်တော်မူခဲ့၏။",
       "burmese_transliteration": "အလ္လာဇီး ခါလာကာ ဖာ စဝါ"
     },
     {
       "verse_number": 3,
-      "arabic": "وَالَّذِي قَدَّرَ فَهَدَىٰ",
-      "english_translation": "And Who destined and guided,",
+      "arabic": "وَٱلَّذِى قَدَّرَ فَهَدَىٰ",
+      "english_translation": "And who destined and [then] guided",
       "burmese_translation": "ထိုအရှင်သည် သတ်မှတ်ချက်များကို စီမံပြီးနောက် သင့်တော်ရာ လမ်းကြောင်းသို့ ညွှန်ပြတော်မူခဲ့၏။",
       "burmese_transliteration": "ဝါလ္လာဇီး ကတ်ဒါရာ ဖာ ဟာဒါ"
     },
     {
       "verse_number": 4,
-      "arabic": "وَالَّذِي أَخْرَجَ الْمَرْعَىٰ",
-      "english_translation": "And Who brings forth the pasture,",
+      "arabic": "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ",
+      "english_translation": "And who brings out the pasture",
       "burmese_translation": "ထိုအရှင်သည် စားကျက်မြက်ခင်းများကို ပေါက်ရောက်စေတော်မူခဲ့၏။",
       "burmese_transliteration": "ဝါလ္လာဇီး အာခ်ရာဂျယ် မရ်အာ"
     },
     {
       "verse_number": 5,
-      "arabic": "فَجَعَلَهُ غُثَاءً أَحْوَىٰ",
-      "english_translation": "And then makes it dark stubble.",
+      "arabic": "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ",
+      "english_translation": "And [then] makes it black stubble.",
       "burmese_translation": "ထို့နောက် ထိုမြက်ခင်းများကို ခြောက်သွေ့၍ ညိုမှောင်သော အမှိုက်သရိုက်များ ဖြစ်စေတော်မူ၏။",
       "burmese_transliteration": "ဖာ ဂျာအာလာဟူ ဂုသာအန်း အာဟ်ဝါ"
     },
     {
       "verse_number": 6,
-      "arabic": "سَنُقْرِئُكَ فَلَا تَنسَىٰ",
-      "english_translation": "We will make you recite, [O Muhammad], and you will not forget,",
+      "arabic": "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ",
+      "english_translation": "We will make you recite, [O Muḥammad], and you will not forget,",
       "burmese_translation": "(အို တမန်တော်) ငါအရှင်မြတ်သည် အသင့်အား (ကုရ်အာန်ကို) ရွတ်ဖတ်စေမည်ဖြစ်ရာ အသင် မေ့လျော့သွားမည် မဟုတ်ပေ။",
       "burmese_transliteration": "စာ နုကြ်ရိဥုကာ ဖာ လာ သန်စာ"
     },
     {
       "verse_number": 7,
-      "arabic": "إِلَّا مَا شَاءَ اللَّهُ ۚ إِنَّهُ يَعْلَمُ الْجَهْرَ وَمَا يَخْفَىٰ",
+      "arabic": "إِلَّا مَا شَآءَ ٱللَّهُ ۚ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ",
       "english_translation": "Except what Allah should will. Indeed, He knows what is declared and what is hidden.",
       "burmese_translation": "အလ္လာဟ်အရှင်မြတ် အလိုရှိတော်မူသောအရာမှအပ (အသင်မေ့မည်မဟုတ်)။ ဧကန်မလွဲ ထိုအရှင်သည် ပေါ်လွင်ထင်ရှားသောအရာကိုရော လျှို့ဝှက်ကိန်းဝပ်နေသောအရာကိုပါ သိရှိတော်မူ၏။",
       "burmese_transliteration": "အိလ်လာ မာ ရှာအာ လ္လာဟ်၊ အင်းနဟု ယအ်လာမုလ် ဂျာဟ်ရာ ဝါ မာ ယခ်ဖာ"
     },
     {
       "verse_number": 8,
-      "arabic": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ",
+      "arabic": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ",
       "english_translation": "And We will ease you toward ease.",
       "burmese_translation": "ငါအရှင်မြတ်သည် အသင့်အတွက် အလွယ်ကူဆုံးသော လမ်းစဉ်ကို လွယ်ကူချောမွေ့စေတော်မူမည်။",
       "burmese_transliteration": "ဝါ နုယက်သိရုကာ လိလ်ယုစရာ"
     },
     {
       "verse_number": 9,
-      "arabic": "فَذَكِّرْ إِن نَّفَعَتِ الذِّكْرَىٰ",
+      "arabic": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ",
       "english_translation": "So remind, if the reminder should benefit;",
       "burmese_translation": "သို့ဖြစ်ရာ ဆုံးမဩဝါဒပေးခြင်းသည် အကျိုးကျေးဇူးရှိပါက အသင် ဆုံးမဩဝါဒ ပေးပါလေ။",
       "burmese_transliteration": "ဖာ ဇက်ကိရ် အင်း နာဖာအာသိဇ် ဇိကြ်ရာ"
     },
     {
       "verse_number": 10,
-      "arabic": "سَيَذَّكَّرُ مَن يَخْشَىٰ",
+      "arabic": "سَيَذَّكَّرُ مَن يَخْشَىٰ",
       "english_translation": "He who fears [Allah] will be reminded.",
       "burmese_translation": "(အလ္လာဟ်အရှင်မြတ်ကို) ကြောက်ရွံ့သူသည် ဆုံးမဩဝါဒကို ခံယူနှလုံးသွင်းပေလိမ့်မည်။",
       "burmese_transliteration": "စာ ယက်ဇက်ကာရု မန် ယခ်ရှာ"
     },
     {
       "verse_number": 11,
-      "arabic": "وَيَتَجَنَّبُهَا الْأَشْقَى",
-      "english_translation": "But the wretched one will avoid it -",
+      "arabic": "وَيَتَجَنَّبُهَا ٱلْأَشْقَى",
+      "english_translation": "But the wretched one will avoid it",
       "burmese_translation": "သို့သော် အကံဆိုးသူ ကပ်ဘေးသင့်သူသည်မူ ထိုဆုံးမချက်ကို ရှောင်လွှဲသွားပေလိမ့်မည်။",
       "burmese_transliteration": "ဝါ ယသာဂျန်းနာဗုဟောလ် အရှ်ကာ"
     },
     {
       "verse_number": 12,
-      "arabic": "الَّذِي يَصْلَى النَّارَ الْكُبْرَىٰ",
+      "arabic": "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ",
       "english_translation": "[He] who will [enter and] burn in the greatest Fire,",
       "burmese_translation": "ထိုသူသည် ကြီးမားလှသော ငရဲမီးသို့ ဝင်ရောက်လောင်ကျွမ်းခံရမည်ဖြစ်၏။",
       "burmese_transliteration": "အလ္လာဇီး ယက်ဆ်လာန် နာရလ် ကူဗ်ရာ"
     },
     {
       "verse_number": 13,
-      "arabic": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ",
-      "english_translation": "Then he will neither die therein nor live.",
+      "arabic": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ",
+      "english_translation": "Neither dying therein nor living.",
       "burmese_translation": "ထို့နောက် ထိုငရဲထဲ၌ သူသည် သေလွန်သွားခြင်းလည်း မရှိ၊ သက်သာရာရစွာ ရှင်သန်ရခြင်းလည်း ရှိမည်မဟုတ်ပေ။",
       "burmese_transliteration": "သုမ်မာ လာ ယမူသု ဖီးဟာ ဝါ လာ ယဟ်ယာ"
     },
     {
       "verse_number": 14,
-      "arabic": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
-      "english_translation": "He has certainly succeeded who purifies himself,",
+      "arabic": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
+      "english_translation": "He has certainly succeeded who purifies himself",
       "burmese_translation": "မိမိကိုယ်ကို သန့်စင်စေသူသည် ဧကန်အမှန် အောင်မြင်မှုရရှိခဲ့ပြီ။",
       "burmese_transliteration": "ကဒ် အာဖ်လာဟာ မန် သဇက်ကာ"
     },
     {
       "verse_number": 15,
-      "arabic": "وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّىٰ",
+      "arabic": "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ",
       "english_translation": "And mentions the name of his Lord and prays.",
       "burmese_translation": "ထို့ပြင် မိမိအား ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ နာမတော်ကို အောက်မေ့တသ၍ ဆလားသ် ဝတ်ပြုဆုတောင်းခဲ့၏။",
       "burmese_transliteration": "ဝါ ဇာကာရ စမာ ရဗ်ဗိဟီ ဖာ ဆောလ္လာ"
     },
     {
       "verse_number": 16,
-      "arabic": "بَلْ تُؤْثِرُونَ الْحَيَاةَ الدُّنْيَا",
-      "english_translation": "His performance is not enough, for you prefer the worldly life,",
+      "arabic": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+      "english_translation": "But you prefer the worldly life,",
       "burmese_translation": "သို့ရာတွင် အသင်တို့သည် လောကီဘဝ၏ သာယာမှုကိုသာ ပိုမိုဦးစားပေး နှစ်သက်ကြပေသည်။",
       "burmese_transliteration": "ဗလ် သုအ်သိရူးနလ် ဟာယာသဒ် ဒွန်ယာ"
     },
     {
       "verse_number": 17,
-      "arabic": "وَالْآخِرَةُ خَيْرٌ وَأَبْقَىٰ",
+      "arabic": "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ",
       "english_translation": "While the Hereafter is better and more enduring.",
       "burmese_translation": "စင်စစ် နောင်တမလွန်ဘဝသည် သာလွန်ကောင်းမွန်၍ ထာဝစဉ် တည်တံ့သော ဘဝဖြစ်ပေသည်။",
       "burmese_transliteration": "ဝါလ် အာခိရာသု ခိုင်ရုန်း ဝါ အာဗ်ကာ"
     },
     {
       "verse_number": 18,
-      "arabic": "إِنَّ هَٰذَا لَفِي الصُّحُفِ الْأُولَىٰ",
+      "arabic": "إِنَّ هَـٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ",
       "english_translation": "Indeed, this is in the former scriptures,",
       "burmese_translation": "ဧကန်မလွဲ ဤသဗ္ဗုတ္တိတရားတော်များသည် ရှေးခေတ် ကျမ်းစာစောင်များ၌ ပါရှိခဲ့ပြီး ဖြစ်၏။",
       "burmese_transliteration": "အင်းနာ ဟာဇာ လာဖီးစ် ဆုဟုဖိလ် အူလာ"
     },
     {
       "verse_number": 19,
-      "arabic": "صُحُفِ إِبْرَاهِيمَ وَمُوسَىٰ",
+      "arabic": "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ",
       "english_translation": "The scriptures of Abraham and Moses.",
       "burmese_translation": "(ယင်းတို့မှာ) အိဗ်ရာဟီးမ်နှင့် မူဆာ တမန်တော်တို့၏ ကျမ်းစာစောင်များပင် ဖြစ်ကြသတည်း။",
       "burmese_transliteration": "ဆုဟုဖိ အိဗ်ရာဟီးမာ ဝါ မူးစာ"

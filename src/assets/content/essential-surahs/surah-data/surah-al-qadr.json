@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 25,
     "total_verses": 5,
     "summary_burmese": "ဤစူရဟ်သည် မုဘာရက်ခ်ဖြစ်သော ရမဿွာန်လ၏ လိုင်းလသွလ် ကဒ်ရ် (တန်ခိုးကြီးမြတ်သော ညဉ့်) ၏ မြင့်မြတ်လှသော ဂုဏ်သရေတော်ကို ဖော်ကျူးထားပါသည်။ ထိုညဉ့်၌ မြင့်မြတ်လှစွာသော ကုရ်အာန်ကျမ်းတော်မြတ်အား စတင် သက်ဆင်းစေခဲ့ပြီး၊ ထိုညဉ့်၏ ကောင်းမှုကုသိုလ် ပြုလုပ်ခြင်း အကျိုးကျေးဇူးသည် လပေါင်း တစ်ထောင်ထက် ပိုမို လွန်ကဲကြောင်း မီးမောင်းထိုးပြထားပါသည်။ ထို့ပြင် ထိုညဉ့်၌ မလာအိကဟ် ကောင်းကင်တမန်များနှင့် ဂျိဗ်ရီးလ် တမန်တော်တို့သည် အရှင်မြတ်၏ အမိန့်တော်ဖြင့် ကိစ္စအဝအဝအတွက် သက်ဆင်းကြပြီး၊ နံနက် အရုဏ်တက်ချိန်အထိ ငြိမ်းချမ်းရေးနှင့် ကောင်းချီးမင်္ဂလာများ ဖုံးလွှမ်းလျက်ရှိကြောင်း ဖော်ပြထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,35 +25,35 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ",
-      "english_translation": "Indeed, We sent it down during the Night of Decree.",
+      "arabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "english_translation": "Indeed, We sent it [i.e., the Qur’ān] down during the Night of Decree.",
       "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်သည် ဤ (ကုရ်အာန်ကျမ်းတော်မြတ်) အား မြင့်မြတ်လှစွာသော 'လိုင်းလသွလ် ကဒ်ရ်' (တန်ခိုးကြီးမြတ်သော ညဉ့်) ၌ သက်ဆင်းစေတော်မူခဲ့၏။",
       "burmese_transliteration": "အင်းနား အန်းဇလ်နားဟု ဖီး လိုင်းလာသီးလ် ကဒ်ရ်"
     },
     {
       "verse_number": 2,
-      "arabic": "وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ",
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
       "english_translation": "And what can make you know what is the Night of Decree?",
       "burmese_translation": "ထို 'လိုင်းလသွလ် ကဒ်ရ်' (တန်ခိုးကြီးမြတ်သော ညဉ့်) ဆိုသည်မှာ မည်သည့်အရာဖြစ်ကြောင်း အသင် သိပါသလော။",
       "burmese_transliteration": "ဝါ မာ အာဒ်ရားကာ မာ လိုင်းလာသုလ် ကဒ်ရ်"
     },
     {
       "verse_number": 3,
-      "arabic": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+      "arabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
       "english_translation": "The Night of Decree is better than a thousand months.",
       "burmese_translation": "'လိုင်းလသွလ် ကဒ်ရ်' (တန်ခိုးကြီးမြတ်သော ညဉ့်) သည် လပေါင်း တစ်ထောင်ထက်ပင် ပိုမို မြင့်မြတ်လှပေ၏။",
       "burmese_transliteration": "လိုင်းလာသုလ် ကဒ်ရိ ခိုင်းရုမ် မိန်း အလ်ဖိ ရှဟ်ရ်"
     },
     {
       "verse_number": 4,
-      "arabic": "تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
-      "english_translation": "The angels and the Spirit descend therein by permission of their Lord for every matter.",
+      "arabic": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+      "english_translation": "The angels and the Spirit [i.e., Gabriel] descend therein by permission of their Lord for every matter.",
       "burmese_translation": "ထိုညဉ့်၌ မလာအိကဟ် ကောင်းကင်တမန်များနှင့် 'ရူးဟ်' (ဂျိဗ်ရီးလ် ကောင်းကင်တမန်) တို့သည် မိမိတို့ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ အမိန့်တော်ဖြင့် ကိစ္စအဝအဝအတွက် သက်ဆင်းကြ၏။",
       "burmese_transliteration": "သာနက်ဇ်ဇာလုလ် မလာအိကာသု ဝါရ် ရူးဟု ဖီးဟာ ဗိအိဇ်နိ ရဗ်ဗိဟိမ် မိန်း ကုလ်လိ အမ်ရ်"
     },
     {
       "verse_number": 5,
-      "arabic": "سَلَامٌ هِيَ حَتَّىٰ مَطْلَعِ الْفَجْرِ",
+      "arabic": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
       "english_translation": "Peace it is until the emergence of dawn.",
       "burmese_translation": "ထိုညဉ့်သည် အရုဏ်တက်ချိန်အထိ ငြိမ်းချမ်းရေးနှင့် ကောင်းချီးမင်္ဂလာများ သက်ရောက်လျက် ရှိပေ၏။",
       "burmese_transliteration": "စာလားမုန်း ဟိယာ ဟသ်သာ မသ်လအီးလ် ဖဂျ်ရ်"

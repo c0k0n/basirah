@@ -2,7 +2,7 @@
   "surah_metadata": {
     "surah_number": 86,
     "name_arabic": "الطَّارِق",
-    "name_transliteration": "At-Tāriq",
+    "name_transliteration": "At-Tariq",
     "name_burmese_title": "စူရဟ် အတ်-တာရိက် (ညအချိန် လာရောက်သူ / ညကြယ်)",
     "meaning_of_title": {
       "english": "The Nightcomer / The Night Visitor",
@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 36,
     "total_verses": 17,
     "summary_burmese": "ဤစူရဟ်သည် ညအချိန် ထင်ရှားစွာ ပေါ်ထွန်းလာသော ကြယ်ကို သက်သေပြု၍ စတင်ထားပြီး၊ လူသားတိုင်းအပေါ် အလ္လာဟ်အရှင်မြတ်၏ စောင့်ကြည့်မှတ်တမ်းတင်သော ကောင်းကင်တမန်များ ရှိကြောင်းကို သတိပေးထားပါသည်။ ထို့နောက် လူသား၏ ဖန်ဆင်းခံရပုံကို အမှတ်ရစေကာ အလ္လာဟ်အရှင်မြတ်သည် သေပြီးနောက် ပြန်လည်ရှင်သန်စေနိုင်ကြောင်း အခိုင်အမာ ဖော်ပြထားသည်။ ကုရ်အာန်ကျမ်းတော်မြတ်သည် အမှန်တရားနှင့် အမှားကို ခွဲခြားပေးသော လေးနက်သည့် နှုတ်ကပတ်တော်ဖြစ်ကြောင်းနှင့် မယုံကြည်သူများ၏ အကြံအစည်များ မည်သို့ပင်ရှိစေကာမူ အလ္လာဟ်အရှင်မြတ်၏ စီမံကိန်းသည် အမြဲအောင်မြင်မည်ဖြစ်ကြောင်း အဆုံးသတ်တွင် အားပေးနှစ်သိမ့်ထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,120 +25,120 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "وَالسَّمَاءِ وَالطَّارِقِ",
-      "english_translation": "By the heaven and the nightcomer,",
+      "arabic": "وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+      "english_translation": "By the sky and the night comer",
       "burmese_translation": "ကောင်းကင်ကိုလည်းကောင်း၊ ညအချိန် လာရောက်သူ (ကြယ်) ကိုလည်းကောင်း ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "ဝပ်စ်-စမာအိ ဝတ်-တာရိက်"
     },
     {
       "verse_number": 2,
-      "arabic": "وَمَا أَدْرَاكَ مَا الطَّارِقُ",
-      "english_translation": "And what can make you know what the nightcomer is?",
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ",
+      "english_translation": "And what can make you know what is the night comer?",
       "burmese_translation": "ညအချိန် လာရောက်သူသည် မည်သည်ဖြစ်ကြောင်းကို အသင် သိစေနိုင်သောအရာကား အဘယ်နည်း။",
       "burmese_transliteration": "ဝါမာ အဒ်ရာကာ မတ်-တာရိက်"
     },
     {
       "verse_number": 3,
-      "arabic": "النَّجْمُ الثَّاقِبُ",
-      "english_translation": "It is the piercing, brightly shining star.",
+      "arabic": "ٱلنَّجْمُ ٱلثَّاقِبُ",
+      "english_translation": "It is the piercing star",
       "burmese_translation": "ထိုးဖောက်တောက်ပစွာ လင်းလက်နေသော ကြယ်ပင် ဖြစ်သည်။",
       "burmese_transliteration": "အန်-နဂ်မုစ် သာကိဗ်"
     },
     {
       "verse_number": 4,
       "arabic": "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ",
-      "english_translation": "There is no soul except that it has a guardian over it.",
+      "english_translation": "There is no soul but that it has over it a protector.",
       "burmese_translation": "အသက်ရှိသူတိုင်းအပေါ်၌ စောင့်ကြည့်ထိန်းသိမ်းသူ (ကောင်းကင်တမန်) တစ်ပါး မလွဲမသွေ ရှိ၏။",
       "burmese_transliteration": "အင် ကုလ္လု နဖ်စင် လမ္မာ အလိုင်ဟာ ဟာဖိဇ်"
     },
     {
       "verse_number": 5,
-      "arabic": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ",
-      "english_translation": "So let mankind consider from what he was created.",
+      "arabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ مِمَّ خُلِقَ",
+      "english_translation": "So let man observe from what he was created.",
       "burmese_translation": "သို့ဖြစ်၍ လူသားသည် မိမိအား မည်သည့်အရာမှ ဖန်ဆင်းခဲ့ကြောင်း စဉ်းစားကြည့်စေ။",
       "burmese_transliteration": "ဖလ်ယန်ဇုရိလ် အင်စာနု မိမ္မာ ခုလိက်"
     },
     {
       "verse_number": 6,
-      "arabic": "خُلِقَ مِن مَّاءٍ دَافِقٍ",
-      "english_translation": "He was created from a fluid, emitted forcefully,",
+      "arabic": "خُلِقَ مِن مَّآءٍ دَافِقٍ",
+      "english_translation": "He was created from a fluid, ejected,",
       "burmese_translation": "သူသည် ထွက်စီးလာသော အရည်တစ်စက်မှ ဖန်ဆင်းခံခဲ့ရသည်။",
       "burmese_transliteration": "ခုလိကာ မင် မာအင် ဒါဖိက်"
     },
     {
       "verse_number": 7,
-      "arabic": "يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ",
+      "arabic": "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ",
       "english_translation": "Emerging from between the backbone and the ribs.",
       "burmese_translation": "ထိုအရည်သည် ကျောရိုးနှင့် ရင်ဘတ်အရိုးများကြားမှ ထွက်ပေါ်လာသည်။",
       "burmese_transliteration": "ယခ်ရုဂျု မင် ဘိုင်နိစ် ဆုလ်ဗိ ဝတ်-တာရာအိဗ်"
     },
     {
       "verse_number": 8,
-      "arabic": "إِنَّهُ عَلَىٰ رَجْعِهِ لَقَادِرٌ",
-      "english_translation": "Surely He is fully capable of bringing him back.",
+      "arabic": "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌ",
+      "english_translation": "Indeed, He [i.e., Allah], to return him [to life], is Able.",
       "burmese_translation": "အမှန်စင်စစ် အရှင်မြတ်သည် သူ့အား ပြန်လည်ရှင်သန်စေရန် အပြည့်အဝ စွမ်းဆောင်နိုင်တော်မူ၏။",
       "burmese_transliteration": "အင်နဟူ အလာ ရဂ်အိဟိ လကာဒိရ်"
     },
     {
       "verse_number": 9,
-      "arabic": "يَوْمَ تُبْلَى السَّرَائِرُ",
-      "english_translation": "On the Day when all secrets will be laid bare.",
+      "arabic": "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ",
+      "english_translation": "The Day when secrets will be put on trial,",
       "burmese_translation": "လျှို့ဝှက်ထားသမျှ အရာအားလုံး ဖော်ထုတ်ခံရမည့်နေ့၌။",
       "burmese_transliteration": "ယောမ တုဗ်လာစ် စရာအိရ်"
     },
     {
       "verse_number": 10,
-      "arabic": "فَمَا لَهُ مِن قُوَّةٍ وَلَا نَاصِرٍ",
-      "english_translation": "Then one will have neither strength nor any helper.",
+      "arabic": "فَمَا لَهُۥ مِن قُوَّةٍ وَلَا نَاصِرٍ",
+      "english_translation": "Then he [i.e., man] will have no power or any helper.",
       "burmese_translation": "ထိုနေ့တွင် သူ၌ မည်သည့်အစွမ်းသတ္တိမျှ မရှိတော့သကဲ့သို့ ကူညီမည့်သူလည်း မရှိချေ။",
       "burmese_transliteration": "ဖမာ လဟူ မင် ကုဝ်ဝါတင် ဝလာ နာစိရ်"
     },
     {
       "verse_number": 11,
-      "arabic": "وَالسَّمَاءِ ذَاتِ الرَّجْعِ",
-      "english_translation": "By the sky with its recurring rain,",
+      "arabic": "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ",
+      "english_translation": "By the sky which sends back",
       "burmese_translation": "မိုးကို အကြိမ်ကြိမ် ပြန်လည်ရွာသွန်းစေသော ကောင်းကင်ကို ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "ဝပ်စ်-စမာအိ ဇာတိရ် ရဂ်အ်"
     },
     {
       "verse_number": 12,
-      "arabic": "وَالْأَرْضِ ذَاتِ الصَّدْعِ",
-      "english_translation": "And by the earth that splits open,",
+      "arabic": "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ",
+      "english_translation": "And [by] the earth which splits,",
       "burmese_translation": "အပင်ပေါက်ထွက်စေရန် အက်ကွဲသော မြေကြီးကိုလည်း ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "ဝလ် အရ်ဒိ ဇာတိစ် ဆဒ်အ်"
     },
     {
       "verse_number": 13,
-      "arabic": "إِنَّهُ لَقَوْلٌ فَصْلٌ",
-      "english_translation": "Indeed, this Qur'an is a decisive word.",
+      "arabic": "إِنَّهُۥ لَقَوْلٌ فَصْلٌ",
+      "english_translation": "Indeed, it [i.e., the Qur’ān] is a decisive statement,",
       "burmese_translation": "အမှန်စင်စစ် ဤကုရ်အာန်သည် အမှန်နှင့် အမှားကို ပြတ်သားစွာ ခွဲခြားပေးသော နှုတ်ကပတ်တော် ဖြစ်သည်။",
       "burmese_transliteration": "အင်နဟူ လကောလုန် ဖဆ်လ်"
     },
     {
       "verse_number": 14,
-      "arabic": "وَمَا هُوَ بِالْهَزْلِ",
-      "english_translation": "It is never a matter of amusement.",
+      "arabic": "وَمَا هُوَ بِٱلْهَزْلِ",
+      "english_translation": "And it is not amusement.",
       "burmese_translation": "၎င်းသည် အပျော်သဘော ပြောဆိုထားသော စကားလည်း မဟုတ်ပေ။",
       "burmese_transliteration": "ဝါမာ ဟုဝါ ဗိလ် ဟဇ်လ်"
     },
     {
       "verse_number": 15,
       "arabic": "إِنَّهُمْ يَكِيدُونَ كَيْدًا",
-      "english_translation": "Indeed, they are plotting a scheme.",
+      "english_translation": "Indeed, they are planning a plan,",
       "burmese_translation": "အမှန်စင်စစ် သူတို့သည် အကြံအစည်များကို ကြံစည်နေကြသည်။",
       "burmese_transliteration": "အင်နဟုမ် ယကီဒူနာ ကိုင်ဒါ"
     },
     {
       "verse_number": 16,
       "arabic": "وَأَكِيدُ كَيْدًا",
-      "english_translation": "And I too am planning a plan.",
+      "english_translation": "But I am planning a plan.",
       "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်လည်း (သူတို့၏အကြံကို ပျက်စေရန်) စီမံချက်တစ်ရပ်ကို ချမှတ်တော်မူ၏။",
       "burmese_transliteration": "ဝါအကီဒု ကိုင်ဒါ"
     },
     {
       "verse_number": 17,
-      "arabic": "فَمَهِّلِ الْكَافِرِينَ أَمْهِلْهُمْ رُوَيْدًا",
-      "english_translation": "So leave the disbelievers alone for a while; give them a little respite.",
+      "arabic": "فَمَهِّلِ ٱلْكَـٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا",
+      "english_translation": "So allow time for the disbelievers. Leave them awhile.",
       "burmese_translation": "သို့ဖြစ်၍ မယုံကြည်သူတို့အား ခေတ္တမျှ ထားလိုက်လော့။ သူတို့အား အနည်းငယ် အချိန်ပေးထားလော့။",
       "burmese_transliteration": "ဖမဟ်ဟိလိလ် ကာဖိရီးန် အမ်ဟိလ်ဟုမ် ရုဝိုင်ဒါ"
     }

@@ -2,7 +2,7 @@
   "surah_metadata": {
     "surah_number": 95,
     "name_arabic": "التِّين",
-    "name_transliteration": "At-Tīn",
+    "name_transliteration": "At-Tin",
     "name_burmese_title": "စူရဟ် အတ်-တီးန် (သဖန်းသီး)",
     "meaning_of_title": {
       "english": "The Fig",
@@ -12,11 +12,12 @@
       "english": "Meccan",
       "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
     },
+    "revelation_order": 28,
     "total_verses": 8,
     "summary_burmese": "ဤစူရဟ်တွင် အလ္လာဟ်အရှင်မြတ်သည် သဖန်းသီး၊ သံလွင်သီး၊ စီနာတောင်နှင့် လုံခြုံသော မက္ကဟ်မြို့တို့ကို ကျိန်ဆိုတော်မူပြီး လူသားအား အကောင်းဆုံးပုံသဏ္ဍာန်ဖြင့် ဖန်ဆင်းတော်မူခဲ့ကြောင်း ဖော်ပြထားပါသည်။ သို့ရာတွင် ယုံကြည်ခြင်းနှင့် ကောင်းမှုကုသိုလ်များကို မပြုလုပ်သူသည် အနိမ့်ဆုံးအခြေအနေသို့ ကျရောက်နိုင်ကြောင်း၊ အီမာန်ရှိ၍ ကောင်းမှုများပြုလုပ်သူတို့အတွက်မူ အဆုံးမရှိသော အကျိုးဆုလဒ်ရှိကြောင်း သတိပေးထားသည်။ စူရဟ်၏ အဆုံးတွင် အလ္လာဟ်အရှင်မြတ်သည် အကောင်းဆုံး တရားစီရင်တော်မူသော အရှင်ဖြစ်ကြောင်း အတည်ပြုထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
     "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
     "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
@@ -24,57 +25,57 @@
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "وَالتِّينِ وَالزَّيْتُونِ",
-      "english_translation": "By the fig and the olive,",
+      "arabic": "وَٱلتِّينِ وَٱلزَّيْتُونِ",
+      "english_translation": "By the fig and the olive",
       "burmese_translation": "သဖန်းသီးကိုလည်းကောင်း၊ သံလွင်သီးကိုလည်းကောင်း ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "ဝတ်-တီးနိ ဝဇ်-ဇိုင်တွန်း"
     },
     {
       "verse_number": 2,
       "arabic": "وَطُورِ سِينِينَ",
-      "english_translation": "And by Mount Sinai,",
+      "english_translation": "And [by] Mount Sinai",
       "burmese_translation": "စီနာတောင်ကိုလည်း ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "ဝတူရိ စီးနီးန်"
     },
     {
       "verse_number": 3,
-      "arabic": "وَهَٰذَا الْبَلَدِ الْأَمِينِ",
-      "english_translation": "And by this secure city,",
+      "arabic": "وَهَـٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
+      "english_translation": "And [by] this secure city [i.e., Makkah],",
       "burmese_translation": "ထို့ပြင် ဤလုံခြုံစိတ်ချရသော မြို့တော် (မက္ကဟ်) ကိုလည်း ကျိန်ဆိုတော်မူ၏။",
       "burmese_transliteration": "ဝဟာဇလ် ဘလဒိလ် အမီးန်"
     },
     {
       "verse_number": 4,
-      "arabic": "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ",
-      "english_translation": "Indeed, We created mankind in the finest form.",
+      "arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ",
+      "english_translation": "We have certainly created man in the best of stature;",
       "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်သည် လူသားအား အကောင်းဆုံးသော ပုံသဏ္ဍာန်နှင့် အဖွဲ့အစည်းဖြင့် ဖန်ဆင်းတော်မူခဲ့၏။",
       "burmese_transliteration": "လကဒ် ခလက်နလ် အင်စာန ဖီ အဟ်ဆနိ တက်ကွီးမ်"
     },
     {
       "verse_number": 5,
-      "arabic": "ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ",
-      "english_translation": "Then We reduced him to the lowest of the low,",
+      "arabic": "ثُمَّ رَدَدْنَـٰهُ أَسْفَلَ سَـٰفِلِينَ",
+      "english_translation": "Then We return him to the lowest of the low,",
       "burmese_translation": "ထို့နောက် (အမှန်တရားကို ငြင်းပယ်ပါက) ထိုသူအား အနိမ့်ဆုံးအခြေအနေသို့ ပြန်လည်ကျရောက်စေတော်မူ၏။",
       "burmese_transliteration": "သွမ္မ ရဒဒ်နာဟု အတ်စ်ဖလာ ဆာဖိလီးန်"
     },
     {
       "verse_number": 6,
-      "arabic": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
-      "english_translation": "Except those who believe and do righteous deeds; for them is an unfailing reward.",
+      "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+      "english_translation": "Except for those who believe and do righteous deeds, for they will have a reward uninterrupted.",
       "burmese_translation": "သို့ရာတွင် ယုံကြည်ပြီး ကောင်းမှုကုသိုလ်များကို ပြုလုပ်သူတို့အတွက်မူ မည်သည့်အခါမျှ မပြတ်တောက်သော အကျိုးဆုလဒ် ရှိလိမ့်မည်။",
       "burmese_transliteration": "အိလ္လာလ် လဇီးန အာမနူ ဝအမိလုစ် ဆာလိဟာတ် ဖလဟုမ် အဂျ်ရွန် ဂိုင်ရု မမ်နူးန်"
     },
     {
       "verse_number": 7,
-      "arabic": "فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ",
-      "english_translation": "So what then causes you to deny the Judgment?",
+      "arabic": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
+      "english_translation": "So what yet causes you to deny the Recompense?",
       "burmese_translation": "သို့ဖြစ်လျှင် ထိုအချက်များပြီးနောက် တရားစီရင်မည့်နေ့ကို မည်သည့်အရာက အသင်အား ငြင်းပယ်စေသနည်း။",
       "burmese_transliteration": "ဖမာ ယုကဇ်ဇိဗုက ဘအ်ဒု ဗိဒ်-ဒီန်"
     },
     {
       "verse_number": 8,
-      "arabic": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
-      "english_translation": "Is Allah not the Most Just of all judges?",
+      "arabic": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَـٰكِمِينَ",
+      "english_translation": "Is not Allah the most just of judges?",
       "burmese_translation": "အလ္လာဟ်အရှင်မြတ်သည် တရားစီရင်သူအားလုံးထဲတွင် အကောင်းဆုံး တရားစီရင်တော်မူသော အရှင် မဟုတ်ပေလော။",
       "burmese_transliteration": "အလိုင်ဆလ္လာဟု ဗိအဟ်ကမိလ် ဟာကိမီးန်"
     }
