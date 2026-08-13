@@ -1,12 +1,12 @@
 {
   "surah_metadata": {
     "surah_number": 75,
-    "name_arabic": "القِيَامَة",
-    "name_transliteration": "Al-Qiyamah",
-    "name_burmese_title": "စူရဟ် အလ်-ကိယာမဟ် (ထမြောက်ရာနေ့)",
+    "name_arabic": "الْقِيَامَة",
+    "name_transliteration": "Al-Qiyāmah",
+    "name_burmese_title": "စူရဟ် အလ်-ကိယာမဟ် (ထမြောက်ရှင်ပြန်ရာနေ့)",
     "meaning_of_title": {
       "english": "The Resurrection",
-      "burmese": "သေလွန်ပြီးနောက် ပြန်လည် ထမြောက်ရှင်သန်ရာနေ့"
+      "burmese": "ထမြောက်ရှင်ပြန်ရာနေ့"
     },
     "revelation_place": {
       "english": "Meccan",
@@ -14,294 +14,294 @@
     },
     "revelation_order": 31,
     "total_verses": 40,
-    "summary_burmese": "ဤစူရဟ်သည် သေလွန်ပြီးနောက် ပြန်လည်ထမြောက်ရှင်သန်ရမည့် ကိယာမသ်နေ့ အမှန်တရားကို မီးမောင်းထိုးပြထားပါသည်။ အလ္လာဟ်အရှင်မြတ်သည် လူသားတို့၏ စိစစ်ဆံ့သော လက်ချောင်းထိပ်ကလေးများကိုပင် မူလအတိုင်း ပြန်လည်ဖန်ဆင်းနိုင်စွမ်းရှိကြောင်း၊ ကုရ်အာန်ကျမ်းတော်မြတ်အား စုစည်းစောင့်ရှောက်တော်မူပုံ၊ သေလွန်ခါနီး ဝိညာဉ်နှုတ်ယူခံရချိန်၏ ထိတ်လန့်ဖွယ်ရာ အခြေအနေနှင့် သစ္စာငြင်းပယ်သူတို့၏ နိဂုံးကို သတိပေးထားပါသည်။ အဆုံး၌ ရေစက်မျှမှ လူသားအဖြစ် ဖန်ဆင်းတော်မူသော အရှင်သည် သေလွန်သူများကို ပြန်လည်ရှင်သန်စေရန် ဧကန်မလွဲ စွမ်းဆောင်နိုင်ကြောင်း အတည်ပြုထားပါသည်။"
+    "summary_burmese": "ဤစူရဟ်သည် သေလွန်ပြီးနောက် လူသားတို့ ပြန်လည်ထမြောက်ရှင်ပြန်ရမည့် ကိယာမဟ်နေ့၏ အမှန်တရားကို အလေးပေးဖော်ပြထားပါသည်။ အလ္လာဟ်အရှင်မြတ်သည် လူသားတို့၏ အရိုးများကို ပြန်လည်စုစည်းရုံသာမက လက်ချောင်းထိပ်များကိုပင် မူလအတိုင်း ပြန်လည်ဖန်ဆင်းနိုင်တော်မူကြောင်း ဖော်ပြထားသည်။ ထို့နောက် ကိယာမဟ်နေ့၏ ကြောက်မက်ဖွယ်ရာ အခြေအနေများ၊ လူသားတိုင်း မိမိပြုခဲ့သမျှနှင့် မိမိနောက်တွင် ချန်ထားခဲ့သမျှကို သိရှိရမည့်အခြေအနေ၊ ကုရ်အာန်ကျမ်းတော်မြတ်၏ ဝဟီကျရောက်စဉ် တမန်တော်မြတ် ﷺ အနေဖြင့် အလျင်စလို လိုက်ရွတ်ရန် မလိုကြောင်း အလ္လာဟ်အရှင်မြတ်၏ အာမခံချက်၊ တမလွန်ဘဝကို လျစ်လျူရှု၍ လောကီဘဝကိုသာ ချစ်မြတ်နိုးသူတို့၏ အခြေအနေတို့ကို ဖော်ပြထားပါသည်။ နောက်ဆုံးတွင် သေလွန်ခါနီး ဝိညာဉ်၏ အခြေအနေနှင့် လူသားကို သုတ်ရည်စက်မှ စတင်ဖန်ဆင်းတော်မူသော အရှင်သည် သေလွန်သူများကို ပြန်လည်အသက်သွင်းရန် အမှန်တကယ် စွမ်းဆောင်နိုင်တော်မူကြောင်း အတည်ပြုထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
     "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
-    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
-    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+    "burmese_translation": "အနန္တကရုဏာတော်ရှင်၊ အထူးသဖြင့် အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစ်မိလ္လာဟိရ် ရဟ်မာနိရ် ရဟီးမ်"
   },
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ",
-      "english_translation": "I swear by the Day of Resurrection",
-      "burmese_translation": "ငါအရှင်မြတ်သည် ထမြောက်ရာ (ကိယာမသ်) နေ့ကို သစ္စာဆိုတော်မူ၏။",
-      "burmese_transliteration": "လာ အုက္စိမု ဗိယောဝ်မိလ် ကိယာမဟ်"
+      "arabic": "لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَٰمَةِ",
+      "english_translation": "I swear by the Day of Resurrection.",
+      "burmese_translation": "ငါအရှင်မြတ်သည် ထမြောက်ရှင်ပြန်ရာနေ့ကို သစ္စာဆိုတော်မူ၏။",
+      "burmese_transliteration": "လာ အုက်စိမု ဗိယောင်မိလ် ကိယာမဟ်"
     },
     {
       "verse_number": 2,
       "arabic": "وَلَآ أُقْسِمُ بِٱلنَّفْسِ ٱللَّوَّامَةِ",
-      "english_translation": "And I swear by the reproaching soul [to the certainty of resurrection].",
-      "burmese_translation": "ထို့ပြင် မိမိကိုယ်ကို ပြန်လည်အပြစ်တင် စိစစ်တတ်သော စိတ်ဝိညာဉ်ကိုလည်း သစ္စာဆိုတော်မူ၏။",
-      "burmese_transliteration": "ဝါ လာ အုက္စိမု ဗိန် နဖ်စိလ် လဝွဲာမဟ်"
+      "english_translation": "And I swear by the self-reproaching soul.",
+      "burmese_translation": "ထို့ပြင် မိမိကိုယ်ကို ပြန်လည်အပြစ်တင်၍ ဆင်ခြင်သုံးသပ်တတ်သော စိတ်ဝိညာဉ်ကိုလည်း သစ္စာဆိုတော်မူ၏။",
+      "burmese_transliteration": "ဝလာ အုက်စိမု ဗိန်နဖ်စိလ် လဝ်ဝါမဟ်"
     },
     {
       "verse_number": 3,
-      "arabic": "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ",
+      "arabic": "أَيَحْسَبُ ٱلْإِنسَٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ",
       "english_translation": "Does man think that We will not assemble his bones?",
-      "burmese_translation": "လူသားသည် ငါအရှင်မြတ်က သူ၏ အရိုးများကို ပြန်လည်စုစည်းပေးနိုင်မည် မဟုတ်ဟု ထင်မှတ်နေသလော။",
-      "burmese_transliteration": "အာယဟ်စာဗုလ် အိန်းစါနု အဲလ် လန်း နဂျ်မအား အိဇားမားဟ်"
+      "burmese_translation": "လူသားသည် ငါအရှင်မြတ်က သူ၏အရိုးများကို ပြန်လည်စုစည်းပေးနိုင်မည် မဟုတ်ဟု ထင်မှတ်နေသလော။",
+      "burmese_transliteration": "အယဟ်စဗုလ် အင်စာနု အလ်လန် နဂျ်မအ အိဇာမဟု"
     },
     {
       "verse_number": 4,
-      "arabic": "بَلَىٰ قَـٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّىَ بَنَانَهُۥ",
-      "english_translation": "Yes. [We are] Able [even] to proportion his fingertips.",
-      "burmese_translation": "အဘယ်ကြောင့် မစုစည်းနိုင်ရမည်နည်း၊ ငါအရှင်မြတ်သည် သူ၏ လက်ချောင်းထိပ်ကလေးများကိုပင် မူလအတိုင်း ပြန်လည်ပြုပြင်ဖန်ဆင်းပေးနိုင်စွမ်း ရှိတော်မူ၏။",
-      "burmese_transliteration": "ဗာလာ ကားဒိရီးနာ အာလာ အန်း နုစဝွဲိယာ ဗာနားနာဟ်"
+      "arabic": "بَلَىٰ قَٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّيَ بَنَانَهُۥ",
+      "english_translation": "Yes indeed. We are able even to proportion his fingertips.",
+      "burmese_translation": "အဘယ်ကြောင့် မစွမ်းနိုင်ရမည်နည်း။ ငါအရှင်မြတ်သည် သူ၏လက်ချောင်းထိပ်ကလေးများကိုပင် မူလအတိုင်း ပြန်လည်ဖန်ဆင်းပေးနိုင်စွမ်း ရှိတော်မူ၏။",
+      "burmese_transliteration": "ဗလာ ကာဒိရီန အလာ အန် နုစဝွိယ ဘနာနဟု"
     },
     {
       "verse_number": 5,
-      "arabic": "بَلْ يُرِيدُ ٱلْإِنسَـٰنُ لِيَفْجُرَ أَمَامَهُۥ",
+      "arabic": "بَلْ يُرِيدُ ٱلْإِنسَٰنُ لِيَفْجُرَ أَمَامَهُۥ",
       "english_translation": "But man desires to continue in sin.",
-      "burmese_translation": "စှငျးစှငျးအားဖှင့ျ လူသားသညျ နောငျလာလတျတံ့သော အခှိနျမြား၌လညျး မကောငျးမှု ဒုစရိုကျကိုသာ ဆကျလက် ပွုမူလို၏။",
-      "burmese_transliteration": "ဗလ် ယုရီးဒုလ် အိန်းစါနု လိယဖ်ဂျုရာ အာမားမားဟ်"
+      "burmese_translation": "သို့ရာတွင် လူသားသည် မိမိရှေ့တွင် ရှိနေသော အချိန်ကာလတစ်လျှောက် မကောင်းမှုဒုစရိုက်များကို ဆက်လက်ကျူးလွန်လို၏။",
+      "burmese_transliteration": "ဗလ် ယုရီဒုလ် အင်စာနု လိယဖ်ဂျုရ အမာမဟု"
     },
     {
       "verse_number": 6,
-      "arabic": "يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَـٰمَةِ",
+      "arabic": "يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَٰمَةِ",
       "english_translation": "He asks, \"When is the Day of Resurrection?\"",
-      "burmese_translation": "သူက \"ထမြောက်ရာ (ကိယာမသ်) နေ့သည် မည်သည့်အခါ၌ ကျရောက်မည်နည်း\" ဟု (မထီမဲ့မြင်) မေးမြန်း၏။",
-      "burmese_transliteration": "ယစ်အာလု အိုင်ယာနာ ယောဝ်မုလ် ကိယာမဟ်"
+      "burmese_translation": "သူက \"ထမြောက်ရှင်ပြန်ရာနေ့သည် မည်သည့်အခါ၌ ဖြစ်မည်နည်း\" ဟု မေးမြန်း၏။",
+      "burmese_transliteration": "ယစ်အလု အယျာန ယောင်မုလ် ကိယာမဟ်"
     },
     {
       "verse_number": 7,
       "arabic": "فَإِذَا بَرِقَ ٱلْبَصَرُ",
-      "english_translation": "So when vision is dazzled.",
-      "burmese_translation": "သို့ဖြစ်၍ မျက်စိများ ပြူးကြောင် ထိတ်လန့်သွားသောအခါ၊",
-      "burmese_transliteration": "ဖာ အိဇား ဗာရိကလ် ဗာစွာရ်"
+      "english_translation": "So when the sight is dazzled,",
+      "burmese_translation": "ထို့ကြောင့် မျက်စိများသည် ထိတ်လန့်၍ ပြူးကျယ်သွားသောအခါ၊",
+      "burmese_transliteration": "ဖအိဇာ ဘရိကလ် ဘဆရ်"
     },
     {
       "verse_number": 8,
       "arabic": "وَخَسَفَ ٱلْقَمَرُ",
-      "english_translation": "And the moon darkens.",
-      "burmese_translation": "ထို့ပြင် လမင်းသည် အလင်းကွယ်ပျောက်သွားသောအခါ၊",
-      "burmese_transliteration": "ဝါ ခါစာဖလ် ကားမားရ်"
+      "english_translation": "and the moon is darkened,",
+      "burmese_translation": "လမင်းသည် အလင်းကွယ်ပျောက်သွားသောအခါ၊",
+      "burmese_transliteration": "ဝခစဖလ် ကမရ်"
     },
     {
       "verse_number": 9,
       "arabic": "وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ",
-      "english_translation": "And the sun and the moon are joined,",
-      "burmese_translation": "ထို့ပြင် နေနှင့်လကို ပေါင်းစည်းလိုက်သောအခါ၊",
-      "burmese_transliteration": "ဝါ ဂျုမိအားရှ် ရှမ်စု ဝါလ် ကားမားရ်"
+      "english_translation": "and the sun and the moon are joined together,",
+      "burmese_translation": "နေနှင့်လကို ပေါင်းစည်းလိုက်သောအခါ၊",
+      "burmese_transliteration": "ဝဂျုမိအရှ် ရှမ်စု ဝလ် ကမရ်"
     },
     {
       "verse_number": 10,
-      "arabic": "يَقُولُ ٱلْإِنسَـٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ",
-      "english_translation": "Man will say on that Day, \"Where is the [place of] escape?\"",
-      "burmese_translation": "ထိုနေ့၌ လူသားက \"ထွက်ပြေးလွတ်မြောက်ရာဌာန အဘယ်မှာနည်း\" ဟု ပြောဆိုပေအံ့။",
-      "burmese_transliteration": "ယကူးလုလ် အိန်းစါနု ယောဝ်မအိဇိန်း အိုင်နလ် မာဖားရ်"
+      "arabic": "يَقُولُ ٱلْإِنسَٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ",
+      "english_translation": "Man will say on that Day, \"Where is the place of escape?\"",
+      "burmese_translation": "ထိုနေ့၌ လူသားက \"ထွက်ပြေးလွတ်မြောက်ရာနေရာ အဘယ်မှာနည်း\" ဟု ပြောဆိုပေမည်။",
+      "burmese_transliteration": "ယကူလုလ် အင်စာနု ယောင်မအိဇင် အိုင်နလ် မဖရ်"
     },
     {
       "verse_number": 11,
       "arabic": "كَلَّا لَا وَزَرَ",
       "english_translation": "No! There is no refuge.",
-      "burmese_translation": "အလျဉ်း မရှိနိုင်၊ ခိုလှုံရာ အကာအကွယ်ဟူ၍ လုံးဝ မရှိပါ။",
-      "burmese_transliteration": "ကဲလ္လာ လာ ဝါဇာရ်"
+      "burmese_translation": "အလျဉ်းမဟုတ်ပါ။ ခိုလှုံရာဟူ၍ လုံးဝမရှိပေ။",
+      "burmese_transliteration": "ကလ္လာ လာ ဝဇရ်"
     },
     {
       "verse_number": 12,
       "arabic": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمُسْتَقَرُّ",
-      "english_translation": "To your Lord, that Day, is the [place of] permanence.",
-      "burmese_translation": "ထိုနေ့၌ အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်သို့သာလျှင် ဆိုက်ရောက် စုံးစပ်ရာ ဖြစ်၏။",
-      "burmese_transliteration": "အိလာ ရဗ်ဗိကာ ယောဝ်မအိဇိနိလ် မုစသ်သက်ကာရ်"
+      "english_translation": "To your Lord, that Day, is the final destination.",
+      "burmese_translation": "ထိုနေ့၌ အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်သို့သာ နောက်ဆုံးဆိုက်ရောက်ရာ ဖြစ်ပေမည်။",
+      "burmese_transliteration": "အိလာ ရဗ္ဗိက ယောင်မအိဇင် အလ်မုစ်သကရ်"
     },
     {
       "verse_number": 13,
-      "arabic": "يُنَبَّؤُا۟ ٱلْإِنسَـٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ",
-      "english_translation": "Man will be informed that Day of what he sent ahead and kept back.",
-      "burmese_translation": "ထိုနေ့၌ လူသားသည် မိမိ ရှေးဦးပြုလုပ်ခဲ့သမျှနှင့် နောက်ကျန်ရစ်စေခဲ့သမျှ (ကောင်းဆိုးနှစ်ရပ်) တို့ကို အသိပေးခြင်း ခံရပေအံ့။",
-      "burmese_transliteration": "ယုနဗ်ဗအုလ် အိန်းစါနု ယောဝ်မအိဇိမ် ဗိမာ ကဒ်ဒါမား ဝါ အာခ်ခါရ်"
+      "arabic": "يُنَبَّؤُا۟ ٱلْإِنسَٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ",
+      "english_translation": "Man will be informed on that Day of what he sent ahead and what he left behind.",
+      "burmese_translation": "ထိုနေ့၌ လူသားသည် မိမိရှေ့သို့ ကြိုတင်ပို့ခဲ့သမျှနှင့် နောက်တွင် ချန်ထားခဲ့သမျှတို့ကို အသိပေးခြင်း ခံရပေမည်။ / ထိုနေ့ရက်တွင် လူသားသည် မိမိဘဝတစ်လျှောက် ရှေ့သို့ တင်ကြိုလုပ်ဆောင်ခဲ့သမျှသော ကောင်းမှုဆိုးမှုများနှင့် (နောက်ကွယ်တွင်) ကျန်ရစ်စေခဲ့သမျှသော လုပ်ရပ်အဝဝကို အသေအချာ သိရှိစေခြင်း ခံရပေမည်။",
+      "burmese_transliteration": "ယုနဗ္ဗအုလ် အင်စာနု ယောင်မအိဇင် ဗိမာ ကဒ္ဒမ ဝအခ္ခရ်"
     },
     {
       "verse_number": 14,
-      "arabic": "بَلِ ٱلْإِنسَـٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌ",
-      "english_translation": "Rather, man, against himself, will be a witness,",
-      "burmese_translation": "စှငျးစှငျးအားဖှင့ျ လူသားသညျ မိမိကိုယ်တိုင်အပေါ်၌ ပြတ်သားသော သက်သေပင် ဖြစ်၏။",
-      "burmese_transliteration": "ဗာလီးလ် အိန်းစါနု အာလာ နဖ်စိဟီး ဗာဆီးရားဟ်"
+      "arabic": "بَلِ ٱلْإِنسَٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌ",
+      "english_translation": "Rather, man will be a witness against himself,",
+      "burmese_translation": "သို့ရာတွင် လူသားသည် မိမိကိုယ်တိုင်နှင့် ပတ်သက်၍ သက်သေထူနိုင်သူ ဖြစ်၏။",
+      "burmese_transliteration": "ဗလိလ် အင်စာနု အလာ နဖ်စိဟီ ဘဆီရဟ်"
     },
     {
       "verse_number": 15,
       "arabic": "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ",
-      "english_translation": "Even if he presents his excuses.",
-      "burmese_translation": "သူသည် မိမိ၏ ဆင်ခြေမျိုးစုံကို ပေးအပ်စေကာမူ (အကျိုးရှိမည် မဟုတ်ပေ)။",
-      "burmese_transliteration": "ဝါ လောဝ် အာလ်ကာ မအားဇီးရားဟ်"
+      "english_translation": "even if he presents his excuses.",
+      "burmese_translation": "သူသည် မိမိ၏ ဆင်ခြေများကို တင်ပြစေကာမူပင် ဖြစ်၏။",
+      "burmese_transliteration": "ဝလောင် အလ်ကာ မအာဇီရဟု"
     },
     {
       "verse_number": 16,
       "arabic": "لَا تُحَرِّكْ بِهِۦ لِسَانَكَ لِتَعْجَلَ بِهِۦٓ",
-      "english_translation": "Move not your tongue with it, [O Muḥammad], to hasten with it [i.e., recitation of the Qur’ān].",
-      "burmese_translation": "(အို တမန်တော်) အသင်သည် ကုရ်အာန်ကျမ်းတော်မြတ်ကို အလျင်အမြန် မှတ်သားလို၍ လျှာကို အလျင်စလို မလှုပ်ရှားပါနှင့်။",
-      "burmese_transliteration": "လာ သုဟာရ်ရိတ် ဗိဟီး လိစာနားကာ လိသအားဂျလာ ဗိဟ်"
+      "english_translation": "Do not move your tongue with it to hasten its recitation, O Muhammad.",
+      "burmese_translation": "(အို မုဟမ္မဒ်) အသင်သည် ထိုကုရ်အာန်ကို အလျင်အမြန် ရွတ်ဖတ်မှတ်သားရန်အတွက် မိမိလျှာကို အလျင်စလို မလှုပ်ရှားပါနှင့်။",
+      "burmese_transliteration": "လာ သုဟရ်ရစ် ဗိဟီ လိစာနက လိသအ်ဂျလ ဗိဟီ"
     },
     {
       "verse_number": 17,
       "arabic": "إِنَّ عَلَيْنَا جَمْعَهُۥ وَقُرْءَانَهُۥ",
-      "english_translation": "Indeed, upon Us is its collection [in your heart] and [to make possible] its recitation.",
-      "burmese_translation": "ဧကန်စင်စစ် ၎င်းကို (အသင်၏ ရင်ဘတ်၌) စုစည်းပေးခြင်းနှင့် ရွတ်ဖတ်စေခြင်းမှာ ငါအရှင်မြတ်၏ တာဝန်သာ ဖြစ်ပေ၏။",
-      "burmese_transliteration": "အင်းနာ အာလိုင်းနား ဂျမ်အာဟူ ဝါ ကုရ်အာနားဟ်"
+      "english_translation": "Indeed, upon Us is its collection and its recitation.",
+      "burmese_translation": "ဧကန်စင်စစ် ထိုကုရ်အာန်ကို စုစည်းပေးခြင်းနှင့် ရွတ်ဖတ်စေခြင်းသည် ငါအရှင်မြတ်၏ တာဝန်ပင် ဖြစ်၏။",
+      "burmese_transliteration": "အင်္န အလိုင်န ဂျမ်အဟု ဝကုရ်အာနဟု"
     },
     {
       "verse_number": 18,
-      "arabic": "فَإِذَا قَرَأْنَـٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ",
-      "english_translation": "So when We have recited it [through Gabriel], then follow its recitation.",
-      "burmese_translation": "သို့ဖြစ်၍ ငါအရှင်မြတ်သည် (ဂျိဗ်ရီးလ်တမန်တော်မှတစ်ဆင့်) ၎င်းကို ရွတ်ဖတ်ပြပြီးသောအခါ အသင်သည် ယင်းရွတ်ဖတ်မှုကို လိုက်ပါ နာယူပါလော့။",
-      "burmese_transliteration": "ဖာ အိဇား ကားရားအ်နားဟု ဖသ်သဗိအ် ကုရ်အာနားဟ်"
+      "arabic": "فَإِذَا قَرَأْنَٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ",
+      "english_translation": "So when We recite it, then follow its recitation.",
+      "burmese_translation": "သို့ဖြစ်၍ ငါအရှင်မြတ်သည် ၎င်းကို ရွတ်ဖတ်ပြသောအခါ အသင်သည် ထိုရွတ်ဖတ်မှုကို လိုက်နာနာယူပါလော့။",
+      "burmese_transliteration": "ဖအိဇာ ကရာအ်နာဟု ဖတ်သ္သဗိအ် ကုရ်အာနဟု"
     },
     {
       "verse_number": 19,
       "arabic": "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُۥ",
-      "english_translation": "Then upon Us is its clarification [to you].",
-      "burmese_translation": "ထို့နောက် ၎င်း၏ အဓိပ္ပာယ်ကို ရှင်းလင်းပြသပေးခြင်းသည်လည်း ငါအရှင်မြတ်၏ တာဝန်သာ ဖြစ်ပေ၏။",
-      "burmese_transliteration": "သုမ်မာ အင်းနာ အာလိုင်းနား ဗာယာနားဟ်"
+      "english_translation": "Then upon Us is its clarification.",
+      "burmese_translation": "ထို့နောက် ၎င်း၏ အဓိပ္ပာယ်ကို ရှင်းလင်းဖော်ပြပေးခြင်းသည်လည်း ငါအရှင်မြတ်၏ တာဝန်ပင် ဖြစ်၏။",
+      "burmese_transliteration": "သုမ္မ အင်္န အလိုင်န ဘယာနဟု"
     },
     {
       "verse_number": 20,
       "arabic": "كَلَّا بَلْ تُحِبُّونَ ٱلْعَاجِلَةَ",
-      "english_translation": "No! But you [i.e., mankind] love the immediate",
-      "burmese_translation": "အလျဉ်း မဟုတ်ပါ၊ အမှန်တကယ်၌ သင်တို့သည် လောကီ ချက်ချင်းလက်ငင်း စည်းစိမ်ကိုသာ မြတ်နိုးချစ်ခင်ကြ၏။",
-      "burmese_transliteration": "ကဲလ္လာ ဗလ် သုဟိဗ်ဗူးနလ် အားဂျိလာဟ်"
+      "english_translation": "No! Rather, you love the immediate life,",
+      "burmese_translation": "အလျဉ်းမဟုတ်ပါ။ အမှန်မှာ သင်တို့သည် လောကီဘဝ၏ ချက်ချင်းရရှိသော အကျိုးခံစားခွင့်များကို ချစ်မြတ်နိုးကြ၏။",
+      "burmese_transliteration": "ကလ္လာ ဗလ် သုဟိဗ္ဗူနလ် အာဂျိလဟ်"
     },
     {
       "verse_number": 21,
       "arabic": "وَتَذَرُونَ ٱلْـَٔاخِرَةَ",
-      "english_translation": "And leave [i.e., neglect] the Hereafter.",
-      "burmese_translation": "ထို့ပြင် တမလွန်ဘဝကိုမူ ပစ်ပယ်ထားကြ၏။",
-      "burmese_transliteration": "ဝါ သဇားရူးနလ် အားခိရားဟ်"
+      "english_translation": "and leave the Hereafter.",
+      "burmese_translation": "တမလွန်ဘဝကိုမူ ပစ်ပယ်ထားကြ၏။",
+      "burmese_transliteration": "ဝသဇရူနလ် အာခိရဟ်"
     },
     {
       "verse_number": 22,
       "arabic": "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ",
-      "english_translation": "[Some] faces, that Day, will be radiant,",
-      "burmese_translation": "ထိုနေ့၌ အချို့သော မျက်နှာများသည် ကြည်လင် တောက်ပလျက် ရှိကြအံ့။",
-      "burmese_transliteration": "ဝုဂျူးဟုင် ယောဝ်မအိဇိန်း နားဒိရားဟ်"
+      "english_translation": "[Some] faces on that Day will be radiant,",
+      "burmese_translation": "ထိုနေ့၌ အချို့သော မျက်နှာများသည် ကြည်လင်တောက်ပလျက် ရှိကြပေမည်။",
+      "burmese_transliteration": "ဝုဂျူဟုန် ယောင်မအိဇင် နာဒိရဟ်"
     },
     {
       "verse_number": 23,
       "arabic": "إِلَىٰ رَبِّهَا نَاظِرَةٌ",
-      "english_translation": "Looking at their Lord.",
-      "burmese_translation": "မိမိတို့ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်သို့ ဖူးမြှော် ကြည့်ရှုလျက် ရှိကြအံ့။",
-      "burmese_transliteration": "အိလာ ရဗ်ဗိဟာ နားဇိရားဟ်"
+      "english_translation": "looking toward their Lord.",
+      "burmese_translation": "မိမိတို့၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်ကို ဖူးမြော်ကြည့်ရှုလျက် ရှိကြပေမည်။",
+      "burmese_transliteration": "အိလာ ရဗ္ဗိဟာ နာဇိရဟ်"
     },
     {
       "verse_number": 24,
       "arabic": "وَوُجُوهٌ يَوْمَئِذٍۭ بَاسِرَةٌ",
-      "english_translation": "And [some] faces, that Day, will be contorted,",
-      "burmese_translation": "ထို့ပြင် အချို့သော မျက်နှာများသည် ထိုနေ့၌ ညှိုးငယ် မည်းမှောင်လျက် ရှိကြအံ့။",
-      "burmese_transliteration": "ဝါ ဝုဂျူးဟုင် ယောဝ်မအိဇိန်း ဗားစိရားဟ်"
+      "english_translation": "And [other] faces on that Day will be gloomy,",
+      "burmese_translation": "ထို့ပြင် အချို့သော မျက်နှာများသည် ထိုနေ့၌ ညှိုးငယ်မည်းမှောင်လျက် ရှိကြပေမည်။",
+      "burmese_transliteration": "ဝဝုဂျူဟုန် ယောင်မအိဇင် ဘာစိရဟ်"
     },
     {
       "verse_number": 25,
       "arabic": "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ",
-      "english_translation": "Expecting that there will be done to them [something] backbreaking.",
-      "burmese_translation": "မိမိတို့အပေါ်၌ ခါးကျိုးစေမည့် ကပ်ဘေးကြီး သက်ရောက်တော့မည်ဟု ၎င်းတို့ ရိပ်မိ သိရှိကြ၏။",
-      "burmese_transliteration": "သဇုန်းနု အန်း ယုဖ်အာလာ ဗိဟာ ဖားကိရားဟ်"
+      "english_translation": "thinking that a crushing calamity will be inflicted upon them.",
+      "burmese_translation": "မိမိတို့အပေါ်၌ ခါးကျိုးစေမည့် ကြီးမားသော ကပ်ဘေးတစ်ရပ် သက်ရောက်တော့မည်ဟု ထင်မှတ်နေကြပေမည်။",
+      "burmese_transliteration": "သဇုန္နု အန် ယုဖ်အလ ဗိဟာ ဖာကိရဟ်"
     },
     {
       "verse_number": 26,
-      "arabic": "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِىَ",
-      "english_translation": "No! When it [i.e., the soul] has reached the collar bones",
-      "burmese_translation": "အလျဉ်း မဟုတ်ပါ၊ ဝိညာဉ်သည် ညှပ်ရိုးသို့ ဆိုက်ရောက်လာသောအခါ၊",
-      "burmese_transliteration": "ကဲလ္လာ အိဇား ဗာလာဂါသီးသ် သရားကီး"
+      "arabic": "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِيَ",
+      "english_translation": "No! When the soul reaches the collar bones,",
+      "burmese_translation": "အလျဉ်းမဟုတ်ပါ။ ဝိညာဉ်သည် ရင်ညှပ်ရိုးများသို့ ဆိုက်ရောက်လာသောအခါ၊ / လုံးဝ မဟုတ်ပေ! (လူတို့ တမလွန်ကို ပေါ့ဆနေချိန်တွင်) သေမင်း၏ တံခါးဝသို့ရောက်၍ အသက်ထွက်ခါနီး ဝိညာဉ်သည် ရင်ညှပ်ရိုးစပ်ဆီသို့ ဆိုက်ရောက်လာမည့် အချိန်အခါ၌—",
+      "burmese_transliteration": "ကလ္လာ အိဇာ ဘလဂသိသ် သရာကီ"
     },
     {
       "verse_number": 27,
       "arabic": "وَقِيلَ مَنْ ۜ رَاقٍ",
-      "english_translation": "And it is said, \"Who will cure [him]?\"",
-      "burmese_translation": "ထို့ပြင် \"မည်သူ ဆေးကုသ ဆရာမန္တန် ပြုလုပ်ပေးနိုင်သနည်း\" ဟု မေးမြန်းခြင်း ခံရသောအခါ၊",
-      "burmese_transliteration": "ဝါ ကီးလာ မန် ရားကိန်း"
+      "english_translation": "and it is said, \"Who can cure him?\"",
+      "burmese_translation": "ထို့ပြင် \"မည်သူက ကုသပေးနိုင်မည်နည်း\" ဟု ပြောဆိုကြသောအခါ၊",
+      "burmese_transliteration": "ဝကီလ မန် ရာကိ"
     },
     {
       "verse_number": 28,
       "arabic": "وَظَنَّ أَنَّهُ ٱلْفِرَاقُ",
-      "english_translation": "And he [i.e., the dying one] is certain that it is the [time of] separation",
-      "burmese_translation": "ထို့ပြင် သူသည် ယခုအချိန်မှာ (လောကီမှ) ခွဲခွာရတော့မည့် အချိန်ဖြစ်ကြောင်း ရေရေရာရာ သိရှိသွားသောအခါ၊",
-      "burmese_transliteration": "ဝါ ဇုန်းနာ အန်းနားဟုလ် ဖိရားက်"
+      "english_translation": "and he realizes that it is the time of separation,",
+      "burmese_translation": "သူသည် ယခုအချိန်မှာ (လောကီဘဝမှ) ခွဲခွာရတော့မည့်အချိန် ဖြစ်ကြောင်း သိရှိသွားသောအခါ၊",
+      "burmese_transliteration": "ဝဇွန္န အန္နဟုလ် ဖိရာက်"
     },
     {
       "verse_number": 29,
       "arabic": "وَٱلْتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ",
-      "english_translation": "And the leg is wound about the leg,",
-      "burmese_translation": "ထို့ပြင် (သေလွန်ခါနီး) ခြေသလုံးနှစ်ဖက် ပတ်လုံး ရောယှက်သွားသောအခါ၊",
-      "burmese_transliteration": "ဝေါလ် သာဖ်ဖာသီးစ် စားကု ဗိစ် စားက်"
+      "english_translation": "and one leg is entwined with the other,",
+      "burmese_translation": "ခြေသလုံးတစ်ဖက်သည် အခြားခြေသလုံးတစ်ဖက်နှင့် ရောယှက်ပတ်လည်သွားသောအခါ၊ / သေမင်း၏ဝေဒနာကြောင့် ခြေလက်များ တောင့်တင်းလိမ်ယှက်ကုန်ဆုံးကာ၊ (သို့မဟုတ်) နောက်ဆုံးခရီးအတွက် ခြေထောက်များကို ပူးယှက်ချည်နှောင်ရမည့် အချိန်အခါမျိုး၌...",
+      "burmese_transliteration": "ဝလ်သဖ္ဖသိစ် စာကု ဗိစ်စာက်"
     },
     {
       "verse_number": 30,
       "arabic": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمَسَاقُ",
-      "english_translation": "To your Lord, that Day, will be the procession.",
-      "burmese_translation": "ထိုနေ့၌ အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်သို့သာ မောင်းနှင် ဆွဲဆောင်ခြင်း ခံရပေအံ့။",
-      "burmese_transliteration": "အိလာ ရဗ်ဗိကာ ယောဝ်မအိဇိနိလ် မာစားက်"
+      "english_translation": "to your Lord, that Day, will be the procession.",
+      "burmese_translation": "ထိုနေ့၌ အသင်၏ ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ထံတော်သို့သာ မောင်းနှင်ပို့ဆောင်ခြင်း ခံရပေမည်။",
+      "burmese_transliteration": "အိလာ ရဗ္ဗိက ယောင်မအိဇင် အလ်မစာက်"
     },
     {
       "verse_number": 31,
       "arabic": "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
-      "english_translation": "And he [i.e., the disbeliever] had not believed, nor had he prayed.",
-      "burmese_translation": "သို့သော် ထိုသူသည် အမှန်တရားကို ယုံကြည်ခြင်းလည်း မရှိခဲ့၊ ဆွလာသ် ဝတ်ပြုခြင်းလည်း မရှိခဲ့ပေ။",
-      "burmese_transliteration": "ဖာ လာ ဆွဒ်ဒါကာ ဝါ လာ ဆွလ္လာ"
+      "english_translation": "For he neither believed nor prayed.",
+      "burmese_translation": "ထိုသူသည် ယုံကြည်ခြင်းလည်း မရှိခဲ့၊ ဆွလာသ်ဝတ်ပြုခြင်းလည်း မပြုခဲ့ပေ။",
+      "burmese_transliteration": "ဖလာ ဆဒ္ဒက ဝလာ ဆလ္လာ"
     },
     {
       "verse_number": 32,
-      "arabic": "وَلَـٰكِن كَذَّبَ وَتَوَلَّىٰ",
-      "english_translation": "But [instead], he denied and turned away.",
-      "burmese_translation": "စှငျးစှငျးအားဖှင့ျ သူသည် ငြင်းပယ်ခဲ့၏၊ ကျောခိုင်း ထွက်ခွာခဲ့၏။",
-      "burmese_transliteration": "ဝါ လားကိန်း ကက်ဇ်ဇာဗာ ဝါ သဝဲလ္လာ"
+      "arabic": "وَلَٰكِن كَذَّبَ وَتَوَلَّىٰ",
+      "english_translation": "But instead, he denied and turned away.",
+      "burmese_translation": "သို့ရာတွင် သူသည် ငြင်းပယ်ခဲ့ပြီး ကျောခိုင်းလှည့်ထွက်သွားခဲ့၏။",
+      "burmese_transliteration": "ဝလာကင် ကဇ္ဇဗ ဝသဝလ္လာ"
     },
     {
       "verse_number": 33,
       "arabic": "ثُمَّ ذَهَبَ إِلَىٰٓ أَهْلِهِۦ يَتَمَطَّىٰٓ",
-      "english_translation": "And then he went to his people, swaggering [in pride].",
-      "burmese_translation": "ထို့နောက် သူသည် မာန်မူ မာနထန်စွာဖြင့် မိမိ၏ အိမ်သူအိမ်သားများထံသို့ ထွက်ခွာသွားခဲ့၏။",
-      "burmese_transliteration": "သုမ်မာ ဇာဟာဗာ အိလာ အဲဟ်လိဟီး ယားသါမသ်သါ"
+      "english_translation": "Then he went to his people, swaggering in pride.",
+      "burmese_translation": "ထို့နောက် သူသည် မာန်မာနထောင်လွှားစွာဖြင့် မိမိ၏ အိမ်သူအိမ်သားများထံသို့ သွားခဲ့၏။",
+      "burmese_transliteration": "သုမ္မ ဇဟဗ အိလာ အဟ်လိဟီ ယတမတ္တာ"
     },
     {
       "verse_number": 34,
       "arabic": "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
       "english_translation": "Woe to you, and woe!",
-      "burmese_translation": "အသင်၏အပေါ်၌ ပျက်စီးခြင်း သက်ရောက်ပါစေ၊ ပျက်စီးခြင်း သက်ရောက်ပါစေ။",
-      "burmese_transliteration": "အောဝ်လာ လားကာ ဖာ အောဝ်လာ"
+      "burmese_translation": "အသင်၏အပေါ်၌ ပျက်စီးခြင်း သက်ရောက်ပါစေ။ ပျက်စီးခြင်း သက်ရောက်ပါစေ။",
+      "burmese_transliteration": "အောလာ လက ဖအောလာ"
     },
     {
       "verse_number": 35,
-      "arabic": "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰٓ",
+      "arabic": "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰ",
       "english_translation": "Then woe to you, and woe!",
-      "burmese_translation": "တစ်ဖန် အသင်၏အပေါ်၌ ပျက်စီးခြင်း သက်ရောက်ပါစေ၊ ပျက်စီးခြင်း သက်ရောက်ပါစေ။",
-      "burmese_transliteration": "သုမ်မာ အောဝ်လာ လားကာ ဖာ အောဝ်လာ"
+      "burmese_translation": "တစ်ဖန် အသင်၏အပေါ်၌ ပျက်စီးခြင်း သက်ရောက်ပါစေ။ ပျက်စီးခြင်း သက်ရောက်ပါစေ။",
+      "burmese_transliteration": "သုမ္မ အောလာ လက ဖအောလာ"
     },
     {
       "verse_number": 36,
-      "arabic": "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَن يُتْرَكَ سُدًى",
-      "english_translation": "Does man think that he will be left neglected?",
-      "burmese_translation": "လူသားသည် မိမိအား အလကားအတိုင်း ပစ်ထားခြင်း ခံရမည်ဟု ထင်မှတ်နေသလော။",
-      "burmese_transliteration": "အာယဟ်စာဗုလ် အိန်းစါနု အန်း ယုသ်ရားကာ စုဒါ"
+      "arabic": "أَيَحْسَبُ ٱلْإِنسَٰنُ أَن يُتْرَكَ سُدًى",
+      "english_translation": "Does man think that he will be left without purpose?",
+      "burmese_translation": "လူသားသည် မိမိအား ရည်ရွယ်ချက်မဲ့စွာ ပစ်ထားခံရမည်ဟု ထင်မှတ်နေသလော။",
+      "burmese_transliteration": "အယဟ်စဗုလ် အင်စာနု အန် ယုသ်ရက စုဒါ"
     },
     {
       "verse_number": 37,
-      "arabic": "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِىٍّ يُمْنَىٰ",
-      "english_translation": "Had he not been a sperm from semen emitted?",
-      "burmese_translation": "သူသည် သုတ်ရည်စက်အဖြစ် လှန်းစွန့်ထုတ်ခြင်း ခံရသော ရေစက်မျှ မဟုတ်ခဲ့ပါလော။",
-      "burmese_transliteration": "အာလမ် ယာကု နုသ်ဖာသမ် မိန်း မနီးယိင်း ယုမ်နါ"
+      "arabic": "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِيٍّ يُمْنَىٰ",
+      "english_translation": "Had he not been a sperm-drop from semen emitted?",
+      "burmese_translation": "သူသည် သွန်းချသော သုတ်ရည်မှ ဖြစ်ပေါ်လာသော သုတ်ရည်စက်တစ်စက် မဟုတ်ခဲ့ပါလော။",
+      "burmese_transliteration": "အလမ် ယက နုသ်ဖတမ် မင် မနိယျင် ယုမ်နာ"
     },
     {
       "verse_number": 38,
       "arabic": "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ",
-      "english_translation": "Then he was a clinging clot, and [Allah] created [his form] and proportioned [him]",
-      "burmese_translation": "ထို့နောက် အသွေးခဲ ဖြစ်လာခဲ့၏၊ ထို့နောက် အရှင်မြတ်သည် (သူ့အား) ဖန်ဆင်း၍ အင်္ဂါစုံညီအောင် ပြုပြင်ပေးတော်မူခဲ့၏။",
-      "burmese_transliteration": "သုမ်မာ ကားနာ အာလာကာသန်း ဖာခါလာကာ ဖာစဝွဲာ"
+      "english_translation": "Then he became a clinging clot, and He created and proportioned him.",
+      "burmese_translation": "ထို့နောက် သူသည် တွယ်ကပ်နေသော သွေးခဲအဆင့် ဖြစ်လာခဲ့၏။ ထို့နောက် အရှင်မြတ်သည် သူ့အား ဖန်ဆင်း၍ အင်္ဂါအစိတ်အပိုင်းများကို အချိုးကျ ပြည့်စုံအောင် ပြုလုပ်တော်မူခဲ့၏။",
+      "burmese_transliteration": "သုမ္မ ကာန အလကတန် ဖခလက ဖဆဝ္ဝါ"
     },
     {
       "verse_number": 39,
       "arabic": "فَجَعَلَ مِنْهُ ٱلزَّوْجَيْنِ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
-      "english_translation": "And made of him two mates, the male and the female.",
-      "burmese_translation": "ထို့နောက် ထိုအရာမှ ယောက်ျား၊ မိန်းမဟူသော အစုံလိုက် ဖန်ဆင်းတော်မူခဲ့၏။",
-      "burmese_transliteration": "ဖာ ဂျာအာလာ မိန်းဟုဇ် ဇောဝ်ဂျိုင်းနိဇ် ဇာကားရာ ဝါလ် အုန်းသာ"
+      "english_translation": "Then He made from him the two mates, the male and the female.",
+      "burmese_translation": "ထို့နောက် ထိုသူ့ထံမှ ယောက်ျားနှင့် မိန်းမဟူသော အစုံနှစ်မျိုးကို ဖန်ဆင်းတော်မူခဲ့၏။",
+      "burmese_transliteration": "ဖဂျအလ မင်ဟုဇ် ဇောင်ဂျိုင်နိဇ် ဇကရ ဝလ် အွန်သာ"
     },
     {
       "verse_number": 40,
-      "arabic": "أَلَيْسَ ذَٰلِكَ بِقَـٰدِرٍ عَلَىٰٓ أَن يُحْـِۧىَ ٱلْمَوْتَىٰ",
-      "english_translation": "Is not that [Creator] Able to give life to the dead?",
-      "burmese_translation": "ထိုကဲ့သို့ ဖန်ဆင်းတော်မူသော အရှင်သည် သေလွန်သူများကို ပြန်လည် ရှင်သန်စေရန် စွမ်းဆောင်နိုင်တော်မမူပေလော။ (ဧကန်စင်စစ် စွမ်းဆောင်နိုင်တော်မူပါ၏။)",
-      "burmese_transliteration": "အာလိုက်စာ ဇားလိကာ ဗိကားဒိရင် အာလာ အန်း ယုဟ်ယိယလ် မောဝ်သာ"
+      "arabic": "أَلَيْسَ ذَٰلِكَ بِقَٰدِرٍ عَلَىٰٓ أَن يُحْيِۦَ ٱلْمَوْتَىٰ",
+      "english_translation": "Is not that Creator able to give life to the dead?",
+      "burmese_translation": "ထိုသို့ ဖန်ဆင်းတော်မူသော အရှင်သည် သေလွန်သူများအား ပြန်လည်အသက်သွင်းနိုင်စွမ်း မရှိတော်မူပေလော။ အမှန်ပင် စွမ်းဆောင်နိုင်တော်မူ၏။",
+      "burmese_transliteration": "အလိုင်စ ဇာလိက ဗိကာဒိရင် အလာ အန် ယုဟ်ယိယလ် မောင်သာ"
     }
   ]
 }

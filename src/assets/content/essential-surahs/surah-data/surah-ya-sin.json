@@ -1,0 +1,608 @@
+{
+  "surah_metadata": {
+    "surah_number": 36,
+    "name_arabic": "يس",
+    "name_transliteration": "Yā-Sīn",
+    "name_burmese_title": "စူရဟ် ယာ-စီးန် (ယာ-စီးန်)",
+    "meaning_of_title": {
+      "english": "Yā-Sīn",
+      "burmese": "ယာ-စီးန် (အစပိုင်းတွင် ပါရှိသော အာရဗီ အက္ခရာနှစ်လုံး၏ အမည်)"
+    },
+    "revelation_place": {
+      "english": "Meccan",
+      "burmese": "မက္ကီ (အများအားဖြင့် မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သော စူရဟ်ဖြစ်သည်)"
+    },
+    "revelation_order": 41,
+    "total_verses": 83,
+    "summary_burmese": "ဤစူရဟ်တွင် တမန်တော်မြတ် မုဟမ္မဒ် (ဆွလ္လလ္လာဟု အလိုင်ဟိ ဝစလ္လမ်) သည် အလ္လာဟ်အရှင်မြတ်၏ တမန်တော်များအနက် တစ်ပါးဖြစ်ကြောင်းနှင့် ဖြောင့်မတ်သော လမ်းစဉ်ပေါ်တွင် ရှိတော်မူကြောင်း အတည်ပြုဖော်ပြထားပါသည်။ အမှန်တရားကို ငြင်းပယ်သူများ၏ အခြေအနေ၊ သတိပေးနှိုးဆော်မှုကို လက်ခံလိုက်နာသူများအတွက် ခွင့်လွှတ်ခြင်းနှင့် ဂုဏ်သိက္ခာရှိသော ဆုလာဘ်တို့ကို ဖော်ပြထားပါသည်။ ထို့နောက် မြို့တစ်မြို့သို့ တမန်တော်များ ရောက်ရှိလာသည့် ဖြစ်ရပ်ကို ဥပမာပြ၍ အမှန်တရားကို ထောက်ခံခဲ့သော ယုံကြည်သူတစ်ဦး၏ သတ္တိရှိသော ရပ်တည်ချက်ကို ဖော်ပြထားပါသည်။ သေဆုံးသူများကို ပြန်လည်အသက်ရှင်စေခြင်း၊ ကမ္ဘာမြေမှ အပင်များ ပေါက်ဖွားစေခြင်း၊ နေ၊ လနှင့် ညဉ့်နေ့တို့၏ အစီအစဉ်တကျ လည်ပတ်မှုများ၊ သင်္ဘောများနှင့် တိရစ္ဆာန်များမှ အကျိုးကျေးဇူးများ စသည်တို့ကို အလ္လာဟ်အရှင်မြတ်၏ တန်ခိုးတော်နှင့် တစ်ဆူတည်းဖြစ်တော်မူခြင်း၏ သက်သေအထောက်အထားများအဖြစ် ဖော်ပြထားပါသည်။ ထို့ပြင် ကိယာမသ်နေ့တွင် တံပိုးမှုတ်ခြင်း၊ သင်္ချိုင်းများမှ လူသားတို့ ပြန်လည်ထွက်လာခြင်း၊ ကောင်းကင်ဘုံသားများ၏ အောင်မြင်မှုနှင့် ငရဲဘုံသားများ၏ အပြစ်ဒဏ်တို့ကို ဖော်ပြထားပါသည်။ နောက်ဆုံးတွင် လူသားကို အနည်းငယ်သော အစမှ ဖန်ဆင်းတော်မူသော အရှင်သည် သေဆုံးပြီးနောက် ပြန်လည်အသက်ရှင်စေနိုင်ကြောင်းနှင့် အရာခပ်သိမ်း၏ အုပ်စိုးမှုသည် အရှင်မြတ်၏ လက်တော်၌သာ ရှိကြောင်း အတည်ပြုကာ စူရဟ်ကို နိဂုံးချုပ်ထားပါသည်။"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Most Compassionate, the Most Merciful.",
+    "burmese_translation": "အနန္တကရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစ်မိလ္လာဟိရ် ရဟ်မာနိရ် ရဟီးမ်"
+  },
+  "verses": [
+    {
+      "verse_number": 1,
+      "arabic": "يسٓ",
+      "english_translation": "Yā-Sīn.",
+      "burmese_translation": "ယာ-စီးန်။",
+      "burmese_transliteration": "ယာ-စီးန်"
+    },
+    {
+      "verse_number": 2,
+      "arabic": "وَٱلْقُرْءَانِ ٱلْحَكِيمِ",
+      "english_translation": "By the wise Qur’an,",
+      "burmese_translation": "ပညာနှင့် ပြည့်စုံသော ကုရ်အာန်ကျမ်းတော်ကို ကျိန်ဆိုတော်မူ၏၊",
+      "burmese_transliteration": "ဝလ်ကုရ်အာနိလ် ဟကီးမ်"
+    },
+    {
+      "verse_number": 3,
+      "arabic": "إِنَّكَ لَمِنَ ٱلْمُرْسَلِينَ",
+      "english_translation": "Indeed, you are truly among the messengers,",
+      "burmese_translation": "ဧကန်စင်စစ် အသင်သည် အမှန်ပင် တမန်တော်များအနက် တစ်ပါး ဖြစ်တော်မူ၏၊",
+      "burmese_transliteration": "အင်းနက လမိနလ် မုရ်စလီးန်"
+    },
+    {
+      "verse_number": 4,
+      "arabic": "عَلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ",
+      "english_translation": "Upon a straight path.",
+      "burmese_translation": "ဖြောင့်မတ်သော လမ်းစဉ်ပေါ်တွင် ရှိတော်မူ၏။",
+      "burmese_transliteration": "အလာ ဆိရာသင်မ် မုစ်တကီးမ်"
+    },
+    {
+      "verse_number": 5,
+      "arabic": "تَنزِيلَ ٱلْعَزِيزِ ٱلرَّحِيمِ",
+      "english_translation": "A revelation from the Almighty, the Most Merciful,",
+      "burmese_translation": "အလွန်အင်အားကြီးတော်မူသော၊ အလွန်သနားညှာတာတော်မူသော အရှင်မြတ်ထံတော်မှ ထုတ်ဖော်ချမှတ်ပေးသနားတော်မူသော ကျမ်းတော်ဖြစ်၏၊",
+      "burmese_transliteration": "တန်ဇီးလလ် အဇီးဇိရ် ရဟီးမ်"
+    },
+    {
+      "verse_number": 6,
+      "arabic": "لِتُنذِرَ قَوْمًۭا مَّآ أُنذِرَ ءَابَآؤُهُمْ فَهُمْ غَـٰفِلُونَ",
+      "english_translation": "So that you may warn a people whose forefathers were not warned, so they are unaware.",
+      "burmese_translation": "အသင်သည် ယခင်ဘိုးဘေးများအား သတိပေးနှိုးဆော်ခြင်း မခံခဲ့ရသဖြင့် အမှန်တရားမှ အမှုမဲ့အမှတ်မဲ့ ဖြစ်နေကြသော လူမျိုးတစ်မျိုးအား သတိပေးနှိုးဆော်ရန် ဖြစ်၏။",
+      "burmese_transliteration": "လိတုန်ဇိရ ကောင်မမ် မာ အုန်ဇိရ အာဗာအုဟုမ် ဖဟုမ် ဂါဖိလူးန်"
+    },
+    {
+      "verse_number": 7,
+      "arabic": "لَقَدْ حَقَّ ٱلْقَوْلُ عَلَىٰٓ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ",
+      "english_translation": "Indeed, the word has come into effect upon most of them, so they will not believe.",
+      "burmese_translation": "ဧကန်စင်စစ် သူတို့အနက် အများစုအပေါ်၌ အမိန့်တော်သည် အတည်ဖြစ်ခဲ့ပြီဖြစ်၍ သူတို့သည် သက်ဝင်ယုံကြည်ကြမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "လကဒ် ဟက္ကလ် ကောင်လု အလာ အက်စ်ရိဟင် ဖဟုမ် လာ ယုအ်မိနူးန်"
+    },
+    {
+      "verse_number": 8,
+      "arabic": "إِنَّا جَعَلْنَا فِىٓ أَعْنَـٰقِهِمْ أَغْلَـٰلًۭا فَهِىَ إِلَى ٱلْأَذْقَانِ فَهُم مُّقْمَحُونَ",
+      "english_translation": "Indeed, We have placed shackles around their necks up to their chins, so their heads are forced upward.",
+      "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်သည် သူတို့၏ လည်ပင်းများ၌ မေးစေ့များအထိ ရောက်ရှိသော သံကွင်းများကို ချည်နှောင်ထားသကဲ့သို့ ပြုထားတော်မူသဖြင့် သူတို့၏ ဦးခေါင်းများသည် အပေါ်သို့ မော့နေကြ၏။",
+      "burmese_transliteration": "အင်းန ဂျအလ်နာ ဖီ အအ်နာကိဟင် အဂ်လာလန် ဖဟိယ အိလာလ် အဇ်ကာန် ဖဟုမ် မုက္မဟူးန်"
+    },
+    {
+      "verse_number": 9,
+      "arabic": "وَجَعَلْنَا مِنۢ بَيْنِ أَيْدِيهِمْ سَدًّۭا وَمِنْ خَلْفِهِمْ سَدًّۭا فَأَغْشَيْنَـٰهُمْ فَهُمْ لَا يُبْصِرُونَ",
+      "english_translation": "And We have placed a barrier before them and a barrier behind them, and covered them, so they cannot see.",
+      "burmese_translation": "ထို့ပြင် ငါအရှင်မြတ်သည် သူတို့၏ ရှေ့၌ အတားအဆီးတစ်ရပ်နှင့် နောက်၌လည်း အတားအဆီးတစ်ရပ် ပြုထားပြီး သူတို့အား ဖုံးအုပ်ထားတော်မူသဖြင့် သူတို့သည် မမြင်နိုင်ကြပေ။",
+      "burmese_transliteration": "ဝဂျအလ်နာ မင် ဘိုင်န အိုင်ဒီဟင် ဆဒ်ဒန် ဝမင် ခလ်ဖိဟင် ဆဒ်ဒန် ဖအဂ်ရှိုင်နာဟုမ် ဖဟုမ် လာ ယုဘ်ဆိရူးန်"
+    },
+    {
+      "verse_number": 10,
+      "arabic": "وَسَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ",
+      "english_translation": "It is the same for them whether you warn them or do not warn them; they will not believe.",
+      "burmese_translation": "အသင်သည် သူတို့အား သတိပေးနှိုးဆော်သည်ဖြစ်စေ၊ မနှိုးဆော်သည်ဖြစ်စေ သူတို့အတွက် အတူတူပင် ဖြစ်၏။ သူတို့သည် သက်ဝင်ယုံကြည်ကြမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝစဝါအုန် အလိုင်ဟင် အအန်ဇရ်သဟုမ် အမ် လမ် တုန်ဇိရ်ဟုမ် လာ ယုအ်မိနူးန်"
+    },
+    {
+      "verse_number": 11,
+      "arabic": "إِنَّمَا تُنذِرُ مَنِ ٱتَّبَعَ ٱلذِّكْرَ وَخَشِىَ ٱلرَّحْمَـٰنَ بِٱلْغَيْبِ ۖ فَبَشِّرْهُ بِمَغْفِرَةٍۢ وَأَجْرٍۢ كَرِيمٍۢ",
+      "english_translation": "You can only warn one who follows the Reminder and fears the Most Compassionate unseen. So give him good news of forgiveness and a noble reward.",
+      "burmese_translation": "အသင်သည် သတိပေးနှိုးဆော်မှုမှ အကျိုးရရှိနိုင်သူမှာ အဆုံးအမကို လိုက်နာပြီး မမြင်ရသော်လည်း အနန္တကရုဏာတော်ရှင်အား ကြောက်ရွံ့ရိုသေသူသာ ဖြစ်၏။ သို့ဖြစ်၍ ထိုသူအား ခွင့်လွှတ်ခြင်းနှင့် ဂုဏ်သိက္ခာရှိသော ဆုလာဘ် ရရှိမည်ဟူသော သတင်းကောင်းကို ပေးပါလော့။",
+      "burmese_transliteration": "အင်းနမာ တုန်ဇိရု မနိတတဘအဇ်ဇိကရ ဝခရှိယရ် ရဟ်မာန ဘိလ်ဂိုင်ဗ် ဖဗရှ်ရှိရ်ဟု ဘိမဂ်ဖိရတင် ဝအဂျ်ရင် ကရီးမ်"
+    },
+    {
+      "verse_number": 12,
+      "arabic": "إِنَّا نَحْنُ نُحْىِ ٱلْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا۟ وَءَاثَـٰرَهُمْ ۚ وَكُلَّ شَىْءٍ أَحْصَيْنَـٰهُ فِىٓ إِمَامٍۢ مُّبِينٍۢ",
+      "english_translation": "Indeed, We give life to the dead and record what they have sent ahead and their آثار. And We have recorded everything in a clear record.",
+      "burmese_translation": "ဧကန်စင်စစ် ငါအရှင်မြတ်သည် သေဆုံးသူများအား အသက်ပြန်ရှင်စေတော်မူပြီး သူတို့ ကြိုတင်ပြုလုပ်ပေးပို့ခဲ့သမျှနှင့် သူတို့၏ လုပ်ရပ်များမှ ကျန်ရစ်ခဲ့သော အကျိုးဆက်များကို မှတ်တမ်းတင်တော်မူ၏။ အရာခပ်သိမ်းကိုလည်း ရှင်းလင်းပြတ်သားသော မှတ်တမ်းတစ်ရပ်၌ မှတ်တမ်းတင်ထားတော်မူ၏။",
+      "burmese_transliteration": "အင်းန နဟ်နု နုဟ်ယိလ် မော်တာ ဝနက္တုဗု မာ ကဒ္ဒမူး ဝအာသာရဟုမ် ဝကုလ္လ ရှိုင်အင် အဟ်ဆိုင်နာဟု ဖီ အိမာမင် မုဗီးန်"
+    },
+    {
+      "verse_number": 13,
+      "arabic": "وَٱضْرِبْ لَهُم مَّثَلًا أَصْحَـٰبَ ٱلْقَرْيَةِ إِذْ جَآءَهَا ٱلْمُرْسَلُونَ",
+      "english_translation": "And present to them an example: the people of the town when the messengers came to it.",
+      "burmese_translation": "အသင်သည် သူတို့အား မြို့သူမြို့သားများ၏ ဖြစ်ရပ်ကို ဥပမာအဖြစ် ဖော်ပြပါလော့။ ထိုမြို့သို့ တမန်တော်များ ရောက်ရှိလာသောအခါ ဖြစ်၏။",
+      "burmese_transliteration": "ဝဇ်ရိဗ် လဟုမ် မသာလန် အဆ်ဟာဘလ် ကရ်ယဟ် အိဇ်ဂျာအဟလ် မုရ်စလူးန်"
+    },
+    {
+      "verse_number": 14,
+      "arabic": "إِذْ أَرْسَلْنَآ إِلَيْهِمُ ٱثْنَيْنِ فَكَذَّبُوهُمَا فَعَزَّزْنَا بِثَالِثٍۢ فَقَالُوٓا۟ إِنَّآ إِلَيْكُم مُّرْسَلُونَ",
+      "english_translation": "When We sent two to them, but they denied them, so We reinforced them with a third, and they said, “Indeed, we have been sent to you.”",
+      "burmese_translation": "ထိုအခါ ငါအရှင်မြတ်သည် သူတို့ထံသို့ တမန်နှစ်ပါးကို စေလွှတ်တော်မူခဲ့၏။ သို့သော် သူတို့က ထိုနှစ်ပါးကို ငြင်းပယ်ခဲ့ကြသဖြင့် တတိယတစ်ပါးဖြင့် အားဖြည့်စေလွှတ်တော်မူခဲ့၏။ ထိုတမန်များက “ဧကန်စင်စစ် ကျွန်ုပ်တို့သည် သင်တို့ထံသို့ စေလွှတ်ခြင်းခံရသော တမန်များ ဖြစ်ကြပါသည်” ဟု ပြောဆိုကြ၏။",
+      "burmese_transliteration": "အိဇ် အရ်စလ်နာ အိလိုင်ဟိမုစ်နိုင်းနိ ဖကဇ်ဇဗူဟုမာ ဖအဇ္ဇဇ်နာ ဘိသာလိသင် ဖကာလူး အင်းနာ အိလိုင်ကုမ် မုရ်စလူးန်"
+    },
+    {
+      "verse_number": 15,
+      "arabic": "قَالُوا۟ مَآ أَنتُمْ إِلَّا بَشَرٌۭ مِّثْلُنَا وَمَآ أَنزَلَ ٱلرَّحْمَـٰنُ مِن شَىْءٍ إِنْ أَنتُمْ إِلَّا تَكْذِبُونَ",
+      "english_translation": "They said, “You are only human beings like us, and the Most Compassionate has not revealed anything. You are only lying.”",
+      "burmese_translation": "သူတို့က “သင်တို့သည်လည်း ကျွန်ုပ်တို့ကဲ့သို့ လူသားများသာ ဖြစ်ကြ၏။ အနန္တကရုဏာတော်ရှင်သည် မည်သည့်အရာကိုမျှ ချမှတ်ပေးသနားတော်မူခဲ့ခြင်း မရှိပေ။ သင်တို့သည် မုသားပြောသူများသာ ဖြစ်ကြ၏” ဟု ပြောဆိုကြ၏။",
+      "burmese_transliteration": "ကာလူး မာ အန်သုမ် အိလ္လာ ဘရှရုမ် မစ်လုနာ ဝမာ အန်ဇလရ် ရဟ်မာနု မင် ရှိုင်အင် အင် အန်သုမ် အိလ္လာ တက်ဇ်ဇိဗူးန်"
+    },
+    {
+      "verse_number": 16,
+      "arabic": "قَالُوا۟ رَبُّنَا يَعْلَمُ إِنَّآ إِلَيْكُمْ لَمُرْسَلُونَ",
+      "english_translation": "They said, “Our Lord knows that we have truly been sent to you.”",
+      "burmese_translation": "တမန်များက “ကျွန်ုပ်တို့၏ အရှင်သည် ကျွန်ုပ်တို့သည် အမှန်ပင် သင်တို့ထံသို့ စေလွှတ်ခြင်းခံရသူများ ဖြစ်ကြောင်း သိတော်မူ၏” ဟု ပြန်လည်ပြောဆိုကြ၏။",
+      "burmese_transliteration": "ကာလူး ရဗ္ဗုနာ ယအ်လမု အင်းနာ အိလိုင်ကုမ် လမုရ်စလူးန်"
+    },
+    {
+      "verse_number": 17,
+      "arabic": "وَمَا عَلَيْنَآ إِلَّا ٱلْبَلَـٰغُ ٱلْمُبِينُ",
+      "english_translation": "And our duty is only clear conveyance.",
+      "burmese_translation": "ထို့ပြင် ကျွန်ုပ်တို့အပေါ်၌ ရှိသော တာဝန်မှာ ထင်ရှားပြတ်သားစွာ အသိပေးပို့ဆောင်ရန်သာ ဖြစ်၏။",
+      "burmese_transliteration": "ဝမာ အလိုင်နာ အိလ္လလ် ဘလာဂုလ် မုဗီးန်"
+    },
+    {
+      "verse_number": 18,
+      "arabic": "قَالُوٓا۟ إِنَّا تَطَيَّرْنَا بِكُمْ ۖ لَئِن لَّمْ تَنتَهُوا۟ لَنَرْجُمَنَّكُمْ وَلَيَمَسَّنَّكُم مِّنَّا عَذَابٌ أَلِيمٌۭ",
+      "english_translation": "They said, “Indeed, we consider you an evil omen. If you do not stop, we will surely stone you, and a painful punishment from us will surely touch you.”",
+      "burmese_translation": "သူတို့က “ဧကန်စင်စစ် သင်တို့ကြောင့် ကျွန်ုပ်တို့သည် နိမိတ်ဆိုး ဖြစ်လာသည်ဟု ယူဆကြ၏။ အကယ်၍ သင်တို့ မရပ်တန့်လျှင် သင်တို့အား ကျောက်ခဲဖြင့် ပစ်ပေါက်သတ်ပစ်မည်။ ကျွန်ုပ်တို့ထံမှ ပြင်းထန်နာကျင်သော အပြစ်ဒဏ်သည်လည်း သင်တို့ထံသို့ မလွဲမသွေ ရောက်ရှိလိမ့်မည်” ဟု ပြောဆိုကြ၏။",
+      "burmese_transliteration": "ကာလူး အင်းန တတယျရ်နာ ဘိကုမ် လအင် လမ် တန်တဟူး လနရ်ဂျုမန်နကုမ် ဝလယမတ်စ်စန်နကုမ် မင်နာ အဇာဗုန် အလီးမ်"
+    },
+    {
+      "verse_number": 19,
+      "arabic": "قَالُوا۟ طَـٰٓئِرُكُم مَّعَكُمْ ۚ أَئِن ذُكِّرْتُم ۚ بَلْ أَنتُمْ قَوْمٌۭ مُّسْرِفُونَ",
+      "english_translation": "They said, “Your omen is with you. Is it because you were reminded? Rather, you are a transgressing people.”",
+      "burmese_translation": "တမန်များက “သင်တို့၏ နိမိတ်သည် သင်တို့နှင့်အတူပင် ရှိ၏။ သင်တို့အား အဆုံးအမပေးခဲ့ခြင်းကြောင့်လော။ အမှန်မှာ သင်တို့သည် စည်းကျော်လွန်သော လူမျိုးဖြစ်ကြ၏” ဟု ပြောဆိုကြ၏။",
+      "burmese_transliteration": "ကာလူး သာအိရုကုမ် မအကုမ် အအင် ဇုက္ကိရ်သုမ် ဗလ် အန်သုမ် ကောင်မုမ် မုစ်ရိဖူးန်"
+    },
+    {
+      "verse_number": 20,
+      "arabic": "وَجَآءَ مِنْ أَقْصَا ٱلْمَدِينَةِ رَجُلٌۭ يَسْعَىٰ قَالَ يَـٰقَوْمِ ٱتَّبِعُوا۟ ٱلْمُرْسَلِينَ",
+      "english_translation": "And a man came running from the farthest end of the city. He said, “O my people, follow the messengers.”",
+      "burmese_translation": "ထိုအခါ မြို့၏ အစွန်အဖျားမှ လူတစ်ဦးသည် အပြေးအလွှား ရောက်လာ၍ “အို ကျွန်ုပ်၏ လူမျိုးတို့၊ တမန်တော်များကို လိုက်နာကြပါ” ဟု ပြောဆို၏။",
+      "burmese_transliteration": "ဝဂျာအ မင် အက်စ်ဆလ် မဒီနတိ ရဂျုလုန် ယစအာ ကာလ ယာကောင်မိ တတဗိအုလ် မုရ်စလီးန်"
+    },
+    {
+      "verse_number": 21,
+      "arabic": "ٱتَّبِعُوا۟ مَن لَّا يَسْـَٔلُكُمْ أَجْرًۭا وَهُم مُّهْتَدُونَ",
+      "english_translation": "Follow those who ask no payment from you and are rightly guided.",
+      "burmese_translation": "သင်တို့ထံမှ မည်သည့်အခကြေးငွေကိုမျှ မတောင်းခံဘဲ လမ်းမှန်သို့ လမ်းညွှန်ခြင်းခံထားရသူများကို လိုက်နာကြပါ။",
+      "burmese_transliteration": "တတဗိအု မန် လာ ယစ်အလုကုမ် အဂျ်ရန် ဝဟုမ် မုဟ်တဒူးန်"
+    },
+    {
+      "verse_number": 22,
+      "arabic": "وَمَا لِىَ لَآ أَعْبُدُ ٱلَّذِى فَطَرَنِى وَإِلَيْهِ تُرْجَعُونَ",
+      "english_translation": "And why should I not worship the One who created me, and to Him you will be returned?",
+      "burmese_translation": "ကျွန်ုပ်အား ဖန်ဆင်းတော်မူသော အရှင်ကို အဘယ်ကြောင့် မကိုးကွယ်သင့်ရမည်နည်း။ ထို့ပြင် သင်တို့အားလုံးသည် ထိုအရှင်ထံတော်သို့ပင် ပြန်လည်ပို့ဆောင်ခြင်း ခံကြရမည်ဖြစ်သည်။",
+      "burmese_transliteration": "ဝမာ လီယ လာ အအ်ဗုဒုလ် လဇီ ဖတရနီ ဝအိလိုင်ဟိ တုရ်ဂျအူးန်"
+    },
+    {
+      "verse_number": 23,
+      "arabic": "ءَأَتَّخِذُ مِن دُونِهِۦٓ ءَالِهَةً إِن يُرِدْنِ ٱلرَّحْمَـٰنُ بِضُرٍّۢ لَّا تُغْنِ عَنِّى شَفَـٰعَتُهُمْ شَيْـًۭٔا وَلَا يُنقِذُونِ",
+      "english_translation": "Should I take gods besides Him? If the Most Compassionate intends harm for me, their intercession will not avail me at all, nor can they save me.",
+      "burmese_translation": "ထိုအရှင်မှတစ်ပါး အခြားဘုရားများကို ကျွန်ုပ် ယူထားရမည်လော။ အကယ်၍ အနန္တကရုဏာတော်ရှင်သည် ကျွန်ုပ်အား ထိခိုက်နစ်နာမှုတစ်စုံတစ်ရာကို ရည်ရွယ်တော်မူလျှင် ထိုသူတို့၏ ကြားဝင်တောင်းပန်မှုသည် ကျွန်ုပ်အတွက် မည်သို့မျှ အကျိုးမပြုနိုင်သကဲ့သို့ ကျွန်ုပ်အား ကယ်တင်ပေးနိုင်မည်လည်း မဟုတ်ပေ။",
+      "burmese_transliteration": "အအတ်တခိဇု မင် ဒူနိဟီ အာလိဟတန် အင် ယုရိဒ်နိရ် ရဟ်မာနု ဘိဿုရ်ရင် လာ တုဂ်နီ အန်နီ ရှဖာအတုဟုမ် ရှိုင်အန် ဝလာ ယုန်ကိဇုန်"
+    },
+    {
+      "verse_number": 24,
+      "arabic": "إِنِّىٓ إِذًۭا لَّفِى ضَلَـٰلٍۢ مُّبِينٍ",
+      "english_translation": "Indeed, I would then be in clear error.",
+      "burmese_translation": "ထိုသို့ဆိုလျှင် ကျွန်ုပ်သည် ထင်ရှားသော လမ်းမှားမှု၌ ရှိနေမည်မှာ သေချာ၏။",
+      "burmese_transliteration": "အင်းနီ အိဇန် လဖီ ဒလာလင် မုဗီးန်"
+    },
+    {
+      "verse_number": 25,
+      "arabic": "إِنِّىٓ ءَامَنتُ بِرَبِّكُمْ فَٱسْمَعُونِ",
+      "english_translation": "Indeed, I have believed in your Lord, so listen to me.",
+      "burmese_translation": "ဧကန်စင်စစ် ကျွန်ုပ်သည် သင်တို့၏ အရှင်မြတ်အား ယုံကြည်သက်ဝင်ခဲ့ပြီ။ သို့ဖြစ်၍ ကျွန်ုပ်၏ စကားကို နားထောင်ကြပါ။",
+      "burmese_transliteration": "အင်းနီ အာမန်တု ဘိရဗ္ဗိကုမ် ဖစ်မအူးနီ"
+    },
+    {
+      "verse_number": 26,
+      "arabic": "قِيلَ ٱدْخُلِ ٱلْجَنَّةَ ۖ قَالَ يَـٰلَيْتَ قَوْمِى يَعْلَمُونَ",
+      "english_translation": "It was said, “Enter Paradise.” He said, “If only my people knew,”",
+      "burmese_translation": "ထိုသူအား “ဂျန္နသ်သုခဘုံသို့ ဝင်ပါ” ဟု ဆိုကြ၏။ ထိုသူက “အို ကျွန်ုပ်၏ လူမျိုးတို့သည် သိရှိကြမည်ဆိုလျှင် ကောင်းလေစွ” ဟု ပြောဆို၏။",
+      "burmese_transliteration": "ကီးလ ဒ်ခုလိလ် ဂျန်နဟ် ကာလ ယာလိုင်တ ကောင်မီ ယအ်လမူးန်"
+    },
+    {
+      "verse_number": 27,
+      "arabic": "بِمَا غَفَرَ لِى رَبِّى وَجَعَلَنِى مِنَ ٱلْمُكْرَمِينَ",
+      "english_translation": "“For how my Lord has forgiven me and made me among the honored.”",
+      "burmese_translation": "“ကျွန်ုပ်၏ အရှင်မြတ်သည် ကျွန်ုပ်အား ခွင့်လွှတ်တော်မူပြီး ဂုဏ်ပြုချီးမြှောက်ခံရသူများအနက် ထည့်သွင်းတော်မူခဲ့ကြောင်း သိရှိကြမည်ဆိုလျှင် ကောင်းလေစွ”။",
+      "burmese_transliteration": "ဘိမာ ဂဖရ လီ ရဗ္ဗီ ဝဂျအလနီ မင်နလ် မုကရမီးန်"
+    },
+    {
+      "verse_number": 28,
+      "arabic": "وَمَآ أَنزَلْنَا عَلَىٰ قَوْمِهِۦ مِنۢ بَعْدِهِۦ مِن جُندٍۢ مِّنَ ٱلسَّمَآءِ وَمَا كُنَّا مُنزِلِينَ",
+      "english_translation": "And We did not send down upon his people after him any army from heaven, nor would We send one down.",
+      "burmese_translation": "ထိုသူနောက်တွင် သူ၏ လူမျိုးအပေါ်သို့ ကောင်းကင်မှ စစ်တပ်တစ်ရပ်ကို ငါအရှင်မြတ် ချမှတ်စေလွှတ်တော်မူခြင်း မရှိခဲ့ပေ။ ထိုသို့ စေလွှတ်ရန်လည်း လိုအပ်ခြင်း မရှိခဲ့ပေ။",
+      "burmese_transliteration": "ဝမာ အန်ဇလ်နာ အလာ ကောင်မိဟီ မင် ဘအ်ဒိဟီ မင် ဂျုန်ဒင် မင်နစ်စမာ ဝမာ ကုန်နာ မုန်ဇိလီးန်"
+    },
+    {
+      "verse_number": 29,
+      "arabic": "إِن كَانَتْ إِلَّا صَيْحَةًۭ وَٰحِدَةًۭ فَإِذَا هُمْ خَـٰمِدُونَ",
+      "english_translation": "It was only one blast, and suddenly they were extinguished.",
+      "burmese_translation": "ထိုအရာမှာ တစ်ချက်တည်းသော အော်ဟစ်သံကြီးတစ်ရပ်သာ ဖြစ်ပြီး ထိုအခါ သူတို့သည် ချက်ချင်းပင် ငြိမ်းသွားကြ၏။",
+      "burmese_transliteration": "အင် ကာနတ် အိလ္လာ ဆိုင်ဟတန် ဝါဟိဒတန် ဖအိဇာ ဟုမ် ခါမိဒူးန်"
+    },
+    {
+      "verse_number": 30,
+      "arabic": "يَـٰحَسْرَةً عَلَى ٱلْعِبَادِ ۚ مَا يَأْتِيهِم مِّن رَّسُولٍ إِلَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ",
+      "english_translation": "Alas for the servants! No messenger came to them except that they mocked him.",
+      "burmese_translation": "အို ကျွန်များအပေါ်၌ ဖြစ်ရသော ဝမ်းနည်းဖွယ်ကောင်းလှပေစွ။ သူတို့ထံသို့ တမန်တော်တစ်ပါး ရောက်လာတိုင်း သူတို့သည် ထိုတမန်တော်အား လှောင်ပြောင်ခဲ့ကြ၏။",
+      "burmese_transliteration": "ယာဟတ်စ်ရတန် အလလ် အိဗာဒ် မာ ယာတီဟင် မင် ရဆူးလင် အိလ္လာ ကာနူး ဘိဟီ ယစ်တဟ်ဇိအူးန်"
+    },
+    {
+      "verse_number": 31,
+      "arabic": "أَلَمْ يَرَوْا۟ كَمْ أَهْلَكْنَا قَبْلَهُم مِّنَ ٱلْقُرُونِ أَنَّهُمْ إِلَيْهِمْ لَا يَرْجِعُونَ",
+      "english_translation": "Have they not seen how many generations We destroyed before them, and that they will not return to them?",
+      "burmese_translation": "သူတို့ရှေ့၌ လူမျိုးဆက်ပေါင်းများစွာကို ငါအရှင်မြတ် ဖျက်ဆီးတော်မူခဲ့ပြီး ထိုသူတို့သည် ယခုလူများထံသို့ ပြန်လည်ရောက်ရှိလာမည် မဟုတ်ကြောင်းကို သူတို့ မမြင်ကြသလော။",
+      "burmese_transliteration": "အလမ် ယရော ကမ် အဟ်လက်နာ ကဗ်လဟုမ် မင်နလ် ကုရူးန် အန်နဟုမ် အိလိုင်ဟင် လာ ယရ်ဂျိအူးန်"
+    },
+    {
+      "verse_number": 32,
+      "arabic": "وَإِن كُلٌّۭ لَّمَّا جَمِيعٌۭ لَّدَيْنَا مُحْضَرُونَ",
+      "english_translation": "And all of them will surely be brought before Us.",
+      "burmese_translation": "ထိုသူတို့အားလုံးသည် ငါအရှင်မြတ်ထံတော်၌ မလွဲမသွေ စုစည်း၍ တင်ပြခံကြရမည် ဖြစ်၏။",
+      "burmese_transliteration": "ဝအင် ကုလ္လုန် လမ္မာ ဂျမီးအုန် လဒိုင်နာ မုဟ်ဒရူးန်"
+    },
+    {
+      "verse_number": 33,
+      "arabic": "وَءَايَةٌۭ لَّهُمُ ٱلْأَرْضُ ٱلْمَيْتَةُ أَحْيَيْنَـٰهَا وَأَخْرَجْنَا مِنْهَا حَبًّۭا فَمِنْهُ يَأْكُلُونَ",
+      "english_translation": "And a sign for them is the dead earth: We give it life and bring forth from it grain, from which they eat.",
+      "burmese_translation": "သူတို့အတွက် သက်သေအထောက်အထားတစ်ရပ်မှာ သေဆုံးနေသော မြေကြီးပင် ဖြစ်၏။ ငါအရှင်မြတ်သည် ထိုမြေကြီးအား အသက်ဝင်စေတော်မူပြီး ထိုမြေမှ သူတို့ စားသုံးကြသော အစေ့အဆန်များကို ထုတ်ဖော်ပေါက်ဖွားစေတော်မူ၏။",
+      "burmese_transliteration": "ဝအာယတုန် လဟုမုလ် အရ်ဒုလ် မိုင်တဟ် အဟ်ယိုင်နာဟာ ဝအခရဂ်နာ မင်ဟာ ဟဗ္ဗန် ဖမင်ဟု ယအ်ကူလူးန်"
+    },
+    {
+      "verse_number": 34,
+      "arabic": "وَجَعَلْنَا فِيهَا جَنَّـٰتٍۢ مِّن نَّخِيلٍۢ وَأَعْنَـٰبٍۢ وَفَجَّرْنَا فِيهَا مِنَ ٱلْعُيُونِ",
+      "english_translation": "And We made in it gardens of date palms and grapevines, and caused springs to gush forth in it,",
+      "burmese_translation": "ထိုမြေ၌ စွန်ပလွံပင်များနှင့် စပျစ်နွယ်ပင်များပါဝင်သော ဥယျာဉ်များကို ပြုလုပ်ပေးတော်မူပြီး စမ်းရေတွင်းများကိုလည်း ထိုမြေ၌ ပေါက်ဖွားစီးဆင်းစေတော်မူ၏။",
+      "burmese_transliteration": "ဝဂျအလ်နာ ဖီဟာ ဂျန်နာတင် မင် နခီးလင် ဝအန်အာဘင် ဝဖဂျ်ဂျရ်နာ ဖီဟာ မင်လ် အုယူးန်"
+    },
+    {
+      "verse_number": 35,
+      "arabic": "لِيَأْكُلُوا۟ مِن ثَمَرِهِۦ وَمَا عَمِلَتْهُ أَيْدِيهِمْ ۖ أَفَلَا يَشْكُرُونَ",
+      "english_translation": "So that they may eat of its fruit, though their hands did not make it. Will they not then be grateful?",
+      "burmese_translation": "သူတို့သည် ထိုအပင်များ၏ အသီးအနှံများကို စားသုံးနိုင်ရန် ဖြစ်၏။ ထိုအသီးအနှံများကို သူတို့၏ လက်များက ဖန်တီးထားခြင်း မဟုတ်ပေ။ သို့ဖြစ်၍ သူတို့သည် ကျေးဇူးတင်ကြမည် မဟုတ်ကြသလော။",
+      "burmese_transliteration": "လိယာအ်ကုလူး မင် သမရိဟီ ဝမာ အမိလတ်ဟု အိုင်ဒီဟင် အဖလာ ယရှ်ကူရူးန်"
+    },
+    {
+      "verse_number": 36,
+      "arabic": "سُبْحَـٰنَ ٱلَّذِى خَلَقَ ٱلْأَزْوَٰجَ كُلَّهَا مِمَّا تُنۢبِتُ ٱلْأَرْضُ وَمِنْ أَنفُسِهِمْ وَمِمَّا لَا يَعْلَمُونَ",
+      "english_translation": "Glory be to Him who created all pairs from what the earth grows, from themselves, and from things they do not know.",
+      "burmese_translation": "မြေကြီးမှ ပေါက်ဖွားစေသော အရာများ၊ သူတို့ကိုယ်တိုင်မှ ဖြစ်သော အရာများနှင့် သူတို့ မသိသေးသော အရာများအနက် အစုံအတွဲအားလုံးကို ဖန်ဆင်းတော်မူသော အရှင်သည် စင်ကြယ်မြင့်မြတ်တော်မူ၏။",
+      "burmese_transliteration": "စူဗ်ဟာနလ် လဇီ ခလကလ် အဇ်ဝါဂျ ကုလ္လဟာ မင်မာ တုန်ဗိတုလ် အရ်ဒု ဝမင် အန်ဖုစိဟင် ဝမင်မာ လာ ယအ်လမူးန်"
+    },
+    {
+      "verse_number": 37,
+      "arabic": "وَءَايَةٌۭ لَّهُمُ ٱلَّيْلُ ۖ نَسْلَخُ مِنْهُ ٱلنَّهَارَ فَإِذَا هُم مُّظْلِمُونَ",
+      "english_translation": "And a sign for them is the night: We strip the day from it, and suddenly they are in darkness.",
+      "burmese_translation": "သူတို့အတွက် သက်သေအထောက်အထားတစ်ရပ်မှာ ညဉ့်ယံပင် ဖြစ်၏။ ငါအရှင်မြတ်သည် ထိုညဉ့်ယံမှ နေ့အလင်းကို ခွာယူတော်မူသောအခါ သူတို့သည် ချက်ချင်း အမှောင်ထုအတွင်း ရောက်ရှိကြ၏။",
+      "burmese_transliteration": "ဝအာယတုန် လဟုမုလ် လိုင်လု နစ်လခူ မင်ဟုန် နဟာရ ဖအိဇာ ဟုမ် မုဇ်လိမူးန်"
+    },
+    {
+      "verse_number": 38,
+      "arabic": "وَٱلشَّمْسُ تَجْرِى لِمُسْتَقَرٍّۢ لَّهَا ۚ ذَٰلِكَ تَقْدِيرُ ٱلْعَزِيزِ ٱلْعَلِيمِ",
+      "english_translation": "And the sun runs on its appointed course. That is the determination of the Almighty, the All-Knowing.",
+      "burmese_translation": "နေမင်းသည် မိမိအတွက် သတ်မှတ်ထားသော လမ်းကြောင်းနှင့် အဆုံးသတ်ရာသို့ လည်ပတ်သွားလာနေ၏။ ထိုအရာသည် အလွန်အင်အားကြီးတော်မူသော၊ အလုံးစုံသိတော်မူသော အရှင်မြတ်၏ သတ်မှတ်စီမံတော်မူခြင်း ဖြစ်၏။",
+      "burmese_transliteration": "ဝရှ်ရှမ်စူ တဂ်ရီး လိမုစ်တကရ်ရင် လဟာ ဇာလိက တက်ဒီးရုလ် အဇီးဇိလ် အလီးမ်"
+    },
+    {
+      "verse_number": 39,
+      "arabic": "وَٱلْقَمَرَ قَدَّرْنَـٰهُ مَنَازِلَ حَتَّىٰ عَادَ كَٱلْعُرْجُونِ ٱلْقَدِيمِ",
+      "english_translation": "And the moon—we have determined phases for it until it returns like an old, curved palm stalk.",
+      "burmese_translation": "လမင်းအတွက်လည်း အဆင့်ဆင့်သော လဆန်းလပြည့် လဆုတ် အနေအထားများကို သတ်မှတ်ပေးတော်မူ၏။ နောက်ဆုံးတွင် ၎င်းသည် ခြောက်သွေ့ဟောင်းနွမ်းသော စွန်ပလွံခက်ကဲ့သို့ ကွေးကောက်သော အနေအထားသို့ ပြန်လည်ရောက်ရှိ၏။",
+      "burmese_transliteration": "ဝလ်ကမရ ကဒ္ဒရ်နာဟု မနာဇိလ ဟတ်တာ အာဒ ကလ်အုရ်ဂျူနိလ် ကဒီးမ်"
+    },
+    {
+      "verse_number": 40,
+      "arabic": "لَا ٱلشَّمْسُ يَنۢبَغِى لَهَآ أَن تُدْرِكَ ٱلْقَمَرَ وَلَا ٱلَّيْلُ سَابِقُ ٱلنَّهَارِ ۚ وَكُلٌّۭ فِى فَلَكٍۢ يَسْبَحُونَ",
+      "english_translation": "It is not for the sun to overtake the moon, nor does the night outrun the day. Each floats in an orbit.",
+      "burmese_translation": "နေမင်းသည် လမင်းကို လိုက်မီရန် မသင့်တော်ပေ။ ညဉ့်ယံသည်လည်း နေ့အလင်းကို ကျော်လွန်၍ မသွားနိုင်ပေ။ အားလုံးသည် မိမိတို့၏ လည်ပတ်ရာ ဝန်းကျင်လမ်းကြောင်းအသီးသီး၌ လည်ပတ်သွားလာနေကြ၏။",
+      "burmese_transliteration": "လရှ်ရှမ်စု ယန်ဗဂီ လဟာ အန် တုဒ်ရိကလ် ကမရ ဝလလ်လိုင်းလု စာဗိကုန် နဟာရ ဝကုလ္လုန် ဖီ ဖလကင် ယစ်ဗဟူးန်"
+    },
+    {
+      "verse_number": 41,
+      "arabic": "وَءَايَةٌۭ لَّهُمْ أَنَّا حَمَلْنَا ذُرِّيَّتَهُمْ فِى ٱلْفُلْكِ ٱلْمَشْحُونِ",
+      "english_translation": "And a sign for them is that We carried their descendants in the laden ship,",
+      "burmese_translation": "သူတို့အတွက် သက်သေအထောက်အထားတစ်ရပ်မှာ ငါအရှင်မြတ်သည် သူတို့၏ မျိုးဆက်များကို ပစ္စည်းများပြည့်နှက်နေသော သင်္ဘောပေါ်၌ သယ်ဆောင်ပေးတော်မူခဲ့ခြင်းပင် ဖြစ်၏။",
+      "burmese_transliteration": "ဝအာယတုန် လဟုမ် အန်နာ ဟမလ်နာ ဇုရ်ရိယတဟုမ် ဖိလ်ဖုလ်ကိလ် မရှ်ဟူးန်"
+    },
+    {
+      "verse_number": 42,
+      "arabic": "وَخَلَقْنَا لَهُم مِّن مِّثْلِهِۦ مَا يَرْكَبُونَ",
+      "english_translation": "And We created for them similar things on which they ride.",
+      "burmese_translation": "ထို့ပြင် ထိုသင်္ဘောနှင့် ဆင်တူသော သူတို့ စီးနင်းအသုံးပြုနိုင်သည့် အရာများကိုလည်း ငါအရှင်မြတ် ဖန်ဆင်းပေးတော်မူ၏။",
+      "burmese_transliteration": "ဝခလက်နာ လဟုမ် မင် မစ်လိဟီ မာ ယရ်ကဗူးန်"
+    },
+    {
+      "verse_number": 43,
+      "arabic": "وَإِن نَّشَأْ نُغْرِقْهُمْ فَلَا صَرِيخَ لَهُمْ وَلَا هُمْ يُنقَذُونَ",
+      "english_translation": "And if We willed, We could drown them, and there would be no one to respond to their cry, nor would they be saved,",
+      "burmese_translation": "ငါအရှင်မြတ် အလိုရှိတော်မူလျှင် သူတို့အား ရေနစ်သေစေနိုင်တော်မူ၏။ ထိုအခါ သူတို့၏ အော်ဟစ်အကူအညီတောင်းသံကို ဖြေကြားကယ်တင်မည့်သူ မရှိနိုင်သကဲ့သို့ သူတို့သည်လည်း ကယ်တင်ခြင်း ခံရမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ဝအင် နရှအ် နုဂ်ရိက်ဟုမ် ဖလာ ဆရီးခ လဟုမ် ဝလာ ဟုမ် ယုန်ကဇူးန်"
+    },
+    {
+      "verse_number": 44,
+      "arabic": "إِلَّا رَحْمَةًۭ مِّنَّا وَمَتَـٰعًا إِلَىٰ حِينٍۢ",
+      "english_translation": "Except by mercy from Us and enjoyment for a time.",
+      "burmese_translation": "သို့ရာတွင် ငါအရှင်မြတ်ထံတော်မှ ကရုဏာတော်ကြောင့်သာလျှင် သူတို့အား တစ်ကာလတိုင်အောင် အသက်ရှင်နေထိုင်ခွင့်နှင့် အကျိုးခံစားခွင့် ပေးထားတော်မူ၏။",
+      "burmese_transliteration": "အိလ္လာ ရဟ်မတင် မင်နာ ဝမတာအန် အိလာ ဟီးန်"
+    },
+    {
+      "verse_number": 45,
+      "arabic": "وَإِذَا قِيلَ لَهُمُ ٱتَّقُوا۟ مَا بَيْنَ أَيْدِيكُمْ وَمَا خَلْفَكُمْ لَعَلَّكُمْ تُرْحَمُونَ",
+      "english_translation": "And when it is said to them, “Beware of what is before you and what is behind you so that you may receive mercy,”",
+      "burmese_translation": "သူတို့အား “သင်တို့၏ ရှေ့တွင် ရှိသောအရာနှင့် နောက်တွင် ဖြစ်လာမည့်အရာတို့မှ သတိပြုရှောင်ကြဉ်ကြပါ။ သို့မှသာ သင်တို့သည် ကရုဏာတော် ခံစားရနိုင်မည်” ဟု ဆိုသောအခါ၊",
+      "burmese_transliteration": "ဝအိဇာ ကီးလ လဟုမု တတကူ မာ ဘိုင်န အိုင်ဒီကုမ် ဝမာ ခလ်ဖကုမ် လအလ္လကုမ် တုရ်ဟမူးန်"
+    },
+    {
+      "verse_number": 46,
+      "arabic": "وَمَا تَأْتِيهِم مِّنْ ءَايَةٍۢ مِّنْ ءَايَـٰتِ رَبِّهِمْ إِلَّا كَانُوا۟ عَنْهَا مُعْرِضِينَ",
+      "english_translation": "Yet no sign comes to them from the signs of their Lord except that they turn away from it.",
+      "burmese_translation": "သို့သော် သူတို့၏ အရှင်မြတ်ထံတော်မှ သက်သေအထောက်အထားတစ်ရပ်ရပ် ရောက်ရှိလာတိုင်း သူတို့သည် ထိုသက်သေအထောက်အထားမှ ကျောခိုင်းလှည့်ထွက်ကြ၏။",
+      "burmese_transliteration": "ဝမာ တအ်တီဟင် မင် အာယတင် မင် အာယာတိ ရဗ္ဗိဟင် အိလ္လာ ကာနူး အန်ဟာ မုအ်ရိဒီးန်"
+    },
+    {
+      "verse_number": 47,
+      "arabic": "وَإِذَا قِيلَ لَهُمْ أَنفِقُوا۟ مِمَّا رَزَقَكُمُ ٱللَّهُ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَنُطْعِمُ مَن لَّوْ يَشَآءُ ٱللَّهُ أَطْعَمَهُۥٓ إِنْ أَنتُمْ إِلَّا فِى ضَلَـٰلٍۢ مُّبِينٍۢ",
+      "english_translation": "And when it is said to them, “Spend from what Allah has provided you,” those who disbelieve say to those who believe, “Should we feed those whom Allah could feed if He willed? You are clearly astray.”",
+      "burmese_translation": "သူတို့အား “အလ္လာဟ်အရှင်မြတ်က သင်တို့အား ပေးသနားထားတော်မူသော အရာများအနက်မှ လှူဒါန်းကြပါ” ဟု ဆိုသောအခါ သစ္စာငြင်းပယ်သူတို့က သက်ဝင်ယုံကြည်သူတို့အား “အလ္လာဟ်အရှင်မြတ် အလိုရှိတော်မူလျှင် ကိုယ်တိုင်ကျွေးမွေးနိုင်သောသူများကို ကျွန်ုပ်တို့က ကျွေးမွေးရမည်လော။ သင်တို့သည် ထင်ရှားသော လမ်းမှားမှု၌သာ ရှိနေကြ၏” ဟု ပြောဆိုကြ၏။",
+      "burmese_transliteration": "ဝအိဇာ ကီးလ လဟုမ် အန်ဖိကူ မင်မာ ရဇကကုမ္မုလ္လာ ကာလလ် လဇီးန ကဖရူ လိလ္လဇီးန အာမနူး အနုသ်အိမု မန် လောင် ယရှာအုလ္လာဟု အတ်အမဟု အင် အန်သုမ် အိလ္လာ ဖီ ဒလာလင် မုဗီးန်"
+    },
+    {
+      "verse_number": 48,
+      "arabic": "وَيَقُولُونَ مَتَىٰ هَـٰذَا ٱلْوَعْدُ إِن كُنتُمْ صَـٰدِقِينَ",
+      "english_translation": "And they say, “When is this promise, if you are truthful?”",
+      "burmese_translation": "သူတို့က “အကယ်၍ သင်တို့သည် အမှန်ပြောသူများ ဖြစ်ကြလျှင် ဤကတိထားတော်မူသော အရာသည် မည်သည့်အခါ ဖြစ်လာမည်နည်း” ဟု မေးမြန်းကြ၏။",
+      "burmese_transliteration": "ဝယကူလူးန မတာ ဟာဇလ် ဝအ်ဒု အင် ကုန်သုမ် ဆာဒိကီးန်"
+    },
+    {
+      "verse_number": 49,
+      "arabic": "مَا يَنظُرُونَ إِلَّا صَيْحَةًۭ وَٰحِدَةًۭ تَأْخُذُهُمْ وَهُمْ يَخِصِّمُونَ",
+      "english_translation": "They await only one blast that will seize them while they are disputing.",
+      "burmese_translation": "သူတို့သည် အချင်းချင်း အငြင်းပွားနေကြစဉ်ပင် သူတို့အား ရုတ်တရက် ဖမ်းဆီးသွားမည့် တစ်ချက်တည်းသော အော်ဟစ်သံကြီးကိုသာ စောင့်မျှော်နေကြ၏။",
+      "burmese_transliteration": "မာ ယန်ဇုရူးန် အိလ္လာ ဆိုင်ဟတန် ဝါဟိဒတန် တအ်ခုဇုဟုမ် ဝဟုမ် ယခစ်ဆိမူးန်"
+    },
+    {
+      "verse_number": 50,
+      "arabic": "فَلَا يَسْتَطِيعُونَ تَوْصِيَةًۭ وَلَآ إِلَىٰٓ أَهْلِهِمْ يَرْجِعُونَ",
+      "english_translation": "Then they will not be able to make a will, nor will they return to their families.",
+      "burmese_translation": "ထိုအခါ သူတို့သည် နောက်ဆုံးအမှာစကားပင် ပြောနိုင်ကြမည် မဟုတ်သကဲ့သို့ မိမိတို့၏ အိမ်သူအိမ်သားများထံသို့လည်း ပြန်လည်ရောက်ရှိနိုင်ကြမည် မဟုတ်ပေ။",
+      "burmese_transliteration": "ဖလာ ယစတတီးအူးန တော်ဆိယတန် ဝလာ အိလာ အဟ်လိဟင် ယရ်ဂျိအူးန်"
+    },
+    {
+      "verse_number": 51,
+      "arabic": "وَنُفِخَ فِى ٱلصُّورِ فَإِذَا هُم مِّنَ ٱلْأَجْدَاثِ إِلَىٰ رَبِّهِمْ يَنسِلُونَ",
+      "english_translation": "And the Trumpet will be blown, and suddenly they will rush from the graves toward their Lord.",
+      "burmese_translation": "တံပိုးမှုတ်ခြင်း ပြုသောအခါ သူတို့သည် သင်္ချိုင်းများမှ မိမိတို့၏ အရှင်မြတ်ထံတော်သို့ အလျင်အမြန် ထွက်လာကြလိမ့်မည်။",
+      "burmese_transliteration": "ဝနုဖိခ ဖိစ်ဆူးရ် ဖအိဇာ ဟုမ် မင်နလ် အဂျ်ဒါသ် အိလာ ရဗ္ဗိဟင် ယန်စိလူးန်"
+    },
+    {
+      "verse_number": 52,
+      "arabic": "قَالُوا۟ يَـٰوَيْلَنَا مَنۢ بَعَثَنَا مِن مَّرْقَدِنَا ۜ هَـٰذَا مَا وَعَدَ ٱلرَّحْمَـٰنُ وَصَدَقَ ٱلْمُرْسَلُونَ",
+      "english_translation": "They will say, “Woe to us! Who has raised us from our resting place?” It will be said, “This is what the Most Compassionate promised, and the messengers spoke the truth.”",
+      "burmese_translation": "သူတို့က “အို ကျွန်ုပ်တို့၏ ပျက်စီးခြင်းပင်။ ကျွန်ုပ်တို့၏ အနားယူရာနေရာမှ မည်သူက ကျွန်ုပ်တို့အား ထမြောက်စေခဲ့သနည်း” ဟု ပြောဆိုကြလိမ့်မည်။ “ဤသည်မှာ အနန္တကရုဏာတော်ရှင် ကတိပေးထားတော်မူသော အရာဖြစ်ပြီး တမန်တော်များသည် အမှန်အတိုင်း ပြောဆိုခဲ့ကြသည်” ဟု ဆိုကြလိမ့်မည်။",
+      "burmese_transliteration": "ကာလူး ယာဝိုင်လနာ မန် ဘအ်သနာ မင် မရ်ကဒိနာ ဟာဇာ မာ ဝအဒရ် ရဟ်မာနု ဝဆဒကလ် မုရ်စလူးန်"
+    },
+    {
+      "verse_number": 53,
+      "arabic": "إِن كَانَتْ إِلَّا صَيْحَةًۭ وَٰحِدَةًۭ فَإِذَا هُمْ جَمِيعٌۭ لَّدَيْنَا مُحْضَرُونَ",
+      "english_translation": "It will be only one blast, and suddenly they will all be brought before Us.",
+      "burmese_translation": "ထိုအရာမှာ တစ်ချက်တည်းသော အော်ဟစ်သံကြီးတစ်ရပ်သာ ဖြစ်ပြီး ထိုအခါ သူတို့အားလုံးသည် ငါအရှင်မြတ်ထံတော်၌ စုစည်း၍ တင်ပြခံကြရလိမ့်မည်။",
+      "burmese_transliteration": "အင် ကာနတ် အိလ္လာ ဆိုင်ဟတန် ဝါဟိဒတန် ဖအိဇာ ဟုမ် ဂျမီးအုန် လဒိုင်နာ မုဟ်ဒရူးန်"
+    },
+    {
+      "verse_number": 54,
+      "arabic": "فَٱلْيَوْمَ لَا تُظْلَمُ نَفْسٌۭ شَيْـًۭٔا وَلَا تُجْزَوْنَ إِلَّا مَا كُنتُمْ تَعْمَلُونَ",
+      "english_translation": "So today no soul will be wronged at all, and you will only be recompensed for what you used to do.",
+      "burmese_translation": "ထိုနေ့တွင် မည်သည့်စိတ်ဝိညာဉ်ကိုမျှ အနည်းငယ်မျှပင် မတရားပြုမူခြင်း ခံရမည် မဟုတ်ပေ။ သင်တို့သည်လည်း မိမိတို့ ပြုလုပ်ခဲ့ကြသမျှအတိုင်းသာ အကျိုးတုံ့ပြန်ခြင်း ခံကြရမည်။",
+      "burmese_transliteration": "ဖလ်ယောင်မ လာ တုဇ်လမု နဖ်စွန် ရှိုင်အန် ဝလာ တုဂျ်ဇောင် အိလ္လာ မာ ကုန်သုမ် တအ်မလူးန်"
+    },
+    {
+      "verse_number": 55,
+      "arabic": "إِنَّ أَصْحَـٰبَ ٱلْجَنَّةِ ٱلْيَوْمَ فِى شُغُلٍۢ فَـٰكِهُونَ",
+      "english_translation": "Indeed, the people of Paradise will be occupied with joyful delight that Day.",
+      "burmese_translation": "ဧကန်စင်စစ် ထိုနေ့တွင် ဂျန္နသ်သုခဘုံသားများသည် ဝမ်းမြောက်ပျော်ရွှင်ဖွယ်ရာ အကျိုးခံစားမှုများ၌ အလုပ်ရှုပ်နေကြလိမ့်မည်။",
+      "burmese_transliteration": "အင်းန အဆ်ဟာဘလ် ဂျန်နဟ် အလ်ယောင်မ ဖီ ရှုဂုလင် ဖာကိဟူးန်"
+    },
+    {
+      "verse_number": 56,
+      "arabic": "هُمْ وَأَزْوَٰجُهُمْ فِى ظِلَـٰلٍ عَلَى ٱلْأَرَآئِكِ مُتَّكِـُٔونَ",
+      "english_translation": "They and their spouses will be in shade, reclining on couches.",
+      "burmese_translation": "သူတို့နှင့် သူတို့၏ အိမ်ထောင်ဖက်များသည် အရိပ်အာဝါသများအောက်၌ အိပ်ရာခုံများပေါ်တွင် အေးချမ်းစွာ မှီလျက် ရှိကြလိမ့်မည်။",
+      "burmese_transliteration": "ဟုမ် ဝအဇ်ဝါဂျုဟုမ် ဖီ ဇိလာလင် အလလ် အရာအိကိ မုတက်ကိအူးန်"
+    },
+    {
+      "verse_number": 57,
+      "arabic": "لَهُمْ فِيهَا فَـٰكِهَةٌۭ وَلَهُم مَّا يَدَّعُونَ",
+      "english_translation": "For them therein is fruit, and for them is whatever they ask for.",
+      "burmese_translation": "ထိုသုခဘုံ၌ သူတို့အတွက် အသီးအနှံများ ရှိကြပြီး သူတို့ တောင်းခံလိုသမျှလည်း ရှိကြလိမ့်မည်။",
+      "burmese_transliteration": "လဟုမ် ဖီဟာ ဖာကိဟတုန် ဝလဟုမ် မာ ယဒ်ဒအူးန်"
+    },
+    {
+      "verse_number": 58,
+      "arabic": "سَلَـٰمٌۭ قَوْلًۭا مِّن رَّبٍّۢ رَّحِيمٍۢ",
+      "english_translation": "“Peace”—a word from a Most Merciful Lord.",
+      "burmese_translation": "“ငြိမ်းချမ်းခြင်း အလ္လာဟ်၏ နှုတ်ခွန်းဆက်စကားသည် အလွန်သနားညှာတာတော်မူသော အရှင်ထံတော်မှ ဖြစ်၏။”",
+      "burmese_transliteration": "စလာမ် ကောင်လန် မင် ရဗ္ဗင် ရဟီးမ်"
+    },
+    {
+      "verse_number": 59,
+      "arabic": "وَٱمْتَـٰزُوا۟ ٱلْيَوْمَ أَيُّهَا ٱلْمُجْرِمُونَ",
+      "english_translation": "But stand apart today, O criminals.",
+      "burmese_translation": "“အို အပြစ်ကျူးလွန်သူတို့၊ ယနေ့တွင် သင်တို့သည် သီးခြားခွဲထွက်နေကြပါ” ဟု ဆိုလိမ့်မည်။",
+      "burmese_transliteration": "ဝမ်တာဇူး အလ်ယောင်မ အယုဟလ် မုဂျ်ရိမူးန်"
+    },
+    {
+      "verse_number": 60,
+      "arabic": "أَلَمْ أَعْهَدْ إِلَيْكُمْ يَـٰبَنِىٓ ءَادَمَ أَن لَّا تَعْبُدُوا۟ ٱلشَّيْطَـٰنَ ۖ إِنَّهُۥ لَكُمْ عَدُوٌّۭ مُّبِينٌۭ",
+      "english_translation": "Did I not command you, O children of Adam, not to worship Satan? Indeed, he is a clear enemy to you.",
+      "burmese_translation": "အို အာဒမ်၏ သားသမီးတို့၊ ရှိုင်သွာန်အား မကိုးကွယ်ကြရန် ငါအရှင်မြတ်သည် သင်တို့အား မှာကြားထားတော်မမူခဲ့သလော။ ဧကန်စင်စစ် ထိုရှိုင်သွာန်သည် သင်တို့အတွက် ထင်ရှားသော ရန်သူဖြစ်၏။",
+      "burmese_transliteration": "အလမ် အအ်ဟဒ် အိလိုင်ကုမ် ယာဗနီ အာဒမ် အန်လာ တအ်ဗုဒုရှ် ရှိုင်သွာန် အင်းနဟု လကုမ် အဒုဝွုန် မုဗီးန်"
+    },
+    {
+      "verse_number": 61,
+      "arabic": "وَأَنِ ٱعْبُدُونِى ۚ هَـٰذَا صِرَٰطٌۭ مُّسْتَقِيمٌۭ",
+      "english_translation": "And that you worship Me? This is a straight path.",
+      "burmese_translation": "“ထို့ပြင် ငါအရှင်မြတ်တစ်ပါးတည်းကိုသာ ကိုးကွယ်ကြရန်” ဟုလည်း မှာကြားထားတော်မူခဲ့သည် မဟုတ်လော။ ဤသည်သာ ဖြောင့်မတ်သော လမ်းစဉ် ဖြစ်၏။",
+      "burmese_transliteration": "ဝအနိ အအ်ဗုဒူနီ ဟာဇာ ဆိရာတုမ် မုစ်တကီးမ်"
+    },
+    {
+      "verse_number": 62,
+      "arabic": "وَلَقَدْ أَضَلَّ مِنكُمْ جِبِلًّۭا كَثِيرًا ۖ أَفَلَمْ تَكُونُوا۟ تَعْقِلُونَ",
+      "english_translation": "And he has certainly led many of you astray. Did you not then understand?",
+      "burmese_translation": "ထိုရှိုင်သွာန်သည် သင်တို့အနက် လူအများအပြားကို အမှန်ပင် လမ်းမှားစေခဲ့ပြီ။ သို့ဖြစ်၍ သင်တို့သည် ဆင်ခြင်နားလည်ကြမည် မဟုတ်ကြသလော။",
+      "burmese_transliteration": "ဝလကဒ် အဒလ္လ မင်ကုမ် ဂျိဗိလ္လန် ကသီးရ အဖလာ တကူနူး တအ်ကိလူးန်"
+    },
+    {
+      "verse_number": 63,
+      "arabic": "هَـٰذِهِۦ جَهَنَّمُ ٱلَّتِى كُنتُمْ تُوعَدُونَ",
+      "english_translation": "This is Hell, which you were promised.",
+      "burmese_translation": "ဤသည်ကား သင်တို့အား ကတိပေးထားခဲ့သော ဂျဟန်နမ် ငရဲမီးပင် ဖြစ်၏။",
+      "burmese_transliteration": "ဟာဇိဟီ ဂျဟန်နမုလ္လတီ ကုန်သုမ် တူအဒူးန်"
+    },
+    {
+      "verse_number": 64,
+      "arabic": "ٱصْلَوْهَا ٱلْيَوْمَ بِمَا كُنتُمْ تَكْفُرُونَ",
+      "english_translation": "Enter it and burn therein today because you used to disbelieve.",
+      "burmese_translation": "ယနေ့တွင် သင်တို့ သစ္စာငြင်းပယ်ခဲ့ကြသောကြောင့် ထိုငရဲမီး၌ ဝင်ရောက်လောင်ကျွမ်းကြပါ။",
+      "burmese_transliteration": "အစ်လောင်ဟာ အလ်ယောင်မ ဘိမာ ကုန်သုမ် တက်ဖုရူးန်"
+    },
+    {
+      "verse_number": 65,
+      "arabic": "ٱلْيَوْمَ نَخْتِمُ عَلَىٰٓ أَفْوَٰهِهِمْ وَتُكَلِّمُنَآ أَيْدِيهِمْ وَتَشْهَدُ أَرْجُلُهُم بِمَا كَانُوا۟ يَكْسِبُونَ",
+      "english_translation": "Today We will seal their mouths, while their hands will speak to Us and their feet will testify to what they used to earn.",
+      "burmese_translation": "ယနေ့တွင် ငါအရှင်မြတ်သည် သူတို့၏ ပါးစပ်များကို တံဆိပ်ခတ်တော်မူမည်။ သူတို့၏ လက်များက ငါအရှင်မြတ်ထံတော်သို့ ပြောဆိုကြမည်ဖြစ်ပြီး သူတို့၏ ခြေထောက်များကလည်း သူတို့ ပြုလုပ်ရရှိခဲ့သမျှကို သက်သေခံကြလိမ့်မည်။",
+      "burmese_transliteration": "အလ်ယောင်မ နခ်သိမု အလာ အဖွာဟိဟင် ဝတုကလ္လိမုနာ အိုင်ဒီဟင် ဝတရှ်ဟဒု အရ်ဂျုလုဟုမ် ဘိမာ ကာနူး ယက်စ်ဘူးန်"
+    },
+    {
+      "verse_number": 66,
+      "arabic": "وَلَوْ نَشَآءُ لَطَمَسْنَا عَلَىٰٓ أَعْيُنِهِمْ فَٱسْتَبَقُوا۟ ٱلصِّرَٰطَ فَأَنَّىٰ يُبْصِرُونَ",
+      "english_translation": "And if We willed, We could have obliterated their eyes, then they would race toward the path, but how could they see?",
+      "burmese_translation": "ငါအရှင်မြတ် အလိုရှိတော်မူလျှင် သူတို့၏ မျက်စိများကို ဖျောက်ဖျက်ပစ်နိုင်တော်မူ၏။ ထိုအခါ သူတို့သည် လမ်းကို အလျင်အမြန် ရှာဖွေသွားကြသော်လည်း မည်သို့ မြင်နိုင်ကြမည်နည်း။",
+      "burmese_transliteration": "ဝလောင် နရှာအု လတမစ်နာ အလာ အအ်ယုနိဟင် ဖစ်တဗကူစ် ဆိရာသ ဖအန်နာ ယုဘ်ဆိရူးန်"
+    },
+    {
+      "verse_number": 67,
+      "arabic": "وَلَوْ نَشَآءُ لَمَسَخْنَـٰهُمْ عَلَىٰ مَكَانَتِهِمْ فَمَا ٱسْتَطَـٰعُوا۟ مُضِيًّۭا وَلَا يَرْجِعُونَ",
+      "english_translation": "And if We willed, We could have transformed them in their places, so they could neither proceed nor return.",
+      "burmese_translation": "ငါအရှင်မြတ် အလိုရှိတော်မူလျှင် သူတို့ရှိနေသော နေရာ၌ပင် သူတို့၏ အခြေအနေကို ပြောင်းလဲပစ်နိုင်တော်မူ၏။ ထိုအခါ သူတို့သည် ရှေ့သို့လည်း မသွားနိုင်ကြ၊ နောက်သို့လည်း ပြန်မလာနိုင်ကြပေ။",
+      "burmese_transliteration": "ဝလောင် နရှာအု လမဆခနာဟုမ် အလာ မကာနတိဟင် ဖမာစ်တတအူး မုဿိယန် ဝလာ ယရ်ဂျိအူးန်"
+    },
+    {
+      "verse_number": 68,
+      "arabic": "وَمَن نُّعَمِّرْهُ نُنَكِّسْهُ فِى ٱلْخَلْقِ ۖ أَفَلَا يَعْقِلُونَ",
+      "english_translation": "And whoever We grant long life, We reverse him in creation. Will they not understand?",
+      "burmese_translation": "ငါအရှင်မြတ်သည် မည်သူ့ကိုမဆို အသက်ရှည်စေတော်မူလျှင် ထိုသူ၏ ခန္ဓာကိုယ်နှင့် အခြေအနေကို အားနည်းငယ်စွာ ပြန်လည်ပြောင်းလဲစေတော်မူ၏။ သို့ဖြစ်၍ သူတို့သည် ဆင်ခြင်နားလည်ကြမည် မဟုတ်ကြသလော။",
+      "burmese_transliteration": "ဝမန် နုအမ္မိရ်ဟု နုနက္ကိစ်ဟု ဖိလ်ခလ်က အဖလာ ယအ်ကိလူးန်"
+    },
+    {
+      "verse_number": 69,
+      "arabic": "وَمَا عَلَّمْنَـٰهُ ٱلشِّعْرَ وَمَا يَنۢبَغِى لَهُۥٓ ۚ إِنْ هُوَ إِلَّا ذِكْرٌۭ وَقُرْءَانٌۭ مُّبِينٌۭ",
+      "english_translation": "We did not teach him poetry, nor is it appropriate for him. It is only a Reminder and a clear Qur’an,",
+      "burmese_translation": "ငါအရှင်မြတ်သည် ထိုတမန်တော်အား ကဗျာသင်ကြားပေးတော်မူခြင်း မရှိသကဲ့သို့ ထိုအရာသည်လည်း သူ့အတွက် သင့်လျော်သော အရာ မဟုတ်ပေ။ ဤအရာသည် အဆုံးအမပေးသည့် သတိပေးချက်နှင့် ရှင်းလင်းပြတ်သားသော ကုရ်အာန်ကျမ်းတော်သာ ဖြစ်၏။",
+      "burmese_transliteration": "ဝမာ အလ္လမ်နာဟုရှ် ရှိအ်ရ ဝမာ ယန်ဗဂီ လဟု အင် ဟုဝ အိလ္လာ ဇိကရုန် ဝကုရ်အာနုမ် မုဗီးန်"
+    },
+    {
+      "verse_number": 70,
+      "arabic": "لِّيُنذِرَ مَن كَانَ حَيًّۭا وَيَحِقَّ ٱلْقَوْلُ عَلَى ٱلْكَـٰفِرِينَ",
+      "english_translation": "So that it may warn whoever is alive and establish the word against the disbelievers.",
+      "burmese_translation": "အသက်ရှင်၍ အမှန်တရားကို လက်ခံနိုင်သူတို့အား သတိပေးနှိုးဆော်ရန်နှင့် သစ္စာငြင်းပယ်သူတို့အပေါ်၌ အမိန့်တော် အတည်ဖြစ်စေရန် ဖြစ်၏။",
+      "burmese_transliteration": "လိယုန်ဇိရ မန် ကာန ဟိုင်ယန် ဝယဟိက္ကလ် ကောင်လု အလလ် ကာဖိရီးန်"
+    },
+    {
+      "verse_number": 71,
+      "arabic": "أَوَلَمْ يَرَوْا۟ أَنَّا خَلَقْنَا لَهُم مِّمَّا عَمِلَتْ أَيْدِينَآ أَنْعَـٰمًۭا فَهُمْ لَهَا مَـٰلِكُونَ",
+      "english_translation": "Do they not see that We created for them from what Our Hands have made livestock, and they own them?",
+      "burmese_translation": "သူတို့အတွက် ငါအရှင်မြတ် ဖန်ဆင်းတော်မူသော တိရစ္ဆာန်များကို သူတို့ပိုင်ဆိုင်အသုံးပြုနိုင်စေရန် ပြုလုပ်ပေးထားတော်မူကြောင်း သူတို့ မမြင်ကြသလော။",
+      "burmese_transliteration": "အဝလမ် ယရောင် အန်နာ ခလက်နာ လဟုမ် မင်မာ အမိလတ် အိုင်ဒီနာ အန်အာမန် ဖဟုမ် လဟာ မာလိကူးန်"
+    },
+    {
+      "verse_number": 72,
+      "arabic": "وَذَلَّلْنَـٰهَا لَهُمْ فَمِنْهَا رَكُوبُهُمْ وَمِنْهَا يَأْكُلُونَ",
+      "english_translation": "And We subjected them for them; some they ride and some they eat.",
+      "burmese_translation": "ငါအရှင်မြတ်သည် ထိုတိရစ္ဆာန်များကို သူတို့အတွက် အဆင်ပြေအောင် ခိုင်းစေနိုင်စေတော်မူ၏။ ထိုတိရစ္ဆာန်များအနက် အချို့ကို စီးနင်းကြပြီး အချို့ကို စားသုံးကြ၏။",
+      "burmese_transliteration": "ဝဇလ္လလ်နာဟာ လဟုမ် ဖမင်ဟာ ရကူဗုဟုမ် ဝမင်ဟာ ယအ်ကူလူးန်"
+    },
+    {
+      "verse_number": 73,
+      "arabic": "وَلَهُمْ فِيهَا مَنَـٰفِعُ وَمَشَارِبُ ۖ أَفَلَا يَشْكُرُونَ",
+      "english_translation": "And for them in them are other benefits and drinks. Will they not then be grateful?",
+      "burmese_translation": "ထိုတိရစ္ဆာန်များ၌ သူတို့အတွက် အခြားသော အကျိုးကျေးဇူးများနှင့် သောက်သုံးစရာများလည်း ရှိကြ၏။ သို့ဖြစ်၍ သူတို့သည် ကျေးဇူးတင်ကြမည် မဟုတ်ကြသလော။",
+      "burmese_transliteration": "ဝလဟုမ် ဖီဟာ မနာဖိအု ဝမရှာရိဗ် အဖလာ ယရှ်ကူရူးန်"
+    },
+    {
+      "verse_number": 74,
+      "arabic": "وَٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ ءَالِهَةًۭ لَّعَلَّهُمْ يُنصَرُونَ",
+      "english_translation": "Yet they have taken gods besides Allah, hoping that they might be helped.",
+      "burmese_translation": "သို့သော် သူတို့သည် အလ္လာဟ်အရှင်မြတ်မှတစ်ပါး အခြားဘုရားများကို ယူထားကြပြီး ထိုဘုရားများက သူတို့အား ကူညီကယ်တင်ပေးမည်ဟု မျှော်လင့်ကြ၏။",
+      "burmese_transliteration": "ဝတ်တခဇူး မင် ဒူနိလ္လာဟိ အာလိဟတန် လအလ္လဟုမ် ယုန်ဆရူးန်"
+    },
+    {
+      "verse_number": 75,
+      "arabic": "لَا يَسْتَطِيعُونَ نَصْرَهُمْ وَهُمْ لَهُمْ جُندٌۭ مُّحْضَرُونَ",
+      "english_translation": "They cannot help them, while they themselves will be brought forward as an army against them.",
+      "burmese_translation": "ထိုဘုရားများသည် သူတို့အား ကူညီနိုင်စွမ်း မရှိကြပေ။ ထိုသို့ဖြစ်လင့်ကစား သူတို့သည် ထိုဘုရားများအတွက် အသင့်ရောက်ရှိနေသော စစ်တပ်ကဲ့သို့ ဖြစ်ကြ၏။",
+      "burmese_transliteration": "လာ ယစတတီးအူးန နဆရဟုမ် ဝဟုမ် လဟုမ် ဂျုန်ဒုန် မုဟ်ဒရူးန်"
+    },
+    {
+      "verse_number": 76,
+      "arabic": "فَلَا يَحْزُنكَ قَوْلُهُمْ ۘ إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ",
+      "english_translation": "So do not let their words grieve you. Indeed, We know what they conceal and what they reveal.",
+      "burmese_translation": "သို့ဖြစ်၍ သူတို့၏ စကားများကြောင့် အသင် စိတ်မဆင်းရဲပါနှင့်။ ဧကန်စင်စစ် သူတို့ ဖုံးကွယ်ထားသမျှနှင့် ထုတ်ဖော်ပြသသမျှတို့ကို ငါအရှင်မြတ် သိတော်မူ၏။",
+      "burmese_transliteration": "ဖလာ ယဟ်ဇုန်က ကောင်လုဟုမ် အင်းန နအ်လမု မာ ယုစိရ်ရူးန် ဝမာ ယုအ်လိနူးန်"
+    },
+    {
+      "verse_number": 77,
+      "arabic": "أَوَلَمْ يَرَ ٱلْإِنسَـٰنُ أَنَّا خَلَقْنَـٰهُ مِن نُّطْفَةٍۢ فَإِذَا هُوَ خَصِيمٌۭ مُّبِينٌۭ",
+      "english_translation": "Does man not see that We created him from a sperm-drop, yet suddenly he is a clear adversary?",
+      "burmese_translation": "လူသားသည် ငါအရှင်မြတ်က သူ့အား သုက်ရည်တစ်စက်မှ ဖန်ဆင်းတော်မူခဲ့ကြောင်း မမြင်သလော။ သို့သော် ထိုအခါ သူသည် ထင်ရှားစွာ အငြင်းအခုံပြုသူတစ်ဦး ဖြစ်လာ၏။",
+      "burmese_transliteration": "အဝလမ် ယရလ် အိန်စာနု အန်နာ ခလက်နာဟု မင် နုသ်ဖတင် ဖအိဇာ ဟုဝ ခဆီးမုမ် မုဗီးန်"
+    },
+    {
+      "verse_number": 78,
+      "arabic": "وَضَرَبَ لَنَا مَثَلًۭا وَنَسِىَ خَلْقَهُۥ ۖ قَالَ مَن يُحْىِ ٱلْعِظَـٰمَ وَهِىَ رَمِيمٌۭ",
+      "english_translation": "And he presents an argument for Us and forgets his own creation. He says, “Who will give life to bones when they are decayed?”",
+      "burmese_translation": "ထိုသူသည် မိမိ၏ ဖန်ဆင်းခံရခြင်းကို မေ့လျော့၍ ငါအရှင်မြတ်နှင့် ပတ်သက်၍ ဥပမာပြုကာ အငြင်းအခုံပြု၏။ သူက “အရိုးများ ဆွေးမြေ့သွားပြီးနောက် မည်သူက အသက်ပြန်သွင်းပေးနိုင်မည်နည်း” ဟု မေး၏။",
+      "burmese_transliteration": "ဝဒရဗ လနာ မသာလန် ဝနစိယ ခလ်ကဟု ကာလ မန် ယုဟ်ယိလ် အိဇာမ ဝဟိယ ရမီးမ်"
+    },
+    {
+      "verse_number": 79,
+      "arabic": "قُلْ يُحْيِيهَا ٱلَّذِىٓ أَنشَأَهَآ أَوَّلَ مَرَّةٍۢ ۖ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ",
+      "english_translation": "Say, “The One who created them the first time will give them life, and He is All-Knowing of every creation.”",
+      "burmese_translation": "အသင် မိန့်ကြားပါလော့ - “ထိုအရိုးများကို ပထမအကြိမ် ဖန်ဆင်းတော်မူခဲ့သော အရှင်သည်ပင် ၎င်းတို့အား အသက်ပြန်သွင်းပေးတော်မူမည်။ ထိုအရှင်သည် ဖန်ဆင်းမှုအမျိုးမျိုး အားလုံးကို အလုံးစုံသိတော်မူ၏”။",
+      "burmese_transliteration": "ကွလ် ယုဟ်ယီဟလ် လဇီ အန်ရှအဟာ အဝလ မရ်ရတင် ဝဟုဝ ဘိကုလ္လိ ခလ်ကင် အလီးမ်"
+    },
+    {
+      "verse_number": 80,
+      "arabic": "ٱلَّذِى جَعَلَ لَكُم مِّنَ ٱلشَّجَرِ ٱلْأَخْضَرِ نَارًۭا فَإِذَآ أَنتُم مِّنْهُ تُوقِدُونَ",
+      "english_translation": "He is the One who made for you fire from the green tree, and then from it you kindle.",
+      "burmese_translation": "ထိုအရှင်သည် စိမ်းလန်းသော သစ်ပင်မှ သင်တို့အတွက် မီးကို ဖြစ်ပေါ်စေတော်မူသော အရှင်ပင် ဖြစ်၏။ ထိုအရာမှပင် သင်တို့သည် မီးထွန်းညှိကြ၏။",
+      "burmese_transliteration": "အလ္လာဇီ ဂျအလ လကုမ် မိနရှ် ရဂျရိလ် အခဒရ် နာရ ဖအိဇာ အန်သုမ် မင်ဟု တူကိဒူးန်"
+    },
+    {
+      "verse_number": 81,
+      "arabic": "أَوَلَيْسَ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ بِقَـٰدِرٍ عَلَىٰٓ أَن يَخْلُقَ مِثْلَهُم ۚ بَلَىٰ وَهُوَ ٱلْخَلَّـٰقُ ٱلْعَلِيمُ",
+      "english_translation": "Is not the One who created the heavens and the earth able to create the like of them? Yes indeed! And He is the Supreme Creator, the All-Knowing.",
+      "burmese_translation": "မိုးကောင်းကင်များနှင့် ကမ္ဘာမြေကြီးကို ဖန်ဆင်းတော်မူသော အရှင်သည် သူတို့ကဲ့သို့သော လူသားများကို ပြန်လည်ဖန်ဆင်းနိုင်စွမ်း မရှိတော်မူသလော။ အမှန်ပင် ရှိတော်မူ၏။ ထိုအရှင်သည် အကြီးမြတ်ဆုံး ဖန်ဆင်းရှင်၊ အလုံးစုံသိတော်မူသော အရှင် ဖြစ်တော်မူ၏။",
+      "burmese_transliteration": "အဝလိုင်စလ် လဇီ ခလကစ် စမဝါတိ ဝလ်အရ်ဒ ဘိကာဒိရ် အလာ အန် ယခလုက မစ်လဟုမ် ဗလာ ဝဟုဝလ် ခလ္လာကူလ် အလီးမ်"
+    },
+    {
+      "verse_number": 82,
+      "arabic": "إِنَّمَآ أَمْرُهُۥٓ إِذَآ أَرَادَ شَيْـًٔا أَن يَقُولَ لَهُۥ كُن فَيَكُونُ",
+      "english_translation": "His command, when He intends a thing, is only that He says to it, “Be,” and it is.",
+      "burmese_translation": "ထိုအရှင်သည် အရာတစ်စုံတစ်ရာကို အလိုရှိတော်မူသောအခါ ထိုအရာအား “ဖြစ်စေ” ဟု မိန့်တော်မူရုံမျှဖြင့် ထိုအရာသည် ဖြစ်ပေါ်လာ၏။",
+      "burmese_transliteration": "အင်းနမာ အမ်ရုဟု အိဇာ အရာဒ ရှိုင်အန် အန် ယကူလ လဟု ကုန် ဖယကူန်"
+    },
+    {
+      "verse_number": 83,
+      "arabic": "فَسُبْحَـٰنَ ٱلَّذِى بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍۢ وَإِلَيْهِ تُرْجَعُونَ",
+      "english_translation": "So glory be to the One in whose hand is the dominion over all things, and to Him you will be returned.",
+      "burmese_translation": "သို့ဖြစ်၍ အရာခပ်သိမ်း၏ အုပ်စိုးပိုင်ခွင့်နှင့် အာဏာတော်သည် လက်တော်၌ ရှိတော်မူသော အရှင်သည် စင်ကြယ်မြင့်မြတ်တော်မူ၏။ ထို့ပြင် သင်တို့အားလုံးသည် ထိုအရှင်ထံတော်သို့ပင် ပြန်လည်ပို့ဆောင်ခြင်း ခံကြရမည်။",
+      "burmese_transliteration": "ဖစူဗ်ဟာနလ် လဇီ ဘိယဒိဟီ မလကူတု ကုလ္လိ ရှိုင်အင် ဝအိလိုင်ဟိ တုရ်ဂျအူးန်"
+    }
+  ]
+}

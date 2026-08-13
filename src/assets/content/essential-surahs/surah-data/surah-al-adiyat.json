@@ -1,104 +1,104 @@
 {
   "surah_metadata": {
     "surah_number": 100,
-    "name_arabic": "العَادِيَات",
-    "name_transliteration": "Al-'Adiyat",
-    "name_burmese_title": "စူရဟ် အလ်-အာဒိယားသ် (အရှိန်အဟုန်ဖြင့် ပြေးလွှားနေသော မြင်းများ)",
+    "name_arabic": "الْعَادِيَاتِ",
+    "name_transliteration": "Al-ʿĀdiyāt",
+    "name_burmese_title": "စူရဟ် အလ်-အာဒိယာတ် (အရှိန်ပြင်းစွာ ပြေးလွှားသူများ)",
     "meaning_of_title": {
-      "english": "The Treaders / The Courser",
-      "burmese": "ပြင်းထန်စွာ ပြေးလွှားနေသော (စစ်မြင်းများ)"
+      "english": "The Courser",
+      "burmese": "အရှိန်ပြင်းစွာ ပြေးလွှားသူများ"
     },
     "revelation_place": {
       "english": "Meccan",
-      "burmese": "မက္ကဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မက္ကီ)"
+      "burmese": "မက္ကီ (မက္ကာတွင် ကျရောက်ခဲ့သည်)"
     },
     "revelation_order": 14,
     "total_verses": 11,
-    "summary_burmese": "ဤစူရဟ်တွင် စစ်ပွဲအတွင်း ပြင်းထန်သော အရှိန်အဟုန်ဖြင့် ပြေးလွှားနေသော စစ်မြင်းများကို ကျိန်ဆို၍ လူသားတို့၏ ကျေးဇူးကန်းမှုနှင့် စည်းစိမ်ဥစ္စာအပေါ် လောဘကြီးမှုကို ထောက်ပြထားပါသည်။ ထို့ပြင် ကိယာမတ် (တရားစီရင်ရာ) နေ့၌ သင်္ချိုင်းဂူများအတွင်းရှိရာများ ထွက်ပေါ်လာမည်ဖြစ်ပြီး စိတ်နှလုံးအတွင်းရှိ လျှို့ဝှက်ချက်များ အားလုံးကို ထုတ်ဖော်စစ်ဆေးခံရမည်ဖြစ်ကြောင်း သတိပေးထားပါသည်။"
+    "summary_burmese": "ဤစူရဟ်သည် အရှိန်ပြင်းစွာ ပြေးလွှား၍ အသက်ရှူသံပြင်းပြင်း ထွက်နေသော စစ်မြင်းများ၊ ခွာများဖြင့် မီးပွင့်စေခြင်း၊ နံနက်အချိန် စီးနင်းတိုက်ခိုက်ခြင်း၊ ဖုန်မှုန့်များ ထူထပ်စွာ လွင့်ထွက်စေခြင်းနှင့် ရန်သူအုပ်စုအလယ်သို့ ဝင်ရောက်ခြင်းတို့ကို ကျိန်ဆို၍ စတင်ထားပါသည်။ ထို့နောက် လူသားသည် မိမိ၏ အရှင်အား ကျေးဇူးကန်းတတ်ကြောင်း၊ ထိုကျေးဇူးကန်းမှုကို မိမိကိုယ်တိုင်လည်း သိမြင်နေကြောင်းနှင့် စည်းစိမ်ဥစ္စာကို အလွန်အမင်း တပ်မက်တတ်ကြောင်း ဖော်ပြထားပါသည်။ နောက်ဆုံးတွင် သင်္ချိုင်းများအတွင်းရှိ သေဆုံးသူများ ထုတ်ဖော်ခံရမည့်နေ့နှင့် လူတို့၏ ရင်ထဲတွင် ဖုံးကွယ်ထားသမျှ အရာများ ပေါ်လွင်လာမည့်နေ့ကို သတိပေးကာ ထိုနေ့တွင် အလ္လာဟ်အရှင်မြတ်သည် သူတို့၏ အတွင်းအပြင် အမှုအရာအားလုံးကို အကြွင်းမဲ့ သိတော်မူကြောင်း ဖော်ပြထားပါသည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
-    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
-    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
-    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+    "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Most Compassionate, the Most Merciful.",
+    "burmese_translation": "အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် စတင်ပါ၏။ ထိုအရှင်သည် အလွန်ကရုဏာတော်ရှင်၊ အထူးသနားကြင်နာတော်မူသော အရှင်ဖြစ်တော်မူ၏။",
+    "burmese_transliteration": "ဗစ်မိလ္လာဟိရ်ရဟ်မာနိရ်ရဟီးမ်"
   },
   "verses": [
     {
       "verse_number": 1,
-      "arabic": "وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
+      "arabic": "وَالْعَادِيَاتِ ضَبْحًا",
       "english_translation": "By the racers, panting,",
-      "burmese_translation": "အရှိန်အဟုန်ဖြင့် ပြိုင်တူပြေးလွှားလျက် ပြင်းစွာ သက်ပြင်းရှူနေကြသော စစ်မြင်းများကို ကျိန်ဆိုတော်မူ၏။",
-      "burmese_transliteration": "ဝလ် အာဒိယာသိ ဒေါ့ဗ်ဟော"
+      "burmese_translation": "အသက်ရှူသံပြင်းပြင်း ထွက်လျက် အရှိန်ပြင်းစွာ ပြေးလွှားနေသော မြင်းများကို ကျိန်ဆိုတော်မူ၏။ / မောဟိုက်ပြင်းရှူလျက် အရှိန်အဟုန်ပြင်းစွာ ပြေးလွှားနေကြသော (စစ်မြင်းတို့အား) သက်သေပြု၍ (အကြွင်းမဲ့ တည်ရှိကြောင်း ကျိန်ဆိုတော်မူ၏)။",
+      "burmese_transliteration": "ဝလ်အာဒိယာတိ ဒဗ်ဟန်"
     },
     {
       "verse_number": 2,
-      "arabic": "فَٱلْمُورِيَـٰتِ قَدْحًا",
-      "english_translation": "And the producers of sparks [when] striking",
-      "burmese_translation": "မိမိတို့၏ ခွာများဖြင့် ကျောက်ခဲများကို ရိုက်ခတ်၍ မီးပွင့်စေကြသော မြင်းများကိုလည်းကောင်း၊",
-      "burmese_transliteration": "ဖာလ် မူးရိယာသိ ကဒ်ဟော"
+      "arabic": "فَالْمُورِيَاتِ قَدْحًا",
+      "english_translation": "and those that produce sparks by striking,",
+      "burmese_translation": "ခွာများဖြင့် ရိုက်ခတ်၍ မီးပွင့်များ ထွက်စေသော မြင်းများကိုလည်း ကျိန်ဆိုတော်မူ၏။ / ကျောက်ခဲကိုခွာဖြင့် ရိုက်ခတ်၍ မီးပွင့်များ ထွက်စေကြသော (မြင်းများအားဖြင့်လည်းကောင်း)၊",
+      "burmese_transliteration": "ဖလ်မူရိယာတိ ကဒ်ဟန်"
     },
     {
       "verse_number": 3,
-      "arabic": "فَٱلْمُغِيرَٰتِ صُبْحًا",
-      "english_translation": "And the chargers at dawn,",
-      "burmese_translation": "နံနက်ယံအချိန်၌ ရန်သူ့တပ်ထဲသို့ အရှိန်အဟုန်ဖြင့် စီးနင်းတိုက်ခိုက်ကြသော မြင်းများကိုလည်းကောင်း၊",
-      "burmese_transliteration": "ဖာလ် မုဂီးရာသိ ဆုဗ်ဟော"
+      "arabic": "فَالْمُغِيرَاتِ صُبْحًا",
+      "english_translation": "and those that charge at dawn,",
+      "burmese_translation": "နံနက်အချိန်၌ ရန်သူ့ထံသို့ စီးနင်းတိုက်ခိုက်သွားသော မြင်းများကိုလည်း ကျိန်ဆိုတော်မူ၏။ / အရုဏ်တက်ချိန်၌ ရန်သူ့ထံ ရုတ်တရက် ဝင်ရောက်တိုက်ခိုက်ကြသော (မြင်းများအားဖြင့်လည်းကောင်း)၊",
+      "burmese_transliteration": "ဖလ်မုဂီရာတိ ဆုဗ်ဟန်"
     },
     {
       "verse_number": 4,
-      "arabic": "فَأَثَرْنَ بِهِۦ نَقْعًا",
-      "english_translation": "Stirring up thereby [clouds of] dust,",
-      "burmese_translation": "ထိုအချိန်၌ မြေဖုန်မှုန့်များကို ဝေဟင်သို့ လွင့်ပျံစေလျက်၊",
-      "burmese_transliteration": "ဖာ အာသာရ်နာ ဗိဟီ နက်အော"
+      "arabic": "فَأَثَرْنَ بِهِ نَقْعًا",
+      "english_translation": "then stirring up clouds of dust,",
+      "burmese_translation": "ထိုအရှိန်ဖြင့် ဖုန်မှုန့်များကို တိမ်တိုက်သဖွယ် လွင့်ထစေကြကုန်၏။ / ထိုသို့ပြေးလွှားရင်း ဖုန်မှုန့်များကို တိမ်တိုက်သဖွယ် ဟုန်းကနဲ လွင့်ထစေကြကုန်သော၊",
+      "burmese_transliteration": "ဖအသရ်န ဗိဟိ နက်အန်"
     },
     {
       "verse_number": 5,
-      "arabic": "فَوَسَطْنَ بِهِۦ جَمْعًا",
-      "english_translation": "Arriving thereby in the center collectively,",
-      "burmese_translation": "ရန်သူတို့၏ အလယ်ဗဟိုသို့ တိုးဝင်ဖောက်ထွက်သွားကြသော (မြင်းများကို ကျိန်ဆိုတော်မူ၏)။",
-      "burmese_transliteration": "ဖာ ဝါစသ်နာ ဗိဟီ ဂျမ်အော"
+      "arabic": "فَوَسَطْنَ بِهِ جَمْعًا",
+      "english_translation": "then penetrating into the midst of the assembly,",
+      "burmese_translation": "ထိုအရှိန်ဖြင့် အုပ်စုအလယ်သို့ တစ်ပြိုင်နက် ဝင်ရောက်ကြကုန်၏။ / ရန်သူ့အုပ်စု အလယ်ဗဟိုထဲသို့ တစ်ပြိုင်နက်တည်း ထိုးဖောက်ဝင်ရောက်သွားကြသော (မြင်းများဖြင့် ကျိန်ဆိုတော်မူ၏)။",
+      "burmese_transliteration": "ဖဝစတ်န ဗိဟိ ဂျမ်အန်"
     },
     {
       "verse_number": 6,
-      "arabic": "إِنَّ ٱلْإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودٌ",
-      "english_translation": "Indeed mankind, to his Lord, is ungrateful.",
-      "burmese_translation": "ဧကန်မလွဲ လူသားသည် မိမိအား ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်၏ ကျေးဇူးတော်များကို အလွန်တရာ ကျေးဇူးကန်းသူ ဖြစ်ပေ၏။",
-      "burmese_transliteration": "အင်းနလ် အင်းစာနာ လိရဗ်ဗိဟီ လာကားနူးဒ်"
+      "arabic": "إِنَّ الْإِنسَانَ لِرَبِّهِ لَكَنُودٌ",
+      "english_translation": "Indeed, mankind is surely ungrateful to his Lord.",
+      "burmese_translation": "ဧကန်မလွဲ လူသားသည် မိမိ၏ အရှင်အား အမှန်ပင် ကျေးဇူးကန်းတတ်၏။ / ဧကန်အမှန် လူသားသည် မိမိ၏အရှင်အပေါ် ကျေးဇူးဆပ်ဖို့နေနေသာသာ ကျေးဇူးကန်းတတ်သူ ဖြစ်၏။ (ကျေးဇူးတရားများကို မေ့ပျောက်ကာ ငြိုငြင်တတ်သူ ဖြစ်၏။)",
+      "burmese_transliteration": "အင်နလ်အင်စာန လိရဗ္ဗိဟိ လကနူဒ်"
     },
     {
       "verse_number": 7,
-      "arabic": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
-      "english_translation": "And indeed, he is to that a witness.",
-      "burmese_translation": "ထို့ပြင် သူကိုယ်တိုင်လည်း ထိုကျေးဇူးကန်းမှုအပေါ် စွပ်စွဲချက်မကင်းသော သက်သေပင် ဖြစ်ပေ၏။",
-      "burmese_transliteration": "ဝါ အင်းနဟု အာလာ ဇာလိကာ လာရှာဟီးဒ်"
+      "arabic": "وَإِنَّهُ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
+      "english_translation": "And indeed, he himself is a witness to that.",
+      "burmese_translation": "ထို့ပြင် ထိုအကြောင်းကို သူကိုယ်တိုင်ပင် သက်သေခံနေ၏။ / ထို့ပြင် သူကိုယ်တိုင်ပင် (သူ့ရဲ့အပြုအမူများက) ဤအချက်ကို သက်သေပြနေပေသည်။",
+      "burmese_transliteration": "ဝအင်နဟူ အလာ ဇာလိက လရှဟီးဒ်"
     },
     {
       "verse_number": 8,
-      "arabic": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
-      "english_translation": "And indeed he is, in love of wealth, intense.",
-      "burmese_translation": "စင်စစ် ထိုလူသားသည် စည်းစိမ်ဥစ္စာကို ရမ္မက်ကြီးစွာ အလွန်တရာ တပ်မက်သူဖြစ်၏။",
-      "burmese_transliteration": "ဝါ အင်းနဟု လိဟုဗ်ဗိလ် ခိုင်ရိ လာရှာဒီးဒ်"
+      "arabic": "وَإِنَّهُ لِحُبِّ الْخَيْرِ لَشَدِيدٌ",
+      "english_translation": "And indeed, he is intense in his love of wealth.",
+      "burmese_translation": "ထို့ပြင် သူသည် စည်းစိမ်ဥစ္စာကို အလွန်အမင်း တပ်မက်စွဲလမ်းသူ ဖြစ်၏။",
+      "burmese_transliteration": "ဝအင်နဟူ လိဟုဗ္ဗိလ်ခိုင်ရိ လရှဒီဒ်"
     },
     {
       "verse_number": 9,
-      "arabic": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
-      "english_translation": "But does he not know that when the contents of the graves are scattered",
-      "burmese_translation": "ထိုသူသည် မသိလေသလော၊ သင်္ချိုင်းဂူများအတွင်းရှိရာများကို တူးဆွထုတ်ဖော်လိုက်သောအခါ၊",
-      "burmese_transliteration": "အာဖာ လာ ယအ်လာမု အိဇာ ဗုအ်သိရာ မာ ဖီးလ် ကုဗူးရ်"
+      "arabic": "أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ",
+      "english_translation": "Does he not know that when what is in the graves is brought out,",
+      "burmese_translation": "သင်္ချိုင်းဂူများအတွင်းရှိ သေဆုံးသူများ ထုတ်ဖော်ထုတ်ယူခံရသောအခါ ဖြစ်မည့်အရာကို သူသည် မသိလေသလော။ / သင်္ချိုင်းဂူများအတွင်းရှိ သေဆုံးသူများ အားလုံး အုတ်ဂူများကိုဖောက်ထွင်း၍ ထွက်လာကြရမည့်အချိန်ကို သူ မသိလေသလော။",
+      "burmese_transliteration": "အဖလာ ယအ်လမု အိဇာ ဗုအ်သိရ မာ ဖိလ်ကုဗူရ်"
     },
     {
       "verse_number": 10,
-      "arabic": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
-      "english_translation": "And that within the breasts is obtained,",
-      "burmese_translation": "စိတ်နှလုံးများအတွင်း၌ ကိန်းဝပ်နေသမျှ လျှို့ဝှက်ချက်များကို ထုတ်ဖော်စစ်ဆေးလိုက်သောအခါ၊",
-      "burmese_transliteration": "ဝါ ဟုသ်သိလာ မာ ဖီးစ် ဆုဒူးရ်"
+      "arabic": "وَحُصِّلَ مَا فِي الصُّدُورِ",
+      "english_translation": "and what is within the breasts is brought to light,",
+      "burmese_translation": "ရင်ထဲ၌ ဖုံးကွယ်ထားသမျှ အရာများ ပေါ်လွင်ထုတ်ဖော်ခံရသောအခါ၊ / ရင်ထဲမှာ လျှို့ဝှက်ဖုံးကွယ်ထားခဲ့သမျှ ကြံရွယ်ချက်၊ စိတ်သဘောထားမှန်သမျှ အကုန်အစင် ထုတ်ဖော်ပေါ်လွင်လာမည့်အချိန်ကိုရော (မသိလေသလော)။",
+      "burmese_transliteration": "ဝဟုဆ္ဆိလ မာ ဖိဆ္ဆုဒူရ်"
     },
     {
       "verse_number": 11,
-      "arabic": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ",
-      "english_translation": "Indeed, their Lord with them, that Day, is [fully] Aware.",
-      "burmese_translation": "ဧကန်မလွဲ ထိုနေ့တွင် သူတို့အား ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်သည် သူတို့နှင့်ပတ်သက်၍ အလုံးစုံကို အကြားအမြင်ဆုံး အသိရှိဆုံး ဖြစ်တော်မူပေ၏။",
-      "burmese_transliteration": "အင်းနာ ရဗ်ဗာဟုမ် ဗိဟိမ် ယောင်မအိဇင်း လာခါဗီးရ်"
+      "arabic": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ",
+      "english_translation": "surely their Lord is All-Aware of them on that Day.",
+      "burmese_translation": "ဧကန်အမှန် ထိုနေ့တွင် သူတို့၏ အရှင်သည် သူတို့၏ အတွင်းအပြင် အမှုအရာအားလုံးကို အကြွင်းမဲ့ သိတော်မူပေ၏။",
+      "burmese_transliteration": "အင်န ရဗ္ဗဟုမ် ဗိဟိမ် ယောမအိဇင် လခဗီးရ်"
     }
   ]
 }

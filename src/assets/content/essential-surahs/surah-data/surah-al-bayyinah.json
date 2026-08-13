@@ -3,81 +3,82 @@
     "surah_number": 98,
     "name_arabic": "البَيِّنَة",
     "name_transliteration": "Al-Bayyinah",
-    "name_burmese_title": "စူရဟ် အလ်-ဗယျိနဟ် (ထင်ရှားလှသော သက်သေအထောက်အထား)",
+    "name_burmese_title": "စူရဟ် အလ်-ဗယျိနဟ် (ထင်ရှားလင်းလက်သော သက်သေအထောက်အထား)",
     "meaning_of_title": {
       "english": "The Clear Proof",
-      "burmese": "ထင်ရှားလှသော သက်သေအထောက်အထား"
+      "burmese": "ထင်ရှားလင်းလက်သော သက်သေအထောက်အထား"
     },
     "revelation_place": {
-      "english": "Madinan",
-      "burmese": "မဒီနဟ်မြို့တွင် ကျရောက်ခဲ့သည် (မဒနီ)"
+      "english": "Disputed; commonly classified as Madinan",
+      "burmese": "မက္ကီ/မဒနီ ဖြစ်သည်မှာ အမြင်ကွဲပြားမှုရှိသော်လည်း အများအားဖြင့် မဒနီ စူရဟ်အဖြစ် သတ်မှတ်ကြသည်"
     },
     "revelation_order": 100,
+    "revelation_order_note": "Traditional revelation-order numbering; the classification and chronology of this surah are subject to scholarly discussion.",
     "total_verses": 8,
-    "summary_burmese": "ဤစူရဟ်တွင် ကျမ်းဂန်ရသူများ (ဂျူးနှင့် ခရစ်ယာန်များ) နှင့် ဗဟုဒေဝဝါဒီတို့သည် ထင်ရှားလှသော သက်သေအထောက်အထား (ကုရ်အာန်နှင့် တမန်တော်မြတ်) ရောက်ရှိမလာမချင်း မိမိတို့၏ လမ်းမှားမှ ခွဲထွက်ရန် မရှိခဲ့ကြကြောင်း ဖော်ပြထားပါသည်။ အစ္စလာမ်၏ အဓိက သွန်သင်ချက်မှာ စိတ်နှလုံးဖြူစင်စွာဖြင့် အလ္လာဟ်တစ်ဆူတည်းအား ဝတ်ပြုရန်၊ ဆလားသ်ဆောက်တည်ရန်နှင့် ဇကားသ်ပေးဆောင်ရန် ဖြစ်ကြောင်း၊ အမှန်တရားကို ငြင်းပယ်သူများသည် သတ္တဝါတို့တွင် အဆိုးဝါးဆုံးဖြစ်ပြီး ယုံကြည်မြတ်နိုး၍ ကောင်းမှုပြုသူများသည် သတ္တဝါတို့တွင် အမြတ်ဆုံးဖြစ်ကြောင်းနှင့် ထိုသူတို့၏ အကျိုးကျေးဇူးမှာ ဂျန္နသ်သုခဘုံ ဖြစ်ကြောင်း သွန်သင်ထားပါသည်။"
+    "summary_burmese": "ဤစူရဟ်သည် ကျမ်းဂန်ရရှိသူများနှင့် မုရှ်ရိက်များထံ ရှင်းလင်းထင်ရှားသော သက်သေအထောက်အထား ရောက်ရှိလာခြင်းကို ဖော်ပြထားပါသည်။ ထိုသက်သေအထောက်အထားမှာ အလ္လာဟ်အရှင်မြတ်ထံတော်မှ စေလွှတ်တော်မူသော ရစူလ်တော်က သန့်စင်သော ကျမ်းစောင်များကို ရွတ်ဖတ်ပြခြင်း ဖြစ်သည်။ လူသားတို့အား အလ္လာဟ်အရှင်မြတ်တစ်ပါးတည်းကို စိတ်နှလုံးဖြူစင်စွာ ဝတ်ပြုရန်၊ ဆလားသ်ကို ဆောက်တည်ရန်နှင့် ဇကာသ်ကို ပေးဆောင်ရန် မိန့်မှာထားပြီး၊ ယင်းသည် ဖြောင့်မတ်မှန်ကန်သော သာသနာလမ်းစဉ်ဖြစ်ကြောင်း သွန်သင်ထားပါသည်။ သစ္စာငြင်းပယ်သူများသည် ဂျဟန္နမ်၌ ထာဝစဉ် နေထိုင်ရမည်ဖြစ်သော်လည်း ယုံကြည်၍ ကောင်းမြတ်သော အကျင့်များကို ပြုသူများသည် သတ္တဝါတို့တွင် အမြတ်ဆုံးသူများဖြစ်ပြီး ထာဝရစံပယ်ရာ ဂျန္နသ်ဥယျာဉ်များကို ရရှိကြမည်ဖြစ်သည်။"
   },
   "bismillah": {
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
-    "english_translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
-    "burmese_translation": "အနန္တဂရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
-    "burmese_transliteration": "ဗိစမိလ္လာဟိ ရဟ်မာနိရ် ရဟီးမ်"
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english_translation": "In the name of Allah, the Most Compassionate, the Most Merciful.",
+    "burmese_translation": "အလွန်ကရုဏာတော်ရှင်၊ အထူးသနားကြင်နာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+    "burmese_transliteration": "ဗိစ်မိလ္လာဟိရ် ရဟ်မာနိရ် ရဟီးမ်"
   },
   "verses": [
     {
       "verse_number": 1,
       "arabic": "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
-      "english_translation": "Those who disbelieved among the People of the Scripture and the polytheists were not to be parted [from misbelief] until there came to them clear evidence",
-      "burmese_translation": "ကျမ်းဂန်ရရှိသူများအနက်မှ သစ္စာငြင်းပယ်သူများနှင့် ဗဟုဒေဝဝါဒီတို့သည် မိမိတို့၏ လမ်းမှားမှ ထင်ရှားလှသော သက်သေအထောက်အထား မရောက်ရှိမီတိုင်အောင် ခွဲထွက်စွန့်လွှတ်ကြမည့်သူများ မဟုတ်ကြပေ။",
-      "burmese_transliteration": "လမ် ယကုနိလ် လာဇီးနာ ကာဖာရူး မင်း အာဟ်လိလ် ကိသာဗိ ဝါလ် မုရှ်ရိကီးနာ မွန်ဖက်ကီးနာ ဟတ်သာ သာသယိယာဟုမုလ် ဗယျိနားဟ်"
+      "english_translation": "Those who disbelieved among the People of the Scripture and the polytheists were not going to desist from disbelief until there came to them the clear proof.",
+      "burmese_translation": "ကျမ်းဂန်ရရှိသူများအနက် သစ္စာငြင်းပယ်သူများနှင့် မုရှ်ရိက်များသည် ရှင်းလင်းထင်ရှားသော သက်သေအထောက်အထား ရောက်ရှိလာသည်အထိ မိမိတို့၏ သစ္စာငြင်းပယ်မှုမှ ရပ်တန့်စွန့်လွှတ်ကြမည် မဟုတ်ကြပေ။",
+      "burmese_transliteration": "လမ် ယကုနိလ်လာဇီးန ကာဖရူ မင် အဟ်လိလ်ကိသာဗိ ဝလ်မုရှ်ရိကီးန မုန်ဖက်ကီးန ဟတ်တာ သအ်တီယဟုမုလ်ဗယျိနဟ်"
     },
     {
       "verse_number": 2,
       "arabic": "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً",
-      "english_translation": "A Messenger from Allah, reciting purified scriptures",
-      "burmese_translation": "(ထိုသက်သေအထောက်အထားမှာ) အလ္လာဟ်အရှင်မြတ်ထံတော်မှ သန့်စင်စင်ကြယ်သော ကျမ်းစောင်များကို ရွတ်ဖတ်ပြသသော စေတမန်တော်ပင် ဖြစ်၏။",
-      "burmese_transliteration": "ရာစူးလုန်း မိနလ် လ္လာဟိ ယသ်လူ ဆူဟုဖန်း မုသတ်ဟားရာဟ်"
+      "english_translation": "A Messenger from Allah, reciting purified scriptures.",
+      "burmese_translation": "(ထိုရှင်းလင်းသော သက်သေအထောက်အထားမှာ) အလ္လာဟ်အရှင်မြတ်ထံတော်မှ ရစူလ်တော်တစ်ပါးဖြစ်ပြီး သန့်စင်စင်ကြယ်သော ကျမ်းစောင်များကို ရွတ်ဖတ်ပြတော်မူ၏။",
+      "burmese_transliteration": "ရစူလုမ် မိနလ္လာဟိ ယတ်လူ ဆုဟုဖမ် မုသွဟ်ဟရဟ်"
     },
     {
       "verse_number": 3,
       "arabic": "فِيهَا كُتُبٌ قَيِّمَةٌ",
-      "english_translation": "Within which are correct writings [i.e., rulings and laws].",
-      "burmese_translation": "ထိုကျမ်းစောင်များ၌ မှန်ကန်ဖြောင့်မတ်သော ပညတ်ချက်များ ပါရှိပေ၏။",
-      "burmese_transliteration": "ဖီးဟာ ကုသုဗုန်း ကယျိမားဟ်"
+      "english_translation": "Containing upright and correct writings.",
+      "burmese_translation": "ထိုကျမ်းစောင်များအတွင်း ဖြောင့်မတ်မှန်ကန်သော ပညတ်ချက်များ ပါရှိကြပေ၏။",
+      "burmese_transliteration": "ဖီးဟာ ကုသုဗုန် ကယျိမဟ်"
     },
     {
       "verse_number": 4,
       "arabic": "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ",
-      "english_translation": "Nor did those who were given the Scripture become divided until after there had come to them clear evidence.",
-      "burmese_translation": "ကျမ်းဂန်ပေးသနားတော်မူခြင်း ခံရသူတို့သည် ထိုထင်ရှားသော သက်သေအထောက်အထား ရောက်ရှိလာပြီးနောက်မှသာလျှင် သဘောထားကွဲလွဲ ခွဲထွက်သွားကြခြင်းဖြစ်၏။",
-      "burmese_transliteration": "ဝါ မာ သဖားရာကာလ် လာဇီးနာ ဥူသုလ် ကိသာဗာ အိလ်လာ မင်း ဗအ်ဒိ မာ ဂျာအာသ်ဟုမုလ် ဗယျိနားဟ်"
+      "english_translation": "Nor did those who were given the Scripture become divided until after the clear proof had come to them.",
+      "burmese_translation": "ကျမ်းဂန်ပေးအပ်ခြင်းခံရသူတို့သည်လည်း ရှင်းလင်းထင်ရှားသော သက်သေအထောက်အထား ရောက်ရှိလာပြီးနောက်မှသာ သဘောထားကွဲလွဲ၍ အုပ်စုကွဲသွားကြခြင်း ဖြစ်၏။",
+      "burmese_transliteration": "ဝမာ တဖရ်ရကလ်လာဇီးန အူသူလ်ကိသာဗ အိလ္လာ မင်မ်ဗအ်ဒိ မာ ဂျာအတ်ဟုမုလ်ဗယျိနဟ်"
     },
     {
       "verse_number": 5,
       "arabic": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ",
-      "english_translation": "And they were not commanded except to worship Allah, [being] sincere to Him in religion, inclining to truth, and to establish prayer and to give zakāh. And that is the correct religion.",
-      "burmese_translation": "စင်စစ် သူတို့အား အခြားမဟုတ္၊ အလ္လာဟ်အရှင်မြတ် တစ်ဆူတည်းအား စိတ်နှလုံး ဖြူစင်စွာဖြင့် သာသနာကို သီးသန့်ပြု၍ ဝတ်ပြုကိုးကွယ်ကြရန်၊ စိတ်ကို ဖြောင့်မတ်စွာ ထားရှိကြရန်၊ ဆလားသ် ဝတ်ပြုမှုကို မှန်မှန်ဆောက်တည်ကြရန်နှင့် ဇကားသ် တရားဝင်လှူဒါန်းကြရန်သာ မိန့်မှာတော်မူခဲ့ခြင်း ဖြစ်၏။ ယင်းသည်ပင်လျှင် အမှန်ကန်ဆုံးသော သာသနာရေးရာ လမ်းစဉ်ဖြစ်ပေ၏။",
-      "burmese_transliteration": "ဝါ မာ ဥမိရူး အိလ်လာ လိယအ်ဗုဒုလ် လ္လာဟာ မုခ်လိဆီးနာ လာဟုဒ် ဒီးနာ ဟုနဖာအာ ဝါ ယုကီးမုစ် ဆော်လာသာ ဝါ ယုအ်သုဇ် ဇကားသ်၊ ဝါ ဇာလိကာ ဒီးနုလ် ကယျိမားဟ်"
+      "english_translation": "And they were not commanded except to worship Allah, being sincere to Him in religion and inclining to truth, and to establish prayer and give zakah. And that is the upright religion.",
+      "burmese_translation": "သူတို့အား အလ္လာဟ်အရှင်မြတ်ကိုသာ သာသနာရေး၌ စိတ်နှလုံးဖြူစင်စွာဖြင့် ဝတ်ပြုကိုးကွယ်ရန်၊ မှန်ကန်ဖြောင့်မတ်သော ယုံကြည်မှုဘက်သို့ တိမ်းညွတ်ရန်၊ ဆလားသ်ကို ဆောက်တည်ရန်နှင့် ဇကာသ်ကို ပေးဆောင်ရန်သာ မိန့်မှာထားခြင်း ဖြစ်၏။ ယင်းသည်ပင် ဖြောင့်မတ်မှန်ကန်သော သာသနာလမ်းစဉ် ဖြစ်ပေ၏။",
+      "burmese_transliteration": "ဝမာ အုမိရူ အိလ္လာ လိယအ်ဗုဒုလ္လာဟ မုခ်လိဆီးန လဟုဒ်ဒီးန ဟုနဖာအ ဝယုကီးမုဆ်ဆွလာဟ ဝယုအ်သူဇ်ဇကာဟ် ဝဇာလိက ဒီးနုလ်ကယျိမဟ်"
     },
     {
       "verse_number": 6,
       "arabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ ۚ أُو۟لَـٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ",
-      "english_translation": "Indeed, they who disbelieved among the People of the Scripture and the polytheists will be in the fire of Hell, abiding eternally therein. Those are the worst of creatures.",
-      "burmese_translation": "ဧကန်မလွဲ ကျမ်းဂန်ရသူများအနက်မှ သစ္စာငြင်းပယ်သူများနှင့် ဗဟုဒေဝဝါဒီတို့သည် ဂျဟန္နမ်ငရဲမီး၌ ထာဝရ ကိန်းဝပ်နေကြရမည်။ ထိုသူတို့သည် သတ္တဝါအပေါင်းတို့တွင် အဆိုးဝါးဆုံးသော သူများဖြစ်ကြ၏။",
-      "burmese_transliteration": "အင်းနလ် လာဇီးနာ ကာဖာရူး မင်း အာဟ်လိလ် ကိသာဗိ ဝါလ် မုရှ်ရိကီးနာ ဖီး နာရိ ဂျာဟန်းနာမော ခါလိဒီးနာ ဖီးဟာ၊ ဥူလာအိကာ ဟုမ် ရှာရ်ရုလ် ဗားရိယျားဟ်"
+      "english_translation": "Indeed, those who disbelieved among the People of the Scripture and the polytheists will be in the Fire of Hell, abiding therein forever. Those are the worst of creatures.",
+      "burmese_translation": "ဧကန်မလွဲ ကျမ်းဂန်ရရှိသူများအနက် သစ္စာငြင်းပယ်သူများနှင့် မုရှ်ရိက်များသည် ဂျဟန္နမ်ငရဲမီး၌ ထာဝစဉ် နေထိုင်ကြရမည်။ ထိုသူတို့သည် သတ္တဝါအပေါင်းတို့တွင် အဆိုးဝါးဆုံးသူများ ဖြစ်ကြ၏။",
+      "burmese_transliteration": "အင်းနလ်လာဇီးန ကာဖရူ မင် အဟ်လိလ်ကိသာဗိ ဝလ်မုရှ်ရိကီးန ဖီး နာရိ ဂျဟန်နမ် ခါလိဒီးန ဖီးဟာ အူလာအိက ဟုမ် ရှရ်ရုလ်ဗရိယဟ်"
     },
     {
       "verse_number": 7,
       "arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ",
-      "english_translation": "Indeed, they who have believed and done righteous deeds - those are the best of creatures.",
-      "burmese_translation": "ဧကန်မလွဲ ယုံကြည်ခြင်း သဒ္ဓါတရား ထားရှိကြပြီး ကောင်းမြတ်သော အကျင့်သီလများကို ဆောက်တည်ကြသူများမူကား သတ္တဝါအပေါင်းတို့တွင် အမြတ်ဆုံးသော သူများဖြစ်ကြ၏။",
-      "burmese_transliteration": "အင်းနလ် လာဇီးနာ အာမနူး ဝါ အာမိလုစ် ဆောလိဟာသိ ဥူလာအိကာ ဟုမ် ခိုင်ရုလ် ဗားရိယျားဟ်"
+      "english_translation": "Indeed, those who believe and do righteous deeds are the best of creatures.",
+      "burmese_translation": "ဧကန်မလွဲ ယုံကြည်၍ ကောင်းမြတ်သော အကျင့်များကို ပြုသူတို့သည် သတ္တဝါအပေါင်းတို့တွင် အမြတ်ဆုံးသူများ ဖြစ်ကြ၏။",
+      "burmese_transliteration": "အင်းနလ်လာဇီးန အာမနူ ဝအာမိလုဆ်ဆွာလိဟာတ် အူလာအိက ဟုမ် ခိုင်ရုလ်ဗရိယဟ်"
     },
     {
       "verse_number": 8,
       "arabic": "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
-      "english_translation": "Their reward with their Lord will be gardens of perpetual residence beneath which rivers flow, wherein they will abide forever, Allah being pleased with them and they with Him. That is for whoever has feared his Lord.",
-      "burmese_translation": "ထိုသူတို့အတွက် မိမိတို့အား ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်ထံတော်၌ ရရှိမည့် အကျိုးကျေးဇူးမှာ အောက်ခြေ၌ ရေစီးမြောင်းများ စီးဆင်းလျက်ရှိသော ထာဝရစံပယ်ရာ ဂျန္နသ်သုခဘုံများဖြစ်ပြီး၊ ထိုဘုံ၌ သူတို့သည် ထာဝစဉ် စံပယ်ကြရပေမည်။ အလ္လာဟ်အရှင်မြတ်သည် သူတို့အပေါ် ကျေနပ်နှစ်သက်တော်မူခဲ့ပြီဖြစ်သလို သူတို့သည်လည်း အရှင်မြတ်အပေါ် ကျေနပ်နှစ်သိမ့်ကြပြီဖြစ်၏။ ဤအကျိုးကျေးဇူးမှာ မိမိအား ဖန်ဆင်းမွေးမြူတော်မူသော အရှင်အား ကြောက်ရွံ့သူအတွက်ဖြစ်ပေသတည်း။",
-      "burmese_transliteration": "ဂျာဇာအုဟုမ် အိန်းဒါ ရဗ်ဗိဟိမ် ဂျန်းနာသူ အာဒ်နင်း သဂျ်ရီး မင်း သဟ်သိဟာလ် အန်းဟာရု ခါလိဒီးနာ ဖီးဟာ အာဗာဒါ၊ ရဒိယလ် လ္လာဟု အန်းဟုမ် ဝါ ရဒူး အန်းဟ်၊ ဇာလိကာ လိမန် ခါရှီယာ ရဗ်ဗားဟ်"
+      "english_translation": "Their reward with their Lord is Gardens of Eternity beneath which rivers flow, where they will abide forever. Allah is pleased with them, and they are pleased with Him. That is for whoever fears his Lord.",
+      "burmese_translation": "ထိုသူတို့အတွက် မိမိတို့၏ အရှင်မြတ်ထံတော်၌ အကျိုးဆုလာဘ်မှာ အောက်ခြေမှ မြစ်ချောင်းများ စီးဆင်းနေသော ထာဝရစံပယ်ရာ ဂျန္နသ်ဥယျာဉ်များ ဖြစ်၏။ ထိုဥယျာဉ်များ၌ သူတို့သည် ထာဝစဉ် နေထိုင်ကြရမည်။ အလ္လာဟ်အရှင်မြတ်သည် သူတို့အပေါ် ကျေနပ်တော်မူပြီး သူတို့သည်လည်း အရှင်မြတ်အပေါ် ကျေနပ်ကြ၏။ ဤအကျိုးဆုလာဘ်သည် မိမိ၏ အရှင်မြတ်ကို ကြောက်ရွံ့ရိုသေသူအတွက် ဖြစ်ပေ၏။ / သူတို့၏ အရှင်မြတ်ထံတော်မှ ရရှိမည့် အကျိုးဆုလာဘ်ကား အောက်ခြေမှ မြစ်ချောင်းများ စီးဆင်းနေသော ထာဝရစံမြန်းရာ ဂျန္နသ်ဥယျာဉ်များပင် ဖြစ်၏။ ထိုနေရာ၌ သူတို့သည် ထာဝစဉ် နေထိုင်ကြရမည်။ အလ္လာဟ်အရှင်မြတ်သည် သူတို့အပေါ် ကျေနပ်နှစ်သက်တော်မူပြီး၊ သူတို့ကလည်း အရှင်မြတ်အပေါ် အပြည့်အဝ ကျေနပ်နေကြမည်။ ဤအောင်မြင်မှုကား မိမိ၏ အရှင်မြတ်ကို စိုးရွံ့ရိုသေခဲ့ကြသူတိုင်းအတွက်သာတည်း။",
+      "burmese_transliteration": "ဂျဇာအုဟုမ် အိန္ဒ ရဗ္ဗိဟိမ် ဂျန်နာသု အဒ်န် သဂျ်ရီ မင် သဟ်သိဟလ်အန်ဟာရ် ခါလိဒီးန ဖီးဟာ အဗဒန် ရဒိယလ္လာဟု အန်ဟုမ် ဝရဒူ အန်ဟ် ဇာလိက လိမန် ခရှိယ ရဗ္ဗဟ်"
     }
   ]
 }
