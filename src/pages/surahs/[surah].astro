@@ -23,15 +23,19 @@ export async function getStaticPaths() {
 	const surahs = (await getCollection("surahs")).sort(
 		(a, b) => a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
 	);
-	return surahs.map((surah, index) => ({
-		params: { surah: surah.id },
-		props: {
-			surah,
-			prev: index > 0 ? { id: surahs[index - 1].id, name: surahs[index - 1].data.surah_metadata.name_transliteration } : null,
-			next: index < surahs.length - 1 ? { id: surahs[index + 1].id, name: surahs[index + 1].data.surah_metadata.name_transliteration } : null,
-			hasAudio: audioIds.has(surah.id),
-		},
-	}));
+	return surahs.map((surah, index) => {
+		const prevEntry = surahs[index - 1];
+		const nextEntry = surahs[index + 1];
+		return {
+			params: { surah: surah.id },
+			props: {
+				surah,
+				prev: prevEntry ? { id: prevEntry.id, name: prevEntry.data.surah_metadata.name_transliteration } : null,
+				next: nextEntry ? { id: nextEntry.id, name: nextEntry.data.surah_metadata.name_transliteration } : null,
+				hasAudio: audioIds.has(surah.id),
+			},
+		};
+	});
 }
 
 const { surah, prev, next, hasAudio } = Astro.props;
