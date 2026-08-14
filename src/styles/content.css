@@ -20,6 +20,18 @@
 	color: var(--primary);
 }
 
+.page-header-meta {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-top: 0.5rem;
+}
+
+.page-header-meta .page-header-arabic {
+	font-size: 1.15rem;
+	line-height: 1.6;
+}
+
 .page-count {
 	display: inline-flex;
 	align-items: center;

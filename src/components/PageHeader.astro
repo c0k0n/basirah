@@ -4,23 +4,36 @@ interface Props {
 	arabic?: string;
 	sub?: string;
 	count?: number;
+	stacked?: boolean;
 }
 
-const { title, arabic, sub, count } = Astro.props;
+const { title, arabic, sub, count, stacked = false } = Astro.props;
 ---
 
 <header class="page-header">
 	<h1>
 		<span lang="my">{title}</span>
 		{
-			arabic && (
+			!stacked && arabic && (
 				<span class="page-header-arabic isolated-rtl" lang="ar">
 					{arabic}
 				</span>
 			)
 		}
-		{count && <span class="page-count">{count}</span>}
+		{!stacked && count !== undefined && <span class="page-count">{count}</span>}
 	</h1>
+	{
+		stacked && (arabic || count !== undefined) && (
+			<p class="page-header-meta">
+				{arabic && (
+					<span class="page-header-arabic isolated-rtl" lang="ar">
+						{arabic}
+					</span>
+				)}
+				{count !== undefined && <span class="page-count">{count}</span>}
+			</p>
+		)
+	}
 	{
 		sub && (
 			<p class="page-sub" lang="my">

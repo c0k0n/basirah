@@ -13,6 +13,7 @@ export default defineConfig({
 		sitemap(),
 		AstroPWA({
 			registerType: "autoUpdate",
+			injectRegister: false,
 			includeAssets: [
 				"favicon.svg",
 				"favicon.ico",

@@ -35,9 +35,9 @@ const nameCount = (await getCollection("names")).length;
 			မြန်မာဘာသာဖြင့် လေ့လာပါ။
 		</p>
 		<p class="hero-intro" lang="my">
-			မရှိမဖြစ် စူရဟ်များ (အသံဖတ်ကြားချက်နှင့်တကွ)၊ နေ့စဉ်ဘဝအတွက်
-			ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးတို့ကို
-			တစ်နေရာတည်းတွင် စုစည်းထားပါသည်။
+			မရှိမဖြစ် စူရဟ်များ (အသံဖတ်ကြားချက်နှင့်တကွ)၊ နေ့စဉ်ဘဝအတွက် ဒိုအာများနှင့်
+			အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးတို့ကို တစ်နေရာတည်းတွင်
+			စုစည်းထားပါသည်။
 		</p>
 		<p class="hero-sub" lang="en">
 			Basirah gathers the wisdom of the Qur'an and Sunnah into clear, accessible
@@ -49,15 +49,17 @@ const nameCount = (await getCollection("names")).length;
 	<section class="container" aria-label="Basirah ကို လေ့လာရန်">
 		<div class="card-grid">
 			<a class="card" href="/surahs/">
-				<span class="card-icon material-symbols-outlined" aria-hidden="true"
-					>book</span
-				>
-				<h2>
-					<span lang="my">စူရဟ်များ</span>
-					<span lang="en">· Surahs</span>
-					<span class="page-count">{surahCount}</span>
+				<span class="card-top">
+					<span class="card-icon material-symbols-outlined" aria-hidden="true"
+						>book</span
+					>
+					<span class="card-count">{surahCount}</span>
+				</span>
+				<h2 class="card-title">
+					<span class="card-title-burmese" lang="my">စူရဟ်များ</span>
+					<span class="card-title-en" lang="en">Surahs</span>
 				</h2>
-				<p lang="my">
+				<p class="card-desc" lang="my">
 					မြန်မာဘာသာပြန်နှင့် အသံဖြင့် ဖတ်ရှုနားထောင်နိုင်သော အခြေခံစူရဟ်များ။
 				</p>
 				<span class="card-cta">
@@ -69,15 +71,19 @@ const nameCount = (await getCollection("names")).length;
 			</a>
 
 			<a class="card" href="/duas/">
-				<span class="card-icon material-symbols-outlined" aria-hidden="true"
-					>favorite</span
-				>
-				<h2>
-					<span lang="my">ဒိုအာများ</span>
-					<span lang="en">· Duas</span>
-					<span class="page-count">{duaCount}</span>
+				<span class="card-top">
+					<span class="card-icon material-symbols-outlined" aria-hidden="true"
+						>favorite</span
+					>
+					<span class="card-count">{duaCount}</span>
+				</span>
+				<h2 class="card-title">
+					<span class="card-title-burmese" lang="my">ဒိုအာများ</span>
+					<span class="card-title-en" lang="en">Duas</span>
 				</h2>
-				<p lang="my">နေ့စဉ်ဘဝအတွက် မရှိမဖြစ် ဒိုအာများကို အဓိပ္ပာယ်နှင့်တကွ။</p>
+				<p class="card-desc" lang="my">
+					နေ့စဉ်ဘဝအတွက် မရှိမဖြစ် ဒိုအာများကို အဓိပ္ပာယ်နှင့်တကွ။
+				</p>
 				<span class="card-cta">
 					<span lang="my">လေ့လာရန်</span>
 					<span class="material-symbols-outlined" aria-hidden="true"
@@ -87,15 +93,17 @@ const nameCount = (await getCollection("names")).length;
 			</a>
 
 			<a class="card" href="/names-of-allah/">
-				<span class="card-icon material-symbols-outlined" aria-hidden="true"
-					>star</span
-				>
-				<h2>
-					<span lang="my">အလ္လာဟ်၏ နာမတော်များ</span>
-					<span lang="en">· Names of Allah</span>
-					<span class="page-count">{nameCount}</span>
+				<span class="card-top">
+					<span class="card-icon material-symbols-outlined" aria-hidden="true"
+						>star</span
+					>
+					<span class="card-count">{nameCount}</span>
+				</span>
+				<h2 class="card-title">
+					<span class="card-title-burmese" lang="my">အလ္လာဟ်၏ နာမတော်များ</span>
+					<span class="card-title-en" lang="en">Names of Allah</span>
 				</h2>
-				<p lang="my">
+				<p class="card-desc" lang="my">
 					အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးကို အဓိပ္ပာယ်နှင့်တကွ။
 				</p>
 				<span class="card-cta">

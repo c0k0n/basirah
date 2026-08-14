@@ -67,12 +67,14 @@ const robots = noindex
 		<meta name="description" content={description} />
 		<meta name="robots" content={robots} />
 		{!noindex && <link rel="canonical" href={canonicalUrl} />}
-		{!noindex && (
-			<>
-				<link rel="alternate" hreflang={lang} href={canonicalUrl} />
-				<link rel="alternate" hreflang="x-default" href={canonicalUrl} />
-			</>
-		)}
+		{
+			!noindex && (
+				<>
+					<link rel="alternate" hreflang={lang} href={canonicalUrl} />
+					<link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+				</>
+			)
+		}
 
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Basirah" />
@@ -107,14 +109,8 @@ const robots = noindex
 			cssVariable="--font-arabic"
 			preload={[{ subset: "arabic", style: "normal", weight: "700" }]}
 		/>
-		<Font
-			cssVariable="--font-serif"
-			preload={[{ subset: "latin", style: "normal" }]}
-		/>
-		<Font
-			cssVariable="--font-sans"
-			preload={[{ subset: "latin", style: "normal" }]}
-		/>
+		<Font cssVariable="--font-serif" />
+		<Font cssVariable="--font-sans" />
 		<Font cssVariable="--font-mono" />
 		<Font cssVariable="--font-icons" preload />
 
