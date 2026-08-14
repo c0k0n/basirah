@@ -7,14 +7,25 @@ interface Props {
 const { src, title } = Astro.props;
 ---
 
-<div class="audio-player" data-audio-player role="group" aria-label={`${title} ၏ အသံဖွင့်စက်`} data-title={title}>
+<div
+	class="audio-player"
+	data-audio-player
+	role="group"
+	aria-label={`${title} ၏ အသံဖွင့်စက်`}
+	data-title={title}
+>
 	<audio preload="none" src={src}>
 		<p class="audio-fallback" lang="my">
 			သင့်ဘရောက်ဆာသည် အသံဖွင့်ခြင်းကို မပံ့ပိုးပါ။
 			<a href={src}>{title} ၏ ရွတ်ဖတ်သံကို ဒေါင်းလုဒ်လုပ်ရန်</a>။
 		</p>
 	</audio>
-	<button class="audio-play" type="button" data-audio-play aria-label={`${title} ကို ဖွင့်ရန်`}>
+	<button
+		class="audio-play"
+		type="button"
+		data-audio-play
+		aria-label={`${title} ကို ဖွင့်ရန်`}
+	>
 		<span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
 	</button>
 	<div class="audio-times" aria-hidden="true">
@@ -37,9 +48,12 @@ const { src, title } = Astro.props;
 <script>
 	function initAudioPlayer(player: HTMLElement) {
 		const audio = player.querySelector<HTMLAudioElement>("audio");
-		const playBtn = player.querySelector<HTMLButtonElement>("[data-audio-play]");
+		const playBtn =
+			player.querySelector<HTMLButtonElement>("[data-audio-play]");
 		const currentEl = player.querySelector<HTMLElement>("[data-audio-current]");
-		const durationEl = player.querySelector<HTMLElement>("[data-audio-duration]");
+		const durationEl = player.querySelector<HTMLElement>(
+			"[data-audio-duration]",
+		);
 		const seek = player.querySelector<HTMLInputElement>("[data-audio-seek]");
 		if (!audio || !playBtn || !currentEl || !durationEl || !seek) return;
 
@@ -55,7 +69,10 @@ const { src, title } = Astro.props;
 
 		const updateState = () => {
 			const playing = !audio.paused;
-			playBtn.setAttribute("aria-label", playing ? `${title} ကို ရပ်ရန်` : `${title} ကို ဖွင့်ရန်`);
+			playBtn.setAttribute(
+				"aria-label",
+				playing ? `${title} ကို ရပ်ရန်` : `${title} ကို ဖွင့်ရန်`,
+			);
 			if (icon) icon.textContent = playing ? "pause" : "play_arrow";
 		};
 
@@ -77,24 +94,30 @@ const { src, title } = Astro.props;
 		});
 		audio.addEventListener("timeupdate", () => {
 			currentEl.textContent = format(audio.currentTime);
-			if (!seeking && audio.duration) seek.value = String((audio.currentTime / audio.duration) * 1000);
+			if (!seeking && audio.duration)
+				seek.value = String((audio.currentTime / audio.duration) * 1000);
 		});
 		seek.addEventListener("input", () => {
 			seeking = true;
-			currentEl.textContent = format((Number(seek.value) / 1000) * (audio.duration || 0));
+			currentEl.textContent = format(
+				(Number(seek.value) / 1000) * (audio.duration || 0),
+			);
 		});
 		seek.addEventListener("change", () => {
-			if (audio.duration) audio.currentTime = (Number(seek.value) / 1000) * audio.duration;
+			if (audio.duration)
+				audio.currentTime = (Number(seek.value) / 1000) * audio.duration;
 			seeking = false;
 		});
 	}
 
 	function initAllPlayers() {
-		document.querySelectorAll<HTMLElement>("[data-audio-player]").forEach((player) => {
-			if (player.dataset.inited) return;
-			player.dataset.inited = "1";
-			initAudioPlayer(player);
-		});
+		document
+			.querySelectorAll<HTMLElement>("[data-audio-player]")
+			.forEach((player) => {
+				if (player.dataset.inited) return;
+				player.dataset.inited = "1";
+				initAudioPlayer(player);
+			});
 	}
 
 	document.addEventListener("astro:page-load", initAllPlayers);

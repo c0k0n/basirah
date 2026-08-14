@@ -20,10 +20,13 @@ interface Props {
 
 export async function getStaticPaths() {
 	const audioIds = new Set(
-		readdirSync(new URL("../../../public/audio/surahs", import.meta.url)).map((file) => file.replace(/\.opus$/, "")),
+		readdirSync(new URL("../../../public/audio/surahs", import.meta.url)).map(
+			(file) => file.replace(/\.opus$/, ""),
+		),
 	);
 	const surahs = (await getCollection("surahs")).sort(
-		(a, b) => a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
+		(a, b) =>
+			a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
 	);
 	return surahs.map((surah, index) => {
 		const prevEntry = surahs[index - 1];
@@ -32,8 +35,18 @@ export async function getStaticPaths() {
 			params: { surah: surah.id },
 			props: {
 				surah,
-				prev: prevEntry ? { id: prevEntry.id, name: prevEntry.data.surah_metadata.name_transliteration } : null,
-				next: nextEntry ? { id: nextEntry.id, name: nextEntry.data.surah_metadata.name_transliteration } : null,
+				prev: prevEntry
+					? {
+							id: prevEntry.id,
+							name: prevEntry.data.surah_metadata.name_transliteration,
+						}
+					: null,
+				next: nextEntry
+					? {
+							id: nextEntry.id,
+							name: nextEntry.data.surah_metadata.name_transliteration,
+						}
+					: null,
 				hasAudio: audioIds.has(surah.id),
 			},
 		};
@@ -61,7 +74,12 @@ const prostration = meta.prostration_verse;
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 1,
+						name: "မူလစာမျက်နှာ",
+						item: new URL("/", Astro.site).href,
+					},
 					{
 						"@type": "ListItem",
 						position: 2,
@@ -80,16 +98,18 @@ const prostration = meta.prostration_verse;
 				audio: {
 					"@type": "AudioObject",
 					name: `စူရဟ် ${meta.name_transliteration} — ရွတ်ဖတ်သံ`,
-					contentUrl: new URL(`/audio/surahs/${surah.id}.opus`, Astro.site).href,
+					contentUrl: new URL(`/audio/surahs/${surah.id}.opus`, Astro.site)
+						.href,
 					encodingFormat: "audio/opus",
 					inLanguage: "ar",
 				},
 			}),
 		}}
 	/>
-	<a class="back-link" href="/surahs">
+	<a class="back-link" href="/surahs/">
 		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		<span lang="my">စူရဟ်အားလုံး</span> <span lang="en">· All surahs</span>
+		<span lang="my">စူရဟ်အားလုံး</span>
+		<span lang="en">· All surahs</span>
 	</a>
 
 	<header class="surah-hero">
@@ -126,7 +146,14 @@ const prostration = meta.prostration_verse;
 		</dl>
 	</header>
 
-	{hasAudio && <AudioPlayer src={`/audio/surahs/${surah.id}.opus`} title={meta.name_transliteration} />}
+	{
+		hasAudio && (
+			<AudioPlayer
+				src={`/audio/surahs/${surah.id}.opus`}
+				title={meta.name_transliteration}
+			/>
+		)
+	}
 
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
@@ -141,18 +168,32 @@ const prostration = meta.prostration_verse;
 			surah.data.verses.map((verse) => (
 				<li class="verse">
 					<div class="verse-head">
-						<span class="verse-number" lang="my">အာယသ် {verse.verse_number}</span>
+						<span class="verse-number" lang="my">
+							အာယသ် {verse.verse_number}
+						</span>
 						{prostration?.verse_number === verse.verse_number && (
-							<span class="verse-prostration" lang="ar">{prostration.arabic_marker} سَجْدَة</span>
+							<span class="verse-prostration" lang="ar">
+								{prostration.arabic_marker} سَجْدَة
+							</span>
 						)}
 					</div>
-					<p class="verse-arabic" lang="ar" dir="rtl">{verse.arabic}</p>
-					<p class="verse-translit" lang="my">{verse.burmese_transliteration}</p>
-					<p class="verse-english" lang="en">{verse.english_translation}</p>
-					<p class="verse-burmese" lang="my">{verse.burmese_translation}</p>
+					<p class="verse-arabic" lang="ar" dir="rtl">
+						{verse.arabic}
+					</p>
+					<p class="verse-translit" lang="my">
+						{verse.burmese_transliteration}
+					</p>
+					<p class="verse-english" lang="en">
+						{verse.english_translation}
+					</p>
+					<p class="verse-burmese" lang="my">
+						{verse.burmese_translation}
+					</p>
 					{verse.note && (
 						<details class="verse-note">
-							<summary lang="my">မှတ်ချက် / Note</summary>
+							<summary>
+								<span lang="my">မှတ်ချက်</span> / <span lang="en">Note</span>
+							</summary>
 							<p lang="my">{verse.note}</p>
 						</details>
 					)}
@@ -161,30 +202,44 @@ const prostration = meta.prostration_verse;
 		}
 	</ol>
 
-	{prostration && (
-		<p class="verse-note" lang="my">
-			{prostration.note_burmese}
-		</p>
-	)}
+	{
+		prostration && (
+			<p class="verse-note" lang="my">
+				{prostration.note_burmese}
+			</p>
+		)
+	}
 
 	<nav class="pager" aria-label="စူရဟ်များအကြား သွားရန်">
-		{prev && (
-			<a href={`/surahs/${prev.id}`}>
-				<span class="pager-label" lang="my">
-					<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-					ရှေ့စူရဟ်
-				</span>
-				<span class="pager-name" lang="en">{prev.name}</span>
-			</a>
-		)}
-		{next && (
-			<a class="pager-next" href={`/surahs/${next.id}`}>
-				<span class="pager-label" lang="my">
-					နောက်စူရဟ်
-					<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-				</span>
-				<span class="pager-name" lang="en">{next.name}</span>
-			</a>
-		)}
+		{
+			prev && (
+				<a href={`/surahs/${prev.id}/`}>
+					<span class="pager-label" lang="my">
+						<span class="material-symbols-outlined" aria-hidden="true">
+							arrow_back
+						</span>
+						ရှေ့စူရဟ်
+					</span>
+					<span class="pager-name" lang="en">
+						{prev.name}
+					</span>
+				</a>
+			)
+		}
+		{
+			next && (
+				<a class="pager-next" href={`/surahs/${next.id}/`}>
+					<span class="pager-label" lang="my">
+						နောက်စူရဟ်
+						<span class="material-symbols-outlined" aria-hidden="true">
+							arrow_forward
+						</span>
+					</span>
+					<span class="pager-name" lang="en">
+						{next.name}
+					</span>
+				</a>
+			)
+		}
 	</nav>
 </Layout>

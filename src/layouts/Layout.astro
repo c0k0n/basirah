@@ -16,13 +16,16 @@ interface Props {
 }
 
 const {
-	title = "Hikmah — ကုရ်အာန်နှင့် ဆွန်နဟ်မှ ဉာဏ်ပညာ",
+	title = "Hikmah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာ",
 	description = "Hikmah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
 	lang = "my",
 	noindex = false,
 } = Astro.props;
 
-const canonicalPath = Astro.url.pathname === "/" ? "/" : `${Astro.url.pathname.replace(/\/+$/, "")}/`;
+const canonicalPath =
+	Astro.url.pathname === "/"
+		? "/"
+		: `${Astro.url.pathname.replace(/\/+$/, "")}/`;
 const canonicalUrl = new URL(canonicalPath, Astro.site).href;
 const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 ---
@@ -34,12 +37,23 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfbf7" />
-		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101613" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="#fdfbf7"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="#101613"
+		/>
 
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<meta name="robots" content={noindex ? "noindex, nofollow" : "max-image-preview:large"} />
+		<meta
+			name="robots"
+			content={noindex ? "noindex, nofollow" : "max-image-preview:large"}
+		/>
 		{!noindex && <link rel="canonical" href={canonicalUrl} />}
 
 		<meta property="og:type" content="website" />
@@ -51,17 +65,32 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		<meta property="og:image" content={ogImageUrl} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content="Hikmah — Wisdom from the Qur'an and Sunnah, in the language of Myanmar Muslims" />
+		<meta
+			property="og:image:alt"
+			content="Hikmah — Wisdom from the Qur'an and Sunnah, in the language of Myanmar Muslims"
+		/>
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImageUrl} />
 
-		<Font cssVariable="--font-myanmar-serif" />
-		<Font cssVariable="--font-myanmar-sans" />
+		<Font
+			cssVariable="--font-myanmar-serif"
+			preload={[{ subset: "myanmar", style: "normal", weight: "400" }]}
+		/>
+		<Font
+			cssVariable="--font-myanmar-sans"
+			preload={[{ subset: "myanmar", style: "normal", weight: "400" }]}
+		/>
 		<Font cssVariable="--font-arabic" />
-		<Font cssVariable="--font-serif" preload={[{ subset: "latin", style: "normal" }]} />
-		<Font cssVariable="--font-sans" preload={[{ subset: "latin", style: "normal" }]} />
+		<Font
+			cssVariable="--font-serif"
+			preload={[{ subset: "latin", style: "normal" }]}
+		/>
+		<Font
+			cssVariable="--font-sans"
+			preload={[{ subset: "latin", style: "normal" }]}
+		/>
 		<Font cssVariable="--font-mono" />
 		<Font cssVariable="--font-icons" />
 
@@ -73,7 +102,11 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 				const key = "hikmah-theme";
 				function applyHikmahTheme() {
 					const stored = localStorage.getItem(key);
-					const theme = stored ?? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+					const theme =
+						stored ??
+						(matchMedia("(prefers-color-scheme: dark)").matches
+							? "dark"
+							: "light");
 					document.documentElement.classList.toggle("dark", theme === "dark");
 					document.documentElement.setAttribute("data-theme", theme);
 					document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
@@ -88,7 +121,9 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 					if (!btn) return;
 					localStorage.setItem(
 						key,
-						document.documentElement.classList.contains("dark") ? "light" : "dark",
+						document.documentElement.classList.contains("dark")
+							? "light"
+							: "dark",
 					);
 					applyHikmahTheme();
 				});
@@ -106,13 +141,20 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		<script>
 			function closeNav() {
 				document.body.classList.remove("nav-open");
-				document.querySelectorAll("[data-menu-toggle]").forEach((b) => b.setAttribute("aria-expanded", "false"));
+				document
+					.querySelectorAll("[data-menu-toggle]")
+					.forEach((b) => b.setAttribute("aria-expanded", "false"));
 			}
 
 			function toggleNav() {
-				const open = document.querySelector("[data-menu-toggle]")?.getAttribute("aria-expanded") === "true";
+				const open =
+					document
+						.querySelector("[data-menu-toggle]")
+						?.getAttribute("aria-expanded") === "true";
 				document.body.classList.toggle("nav-open", !open);
-				document.querySelectorAll("[data-menu-toggle]").forEach((b) => b.setAttribute("aria-expanded", String(!open)));
+				document
+					.querySelectorAll("[data-menu-toggle]")
+					.forEach((b) => b.setAttribute("aria-expanded", String(!open)));
 			}
 
 			document.addEventListener("astro:page-load", () => {
@@ -120,7 +162,9 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 				const nav = document.querySelector("[data-nav]");
 				if (!toggle || !nav) return;
 				toggle.addEventListener("click", toggleNav);
-				nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeNav));
+				nav
+					.querySelectorAll("a")
+					.forEach((link) => link.addEventListener("click", closeNav));
 			});
 
 			document.addEventListener("keydown", (event) => {

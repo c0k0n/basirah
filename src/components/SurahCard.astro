@@ -9,12 +9,12 @@ const { surah } = Astro.props;
 const meta = surah.data.surah_metadata;
 ---
 
-<a class="card surah-card" data-filter-item href={`/surahs/${surah.id}`}>
+<a class="card surah-card" data-filter-item href={`/surahs/${surah.id}/`}>
 	<div class="surah-card-top">
 		<span class="surah-number" aria-hidden="true">{meta.surah_number}</span>
 		<span class="surah-verse-count" lang="my">{meta.total_verses} အာယသ်</span>
 	</div>
 	<span class="surah-name-arabic" lang="ar" dir="rtl">{meta.name_arabic}</span>
-	<span class="surah-name-translit">{meta.name_transliteration}</span>
+	<span class="surah-name-translit" lang="en">{meta.name_transliteration}</span>
 	<span class="surah-name-burmese" lang="my">{meta.name_burmese_title}</span>
 </a>

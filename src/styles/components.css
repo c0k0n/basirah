@@ -75,7 +75,9 @@
 	text-decoration: none;
 	color: inherit;
 	box-shadow: var(--shadow);
-	transition: transform 0.15s ease, border-color 0.15s ease;
+	transition:
+		transform 0.15s ease,
+		border-color 0.15s ease;
 }
 
 .card:hover {

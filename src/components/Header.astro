@@ -4,11 +4,12 @@ import ThemeToggle from "./ThemeToggle.astro";
 const path = Astro.url.pathname;
 const links = [
 	{ href: "/", label: "မူလစာမျက်နှာ" },
-	{ href: "/surahs", label: "စူရဟ်များ" },
-	{ href: "/duas", label: "ဒိုအာများ" },
-	{ href: "/names-of-allah", label: "အလ္လာဟ်၏ နာမတော်များ" },
+	{ href: "/surahs/", label: "စူရဟ်များ" },
+	{ href: "/duas/", label: "ဒိုအာများ" },
+	{ href: "/names-of-allah/", label: "အလ္လာဟ်၏ နာမတော်များ" },
 ];
-const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+const isCurrent = (href: string) =>
+	href === "/" ? path === "/" : path.startsWith(href);
 ---
 
 <header class="site-header">
@@ -23,7 +24,11 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
 				{
 					links.map((link) => (
 						<li>
-							<a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined} lang="my">
+							<a
+								href={link.href}
+								aria-current={isCurrent(link.href) ? "page" : undefined}
+								lang="my"
+							>
 								{link.label}
 							</a>
 						</li>
@@ -32,19 +37,27 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
 			</ul>
 		</nav>
 
-		<ThemeToggle />
+		<div class="header-actions">
+			<ThemeToggle />
 
-		<button
-			class="menu-toggle"
-			type="button"
-			data-menu-toggle
-			aria-expanded="false"
-			aria-controls="primary-nav"
-			aria-label="မီနူး"
-		>
-			<span class="material-symbols-outlined menu-icon-open" aria-hidden="true">menu</span>
-			<span class="material-symbols-outlined menu-icon-close" aria-hidden="true">close</span>
-		</button>
+			<button
+				class="menu-toggle"
+				type="button"
+				data-menu-toggle
+				aria-expanded="false"
+				aria-controls="primary-nav"
+				aria-label="မီနူး"
+			>
+				<span
+					class="material-symbols-outlined menu-icon-open"
+					aria-hidden="true">menu</span
+				>
+				<span
+					class="material-symbols-outlined menu-icon-close"
+					aria-hidden="true">close</span
+				>
+			</button>
+		</div>
 	</div>
 </header>
 
@@ -92,6 +105,12 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
 		margin-inline-start: auto;
 	}
 
+	.header-actions {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+	}
+
 	.site-nav ul {
 		list-style: none;
 		display: flex;
@@ -114,7 +133,7 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
 		background: var(--surface-muted);
 	}
 
-	.site-nav a[aria-current='page'] {
+	.site-nav a[aria-current="page"] {
 		color: var(--primary);
 		font-weight: 700;
 	}
@@ -150,6 +169,10 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
 	}
 
 	@media (max-width: 52rem) {
+		.header-actions {
+			margin-inline-start: auto;
+		}
+
 		.menu-toggle {
 			display: inline-flex;
 		}

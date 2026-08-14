@@ -1,11 +1,11 @@
-import { defineCollection } from 'astro:content';
-import { file, glob } from 'astro/loaders';
-import { z } from 'astro/zod';
+import { defineCollection } from "astro:content";
+import { file, glob } from "astro/loaders";
+import { z } from "astro/zod";
 
 const surahs = defineCollection({
 	loader: glob({
-		pattern: '**/*.json',
-		base: './src/assets/content/essential-surahs/surah-data',
+		pattern: "**/*.json",
+		base: "./src/assets/content/essential-surahs/surah-data",
 	}),
 	schema: z.object({
 		surah_metadata: z.object({
@@ -64,9 +64,12 @@ const surahs = defineCollection({
 });
 
 const duas = defineCollection({
-	loader: file('src/assets/content/essential-duas/duas.json', {
+	loader: file("src/assets/content/essential-duas/duas.json", {
 		parser: (text) =>
-			JSON.parse(text).items.map((item: { id: number }) => ({ ...item, id: String(item.id) })),
+			JSON.parse(text).items.map((item: { id: number }) => ({
+				...item,
+				id: String(item.id),
+			})),
 	}),
 	schema: z.object({
 		id: z.string(),
@@ -80,9 +83,12 @@ const duas = defineCollection({
 });
 
 const names = defineCollection({
-	loader: file('src/assets/content/allah-names/names.json', {
+	loader: file("src/assets/content/allah-names/names.json", {
 		parser: (text) =>
-			JSON.parse(text).names.map((name: { number: number }) => ({ id: String(name.number), ...name })),
+			JSON.parse(text).names.map((name: { number: number }) => ({
+				id: String(name.number),
+				...name,
+			})),
 	}),
 	schema: z.object({
 		id: z.string(),

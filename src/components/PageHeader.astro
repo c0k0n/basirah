@@ -12,16 +12,20 @@ const { title, arabic, sub, count } = Astro.props;
 <header class="page-header">
 	<h1>
 		<span lang="my">{title}</span>
-		{arabic && (
-			<span class="page-header-arabic isolated-rtl" lang="ar">
-				{arabic}
-			</span>
-		)}
+		{
+			arabic && (
+				<span class="page-header-arabic isolated-rtl" lang="ar">
+					{arabic}
+				</span>
+			)
+		}
 		{count && <span class="page-count">{count}</span>}
 	</h1>
-	{sub && (
-		<p class="page-sub" lang="my">
-			{sub}
-		</p>
-	)}
+	{
+		sub && (
+			<p class="page-sub" lang="my">
+				{sub}
+			</p>
+		)
+	}
 </header>

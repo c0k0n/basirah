@@ -7,9 +7,13 @@ import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
 
 const surahs = (await getCollection("surahs")).sort(
-	(a, b) => a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
+	(a, b) =>
+		a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
 );
-const totalVerses = surahs.reduce((sum, s) => sum + s.data.surah_metadata.total_verses, 0);
+const totalVerses = surahs.reduce(
+	(sum, s) => sum + s.data.surah_metadata.total_verses,
+	0,
+);
 ---
 
 <Layout
@@ -34,7 +38,12 @@ const totalVerses = surahs.reduce((sum, s) => sum + s.data.surah_metadata.total_
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 1,
+						name: "မူလစာမျက်နှာ",
+						item: new URL("/", Astro.site).href,
+					},
 					{
 						"@type": "ListItem",
 						position: 2,
@@ -53,12 +62,13 @@ const totalVerses = surahs.reduce((sum, s) => sum + s.data.surah_metadata.total_
 	/>
 
 	<div data-filter-scope>
-		<ListFilter label="စူရဟ်ရှာဖွေရန်" placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…" />
+		<ListFilter
+			label="စူရဟ်ရှာဖွေရန်"
+			placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
+		/>
 
 		<div class="card-grid" data-filter-list>
-			{surahs.map((surah) => (
-				<SurahCard surah={surah} />
-			))}
+			{surahs.map((surah) => <SurahCard surah={surah} />)}
 			<p class="filter-empty" data-filter-empty hidden>
 				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။</span>
 				<span lang="en">No surahs found.</span>

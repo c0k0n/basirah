@@ -31,7 +31,12 @@ const { dua } = Astro.props;
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 1,
+						name: "မူလစာမျက်နှာ",
+						item: new URL("/", Astro.site).href,
+					},
 					{
 						"@type": "ListItem",
 						position: 2,
@@ -48,9 +53,10 @@ const { dua } = Astro.props;
 			},
 		}}
 	/>
-	<a class="back-link" href="/duas">
+	<a class="back-link" href="/duas/">
 		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		<span lang="my">ဒိုအာများအားလုံး</span> <span lang="en">· All duas</span>
+		<span lang="my">ဒိုအာများအားလုံး</span>
+		<span lang="en">· All duas</span>
 	</a>
 
 	<h1 class="visually-hidden" lang="my">{dua.data.title_mm}</h1>
@@ -60,12 +66,17 @@ const { dua } = Astro.props;
 		<p class="dua-pronunciation" lang="my">{dua.data.burmese_pronunciation}</p>
 	</div>
 
-	<section class="dua-section">
+	<section class="dua-meaning">
 		<h2>
-			<span class="material-symbols-outlined" aria-hidden="true">translate</span>
 			<span lang="my">အဓိပ္ပာယ်</span>
 		</h2>
 		<p lang="my">{dua.data.burmese_meaning}</p>
-		<p class="verse-english" lang="en">{dua.data.english_meaning}</p>
+	</section>
+
+	<section class="dua-meaning">
+		<h2>
+			<span lang="en">Translation</span>
+		</h2>
+		<p class="dua-translation" lang="en">{dua.data.english_meaning}</p>
 	</section>
 </Layout>
