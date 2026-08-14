@@ -11,18 +11,17 @@ const metadata = namesData.metadata;
 ---
 
 <Layout
-	title="99 Names of Allah — Hikmah"
-	description="The beautiful names of Allah (Al-Asma ul-Husna) with Arabic text, transliteration, and meanings in English and Burmese."
+	title={`${metadata.title_burmese} — Hikmah`}
+	description={metadata.summary_burmese}
 >
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
 			"@type": ["CollectionPage", "ItemList"],
-			name: "The 99 Names of Allah (Al-Asma ul-Husna)",
-			alternateName: metadata.title_burmese,
+			name: metadata.title_burmese,
+			alternateName: metadata.title_transliteration,
 			url: new URL("/names-of-allah/", Astro.site).href,
-			description:
-				"The beautiful names of Allah (Al-Asma ul-Husna) with Arabic text, transliteration, and meanings in English and Burmese.",
+			description: metadata.summary_burmese,
 			inLanguage: ["my", "en", "ar"],
 			numberOfItems: names.length,
 			itemListElement: names.map((name) => ({
@@ -33,21 +32,29 @@ const metadata = namesData.metadata;
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
-					{ "@type": "ListItem", position: 2, name: "99 Names of Allah", item: new URL("/names-of-allah/", Astro.site).href },
+					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 2,
+						name: "အလ္လာဟ်၏ နာမတော်များ",
+						item: new URL("/names-of-allah/", Astro.site).href,
+					},
 				],
 			},
 		}}
 	/>
 	<PageHeader
-		title={metadata.title_transliteration}
+		title={metadata.title_burmese}
 		arabic={metadata.title_arabic}
 		count={names.length}
-		sub={`${metadata.title_burmese} — ${metadata.summary_burmese}`}
+		sub={metadata.summary_burmese}
 	/>
 
 	<div data-filter-scope>
-		<ListFilter label="Search names" placeholder="Search by Arabic, transliteration, or meaning…" />
+		<ListFilter
+			label="နာမတော်ရှာဖွေရန်"
+			placeholder="အာရဗီ၊ အသံထွက် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
+		/>
 
 		<ol class="name-grid" data-filter-list>
 			{
@@ -56,7 +63,7 @@ const metadata = namesData.metadata;
 						<span class="name-number" aria-hidden="true">{name.data.number}</span>
 						<div class="name-body">
 							<p class="name-arabic" lang="ar" dir="rtl">{name.data.arabic}</p>
-							<p class="name-translit">{name.data.transliteration}</p>
+							<p class="name-translit" lang="en">{name.data.transliteration}</p>
 							<p class="name-meaning">
 								<span lang="my">{name.data.burmese_meaning}</span>
 								<span class="name-meaning-sep" aria-hidden="true">·</span>
@@ -67,7 +74,8 @@ const metadata = namesData.metadata;
 				))
 			}
 			<p class="filter-empty" data-filter-empty hidden>
-				No names found. <span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော နာမတော်မတွေ့ပါ။</span>
+				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော နာမတော်မတွေ့ပါ။</span>
+				<span lang="en">No names found.</span>
 			</p>
 		</ol>
 	</div>

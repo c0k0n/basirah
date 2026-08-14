@@ -13,17 +13,17 @@ const totalVerses = surahs.reduce((sum, s) => sum + s.data.surah_metadata.total_
 ---
 
 <Layout
-	title="Essential Surahs — Hikmah"
-	description={`Read and listen to ${surahs.length} essential surahs of the Qur'an with Burmese translation, transliteration, and audio recitation.`}
+	title="မရှိမဖြစ် စူရဟ်များ — Hikmah"
+	description={`ကုရ်အာန်၏ မရှိမဖြစ် စူရဟ် ${surahs.length} စူရဟ်ကို မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံများနှင့်တကွ ဖတ်ရှုနားထောင်နိုင်ပါသည်။`}
 >
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
 			"@type": ["CollectionPage", "ItemList"],
-			name: "Essential Surahs",
+			name: "မရှိမဖြစ် စူရဟ်များ",
 			url: new URL("/surahs/", Astro.site).href,
-			description: `Read and listen to ${surahs.length} essential surahs of the Qur'an with Burmese translation, transliteration, and audio recitation.`,
-			inLanguage: ["my", "en"],
+			description: `ကုရ်အာန်၏ မရှိမဖြစ် စူရဟ် ${surahs.length} စူရဟ်ကို မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံများနှင့်တကွ ဖတ်ရှုနားထောင်နိုင်ပါသည်။`,
+			inLanguage: ["my", "en", "ar"],
 			numberOfItems: surahs.length,
 			itemListElement: surahs.map((surah, index) => ({
 				"@type": "ListItem",
@@ -34,28 +34,34 @@ const totalVerses = surahs.reduce((sum, s) => sum + s.data.surah_metadata.total_
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
-					{ "@type": "ListItem", position: 2, name: "Essential Surahs", item: new URL("/surahs/", Astro.site).href },
+					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 2,
+						name: "မရှိမဖြစ် စူရဟ်များ",
+						item: new URL("/surahs/", Astro.site).href,
+					},
 				],
 			},
 		}}
 	/>
 	<PageHeader
-		title="Essential Surahs"
+		title="မရှိမဖြစ် စူရဟ်များ"
 		arabic="السُّوَر"
 		count={surahs.length}
-		sub={`${totalVerses} verses across ${surahs.length} surahs, with Burmese translation, transliteration, and audio.`}
+		sub={`စူရဟ် ${surahs.length} စူရဟ်တွင် အာယသ် ${totalVerses} ပါဝင်ပြီး မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံများနှင့်တကွ ဖတ်ရှုနားထောင်နိုင်ပါသည်။`}
 	/>
 
 	<div data-filter-scope>
-		<ListFilter label="Search surahs" placeholder="Search by name or meaning…" />
+		<ListFilter label="စူရဟ်ရှာဖွေရန်" placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…" />
 
 		<div class="card-grid" data-filter-list>
 			{surahs.map((surah) => (
 				<SurahCard surah={surah} />
 			))}
 			<p class="filter-empty" data-filter-empty hidden>
-				No surahs found. <span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။</span>
+				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။</span>
+				<span lang="en">No surahs found.</span>
 			</p>
 		</div>
 	</div>

@@ -9,41 +9,46 @@ const duas = (await getCollection("duas")).sort((a, b) => Number(a.id) - Number(
 ---
 
 <Layout
-	title="Essential Duas & Dhikr — Hikmah"
-	description={`${duas.length} essential duas and dhikr with Arabic text, Burmese pronunciation, and meanings in Burmese and English.`}
+	title="မရှိမဖြစ် ဒိုအာများနှင့် ဇစ်ကိရ် — Hikmah"
+	description={`နေ့စဉ်ဘဝအတွက် မရှိမဖြစ် ဒိုအာ ${duas.length} ခုကို အာရဗီစာသား၊ မြန်မာအသံထွက်နှင့် အဓိပ္ပာယ်တို့နှင့်တကွ လေ့လာနိုင်ပါသည်။`}
 >
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
 			"@type": ["CollectionPage", "ItemList"],
-			name: "Essential Duas & Dhikr",
+			name: "မရှိမဖြစ် ဒိုအာများနှင့် ဇစ်ကိရ်",
 			url: new URL("/duas/", Astro.site).href,
-			description: `${duas.length} essential duas and dhikr with Arabic text, Burmese pronunciation, and meanings in Burmese and English.`,
-			inLanguage: ["my", "en"],
+			description: `နေ့စဉ်ဘဝအတွက် မရှိမဖြစ် ဒိုအာ ${duas.length} ခုကို အာရဗီစာသား၊ မြန်မာအသံထွက်နှင့် အဓိပ္ပာယ်တို့နှင့်တကွ လေ့လာနိုင်ပါသည်။`,
+			inLanguage: ["my", "en", "ar"],
 			numberOfItems: duas.length,
 			itemListElement: duas.map((dua, index) => ({
 				"@type": "ListItem",
 				position: index + 1,
-				name: dua.data.title_en,
+				name: dua.data.title_mm,
 				url: new URL(`/duas/${dua.id}/`, Astro.site).href,
 			})),
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
-					{ "@type": "ListItem", position: 2, name: "Essential Duas & Dhikr", item: new URL("/duas/", Astro.site).href },
+					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 2,
+						name: "မရှိမဖြစ် ဒိုအာများနှင့် ဇစ်ကိရ်",
+						item: new URL("/duas/", Astro.site).href,
+					},
 				],
 			},
 		}}
 	/>
 	<PageHeader
-		title="Essential Duas & Dhikr"
+		title="မရှိမဖြစ် ဒိုအာများနှင့် ဇစ်ကိရ်"
 		count={duas.length}
-		sub="Daily supplications and remembrances with Arabic text, Burmese pronunciation, and meanings."
+		sub="နေ့စဉ် ဆုတောင်းချက်များနှင့် ဇစ်ကိရ်များကို အာရဗီစာသား၊ မြန်မာအသံထွက်နှင့် အဓိပ္ပာယ်တို့နှင့်တကွ လေ့လာနိုင်ပါသည်။"
 	/>
 
 	<div data-filter-scope>
-		<ListFilter label="Search duas" placeholder="Search by name or meaning…" />
+		<ListFilter label="ဒိုအာရှာဖွေရန်" placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…" />
 
 		<div class="card-grid" data-filter-list>
 			{
@@ -53,14 +58,15 @@ const duas = (await getCollection("duas")).sort((a, b) => Number(a.id) - Number(
 							<span class="surah-number" aria-hidden="true">{index + 1}</span>
 							<span class="material-symbols-outlined" aria-hidden="true">favorite</span>
 						</div>
-						<span class="dua-title">{dua.data.title_en}</span>
-						<span class="dua-title-mm" lang="my">{dua.data.title_mm}</span>
+						<span class="dua-title" lang="my">{dua.data.title_mm}</span>
+						<span class="dua-title-mm" lang="en">{dua.data.title_en}</span>
 						<span class="dua-arabic-snippet" lang="ar" dir="rtl">{dua.data.arabic}</span>
 					</a>
 				))
 			}
 			<p class="filter-empty" data-filter-empty hidden>
-				No duas found. <span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော ဒိုအာမတွေ့ပါ။</span>
+				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော ဒိုအာမတွေ့ပါ။</span>
+				<span lang="en">No duas found.</span>
 			</p>
 		</div>
 	</div>

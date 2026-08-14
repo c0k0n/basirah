@@ -354,6 +354,13 @@
 	font-size: 16px;
 }
 
+/* Burmese text inside compact mono labels needs the Myanmar stack. */
+.surah-hero-number[lang='my'],
+.surah-verse-count[lang='my'],
+.verse-number[lang='my'] {
+	font-family: var(--font-myanmar-sans);
+}
+
 .verse-arabic {
 	font-family: var(--font-arabic);
 	font-size: clamp(1.3rem, 3vw, 1.7rem);
@@ -467,6 +474,10 @@
 	font-weight: 700;
 }
 
+.dua-title[lang='my'] {
+	font-family: var(--font-myanmar-serif);
+}
+
 .dua-title-mm {
 	color: var(--text-muted);
 	font-size: 0.9rem;
@@ -505,7 +516,9 @@
 	display: block;
 	margin-top: 1rem;
 	color: var(--text-muted);
+	font-family: var(--font-myanmar-sans);
 	font-size: 0.85rem;
+	line-height: 1.8;
 }
 
 .dua-section {

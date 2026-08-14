@@ -17,33 +17,43 @@ const { dua } = Astro.props;
 ---
 
 <Layout
-	title={`${dua.data.title_en} — Hikmah`}
-	description={`${dua.data.title_en}: Arabic text with Burmese pronunciation and meaning in English and Burmese.`}
+	title={`${dua.data.title_mm} — Hikmah`}
+	description={`${dua.data.title_mm} — အာရဗီစာသား၊ မြန်မာအသံထွက်နှင့် မြန်မာ/အင်္ဂလိပ် အဓိပ္ပာယ်တို့ ပါဝင်ပါသည်။`}
 >
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
 			"@type": "WebPage",
-			name: dua.data.title_en,
-			url: new URL(Astro.url.pathname, Astro.site).href,
-			description: `${dua.data.title_en}: Arabic text with Burmese pronunciation and meaning in English and Burmese.`,
+			name: dua.data.title_mm,
+			url: new URL(`/duas/${dua.id}/`, Astro.site).href,
+			description: `${dua.data.title_mm} — အာရဗီစာသား၊ မြန်မာအသံထွက်နှင့် မြန်မာ/အင်္ဂလိပ် အဓိပ္ပာယ်တို့ ပါဝင်ပါသည်။`,
 			inLanguage: ["my", "en", "ar"],
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
-					{ "@type": "ListItem", position: 2, name: "Essential Duas & Dhikr", item: new URL("/duas/", Astro.site).href },
-					{ "@type": "ListItem", position: 3, name: dua.data.title_en, item: new URL(`/duas/${dua.id}/`, Astro.site).href },
+					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 2,
+						name: "မရှိမဖြစ် ဒိုအာများနှင့် ဇစ်ကိရ်",
+						item: new URL("/duas/", Astro.site).href,
+					},
+					{
+						"@type": "ListItem",
+						position: 3,
+						name: dua.data.title_mm,
+						item: new URL(`/duas/${dua.id}/`, Astro.site).href,
+					},
 				],
 			},
 		}}
 	/>
 	<a class="back-link" href="/duas">
 		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		All duas <span lang="my">· ဒိုအာများအားလုံး</span>
+		<span lang="my">ဒိုအာများအားလုံး</span> <span lang="en">· All duas</span>
 	</a>
 
-	<h1 class="visually-hidden">{dua.data.title_en}</h1>
+	<h1 class="visually-hidden" lang="my">{dua.data.title_mm}</h1>
 
 	<div class="dua-detail-arabic">
 		<p lang="ar" dir="rtl">{dua.data.arabic}</p>
@@ -53,9 +63,9 @@ const { dua } = Astro.props;
 	<section class="dua-section">
 		<h2>
 			<span class="material-symbols-outlined" aria-hidden="true">translate</span>
-			Meaning
+			<span lang="my">အဓိပ္ပာယ်</span>
 		</h2>
 		<p lang="my">{dua.data.burmese_meaning}</p>
-		<p class="verse-english">{dua.data.english_meaning}</p>
+		<p class="verse-english" lang="en">{dua.data.english_meaning}</p>
 	</section>
 </Layout>

@@ -16,8 +16,8 @@ interface Props {
 }
 
 const {
-	title = "Hikmah — Wisdom from the Qur'an & Sunnah",
-	description = "Hikmah shares the wisdom of the Qur'an and Sunnah in Burmese: essential surahs, duas, and the beautiful names of Allah.",
+	title = "Hikmah — ကုရ်အာန်နှင့် ဆွန်နဟ်မှ ဉာဏ်ပညာ",
+	description = "Hikmah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
 	lang = "my",
 	noindex = false,
 } = Astro.props;
@@ -39,8 +39,7 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<meta name="robots" content="max-image-preview:large" />
-		{noindex && <meta name="robots" content="noindex, nofollow" />}
+		<meta name="robots" content={noindex ? "noindex, nofollow" : "max-image-preview:large"} />
 		{!noindex && <link rel="canonical" href={canonicalUrl} />}
 
 		<meta property="og:type" content="website" />
@@ -97,7 +96,7 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		</script>
 	</head>
 	<body>
-		<a class="skip-link" href="#main">Skip to content <span lang="my">အကြောင်းအရာသို့ သွားရန်</span></a>
+		<a class="skip-link" href="#main">အကြောင်းအရာသို့ သွားရန်</a>
 		<Header />
 		<main id="main" class="container" tabindex="-1">
 			<slot />

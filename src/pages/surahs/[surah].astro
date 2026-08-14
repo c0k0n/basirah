@@ -19,7 +19,9 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-	const audioIds = new Set(readdirSync("public/audio/surahs").map((file) => file.replace(/\.opus$/, "")));
+	const audioIds = new Set(
+		readdirSync(new URL("../../../public/audio/surahs", import.meta.url)).map((file) => file.replace(/\.opus$/, "")),
+	);
 	const surahs = (await getCollection("surahs")).sort(
 		(a, b) => a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
 	);
@@ -46,25 +48,30 @@ const prostration = meta.prostration_verse;
 
 <Layout
 	title={`${meta.name_transliteration} (${meta.surah_number}) — Hikmah`}
-	description={`Surah ${meta.name_transliteration} — ${meta.meaning_of_title.english}. ${meta.revelation_place.english}, ${meta.total_verses} verses, with Burmese translation and transliteration.`}
+	description={`စူရဟ် ${meta.name_transliteration} — ${meta.meaning_of_title.burmese}။ ${meta.revelation_place.burmese}၌ ကျရောက်သော စူရဟ်ဖြစ်ပြီး အာယသ် ${meta.total_verses} ပါဝင်ကာ မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံတို့ ပါဝင်ပါသည်။`}
 >
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
 			"@type": "WebPage",
 			name: `Surah ${meta.name_transliteration} (${meta.surah_number})`,
-			url: new URL(Astro.url.pathname, Astro.site).href,
-			description: `Surah ${meta.name_transliteration} — ${meta.meaning_of_title.english}. ${meta.revelation_place.english}, ${meta.total_verses} verses, with Burmese translation and transliteration.`,
+			url: new URL(`/surahs/${surah.id}/`, Astro.site).href,
+			description: `စူရဟ် ${meta.name_transliteration} — ${meta.meaning_of_title.burmese}။ ${meta.revelation_place.burmese}၌ ကျရောက်သော စူရဟ်ဖြစ်ပြီး အာယသ် ${meta.total_verses} ပါဝင်ကာ မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံတို့ ပါဝင်ပါသည်။`,
 			inLanguage: ["my", "en", "ar"],
 			breadcrumb: {
 				"@type": "BreadcrumbList",
 				itemListElement: [
-					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
-					{ "@type": "ListItem", position: 2, name: "Essential Surahs", item: new URL("/surahs/", Astro.site).href },
+					{ "@type": "ListItem", position: 1, name: "မူလစာမျက်နှာ", item: new URL("/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 2,
+						name: "မရှိမဖြစ် စူရဟ်များ",
+						item: new URL("/surahs/", Astro.site).href,
+					},
 					{
 						"@type": "ListItem",
 						position: 3,
-						name: `Surah ${meta.name_transliteration}`,
+						name: `စူရဟ် ${meta.name_transliteration}`,
 						item: new URL(`/surahs/${surah.id}/`, Astro.site).href,
 					},
 				],
@@ -72,7 +79,7 @@ const prostration = meta.prostration_verse;
 			...(hasAudio && {
 				audio: {
 					"@type": "AudioObject",
-					name: `Surah ${meta.name_transliteration} — Audio Recitation`,
+					name: `စူရဟ် ${meta.name_transliteration} — ရွတ်ဖတ်သံ`,
 					contentUrl: new URL(`/audio/surahs/${surah.id}.opus`, Astro.site).href,
 					encodingFormat: "audio/opus",
 					inLanguage: "ar",
@@ -82,38 +89,38 @@ const prostration = meta.prostration_verse;
 	/>
 	<a class="back-link" href="/surahs">
 		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		All surahs <span lang="my">· စူရဟ်အားလုံး</span>
+		<span lang="my">စူရဟ်အားလုံး</span> <span lang="en">· All surahs</span>
 	</a>
 
 	<header class="surah-hero">
-		<span class="surah-hero-number">Surah {meta.surah_number}</span>
+		<span class="surah-hero-number" lang="my">စူရဟ် {meta.surah_number}</span>
 		<h1 lang="ar" dir="rtl">{meta.name_arabic}</h1>
 		<p class="surah-hero-translit">
-			{meta.name_transliteration}
+			<span lang="en">{meta.name_transliteration}</span>
 			<span lang="my"> · {meta.name_burmese_title}</span>
 		</p>
 		<p class="surah-hero-summary" lang="my">{meta.summary_burmese}</p>
 		<dl class="surah-meta">
 			<div class="surah-meta-item">
-				<dt>Meaning</dt>
+				<dt lang="my">အဓိပ္ပာယ်</dt>
 				<dd>
-					{meta.meaning_of_title.english}
-					<span lang="my"> · {meta.meaning_of_title.burmese}</span>
+					<span lang="my">{meta.meaning_of_title.burmese}</span>
+					<span lang="en"> · {meta.meaning_of_title.english}</span>
 				</dd>
 			</div>
 			<div class="surah-meta-item">
-				<dt>Revelation</dt>
+				<dt lang="my">ကျရောက်ရာနေရာ</dt>
 				<dd>
-					{meta.revelation_place.english}
-					<span lang="my"> · {meta.revelation_place.burmese}</span>
+					<span lang="my">{meta.revelation_place.burmese}</span>
+					<span lang="en"> · {meta.revelation_place.english}</span>
 				</dd>
 			</div>
 			<div class="surah-meta-item">
-				<dt>Verses</dt>
+				<dt lang="my">အာယသ်</dt>
 				<dd>{meta.total_verses}</dd>
 			</div>
 			<div class="surah-meta-item">
-				<dt>Revelation order</dt>
+				<dt lang="my">ကျရောက်သည့်အစီအစဉ်</dt>
 				<dd>{meta.revelation_order}</dd>
 			</div>
 		</dl>
@@ -121,10 +128,10 @@ const prostration = meta.prostration_verse;
 
 	{hasAudio && <AudioPlayer src={`/audio/surahs/${surah.id}.opus`} title={meta.name_transliteration} />}
 
-	<section class="bismillah" aria-label="Bismillah">
+	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
 		<div class="bismillah-translations">
-			<p>{bismillah.english_translation}</p>
+			<p lang="en">{bismillah.english_translation}</p>
 			<p lang="my">{bismillah.burmese_translation}</p>
 		</div>
 	</section>
@@ -134,14 +141,14 @@ const prostration = meta.prostration_verse;
 			surah.data.verses.map((verse) => (
 				<li class="verse">
 					<div class="verse-head">
-						<span class="verse-number">Verse {verse.verse_number}</span>
+						<span class="verse-number" lang="my">အာယသ် {verse.verse_number}</span>
 						{prostration?.verse_number === verse.verse_number && (
 							<span class="verse-prostration" lang="ar">{prostration.arabic_marker} سَجْدَة</span>
 						)}
 					</div>
 					<p class="verse-arabic" lang="ar" dir="rtl">{verse.arabic}</p>
 					<p class="verse-translit" lang="my">{verse.burmese_transliteration}</p>
-					<p class="verse-english">{verse.english_translation}</p>
+					<p class="verse-english" lang="en">{verse.english_translation}</p>
 					<p class="verse-burmese" lang="my">{verse.burmese_translation}</p>
 					{verse.note && (
 						<details class="verse-note">
@@ -160,23 +167,23 @@ const prostration = meta.prostration_verse;
 		</p>
 	)}
 
-	<nav class="pager" aria-label="Surah navigation">
+	<nav class="pager" aria-label="စူရဟ်များအကြား သွားရန်">
 		{prev && (
 			<a href={`/surahs/${prev.id}`}>
-				<span class="pager-label">
+				<span class="pager-label" lang="my">
 					<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-					Previous
+					ရှေ့စူရဟ်
 				</span>
-				<span class="pager-name">{prev.name}</span>
+				<span class="pager-name" lang="en">{prev.name}</span>
 			</a>
 		)}
 		{next && (
 			<a class="pager-next" href={`/surahs/${next.id}`}>
-				<span class="pager-label">
-					Next
+				<span class="pager-label" lang="my">
+					နောက်စူရဟ်
 					<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
 				</span>
-				<span class="pager-name">{next.name}</span>
+				<span class="pager-name" lang="en">{next.name}</span>
 			</a>
 		)}
 	</nav>
