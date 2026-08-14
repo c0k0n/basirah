@@ -1,27 +1,25 @@
+# Security headers
 /*
-  Security headers
-*/
-X-Content-Type-Options: nosniff
-Referrer-Policy: strict-origin-when-cross-origin
-X-Frame-Options: DENY
-Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 
-/*
-  Hashed build assets are immutable
-*/
+# The custom 404 page carries meta robots noindex; keep the header consistent
+/404
+  ! X-Robots-Tag
+
+# Hashed build assets are immutable
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
 
-/*
-  Recitations change rarely; short TTL keeps them cachable but refreshable
-*/
+# Recitations change rarely; short TTL keeps them cacheable but refreshable
 /audio/*
   Cache-Control: public, max-age=86400
 
-/*
-  The service worker must always be fetched fresh so updates propagate
-*/
+# The service worker must always be fetched fresh so updates propagate
 /sw.js
   Cache-Control: no-cache
 
