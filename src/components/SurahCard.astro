@@ -7,14 +7,16 @@ interface Props {
 
 const { surah } = Astro.props;
 const meta = surah.data.surah_metadata;
+
+const toArabicIndic = (n: number) =>
+	String(n).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩".charAt(Number(d)));
 ---
 
-<a class="card surah-card" data-filter-item href={`/surahs/${surah.id}/`}>
-	<div class="surah-card-top">
-		<span class="surah-number" aria-hidden="true">{meta.surah_number}</span>
-		<span class="surah-verse-count" lang="my">{meta.total_verses} အာယသ်</span>
-	</div>
-	<span class="surah-name-arabic" lang="ar" dir="rtl">{meta.name_arabic}</span>
-	<span class="surah-name-translit" lang="en">{meta.name_transliteration}</span>
-	<span class="surah-name-burmese" lang="my">{meta.name_burmese_title}</span>
+<a class="surah-tile" data-filter-item href={`/surahs/${surah.id}/`}>
+	<span class="surah-tile-num" aria-hidden="true">
+		{toArabicIndic(meta.surah_number)}
+	</span>
+	<span class="surah-tile-arabic" lang="ar" dir="rtl">{meta.name_arabic}</span>
+	<span class="surah-tile-name" lang="en">{meta.name_transliteration}</span>
+	<span class="surah-tile-burmese" lang="my">{meta.name_burmese_title}</span>
 </a>

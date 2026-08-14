@@ -10,10 +10,6 @@ const surahs = (await getCollection("surahs")).sort(
 	(a, b) =>
 		a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
 );
-const totalVerses = surahs.reduce(
-	(sum, s) => sum + s.data.surah_metadata.total_verses,
-	0,
-);
 ---
 
 <Layout
@@ -58,7 +54,7 @@ const totalVerses = surahs.reduce(
 		title="မရှိမဖြစ် စူရဟ်များ"
 		arabic="السُّوَر"
 		count={surahs.length}
-		sub={`စူရဟ် ${surahs.length} စူရဟ်တွင် အာယသ် ${totalVerses} ပါဝင်ပြီး မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံများနှင့်တကွ ဖတ်ရှုနားထောင်နိုင်ပါသည်။`}
+		sub={`စူရဟ် ${surahs.length} စူရဟ်ကို မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံများနှင့်တကွ ဖတ်ရှုနားထောင်နိုင်ပါသည်။`}
 	/>
 
 	<div data-filter-scope>
@@ -67,7 +63,7 @@ const totalVerses = surahs.reduce(
 			placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
 		/>
 
-		<div class="card-grid" data-filter-list>
+		<div class="surah-grid" data-filter-list>
 			{surahs.map((surah) => <SurahCard surah={surah} />)}
 			<p class="filter-empty" data-filter-empty hidden>
 				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။</span>

@@ -60,21 +60,6 @@ export default defineConfig({
 				navigateFallback: "/404",
 				globPatterns: ["**/*.{js,css,html,woff2}"],
 				cleanupOutdatedCaches: true,
-				runtimeCaching: [
-					{
-						urlPattern: ({ url }) => url.pathname.startsWith("/audio/"),
-						handler: "StaleWhileRevalidate",
-						options: {
-							cacheName: "basirah-audio",
-							expiration: {
-								maxEntries: 12,
-								maxAgeSeconds: 60 * 60 * 24 * 30,
-							},
-							cacheableResponse: { statuses: [0, 200] },
-							rangeRequests: true,
-						},
-					},
-				],
 			},
 			experimental: {
 				directoryAndTrailingSlashHandler: true,
@@ -164,6 +149,11 @@ export default defineConfig({
 						"link",
 						"star",
 						"chevron_right",
+						"chevron_left",
+						"translate",
+						"location_on",
+						"123",
+						"format_list_numbered",
 						"menu_book",
 						"volunteer_activism",
 						"auto_awesome",

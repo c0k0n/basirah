@@ -122,24 +122,40 @@ const prostration = meta.prostration_verse;
 		<p class="surah-hero-summary" lang="my">{meta.summary_burmese}</p>
 		<dl class="surah-meta">
 			<div class="surah-meta-item">
+				<span class="surah-meta-icon" aria-hidden="true">
+					<span class="material-symbols-outlined">translate</span>
+				</span>
 				<dt lang="my">အဓိပ္ပာယ်</dt>
 				<dd>
 					<span lang="my">{meta.meaning_of_title.burmese}</span>
-					<span lang="en"> · {meta.meaning_of_title.english}</span>
+					<span class="surah-meta-en" lang="en">
+						{meta.meaning_of_title.english}
+					</span>
 				</dd>
 			</div>
 			<div class="surah-meta-item">
+				<span class="surah-meta-icon" aria-hidden="true">
+					<span class="material-symbols-outlined">location_on</span>
+				</span>
 				<dt lang="my">ကျရောက်ရာနေရာ</dt>
 				<dd>
 					<span lang="my">{meta.revelation_place.burmese}</span>
-					<span lang="en"> · {meta.revelation_place.english}</span>
+					<span class="surah-meta-en" lang="en">
+						{meta.revelation_place.english}
+					</span>
 				</dd>
 			</div>
 			<div class="surah-meta-item">
+				<span class="surah-meta-icon" aria-hidden="true">
+					<span class="material-symbols-outlined">123</span>
+				</span>
 				<dt lang="my">အာယသ်</dt>
 				<dd>{meta.total_verses}</dd>
 			</div>
 			<div class="surah-meta-item">
+				<span class="surah-meta-icon" aria-hidden="true">
+					<span class="material-symbols-outlined">format_list_numbered</span>
+				</span>
 				<dt lang="my">ကျရောက်သည့်အစီအစဉ်</dt>
 				<dd>{meta.revelation_order}</dd>
 			</div>
@@ -216,7 +232,7 @@ const prostration = meta.prostration_verse;
 				<a href={`/surahs/${prev.id}/`}>
 					<span class="pager-label" lang="my">
 						<span class="material-symbols-outlined" aria-hidden="true">
-							arrow_back
+							chevron_left
 						</span>
 						ရှေ့စူရဟ်
 					</span>
@@ -232,7 +248,7 @@ const prostration = meta.prostration_verse;
 					<span class="pager-label" lang="my">
 						နောက်စူရဟ်
 						<span class="material-symbols-outlined" aria-hidden="true">
-							arrow_forward
+							chevron_right
 						</span>
 					</span>
 					<span class="pager-name" lang="en">
