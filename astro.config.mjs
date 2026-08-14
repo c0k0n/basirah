@@ -1,11 +1,83 @@
 // @ts-check
 import sitemap from "@astrojs/sitemap";
+import AstroPWA from "@vite-pwa/astro";
 import { defineConfig, fontProviders } from "astro/config";
 
 export default defineConfig({
 	output: "static",
-	site: "https://hikmah.pages.dev",
-	integrations: [sitemap()],
+	site: "https://basirah.pages.dev",
+	integrations: [
+		sitemap(),
+		AstroPWA({
+			registerType: "autoUpdate",
+			includeAssets: [
+				"favicon.svg",
+				"favicon.ico",
+				"apple-touch-icon-180x180.png",
+				"pwa-64x64.png",
+				"pwa-192x192.png",
+				"pwa-512x512.png",
+				"maskable-icon-512x512.png",
+			],
+			manifest: {
+				name: "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာ",
+				short_name: "Basirah",
+				description:
+					"Basirah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
+				lang: "my",
+				start_url: "/",
+				display: "standalone",
+				theme_color: "#fdfbf7",
+				background_color: "#fdfbf7",
+				icons: [
+					{
+						src: "pwa-64x64.png",
+						sizes: "64x64",
+						type: "image/png",
+					},
+					{
+						src: "pwa-192x192.png",
+						sizes: "192x192",
+						type: "image/png",
+					},
+					{
+						src: "pwa-512x512.png",
+						sizes: "512x512",
+						type: "image/png",
+					},
+					{
+						src: "maskable-icon-512x512.png",
+						sizes: "512x512",
+						type: "image/png",
+						purpose: "maskable",
+					},
+				],
+			},
+			workbox: {
+				navigateFallback: "/404",
+				globPatterns: ["**/*.{js,css,html,woff2}"],
+				cleanupOutdatedCaches: true,
+				runtimeCaching: [
+					{
+						urlPattern: ({ url }) => url.pathname.startsWith("/audio/"),
+						handler: "StaleWhileRevalidate",
+						options: {
+							cacheName: "basirah-audio",
+							expiration: {
+								maxEntries: 12,
+								maxAgeSeconds: 60 * 60 * 24 * 30,
+							},
+							cacheableResponse: { statuses: [0, 200] },
+							rangeRequests: true,
+						},
+					},
+				],
+			},
+			experimental: {
+				directoryAndTrailingSlashHandler: true,
+			},
+		}),
+	],
 	fonts: [
 		{
 			name: "Noto Serif Myanmar",

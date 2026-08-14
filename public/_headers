@@ -18,3 +18,12 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; 
 */
 /audio/*
   Cache-Control: public, max-age=86400
+
+/*
+  The service worker must always be fetched fresh so updates propagate
+*/
+/sw.js
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=86400

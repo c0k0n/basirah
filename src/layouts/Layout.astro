@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import { Font } from "astro:assets";
+import { pwaInfo } from "virtual:pwa-info";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tokens.css";
@@ -16,8 +17,8 @@ interface Props {
 }
 
 const {
-	title = "Hikmah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာ",
-	description = "Hikmah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
+	title = "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာ",
+	description = "Basirah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
 	lang = "my",
 	noindex = false,
 } = Astro.props;
@@ -37,6 +38,17 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon-180x180.png"
+		/>
+		{
+			pwaInfo?.webManifest && (
+				<Fragment set:html={pwaInfo.webManifest.linkTag} />
+			)
+		}
 		<meta
 			name="theme-color"
 			media="(prefers-color-scheme: light)"
@@ -57,7 +69,7 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		{!noindex && <link rel="canonical" href={canonicalUrl} />}
 
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Hikmah" />
+		<meta property="og:site_name" content="Basirah" />
 		<meta property="og:locale" content="my_MM" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
@@ -67,7 +79,7 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		<meta property="og:image:height" content="630" />
 		<meta
 			property="og:image:alt"
-			content="Hikmah — Wisdom from the Qur'an and Sunnah, in the language of Myanmar Muslims"
+			content="Basirah — Wisdom from the Qur'an and Sunnah, in the language of Myanmar Muslims"
 		/>
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
@@ -97,10 +109,10 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 		<ClientRouter />
 
 		<script is:inline>
-			if (!window.__hikmahThemeReady) {
-				window.__hikmahThemeReady = true;
-				const key = "hikmah-theme";
-				function applyHikmahTheme() {
+			if (!window.__basirahThemeReady) {
+				window.__basirahThemeReady = true;
+				const key = "basirah-theme";
+				function applyBasirahTheme() {
 					const stored = localStorage.getItem(key);
 					const theme =
 						stored ??
@@ -113,9 +125,9 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 						btn.setAttribute("aria-pressed", String(theme === "dark"));
 					});
 				}
-				applyHikmahTheme();
-				document.addEventListener("astro:after-swap", applyHikmahTheme);
-				document.addEventListener("astro:page-load", applyHikmahTheme);
+				applyBasirahTheme();
+				document.addEventListener("astro:after-swap", applyBasirahTheme);
+				document.addEventListener("astro:page-load", applyBasirahTheme);
 				document.addEventListener("click", (event) => {
 					const btn = event.target.closest("[data-theme-toggle]");
 					if (!btn) return;
@@ -125,7 +137,7 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 							? "light"
 							: "dark",
 					);
-					applyHikmahTheme();
+					applyBasirahTheme();
 				});
 			}
 		</script>
@@ -137,6 +149,8 @@ const ogImageUrl = new URL("/og-image.png", Astro.site).href;
 			<slot />
 		</main>
 		<Footer />
+
+		<script src="../scripts/pwa.ts"></script>
 
 		<script>
 			function closeNav() {
