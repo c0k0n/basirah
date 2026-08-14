@@ -17,7 +17,7 @@ interface Props {
 }
 
 const {
-	title = "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာ",
+	title = "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတ",
 	description = "Basirah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
 	lang = "my",
 	noindex = false,
@@ -94,13 +94,19 @@ const robots = noindex
 
 		<Font
 			cssVariable="--font-myanmar-serif"
-			preload={[{ subset: "myanmar", style: "normal", weight: "400" }]}
+			preload={[
+				{ subset: "myanmar", style: "normal", weight: "400" },
+				{ subset: "myanmar", style: "normal", weight: "700" },
+			]}
 		/>
 		<Font
 			cssVariable="--font-myanmar-sans"
 			preload={[{ subset: "myanmar", style: "normal", weight: "400" }]}
 		/>
-		<Font cssVariable="--font-arabic" />
+		<Font
+			cssVariable="--font-arabic"
+			preload={[{ subset: "arabic", style: "normal", weight: "700" }]}
+		/>
 		<Font
 			cssVariable="--font-serif"
 			preload={[{ subset: "latin", style: "normal" }]}
@@ -110,7 +116,7 @@ const robots = noindex
 			preload={[{ subset: "latin", style: "normal" }]}
 		/>
 		<Font cssVariable="--font-mono" />
-		<Font cssVariable="--font-icons" />
+		<Font cssVariable="--font-icons" preload />
 
 		<ClientRouter />
 

@@ -1,15 +1,71 @@
+---
+const year = new Date().getFullYear();
+
+const notableSurahs = [
+	{ href: "/surahs/surah-al-fatihah/", label: "Al-Fatihah" },
+	{ href: "/surahs/surah-al-ikhlas/", label: "Al-Ikhlāṣ" },
+	{ href: "/surahs/surah-al-falaq/", label: "Al-Falaq" },
+	{ href: "/surahs/surah-an-nas/", label: "An-Nās" },
+];
+
+const notableDuas = [
+	{ href: "/duas/14/", label: "Ayatul Kursi" },
+	{ href: "/duas/2/", label: "Sayyidul Istighfar" },
+	{ href: "/duas/12/", label: "Hasbiyallahu" },
+	{ href: "/duas/9/", label: "Salawat" },
+];
+---
+
 <footer class="site-footer">
-	<div class="container footer-inner">
-		<p class="footer-brand">
-			Basirah <span class="isolated-rtl" lang="ar">بَصِيرَة</span>
-			<span lang="my">ဗဆီရဟ်</span>
-		</p>
-		<p lang="my" class="footer-tagline">
-			ကုရ်အာန်နှင့် စွန္နသ်မှ ဗဆီရဟ် (ထိုးထွင်းသိမြင်မှု) ကို မြန်မာဘာသာဖြင့် ဝေမျှပါသည်။
-		</p>
-		<p lang="my" class="footer-note">
-			© {new Date().getFullYear()} Basirah — အလ္လာဟ်အရှင်မြတ်အတွက် ရည်ရွယ်၍ မျှဝေပါသည်။
-		</p>
+	<div class="footer-accent" aria-hidden="true"></div>
+
+	<div class="container">
+		<div class="footer-top">
+			<div class="footer-col footer-about">
+				<p class="footer-brand">
+					<img src="/favicon.svg" alt="" width="32" height="32" />
+					<span>Basirah</span>
+				</p>
+				<p class="footer-note" lang="en">
+					An ad-free Islamic knowledge site for Myanmar Muslims.
+				</p>
+			</div>
+
+			<nav class="footer-col" aria-label="ထင်ရှားသော စူရဟ်များ">
+				<h2 lang="my">ထင်ရှားသော စူရဟ်များ</h2>
+				<ul>
+					{
+						notableSurahs.map((surah) => (
+							<li>
+								<a href={surah.href} lang="en">
+									{surah.label}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+
+			<nav class="footer-col" aria-label="ထင်ရှားသော ဒိုအာများ">
+				<h2 lang="my">ထင်ရှားသော ဒိုအာများ</h2>
+				<ul>
+					{
+						notableDuas.map((dua) => (
+							<li>
+								<a href={dua.href} lang="en">
+									{dua.label}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+		</div>
+
+		<div class="footer-bottom">
+			<p>© {year} Basirah</p>
+			<p lang="my">အလ္လာဟ်အရှင်မြတ်အတွက် ရည်ရွယ်၍ မျှဝေပါသည်။</p>
+		</div>
 	</div>
 </footer>
 
@@ -19,26 +75,92 @@
 		background: var(--surface-muted);
 	}
 
-	.footer-inner {
-		display: flex;
-		flex-direction: column;
-		gap: 0.6rem;
-		padding-block: 2.5rem;
+	.footer-accent {
+		height: 2px;
+		background: linear-gradient(
+			90deg,
+			var(--primary) 0%,
+			var(--accent) 100%
+		);
+		opacity: 0.7;
+	}
+
+	.footer-top {
+		display: grid;
+		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+		gap: 2.5rem;
+		padding-block: 3rem 2.25rem;
 	}
 
 	.footer-brand {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.55rem;
 		font-family: var(--font-serif);
-		font-size: 1.15rem;
+		font-size: 1.3rem;
 		font-weight: 700;
 	}
 
-	.footer-tagline {
-		color: var(--text-muted);
-		font-size: 0.95rem;
+	.footer-brand img {
+		border-radius: 9px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.footer-note {
+		margin-block-start: 0.9rem;
+		max-width: 30ch;
+		color: var(--text-muted);
+		font-size: 0.9rem;
+		line-height: 1.6;
+	}
+
+	.footer-col h2 {
+		margin-block: 0 1rem;
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		color: var(--text-muted);
+	}
+
+	.footer-col ul {
+		list-style: none;
+		display: grid;
+		gap: 0.55rem;
+	}
+
+	.footer-col a {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		text-decoration: none;
+		transition: color 0.15s ease;
+	}
+
+	.footer-col a:hover {
+		color: var(--primary);
+	}
+
+	.footer-bottom {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+		padding-block: 1.25rem 2rem;
+		border-top: 1px solid var(--border);
 		color: var(--text-muted);
 		font-size: 0.85rem;
+	}
+
+	.footer-bottom p {
+		margin: 0;
+	}
+
+	@media (max-width: 52rem) {
+		.footer-top {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			padding-block: 2.5rem 2rem;
+		}
 	}
 </style>

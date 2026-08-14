@@ -9,8 +9,8 @@ const nameCount = (await getCollection("names")).length;
 ---
 
 <Layout
-	title="Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာ"
-	description="ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာများကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်သော မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များ။"
+	title="Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတ"
+	description="ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတများကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်သော မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များ။"
 >
 	<JsonLd
 		data={{
@@ -21,19 +21,28 @@ const nameCount = (await getCollection("names")).length;
 			url: new URL("/", Astro.site).href,
 			inLanguage: ["my", "en", "ar"],
 			description:
-				"ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာများကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်သော မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များ။",
+				"ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတများကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်သော မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များ။",
 		}}
 	/>
 	<section class="hero">
-		<h1>
-			Basirah <span class="hero-arabic isolated-rtl" lang="ar">بَصِيرَة</span>
-			<span lang="my">ဗဆီရဟ်</span>
+		<h1 class="hero-brand">
+			<span class="hero-name">Basirah</span>
+			<span class="hero-arabic isolated-rtl" lang="ar">بَصِيرَة</span>
+			<span class="hero-burmese" lang="my">ဗဆီရဟ်</span>
 		</h1>
 		<p class="hero-tagline" lang="my">
-			ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာများကို မြန်မာဘာသာဖြင့် လေ့လာပါ။
+			ကုရ်အာန်နှင့် စွန္နသ်တော်မှ အသိပညာ ဗဟုသုတများကို ရှင်းလင်းသော
+			မြန်မာဘာသာဖြင့် လေ့လာပါ။
+		</p>
+		<p class="hero-intro" lang="my">
+			မရှိမဖြစ် စူရဟ်များ (အသံဖတ်ကြားချက်နှင့်တကွ)၊ နေ့စဉ်ဘဝအတွက်
+			ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးတို့ကို
+			တစ်နေရာတည်းတွင် စုစည်းထားပါသည်။
 		</p>
 		<p class="hero-sub" lang="en">
-			Wisdom from the Qur'an and Sunnah, in the language of Myanmar Muslims.
+			Basirah gathers the wisdom of the Qur'an and Sunnah into clear, accessible
+			Burmese — essential surahs with recitation audio, duas for daily life, and
+			the beautiful names of Allah, all in one place, for Myanmar Muslims.
 		</p>
 	</section>
 
@@ -99,3 +108,41 @@ const nameCount = (await getCollection("names")).length;
 		</div>
 	</section>
 </Layout>
+
+<style>
+	.hero-brand {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.55rem;
+	}
+
+	.hero-name {
+		font-size: clamp(2.75rem, 6vw, 4.25rem);
+		font-weight: 700;
+		letter-spacing: 0.01em;
+	}
+
+	.hero-arabic {
+		display: block;
+		font-size: clamp(2rem, 4.5vw, 3rem);
+		line-height: 1.5;
+		color: var(--accent);
+	}
+
+	.hero-burmese {
+		display: block;
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: var(--text-muted);
+		letter-spacing: 0.04em;
+	}
+
+	.hero-intro {
+		margin-top: 0.75rem;
+		color: var(--text-muted);
+		max-width: 42rem;
+		margin-inline: auto;
+		line-height: 1.7;
+	}
+</style>

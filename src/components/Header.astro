@@ -1,13 +1,8 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
+import { navLinks } from "../data/nav";
 
 const path = Astro.url.pathname;
-const links = [
-	{ href: "/", label: "မူလစာမျက်နှာ" },
-	{ href: "/surahs/", label: "စူရဟ်များ" },
-	{ href: "/duas/", label: "ဒိုအာများ" },
-	{ href: "/names-of-allah/", label: "အလ္လာဟ်၏ နာမတော်များ" },
-];
 const isCurrent = (href: string) =>
 	href === "/" ? path === "/" : path.startsWith(href);
 ---
@@ -22,14 +17,19 @@ const isCurrent = (href: string) =>
 		<nav id="primary-nav" class="site-nav" data-nav aria-label="ပင်မလမ်းညွှန်">
 			<ul>
 				{
-					links.map((link) => (
+					navLinks.map((link) => (
 						<li>
 							<a
 								href={link.href}
 								aria-current={isCurrent(link.href) ? "page" : undefined}
-								lang="my"
 							>
-								{link.label}
+								<span
+									class="material-symbols-outlined nav-icon"
+									aria-hidden="true"
+								>
+									{link.icon}
+								</span>
+								<span lang="my">{link.label}</span>
 							</a>
 						</li>
 					))
@@ -119,13 +119,20 @@ const isCurrent = (href: string) =>
 	}
 
 	.site-nav a {
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
 		padding: 0.5rem 0.85rem;
 		border-radius: 999px;
 		color: var(--text-muted);
 		text-decoration: none;
 		font-weight: 500;
 		font-size: 0.95rem;
+	}
+
+	.nav-icon {
+		font-size: 20px;
+		line-height: 1;
 	}
 
 	.site-nav a:hover {
@@ -199,7 +206,9 @@ const isCurrent = (href: string) =>
 		}
 
 		.site-nav a {
-			display: block;
+			display: flex;
+			align-items: center;
+			gap: 0.6rem;
 			padding: 0.75rem 1rem;
 			border-radius: 10px;
 			font-size: 1.05rem;

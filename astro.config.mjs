@@ -6,6 +6,9 @@ import { defineConfig, fontProviders } from "astro/config";
 export default defineConfig({
 	output: "static",
 	site: "https://basirah.pages.dev",
+	build: {
+		inlineStylesheets: "always",
+	},
 	integrations: [
 		sitemap(),
 		AstroPWA({
@@ -20,7 +23,7 @@ export default defineConfig({
 				"maskable-icon-512x512.png",
 			],
 			manifest: {
-				name: "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဉာဏ်ပညာ",
+				name: "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတ",
 				short_name: "Basirah",
 				description:
 					"Basirah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
@@ -161,6 +164,9 @@ export default defineConfig({
 						"link",
 						"star",
 						"chevron_right",
+						"menu_book",
+						"volunteer_activism",
+						"auto_awesome",
 					],
 				},
 			},
