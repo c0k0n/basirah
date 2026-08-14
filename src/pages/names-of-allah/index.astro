@@ -1,0 +1,74 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import ListFilter from "../../components/ListFilter.astro";
+import JsonLd from "../../components/JsonLd.astro";
+import { getCollection } from "astro:content";
+import namesData from "../../assets/content/allah-names/names.json";
+
+const names = (await getCollection("names")).sort((a, b) => a.data.number - b.data.number);
+const metadata = namesData.metadata;
+---
+
+<Layout
+	title="99 Names of Allah — Hikmah"
+	description="The beautiful names of Allah (Al-Asma ul-Husna) with Arabic text, transliteration, and meanings in English and Burmese."
+>
+	<JsonLd
+		data={{
+			"@context": "https://schema.org",
+			"@type": ["CollectionPage", "ItemList"],
+			name: "The 99 Names of Allah (Al-Asma ul-Husna)",
+			alternateName: metadata.title_burmese,
+			url: new URL("/names-of-allah/", Astro.site).href,
+			description:
+				"The beautiful names of Allah (Al-Asma ul-Husna) with Arabic text, transliteration, and meanings in English and Burmese.",
+			inLanguage: ["my", "en", "ar"],
+			numberOfItems: names.length,
+			itemListElement: names.map((name) => ({
+				"@type": "ListItem",
+				position: name.data.number,
+				name: `${name.data.transliteration} (${name.data.english_meaning})`,
+			})),
+			breadcrumb: {
+				"@type": "BreadcrumbList",
+				itemListElement: [
+					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
+					{ "@type": "ListItem", position: 2, name: "99 Names of Allah", item: new URL("/names-of-allah/", Astro.site).href },
+				],
+			},
+		}}
+	/>
+	<PageHeader
+		title={metadata.title_transliteration}
+		arabic={metadata.title_arabic}
+		count={names.length}
+		sub={`${metadata.title_burmese} — ${metadata.summary_burmese}`}
+	/>
+
+	<div data-filter-scope>
+		<ListFilter label="Search names" placeholder="Search by Arabic, transliteration, or meaning…" />
+
+		<ol class="name-grid" data-filter-list>
+			{
+				names.map((name) => (
+					<li class="name-card" data-filter-item>
+						<span class="name-number" aria-hidden="true">{name.data.number}</span>
+						<div class="name-body">
+							<p class="name-arabic" lang="ar" dir="rtl">{name.data.arabic}</p>
+							<p class="name-translit">{name.data.transliteration}</p>
+							<p class="name-meaning">
+								<span lang="my">{name.data.burmese_meaning}</span>
+								<span class="name-meaning-sep" aria-hidden="true">·</span>
+								<span lang="en">{name.data.english_meaning}</span>
+							</p>
+						</div>
+					</li>
+				))
+			}
+			<p class="filter-empty" data-filter-empty hidden>
+				No names found. <span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော နာမတော်မတွေ့ပါ။</span>
+			</p>
+		</ol>
+	</div>
+</Layout>

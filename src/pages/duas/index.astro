@@ -1,0 +1,67 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import ListFilter from "../../components/ListFilter.astro";
+import JsonLd from "../../components/JsonLd.astro";
+import { getCollection } from "astro:content";
+
+const duas = (await getCollection("duas")).sort((a, b) => Number(a.id) - Number(b.id));
+---
+
+<Layout
+	title="Essential Duas & Dhikr — Hikmah"
+	description={`${duas.length} essential duas and dhikr with Arabic text, Burmese pronunciation, and meanings in Burmese and English.`}
+>
+	<JsonLd
+		data={{
+			"@context": "https://schema.org",
+			"@type": ["CollectionPage", "ItemList"],
+			name: "Essential Duas & Dhikr",
+			url: new URL("/duas/", Astro.site).href,
+			description: `${duas.length} essential duas and dhikr with Arabic text, Burmese pronunciation, and meanings in Burmese and English.`,
+			inLanguage: ["my", "en"],
+			numberOfItems: duas.length,
+			itemListElement: duas.map((dua, index) => ({
+				"@type": "ListItem",
+				position: index + 1,
+				name: dua.data.title_en,
+				url: new URL(`/duas/${dua.id}/`, Astro.site).href,
+			})),
+			breadcrumb: {
+				"@type": "BreadcrumbList",
+				itemListElement: [
+					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
+					{ "@type": "ListItem", position: 2, name: "Essential Duas & Dhikr", item: new URL("/duas/", Astro.site).href },
+				],
+			},
+		}}
+	/>
+	<PageHeader
+		title="Essential Duas & Dhikr"
+		count={duas.length}
+		sub="Daily supplications and remembrances with Arabic text, Burmese pronunciation, and meanings."
+	/>
+
+	<div data-filter-scope>
+		<ListFilter label="Search duas" placeholder="Search by name or meaning…" />
+
+		<div class="card-grid" data-filter-list>
+			{
+				duas.map((dua, index) => (
+					<a class="card dua-card" data-filter-item href={`/duas/${dua.id}`}>
+						<div class="dua-card-top">
+							<span class="surah-number" aria-hidden="true">{index + 1}</span>
+							<span class="material-symbols-outlined" aria-hidden="true">favorite</span>
+						</div>
+						<span class="dua-title">{dua.data.title_en}</span>
+						<span class="dua-title-mm" lang="my">{dua.data.title_mm}</span>
+						<span class="dua-arabic-snippet" lang="ar" dir="rtl">{dua.data.arabic}</span>
+					</a>
+				))
+			}
+			<p class="filter-empty" data-filter-empty hidden>
+				No duas found. <span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော ဒိုအာမတွေ့ပါ။</span>
+			</p>
+		</div>
+	</div>
+</Layout>

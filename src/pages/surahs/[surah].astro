@@ -1,0 +1,179 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import AudioPlayer from "../../components/AudioPlayer.astro";
+import JsonLd from "../../components/JsonLd.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { readdirSync } from "node:fs";
+
+interface NavEntry {
+	id: string;
+	name: string;
+}
+
+interface Props {
+	surah: CollectionEntry<"surahs">;
+	prev: NavEntry | null;
+	next: NavEntry | null;
+	hasAudio: boolean;
+}
+
+export async function getStaticPaths() {
+	const audioIds = new Set(readdirSync("public/audio/surahs").map((file) => file.replace(/\.opus$/, "")));
+	const surahs = (await getCollection("surahs")).sort(
+		(a, b) => a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
+	);
+	return surahs.map((surah, index) => ({
+		params: { surah: surah.id },
+		props: {
+			surah,
+			prev: index > 0 ? { id: surahs[index - 1].id, name: surahs[index - 1].data.surah_metadata.name_transliteration } : null,
+			next: index < surahs.length - 1 ? { id: surahs[index + 1].id, name: surahs[index + 1].data.surah_metadata.name_transliteration } : null,
+			hasAudio: audioIds.has(surah.id),
+		},
+	}));
+}
+
+const { surah, prev, next, hasAudio } = Astro.props;
+const meta = surah.data.surah_metadata;
+const bismillah = surah.data.bismillah;
+const prostration = meta.prostration_verse;
+---
+
+<Layout
+	title={`${meta.name_transliteration} (${meta.surah_number}) — Hikmah`}
+	description={`Surah ${meta.name_transliteration} — ${meta.meaning_of_title.english}. ${meta.revelation_place.english}, ${meta.total_verses} verses, with Burmese translation and transliteration.`}
+>
+	<JsonLd
+		data={{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			name: `Surah ${meta.name_transliteration} (${meta.surah_number})`,
+			url: new URL(Astro.url.pathname, Astro.site).href,
+			description: `Surah ${meta.name_transliteration} — ${meta.meaning_of_title.english}. ${meta.revelation_place.english}, ${meta.total_verses} verses, with Burmese translation and transliteration.`,
+			inLanguage: ["my", "en", "ar"],
+			breadcrumb: {
+				"@type": "BreadcrumbList",
+				itemListElement: [
+					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
+					{ "@type": "ListItem", position: 2, name: "Essential Surahs", item: new URL("/surahs/", Astro.site).href },
+					{
+						"@type": "ListItem",
+						position: 3,
+						name: `Surah ${meta.name_transliteration}`,
+						item: new URL(`/surahs/${surah.id}/`, Astro.site).href,
+					},
+				],
+			},
+			...(hasAudio && {
+				audio: {
+					"@type": "AudioObject",
+					name: `Surah ${meta.name_transliteration} — Audio Recitation`,
+					contentUrl: new URL(`/audio/surahs/${surah.id}.opus`, Astro.site).href,
+					encodingFormat: "audio/opus",
+					inLanguage: "ar",
+				},
+			}),
+		}}
+	/>
+	<a class="back-link" href="/surahs">
+		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+		All surahs <span lang="my">· စူရဟ်အားလုံး</span>
+	</a>
+
+	<header class="surah-hero">
+		<span class="surah-hero-number">Surah {meta.surah_number}</span>
+		<h1 lang="ar" dir="rtl">{meta.name_arabic}</h1>
+		<p class="surah-hero-translit">
+			{meta.name_transliteration}
+			<span lang="my"> · {meta.name_burmese_title}</span>
+		</p>
+		<p class="surah-hero-summary" lang="my">{meta.summary_burmese}</p>
+		<dl class="surah-meta">
+			<div class="surah-meta-item">
+				<dt>Meaning</dt>
+				<dd>
+					{meta.meaning_of_title.english}
+					<span lang="my"> · {meta.meaning_of_title.burmese}</span>
+				</dd>
+			</div>
+			<div class="surah-meta-item">
+				<dt>Revelation</dt>
+				<dd>
+					{meta.revelation_place.english}
+					<span lang="my"> · {meta.revelation_place.burmese}</span>
+				</dd>
+			</div>
+			<div class="surah-meta-item">
+				<dt>Verses</dt>
+				<dd>{meta.total_verses}</dd>
+			</div>
+			<div class="surah-meta-item">
+				<dt>Revelation order</dt>
+				<dd>{meta.revelation_order}</dd>
+			</div>
+		</dl>
+	</header>
+
+	{hasAudio && <AudioPlayer src={`/audio/surahs/${surah.id}.opus`} title={meta.name_transliteration} />}
+
+	<section class="bismillah" aria-label="Bismillah">
+		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
+		<div class="bismillah-translations">
+			<p>{bismillah.english_translation}</p>
+			<p lang="my">{bismillah.burmese_translation}</p>
+		</div>
+	</section>
+
+	<ol class="verse-list">
+		{
+			surah.data.verses.map((verse) => (
+				<li class="verse">
+					<div class="verse-head">
+						<span class="verse-number">Verse {verse.verse_number}</span>
+						{prostration?.verse_number === verse.verse_number && (
+							<span class="verse-prostration" lang="ar">{prostration.arabic_marker} سَجْدَة</span>
+						)}
+					</div>
+					<p class="verse-arabic" lang="ar" dir="rtl">{verse.arabic}</p>
+					<p class="verse-translit" lang="my">{verse.burmese_transliteration}</p>
+					<p class="verse-english">{verse.english_translation}</p>
+					<p class="verse-burmese" lang="my">{verse.burmese_translation}</p>
+					{verse.note && (
+						<details class="verse-note">
+							<summary lang="my">မှတ်ချက် / Note</summary>
+							<p lang="my">{verse.note}</p>
+						</details>
+					)}
+				</li>
+			))
+		}
+	</ol>
+
+	{prostration && (
+		<p class="verse-note" lang="my">
+			{prostration.note_burmese}
+		</p>
+	)}
+
+	<nav class="pager" aria-label="Surah navigation">
+		{prev && (
+			<a href={`/surahs/${prev.id}`}>
+				<span class="pager-label">
+					<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+					Previous
+				</span>
+				<span class="pager-name">{prev.name}</span>
+			</a>
+		)}
+		{next && (
+			<a class="pager-next" href={`/surahs/${next.id}`}>
+				<span class="pager-label">
+					Next
+					<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+				</span>
+				<span class="pager-name">{next.name}</span>
+			</a>
+		)}
+	</nav>
+</Layout>

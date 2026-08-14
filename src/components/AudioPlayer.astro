@@ -1,0 +1,102 @@
+---
+interface Props {
+	src: string;
+	title: string;
+}
+
+const { src, title } = Astro.props;
+---
+
+<div class="audio-player" data-audio-player role="group" aria-label={`Audio player for ${title}`}>
+	<audio preload="none" src={src}>
+		<p class="audio-fallback">
+			Your browser does not support audio playback.
+			<a href={src}>Download the recitation of {title}</a>.
+		</p>
+	</audio>
+	<button class="audio-play" type="button" data-audio-play aria-label={`Play ${title}`}>
+		<span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
+	</button>
+	<div class="audio-times" aria-hidden="true">
+		<span data-audio-current>0:00</span>
+		/
+		<span data-audio-duration>–:––</span>
+	</div>
+	<input
+		class="audio-seek"
+		type="range"
+		min="0"
+		max="1000"
+		step="1"
+		value="0"
+		data-audio-seek
+		aria-label={`Seek ${title}`}
+	/>
+</div>
+
+<script>
+	function initAudioPlayer(player: HTMLElement) {
+		const audio = player.querySelector<HTMLAudioElement>("audio");
+		const playBtn = player.querySelector<HTMLButtonElement>("[data-audio-play]");
+		const currentEl = player.querySelector<HTMLElement>("[data-audio-current]");
+		const durationEl = player.querySelector<HTMLElement>("[data-audio-duration]");
+		const seek = player.querySelector<HTMLInputElement>("[data-audio-seek]");
+		if (!audio || !playBtn || !currentEl || !durationEl || !seek) return;
+
+		const icon = playBtn.querySelector(".material-symbols-outlined");
+		const title = playBtn.getAttribute("aria-label")?.replace(/^Play /, "") ?? "";
+
+		const format = (seconds: number) => {
+			if (!Number.isFinite(seconds)) return "–:––";
+			const m = Math.floor(seconds / 60);
+			const s = Math.floor(seconds % 60);
+			return `${m}:${String(s).padStart(2, "0")}`;
+		};
+
+		const updateState = () => {
+			const playing = !audio.paused;
+			playBtn.setAttribute("aria-label", `${playing ? "Pause" : "Play"} ${title}`);
+			if (icon) icon.textContent = playing ? "pause" : "play_arrow";
+		};
+
+		let seeking = false;
+
+		playBtn.addEventListener("click", () => {
+			if (audio.paused) {
+				void audio.play().catch(() => {});
+			} else {
+				audio.pause();
+			}
+		});
+
+		audio.addEventListener("play", updateState);
+		audio.addEventListener("pause", updateState);
+		audio.addEventListener("ended", updateState);
+		audio.addEventListener("loadedmetadata", () => {
+			durationEl.textContent = format(audio.duration);
+		});
+		audio.addEventListener("timeupdate", () => {
+			currentEl.textContent = format(audio.currentTime);
+			if (!seeking && audio.duration) seek.value = String((audio.currentTime / audio.duration) * 1000);
+		});
+		seek.addEventListener("input", () => {
+			seeking = true;
+			currentEl.textContent = format((Number(seek.value) / 1000) * (audio.duration || 0));
+		});
+		seek.addEventListener("change", () => {
+			if (audio.duration) audio.currentTime = (Number(seek.value) / 1000) * audio.duration;
+			seeking = false;
+		});
+	}
+
+	function initAllPlayers() {
+		document.querySelectorAll<HTMLElement>("[data-audio-player]").forEach((player) => {
+			if (player.dataset.inited) return;
+			player.dataset.inited = "1";
+			initAudioPlayer(player);
+		});
+	}
+
+	document.addEventListener("astro:page-load", initAllPlayers);
+	initAllPlayers();
+</script>

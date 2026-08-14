@@ -1,0 +1,46 @@
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" aria-pressed="false">
+	<span class="material-symbols-outlined theme-icon-dark" aria-hidden="true">dark_mode</span>
+	<span class="material-symbols-outlined theme-icon-light" aria-hidden="true">light_mode</span>
+</button>
+
+<style>
+	.theme-toggle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 50%;
+		border: 1px solid var(--border);
+		background: var(--surface);
+		color: var(--text-muted);
+		cursor: pointer;
+		flex-shrink: 0;
+		transition: color 0.15s ease, border-color 0.15s ease;
+	}
+
+	.theme-toggle:hover {
+		color: var(--primary);
+		border-color: var(--primary);
+	}
+
+	.theme-toggle .material-symbols-outlined {
+		font-size: 20px;
+	}
+
+	.theme-icon-dark {
+		display: inline-block;
+	}
+
+	.theme-icon-light {
+		display: none;
+	}
+
+	:global(html.dark) .theme-icon-dark {
+		display: none;
+	}
+
+	:global(html.dark) .theme-icon-light {
+		display: inline-block;
+	}
+</style>

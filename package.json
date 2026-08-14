@@ -2,9 +2,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/sitemap": "^3.7.3",
-    "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.1",
-    "tailwindcss": "^4.3.3",
+    "astro": "^7.2.2",
     "typescript": "^6.0.3"
   },
   "engines": {
@@ -14,10 +12,11 @@
   "private": true,
   "scripts": {
     "astro": "astro",
-    "dev": "astro dev",
-    "check": "astro check",
     "build": "astro check && astro build",
-    "preview": "astro preview"
+    "check": "astro check",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "sync": "astro sync"
   },
   "type": "module",
   "version": "1.0.0"

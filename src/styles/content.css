@@ -1,0 +1,588 @@
+/* Content — page headers, filters, surahs, verses, duas, names, audio player, pager. */
+
+/* Page headers */
+
+.page-header {
+	padding-block: 2rem 1.75rem;
+}
+
+.page-header h1 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.page-header-arabic {
+	font-family: var(--font-arabic);
+	font-size: 0.9em;
+	color: var(--primary);
+}
+
+.page-count {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.2rem 0.75rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--primary) 12%, transparent);
+	color: var(--primary);
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.page-sub {
+	margin-top: 0.5rem;
+	max-width: 46rem;
+	color: var(--text-muted);
+}
+
+/* Back link */
+
+.back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin-bottom: 1.25rem;
+	color: var(--text-muted);
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.back-link:hover {
+	color: var(--primary);
+}
+
+.back-link .material-symbols-outlined {
+	font-size: 18px;
+}
+
+/* List filter */
+
+.list-filter {
+	position: relative;
+	max-width: 26rem;
+	margin-block: 0 1.5rem;
+}
+
+.list-filter > .material-symbols-outlined {
+	position: absolute;
+	inset-inline-start: 0.95rem;
+	top: 50%;
+	translate: 0 -50%;
+	color: var(--text-muted);
+	font-size: 20px;
+	pointer-events: none;
+}
+
+.list-filter-input {
+	width: 100%;
+	padding: 0.65rem 1rem 0.65rem 2.6rem;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	background: var(--surface);
+	color: var(--text);
+	font: inherit;
+	font-size: 0.95rem;
+}
+
+.list-filter-input::placeholder {
+	color: var(--text-muted);
+}
+
+.list-filter-input:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 0;
+	border-color: transparent;
+}
+
+.filter-empty {
+	padding-block: 2.5rem;
+	text-align: center;
+	color: var(--text-muted);
+}
+
+/* Surah cards */
+
+.surah-card {
+	gap: 0.35rem;
+	padding: 1.5rem;
+}
+
+.surah-card-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.6rem;
+}
+
+.surah-number {
+	display: grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+	background: color-mix(in srgb, var(--primary) 12%, transparent);
+	color: var(--primary);
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+.surah-verse-count {
+	color: var(--text-muted);
+	font-size: 0.8rem;
+}
+
+.surah-name-arabic {
+	font-family: var(--font-arabic);
+	font-size: 1.55rem;
+	line-height: 1.7;
+}
+
+.surah-name-translit {
+	font-family: var(--font-serif);
+	font-size: 1.05rem;
+	font-weight: 700;
+	margin-top: 0.15rem;
+}
+
+.surah-name-burmese {
+	margin-top: 0.15rem;
+	color: var(--text-muted);
+	font-size: 0.9rem;
+}
+
+/* Surah detail hero */
+
+.surah-hero {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.surah-hero-number {
+	display: inline-block;
+	padding: 0.25rem 0.85rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--accent) 16%, transparent);
+	color: var(--accent-strong);
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.surah-hero h1 {
+	margin-top: 0.9rem;
+	font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.surah-hero-translit {
+	margin-top: 0.5rem;
+	color: var(--text-muted);
+	font-size: 1.05rem;
+}
+
+.surah-hero-summary {
+	margin-top: 1.25rem;
+	max-width: 46rem;
+}
+
+.surah-meta {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+	gap: 0.9rem;
+	margin-top: 1.5rem;
+}
+
+.surah-meta-item {
+	background: var(--surface-muted);
+	border-radius: 10px;
+	padding: 0.6rem 0.95rem;
+}
+
+.surah-meta-item dt {
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+}
+
+.surah-meta-item dd {
+	margin-top: 0.15rem;
+	font-weight: 600;
+}
+
+.surah-meta-item dd[lang='my'] {
+	font-size: 0.9rem;
+}
+
+/* Bismillah */
+
+.bismillah {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: clamp(1.25rem, 3vw, 1.75rem);
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.bismillah-arabic {
+	font-family: var(--font-arabic);
+	font-size: clamp(1.35rem, 3.5vw, 1.9rem);
+	line-height: 2.1;
+}
+
+.bismillah-translations {
+	display: grid;
+	gap: 0.2rem;
+	margin-top: 0.75rem;
+	color: var(--text-muted);
+	font-size: 0.9rem;
+}
+
+/* Audio player */
+
+.audio-player {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	padding: 1rem 1.25rem;
+	margin-top: 1.5rem;
+}
+
+.audio-play {
+	display: grid;
+	place-items: center;
+	flex-shrink: 0;
+	width: 3rem;
+	height: 3rem;
+	border: none;
+	border-radius: 50%;
+	background: var(--primary);
+	color: var(--primary-contrast);
+	cursor: pointer;
+	transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.audio-play:hover {
+	background: var(--primary-strong);
+	transform: scale(1.05);
+}
+
+.audio-play .material-symbols-outlined {
+	font-size: 28px;
+}
+
+.audio-times {
+	display: flex;
+	gap: 0.4rem;
+	align-items: baseline;
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	color: var(--text-muted);
+	white-space: nowrap;
+}
+
+.audio-seek {
+	flex: 1;
+	min-width: 0;
+	accent-color: var(--primary);
+}
+
+.audio-fallback {
+	font-size: 0.85rem;
+	color: var(--text-muted);
+}
+
+/* Verses */
+
+.verse-list {
+	list-style: none;
+	display: grid;
+	gap: 1.25rem;
+	margin-top: 2.25rem;
+}
+
+.verse {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.verse-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.verse-number {
+	padding: 0.2rem 0.8rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--primary) 12%, transparent);
+	color: var(--primary);
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+.verse-prostration {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	padding: 0.2rem 0.8rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--accent) 16%, transparent);
+	color: var(--accent-strong);
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.verse-prostration .material-symbols-outlined {
+	font-size: 16px;
+}
+
+.verse-arabic {
+	font-family: var(--font-arabic);
+	font-size: clamp(1.3rem, 3vw, 1.7rem);
+	line-height: 2.1;
+}
+
+.verse-translit {
+	margin-top: 0.75rem;
+	color: var(--text-muted);
+	font-size: 0.95rem;
+}
+
+.verse-english {
+	margin-top: 0.6rem;
+	color: var(--text-muted);
+	font-size: 0.95rem;
+	font-style: italic;
+}
+
+.verse-burmese {
+	margin-top: 0.6rem;
+	font-size: 1rem;
+}
+
+.verse-note {
+	margin-top: 1rem;
+	padding: 0.75rem 1rem;
+	border-inline-start: 3px solid var(--accent);
+	border-radius: 8px;
+	background: var(--surface-muted);
+	font-size: 0.9rem;
+}
+
+/* Pager (previous / next) */
+
+.pager {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2.5rem;
+}
+
+.pager a {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	flex: 1;
+	min-width: 0;
+	padding: 1rem 1.25rem;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	background: var(--surface);
+	color: var(--text);
+	text-decoration: none;
+	transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.pager a:hover {
+	border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+	color: var(--text);
+	transform: translateY(-2px);
+}
+
+.pager a:only-child {
+	flex: 0 1 auto;
+	min-width: 14rem;
+}
+
+.pager-next {
+	text-align: end;
+	margin-inline-start: auto;
+}
+
+.pager-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+}
+
+.pager-label .material-symbols-outlined {
+	font-size: 16px;
+}
+
+.pager-name {
+	font-family: var(--font-serif);
+	font-weight: 700;
+	font-size: 0.95rem;
+}
+
+/* Dua cards */
+
+.dua-card {
+	gap: 0.4rem;
+	padding: 1.5rem;
+}
+
+.dua-card-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.6rem;
+}
+
+.dua-title {
+	font-family: var(--font-serif);
+	font-size: 1.05rem;
+	font-weight: 700;
+}
+
+.dua-title-mm {
+	color: var(--text-muted);
+	font-size: 0.9rem;
+}
+
+.dua-arabic-snippet {
+	font-family: var(--font-arabic);
+	font-size: 1.15rem;
+	line-height: 1.9;
+	margin-top: 0.6rem;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Dua detail */
+
+.dua-detail-arabic {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	padding: clamp(1.5rem, 4vw, 2.5rem);
+	text-align: center;
+}
+
+.dua-detail-arabic p {
+	font-family: var(--font-arabic);
+	font-size: clamp(1.4rem, 3.5vw, 2rem);
+	line-height: 2.1;
+}
+
+.dua-detail-arabic .dua-pronunciation {
+	display: block;
+	margin-top: 1rem;
+	color: var(--text-muted);
+	font-size: 0.85rem;
+}
+
+.dua-section {
+	margin-top: 2rem;
+	max-width: 46rem;
+}
+
+.dua-section h2 {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1.1rem;
+	color: var(--primary);
+	margin-bottom: 0.5rem;
+}
+
+.dua-section h2 .material-symbols-outlined {
+	font-size: 20px;
+}
+
+/* Names of Allah */
+
+.name-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	gap: 1rem;
+	padding-bottom: 2rem;
+	list-style: none;
+}
+
+.name-card {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 1.1rem 1.25rem;
+	transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.name-card:hover {
+	transform: translateY(-3px);
+	border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+}
+
+.name-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.name-number {
+	min-width: 1.6rem;
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	font-weight: 700;
+	color: var(--accent-strong);
+}
+
+.name-arabic {
+	font-family: var(--font-arabic);
+	font-size: 1.3rem;
+	line-height: 1.7;
+}
+
+.name-translit {
+	margin-top: 0.15rem;
+	font-family: var(--font-serif);
+	font-size: 0.95rem;
+	font-weight: 700;
+}
+
+.name-meaning {
+	margin-top: 0.25rem;
+	color: var(--text-muted);
+	font-size: 0.85rem;
+}
+
+.name-meaning-sep {
+	color: var(--text-muted);
+}

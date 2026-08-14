@@ -1,0 +1,44 @@
+<footer class="site-footer">
+	<div class="container footer-inner">
+		<p class="footer-brand">
+			Hikmah <span class="isolated-rtl" lang="ar">حِكْمَة</span>
+			<span lang="my">ဟိက္မ</span>
+		</p>
+		<p lang="my" class="footer-tagline">
+			ကုရ်အာန်နှင့် ဆွန်နဟ်မှ ဟိက္မ (ဉာဏ်ပညာ) ကို မြန်မာဘာသာဖြင့် ဝေမျှပါသည်။
+		</p>
+		<p class="footer-note">
+			© {new Date().getFullYear()} Hikmah — knowledge shared for the sake of Allah.
+		</p>
+	</div>
+</footer>
+
+<style>
+	.site-footer {
+		border-top: 1px solid var(--border);
+		background: var(--surface-muted);
+	}
+
+	.footer-inner {
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+		padding-block: 2.5rem;
+	}
+
+	.footer-brand {
+		font-family: var(--font-serif);
+		font-size: 1.15rem;
+		font-weight: 700;
+	}
+
+	.footer-tagline {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+	}
+
+	.footer-note {
+		color: var(--text-muted);
+		font-size: 0.85rem;
+	}
+</style>

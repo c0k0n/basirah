@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import ListFilter from "../../components/ListFilter.astro";
+import SurahCard from "../../components/SurahCard.astro";
+import JsonLd from "../../components/JsonLd.astro";
+import { getCollection } from "astro:content";
+
+const surahs = (await getCollection("surahs")).sort(
+	(a, b) => a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
+);
+const totalVerses = surahs.reduce((sum, s) => sum + s.data.surah_metadata.total_verses, 0);
+---
+
+<Layout
+	title="Essential Surahs — Hikmah"
+	description={`Read and listen to ${surahs.length} essential surahs of the Qur'an with Burmese translation, transliteration, and audio recitation.`}
+>
+	<JsonLd
+		data={{
+			"@context": "https://schema.org",
+			"@type": ["CollectionPage", "ItemList"],
+			name: "Essential Surahs",
+			url: new URL("/surahs/", Astro.site).href,
+			description: `Read and listen to ${surahs.length} essential surahs of the Qur'an with Burmese translation, transliteration, and audio recitation.`,
+			inLanguage: ["my", "en"],
+			numberOfItems: surahs.length,
+			itemListElement: surahs.map((surah, index) => ({
+				"@type": "ListItem",
+				position: index + 1,
+				name: `Surah ${surah.data.surah_metadata.name_transliteration}`,
+				url: new URL(`/surahs/${surah.id}/`, Astro.site).href,
+			})),
+			breadcrumb: {
+				"@type": "BreadcrumbList",
+				itemListElement: [
+					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
+					{ "@type": "ListItem", position: 2, name: "Essential Surahs", item: new URL("/surahs/", Astro.site).href },
+				],
+			},
+		}}
+	/>
+	<PageHeader
+		title="Essential Surahs"
+		arabic="السُّوَر"
+		count={surahs.length}
+		sub={`${totalVerses} verses across ${surahs.length} surahs, with Burmese translation, transliteration, and audio.`}
+	/>
+
+	<div data-filter-scope>
+		<ListFilter label="Search surahs" placeholder="Search by name or meaning…" />
+
+		<div class="card-grid" data-filter-list>
+			{surahs.map((surah) => (
+				<SurahCard surah={surah} />
+			))}
+			<p class="filter-empty" data-filter-empty hidden>
+				No surahs found. <span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။</span>
+			</p>
+		</div>
+	</div>
+</Layout>

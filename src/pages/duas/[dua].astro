@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import JsonLd from "../../components/JsonLd.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+	dua: CollectionEntry<"duas">;
+}
+
+export async function getStaticPaths() {
+	const duas = await getCollection("duas");
+	return duas.map((dua) => ({ params: { dua: dua.id }, props: { dua } }));
+}
+
+const { dua } = Astro.props;
+---
+
+<Layout
+	title={`${dua.data.title_en} — Hikmah`}
+	description={`${dua.data.title_en}: Arabic text with Burmese pronunciation and meaning in English and Burmese.`}
+>
+	<JsonLd
+		data={{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			name: dua.data.title_en,
+			url: new URL(Astro.url.pathname, Astro.site).href,
+			description: `${dua.data.title_en}: Arabic text with Burmese pronunciation and meaning in English and Burmese.`,
+			inLanguage: ["my", "en", "ar"],
+			breadcrumb: {
+				"@type": "BreadcrumbList",
+				itemListElement: [
+					{ "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
+					{ "@type": "ListItem", position: 2, name: "Essential Duas & Dhikr", item: new URL("/duas/", Astro.site).href },
+					{ "@type": "ListItem", position: 3, name: dua.data.title_en, item: new URL(`/duas/${dua.id}/`, Astro.site).href },
+				],
+			},
+		}}
+	/>
+	<a class="back-link" href="/duas">
+		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+		All duas <span lang="my">· ဒိုအာများအားလုံး</span>
+	</a>
+
+	<h1 class="visually-hidden">{dua.data.title_en}</h1>
+
+	<div class="dua-detail-arabic">
+		<p lang="ar" dir="rtl">{dua.data.arabic}</p>
+		<p class="dua-pronunciation" lang="my">{dua.data.burmese_pronunciation}</p>
+	</div>
+
+	<section class="dua-section">
+		<h2>
+			<span class="material-symbols-outlined" aria-hidden="true">translate</span>
+			Meaning
+		</h2>
+		<p lang="my">{dua.data.burmese_meaning}</p>
+		<p class="verse-english">{dua.data.english_meaning}</p>
+	</section>
+</Layout>

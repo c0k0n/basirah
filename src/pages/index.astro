@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import JsonLd from "../components/JsonLd.astro";
+import { getCollection } from "astro:content";
+
+const surahCount = (await getCollection("surahs")).length;
+const duaCount = (await getCollection("duas")).length;
+const nameCount = (await getCollection("names")).length;
+---
+
+<Layout
+	title="Hikmah — Wisdom from the Qur'an & Sunnah"
+	description="Hikmah shares the wisdom of the Qur'an and Sunnah in Burmese: essential surahs, duas, and the beautiful names of Allah."
+>
+	<JsonLd
+		data={{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			name: "Hikmah",
+			alternateName: "ဟိက္မ",
+			url: new URL("/", Astro.site).href,
+			inLanguage: ["my", "en"],
+			description:
+				"Wisdom from the Qur'an and Sunnah in Burmese: essential surahs, duas, and the beautiful names of Allah.",
+		}}
+	/>
+	<section class="hero">
+		<h1>
+			Hikmah <span class="hero-arabic isolated-rtl" lang="ar">حِكْمَة</span>
+			<span lang="my">ဟိက္မ</span>
+		</h1>
+		<p class="hero-tagline" lang="my">
+			ကုရ်အာန်နှင့် ဆွန်နဟ်မှ ဉာဏ်ပညာများကို မြန်မာဘာသာဖြင့် လေ့လာပါ။
+		</p>
+		<p class="hero-sub">
+			Wisdom from the Qur'an and Sunnah, in the language of Myanmar Muslims.
+		</p>
+	</section>
+
+	<section class="container" aria-label="Explore Hikmah">
+		<div class="card-grid">
+			<a class="card" href="/surahs">
+				<span class="card-icon material-symbols-outlined" aria-hidden="true">book</span>
+				<h2>Surahs <span lang="my">· စူရဟ်များ</span> <span class="page-count">{surahCount}</span></h2>
+				<p lang="my">မြန်မာဘာသာပြန်နှင့် အသံဖြင့် ဖတ်ရှုနားထောင်နိုင်သော အခြေခံစူရဟ်များ။</p>
+				<span class="card-cta">
+					Explore <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+				</span>
+			</a>
+
+			<a class="card" href="/duas">
+				<span class="card-icon material-symbols-outlined" aria-hidden="true">favorite</span>
+				<h2>Duas <span lang="my">· ဒိုအာများ</span> <span class="page-count">{duaCount}</span></h2>
+				<p lang="my">နေ့စဉ်ဘဝအတွက် မရှိမဖြစ် ဒိုအာများကို အဓိပ္ပာယ်နှင့်တကွ။</p>
+				<span class="card-cta">
+					Explore <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+				</span>
+			</a>
+
+			<a class="card" href="/names-of-allah">
+				<span class="card-icon material-symbols-outlined" aria-hidden="true">star</span>
+				<h2>Names of Allah <span lang="my">· အလ္လာဟ်၏ နာမတော်များ</span> <span class="page-count">{nameCount}</span></h2>
+				<p lang="my">အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးကို အဓိပ္ပာယ်နှင့်တကွ။</p>
+				<span class="card-cta">
+					Explore <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+				</span>
+			</a>
+		</div>
+	</section>
+</Layout>
