@@ -60,37 +60,37 @@ const duas = (await getCollection("duas")).sort(
 			placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
 		/>
 
-		<div class="dua-list" data-filter-list>
+		<ul class="dua-list" data-filter-list>
 			{
 				duas.map((dua, index) => (
-					<a class="dua-row" data-filter-item href={`/duas/${dua.id}/`}>
-						<span class="dua-row-number" aria-hidden="true">
-							{index + 1}
-						</span>
-						<span class="dua-row-body">
-							<span class="dua-row-title" lang="my">
-								{dua.data.title_mm}
+					<li data-filter-item>
+						<a class="dua-row" href={`/duas/${dua.id}/`}>
+							<span class="dua-row-number" aria-hidden="true">
+								{index + 1}
 							</span>
-							<span class="dua-row-title-en" lang="en">
-								{dua.data.title_en}
+							<div class="dua-row-body">
+								<span class="dua-row-title">{dua.data.title_mm}</span>
+								<span class="dua-row-title-en" lang="en">
+									{dua.data.title_en}
+								</span>
+							</div>
+							<span class="dua-row-arabic" lang="ar" dir="rtl">
+								{dua.data.arabic}
 							</span>
-						</span>
-						<span class="dua-row-arabic" lang="ar" dir="rtl">
-							{dua.data.arabic}
-						</span>
-						<span
-							class="material-symbols-outlined dua-row-arrow"
-							aria-hidden="true"
-						>
-							chevron_right
-						</span>
-					</a>
+							<span
+								class="material-symbols-outlined dua-row-arrow"
+								aria-hidden="true"
+							>
+								chevron_right
+							</span>
+						</a>
+					</li>
 				))
 			}
-			<p class="filter-empty" data-filter-empty hidden>
-				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော ဒိုအာမတွေ့ပါ။</span>
-				<span lang="en">No duas found.</span>
-			</p>
-		</div>
+		</ul>
+		<p class="filter-empty" data-filter-empty hidden>
+			သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော ဒိုအာမတွေ့ပါ။
+			<span lang="en">No duas found.</span>
+		</p>
 	</div>
 </Layout>

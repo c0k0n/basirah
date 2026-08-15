@@ -16,7 +16,6 @@ const { label, placeholder = label } = Astro.props;
 		class="list-filter-input"
 		data-list-filter
 		placeholder={placeholder}
-		lang="my"
 	/>
 	<p class="visually-hidden" data-filter-live aria-live="polite"></p>
 </div>
@@ -59,7 +58,7 @@ const { label, placeholder = label } = Astro.props;
 			if (match) visible++;
 		}
 
-		const empty = list.querySelector<HTMLElement>("[data-filter-empty]");
+		const empty = scope.querySelector<HTMLElement>("[data-filter-empty]");
 		if (empty) empty.hidden = visible !== 0;
 
 		const live = scope.querySelector<HTMLElement>("[data-filter-live]");

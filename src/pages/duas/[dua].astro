@@ -56,28 +56,22 @@ const { dua } = Astro.props;
 	/>
 	<a class="back-link" href="/duas/">
 		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		<span lang="my">ဒိုအာများအားလုံး</span>
+		ဒိုအာများအားလုံး
 		<span lang="en">· All duas</span>
 	</a>
 
-	<h1 class="visually-hidden" lang="my">{dua.data.title_mm}</h1>
-
 	<div class="dua-detail-arabic">
-		<p lang="ar" dir="rtl">{dua.data.arabic}</p>
-		<p class="dua-pronunciation" lang="my">{dua.data.burmese_pronunciation}</p>
+		<h1 lang="ar" dir="rtl">{dua.data.arabic}</h1>
+		<p class="dua-pronunciation">{dua.data.burmese_pronunciation}</p>
 	</div>
 
 	<section class="dua-meaning">
-		<h2>
-			<span lang="my">အဓိပ္ပာယ်</span>
-		</h2>
-		<p lang="my">{dua.data.burmese_meaning}</p>
+		<h2>အဓိပ္ပာယ်</h2>
+		<p>{dua.data.burmese_meaning}</p>
 	</section>
 
 	<section class="dua-meaning">
-		<h2>
-			<span lang="en">Translation</span>
-		</h2>
+		<h2 lang="en">Translation</h2>
 		<p class="dua-translation" lang="en">{dua.data.english_meaning}</p>
 	</section>
 </Layout>

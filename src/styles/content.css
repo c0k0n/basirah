@@ -118,6 +118,7 @@
 /* Surah index — ornamental chapter tiles */
 
 .surah-grid {
+	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
 	gap: 1rem;
@@ -236,33 +237,19 @@
 }
 
 .surah-meta-item {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	grid-template-rows: auto auto;
-	column-gap: 0.75rem;
-	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 	padding: 0.8rem 1rem;
 	border: 1px solid var(--border);
 	border-radius: 12px;
 	background: var(--surface-muted);
 }
 
-.surah-meta-icon {
-	grid-row: 1 / -1;
-	display: grid;
-	place-items: center;
-	width: 2.5rem;
-	height: 2.5rem;
-	border-radius: 10px;
-	background: color-mix(in srgb, var(--primary) 12%, transparent);
-	color: var(--primary);
-}
-
-.surah-meta-icon .material-symbols-outlined {
-	font-size: 22px;
-}
-
 .surah-meta-item dt {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 	font-size: 0.72rem;
 	font-weight: 600;
 	letter-spacing: 0.05em;
@@ -270,14 +257,25 @@
 	color: var(--text-muted);
 }
 
+.surah-meta-icon {
+	display: grid;
+	place-items: center;
+	flex-shrink: 0;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 8px;
+	background: color-mix(in srgb, var(--primary) 12%, transparent);
+	color: var(--primary);
+}
+
+.surah-meta-icon .material-symbols-outlined {
+	font-size: 16px;
+}
+
 .surah-meta-item dd {
 	margin-top: 0.1rem;
 	font-size: 0.95rem;
 	font-weight: 600;
-}
-
-.surah-meta-item dd span[lang="my"] {
-	font-family: var(--font-myanmar-sans);
 }
 
 .surah-meta-en {
@@ -423,9 +421,9 @@
 	font-size: 16px;
 }
 
-/* Burmese text inside compact mono labels needs the Myanmar stack. */
-.surah-hero-number[lang="my"],
-.verse-number[lang="my"] {
+/* Burmese text inside compact labels needs the Myanmar stack. */
+.surah-hero-number,
+.verse-number {
 	font-family: var(--font-myanmar-sans);
 }
 
@@ -527,6 +525,7 @@
 /* Dua index — editorial list */
 
 .dua-list {
+	list-style: none;
 	border-top: 1px solid var(--border);
 	padding-block-end: 2rem;
 }
@@ -635,9 +634,10 @@
 	text-align: center;
 }
 
-.dua-detail-arabic p {
+.dua-detail-arabic h1 {
 	font-family: var(--font-arabic);
 	font-size: clamp(1.4rem, 3.5vw, 2rem);
+	font-weight: 400;
 	line-height: 2.1;
 }
 
@@ -745,25 +745,25 @@
 	width: 10rem;
 }
 
-.name-cell-pronunciation span[lang="my"] {
+.name-cell-pronunciation span:first-child {
 	display: block;
 	font-family: var(--font-myanmar-serif);
 	font-weight: 600;
 }
 
-.name-cell-pronunciation span[lang="en"] {
+.name-cell-pronunciation span:last-child {
 	display: block;
 	margin-top: 0.1rem;
 	font-size: 0.82rem;
 	color: var(--text-muted);
 }
 
-.name-cell-meaning span[lang="my"] {
+.name-cell-meaning span:first-child {
 	display: block;
 	font-size: 0.9rem;
 }
 
-.name-cell-meaning span[lang="en"] {
+.name-cell-meaning span:last-child {
 	display: block;
 	margin-top: 0.15rem;
 	font-size: 0.82rem;

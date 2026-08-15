@@ -114,48 +114,31 @@ a:hover {
 }
 
 /* Multilingual typography.
-   Burmese (myanmar subset) also covers Latin, so Burmese headings render fully.
-   Arabic blocks get an Arabic stack; Latin inside (ayah numbers, transliteration)
-   falls back to serif. */
+   The document default language is Burmese (html lang="my"), so :lang(my)
+   applies the Myanmar stacks to every element whose language resolves to my —
+   explicit lang="my" attributes are therefore unnecessary. English and Arabic
+   content opt out with lang="en" / lang="ar" attributes. */
 
-[lang="my"] {
+:lang(my) {
 	font-family: var(--font-myanmar-sans);
 	line-height: 1.8;
 }
 
-[lang="my"] h1,
-[lang="my"] h2,
-[lang="my"] h3,
-[lang="my"] h4,
-[lang="my"] h5,
-[lang="my"] h6,
-h1[lang="my"],
-h2[lang="my"],
-h3[lang="my"],
-h4[lang="my"],
-h5[lang="my"],
-h6[lang="my"] {
+:is(h1, h2, h3, h4, h5, h6):lang(my) {
 	font-family: var(--font-myanmar-serif);
 	line-height: 1.4;
 }
 
-/* Burmese spans inside Latin headings keep the heading's serif elegance. */
-:is(h1, h2, h3, h4, h5, h6, .brand, .footer-brand) [lang="my"] {
-	font-family: var(--font-myanmar-serif);
-	line-height: 1.4;
+:lang(en) {
+	font-family: var(--font-sans);
 }
 
-[lang="ar"] {
+:lang(ar) {
 	font-family: var(--font-arabic);
 	line-height: 1.8;
 }
 
-[lang="ar"] h1,
-[lang="ar"] h2,
-[lang="ar"] h3,
-[lang="ar"] h4,
-[lang="ar"] h5,
-[lang="ar"] h6 {
+:is(h1, h2, h3, h4, h5, h6):lang(ar) {
 	font-family: var(--font-arabic);
 	line-height: 1.4;
 }

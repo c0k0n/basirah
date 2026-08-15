@@ -17,8 +17,6 @@ const notableDuas = [
 ---
 
 <footer class="site-footer">
-	<div class="footer-accent" aria-hidden="true"></div>
-
 	<div class="container">
 		<div class="footer-top">
 			<div class="footer-col footer-about">
@@ -29,7 +27,7 @@ const notableDuas = [
 			</div>
 
 			<nav class="footer-col" aria-label="ထင်ရှားသော စူရဟ်များ">
-				<h2 lang="my">ထင်ရှားသော စူရဟ်များ</h2>
+				<h2>ထင်ရှားသော စူရဟ်များ</h2>
 				<ul>
 					{
 						notableSurahs.map((surah) => (
@@ -44,7 +42,7 @@ const notableDuas = [
 			</nav>
 
 			<nav class="footer-col" aria-label="ထင်ရှားသော ဒိုအာများ">
-				<h2 lang="my">ထင်ရှားသော ဒိုအာများ</h2>
+				<h2>ထင်ရှားသော ဒိုအာများ</h2>
 				<ul>
 					{
 						notableDuas.map((dua) => (
@@ -60,8 +58,8 @@ const notableDuas = [
 		</div>
 
 		<div class="footer-bottom">
-			<p>© {year} Basirah</p>
-			<p lang="my">
+			<p lang="en">© {year} Basirah</p>
+			<p>
 				အလ္လာဟ်အရှင်မြတ်၏
 				ချစ်ခင်ခြင်း၊သနားကြင်နာခြင်းတို့ကိုတောင့်တမျှော်ကိုးလျက်
 				ရည်ရွယ်၍မျှဝေပါသည်။
@@ -72,11 +70,14 @@ const notableDuas = [
 
 <style>
 	.site-footer {
+		position: relative;
 		border-top: 1px solid var(--border);
 		background: var(--surface-muted);
 	}
 
-	.footer-accent {
+	.site-footer::before {
+		content: "";
+		display: block;
 		height: 2px;
 		background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
 		opacity: 0.7;

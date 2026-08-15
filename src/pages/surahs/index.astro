@@ -64,12 +64,12 @@ const surahs = (await getCollection("surahs")).sort(
 			placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
 		/>
 
-		<div class="surah-grid" data-filter-list>
+		<ul class="surah-grid" data-filter-list>
 			{surahs.map((surah) => <SurahCard surah={surah} />)}
-			<p class="filter-empty" data-filter-empty hidden>
-				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။</span>
-				<span lang="en">No surahs found.</span>
-			</p>
-		</div>
+		</ul>
+		<p class="filter-empty" data-filter-empty hidden>
+			သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။
+			<span lang="en">No surahs found.</span>
+		</p>
 	</div>
 </Layout>

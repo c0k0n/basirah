@@ -118,55 +118,63 @@ const prostration = meta.prostration_verse;
 	/>
 	<a class="back-link" href="/surahs/">
 		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		<span lang="my">စူရဟ်အားလုံး</span>
+		စူရဟ်အားလုံး
 		<span lang="en">· All surahs</span>
 	</a>
 
 	<header class="surah-hero">
-		<span class="surah-hero-number" lang="my">စူရဟ် {meta.surah_number}</span>
+		<span class="surah-hero-number">စူရဟ် {meta.surah_number}</span>
 		<h1 lang="ar" dir="rtl">{meta.name_arabic}</h1>
 		<p class="surah-hero-translit">
 			<span lang="en">{meta.name_transliteration}</span>
-			<span lang="my"> · {meta.name_burmese_title}</span>
+			· {meta.name_burmese_title}
 		</p>
-		<p class="surah-hero-summary" lang="my">{meta.summary_burmese}</p>
+		<p class="surah-hero-summary">{meta.summary_burmese}</p>
 		<dl class="surah-meta">
 			<div class="surah-meta-item">
-				<span class="surah-meta-icon" aria-hidden="true">
-					<span class="material-symbols-outlined">translate</span>
-				</span>
-				<dt lang="my">အဓိပ္ပာယ်</dt>
+				<dt>
+					<span class="surah-meta-icon" aria-hidden="true">
+						<span class="material-symbols-outlined">translate</span>
+					</span>
+					အဓိပ္ပာယ်
+				</dt>
 				<dd>
-					<span lang="my">{meta.meaning_of_title.burmese}</span>
+					<span>{meta.meaning_of_title.burmese}</span>
 					<span class="surah-meta-en" lang="en">
 						{meta.meaning_of_title.english}
 					</span>
 				</dd>
 			</div>
 			<div class="surah-meta-item">
-				<span class="surah-meta-icon" aria-hidden="true">
-					<span class="material-symbols-outlined">location_on</span>
-				</span>
-				<dt lang="my">ကျရောက်ရာနေရာ</dt>
+				<dt>
+					<span class="surah-meta-icon" aria-hidden="true">
+						<span class="material-symbols-outlined">location_on</span>
+					</span>
+					ကျရောက်ရာနေရာ
+				</dt>
 				<dd>
-					<span lang="my">{meta.revelation_place.burmese}</span>
+					<span>{meta.revelation_place.burmese}</span>
 					<span class="surah-meta-en" lang="en">
 						{meta.revelation_place.english}
 					</span>
 				</dd>
 			</div>
 			<div class="surah-meta-item">
-				<span class="surah-meta-icon" aria-hidden="true">
-					<span class="material-symbols-outlined">123</span>
-				</span>
-				<dt lang="my">အာယသ်</dt>
+				<dt>
+					<span class="surah-meta-icon" aria-hidden="true">
+						<span class="material-symbols-outlined">123</span>
+					</span>
+					အာယသ်
+				</dt>
 				<dd>{meta.total_verses}</dd>
 			</div>
 			<div class="surah-meta-item">
-				<span class="surah-meta-icon" aria-hidden="true">
-					<span class="material-symbols-outlined">format_list_numbered</span>
-				</span>
-				<dt lang="my">ကျရောက်သည့်အစီအစဉ်</dt>
+				<dt>
+					<span class="surah-meta-icon" aria-hidden="true">
+						<span class="material-symbols-outlined">format_list_numbered</span>
+					</span>
+					ကျရောက်သည့်အစီအစဉ်
+				</dt>
 				<dd>{meta.revelation_order}</dd>
 			</div>
 		</dl>
@@ -177,9 +185,9 @@ const prostration = meta.prostration_verse;
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
 		<div class="bismillah-translations">
-			<p lang="my">{bismillah.burmese_transliteration}</p>
+			<p>{bismillah.burmese_transliteration}</p>
 			<p lang="en">{bismillah.english_translation}</p>
-			<p lang="my">{bismillah.burmese_translation}</p>
+			<p>{bismillah.burmese_translation}</p>
 		</div>
 	</section>
 
@@ -188,9 +196,7 @@ const prostration = meta.prostration_verse;
 			surah.data.verses.map((verse) => (
 				<li class="verse">
 					<div class="verse-head">
-						<span class="verse-number" lang="my">
-							အာယသ် {verse.verse_number}
-						</span>
+						<span class="verse-number">အာယသ် {verse.verse_number}</span>
 						{verse.arabic_marker && (
 							<span class="verse-prostration" lang="ar">
 								{verse.arabic_marker} سَجْدَة
@@ -200,21 +206,17 @@ const prostration = meta.prostration_verse;
 					<p class="verse-arabic" lang="ar" dir="rtl">
 						{verse.arabic}
 					</p>
-					<p class="verse-translit" lang="my">
-						{verse.burmese_transliteration}
-					</p>
+					<p class="verse-translit">{verse.burmese_transliteration}</p>
 					<p class="verse-english" lang="en">
 						{verse.english_translation}
 					</p>
-					<p class="verse-burmese" lang="my">
-						{verse.burmese_translation}
-					</p>
+					<p class="verse-burmese">{verse.burmese_translation}</p>
 					{verse.note && (
 						<details class="verse-note">
 							<summary>
-								<span lang="my">မှတ်ချက်</span> / <span lang="en">Note</span>
+								မှတ်ချက် / <span lang="en">Note</span>
 							</summary>
-							<p lang="my">{verse.note}</p>
+							<p>{verse.note}</p>
 						</details>
 					)}
 				</li>
@@ -222,19 +224,13 @@ const prostration = meta.prostration_verse;
 		}
 	</ol>
 
-	{
-		prostration && (
-			<p class="verse-note" lang="my">
-				{prostration.note_burmese}
-			</p>
-		)
-	}
+	{prostration && <p class="verse-note">{prostration.note_burmese}</p>}
 
 	<nav class="pager" aria-label="စူရဟ်များအကြား သွားရန်">
 		{
 			prev && (
 				<a href={`/surahs/${prev.id}/`}>
-					<span class="pager-label" lang="my">
+					<span class="pager-label">
 						<span class="material-symbols-outlined" aria-hidden="true">
 							chevron_left
 						</span>
@@ -249,7 +245,7 @@ const prostration = meta.prostration_verse;
 		{
 			next && (
 				<a class="pager-next" href={`/surahs/${next.id}/`}>
-					<span class="pager-label" lang="my">
+					<span class="pager-label">
 						နောက်စူရဟ်
 						<span class="material-symbols-outlined" aria-hidden="true">
 							chevron_right

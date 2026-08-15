@@ -65,23 +65,15 @@ const metadata = namesData.metadata;
 
 		<div class="name-table-wrap" data-filter-list>
 			<table class="name-table">
-				<caption class="visually-hidden" lang="my">
+				<caption class="visually-hidden">
 					{metadata.title_burmese}
 				</caption>
 				<thead>
 					<tr>
-						<th scope="col" class="name-col-num">
-							<span lang="my">စဉ်</span>
-						</th>
-						<th scope="col">
-							<span lang="my">အမည်</span>
-						</th>
-						<th scope="col">
-							<span lang="my">အသံထွက်</span>
-						</th>
-						<th scope="col">
-							<span lang="my">အဓိပ္ပာယ်</span>
-						</th>
+						<th scope="col" class="name-col-num">စဉ်</th>
+						<th scope="col">အမည်</th>
+						<th scope="col">အသံထွက်</th>
+						<th scope="col">အဓိပ္ပာယ်</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -95,11 +87,11 @@ const metadata = namesData.metadata;
 									{name.data.arabic}
 								</td>
 								<td class="name-cell-pronunciation">
-									<span lang="my">{name.data.burmese_transliteration}</span>
+									<span>{name.data.burmese_transliteration}</span>
 									<span lang="en">{name.data.transliteration}</span>
 								</td>
 								<td class="name-cell-meaning">
-									<span lang="my">{name.data.burmese_meaning}</span>
+									<span>{name.data.burmese_meaning}</span>
 									<span lang="en">{name.data.english_meaning}</span>
 								</td>
 							</tr>
@@ -108,7 +100,7 @@ const metadata = namesData.metadata;
 				</tbody>
 			</table>
 			<p class="filter-empty" data-filter-empty hidden>
-				<span lang="my">သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော နာမတော်မတွေ့ပါ။</span>
+				သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော နာမတော်မတွေ့ပါ။
 				<span lang="en">No names found.</span>
 			</p>
 		</div>

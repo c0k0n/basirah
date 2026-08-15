@@ -12,11 +12,14 @@ const toArabicIndic = (n: number) =>
 	String(n).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩".charAt(Number(d)));
 ---
 
-<a class="surah-tile" data-filter-item href={`/surahs/${surah.id}/`}>
-	<span class="surah-tile-num" aria-hidden="true">
-		{toArabicIndic(meta.surah_number)}
-	</span>
-	<span class="surah-tile-arabic" lang="ar" dir="rtl">{meta.name_arabic}</span>
-	<span class="surah-tile-name" lang="en">{meta.name_transliteration}</span>
-	<span class="surah-tile-burmese" lang="my">{meta.name_burmese_title}</span>
-</a>
+<li data-filter-item>
+	<a class="surah-tile" href={`/surahs/${surah.id}/`}>
+		<span class="surah-tile-num" aria-hidden="true">
+			{toArabicIndic(meta.surah_number)}
+		</span>
+		<span class="surah-tile-arabic" lang="ar" dir="rtl">{meta.name_arabic}</span
+		>
+		<span class="surah-tile-name" lang="en">{meta.name_transliteration}</span>
+		<span class="surah-tile-burmese">{meta.name_burmese_title}</span>
+	</a>
+</li>
