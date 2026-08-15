@@ -67,6 +67,11 @@ const robots = noindex
 
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<meta
+			name="google-site-verification"
+			content="zAcKL0bX4UdVd2ViUyxubJXYgzOa_QF5UrnUI2uNydE"
+		/>
+		<meta name="msvalidate.01" content="101B3B6A64E722CFB477DCB121AECA79" />
 		<meta name="robots" content={robots} />
 		{!noindex && <link rel="canonical" href={canonicalUrl} />}
 		{
@@ -112,7 +117,13 @@ const robots = noindex
 			cssVariable="--font-arabic"
 			preload={[{ subset: "arabic", style: "normal", weight: "700" }]}
 		/>
-		<Font cssVariable="--font-serif" />
+		<Font
+			cssVariable="--font-serif"
+			preload={[
+				{ subset: "latin", style: "normal", weight: "400" },
+				{ subset: "latin", style: "normal", weight: "700" },
+			]}
+		/>
 		<Font cssVariable="--font-sans" />
 		<Font cssVariable="--font-mono" />
 		<Font cssVariable="--font-icons" preload />

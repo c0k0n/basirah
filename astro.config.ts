@@ -6,7 +6,7 @@ export default defineConfig({
 	output: "static",
 	site: "https://basirah.pages.dev",
 	build: {
-		inlineStylesheets: "always",
+		inlineStylesheets: "auto",
 	},
 	vite: {
 		build: {
