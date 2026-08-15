@@ -5,7 +5,7 @@ import { z } from "astro/zod";
 const surahs = defineCollection({
 	loader: glob({
 		pattern: "**/*.json",
-		base: "./src/assets/content/essential-surahs/surah-data",
+		base: "./src/assets/content/essential-surahs",
 	}),
 	schema: z.object({
 		surah_metadata: z.object({

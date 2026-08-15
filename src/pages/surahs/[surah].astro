@@ -4,7 +4,6 @@ import AudioPlayer from "../../components/AudioPlayer.astro";
 import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-import { readdirSync } from "node:fs";
 
 interface NavEntry {
 	id: string;
@@ -15,14 +14,25 @@ interface Props {
 	surah: CollectionEntry<"surahs">;
 	prev: NavEntry | null;
 	next: NavEntry | null;
-	hasAudio: boolean;
+	audioUrl: string | null;
 }
 
 export async function getStaticPaths() {
-	const audioIds = new Set(
-		readdirSync(new URL("../../../public/audio/surahs", import.meta.url)).map(
-			(file) => file.replace(/\.opus$/, ""),
-		),
+	// Recitation files live in src/assets and are bundled by Astro at build
+	// time, which hashes their URLs (/_astro/...) for immutable caching.
+	const audioFiles = import.meta.glob("../../assets/audio/surahs/*.opus", {
+		eager: true,
+		query: "?url",
+		import: "default",
+	}) as Record<string, string>;
+	const audioBySurahId = new Map(
+		Object.entries(audioFiles).map(([path, url]) => [
+			path
+				.split("/")
+				.at(-1)!
+				.replace(/\.opus$/, ""),
+			url,
+		]),
 	);
 	const surahs = (await getCollection("surahs")).sort(
 		(a, b) =>
@@ -47,13 +57,13 @@ export async function getStaticPaths() {
 							name: nextEntry.data.surah_metadata.name_transliteration,
 						}
 					: null,
-				hasAudio: audioIds.has(surah.id),
+				audioUrl: audioBySurahId.get(surah.id) ?? null,
 			},
 		};
 	});
 }
 
-const { surah, prev, next, hasAudio } = Astro.props;
+const { surah, prev, next, audioUrl } = Astro.props;
 const meta = surah.data.surah_metadata;
 const bismillah = surah.data.bismillah;
 const prostration = meta.prostration_verse;
@@ -94,12 +104,11 @@ const prostration = meta.prostration_verse;
 					},
 				],
 			},
-			...(hasAudio && {
+			...(audioUrl && {
 				audio: {
 					"@type": "AudioObject",
 					name: `စူရဟ် ${meta.name_transliteration} — ရွတ်ဖတ်သံ`,
-					contentUrl: new URL(`/audio/surahs/${surah.id}.opus`, Astro.site)
-						.href,
+					contentUrl: new URL(audioUrl, Astro.site).href,
 					encodingFormat: "audio/opus",
 					inLanguage: "ar",
 				},
@@ -162,14 +171,7 @@ const prostration = meta.prostration_verse;
 		</dl>
 	</header>
 
-	{
-		hasAudio && (
-			<AudioPlayer
-				src={`/audio/surahs/${surah.id}.opus`}
-				title={meta.name_transliteration}
-			/>
-		)
-	}
+	{audioUrl && <AudioPlayer src={audioUrl} title={meta.name_transliteration} />}
 
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>

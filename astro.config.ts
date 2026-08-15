@@ -1,4 +1,3 @@
-// @ts-check
 import sitemap from "@astrojs/sitemap";
 import AstroPWA from "@vite-pwa/astro";
 import { defineConfig, fontProviders } from "astro/config";

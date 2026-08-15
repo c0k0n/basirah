@@ -2,10 +2,6 @@
 AGENTS.md
 CLAUDE.md
 
-# data and helpers
-/data/
-/python_helpers/
-
 # dependencies
 node_modules/
 

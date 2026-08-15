@@ -11,13 +11,9 @@
 /404
   ! X-Robots-Tag
 
-# Hashed build assets are immutable
+# Hashed build assets (scripts, styles, fonts, recitation audio) are immutable
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
-
-# Recitations change rarely; short TTL keeps them cacheable but refreshable
-/audio/*
-  Cache-Control: public, max-age=86400
 
 # The service worker must always be fetched fresh so updates propagate
 /sw.js

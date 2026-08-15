@@ -1,5 +1,5 @@
 /* Base — reset, element defaults, and multilingual typography.
-   Font stacks are provided by Astro's <Font /> component (astro.config.mjs). */
+   Font stacks are provided by Astro's <Font /> component (astro.config.ts). */
 
 *,
 *::before,

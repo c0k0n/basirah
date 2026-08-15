@@ -3,6 +3,4 @@ dist
 .astro
 bun.lock
 src/assets/content
-public/audio
-data
-python_helpers
+src/assets/audio
