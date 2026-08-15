@@ -24,7 +24,7 @@
 		"dev": "astro dev",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
-		"generate-pwa-assets": "bun scripts/generate-pwa-assets.mts",
+		"generate-pwa-assets": "bun src/scripts/generate-pwa-assets.mts",
 		"preview": "astro preview",
 		"sync": "astro sync"
 	},

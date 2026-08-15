@@ -4,7 +4,7 @@
 // Sources:
 //   public/favicon.svg              -> transparent PWA icons + favicon.ico
 //                                     (rounded brand tile, transparent corners)
-//   src/assets/brand/icon-maskable.svg -> maskable + apple-touch icons
+//   src/scripts/icon-maskable.svg   -> maskable + apple-touch icons
 //                                     (full-bleed green, gold star in safe zone)
 import { readFile, writeFile } from "node:fs/promises";
 import {
@@ -16,7 +16,7 @@ import {
 
 const out = "public";
 const faviconSvg = await readFile("public/favicon.svg");
-const brandSvg = await readFile("src/assets/brand/icon-maskable.svg");
+const brandSvg = await readFile("src/scripts/icon-maskable.svg");
 const png = { outputOptions: defaultPngCompressionOptions };
 
 for (const size of [64, 192, 512]) {
