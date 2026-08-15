@@ -94,25 +94,6 @@ a:hover {
 	border-radius: 4px;
 }
 
-/* Material Symbols (Google Icons) — used via ligature text,
-   e.g. <span class="material-symbols-outlined">home</span> */
-.material-symbols-outlined {
-	font-family: var(--font-icons);
-	font-weight: normal;
-	font-style: normal;
-	font-size: 24px;
-	line-height: 1;
-	letter-spacing: normal;
-	text-transform: none;
-	display: inline-block;
-	white-space: nowrap;
-	word-wrap: normal;
-	direction: ltr;
-	font-feature-settings: "liga";
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 /* Multilingual typography.
    The document default language is Burmese (html lang="my"), so :lang(my)
    applies the Myanmar stacks to every element whose language resolves to my —
@@ -133,6 +114,10 @@ a:hover {
 	font-family: var(--font-sans);
 }
 
+:is(h1, h2, h3, h4, h5, h6):lang(en) {
+	font-family: var(--font-serif);
+}
+
 :lang(ar) {
 	font-family: var(--font-arabic);
 	line-height: 1.8;
@@ -147,6 +132,27 @@ a:hover {
 [lang="ar"].isolated-rtl {
 	direction: rtl;
 	unicode-bidi: isolate;
+}
+
+/* Material Symbols (Google Icons) — used via ligature text,
+   e.g. <span class="material-symbols-outlined">home</span>.
+   Declared after the :lang() rules so the icon font wins the equal-
+   specificity tie: icon spans inherit the page's resolved language. */
+.material-symbols-outlined {
+	font-family: var(--font-icons);
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	font-feature-settings: "liga";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @media (prefers-reduced-motion: reduce) {

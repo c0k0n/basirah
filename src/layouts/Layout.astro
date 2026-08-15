@@ -124,7 +124,10 @@ const robots = noindex
 				{ subset: "latin", style: "normal", weight: "700" },
 			]}
 		/>
-		<Font cssVariable="--font-sans" />
+		<Font
+			cssVariable="--font-sans"
+			preload={[{ subset: "latin", style: "normal", weight: "400" }]}
+		/>
 		<Font cssVariable="--font-mono" />
 		<Font cssVariable="--font-icons" preload />
 
