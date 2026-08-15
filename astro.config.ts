@@ -8,6 +8,11 @@ export default defineConfig({
 	build: {
 		inlineStylesheets: "always",
 	},
+	vite: {
+		build: {
+			assetsInlineLimit: 0,
+		},
+	},
 	integrations: [
 		sitemap(),
 		AstroPWA({
@@ -30,8 +35,8 @@ export default defineConfig({
 				lang: "my",
 				start_url: "/",
 				display: "standalone",
-				theme_color: "#fdfbf7",
-				background_color: "#fdfbf7",
+				theme_color: "#101613",
+				background_color: "#101613",
 				icons: [
 					{
 						src: "pwa-64x64.png",

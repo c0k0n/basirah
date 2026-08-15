@@ -72,6 +72,7 @@ const prostration = meta.prostration_verse;
 <Layout
 	title={`${meta.name_transliteration} (${meta.surah_number}) — Basirah`}
 	description={`စူရဟ် ${meta.name_transliteration} — ${meta.meaning_of_title.burmese}။ ${meta.revelation_place.burmese}၌ ကျရောက်သော စူရဟ်ဖြစ်ပြီး အာယသ် ${meta.total_verses} ပါဝင်ကာ မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံတို့ ပါဝင်ပါသည်။`}
+	ogType="article"
 >
 	<JsonLd
 		data={{
@@ -176,6 +177,7 @@ const prostration = meta.prostration_verse;
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
 		<div class="bismillah-translations">
+			<p lang="my">{bismillah.burmese_transliteration}</p>
 			<p lang="en">{bismillah.english_translation}</p>
 			<p lang="my">{bismillah.burmese_translation}</p>
 		</div>
@@ -189,9 +191,9 @@ const prostration = meta.prostration_verse;
 						<span class="verse-number" lang="my">
 							အာယသ် {verse.verse_number}
 						</span>
-						{prostration?.verse_number === verse.verse_number && (
+						{verse.arabic_marker && (
 							<span class="verse-prostration" lang="ar">
-								{prostration.arabic_marker} سَجْدَة
+								{verse.arabic_marker} سَجْدَة
 							</span>
 						)}
 					</div>

@@ -13,16 +13,6 @@ const surahs = defineCollection({
 			name_arabic: z.string(),
 			name_transliteration: z.string(),
 			name_burmese_title: z.string(),
-			alternative_names: z
-				.array(
-					z.object({
-						arabic: z.string(),
-						transliteration: z.string(),
-						english: z.string(),
-						burmese: z.string(),
-					}),
-				)
-				.optional(),
 			meaning_of_title: z.object({
 				english: z.string(),
 				burmese: z.string(),
@@ -32,7 +22,6 @@ const surahs = defineCollection({
 				burmese: z.string(),
 			}),
 			revelation_order: z.number(),
-			revelation_order_note: z.string().optional(),
 			total_verses: z.number(),
 			prostration_verse: z
 				.object({

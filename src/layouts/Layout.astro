@@ -14,6 +14,7 @@ interface Props {
 	description?: string;
 	lang?: string;
 	noindex?: boolean;
+	ogType?: string;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
 	description = "Basirah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
 	lang = "my",
 	noindex = false,
+	ogType = "website",
 } = Astro.props;
 
 const canonicalPath =
@@ -72,11 +74,12 @@ const robots = noindex
 				<>
 					<link rel="alternate" hreflang={lang} href={canonicalUrl} />
 					<link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+					<link rel="sitemap" href="/sitemap-index.xml" />
 				</>
 			)
 		}
 
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content={ogType} />
 		<meta property="og:site_name" content="Basirah" />
 		<meta property="og:locale" content="my_MM" />
 		<meta property="og:title" content={title} />
@@ -179,18 +182,40 @@ const robots = noindex
 					.forEach((b) => b.setAttribute("aria-expanded", String(!open)));
 			}
 
+			let swapped = false;
+			document.addEventListener("astro:before-swap", () => {
+				swapped = true;
+			});
+
 			document.addEventListener("astro:page-load", () => {
 				const toggle = document.querySelector("[data-menu-toggle]");
 				const nav = document.querySelector("[data-nav]");
-				if (!toggle || !nav) return;
-				toggle.addEventListener("click", toggleNav);
-				nav
-					.querySelectorAll("a")
-					.forEach((link) => link.addEventListener("click", closeNav));
+				if (toggle && nav) {
+					toggle.addEventListener("click", toggleNav);
+					nav
+						.querySelectorAll("a")
+						.forEach((link) => link.addEventListener("click", closeNav));
+				}
+				if (swapped) {
+					swapped = false;
+					const active = document.activeElement;
+					const main = document.getElementById("main") as HTMLElement | null;
+					if (
+						main &&
+						(active === document.body || !document.contains(active))
+					) {
+						main.focus({ preventScroll: true });
+					}
+				}
 			});
 
 			document.addEventListener("keydown", (event) => {
-				if (event.key === "Escape") closeNav();
+				if (event.key !== "Escape") return;
+				if (!document.body.classList.contains("nav-open")) return;
+				closeNav();
+				(
+					document.querySelector("[data-menu-toggle]") as HTMLElement | null
+				)?.focus();
 			});
 		</script>
 	</body>
