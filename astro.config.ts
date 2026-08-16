@@ -63,7 +63,11 @@ export default defineConfig({
 			},
 			workbox: {
 				navigateFallback: "/404",
-				navigateFallbackDenylist: [/^\/sitemap/],
+				navigateFallbackDenylist: [
+					/^\/sitemap/,
+					/^\/robots\.txt$/,
+					/^\/manifest\.webmanifest$/,
+				],
 				globPatterns: ["**/*.{js,css,html,woff2}"],
 				cleanupOutdatedCaches: true,
 			},
