@@ -49,7 +49,7 @@ Everything is free, public, and meant to be shared. No accounts, no tracking bey
 
 ## The story so far
 
-This project began in **July 2026** as a personal effort — a single person (and later, AI pair-programming partners) building something useful for the Myanmar Muslim community. From the first commit (searchable pages for surahs and the Names of Allah) to today, the journey has been one of continuous, humble refinement:
+This project began in **July 2026** as a personal effort — building something useful for the Myanmar Muslim community. From the first commit (searchable pages for surahs and the Names of Allah) to today, the journey has been one of continuous, humble refinement:
 
 1. **Content first** — JSON files for surahs, duas, and the Names of Allah, each translated into Burmese and English with Arabic originals.
 2. **Bilingual & accessible** — Burmese translations everywhere, proper multilingual typography, keyboard-friendly navigation, semantic HTML.
@@ -71,7 +71,7 @@ Today the site is **deployed on Cloudflare Pages**, passes `astro check` with ze
 - **Bilingual typography done properly** — Noto Serif/Sans Myanmar, Noto Naskh Arabic, and Latin serif/sans stacks, each applied via `:lang()` selectors so every script renders beautifully.
 - **Accessibility** — skip links, ARIA labels and live regions, focus management during view transitions, visible focus states, `prefers-reduced-motion` support, and semantic HTML throughout.
 - **SEO & structured data** — canonical URLs, hreflang, Open Graph & Twitter cards, XML sitemap, and JSON-LD (`WebSite`, `CollectionPage`/`ItemList`, `WebPage`, and per-surah `audio` entities).
-- **Security** — strict Content Security Policy, `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy`, `Permissions-Policy`, and a `robots.txt` that welcomes search engines and AI crawlers alike (while politely excluding the heavy media folder).
+- **Security** — strict Content Security Policy, `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy`, `Permissions-Policy`, and a `robots.txt` that welcomes search engines and other crawlers alike (while politely excluding the heavy media folder).
 
 ## Content
 
@@ -217,7 +217,7 @@ Deployed to **Cloudflare Pages** (currently `https://basirah.pages.dev`):
 
 - **`public/_headers`** — security headers (CSP, `X-Frame-Options`, `Permissions-Policy`, …), immutable `Cache-Control: max-age=31536000` for hashed `/_astro/*` assets, `no-cache` for `sw.js` so updates propagate, and a daily cache for `manifest.webmanifest`. The custom 404 page is served without `X-Robots-Tag` so its `noindex` meta rules.
 - **`public/_redirects`** — legacy sitemap aliases (`/sitemap.xml` and `/sitemap-index.html`) rewritten to the real `/sitemap-index.xml` with a 200.
-- **`public/robots.txt`** — allows all crawlers, excludes the heavy `/_astro/` media folder, and points to the sitemap. AI crawlers are deliberately welcome — being citable by AI systems is part of the site's mission.
+- **`public/robots.txt`** — allows all crawlers, excludes the heavy `/_astro/` media folder, and points to the sitemap.
 - **Content Security Policy** — served from `_headers`, with a `sha256` hash for the one inline theme script in `Layout.astro`. **Important:** if that script ever changes, the hash must be regenerated (`openssl dgst -sha256 -binary | base64`) or the site breaks under CSP.
 
 ## Notes & lessons learned
@@ -254,7 +254,7 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 - Unique titles/descriptions per page; canonical URLs (trailing-slash normalized); `hreflang` + `x-default`; sitemap.
 - Open Graph + Twitter `summary_large_image` cards with a branded 1200×630 image.
 - JSON-LD structured data on every page type — including `audio` entities for surah recitations.
-- Google & Bing site verification; `robots.txt` welcoming AI crawlers.
+- Google & Bing site verification; a crawl-friendly `robots.txt`.
 
 **Performance**
 
