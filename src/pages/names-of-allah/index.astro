@@ -4,26 +4,25 @@ import PageHeader from "../../components/PageHeader.astro";
 import ListFilter from "../../components/ListFilter.astro";
 import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
-import namesData from "../../assets/content/allah-names/names.json";
 
 const names = (await getCollection("names")).sort(
 	(a, b) => a.data.number - b.data.number,
 );
-const metadata = namesData.metadata;
+const meta = names[0]!.data.meta;
 ---
 
 <Layout
-	title={`${metadata.title_burmese} — Basirah`}
-	description={metadata.summary_burmese}
+	title={`${meta.title_burmese} — Basirah`}
+	description={meta.summary_burmese}
 >
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
 			"@type": ["CollectionPage", "ItemList"],
-			name: metadata.title_burmese,
-			alternateName: metadata.title_transliteration,
+			name: meta.title_burmese,
+			alternateName: meta.title_transliteration,
 			url: new URL("/names-of-allah/", Astro.site).href,
-			description: metadata.summary_burmese,
+			description: meta.summary_burmese,
 			inLanguage: ["my", "en", "ar"],
 			numberOfItems: names.length,
 			itemListElement: names.map((name) => ({
@@ -51,10 +50,10 @@ const metadata = namesData.metadata;
 		}}
 	/>
 	<PageHeader
-		title={metadata.title_burmese}
-		arabic={metadata.title_arabic}
+		title={meta.title_burmese}
+		arabic={meta.title_arabic}
 		count={names.length}
-		sub={metadata.summary_burmese}
+		sub={meta.summary_burmese}
 	/>
 
 	<div data-filter-scope>
@@ -66,7 +65,7 @@ const metadata = namesData.metadata;
 		<div class="name-table-wrap" data-filter-list>
 			<table class="name-table">
 				<caption class="visually-hidden">
-					{metadata.title_burmese}
+					{meta.title_burmese}
 				</caption>
 				<thead>
 					<tr>

@@ -2,6 +2,17 @@ import { defineCollection } from "astro:content";
 import { file, glob } from "astro/loaders";
 import { z } from "astro/zod";
 
+const requiredText = z.string().trim().min(1);
+const requiredNumber = z.number().int().positive();
+const numericId = z.string().regex(/^\d+$/);
+
+const BISMILLAH_CANONICAL = {
+	arabic: 'بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ',
+	english_translation: 'In the name of Allah, the Most Compassionate, the Most Merciful.',
+	burmese_translation: 'အနန္တကရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။',
+	burmese_transliteration: 'ဗိစ်မိလ္လာဟိရ် ရဟ်မာနိရ် ရဟီးမ်',
+} as const;
+
 const surahs = defineCollection({
 	loader: glob({
 		pattern: "**/*.json",
@@ -9,84 +20,115 @@ const surahs = defineCollection({
 	}),
 	schema: z.object({
 		surah_metadata: z.object({
-			surah_number: z.number(),
-			name_arabic: z.string(),
-			name_transliteration: z.string(),
-			name_burmese_title: z.string(),
+			surah_number: requiredNumber,
+			name_arabic: requiredText,
+			name_transliteration: requiredText,
+			name_burmese_title: requiredText,
 			meaning_of_title: z.object({
-				english: z.string(),
-				burmese: z.string(),
+				english: requiredText,
+				burmese: requiredText,
 			}),
 			revelation_place: z.object({
-				english: z.string(),
-				burmese: z.string(),
+				english: requiredText,
+				burmese: requiredText,
 			}),
-			revelation_order: z.number(),
-			total_verses: z.number(),
+			revelation_order: requiredNumber,
+			total_verses: requiredNumber,
 			prostration_verse: z
 				.object({
-					verse_number: z.number(),
-					arabic_marker: z.string(),
-					note_burmese: z.string(),
+					verse_number: requiredNumber,
+					arabic_marker: requiredText,
+					note_burmese: requiredText,
 				})
 				.optional(),
-			summary_burmese: z.string(),
+			summary_burmese: requiredText,
 		}),
-		bismillah: z.object({
-			arabic: z.string(),
-			english_translation: z.string(),
-			burmese_translation: z.string(),
-			burmese_transliteration: z.string(),
-		}),
-		verses: z.array(
-			z.object({
-				verse_number: z.number(),
-				arabic: z.string(),
-				english_translation: z.string(),
-				burmese_translation: z.string(),
-				burmese_transliteration: z.string(),
-				arabic_marker: z.string().optional(),
-				note: z.string().optional(),
+		bismillah: z
+			.object({
+				arabic: requiredText,
+				english_translation: requiredText,
+				burmese_translation: requiredText,
+				burmese_transliteration: requiredText,
+			})
+			.superRefine((bismillah, ctx) => {
+				for (const key of Object.keys(BISMILLAH_CANONICAL)) {
+					const value = BISMILLAH_CANONICAL[key as keyof typeof BISMILLAH_CANONICAL];
+					if (bismillah[key as keyof typeof bismillah] !== value) {
+						ctx.addIssue({
+							code: "custom",
+							path: [key],
+							message: `bismillah.${key} must match the canonical text; fix the content file instead of adding a new variant`,
+						});
+					}
+				}
 			}),
-		),
+		verses: z
+			.array(
+				z.object({
+					verse_number: requiredNumber,
+					arabic: requiredText,
+					english_translation: requiredText,
+					burmese_translation: requiredText,
+					burmese_transliteration: requiredText,
+					arabic_marker: requiredText.optional(),
+					note: requiredText.optional(),
+				}),
+			)
+			.min(1),
 	}),
 });
 
 const duas = defineCollection({
 	loader: file("src/assets/content/essential-duas/duas.json", {
-		parser: (text) =>
-			JSON.parse(text).items.map((item: { id: number }) => ({
+		parser: (text) => {
+			const parsed = JSON.parse(text);
+			return parsed.items.map((item: { id: number }) => ({
 				...item,
 				id: String(item.id),
-			})),
+				meta: { title: parsed.title },
+			}));
+		},
 	}),
 	schema: z.object({
-		id: z.string(),
-		title_mm: z.string(),
-		title_en: z.string(),
-		arabic: z.string(),
-		burmese_pronunciation: z.string(),
-		english_meaning: z.string(),
-		burmese_meaning: z.string(),
+		id: numericId,
+		meta: z.object({
+			title: requiredText,
+		}),
+		title_mm: requiredText,
+		title_en: requiredText,
+		arabic: requiredText,
+		burmese_pronunciation: requiredText,
+		english_meaning: requiredText,
+		burmese_meaning: requiredText,
 	}),
 });
 
 const names = defineCollection({
 	loader: file("src/assets/content/allah-names/names.json", {
-		parser: (text) =>
-			JSON.parse(text).names.map((name: { number: number }) => ({
+		parser: (text) => {
+			const parsed = JSON.parse(text);
+			return parsed.names.map((name: { number: number }) => ({
 				id: String(name.number),
 				...name,
-			})),
+				meta: parsed.metadata,
+			}));
+		},
 	}),
 	schema: z.object({
-		id: z.string(),
-		number: z.number(),
-		arabic: z.string(),
-		transliteration: z.string(),
-		english_meaning: z.string(),
-		burmese_meaning: z.string(),
-		burmese_transliteration: z.string(),
+		id: numericId,
+		number: requiredNumber,
+		meta: z.object({
+			title_arabic: requiredText,
+			title_transliteration: requiredText,
+			title_burmese: requiredText,
+			name_count: requiredNumber,
+			summary_burmese: requiredText,
+		}),
+		arabic: requiredText,
+		transliteration: requiredText,
+		english_meaning: requiredText,
+		burmese_meaning: requiredText,
+		burmese_transliteration: requiredText,
 	}),
 });
 
