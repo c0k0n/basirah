@@ -7,10 +7,12 @@ const requiredNumber = z.number().int().positive();
 const numericId = z.string().regex(/^\d+$/);
 
 const BISMILLAH_CANONICAL = {
-	arabic: 'بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ',
-	english_translation: 'In the name of Allah, the Most Compassionate, the Most Merciful.',
-	burmese_translation: 'အနန္တကရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။',
-	burmese_transliteration: 'ဗိစ်မိလ္လာဟိရ် ရဟ်မာနိရ် ရဟီးမ်',
+	arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+	english_translation:
+		"In the name of Allah, the Most Compassionate, the Most Merciful.",
+	burmese_translation:
+		"အနန္တကရုဏာတော်ရှင်၊ အလွန်သနားညှာတာတော်မူသော အလ္လာဟ်အရှင်မြတ်၏ နာမတော်ဖြင့် (စတင်ပါ၏)။",
+	burmese_transliteration: "ဗိစ်မိလ္လာဟိရ် ရဟ်မာနိရ် ရဟီးမ်",
 } as const;
 
 const surahs = defineCollection({
@@ -52,7 +54,8 @@ const surahs = defineCollection({
 			})
 			.superRefine((bismillah, ctx) => {
 				for (const key of Object.keys(BISMILLAH_CANONICAL)) {
-					const value = BISMILLAH_CANONICAL[key as keyof typeof BISMILLAH_CANONICAL];
+					const value =
+						BISMILLAH_CANONICAL[key as keyof typeof BISMILLAH_CANONICAL];
 					if (bismillah[key as keyof typeof bismillah] !== value) {
 						ctx.addIssue({
 							code: "custom",
@@ -81,8 +84,13 @@ const surahs = defineCollection({
 const duas = defineCollection({
 	loader: file("src/assets/content/essential-duas/duas.json", {
 		parser: (text) => {
-			const parsed = JSON.parse(text);
-			return parsed.items.map((item: { id: number }) => ({
+			const parsed = z
+				.object({
+					title: z.string(),
+					items: z.array(z.looseObject({ id: z.number() })),
+				})
+				.parse(JSON.parse(text));
+			return parsed.items.map((item) => ({
 				...item,
 				id: String(item.id),
 				meta: { title: parsed.title },
@@ -106,8 +114,13 @@ const duas = defineCollection({
 const names = defineCollection({
 	loader: file("src/assets/content/allah-names/names.json", {
 		parser: (text) => {
-			const parsed = JSON.parse(text);
-			return parsed.names.map((name: { number: number }) => ({
+			const parsed = z
+				.object({
+					metadata: z.looseObject({ title_arabic: z.string() }),
+					names: z.array(z.looseObject({ number: z.number() })),
+				})
+				.parse(JSON.parse(text));
+			return parsed.names.map((name) => ({
 				id: String(name.number),
 				...name,
 				meta: parsed.metadata,

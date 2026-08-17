@@ -779,7 +779,16 @@
 
 @media (max-width: 44rem) {
 	.name-table thead {
-		display: none;
+		/* Visually hidden but kept for screen readers; cell labels are
+		   exposed via data-label so the column meaning survives the
+		   stacked layout (WCAG 1.3.1). */
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		white-space: nowrap;
 	}
 
 	.name-table,
@@ -798,10 +807,31 @@
 		border-bottom: 0;
 	}
 
+	.name-table td,
+	.name-table th {
+		position: relative;
+		padding-inline-start: 8.5rem;
+	}
+
+	.name-table td::before,
+	.name-table th::before {
+		content: attr(data-label);
+		position: absolute;
+		inset-inline-start: 0.9rem;
+		color: var(--text-muted);
+		font-size: 0.78rem;
+		font-weight: 600;
+	}
+
 	.name-table .name-col-num {
 		display: inline-block;
 		width: auto;
 		margin-right: 0.7rem;
+		padding-inline-start: 0;
+	}
+
+	.name-table .name-col-num::before {
+		content: none;
 	}
 
 	.name-cell-arabic {

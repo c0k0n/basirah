@@ -24,7 +24,8 @@ const { src, title } = Astro.props;
 		class="audio-play"
 		type="button"
 		data-audio-play
-		aria-label={`${title} ကို ဖွင့်ရန်`}
+		aria-pressed="false"
+		aria-label={`${title} ကို ဖွင့်ရန်/ရပ်ရန်`}
 	>
 		<span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
 	</button>
@@ -58,7 +59,6 @@ const { src, title } = Astro.props;
 		if (!audio || !playBtn || !currentEl || !durationEl || !seek) return;
 
 		const icon = playBtn.querySelector(".material-symbols-outlined");
-		const title = player.dataset.title ?? "";
 
 		const format = (seconds: number) => {
 			if (!Number.isFinite(seconds)) return "–:––";
@@ -69,10 +69,7 @@ const { src, title } = Astro.props;
 
 		const updateState = () => {
 			const playing = !audio.paused;
-			playBtn.setAttribute(
-				"aria-label",
-				playing ? `${title} ကို ရပ်ရန်` : `${title} ကို ဖွင့်ရန်`,
-			);
+			playBtn.setAttribute("aria-pressed", String(playing));
 			if (icon) icon.textContent = playing ? "pause" : "play_arrow";
 		};
 

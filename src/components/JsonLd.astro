@@ -4,7 +4,23 @@ interface Props {
 }
 
 const { data } = Astro.props;
-const json = JSON.stringify(data).replace(/</g, "\\u003c");
+// Escape characters that could break out of the <script> context or corrupt
+// JSON when rendered inline, so structured data can never inject markup.
+const json = JSON.stringify(data)
+	.replace(/[<>&]/g, (c) => {
+		switch (c) {
+			case "<":
+				return "\\u003c";
+			case ">":
+				return "\\u003e";
+			case "&":
+				return "\\u0026";
+			default:
+				return c;
+		}
+	})
+	.replace(/\u2028/g, "\\u2028")
+	.replace(/\u2029/g, "\\u2029");
 ---
 
 <script type="application/ld+json" is:inline set:html={json} />

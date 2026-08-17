@@ -124,7 +124,16 @@ const prostration = meta.prostration_verse;
 
 	<header class="surah-hero">
 		<span class="surah-hero-number">စူရဟ် {meta.surah_number}</span>
-		<h1 lang="ar" dir="rtl">{meta.name_arabic}</h1>
+		<h1 lang="ar" dir="rtl">
+			{meta.name_arabic}
+			<span class="visually-hidden">
+				({" "}
+				{meta.name_transliteration}
+				{" · "}
+				{meta.name_burmese_title}
+				{" "})
+			</span>
+		</h1>
 		<p class="surah-hero-translit">
 			<span lang="en">{meta.name_transliteration}</span>
 			· {meta.name_burmese_title}
@@ -183,6 +192,7 @@ const prostration = meta.prostration_verse;
 	{audioUrl && <AudioPlayer src={audioUrl} title={meta.name_transliteration} />}
 
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
+		<h2 class="visually-hidden">ဗစ်မီလ္လာဟ်</h2>
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
 		<div class="bismillah-translations">
 			<p>{bismillah.burmese_transliteration}</p>
@@ -191,6 +201,7 @@ const prostration = meta.prostration_verse;
 		</div>
 	</section>
 
+	<h2>အာယသ်များ</h2>
 	<ol class="verse-list">
 		{
 			surah.data.verses.map((verse) => (

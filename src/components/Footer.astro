@@ -1,19 +1,38 @@
 ---
+import { getCollection } from "astro:content";
+
 const year = new Date().getFullYear();
 
-const notableSurahs = [
-	{ href: "/surahs/surah-al-fatihah/", label: "Al-Fatihah" },
-	{ href: "/surahs/surah-al-ikhlas/", label: "Al-Ikhlāṣ" },
-	{ href: "/surahs/surah-al-falaq/", label: "Al-Falaq" },
-	{ href: "/surahs/surah-an-nas/", label: "An-Nās" },
-];
+const surahs = await getCollection("surahs");
+const duas = await getCollection("duas");
 
-const notableDuas = [
-	{ href: "/duas/14/", label: "Ayatul Kursi" },
-	{ href: "/duas/2/", label: "Sayyidul Istighfar" },
-	{ href: "/duas/12/", label: "Hasbiyallahu" },
-	{ href: "/duas/9/", label: "Salawat" },
-];
+// Derive links from the actual content so a content reorder can never break them.
+const pickSurah = (id: string) => {
+	const surah = surahs.find((s) => s.id === id);
+	return surah
+		? {
+				href: `/surahs/${surah.id}/`,
+				label: surah.data.surah_metadata.name_transliteration,
+			}
+		: null;
+};
+const pickDua = (id: string) => {
+	const dua = duas.find((d) => d.id === id);
+	return dua ? { href: `/duas/${dua.id}/`, label: dua.data.title_en } : null;
+};
+
+const notableSurahs = [
+	"surah-al-fatihah",
+	"surah-al-ikhlas",
+	"surah-al-falaq",
+	"surah-an-nas",
+]
+	.map(pickSurah)
+	.filter((x): x is { href: string; label: string } => x !== null);
+
+const notableDuas = ["14", "2", "12", "9"]
+	.map(pickDua)
+	.filter((x): x is { href: string; label: string } => x !== null);
 ---
 
 <footer class="site-footer">

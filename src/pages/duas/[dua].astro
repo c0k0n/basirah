@@ -61,7 +61,16 @@ const { dua } = Astro.props;
 	</a>
 
 	<div class="dua-detail-arabic">
-		<h1 lang="ar" dir="rtl">{dua.data.arabic}</h1>
+		<h1 lang="ar" dir="rtl">
+			{dua.data.arabic}
+			<span class="visually-hidden">
+				({" "}
+				{dua.data.title_mm}
+				{" · "}
+				<span lang="en">{dua.data.title_en}</span>
+				{" "})
+			</span>
+		</h1>
 		<p class="dua-pronunciation">{dua.data.burmese_pronunciation}</p>
 	</div>
 

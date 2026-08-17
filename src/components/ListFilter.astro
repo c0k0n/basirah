@@ -7,7 +7,7 @@ interface Props {
 const { label, placeholder = label } = Astro.props;
 ---
 
-<div class="list-filter">
+<search class="list-filter">
 	<span class="material-symbols-outlined" aria-hidden="true">search</span>
 	<label class="visually-hidden" for="list-filter-input">{label}</label>
 	<input
@@ -18,7 +18,7 @@ const { label, placeholder = label } = Astro.props;
 		placeholder={placeholder}
 	/>
 	<p class="visually-hidden" data-filter-live aria-live="polite"></p>
-</div>
+</search>
 
 <script>
 	// Fold text for forgiving search: lowercase, strip diacritics, unify Arabic variants.

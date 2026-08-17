@@ -2,6 +2,7 @@
 import { ClientRouter } from "astro:transitions";
 import { Font } from "astro:assets";
 import { pwaInfo } from "virtual:pwa-info";
+import { SITE } from "../site.config";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tokens.css";
@@ -18,8 +19,8 @@ interface Props {
 }
 
 const {
-	title = "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတ",
-	description = "Basirah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
+	title = SITE.title,
+	description = SITE.description,
 	lang = "my",
 	noindex = false,
 	ogType = "website",
@@ -95,45 +96,43 @@ const robots = noindex
 		<meta property="og:image:height" content="630" />
 		<meta
 			property="og:image:alt"
-			content="Basirah — Wisdom from the Qur'an and Sunnah, in the language of Myanmar Muslims"
+			content="Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ ဗဟုသုတ"
 		/>
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImageUrl} />
 
-		<Font
-			cssVariable="--font-myanmar-serif"
-			preload={[
-				{ subset: "myanmar", style: "normal", weight: "400" },
-				{ subset: "myanmar", style: "normal", weight: "700" },
-			]}
-		/>
+		{
+			/* Preload only the LCP-critical families; the rest stream in with
+		    font-display:swap. Over-preloading blocks other critical resources. */
+		}
 		<Font
 			cssVariable="--font-myanmar-sans"
 			preload={[{ subset: "myanmar", style: "normal", weight: "400" }]}
 		/>
 		<Font
+			cssVariable="--font-myanmar-serif"
+			preload={[{ subset: "myanmar", style: "normal", weight: "700" }]}
+		/>
+		<Font
 			cssVariable="--font-arabic"
 			preload={[{ subset: "arabic", style: "normal", weight: "700" }]}
 		/>
-		<Font
-			cssVariable="--font-serif"
-			preload={[
-				{ subset: "latin", style: "normal", weight: "400" },
-				{ subset: "latin", style: "normal", weight: "700" },
-			]}
-		/>
-		<Font
-			cssVariable="--font-sans"
-			preload={[{ subset: "latin", style: "normal", weight: "400" }]}
-		/>
+
+		{/* These families are used across the UI but are not LCP-critical,
+		    so they are injected (so their CSS variable resolves) without
+		    preloading. Without these, var(--font-icons/sans/serif/mono)
+		    is undefined and icons render as literal ligature text. */}
+		<Font cssVariable="--font-icons" />
+		<Font cssVariable="--font-sans" />
+		<Font cssVariable="--font-serif" />
 		<Font cssVariable="--font-mono" />
-		<Font cssVariable="--font-icons" preload />
 
 		<ClientRouter />
 
 		<script is:inline>
+			/* THEME_BOOTSTRAP_START */
 			if (!window.__basirahThemeReady) {
 				window.__basirahThemeReady = true;
 				const key = "basirah-theme";
@@ -165,6 +164,7 @@ const robots = noindex
 					applyBasirahTheme();
 				});
 			}
+			/* THEME_BOOTSTRAP_END */
 		</script>
 	</head>
 	<body>

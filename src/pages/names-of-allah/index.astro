@@ -79,17 +79,22 @@ const meta = names[0]!.data.meta;
 					{
 						names.map((name) => (
 							<tr data-filter-item>
-								<th scope="row" class="name-col-num">
+								<th scope="row" class="name-col-num" data-label="စဉ်">
 									{name.data.number}
 								</th>
-								<td class="name-cell-arabic" lang="ar" dir="rtl">
+								<td
+									class="name-cell-arabic"
+									data-label="အမည်"
+									lang="ar"
+									dir="rtl"
+								>
 									{name.data.arabic}
 								</td>
-								<td class="name-cell-pronunciation">
+								<td class="name-cell-pronunciation" data-label="အသံထွက်">
 									<span>{name.data.burmese_transliteration}</span>
 									<span lang="en">{name.data.transliteration}</span>
 								</td>
-								<td class="name-cell-meaning">
+								<td class="name-cell-meaning" data-label="အဓိပ္ပာယ်">
 									<span>{name.data.burmese_meaning}</span>
 									<span lang="en">{name.data.english_meaning}</span>
 								</td>

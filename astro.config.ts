@@ -1,23 +1,32 @@
 import sitemap from "@astrojs/sitemap";
 import AstroPWA from "@vite-pwa/astro";
 import { defineConfig, fontProviders } from "astro/config";
+import { SITE } from "./src/site.config";
 
 export default defineConfig({
 	output: "static",
 	site: "https://basirah.pages.dev",
+	// CSS is externalized to a single hashed, immutable /_astro/*.css file
+	// (served with Cache-Control: immutable). Inlining into every one of the
+	// ~140 HTML pages duplicated ~7.5KB each, defeated shared caching, and
+	// inflated every ClientRouter view-transition swap.
 	build: {
-		inlineStylesheets: "always",
-	},
-	vite: {
-		build: {
-			assetsInlineLimit: 0,
-		},
+		inlineStylesheets: "auto",
 	},
 	integrations: [
-		sitemap(),
+		sitemap({ lastmod: new Date() }),
 		AstroPWA({
 			registerType: "autoUpdate",
 			injectRegister: false,
+			strategies: "injectManifest",
+			srcDir: "src",
+			filename: "sw.ts",
+			// Build the service worker as a single IIFE bundle. Avoids the
+			// deprecated `inlineDynamicImports` rollup option (and its warning)
+			// that vite-plugin-pwa otherwise applies to the ES-module SW build.
+			injectManifest: {
+				rollupFormat: "iife",
+			},
 			includeAssets: [
 				"favicon.svg",
 				"favicon.ico",
@@ -28,10 +37,9 @@ export default defineConfig({
 				"maskable-icon-512x512.png",
 			],
 			manifest: {
-				name: "Basirah — ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတ",
-				short_name: "Basirah",
-				description:
-					"Basirah ဝက်ဘ်ဆိုက်တွင် မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်ပါသည်။",
+				name: SITE.title,
+				short_name: SITE.shortName,
+				description: SITE.description,
 				lang: "my",
 				start_url: "/",
 				display: "standalone",
@@ -62,13 +70,12 @@ export default defineConfig({
 				],
 			},
 			workbox: {
-				navigateFallback: "/404",
-				navigateFallbackDenylist: [
-					/^\/sitemap/,
-					/^\/robots\.txt$/,
-					/^\/manifest\.webmanifest$/,
-				],
-				globPatterns: ["**/*.{js,css,html,woff2}"],
+				// Precache only the app shell assets (JS/CSS/fonts) plus the 404
+				// document. HTML pages are cached at runtime (StaleWhileRevalidate,
+				// see src/sw.ts) so the first SW install no longer forces a ~4MB
+				// download of every page. The 404 doc must be precached so the
+				// catch handler can serve it offline on a failed navigation.
+				globPatterns: ["**/*.{js,css,woff2}", "404.html"],
 				cleanupOutdatedCaches: true,
 			},
 			experimental: {
@@ -81,7 +88,7 @@ export default defineConfig({
 			name: "Noto Serif Myanmar",
 			cssVariable: "--font-myanmar-serif",
 			provider: fontProviders.google(),
-			weights: [400, 600, 700],
+			weights: [400, 700],
 			styles: ["normal"],
 			subsets: ["myanmar"],
 			fallbacks: ["serif"],
