@@ -1,11 +1,6 @@
 // Generates all PWA and brand icons from the brand source SVGs.
 // Run with: bun run generate-pwa-assets
-//
-// Sources:
-//   public/favicon.svg              -> transparent PWA icons + favicon.ico
-//                                     (rounded brand tile, transparent corners)
-//   src/scripts/icon-maskable.svg   -> maskable + apple-touch icons
-//                                     (full-bleed green, gold star in safe zone)
+
 import { readFile, writeFile } from "node:fs/promises";
 import {
 	defaultPngCompressionOptions,
@@ -16,7 +11,7 @@ import {
 
 const out = "public";
 const faviconSvg = await readFile("public/favicon.svg");
-const brandSvg = await readFile("src/scripts/icon-maskable.svg");
+const brandSvg = await readFile("src/assets/brand/icon-maskable.svg");
 const png = { outputOptions: defaultPngCompressionOptions };
 
 for (const size of [64, 192, 512]) {
@@ -24,10 +19,7 @@ for (const size of [64, 192, 512]) {
 		await generateTransparentAsset(
 			"png",
 			faviconSvg,
-			{
-				width: size,
-				height: size,
-			},
+			{ width: size, height: size },
 			png,
 		)
 	).toBuffer();
@@ -40,10 +32,7 @@ const faviconIco = await generateFavicon(
 		await generateTransparentAsset(
 			"png",
 			faviconSvg,
-			{
-				width: 48,
-				height: 48,
-			},
+			{ width: 48, height: 48 },
 			png,
 		)
 	).toBuffer(),
@@ -58,10 +47,7 @@ for (const [name, size] of [
 		await generateMaskableAsset(
 			"png",
 			brandSvg,
-			{
-				width: size,
-				height: size,
-			},
+			{ width: size, height: size },
 			{ padding: 0, ...png },
 		)
 	).toBuffer();

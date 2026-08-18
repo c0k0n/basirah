@@ -127,10 +127,12 @@ public/  →  static files copied as-is (robots.txt, icons, _headers, _redirects
 src/
   assets/content/    →  READ-ONLY content data (JSON collections)
   assets/audio/      →  recitation audio (.opus, bundled & hashed)
+  assets/brand/      →  source SVG for the maskable icon
   components/        →  reusable .astro components (8)
   layouts/           →  Layout.astro: meta, SEO, fonts, theme, transitions
   pages/             →  routes (home, 404, surahs, duas, names-of-allah)
-  scripts/           →  shared TS: nav, pwa registration, asset generation
+  scripts/           →  browser-only service-worker registration
+scripts/             →  Bun build tooling (headers and PWA asset generation)
   styles/            →  tokens, base, components, content
   content.config.ts  →  collection schemas + validation guards
 ```
@@ -149,7 +151,11 @@ src/
 - Theme toggle — `localStorage` + `prefers-color-scheme`, FOUC guard, re-bound after view transitions.
 - PWA registration — via `@vite-pwa/astro` (`registerType: "autoUpdate"`).
 
-**PWA details worth knowing:** the service worker uses `navigateFallback: "/404"` — meaning any navigation that isn't a real page (or in the denylist) is served the custom 404 page. The denylist explicitly excludes `/sitemap*`, `/robots.txt`, and `/manifest.webmanifest` so those are always fetched from the network. (We learned this the hard way — see below.)
+**PWA details worth knowing:** the custom service worker uses Workbox's
+`StaleWhileRevalidate` strategy for visited document navigations. If a request
+cannot be fetched and is not already cached, it serves the precached `/404`
+document as an offline fallback. Static metadata files such as the sitemap,
+robots file, and manifest are not handled by the navigation route.
 
 ## Project structure
 
@@ -175,9 +181,10 @@ basirah/
 │   │   ├── surahs/              # Index + [surah] detail w/ audio player
 │   │   ├── duas/                # Index + [dua] detail
 │   │   └── names-of-allah/      # 100-names table
-│   ├── scripts/                 # nav.ts, pwa.ts, generate-pwa-assets.mts (+ SVG sources)
+│   ├── scripts/                 # Browser-only service-worker registration
 │   ├── styles/                  # tokens.css, base.css, components.css, content.css
 │   └── content.config.ts        # Content collections: loaders + Zod schemas + guards
+├── scripts/                     # Bun build tooling (not shipped to the site)
 ├── astro.config.ts              # Site config, sitemap, PWA, fonts
 ├── package.json
 ├── tsconfig.json                # strict; extends astro/tsconfigs/strict
@@ -192,19 +199,20 @@ basirah/
 bun install        # install dependencies
 bun run dev        # start the dev server
 bun run check      # type-check the whole project (astro check)
-bun run build      # astro check && astro build → dist/
+bun run build      # generate deploy assets, check, and build → dist/
 bun run preview    # preview the production build locally
 ```
 
-| Script                    | What it does                                          |
-| ------------------------- | ----------------------------------------------------- |
-| `dev`                     | `astro dev`                                           |
-| `check`                   | `astro check` — content validation + type checking    |
-| `build`                   | `astro check && astro build` (the CI-equivalent gate) |
-| `preview`                 | `astro preview`                                       |
-| `format` / `format:check` | Prettier (with `prettier-plugin-astro`)               |
-| `generate-pwa-assets`     | Regenerates PWA icons from `src/scripts/` SVG sources |
-| `sync`                    | `astro sync` — refresh content-layer types            |
+| Script                    | What it does                                                    |
+| ------------------------- | --------------------------------------------------------------- |
+| `dev`                     | `astro dev`                                                     |
+| `check`                   | `astro check` — content validation + type checking              |
+| `build`                   | Generates deploy assets, then runs `astro check && astro build` |
+| `preview`                 | `astro preview`                                                 |
+| `format` / `format:check` | Prettier (with `prettier-plugin-astro`)                         |
+| `generate-headers`        | Derives the CSP hash and regenerates `public/_headers`          |
+| `generate-pwa-assets`     | Regenerates PWA icons from `src/assets/brand/` SVG sources      |
+| `sync`                    | `astro sync` — refresh content-layer types                      |
 
 ## Deployment
 
@@ -224,7 +232,7 @@ Deployed to **Cloudflare Pages** (currently `https://basirah.pages.dev`):
 
 This section is a candid record of things we got wrong, learned, and fixed — in the spirit of the project: _simplicity with integrity, and honesty about the journey._
 
-1. **`robots.txt` was served as a 404 page — and the server was innocent.** The service worker's `navigateFallback: "/404"` was intercepting navigations to `/robots.txt` and answering with the custom 404 page. A hard refresh (Ctrl+F5) bypassed the service worker, so it looked like an intermittent caching bug. The same thing had happened earlier with the sitemap. The fix: add `/^\/robots\.txt$/` (and `/^\/manifest\.webmanifest$/`) to `navigateFallbackDenylist` in `astro.config.ts`. Lesson: **service workers can swallow requests that the server would handle perfectly** — denylist anything non-navigational.
+1. **Service-worker fallbacks must be narrow.** An earlier implementation used a broad `navigateFallback` and could answer non-page requests such as `robots.txt` with the custom 404 document. The current custom worker only handles requests whose `mode` is `navigate`; metadata files therefore remain network-served. Lesson: **service workers can swallow requests that the server would handle perfectly** — keep route predicates explicit.
 
 2. **Sitemap aliases.** The sitemap integration only emits `sitemap-index.xml`, but older references pointed at `/sitemap.xml` and `/sitemap-index.html`. Rather than fight the tooling, we added two 200-rewrites in `_redirects`. Simple, honest, edge-fast.
 
@@ -258,7 +266,8 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 
 **Performance**
 
-- 100% static output; no client framework; CSS inlined (`inlineStylesheets: "always"`).
+- 100% static output; no client framework; shared CSS is externalized when it
+  exceeds Astro/Vite's inline asset limit (`inlineStylesheets: "auto"`).
 - Fonts subsetted and preloaded for the critical path; hashed assets cached immutably for a year.
 - Audio served as efficient `.opus` with lazy `preload` semantics in the player.
 

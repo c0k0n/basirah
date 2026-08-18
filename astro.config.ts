@@ -6,15 +6,14 @@ import { SITE } from "./src/site.config";
 export default defineConfig({
 	output: "static",
 	site: "https://basirah.pages.dev",
-	// CSS is externalized to a single hashed, immutable /_astro/*.css file
-	// (served with Cache-Control: immutable). Inlining into every one of the
-	// ~140 HTML pages duplicated ~7.5KB each, defeated shared caching, and
-	// inflated every ClientRouter view-transition swap.
+	// Keep larger shared stylesheets as hashed /_astro/*.css assets so they can
+	// be cached once across the 69 generated HTML pages. Astro still inlines
+	// individual stylesheets below Vite's asset inline limit when appropriate.
 	build: {
 		inlineStylesheets: "auto",
 	},
 	integrations: [
-		sitemap({ lastmod: new Date() }),
+		sitemap(),
 		AstroPWA({
 			registerType: "autoUpdate",
 			injectRegister: false,

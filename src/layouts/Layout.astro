@@ -120,10 +120,12 @@ const robots = noindex
 			preload={[{ subset: "arabic", style: "normal", weight: "700" }]}
 		/>
 
-		{/* These families are used across the UI but are not LCP-critical,
+		{
+			/* These families are used across the UI but are not LCP-critical,
 		    so they are injected (so their CSS variable resolves) without
 		    preloading. Without these, var(--font-icons/sans/serif/mono)
-		    is undefined and icons render as literal ligature text. */}
+		    is undefined and icons render as literal ligature text. */
+		}
 		<Font cssVariable="--font-icons" />
 		<Font cssVariable="--font-sans" />
 		<Font cssVariable="--font-serif" />
@@ -175,7 +177,7 @@ const robots = noindex
 		</main>
 		<Footer />
 
-		<script src="../scripts/pwa.ts"></script>
+		<script src="../scripts/register-service-worker.ts"></script>
 
 		<script>
 			function closeNav() {

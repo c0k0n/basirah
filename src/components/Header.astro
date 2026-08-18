@@ -1,6 +1,6 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
-import { navLinks } from "../scripts/nav";
+import { SITE } from "../site.config";
 
 const path = Astro.url.pathname;
 const isCurrent = (href: string) =>
@@ -16,7 +16,7 @@ const isCurrent = (href: string) =>
 		<nav id="primary-nav" class="site-nav" data-nav aria-label="ပင်မလမ်းညွှန်">
 			<ul>
 				{
-					navLinks.map((link) => (
+					SITE.navLinks.map((link) => (
 						<li>
 							<a
 								href={link.href}
