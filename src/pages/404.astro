@@ -7,19 +7,29 @@ import Layout from "../layouts/Layout.astro";
 	description="သင်ရှာဖွေနေသော စာမျက်နှာကို ရှာမတွေ့ပါ။"
 	noindex
 >
-	<section class="not-found">
-		<h1 lang="en">404</h1>
+	<section class="not-found" aria-labelledby="not-found-title">
+		<p class="not-found-code" lang="en" aria-hidden="true">404</p>
+		<span class="material-symbols-outlined not-found-icon" aria-hidden="true"
+			>search_off</span
+		>
+		<h1 id="not-found-title">စာမျက်နှာ မတွေ့ပါ</h1>
 		<p class="hero-tagline">
 			တောင်းပန်ပါသည် — သင်ရှာနေသော စာမျက်နှာကို ရှာမတွေ့ပါ။
 		</p>
 		<p class="hero-sub" lang="en">
 			The page you are looking for could not be found.
 		</p>
-		<a class="btn" href="/">
-			<span class="material-symbols-outlined" aria-hidden="true"
-				>arrow_back</span
-			>
-			မူလစာမျက်နှာသို့ ပြန်သွားရန်
-		</a>
+		<nav class="not-found-actions" aria-label="အခြားစာမျက်နှာများသို့ သွားရန်">
+			<a class="btn" href="/">
+				<span class="material-symbols-outlined" aria-hidden="true">home</span>
+				မူလစာမျက်နှာသို့ ပြန်သွားရန်
+			</a>
+			<a class="btn btn-secondary" href="/surahs/">
+				ကုရ်အာန် စူရာများကို ကြည့်ရန်
+				<span class="material-symbols-outlined" aria-hidden="true"
+					>arrow_forward</span
+				>
+			</a>
+		</nav>
 	</section>
 </Layout>

@@ -1,0 +1,67 @@
+<button
+	class="theme-toggle"
+	type="button"
+	data-theme-toggle
+	aria-pressed="false"
+	aria-label="အမှောင်အပြင်အဆင်သို့ ပြောင်းရန်"
+>
+	<span class="material-symbols-outlined theme-icon-light" aria-hidden="true"
+		>light_mode</span
+	>
+	<span class="material-symbols-outlined theme-icon-dark" aria-hidden="true"
+		>dark_mode</span
+	>
+</button>
+
+<script>
+	const themeKey = "basirah-theme";
+	const themeColor =
+		document.querySelector<HTMLMetaElement>("[data-theme-color]");
+	const media = window.matchMedia("(prefers-color-scheme: dark)");
+	const toggle = document.querySelector<HTMLButtonElement>(
+		"[data-theme-toggle]",
+	);
+
+	const readTheme = (): "light" | "dark" | null => {
+		try {
+			const stored = localStorage.getItem(themeKey);
+			return stored === "light" || stored === "dark" ? stored : null;
+		} catch {
+			return null;
+		}
+	};
+
+	const applyTheme = (theme: "light" | "dark") => {
+		document.documentElement.dataset.theme = theme;
+		if (themeColor)
+			themeColor.content = theme === "dark" ? "#101613" : "#fdfbf7";
+		if (toggle) {
+			toggle.setAttribute("aria-pressed", String(theme === "dark"));
+			toggle.setAttribute(
+				"aria-label",
+				theme === "dark"
+					? "အလင်းအပြင်အဆင်သို့ ပြောင်းရန်"
+					: "အမှောင်အပြင်အဆင်သို့ ပြောင်းရန်",
+			);
+		}
+	};
+
+	let storedTheme = readTheme();
+	applyTheme(storedTheme ?? (media.matches ? "dark" : "light"));
+
+	toggle?.addEventListener("click", () => {
+		const nextTheme =
+			document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+		storedTheme = nextTheme;
+		try {
+			localStorage.setItem(themeKey, nextTheme);
+		} catch {
+			// Private browsing or blocked storage should not break the toggle.
+		}
+		applyTheme(nextTheme);
+	});
+
+	media.addEventListener("change", (event) => {
+		if (!storedTheme) applyTheme(event.matches ? "dark" : "light");
+	});
+</script>

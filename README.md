@@ -67,7 +67,7 @@ Today the site is **deployed on Cloudflare Pages**, passes `astro check` with ze
 - **Instant search & filter** — a lightweight, dependency-free filter with _folded-text matching_: it unifies Arabic letter variants and ignores diacritics, so a search "just works" even when the user's keyboard input isn't perfectly normalized. No JavaScript framework needed.
 - **Recitation audio** — an accessible custom audio player (play/pause, seek, time display) with hashed, immutably-cached audio files for fast repeat visits.
 - **Installable web app** — a rich static Web App Manifest in Burmese (`lang: "my"`) with purpose-specific icons, app colors, scope, orientation, and categories. No service worker or offline cache is shipped.
-- **Light & dark themes** — a warm "paper & emerald & gold" light theme and a deep green-black dark theme, selected by the operating system through `prefers-color-scheme`.
+- **Light & dark themes** — a warm "paper & emerald & gold" light theme and a deep green-black dark theme. The system preference is the default; the header toggle provides a persistent manual choice.
 - **Bilingual typography done properly** — Noto Serif/Sans Myanmar, Noto Naskh Arabic, and Latin serif/sans stacks, each applied via `:lang()` selectors so every script renders beautifully.
 - **Accessibility** — skip links, ARIA labels and live regions, visible focus states, `prefers-reduced-motion` support, and semantic HTML throughout.
 - **SEO & structured data** — canonical URLs, hreflang, Open Graph & Twitter cards, XML sitemap, and JSON-LD (`WebSite`, `CollectionPage`/`ItemList`, `WebPage`, and per-surah `audio` entities).
@@ -146,7 +146,7 @@ src/
 
 - `AudioPlayer` — owns its small vanilla playback and seek script.
 - `ListFilter` — owns its delegated folded-text filter and live-region script.
-- Color scheme — follows the operating system through CSS `prefers-color-scheme`.
+- Color scheme — follows `prefers-color-scheme` by default, with a small native Astro theme toggle for persistent manual selection.
 - Installability — the browser reads `public/manifest.webmanifest` through the link in `Layout.astro`.
 
 ## Project structure
