@@ -5,7 +5,7 @@
 [![Live site](https://img.shields.io/badge/live-basirah.pages.dev-10b981?style=flat-square&logo=cloudflare-pages&logoColor=white)](https://basirah.pages.dev)
 [![Astro](https://img.shields.io/badge/Astro-7.2-ff5d01?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
 [![Bun](https://img.shields.io/badge/Bun-fbf0df?style=flat-square&logo=bun&logoColor=black)](https://bun.sh)
-[![PWA](https://img.shields.io/badge/PWA-✓-5a67d8?style=flat-square&logo=pwa&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+[![Installable web app](https://img.shields.io/badge/installable-web%20app-5a67d8?style=flat-square&logo=pwa&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 [![License: MIT](https://img.shields.io/badge/license-MIT-3da639?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
 ---
@@ -53,7 +53,7 @@ This project began in **July 2026** as a personal effort — building something 
 
 1. **Content first** — JSON files for surahs, duas, and the Names of Allah, each translated into Burmese and English with Arabic originals.
 2. **Bilingual & accessible** — Burmese translations everywhere, proper multilingual typography, keyboard-friendly navigation, semantic HTML.
-3. **Brand & PWA** — renamed from Hikmah to Basirah, custom generated icons, installable as an app, dark/light themes.
+3. **Brand & installability** — renamed from Hikmah to Basirah, with a static Web App Manifest and installable app metadata.
 4. **Hardening** — security headers, Content Security Policy, SEO passes, JSON-LD structured data, canonical URLs, and a strict content-validation layer.
 5. **Quality passes** — accessibility audits, semantic markup refactors, and the content-integrity work described below (canonical Bismillah, schema guards, and more).
 
@@ -66,7 +66,7 @@ Today the site is **deployed on Cloudflare Pages**, passes `astro check` with ze
 - **100 Names of Allah** — a beautifully formatted, searchable table from Allāh (اللَّه) to Aṣ-Ṣabūr (الصَّبُورُ), each with transliteration and bilingual meanings.
 - **Instant search & filter** — a lightweight, dependency-free filter with _folded-text matching_: it unifies Arabic letter variants and ignores diacritics, so a search "just works" even when the user's keyboard input isn't perfectly normalized. No JavaScript framework needed.
 - **Recitation audio** — an accessible custom audio player (play/pause, seek, time display) with hashed, immutably-cached audio files for fast repeat visits.
-- **PWA** — installable, with a web app manifest in Burmese (`lang: "my"`), auto-updating service worker, offline app-shell caching, and theme-aware icons.
+- **Installable web app** — a rich static Web App Manifest in Burmese (`lang: "my"`) with purpose-specific icons, app colors, scope, orientation, and categories. No service worker or offline cache is shipped.
 - **Light & dark themes** — a warm "paper & emerald & gold" light theme and a deep green-black dark theme, selected by the operating system through `prefers-color-scheme`.
 - **Bilingual typography done properly** — Noto Serif/Sans Myanmar, Noto Naskh Arabic, and Latin serif/sans stacks, each applied via `:lang()` selectors so every script renders beautifully.
 - **Accessibility** — skip links, ARIA labels and live regions, visible focus states, `prefers-reduced-motion` support, and semantic HTML throughout.
@@ -105,32 +105,32 @@ A single `duas.json` file: 18 everyday supplications (morning and evening rememb
 
 ## Tech stack
 
-| Concern                   | Choice                                               | Why                                                                                                                                       |
-| ------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Framework                 | **Astro 7** (static output)                          | Content-focused, zero client-side weight by default, best-in-class content collections                                                    |
-| Language                  | **TypeScript** (strict + `noUncheckedIndexedAccess`) | Type safety for content and code alike                                                                                                    |
-| Runtime / package manager | **Bun**                                              | Fast, modern, single-tool workflow                                                                                                        |
-| Styling                   | **Vanilla CSS** (4 files, design tokens)             | No framework tax; full control; tiny output                                                                                               |
-| Client JS                 | **Small vanilla scripts**                            | No React/Vue/etc.; AudioPlayer and ListFilter are bundled, while navigation and PWA registration use one hashed TypeScript browser module |
-| PWA                       | **`@vite-pwa/astro`**                                | First-class Astro integration, auto-updating service worker                                                                               |
-| Sitemap                   | **`@astrojs/sitemap`**                               | Zero-config XML sitemap                                                                                                                   |
-| Fonts                     | **Google Fonts** (Noto family + Material Symbols)    | Multilingual coverage, subsetted and preloaded                                                                                            |
-| Hosting                   | **Cloudflare Pages**                                 | Global edge, free tier, `_headers`/`_redirects` support                                                                                   |
-| CI / tests                | none (yet)                                           | Keep it simple; `astro check` + build gate every change                                                                                   |
+| Concern                   | Choice                                               | Why                                                                                                                    |
+| ------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Framework                 | **Astro 7** (static output)                          | Content-focused, zero client-side weight by default, best-in-class content collections                                 |
+| Language                  | **TypeScript** (strict + `noUncheckedIndexedAccess`) | Type safety for content and code alike                                                                                 |
+| Runtime / package manager | **Bun**                                              | Fast, modern, single-tool workflow                                                                                     |
+| Styling                   | **Vanilla CSS** (4 files, design tokens)             | No framework tax; full control; tiny output                                                                            |
+| Client JS                 | **Astro component scripts**                          | No React/Vue/etc.; each interactive behavior lives beside the component that owns it and Astro bundles/deduplicates it |
+| Installability            | **Static Web App Manifest**                          | Browser-native manifest linked from `Layout.astro`; no PWA plugin or service worker                                    |
+| Sitemap                   | **`@astrojs/sitemap`**                               | Zero-config XML sitemap                                                                                                |
+| Fonts                     | **Google Fonts** (Noto family + Material Symbols)    | Multilingual coverage, subsetted and preloaded                                                                         |
+| Hosting                   | **Cloudflare Pages**                                 | Global edge, free tier, `_headers`/`_redirects` support                                                                |
+| CI / tests                | none (yet)                                           | Keep it simple; `astro check` + build gate every change                                                                |
 
 The guiding principle of this project is **simplicity with integrity**: no unnecessary abstractions, no framework sprawl, no JavaScript where HTML + CSS will do. Everything is statically generated — the fastest kind of website there is.
 
 ## Architecture
 
 ```
-public/  →  static files copied as-is (robots.txt, icons, _headers, _redirects)
+public/  →  static files copied as-is (manifest, icons, _headers, _redirects)
 src/
   assets/content/    →  READ-ONLY content data (JSON collections)
   assets/audio/      →  recitation audio (.opus, bundled & hashed)
   components/        →  reusable .astro components (8)
-  layouts/           →  Layout.astro: meta, SEO, fonts, and PWA registration
+  layouts/           →  Layout.astro: meta, SEO, fonts, and manifest link
   pages/             →  routes (home, 404, surahs, duas, names-of-allah)
-  scripts/           →  one small browser module for navigation, filtering, and audio
+  site.config.ts     →  shared site title, description, and navigation metadata
   styles/            →  tokens, base, components, content
   content.config.ts  →  collection schemas + validation guards
 ```
@@ -144,39 +144,40 @@ src/
 
 **Client-side behavior** (all bundled, no frameworks):
 
-- `AudioPlayer` — initializes from the shared TypeScript browser module.
-- `ListFilter` — delegated listener with folded-text matching and a live-region result count.
+- `AudioPlayer` — owns its small vanilla playback and seek script.
+- `ListFilter` — owns its delegated folded-text filter and live-region script.
 - Color scheme — follows the operating system through CSS `prefers-color-scheme`.
-- PWA registration — the integration injects its normal external registration script.
+- Installability — the browser reads `public/manifest.webmanifest` through the link in `Layout.astro`.
 
 ## Project structure
 
 ```
 basirah/
 ├── public/                      # Static files copied to dist/
-│   ├── _headers                 # Security headers, cache policy
+│   ├── _headers                 # Security headers and cache policy
 │   ├── _redirects               # Sitemap URL aliases
 │   ├── robots.txt               # Crawler policy
 │   ├── favicon.svg / .ico       # Brand
 │   ├── og-image.png             # Open Graph share image (1200×630)
-│   └── pwa-*.png / maskable-*   # PWA icons (generated)
+│   ├── manifest.webmanifest     # Static Web App Manifest
+│   └── pwa-*.png / maskable-*   # Installable-app icons
 ├── src/
 │   ├── assets/
 │   │   ├── audio/surahs/        # 46 recitation files (.opus)
 │   │   └── content/             # READ-ONLY: essential-surahs/, essential-duas/, allah-names/
 │   ├── components/              # AudioPlayer, ListFilter, Header, Footer, SurahCard,
 │   │                            # PageHeader, JsonLd
-│   ├── layouts/Layout.astro     # Shell: SEO, fonts, and PWA link
+│   ├── layouts/Layout.astro     # Shell: SEO, fonts, and manifest link
 │   ├── pages/
 │   │   ├── index.astro          # Home: hero + section cards
-│   │   ├── 404.astro            # Custom 404 (also the PWA fallback page)
+│   │   ├── 404.astro            # Custom 404 page
 │   │   ├── surahs/              # Index + [surah] detail w/ audio player
 │   │   ├── duas/                # Index + [dua] detail
 │   │   └── names-of-allah/      # 100-names table
-│   ├── scripts/                 # Browser-only interaction module
+│   ├── site.config.ts           # Shared site metadata and navigation
 │   ├── styles/                  # tokens.css, base.css, components.css, content.css
 │   └── content.config.ts        # Content collections: loaders + Zod schemas + guards
-├── astro.config.ts              # Site config, sitemap, PWA, fonts
+├── astro.config.ts              # Static output, sitemap, and Astro Fonts
 ├── package.json
 ├── tsconfig.json                # strict; extends astro/tsconfigs/strict
 └── LICENSE                      # MIT
@@ -212,7 +213,7 @@ Deployed to **Cloudflare Pages** (currently `https://basirah.pages.dev`):
 
 **How the pieces fit together at the edge:**
 
-- **`public/_headers`** — security headers (CSP, `X-Frame-Options`, `Permissions-Policy`, …), immutable `Cache-Control: max-age=31536000` for hashed `/_astro/*` assets, `no-cache` for the service-worker files so updates propagate, and a daily cache for `manifest.webmanifest`.
+- **`public/_headers`** — security headers (CSP, `X-Frame-Options`, `Permissions-Policy`, …), immutable `Cache-Control: max-age=31536000` for hashed `/_astro/*` assets, and a daily cache for `manifest.webmanifest`. Cloudflare Web Analytics uses `cloudflareinsights.com`, which is allowed by `connect-src`.
 - **`public/_redirects`** — legacy sitemap aliases (`/sitemap.xml` and `/sitemap-index.html`) rewritten to the real `/sitemap-index.xml` with a 200.
 - **`public/robots.txt`** — allows all crawlers, excludes the heavy `/_astro/` media folder, and points to the sitemap.
 - **Content Security Policy** — served from `_headers`; it allows Astro’s same-origin scripts and Cloudflare’s automatically injected Web Analytics beacon without generated hash machinery.
@@ -221,7 +222,7 @@ Deployed to **Cloudflare Pages** (currently `https://basirah.pages.dev`):
 
 This section is a candid record of things we got wrong, learned, and fixed — in the spirit of the project: _simplicity with integrity, and honesty about the journey._
 
-1. **Keep the PWA shallow.** The integration precaches only hashed CSS, JavaScript, and fonts; it does not own HTML or audio caching. Cloudflare Pages remains the source of truth for page and media responses.
+1. **Keep installability native.** The manifest is ordinary static JSON linked by `Layout.astro`; there is no service worker, Workbox runtime, or PWA integration to become stale or intercept navigation.
 
 2. **Sitemap aliases.** The sitemap integration only emits `sitemap-index.xml`, but older references pointed at `/sitemap.xml` and `/sitemap-index.html`. Rather than fight the tooling, we added two 200-rewrites in `_redirects`. Simple, honest, edge-fast.
 
@@ -235,7 +236,7 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 
 7. **Content files are read-only by principle.** The data in `src/assets/content/` is treated as a source of truth. Changes there are deliberate, reviewed, and validated — never casual.
 
-8. **Production verification matters.** After a deploy, verify the generated font URLs and `/registerSW.js` from a clean browser profile; local `preview` alone cannot validate edge headers or Cloudflare injection.
+8. **Production verification matters.** After a deploy, verify the generated font URLs and `/manifest.webmanifest` from a clean browser profile; local `preview` alone cannot validate edge headers or Cloudflare injection.
 
 ## Accessibility, SEO & performance
 

@@ -45,3 +45,61 @@ const { src, title } = Astro.props;
 		aria-label={`${title} ၏ အချိန်ကို ရွှေ့ရန်`}
 	/>
 </div>
+
+<script>
+	const formatTime = (seconds: number) =>
+		Number.isFinite(seconds)
+			? `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`
+			: "–:––";
+
+	document
+		.querySelectorAll<HTMLElement>("[data-audio-player]")
+		.forEach((player) => {
+			const audio = player.querySelector<HTMLAudioElement>("audio");
+			const playButton =
+				player.querySelector<HTMLButtonElement>("[data-audio-play]");
+			const current = player.querySelector<HTMLElement>("[data-audio-current]");
+			const duration = player.querySelector<HTMLElement>(
+				"[data-audio-duration]",
+			);
+			const seek = player.querySelector<HTMLInputElement>("[data-audio-seek]");
+			if (!audio || !playButton || !current || !duration || !seek) return;
+
+			const icon = playButton.querySelector<HTMLElement>(
+				".material-symbols-outlined",
+			);
+			const updateState = () => {
+				const playing = !audio.paused;
+				playButton.setAttribute("aria-pressed", String(playing));
+				if (icon) icon.textContent = playing ? "pause" : "play_arrow";
+			};
+			let seeking = false;
+
+			playButton.addEventListener("click", () => {
+				if (audio.paused) void audio.play().catch(() => {});
+				else audio.pause();
+			});
+			audio.addEventListener("play", updateState);
+			audio.addEventListener("pause", updateState);
+			audio.addEventListener("ended", updateState);
+			audio.addEventListener("loadedmetadata", () => {
+				duration.textContent = formatTime(audio.duration);
+			});
+			audio.addEventListener("timeupdate", () => {
+				current.textContent = formatTime(audio.currentTime);
+				if (!seeking && audio.duration)
+					seek.value = String((audio.currentTime / audio.duration) * 1000);
+			});
+			seek.addEventListener("input", () => {
+				seeking = true;
+				current.textContent = formatTime(
+					(Number(seek.value) / 1000) * (audio.duration || 0),
+				);
+			});
+			seek.addEventListener("change", () => {
+				if (audio.duration)
+					audio.currentTime = (Number(seek.value) / 1000) * audio.duration;
+				seeking = false;
+			});
+		});
+</script>

@@ -1,0 +1,38 @@
+{
+	"name": "Basirah — ကုရ်အာန်နှင့် စွန္နသ် ဗဟုသုတ",
+	"short_name": "Basirah",
+	"description": "ကုရ်အာန်နှင့် စွန္နသ်မှ အသိပညာ ဗဟုသုတများကို မြန်မာဘာသာဖြင့် လေ့လာနိုင်သော မရှိမဖြစ် စူရဟ်များ၊ ဒိုအာများနှင့် အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော်များ။",
+	"lang": "my",
+	"dir": "ltr",
+	"id": "/",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"orientation": "portrait-primary",
+	"theme_color": "#101613",
+	"background_color": "#101613",
+	"categories": ["education", "books", "lifestyle"],
+	"icons": [
+		{
+			"src": "/pwa-64x64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "/pwa-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/pwa-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/maskable-icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	]
+}

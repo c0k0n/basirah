@@ -57,6 +57,62 @@ const isCurrent = (href: string) =>
 	</div>
 </header>
 
+<script>
+	if ("serviceWorker" in navigator) {
+		void navigator.serviceWorker
+			.getRegistrations()
+			.then((registrations) =>
+				Promise.all(
+					registrations.map((registration) => registration.unregister()),
+				),
+			);
+	}
+	if ("caches" in window) {
+		void caches
+			.keys()
+			.then((keys) =>
+				Promise.all(
+					keys
+						.filter(
+							(key) => key.includes("workbox") || key.includes("precache"),
+						)
+						.map((key) => caches.delete(key)),
+				),
+			);
+	}
+
+	const closeNav = () => {
+		document.body.classList.remove("nav-open");
+		document
+			.querySelectorAll("[data-menu-toggle]")
+			.forEach((button) => button.setAttribute("aria-expanded", "false"));
+	};
+
+	const toggleNav = () => {
+		const open =
+			document
+				.querySelector<HTMLElement>("[data-menu-toggle]")
+				?.getAttribute("aria-expanded") === "true";
+		document.body.classList.toggle("nav-open", !open);
+		document
+			.querySelectorAll("[data-menu-toggle]")
+			.forEach((button) => button.setAttribute("aria-expanded", String(!open)));
+	};
+
+	document
+		.querySelector<HTMLElement>("[data-menu-toggle]")
+		?.addEventListener("click", toggleNav);
+	document
+		.querySelectorAll("[data-nav] a")
+		.forEach((link) => link.addEventListener("click", closeNav));
+	document.addEventListener("keydown", (event) => {
+		if (event.key !== "Escape" || !document.body.classList.contains("nav-open"))
+			return;
+		closeNav();
+		document.querySelector<HTMLElement>("[data-menu-toggle]")?.focus();
+	});
+</script>
+
 <style>
 	.site-header {
 		position: sticky;
