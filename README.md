@@ -105,18 +105,18 @@ A single `duas.json` file: 18 everyday supplications (morning and evening rememb
 
 ## Tech stack
 
-| Concern                   | Choice                                               | Why                                                                                     |
-| ------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Framework                 | **Astro 7** (static output)                          | Content-focused, zero client-side weight by default, best-in-class content collections  |
-| Language                  | **TypeScript** (strict + `noUncheckedIndexedAccess`) | Type safety for content and code alike                                                  |
-| Runtime / package manager | **Bun**                                              | Fast, modern, single-tool workflow                                                      |
-| Styling                   | **Vanilla CSS** (4 files, design tokens)             | No framework tax; full control; tiny output                                             |
-| Client JS                 | **Bundled `<script>` modules only**                  | No React/Vue/etc.; AudioPlayer, ListFilter, theme, and PWA scripts are plain TypeScript |
-| PWA                       | **`@vite-pwa/astro`**                                | First-class Astro integration, auto-updating service worker                             |
-| Sitemap                   | **`@astrojs/sitemap`**                               | Zero-config XML sitemap                                                                 |
-| Fonts                     | **Google Fonts** (Noto family + Material Symbols)    | Multilingual coverage, subsetted and preloaded                                          |
-| Hosting                   | **Cloudflare Pages**                                 | Global edge, free tier, `_headers`/`_redirects` support                                 |
-| CI / tests                | none (yet)                                           | Keep it simple; `astro check` + build gate every change                                 |
+| Concern                   | Choice                                               | Why                                                                                                                                       |
+| ------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework                 | **Astro 7** (static output)                          | Content-focused, zero client-side weight by default, best-in-class content collections                                                    |
+| Language                  | **TypeScript** (strict + `noUncheckedIndexedAccess`) | Type safety for content and code alike                                                                                                    |
+| Runtime / package manager | **Bun**                                              | Fast, modern, single-tool workflow                                                                                                        |
+| Styling                   | **Vanilla CSS** (4 files, design tokens)             | No framework tax; full control; tiny output                                                                                               |
+| Client JS                 | **Small vanilla scripts**                            | No React/Vue/etc.; AudioPlayer and ListFilter are bundled, while navigation and PWA registration use one hashed TypeScript browser module |
+| PWA                       | **`@vite-pwa/astro`**                                | First-class Astro integration, auto-updating service worker                                                                               |
+| Sitemap                   | **`@astrojs/sitemap`**                               | Zero-config XML sitemap                                                                                                                   |
+| Fonts                     | **Google Fonts** (Noto family + Material Symbols)    | Multilingual coverage, subsetted and preloaded                                                                                            |
+| Hosting                   | **Cloudflare Pages**                                 | Global edge, free tier, `_headers`/`_redirects` support                                                                                   |
+| CI / tests                | none (yet)                                           | Keep it simple; `astro check` + build gate every change                                                                                   |
 
 The guiding principle of this project is **simplicity with integrity**: no unnecessary abstractions, no framework sprawl, no JavaScript where HTML + CSS will do. Everything is statically generated — the fastest kind of website there is.
 

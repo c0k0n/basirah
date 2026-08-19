@@ -19,12 +19,13 @@
 	"private": true,
 	"scripts": {
 		"astro": "astro",
-		"build": "bun run generate-headers && bun run generate-pwa-assets && astro check && astro build",
+		"build": "bun run generate-headers && bun run generate-pwa-assets && astro check && astro build && bun run finalize-headers",
 		"check": "astro check",
 		"dev": "astro dev",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"generate-headers": "bun scripts/generate-headers.mts",
+		"finalize-headers": "bun scripts/finalize-headers.mts",
 		"generate-pwa-assets": "bun scripts/generate-pwa-assets.mts",
 		"preview": "astro preview",
 		"sync": "astro sync"
