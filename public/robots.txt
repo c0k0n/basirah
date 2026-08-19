@@ -1,21 +1,16 @@
 # Basirah — Islamic knowledge for Myanmar Muslims
 # https://basirah.pages.dev
 #
-# The site is fully static and public: every page is meant to be
-# discovered by search engines and AI answer engines alike.
-# Policy summary:
-#   - All crawlers may index the whole site.
-#   - /_astro/ (hashed build assets: scripts, styles, fonts, and Qur'an
-#     recitation audio) is excluded: it is subresource/media content,
-#     not indexable pages, and skipping it saves crawlers from
-#     downloading large files.
-#   - AI crawlers are deliberately allowed (default). Being citable by
-#     AI systems is part of the site's mission to share Islamic
-#     knowledge; no blocks are defined.
+# This site is public and intended to be discoverable and citable.
+# robots.txt expresses crawl preferences; it is not an access-control layer.
+# Keep hashed CSS/JS/font/audio assets crawlable because search engines may
+# need CSS and JavaScript to render pages correctly.
+# AI/search crawlers are allowed by the default rule.
 
 User-agent: *
 Allow: /
 
-Disallow: /_astro/
+# Cloudflare's internal analytics and edge endpoints are not site content.
+Disallow: /cdn-cgi/
 
 Sitemap: https://basirah.pages.dev/sitemap-index.xml

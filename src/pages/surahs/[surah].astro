@@ -17,6 +17,8 @@ interface Props {
 	audioUrl: string | null;
 }
 
+type SurahVerse = CollectionEntry<"surahs">["data"]["verses"][number];
+
 export async function getStaticPaths() {
 	// Recitation files live in src/assets and are bundled by Astro at build
 	// time, which hashes their URLs (/_astro/...) for immutable caching.
@@ -207,7 +209,7 @@ const prostration = meta.prostration_verse;
 	<h2>အာယသ်များ</h2>
 	<ol class="verse-list">
 		{
-			surah.data.verses.map((verse) => (
+			surah.data.verses.map((verse: SurahVerse) => (
 				<li class="verse">
 					<header class="verse-head">
 						<span class="verse-number">အာယသ် {verse.verse_number}</span>

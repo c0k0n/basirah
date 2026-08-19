@@ -6,6 +6,23 @@ const requiredText = z.string().trim().min(1);
 const requiredNumber = z.number().int().positive();
 const numericId = z.string().regex(/^\d+$/);
 
+const duaItemFields = {
+	title_mm: requiredText,
+	title_en: requiredText,
+	arabic: requiredText,
+	burmese_pronunciation: requiredText,
+	english_meaning: requiredText,
+	burmese_meaning: requiredText,
+};
+
+const nameItemFields = {
+	arabic: requiredText,
+	transliteration: requiredText,
+	english_meaning: requiredText,
+	burmese_meaning: requiredText,
+	burmese_transliteration: requiredText,
+};
+
 const BISMILLAH_CANONICAL = {
 	arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
 	english_translation:
@@ -86,8 +103,14 @@ const duas = defineCollection({
 		parser: (text) => {
 			const parsed = z
 				.object({
-					title: z.string(),
-					items: z.array(z.looseObject({ id: z.number() })),
+					title: requiredText,
+					language: z.object({ source: z.array(requiredText).min(1) }),
+					items: z.array(
+						z.object({
+							id: requiredNumber,
+							...duaItemFields,
+						}),
+					),
 				})
 				.parse(JSON.parse(text));
 			return parsed.items.map((item) => ({
@@ -102,12 +125,7 @@ const duas = defineCollection({
 		meta: z.object({
 			title: requiredText,
 		}),
-		title_mm: requiredText,
-		title_en: requiredText,
-		arabic: requiredText,
-		burmese_pronunciation: requiredText,
-		english_meaning: requiredText,
-		burmese_meaning: requiredText,
+		...duaItemFields,
 	}),
 });
 
@@ -116,8 +134,19 @@ const names = defineCollection({
 		parser: (text) => {
 			const parsed = z
 				.object({
-					metadata: z.looseObject({ title_arabic: z.string() }),
-					names: z.array(z.looseObject({ number: z.number() })),
+					metadata: z.object({
+						title_arabic: requiredText,
+						title_transliteration: requiredText,
+						title_burmese: requiredText,
+						name_count: requiredNumber,
+						summary_burmese: requiredText,
+					}),
+					names: z.array(
+						z.object({
+							number: requiredNumber,
+							...nameItemFields,
+						}),
+					),
 				})
 				.parse(JSON.parse(text));
 			return parsed.names.map((name) => ({
@@ -137,11 +166,7 @@ const names = defineCollection({
 			name_count: requiredNumber,
 			summary_burmese: requiredText,
 		}),
-		arabic: requiredText,
-		transliteration: requiredText,
-		english_meaning: requiredText,
-		burmese_meaning: requiredText,
-		burmese_transliteration: requiredText,
+		...nameItemFields,
 	}),
 });
 
