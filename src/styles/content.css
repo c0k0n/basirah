@@ -314,6 +314,11 @@
 	font-size: 0.9rem;
 }
 
+.verse-section-title {
+	margin-block: clamp(2rem, 5vw, 3rem) 0.9rem;
+	text-align: center;
+}
+
 /* Audio player */
 
 .audio-player {
@@ -380,7 +385,7 @@
 	list-style: none;
 	display: grid;
 	gap: 1.25rem;
-	margin-top: 2.25rem;
+	margin-top: 0;
 }
 
 .verse {
@@ -842,5 +847,10 @@
 	.name-table td.name-cell-pronunciation,
 	.name-table td.name-cell-meaning {
 		margin-top: 0.45rem;
+	}
+
+	.name-table td.name-cell-pronunciation {
+		padding-inline-start: 8.5rem;
+		white-space: nowrap;
 	}
 }

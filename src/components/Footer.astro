@@ -12,13 +12,20 @@ const pickSurah = (id: string) => {
 	return surah
 		? {
 				href: `/surahs/${surah.id}/`,
-				label: surah.data.surah_metadata.name_transliteration,
+				burmese: surah.data.surah_metadata.name_burmese_title,
+				english: surah.data.surah_metadata.name_transliteration,
 			}
 		: null;
 };
 const pickDua = (id: string) => {
 	const dua = duas.find((d) => d.id === id);
-	return dua ? { href: `/duas/${dua.id}/`, label: dua.data.title_en } : null;
+	return dua
+		? {
+				href: `/duas/${dua.id}/`,
+				burmese: dua.data.title_mm,
+				english: dua.data.title_en,
+			}
+		: null;
 };
 
 const notableSurahs = [
@@ -28,11 +35,15 @@ const notableSurahs = [
 	"surah-an-nas",
 ]
 	.map(pickSurah)
-	.filter((x): x is { href: string; label: string } => x !== null);
+	.filter(
+		(x): x is { href: string; burmese: string; english: string } => x !== null,
+	);
 
 const notableDuas = ["14", "2", "12", "9"]
 	.map(pickDua)
-	.filter((x): x is { href: string; label: string } => x !== null);
+	.filter(
+		(x): x is { href: string; burmese: string; english: string } => x !== null,
+	);
 ---
 
 <footer class="site-footer">
@@ -43,19 +54,27 @@ const notableDuas = ["14", "2", "12", "9"]
 		>
 			<section class="footer-col" aria-labelledby="footer-about-title">
 				<h2 class="footer-brand" id="footer-about-title">Basirah</h2>
-				<p class="footer-note" lang="en">
-					An ad-free Islamic knowledge site for Myanmar Muslims.
+				<p class="footer-note">
+					<span
+						>မြန်မာမွတ်စလင်များအတွက် ကြော်ငြာကင်းသော အစ္စလာမ့်ဗဟုသုတဝက်ဘ်ဆိုက်။</span
+					>
+					<span lang="en"
+						>An ad-free Islamic knowledge site for Myanmar Muslims.</span
+					>
 				</p>
 			</section>
 
 			<nav class="footer-col" aria-label="ထင်ရှားသော စူရဟ်များ">
-				<h2>ထင်ရှားသော စူရဟ်များ</h2>
+				<h2>
+					ထင်ရှားသော စူရဟ်များ <span lang="en">· Featured Surahs</span>
+				</h2>
 				<ul>
 					{
 						notableSurahs.map((surah) => (
 							<li>
-								<a href={surah.href} lang="en">
-									{surah.label}
+								<a href={surah.href}>
+									<span>{surah.burmese}</span>
+									<span lang="en">{surah.english}</span>
 								</a>
 							</li>
 						))
@@ -64,13 +83,16 @@ const notableDuas = ["14", "2", "12", "9"]
 			</nav>
 
 			<nav class="footer-col" aria-label="ထင်ရှားသော ဒိုအာများ">
-				<h2>ထင်ရှားသော ဒိုအာများ</h2>
+				<h2>
+					ထင်ရှားသော ဒိုအာများ <span lang="en">· Featured Duas</span>
+				</h2>
 				<ul>
 					{
 						notableDuas.map((dua) => (
 							<li>
-								<a href={dua.href} lang="en">
-									{dua.label}
+								<a href={dua.href}>
+									<span>{dua.burmese}</span>
+									<span lang="en">{dua.english}</span>
 								</a>
 							</li>
 						))

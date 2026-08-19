@@ -458,12 +458,21 @@ body.nav-open .menu-icon-open {
 	line-height: 1.6;
 }
 
+.footer-note span {
+	display: block;
+}
+
 .footer-col h2 {
 	margin-block: 0 1rem;
 	font-size: 0.8rem;
 	font-weight: 700;
 	letter-spacing: 0.08em;
 	color: var(--text-muted);
+}
+
+.footer-col h2 span {
+	font-weight: 400;
+	letter-spacing: normal;
 }
 
 .footer-col ul {
@@ -477,6 +486,16 @@ body.nav-open .menu-icon-open {
 	font-size: 0.95rem;
 	text-decoration: none;
 	transition: color 0.15s ease;
+}
+
+.footer-col a span {
+	display: block;
+}
+
+.footer-col a span + span {
+	margin-top: 0.05rem;
+	font-size: 0.8rem;
+	color: color-mix(in srgb, var(--text-muted) 82%, transparent);
 }
 
 .footer-col a:hover {
