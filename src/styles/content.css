@@ -403,7 +403,7 @@
 	border-radius: 999px;
 	background: color-mix(in srgb, var(--primary) 12%, transparent);
 	color: var(--primary);
-	font-family: var(--font-mono);
+	font-family: var(--font-myanmar-sans);
 	font-size: 0.85rem;
 	font-weight: 700;
 }
@@ -425,8 +425,7 @@
 }
 
 /* Burmese text inside compact labels needs the Myanmar stack. */
-.surah-hero-number,
-.verse-number {
+.surah-hero-number {
 	font-family: var(--font-myanmar-sans);
 }
 

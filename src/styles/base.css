@@ -134,10 +134,9 @@ a:hover {
 	unicode-bidi: isolate;
 }
 
-/* Material Symbols (Google Icons) — used via ligature text,
-   e.g. <span class="material-symbols-outlined">home</span>.
+/* Material Symbols (Google Icons) — used via ligature text.
    Declared after the :lang() rules so the icon font wins the equal-
-   specificity tie: icon spans inherit the page's resolved language. */
+   specificity tie: icon elements inherit the page's resolved language. */
 .material-symbols-outlined {
 	font-family: var(--font-icons);
 	font-weight: normal;

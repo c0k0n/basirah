@@ -37,13 +37,16 @@ const notableDuas = ["14", "2", "12", "9"]
 
 <footer class="site-footer">
 	<div class="container">
-		<div class="footer-top">
-			<div class="footer-col footer-about">
-				<p class="footer-brand">Basirah</p>
+		<section
+			class="footer-top"
+			aria-label="Basirah အကြောင်းနှင့် အရေးကြီးလင့်ခ်များ"
+		>
+			<section class="footer-col" aria-labelledby="footer-about-title">
+				<h2 class="footer-brand" id="footer-about-title">Basirah</h2>
 				<p class="footer-note" lang="en">
 					An ad-free Islamic knowledge site for Myanmar Muslims.
 				</p>
-			</div>
+			</section>
 
 			<nav class="footer-col" aria-label="ထင်ရှားသော စူရဟ်များ">
 				<h2>ထင်ရှားသော စူရဟ်များ</h2>
@@ -74,101 +77,18 @@ const notableDuas = ["14", "2", "12", "9"]
 					}
 				</ul>
 			</nav>
-		</div>
+		</section>
 
-		<div class="footer-bottom">
+		<section
+			class="footer-bottom"
+			aria-label="Basirah မူပိုင်ခွင့်နှင့် ရည်ရွယ်ချက်"
+		>
 			<p lang="en">© {year} Basirah</p>
 			<p>
 				အလ္လာဟ်အရှင်မြတ်၏
 				ချစ်ခင်ခြင်း၊သနားကြင်နာခြင်းတို့ကိုတောင့်တမျှော်ကိုးလျက်
 				ရည်ရွယ်၍မျှဝေပါသည်။
 			</p>
-		</div>
+		</section>
 	</div>
 </footer>
-
-<style>
-	.site-footer {
-		position: relative;
-		border-top: 1px solid var(--border);
-		background: var(--surface-muted);
-	}
-
-	.site-footer::before {
-		content: "";
-		display: block;
-		height: 2px;
-		background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
-		opacity: 0.7;
-	}
-
-	.footer-top {
-		display: grid;
-		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
-		gap: 2.5rem;
-		padding-block: 3rem 2.25rem;
-	}
-
-	.footer-brand {
-		font-family: var(--font-serif);
-		font-size: 1.3rem;
-		font-weight: 700;
-	}
-
-	.footer-note {
-		margin-block-start: 0.9rem;
-		max-width: 30ch;
-		color: var(--text-muted);
-		font-size: 0.9rem;
-		line-height: 1.6;
-	}
-
-	.footer-col h2 {
-		margin-block: 0 1rem;
-		font-size: 0.8rem;
-		font-weight: 700;
-		letter-spacing: 0.08em;
-		color: var(--text-muted);
-	}
-
-	.footer-col ul {
-		list-style: none;
-		display: grid;
-		gap: 0.55rem;
-	}
-
-	.footer-col a {
-		color: var(--text-muted);
-		font-size: 0.95rem;
-		text-decoration: none;
-		transition: color 0.15s ease;
-	}
-
-	.footer-col a:hover {
-		color: var(--primary);
-	}
-
-	.footer-bottom {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-between;
-		gap: 0.75rem;
-		padding-block: 1.25rem 2rem;
-		border-top: 1px solid var(--border);
-		color: var(--text-muted);
-		font-size: 0.85rem;
-	}
-
-	.footer-bottom p {
-		margin: 0;
-	}
-
-	@media (max-width: 52rem) {
-		.footer-top {
-			grid-template-columns: 1fr;
-			gap: 2rem;
-			padding-block: 2.5rem 2rem;
-		}
-	}
-</style>

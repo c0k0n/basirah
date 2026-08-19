@@ -58,7 +58,10 @@ const surahs = (await getCollection("surahs")).sort(
 		sub={`စူရဟ် ${surahs.length} စူရဟ်ကို မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံများနှင့်တကွ ဖတ်ရှုနားထောင်နိုင်ပါသည်။`}
 	/>
 
-	<div data-filter-scope>
+	<section
+		data-filter-scope
+		aria-label="စူရဟ်များကို ရှာဖွေရန်နှင့် ကြည့်ရှုရန်"
+	>
 		<ListFilter
 			label="စူရဟ်ရှာဖွေရန်"
 			placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
@@ -71,5 +74,5 @@ const surahs = (await getCollection("surahs")).sort(
 			သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။
 			<span lang="en">No surahs found.</span>
 		</p>
-	</div>
+	</section>
 </Layout>

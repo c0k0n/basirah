@@ -56,7 +56,10 @@ const meta = duas[0]!.data.meta;
 		sub="နေ့စဉ် ဆုတောင်းချက်များနှင့် ဇစ်ကိရ်များကို အာရဗီစာသား၊ မြန်မာအသံထွက်နှင့် အဓိပ္ပာယ်တို့နှင့်တကွ လေ့လာနိုင်ပါသည်။"
 	/>
 
-	<div data-filter-scope>
+	<section
+		data-filter-scope
+		aria-label="ဒိုအာများကို ရှာဖွေရန်နှင့် ကြည့်ရှုရန်"
+	>
 		<ListFilter
 			label="ဒိုအာရှာဖွေရန်"
 			placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
@@ -94,5 +97,5 @@ const meta = duas[0]!.data.meta;
 			သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော ဒိုအာမတွေ့ပါ။
 			<span lang="en">No duas found.</span>
 		</p>
-	</div>
+	</section>
 </Layout>

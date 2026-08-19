@@ -60,114 +60,75 @@ const logoUrl = new URL("/og-image.png", Astro.site).href;
 		<ul class="card-grid">
 			<li>
 				<a class="card" href="/surahs/">
-					<div class="card-top">
+					<header class="card-top">
 						<span class="card-icon material-symbols-outlined" aria-hidden="true"
 							>book</span
 						>
 						<span class="card-count">{surahCount}</span>
-					</div>
+					</header>
 					<h2 class="card-title">
-						<span class="card-title-burmese">စူရဟ်များ</span>
+						<strong>စူရဟ်များ</strong>
 						<span class="card-title-en" lang="en">Surahs</span>
 					</h2>
 					<p class="card-desc">
 						မြန်မာဘာသာပြန်နှင့် အသံဖြင့် ဖတ်ရှုနားထောင်နိုင်သော အခြေခံစူရဟ်များ။
 					</p>
-					<div class="card-cta">
+					<footer class="card-cta">
 						လေ့လာရန်
 						<span class="material-symbols-outlined" aria-hidden="true"
 							>arrow_forward</span
 						>
-					</div>
+					</footer>
 				</a>
 			</li>
 
 			<li>
 				<a class="card" href="/duas/">
-					<div class="card-top">
+					<header class="card-top">
 						<span class="card-icon material-symbols-outlined" aria-hidden="true"
 							>favorite</span
 						>
 						<span class="card-count">{duaCount}</span>
-					</div>
+					</header>
 					<h2 class="card-title">
-						<span class="card-title-burmese">ဒိုအာများ</span>
+						<strong>ဒိုအာများ</strong>
 						<span class="card-title-en" lang="en">Duas</span>
 					</h2>
 					<p class="card-desc">
 						နေ့စဉ်ဘဝအတွက် မရှိမဖြစ် ဒိုအာများကို အဓိပ္ပာယ်နှင့်တကွ။
 					</p>
-					<div class="card-cta">
+					<footer class="card-cta">
 						လေ့လာရန်
 						<span class="material-symbols-outlined" aria-hidden="true"
 							>arrow_forward</span
 						>
-					</div>
+					</footer>
 				</a>
 			</li>
 
 			<li>
 				<a class="card" href="/names-of-allah/">
-					<div class="card-top">
+					<header class="card-top">
 						<span class="card-icon material-symbols-outlined" aria-hidden="true"
 							>star</span
 						>
 						<span class="card-count">{nameCount}</span>
-					</div>
+					</header>
 					<h2 class="card-title">
-						<span class="card-title-burmese">အလ္လာဟ်၏ နာမတော်များ</span>
+						<strong>အလ္လာဟ်၏ နာမတော်များ</strong>
 						<span class="card-title-en" lang="en">Names of Allah</span>
 					</h2>
 					<p class="card-desc">
 						အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးကို အဓိပ္ပာယ်နှင့်တကွ။
 					</p>
-					<div class="card-cta">
+					<footer class="card-cta">
 						လေ့လာရန်
 						<span class="material-symbols-outlined" aria-hidden="true"
 							>arrow_forward</span
 						>
-					</div>
+					</footer>
 				</a>
 			</li>
 		</ul>
 	</section>
 </Layout>
-
-<style>
-	.hero-brand {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.55rem;
-	}
-
-	.hero-name {
-		font-family: var(--font-serif);
-		font-size: clamp(2.75rem, 6vw, 4.25rem);
-		font-weight: 700;
-		letter-spacing: 0.01em;
-	}
-
-	.hero-arabic {
-		display: block;
-		font-size: clamp(2rem, 4.5vw, 3rem);
-		line-height: 1.5;
-		color: var(--accent);
-	}
-
-	.hero-burmese {
-		display: block;
-		font-size: 1.1rem;
-		font-weight: 600;
-		color: var(--text-muted);
-		letter-spacing: 0.04em;
-	}
-
-	.hero-intro {
-		margin-top: 0.75rem;
-		color: var(--text-muted);
-		max-width: 42rem;
-		margin-inline: auto;
-		line-height: 1.7;
-	}
-</style>

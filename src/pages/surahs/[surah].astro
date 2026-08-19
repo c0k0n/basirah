@@ -194,11 +194,14 @@ const prostration = meta.prostration_verse;
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<h2 class="visually-hidden">ဗစ်မီလ္လာဟ်</h2>
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
-		<div class="bismillah-translations">
+		<section
+			class="bismillah-translations"
+			aria-label="ဗစ်မီလ္လာဟ် ဘာသာပြန်များ"
+		>
 			<p>{bismillah.burmese_transliteration}</p>
 			<p lang="en">{bismillah.english_translation}</p>
 			<p>{bismillah.burmese_translation}</p>
-		</div>
+		</section>
 	</section>
 
 	<h2>အာယသ်များ</h2>
@@ -206,14 +209,14 @@ const prostration = meta.prostration_verse;
 		{
 			surah.data.verses.map((verse) => (
 				<li class="verse">
-					<div class="verse-head">
+					<header class="verse-head">
 						<span class="verse-number">အာယသ် {verse.verse_number}</span>
 						{verse.arabic_marker && (
 							<span class="verse-prostration" lang="ar">
 								{verse.arabic_marker} سَجْدَة
 							</span>
 						)}
-					</div>
+					</header>
 					<p class="verse-arabic" lang="ar" dir="rtl">
 						{verse.arabic}
 					</p>

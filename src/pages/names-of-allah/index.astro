@@ -56,13 +56,20 @@ const meta = names[0]!.data.meta;
 		sub={meta.summary_burmese}
 	/>
 
-	<div data-filter-scope>
+	<section
+		data-filter-scope
+		aria-label="အလ္လာဟ်၏ နာမတော်များကို ရှာဖွေရန်နှင့် ကြည့်ရှုရန်"
+	>
 		<ListFilter
 			label="နာမတော်ရှာဖွေရန်"
 			placeholder="အာရဗီ၊ အသံထွက် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
 		/>
 
-		<div class="name-table-wrap" data-filter-list>
+		<section
+			class="name-table-wrap"
+			data-filter-list
+			aria-label="အလ္လာဟ်၏ နာမတော်များ စာရင်း"
+		>
 			<table class="name-table">
 				<caption class="visually-hidden">
 					{meta.title_burmese}
@@ -107,6 +114,6 @@ const meta = names[0]!.data.meta;
 				သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော နာမတော်မတွေ့ပါ။
 				<span lang="en">No names found.</span>
 			</p>
-		</div>
-	</div>
+		</section>
+	</section>
 </Layout>

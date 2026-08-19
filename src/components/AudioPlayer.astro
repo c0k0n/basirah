@@ -7,10 +7,9 @@ interface Props {
 const { src, title } = Astro.props;
 ---
 
-<div
+<section
 	class="audio-player"
 	data-audio-player
-	role="group"
 	aria-label={`${title} ၏ အသံဖွင့်စက်`}
 	data-title={title}
 >
@@ -29,11 +28,11 @@ const { src, title } = Astro.props;
 	>
 		<span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
 	</button>
-	<div class="audio-times" aria-hidden="true">
-		<span data-audio-current>0:00</span>
+	<output class="audio-times" aria-hidden="true">
+		<time data-audio-current>0:00</time>
 		/
-		<span data-audio-duration>–:––</span>
-	</div>
+		<time data-audio-duration>–:––</time>
+	</output>
 	<input
 		class="audio-seek"
 		type="range"
@@ -44,7 +43,7 @@ const { src, title } = Astro.props;
 		data-audio-seek
 		aria-label={`${title} ၏ အချိန်ကို ရွှေ့ရန်`}
 	/>
-</div>
+</section>
 
 <script>
 	const formatTime = (seconds: number) =>
