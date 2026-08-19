@@ -1,298 +1,208 @@
 # Basirah — بَصِيرَة
 
-> **Islamic knowledge for Myanmar Muslims.** Qur'an surahs with recitation audio, essential duas, and the Names of Allah — presented faithfully in **Burmese, English, and Arabic**.
+> Islamic knowledge for Myanmar Muslims: selected Qur'an surahs with recitation audio, essential duas, and the Names of Allah in Burmese, English, and Arabic.
 
 [![Live site](https://img.shields.io/badge/live-basirah.pages.dev-10b981?style=flat-square&logo=cloudflare-pages&logoColor=white)](https://basirah.pages.dev)
-[![Astro](https://img.shields.io/badge/Astro-7.2-ff5d01?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
+[![Astro 7.2.3](https://img.shields.io/badge/Astro-7.2.3-ff5d01?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
 [![Bun](https://img.shields.io/badge/Bun-fbf0df?style=flat-square&logo=bun&logoColor=black)](https://bun.sh)
-[![Installable web app](https://img.shields.io/badge/installable-web%20app-5a67d8?style=flat-square&logo=pwa&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 [![License: MIT](https://img.shields.io/badge/license-MIT-3da639?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
----
+## Overview
 
-## Table of contents
+Basirah is a static Astro website for Myanmar Muslims. Burmese is the primary interface language, with English translations/transliterations and Arabic source text where relevant. The site currently contains selected Qur'an surahs, essential duas, and the Names of Allah.
 
-- [What is Basirah?](#what-is-basirah)
-- [The story so far](#the-story-so-far)
-- [Features](#features)
-- [Content](#content)
-  - [Surahs (46)](#surahs)
-  - [Essential duas (18)](#essential-duas)
-  - [The Names of Allah (100)](#the-names-of-allah)
-  - [Recitation audio](#recitation-audio)
-- [Tech stack](#tech-stack)
-- [Architecture](#architecture)
-- [Project structure](#project-structure)
-- [Getting started](#getting-started)
-- [Deployment](#deployment)
-- [Notes & lessons learned](#notes--lessons-learned)
-- [Accessibility, SEO & performance](#accessibility-seo--performance)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+The project is intentionally small and framework-free on the client: Astro renders the pages to HTML, CSS is written as vanilla CSS, and only a few components ship browser JavaScript for required interactions.
 
----
+## Current content
 
-## What is Basirah?
+The content files under `src/assets/content/` are read-only project data. Their structure is validated through Astro Content Collections and Zod schemas in `src/content.config.ts`.
 
-Basirah (بَصِيرَة, "insight" or "clear perception") is a small, lovingly built **static website** that gathers foundational Islamic knowledge in one calm, beautiful place — designed first and foremost for **Myanmar Muslims**, and written so that anyone can benefit.
+| Collection     | Source                     | Current items |
+| -------------- | -------------------------- | ------------: |
+| Surahs         | `essential-surahs/*.json`  |            46 |
+| Essential duas | `essential-duas/duas.json` |            18 |
+| Names of Allah | `allah-names/names.json`   |           100 |
 
-The site is **trilingual by design**:
+The 46 selected surahs begin with Al-Fatihah (1) and include selected surahs through An-Nas (114); they are not a continuous range. The exact selected numbers are defined by the JSON metadata and are used to generate the routes.
 
-- **Burmese (မြန်မာ)** — the primary language of the interface and explanations, in a clear, warm Burmese voice.
-- **English** — translations and transliterations for readers who think in English.
-- **Arabic** — the original Qur'anic text and Arabic script, always presented with the accuracy it deserves.
+Each surah includes metadata, a canonical Bismillah object, and verses with Arabic text, English translation, Burmese translation, and Burmese transliteration. Optional verse notes and prostration-verse metadata are supported by the schema when present in the data.
 
-Everything is free, public, and meant to be shared. No accounts, no tracking beyond Cloudflare's privacy-respecting Web Analytics, no noise. Just knowledge, presented with care.
+Each dua includes Burmese and English titles, Arabic text, Burmese pronunciation, and Burmese and English meanings.
 
-> The site used to be called **Hikmah** (حِكْمَة, "wisdom") — a name we still love. Basirah felt truer to where the project is going: not just collecting knowledge, but helping people _see_ it clearly.
+Each Name of Allah includes Arabic, transliteration, English meaning, Burmese meaning, and Burmese transliteration.
 
-## The story so far
-
-This project began in **July 2026** as a personal effort — building something useful for the Myanmar Muslim community. From the first commit (searchable pages for surahs and the Names of Allah) to today, the journey has been one of continuous, humble refinement:
-
-1. **Content first** — JSON files for surahs, duas, and the Names of Allah, each translated into Burmese and English with Arabic originals.
-2. **Bilingual & accessible** — Burmese translations everywhere, proper multilingual typography, keyboard-friendly navigation, semantic HTML.
-3. **Brand & installability** — renamed from Hikmah to Basirah, with a static Web App Manifest and installable app metadata.
-4. **Hardening** — security headers, Content Security Policy, SEO passes, JSON-LD structured data, canonical URLs, and a strict content-validation layer.
-5. **Quality passes** — accessibility audits, semantic markup refactors, and the content-integrity work described below (canonical Bismillah, schema guards, and more).
-
-Today the site is **deployed on Cloudflare Pages**, passes `astro check` with zero errors, and ships a fully static build — every page pre-rendered, fast, and crawlable.
+There are 46 `.opus` recitation files in `src/assets/audio/surahs/`. The Surah detail route maps audio files to surahs by filename and imports them through Astro/Vite so the production URLs are emitted as hashed build assets.
 
 ## Features
 
-- **46 Qur'an surahs** — from Al-Fātiḥah through Al-Bayyinah — each with Arabic text, English and Burmese translations, Burmese transliteration, metadata (revelation place & order, meaning of the title), and a **recitation audio player** (46 high-quality `.opus` files, one per surah).
-- **18 essential duas** — everyday supplications with Arabic, Burmese pronunciation, and both Burmese and English meanings, filterable and searchable.
-- **100 Names of Allah** — a beautifully formatted, searchable table from Allāh (اللَّه) to Aṣ-Ṣabūr (الصَّبُورُ), each with transliteration and bilingual meanings.
-- **Instant search & filter** — a lightweight, dependency-free filter with _folded-text matching_: it unifies Arabic letter variants and ignores diacritics, so a search "just works" even when the user's keyboard input isn't perfectly normalized. No JavaScript framework needed.
-- **Recitation audio** — an accessible custom audio player (play/pause, seek, time display) with hashed, immutably-cached audio files for fast repeat visits.
-- **Installable web app** — a rich static Web App Manifest in Burmese (`lang: "my"`) with purpose-specific icons, app colors, scope, orientation, and categories. No service worker or offline cache is shipped.
-- **Light & dark themes** — a warm "paper & emerald & gold" light theme and a deep green-black dark theme. The system preference is the default; the header toggle provides a persistent manual choice.
-- **Bilingual typography done properly** — Noto Serif/Sans Myanmar, Noto Naskh Arabic, and Latin serif/sans stacks, each applied via `:lang()` selectors so every script renders beautifully.
-- **Accessibility** — skip links, ARIA labels and live regions, visible focus states, `prefers-reduced-motion` support, and semantic HTML throughout.
-- **SEO & structured data** — canonical URLs, hreflang, Open Graph & Twitter cards, XML sitemap, and JSON-LD (`WebSite`, `CollectionPage`/`ItemList`, `WebPage`, and per-surah `audio` entities).
-- **Security** — strict Content Security Policy, `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy`, `Permissions-Policy`, and a `robots.txt` that welcomes search engines and other crawlers alike (while politely excluding the heavy media folder).
+- Static home, collection, detail, 404, and 500 pages.
+- 46 selected Surah pages with metadata, translations, transliterations, verses, navigation, structured data, and recitation audio where the matching asset exists.
+- Search/filter interfaces for Surahs, duas, and the Names of Allah.
+- Native HTML audio controls wrapped by a small custom play/pause, seek, and time-display interface.
+- Responsive navigation with a mobile menu.
+- Light and dark themes using the system preference by default and a persistent header toggle.
+- Material Symbols Outlined icons supplied through Astro's Fonts API and configured glyph subsets.
+- Static Web App Manifest linked from the shared layout. No PWA plugin, Workbox bundle, service worker, or offline cache is shipped.
+- Burmese, English, and Arabic typography using Astro-managed Google font providers and `:lang()` CSS selectors.
+- Skip link, landmarks, visible focus styles, labels, live filter feedback, reduced-motion support, semantic lists/tables/details, and responsive layouts.
+- Page titles, descriptions, canonical URLs for indexable pages, `hreflang`, Open Graph metadata, Twitter card metadata, XML sitemap, and JSON-LD on the main content pages.
+- Cloudflare-oriented headers, redirects, cache rules, robots policy, and deployment workflow.
 
-## Content
+## Technology
 
-All content lives in **`src/assets/content/`** and is treated as **read-only data** — it is the source of truth, never generated or transformed at build time. Three collections are defined in `src/content.config.ts` using Astro's **Content Collections API** with **Zod schema validation**:
-
-| Collection | Source                                         | Items | Loader                   |
-| ---------- | ---------------------------------------------- | ----- | ------------------------ |
-| `surahs`   | `essential-surahs/*.json` (one file per surah) | 46    | `glob()`                 |
-| `duas`     | `essential-duas/duas.json`                     | 18    | `file()` + custom parser |
-| `names`    | `allah-names/names.json`                       | 100   | `file()` + custom parser |
-
-### Surahs
-
-Each `surah-*.json` file has three parts:
-
-- **`bismillah`** — the Bismillah in Arabic plus English translation, Burmese translation, and Burmese transliteration. This is **canonical**: a `superRefine` guard in the schema enforces that all 46 files carry the exact same values. If a new surah file is added with a different Bismillah rendering, `astro check` fails with a helpful message pointing to the file — no accidental variants, ever.
-- **`surah_metadata`** — surah number, Arabic name, transliteration, Burmese title, the meaning of the title (English + Burmese), revelation place (English + Burmese), revelation order, total verse count, and a Burmese summary. The schema also supports an optional **prostration marker** (`prostration_verse`) — currently unused by the data, but ready.
-- **`verses`** — an array of verse objects, each with `verse_number`, Arabic, English translation, Burmese translation, Burmese transliteration, and an optional `note`.
-
-### Essential duas
-
-A single `duas.json` file: 18 everyday supplications (morning and evening remembrances, protection, gratitude, forgiveness, and more), each with Arabic text, **Burmese pronunciation** (so readers can recite correctly even if they haven't mastered Arabic script), and meanings in both Burmese and English.
-
-### The Names of Allah
-
-`names.json` — a table of 100 entries, from **Allāh (اللَّه)** to **Aṣ-Ṣabūr (الصَّبُورُ)**, each with Arabic, transliteration, English meaning, Burmese meaning, and Burmese transliteration. (Yes — the collection lists 100 entries, beginning with the name of Allāh Himself; the famous tradition of the 99 Names is what inspired it.)
-
-### Recitation audio
-
-46 `.opus` files in `src/assets/audio/surahs/`, one per surah, matched 1:1 by filename. They're bundled via `import.meta.glob` and emitted as **hashed, immutable assets** — perfect for caching and kind to repeat visitors. Together they weigh about 53 MB.
-
-## Tech stack
-
-| Concern                   | Choice                                               | Why                                                                                                                    |
-| ------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Framework                 | **Astro 7** (static output)                          | Content-focused, zero client-side weight by default, best-in-class content collections                                 |
-| Language                  | **TypeScript** (strict + `noUncheckedIndexedAccess`) | Type safety for content and code alike                                                                                 |
-| Runtime / package manager | **Bun**                                              | Fast, modern, single-tool workflow                                                                                     |
-| Styling                   | **Vanilla CSS** (4 files, design tokens)             | No framework tax; full control; tiny output                                                                            |
-| Client JS                 | **Astro component scripts**                          | No React/Vue/etc.; each interactive behavior lives beside the component that owns it and Astro bundles/deduplicates it |
-| Installability            | **Static Web App Manifest**                          | Browser-native manifest linked from `Layout.astro`; no PWA plugin or service worker                                    |
-| Sitemap                   | **`@astrojs/sitemap`**                               | Zero-config XML sitemap                                                                                                |
-| Fonts                     | **Google Fonts** (Noto family + Material Symbols)    | Multilingual coverage, subsetted and preloaded                                                                         |
-| Hosting                   | **Cloudflare Pages**                                 | Global edge, free tier, `_headers`/`_redirects` support                                                                |
-| CI / tests                | none (yet)                                           | Keep it simple; `astro check` + build gate every change                                                                |
-
-The guiding principle of this project is **simplicity with integrity**: no unnecessary abstractions, no framework sprawl, no JavaScript where HTML + CSS will do. Everything is statically generated — the fastest kind of website there is.
+| Area                        | Current implementation                                                                                                  |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Framework                   | Astro `7.2.3`, static output                                                                                            |
+| Language                    | TypeScript and Astro components                                                                                         |
+| Runtime and package manager | Bun only                                                                                                                |
+| Styling                     | Vanilla CSS in four files under `src/styles/`                                                                           |
+| Client JavaScript           | Small scripts in Astro components; no React, Vue, Svelte, or other UI framework                                         |
+| Content                     | Astro Content Collections with `glob()` and `file()` loaders plus Zod schemas                                           |
+| Fonts and icons             | Astro Fonts API with Google and Google Icons providers                                                                  |
+| Sitemap                     | `@astrojs/sitemap`                                                                                                      |
+| Hosting                     | Cloudflare Pages at `https://basirah.pages.dev`                                                                         |
+| Installability              | Static `public/manifest.webmanifest`; no service worker/offline runtime                                                 |
+| Formatting                  | Prettier with `prettier-plugin-astro`                                                                                   |
+| Automated tests             | No test framework is configured; `astro check`, formatting, and the production build are the current verification gates |
 
 ## Architecture
 
-```
-public/  →  static files copied as-is (manifest, icons, _headers, _redirects)
-src/
-  assets/content/    →  READ-ONLY content data (JSON collections)
-  assets/audio/      →  recitation audio (.opus, bundled & hashed)
-  components/        →  reusable .astro components (8)
-  layouts/           →  Layout.astro: meta, SEO, fonts, and manifest link
-  pages/             →  routes (home, 404, surahs, duas, names-of-allah)
-  site.config.ts     →  shared site title, description, and navigation metadata
-  styles/            →  tokens, base, components, content
-  content.config.ts  →  collection schemas + validation guards
-```
+Astro renders the site as static HTML. There are no framework hydration directives or framework components. Interactive behavior is limited to the components that need it:
 
-**The content pipeline** is the heart of the site:
+- `AudioPlayer.astro` controls audio playback and seeking.
+- `ListFilter.astro` filters rendered lists and updates an accessible live region.
+- `Header.astro` controls the responsive navigation and removes stale service-worker registrations/cache names left by previous deployments.
+- `ThemeToggle.astro` stores the user's light/dark preference and updates the document theme and theme-color metadata.
 
-1. JSON files are loaded by Astro's content layer (`glob()` for surahs, `file()` with custom parsers for duas and names).
-2. Every entry is validated against a **Zod schema** — required fields, types, and custom guards.
-3. TypeScript types are inferred from the schema, so pages get autocomplete and build-time errors for content mistakes.
-4. Pages (`getCollection`, `getEntry`) render fully static HTML, JSON-LD, and audio references.
-
-**Client-side behavior** (all bundled, no frameworks):
-
-- `AudioPlayer` — owns its small vanilla playback and seek script.
-- `ListFilter` — owns its delegated folded-text filter and live-region script.
-- Color scheme — follows `prefers-color-scheme` by default, with a small native Astro theme toggle for persistent manual selection.
-- Installability — the browser reads `public/manifest.webmanifest` through the link in `Layout.astro`.
+The shared `Layout.astro` provides the document shell, metadata, fonts, manifest link, header, footer, skip link, and main landmark. `src/site.config.ts` is a small project-owned module for the shared title, description, and navigation links; it is not an Astro-required file.
 
 ## Project structure
 
-```
+```text
 basirah/
-├── public/                      # Static files copied to dist/
-│   ├── _headers                 # Security headers and cache policy
-│   ├── _redirects               # Sitemap URL aliases
-│   ├── robots.txt               # Crawler policy
-│   ├── favicon.svg / .ico       # Brand
-│   ├── og-image.png             # Open Graph share image (1200×630)
+├── public/
+│   ├── _headers                 # Cloudflare response headers and cache rules
+│   ├── _redirects               # Cloudflare static URL rewrites for sitemap aliases
+│   ├── robots.txt               # Crawler policy and sitemap location
 │   ├── manifest.webmanifest     # Static Web App Manifest
-│   └── pwa-*.png / maskable-*   # Installable-app icons
+│   ├── favicon.svg / favicon.ico
+│   ├── apple-touch-icon-180x180.png
+│   ├── pwa-*.png / maskable-icon-512x512.png
+│   └── og-image.png             # Open Graph image
 ├── src/
 │   ├── assets/
-│   │   ├── audio/surahs/        # 46 recitation files (.opus)
-│   │   └── content/             # READ-ONLY: essential-surahs/, essential-duas/, allah-names/
-│   ├── components/              # AudioPlayer, ListFilter, Header, Footer, SurahCard,
-│   │                            # PageHeader, JsonLd
-│   ├── layouts/Layout.astro     # Shell: SEO, fonts, and manifest link
+│   │   ├── audio/surahs/        # 46 read-only .opus files
+│   │   └── content/             # Read-only JSON content data
+│   ├── components/
+│   │   ├── AudioPlayer.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── JsonLd.astro
+│   │   ├── ListFilter.astro
+│   │   ├── PageHeader.astro
+│   │   ├── SurahCard.astro
+│   │   └── ThemeToggle.astro
+│   ├── layouts/Layout.astro
 │   ├── pages/
-│   │   ├── index.astro          # Home: hero + section cards
-│   │   ├── 404.astro            # Custom 404 page
-│   │   ├── surahs/              # Index + [surah] detail w/ audio player
-│   │   ├── duas/                # Index + [dua] detail
-│   │   └── names-of-allah/      # 100-names table
-│   ├── site.config.ts           # Shared site metadata and navigation
-│   ├── styles/                  # tokens.css, base.css, components.css, content.css
-│   └── content.config.ts        # Content collections: loaders + Zod schemas + guards
-├── astro.config.ts              # Static output, sitemap, and Astro Fonts
+│   │   ├── index.astro
+│   │   ├── 404.astro
+│   │   ├── 500.astro
+│   │   ├── surahs/index.astro
+│   │   ├── surahs/[surah].astro
+│   │   ├── duas/index.astro
+│   │   ├── duas/[dua].astro
+│   │   └── names-of-allah/index.astro
+│   ├── styles/
+│   │   ├── tokens.css
+│   │   ├── base.css
+│   │   ├── components.css
+│   │   └── content.css
+│   ├── content.config.ts        # Loaders and collection schemas
+│   └── site.config.ts           # Site metadata and navigation data
+├── astro.config.ts              # Static output, sitemap, fonts, and icons
 ├── package.json
-├── tsconfig.json                # strict; extends astro/tsconfigs/strict
-└── LICENSE                      # MIT
+├── bun.lock
+├── tsconfig.json
+├── .github/workflows/deploy.yml # Bun build and Cloudflare Pages deployment
+└── LICENSE
 ```
 
-## Getting started
+Generated directories such as `.astro/` and `dist/` are not source code and are ignored by Git.
 
-**Prerequisites:** [Bun](https://bun.sh) (the only permitted runtime/package manager in this repo).
+## Local development
 
-```bash
-bun install        # install dependencies
-bun run dev        # start the dev server
-bun run check      # type-check the whole project (astro check)
-bun run build      # check and build → dist/
-bun run preview    # preview the production build locally
+Prerequisite: install [Bun](https://bun.sh/). Do not use npm, pnpm, or yarn for this repository.
+
+```sh
+bun install
+bun run dev
 ```
 
-| Script                    | What it does                                       |
-| ------------------------- | -------------------------------------------------- |
-| `dev`                     | `astro dev`                                        |
-| `check`                   | `astro check` — content validation + type checking |
-| `build`                   | `astro check && astro build`                       |
-| `preview`                 | `astro preview`                                    |
-| `format` / `format:check` | Prettier (with `prettier-plugin-astro`)            |
-| `sync`                    | `astro sync` — refresh content-layer types         |
+Available scripts:
+
+| Command                   | Purpose                                                      |
+| ------------------------- | ------------------------------------------------------------ |
+| `bun run dev`             | Start the Astro development server                           |
+| `bun run check`           | Run `astro check` for generated types and diagnostics        |
+| `bun run build`           | Run `astro check` and create the production build in `dist/` |
+| `bun run preview`         | Preview the production build locally                         |
+| `bun run format`          | Format the repository with Prettier                          |
+| `bun run format:check`    | Check formatting without changing files                      |
+| `bun run sync`            | Refresh Astro content-layer types                            |
+| `bun run astro -- <args>` | Run the Astro CLI through Bun                                |
+
+Before submitting changes, run:
+
+```sh
+bun run format:check
+bun run check
+bun run build
+```
 
 ## Deployment
 
-Deployed to **Cloudflare Pages** (currently `https://basirah.pages.dev`):
+The repository currently deploys to Cloudflare Pages through [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) whenever changes are pushed to `main`, or when the workflow is manually dispatched.
 
-- **Build command:** `bun run build` (or the equivalent of `astro check && astro build`)
-- **Output directory:** `dist/`
+The workflow:
 
-**How the pieces fit together at the edge:**
+1. Checks out the repository.
+2. Installs Bun `1.3.14`.
+3. Runs `bun install --frozen-lockfile`.
+4. Runs `bun run build`.
+5. Deploys `dist/` with `bunx wrangler@latest pages deploy dist --project-name=basirah`.
 
-- **`public/_headers`** — security headers (CSP, `X-Frame-Options`, `Permissions-Policy`, …), immutable `Cache-Control: max-age=31536000` for hashed `/_astro/*` assets, and a daily cache for `manifest.webmanifest`. Cloudflare Web Analytics uses `cloudflareinsights.com`, which is allowed by `connect-src`.
-- **`public/_redirects`** — legacy sitemap aliases (`/sitemap.xml` and `/sitemap-index.html`) rewritten to the real `/sitemap-index.xml` with a 200.
-- **`public/robots.txt`** — allows all crawlers, excludes the heavy `/_astro/` media folder, and points to the sitemap.
-- **Content Security Policy** — served from `_headers`; it allows Astro’s same-origin scripts and Cloudflare’s automatically injected Web Analytics beacon without generated hash machinery.
+The workflow requires the GitHub secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
 
-## Notes & lessons learned
+The build is static. The custom `404.astro` and `500.astro` pages are emitted as `404.html` and `500.html`; Cloudflare's handling of actual platform/origin 5xx responses is separate from static file routing. A real branded 5xx response requires Cloudflare Custom Error Rules or a server/runtime response, not `_redirects` alone.
 
-This section is a candid record of things we got wrong, learned, and fixed — in the spirit of the project: _simplicity with integrity, and honesty about the journey._
+## Public Cloudflare files
 
-1. **Keep installability native.** The manifest is ordinary static JSON linked by `Layout.astro`; there is no service worker, Workbox runtime, or PWA integration to become stale or intercept navigation.
+- `public/_headers` sets security headers, the Content Security Policy, hashed Astro-asset caching, HTML caching, and manifest caching. The CSP currently permits the inline behavior used by the site and Cloudflare Web Analytics endpoints.
+- `public/_redirects` rewrites `/sitemap.xml` and `/sitemap-index.html` to the generated `/sitemap-index.xml` with status `200`.
+- `public/robots.txt` allows normal crawling, disallows `/cdn-cgi/`, and points crawlers to the generated sitemap. It does not disallow the site's hashed CSS, JavaScript, fonts, or audio assets.
+- `public/manifest.webmanifest` describes the site's name, language, colors, scope, display mode, categories, and install icons. It does not provide offline behavior by itself.
 
-2. **Sitemap aliases.** The sitemap integration only emits `sitemap-index.xml`, but older references pointed at `/sitemap.xml` and `/sitemap-index.html`. Rather than fight the tooling, we added two 200-rewrites in `_redirects`. Simple, honest, edge-fast.
+## Content and code rules
 
-3. **Canonical Bismillah — 45 files normalized, once, forever.** At some point, variations of the Bismillah translations had crept into the 46 surah JSON files (45 of them differing). We normalized all 45 to one canonical set, then — instead of trusting ourselves — **enforced it in the content schema** with a `superRefine` guard. Now any future file with a variant fails the build with a message that says: _"fix the content file, don't add a new variant."_ Content integrity enforced by the toolchain, not by memory.
+- Treat `src/assets/content/**` as read-only unless a content change has been explicitly reviewed.
+- Do not modify the Qur'anic, Arabic, Burmese, or English content casually; accuracy and Unicode integrity matter.
+- Keep source code in `src/` so Astro can process and bundle it. Use `public/` for files that must be copied unchanged.
+- Use Bun for installation, scripts, checks, builds, and deployment commands.
+- Prefer native Astro and browser APIs over new dependencies or framework layers.
+- Keep interactive behavior local to the Astro component that owns it.
+- Re-run formatting, `astro check`, and the production build after changes.
 
-4. **Unequal card heights are a grid + flexbox classic.** On the home page and the surah grid, grid items stretch to equal height but the inner cards didn't — so cards with less text looked shorter than their neighbors. The fix: `height: 100%` on the inner card, plus `grid-auto-rows: 1fr` for uniformity across rows. The same lesson applies to the dua rows, which also got a mobile wrap fix so every row stacks number → Burmese → English → Arabic consistently.
+## Known boundaries
 
-5. **Never hand-type Arabic or Burmese in tooling.** During verification we compared dist output against a hand-typed Arabic string and got a false alarm (and later, real fixes). The rule we now live by: **derive canonical values from the data itself**, and compare data against data programmatically.
-
-6. **Cloudflare Analytics is edge-injected.** The CSP explicitly permits Cloudflare’s beacon and same-origin RUM endpoint because the script is added after Astro builds the HTML.
-
-7. **Content files are read-only by principle.** The data in `src/assets/content/` is treated as a source of truth. Changes there are deliberate, reviewed, and validated — never casual.
-
-8. **Production verification matters.** After a deploy, verify the generated font URLs and `/manifest.webmanifest` from a clean browser profile; local `preview` alone cannot validate edge headers or Cloudflare injection.
-
-## Accessibility, SEO & performance
-
-**Accessibility**
-
-- Skip link, landmarks, semantic HTML (lists for grids, `dl` for definitions, `:lang` typography).
-- Escape closes the mobile menu and returns focus.
-- ARIA: live region for filter results, labeled audio controls, `aria-hidden` decorations.
-- `prefers-reduced-motion` respected; keyboard-visible focus styles; readable contrast in both themes.
-
-**SEO**
-
-- Unique titles/descriptions per page; canonical URLs (trailing-slash normalized); `hreflang` + `x-default`; sitemap.
-- Open Graph + Twitter `summary_large_image` cards with a branded 1200×630 image.
-- JSON-LD structured data on every page type — including `audio` entities for surah recitations.
-- Google & Bing site verification; a crawl-friendly `robots.txt`.
-
-**Performance**
-
-- 100% static output; no client framework; Astro chooses whether the small shared
-  stylesheet is inlined or emitted as a hashed reusable asset.
-- Fonts subsetted and preloaded for the critical path; hashed assets cached immutably for a year.
-- Audio served as efficient `.opus` with lazy `preload` semantics in the player.
-
-## Roadmap
-
-Ideas we're mulling — not promises, just honest intentions:
-
-- **More surahs** — the collection currently spans Al-Fātiḥah through Al-Bayyinah; the longer surahs (Al-Baqarah and beyond) are a big, careful project.
-- **Prostration markers** — the schema already supports `prostration_verse`; the data and UI markers are next.
-- **Transliteration toggle** — show/hide Burmese transliteration per verse.
-- **More duas & adhkār** — expand beyond the essential 18 (morning/evening remembrances, travel, illness…).
-- **Sajdah & tajweed hints** — small correctness helpers for reciters.
-- **Tests & CI** — the project has none yet; a lightweight check workflow would be a nice safety net.
-- **Feedback channel** — a way for readers to report translation or typography issues (content accuracy matters most).
-
-## Contributing
-
-This is a small, personal project, and it would be a joy to see it grow — but **accuracy comes before quantity**, and we'd rather have 10 correct pages than 100 rushed ones. If you'd like to help:
-
-1. Read `AGENTS.md` if it's present in your working copy (it's deliberately not committed; it holds the project's working rules).
-2. **Bun only** — no npm, no yarn, no pnpm. Use `bun install`, `bun run …`.
-3. Content files in `src/assets/content/` are **read-only in principle** — propose changes rather than mass-editing; the schema guards will catch anything inconsistent anyway.
-4. Run `bun run build` before pushing — it runs `astro check` and must pass with zero errors.
-5. Keep the site's voice: calm, correct, humble, and faithful to both languages and the Islamic tradition. If you're unsure about a translation, ask first — don't guess.
-6. Format with `bun run format` (Prettier) and keep changes small and reviewable.
-
-Above all: be kind, be careful, and remember _who_ this site serves.
+- The site is not a full Astro i18n route-based site. It uses Burmese as the document language and marks embedded English and Arabic content with language attributes.
+- The site does not use Astro View Transitions or `<ClientRouter />`; navigation remains normal browser navigation.
+- There is no authentication, database, server API, service worker, offline cache, or client UI framework.
+- There is no automated test suite yet. Content validation and production build checks are the current automated safeguards.
 
 ## License
 
 [MIT](LICENSE) © 2026 c0k0n.
 
-The Qur'anic text and translations are presented for educational purposes; the project holds no copyright over the sacred texts themselves.
+The Qur'anic text and translations are presented for educational purposes; the project does not claim copyright over sacred texts themselves.
 
----
-
-_Basirah — بَصِيرَة — insight, clarity, light._
-_Made with humility, for the Myanmar Muslim community — and for anyone seeking knowledge._
+— Basirah — بَصِيرَة — insight, clarity, and light.
