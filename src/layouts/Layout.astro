@@ -54,6 +54,11 @@ const robots = noindex
 				<Fragment set:html={pwaInfo.webManifest.linkTag} />
 			)
 		}
+		{
+			pwaInfo?.registerSW?.scriptTag && (
+				<Fragment set:html={pwaInfo.registerSW.scriptTag} />
+			)
+		}
 		<meta
 			name="theme-color"
 			media="(prefers-color-scheme: light)"
@@ -119,54 +124,11 @@ const robots = noindex
 			preload={[{ subset: "arabic", style: "normal", weight: "700" }]}
 		/>
 
-		{
-			/* These families are used across the UI but are not LCP-critical,
-		    so they are injected (so their CSS variable resolves) without
-		    preloading. Without these, the font variables used by the UI are
-		    undefined and icons render as literal ligature text. */
-		}
 		<Font cssVariable="--font-icons-1" />
 		<Font cssVariable="--font-icons-2" />
-		<Font cssVariable="--font-icons-3" />
-		<Font cssVariable="--font-icons-4" />
-		<Font cssVariable="--font-icons-5" />
 		<Font cssVariable="--font-sans" />
 		<Font cssVariable="--font-serif" />
 		<Font cssVariable="--font-mono" />
-
-		<script is:inline>
-			/* THEME_BOOTSTRAP_START */
-			if (!window.__basirahThemeReady) {
-				window.__basirahThemeReady = true;
-				const key = "basirah-theme";
-				function applyBasirahTheme() {
-					const stored = localStorage.getItem(key);
-					const theme =
-						stored ??
-						(matchMedia("(prefers-color-scheme: dark)").matches
-							? "dark"
-							: "light");
-					document.documentElement.classList.toggle("dark", theme === "dark");
-					document.documentElement.setAttribute("data-theme", theme);
-					document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
-						btn.setAttribute("aria-pressed", String(theme === "dark"));
-					});
-				}
-				applyBasirahTheme();
-				document.addEventListener("click", (event) => {
-					const btn = event.target.closest("[data-theme-toggle]");
-					if (!btn) return;
-					localStorage.setItem(
-						key,
-						document.documentElement.classList.contains("dark")
-							? "light"
-							: "dark",
-					);
-					applyBasirahTheme();
-				});
-			}
-			/* THEME_BOOTSTRAP_END */
-		</script>
 	</head>
 	<body>
 		<a class="skip-link" href="#main">အကြောင်းအရာသို့ သွားရန်</a>

@@ -3,29 +3,41 @@ import AstroPWA from "@vite-pwa/astro";
 import { defineConfig, fontProviders } from "astro/config";
 import { SITE } from "./src/site.config";
 
+const iconGlyphGroups = [
+	[
+		"arrow_back",
+		"arrow_forward",
+		"auto_awesome",
+		"book",
+		"chevron_left",
+		"chevron_right",
+		"close",
+		"favorite",
+		"format_list_numbered",
+		"home",
+	],
+	[
+		"location_on",
+		"menu",
+		"menu_book",
+		"pause",
+		"play_arrow",
+		"search",
+		"star",
+		"translate",
+		"volunteer_activism",
+		"123",
+	],
+];
+
 export default defineConfig({
 	output: "static",
 	site: "https://basirah.pages.dev",
-	// Keep larger shared stylesheets as hashed /_astro/*.css assets so they can
-	// be cached once across the 69 generated HTML pages. Astro still inlines
-	// individual stylesheets below Vite's asset inline limit when appropriate.
-	build: {
-		inlineStylesheets: "always",
-	},
 	integrations: [
 		sitemap(),
 		AstroPWA({
 			registerType: "autoUpdate",
-			injectRegister: false,
-			strategies: "injectManifest",
-			srcDir: "src",
-			filename: "sw.ts",
-			// Build the service worker as a single IIFE bundle. Avoids the
-			// deprecated `inlineDynamicImports` rollup option (and its warning)
-			// that vite-plugin-pwa otherwise applies to the ES-module SW build.
-			injectManifest: {
-				rollupFormat: "iife",
-			},
+			injectRegister: "script",
 			includeAssets: [
 				"favicon.svg",
 				"favicon.ico",
@@ -45,21 +57,9 @@ export default defineConfig({
 				theme_color: "#101613",
 				background_color: "#101613",
 				icons: [
-					{
-						src: "pwa-64x64.png",
-						sizes: "64x64",
-						type: "image/png",
-					},
-					{
-						src: "pwa-192x192.png",
-						sizes: "192x192",
-						type: "image/png",
-					},
-					{
-						src: "pwa-512x512.png",
-						sizes: "512x512",
-						type: "image/png",
-					},
+					{ src: "pwa-64x64.png", sizes: "64x64", type: "image/png" },
+					{ src: "pwa-192x192.png", sizes: "192x192", type: "image/png" },
+					{ src: "pwa-512x512.png", sizes: "512x512", type: "image/png" },
 					{
 						src: "maskable-icon-512x512.png",
 						sizes: "512x512",
@@ -69,16 +69,8 @@ export default defineConfig({
 				],
 			},
 			workbox: {
-				// Precache only the app shell assets (JS/CSS/fonts) plus the 404
-				// document. HTML pages are cached at runtime (StaleWhileRevalidate,
-				// see src/sw.ts) so the first SW install no longer forces a ~4MB
-				// download of every page. The 404 doc must be precached so the
-				// catch handler can serve it offline on a failed navigation.
-				globPatterns: ["**/*.{js,css,woff2}", "404.html"],
+				globPatterns: ["**/*.{js,css,woff2}"],
 				cleanupOutdatedCaches: true,
-			},
-			experimental: {
-				directoryAndTrailingSlashHandler: true,
 			},
 		}),
 	],
@@ -134,13 +126,7 @@ export default defineConfig({
 			styles: ["normal"],
 			fallbacks: ["monospace"],
 		},
-		...[
-			["arrow_back", "arrow_forward", "book", "chevron_left", "chevron_right"],
-			["close", "dark_mode", "favorite", "format_list_numbered", "home"],
-			["light_mode", "location_on", "menu", "menu_book", "pause"],
-			["play_arrow", "search", "star", "translate", "volunteer_activism"],
-			["123", "auto_awesome"],
-		].map((glyphs, index) => ({
+		...iconGlyphGroups.map((glyphs, index) => ({
 			name: "Material Symbols Outlined",
 			cssVariable: `--font-icons-${index + 1}`,
 			provider: fontProviders.googleicons(),

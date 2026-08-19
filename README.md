@@ -67,7 +67,7 @@ Today the site is **deployed on Cloudflare Pages**, passes `astro check` with ze
 - **Instant search & filter** — a lightweight, dependency-free filter with _folded-text matching_: it unifies Arabic letter variants and ignores diacritics, so a search "just works" even when the user's keyboard input isn't perfectly normalized. No JavaScript framework needed.
 - **Recitation audio** — an accessible custom audio player (play/pause, seek, time display) with hashed, immutably-cached audio files for fast repeat visits.
 - **PWA** — installable, with a web app manifest in Burmese (`lang: "my"`), auto-updating service worker, offline app-shell caching, and theme-aware icons.
-- **Light & dark themes** — a warm "paper & emerald & gold" light theme and a deep green-black dark theme, respecting `prefers-color-scheme` with a manual toggle, with a flash-of-wrong-theme guard.
+- **Light & dark themes** — a warm "paper & emerald & gold" light theme and a deep green-black dark theme, selected by the operating system through `prefers-color-scheme`.
 - **Bilingual typography done properly** — Noto Serif/Sans Myanmar, Noto Naskh Arabic, and Latin serif/sans stacks, each applied via `:lang()` selectors so every script renders beautifully.
 - **Accessibility** — skip links, ARIA labels and live regions, visible focus states, `prefers-reduced-motion` support, and semantic HTML throughout.
 - **SEO & structured data** — canonical URLs, hreflang, Open Graph & Twitter cards, XML sitemap, and JSON-LD (`WebSite`, `CollectionPage`/`ItemList`, `WebPage`, and per-surah `audio` entities).
@@ -127,12 +127,10 @@ public/  →  static files copied as-is (robots.txt, icons, _headers, _redirects
 src/
   assets/content/    →  READ-ONLY content data (JSON collections)
   assets/audio/      →  recitation audio (.opus, bundled & hashed)
-  assets/brand/      →  source SVG for the maskable icon
   components/        →  reusable .astro components (8)
-  layouts/           →  Layout.astro: meta, SEO, fonts, and theme
+  layouts/           →  Layout.astro: meta, SEO, fonts, and PWA registration
   pages/             →  routes (home, 404, surahs, duas, names-of-allah)
-  scripts/           →  browser-only service-worker registration
-scripts/             →  Bun build tooling (headers and PWA asset generation)
+  scripts/           →  one small browser module for navigation, filtering, and audio
   styles/            →  tokens, base, components, content
   content.config.ts  →  collection schemas + validation guards
 ```
@@ -148,14 +146,8 @@ scripts/             →  Bun build tooling (headers and PWA asset generation)
 
 - `AudioPlayer` — initializes from the shared TypeScript browser module.
 - `ListFilter` — delegated listener with folded-text matching and a live-region result count.
-- Theme toggle — `localStorage` + `prefers-color-scheme`, with a FOUC guard.
-- PWA registration — via `@vite-pwa/astro` (`registerType: "autoUpdate"`).
-
-**PWA details worth knowing:** the custom service worker uses Workbox's
-`StaleWhileRevalidate` strategy for visited document navigations. If a request
-cannot be fetched and is not already cached, it serves the precached `/404`
-document as an offline fallback. Static metadata files such as the sitemap,
-robots file, and manifest are not handled by the navigation route.
+- Color scheme — follows the operating system through CSS `prefers-color-scheme`.
+- PWA registration — the integration injects its normal external registration script.
 
 ## Project structure
 
@@ -173,18 +165,17 @@ basirah/
 │   │   ├── audio/surahs/        # 46 recitation files (.opus)
 │   │   └── content/             # READ-ONLY: essential-surahs/, essential-duas/, allah-names/
 │   ├── components/              # AudioPlayer, ListFilter, Header, Footer, SurahCard,
-│   │                            # PageHeader, ThemeToggle, JsonLd
-│   ├── layouts/Layout.astro     # Shell: SEO, fonts, theme, transitions, PWA link
+│   │                            # PageHeader, JsonLd
+│   ├── layouts/Layout.astro     # Shell: SEO, fonts, and PWA link
 │   ├── pages/
 │   │   ├── index.astro          # Home: hero + section cards
 │   │   ├── 404.astro            # Custom 404 (also the PWA fallback page)
 │   │   ├── surahs/              # Index + [surah] detail w/ audio player
 │   │   ├── duas/                # Index + [dua] detail
 │   │   └── names-of-allah/      # 100-names table
-│   ├── scripts/                 # Browser-only service-worker registration
+│   ├── scripts/                 # Browser-only interaction module
 │   ├── styles/                  # tokens.css, base.css, components.css, content.css
 │   └── content.config.ts        # Content collections: loaders + Zod schemas + guards
-├── scripts/                     # Bun build tooling (not shipped to the site)
 ├── astro.config.ts              # Site config, sitemap, PWA, fonts
 ├── package.json
 ├── tsconfig.json                # strict; extends astro/tsconfigs/strict
@@ -193,26 +184,24 @@ basirah/
 
 ## Getting started
 
-**Prerequisites:** [Bun](https://bun.sh) (the only permitted runtime/package manager in this repo) and Node.js ≥ 24.
+**Prerequisites:** [Bun](https://bun.sh) (the only permitted runtime/package manager in this repo).
 
 ```bash
 bun install        # install dependencies
 bun run dev        # start the dev server
 bun run check      # type-check the whole project (astro check)
-bun run build      # generate deploy assets, check, and build → dist/
+bun run build      # check and build → dist/
 bun run preview    # preview the production build locally
 ```
 
-| Script                    | What it does                                                    |
-| ------------------------- | --------------------------------------------------------------- |
-| `dev`                     | `astro dev`                                                     |
-| `check`                   | `astro check` — content validation + type checking              |
-| `build`                   | Generates deploy assets, then runs `astro check && astro build` |
-| `preview`                 | `astro preview`                                                 |
-| `format` / `format:check` | Prettier (with `prettier-plugin-astro`)                         |
-| `generate-headers`        | Derives the CSP hash and regenerates `public/_headers`          |
-| `generate-pwa-assets`     | Regenerates PWA icons from `src/assets/brand/` SVG sources      |
-| `sync`                    | `astro sync` — refresh content-layer types                      |
+| Script                    | What it does                                       |
+| ------------------------- | -------------------------------------------------- |
+| `dev`                     | `astro dev`                                        |
+| `check`                   | `astro check` — content validation + type checking |
+| `build`                   | `astro check && astro build`                       |
+| `preview`                 | `astro preview`                                    |
+| `format` / `format:check` | Prettier (with `prettier-plugin-astro`)            |
+| `sync`                    | `astro sync` — refresh content-layer types         |
 
 ## Deployment
 
@@ -223,16 +212,16 @@ Deployed to **Cloudflare Pages** (currently `https://basirah.pages.dev`):
 
 **How the pieces fit together at the edge:**
 
-- **`public/_headers`** — security headers (CSP, `X-Frame-Options`, `Permissions-Policy`, …), immutable `Cache-Control: max-age=31536000` for hashed `/_astro/*` assets, `no-cache` for `sw.js` so updates propagate, and a daily cache for `manifest.webmanifest`. The custom 404 page is served without `X-Robots-Tag` so its `noindex` meta rules.
+- **`public/_headers`** — security headers (CSP, `X-Frame-Options`, `Permissions-Policy`, …), immutable `Cache-Control: max-age=31536000` for hashed `/_astro/*` assets, `no-cache` for the service-worker files so updates propagate, and a daily cache for `manifest.webmanifest`.
 - **`public/_redirects`** — legacy sitemap aliases (`/sitemap.xml` and `/sitemap-index.html`) rewritten to the real `/sitemap-index.xml` with a 200.
 - **`public/robots.txt`** — allows all crawlers, excludes the heavy `/_astro/` media folder, and points to the sitemap.
-- **Content Security Policy** — served from `_headers`, with a `sha256` hash for the one inline theme script in `Layout.astro`. **Important:** if that script ever changes, the hash must be regenerated (`openssl dgst -sha256 -binary | base64`) or the site breaks under CSP.
+- **Content Security Policy** — served from `_headers`; it allows Astro’s same-origin scripts and Cloudflare’s automatically injected Web Analytics beacon without generated hash machinery.
 
 ## Notes & lessons learned
 
 This section is a candid record of things we got wrong, learned, and fixed — in the spirit of the project: _simplicity with integrity, and honesty about the journey._
 
-1. **Service-worker fallbacks must be narrow.** An earlier implementation used a broad `navigateFallback` and could answer non-page requests such as `robots.txt` with the custom 404 document. The current custom worker only handles requests whose `mode` is `navigate`; metadata files therefore remain network-served. Lesson: **service workers can swallow requests that the server would handle perfectly** — keep route predicates explicit.
+1. **Keep the PWA shallow.** The integration precaches only hashed CSS, JavaScript, and fonts; it does not own HTML or audio caching. Cloudflare Pages remains the source of truth for page and media responses.
 
 2. **Sitemap aliases.** The sitemap integration only emits `sitemap-index.xml`, but older references pointed at `/sitemap.xml` and `/sitemap-index.html`. Rather than fight the tooling, we added two 200-rewrites in `_redirects`. Simple, honest, edge-fast.
 
@@ -242,11 +231,11 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 
 5. **Never hand-type Arabic or Burmese in tooling.** During verification we compared dist output against a hand-typed Arabic string and got a false alarm (and later, real fixes). The rule we now live by: **derive canonical values from the data itself**, and compare data against data programmatically.
 
-6. **CSP hashes are living things.** The inline theme script's hash is baked into `_headers`. Changing the script without regenerating the hash silently breaks the theme under the strict CSP. It's documented in the `_headers` comments for a reason — read them.
+6. **Cloudflare Analytics is edge-injected.** The CSP explicitly permits Cloudflare’s beacon and same-origin RUM endpoint because the script is added after Astro builds the HTML.
 
 7. **Content files are read-only by principle.** The data in `src/assets/content/` is treated as a source of truth. Changes there are deliberate, reviewed, and validated — never casual.
 
-8. **First visits can look wrong (the PWA lesson).** After a deploy, visitors may see a stale page until the service worker updates (`autoUpdate` handles it on the next visit). A hard refresh once clears it. It's the cost of a fast, app-like site — and a known, accepted trade-off.
+8. **Production verification matters.** After a deploy, verify the generated font URLs and `/registerSW.js` from a clean browser profile; local `preview` alone cannot validate edge headers or Cloudflare injection.
 
 ## Accessibility, SEO & performance
 
@@ -254,7 +243,7 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 
 - Skip link, landmarks, semantic HTML (lists for grids, `dl` for definitions, `:lang` typography).
 - Escape closes the mobile menu and returns focus.
-- ARIA: live region for filter results, `aria-pressed` theme toggle, labeled audio controls, `aria-hidden` decorations.
+- ARIA: live region for filter results, labeled audio controls, `aria-hidden` decorations.
 - `prefers-reduced-motion` respected; keyboard-visible focus styles; readable contrast in both themes.
 
 **SEO**
@@ -266,8 +255,8 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 
 **Performance**
 
-- 100% static output; no client framework; the small shared stylesheet is inlined
-  to remove a render-blocking request.
+- 100% static output; no client framework; Astro chooses whether the small shared
+  stylesheet is inlined or emitted as a hashed reusable asset.
 - Fonts subsetted and preloaded for the critical path; hashed assets cached immutably for a year.
 - Audio served as efficient `.opus` with lazy `preload` semantics in the player.
 
