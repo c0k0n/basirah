@@ -139,7 +139,9 @@ a:hover {
    Declared after the :lang() rules so the icon font wins the equal-
    specificity tie: icon spans inherit the page's resolved language. */
 .material-symbols-outlined {
-	font-family: var(--font-icons);
+	font-family:
+		var(--font-icons-1), var(--font-icons-2), var(--font-icons-3),
+		var(--font-icons-4), var(--font-icons-5);
 	font-weight: normal;
 	font-style: normal;
 	font-size: 24px;

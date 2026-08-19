@@ -10,7 +10,7 @@ export default defineConfig({
 	// be cached once across the 69 generated HTML pages. Astro still inlines
 	// individual stylesheets below Vite's asset inline limit when appropriate.
 	build: {
-		inlineStylesheets: "auto",
+		inlineStylesheets: "always",
 	},
 	integrations: [
 		sitemap(),
@@ -134,15 +134,20 @@ export default defineConfig({
 			styles: ["normal"],
 			fallbacks: ["monospace"],
 		},
-		{
+		...[
+			["arrow_back", "arrow_forward", "book", "chevron_left", "chevron_right"],
+			["close", "dark_mode", "favorite", "format_list_numbered", "home"],
+			["light_mode", "location_on", "menu", "menu_book", "pause"],
+			["play_arrow", "search", "star", "translate", "volunteer_activism"],
+			["123", "auto_awesome"],
+		].map((glyphs, index) => ({
 			name: "Material Symbols Outlined",
-			cssVariable: "--font-icons",
+			cssVariable: `--font-icons-${index + 1}`,
 			provider: fontProviders.googleicons(),
-			// The CSS uses the normal (400) icon weight. Google Icons rejects a
-			// variable range here, so request the concrete supported weight.
-			weights: [400],
-			styles: ["normal"],
+			weights: [400] as [number],
+			styles: ["normal"] as ["normal"],
 			fallbacks: ["sans-serif"],
-		},
+			options: { experimental: { glyphs } },
+		})),
 	],
 });

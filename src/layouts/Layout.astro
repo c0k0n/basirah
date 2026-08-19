@@ -1,5 +1,4 @@
 ---
-import { ClientRouter } from "astro:transitions";
 import { Font } from "astro:assets";
 import { pwaInfo } from "virtual:pwa-info";
 import { SITE } from "../site.config";
@@ -123,15 +122,17 @@ const robots = noindex
 		{
 			/* These families are used across the UI but are not LCP-critical,
 		    so they are injected (so their CSS variable resolves) without
-		    preloading. Without these, var(--font-icons/sans/serif/mono)
-		    is undefined and icons render as literal ligature text. */
+		    preloading. Without these, the font variables used by the UI are
+		    undefined and icons render as literal ligature text. */
 		}
-		<Font cssVariable="--font-icons" />
+		<Font cssVariable="--font-icons-1" />
+		<Font cssVariable="--font-icons-2" />
+		<Font cssVariable="--font-icons-3" />
+		<Font cssVariable="--font-icons-4" />
+		<Font cssVariable="--font-icons-5" />
 		<Font cssVariable="--font-sans" />
 		<Font cssVariable="--font-serif" />
 		<Font cssVariable="--font-mono" />
-
-		<ClientRouter />
 
 		<script is:inline>
 			/* THEME_BOOTSTRAP_START */
@@ -152,8 +153,6 @@ const robots = noindex
 					});
 				}
 				applyBasirahTheme();
-				document.addEventListener("astro:after-swap", applyBasirahTheme);
-				document.addEventListener("astro:page-load", applyBasirahTheme);
 				document.addEventListener("click", (event) => {
 					const btn = event.target.closest("[data-theme-toggle]");
 					if (!btn) return;

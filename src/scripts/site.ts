@@ -83,13 +83,7 @@ function initAllAudioPlayers() {
 		});
 }
 
-let swapped = false;
-document.addEventListener("astro:before-swap", () => {
-	swapped = true;
-});
-
-document.addEventListener("astro:page-load", () => {
-	initAllAudioPlayers();
+function initNav() {
 	const toggle = document.querySelector<HTMLElement>("[data-menu-toggle]");
 	const nav = document.querySelector<HTMLElement>("[data-nav]");
 	if (toggle && nav) {
@@ -98,17 +92,51 @@ document.addEventListener("astro:page-load", () => {
 			.querySelectorAll("a")
 			.forEach((link) => link.addEventListener("click", closeNav));
 	}
-	if (swapped) {
-		swapped = false;
-		const active = document.activeElement;
-		const main = document.getElementById("main");
-		if (main && (active === document.body || !document.contains(active))) {
-			main.focus({ preventScroll: true });
-		}
+}
+
+function foldText(text: string) {
+	return text
+		.toLowerCase()
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g, "")
+		.replace(/[\u0622\u0623\u0625\u0671]/g, "\u0627")
+		.replace(/\u0649/g, "\u064a")
+		.replace(/\u0629/g, "\u0647")
+		.replace(/\u0640/g, "")
+		.replace(/\s+/g, " ");
+}
+
+document.addEventListener("input", (event) => {
+	const input = event.target;
+	if (
+		!(input instanceof HTMLInputElement) ||
+		!input.hasAttribute("data-list-filter")
+	)
+		return;
+	const scope = input.closest("[data-filter-scope]");
+	const list = scope?.querySelector("[data-filter-list]");
+	if (!scope || !list) return;
+
+	const term = foldText(input.value);
+	const items = [...list.querySelectorAll<HTMLElement>("[data-filter-item]")];
+	let visible = 0;
+	for (const item of items) {
+		const match =
+			!term ||
+			(item.textContent ? foldText(item.textContent).includes(term) : false);
+		item.hidden = !match;
+		if (match) visible++;
 	}
+	scope
+		.querySelector<HTMLElement>("[data-filter-empty]")
+		?.toggleAttribute("hidden", visible !== 0);
+	const live = scope.querySelector<HTMLElement>("[data-filter-live]");
+	if (live)
+		live.textContent = visible === 0 ? "ရလဒ် မတွေ့ပါ" : `ရလဒ် ${visible} ခု`;
 });
 
 initAllAudioPlayers();
+initNav();
 
 document.addEventListener("keydown", (event: KeyboardEvent) => {
 	if (event.key !== "Escape") return;

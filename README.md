@@ -69,7 +69,7 @@ Today the site is **deployed on Cloudflare Pages**, passes `astro check` with ze
 - **PWA** — installable, with a web app manifest in Burmese (`lang: "my"`), auto-updating service worker, offline app-shell caching, and theme-aware icons.
 - **Light & dark themes** — a warm "paper & emerald & gold" light theme and a deep green-black dark theme, respecting `prefers-color-scheme` with a manual toggle, with a flash-of-wrong-theme guard.
 - **Bilingual typography done properly** — Noto Serif/Sans Myanmar, Noto Naskh Arabic, and Latin serif/sans stacks, each applied via `:lang()` selectors so every script renders beautifully.
-- **Accessibility** — skip links, ARIA labels and live regions, focus management during view transitions, visible focus states, `prefers-reduced-motion` support, and semantic HTML throughout.
+- **Accessibility** — skip links, ARIA labels and live regions, visible focus states, `prefers-reduced-motion` support, and semantic HTML throughout.
 - **SEO & structured data** — canonical URLs, hreflang, Open Graph & Twitter cards, XML sitemap, and JSON-LD (`WebSite`, `CollectionPage`/`ItemList`, `WebPage`, and per-surah `audio` entities).
 - **Security** — strict Content Security Policy, `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy`, `Permissions-Policy`, and a `robots.txt` that welcomes search engines and other crawlers alike (while politely excluding the heavy media folder).
 
@@ -129,7 +129,7 @@ src/
   assets/audio/      →  recitation audio (.opus, bundled & hashed)
   assets/brand/      →  source SVG for the maskable icon
   components/        →  reusable .astro components (8)
-  layouts/           →  Layout.astro: meta, SEO, fonts, theme, transitions
+  layouts/           →  Layout.astro: meta, SEO, fonts, and theme
   pages/             →  routes (home, 404, surahs, duas, names-of-allah)
   scripts/           →  browser-only service-worker registration
 scripts/             →  Bun build tooling (headers and PWA asset generation)
@@ -146,9 +146,9 @@ scripts/             →  Bun build tooling (headers and PWA asset generation)
 
 **Client-side behavior** (all bundled, no frameworks):
 
-- `AudioPlayer` — initializes on `astro:page-load`, survives ClientRouter navigations.
+- `AudioPlayer` — initializes from the shared TypeScript browser module.
 - `ListFilter` — delegated listener with folded-text matching and a live-region result count.
-- Theme toggle — `localStorage` + `prefers-color-scheme`, FOUC guard, re-bound after view transitions.
+- Theme toggle — `localStorage` + `prefers-color-scheme`, with a FOUC guard.
 - PWA registration — via `@vite-pwa/astro` (`registerType: "autoUpdate"`).
 
 **PWA details worth knowing:** the custom service worker uses Workbox's
@@ -253,7 +253,7 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 **Accessibility**
 
 - Skip link, landmarks, semantic HTML (lists for grids, `dl` for definitions, `:lang` typography).
-- Focus management after view transitions; Escape closes the mobile menu and returns focus.
+- Escape closes the mobile menu and returns focus.
 - ARIA: live region for filter results, `aria-pressed` theme toggle, labeled audio controls, `aria-hidden` decorations.
 - `prefers-reduced-motion` respected; keyboard-visible focus styles; readable contrast in both themes.
 
@@ -266,8 +266,8 @@ This section is a candid record of things we got wrong, learned, and fixed — i
 
 **Performance**
 
-- 100% static output; no client framework; shared CSS is externalized when it
-  exceeds Astro/Vite's inline asset limit (`inlineStylesheets: "auto"`).
+- 100% static output; no client framework; the small shared stylesheet is inlined
+  to remove a render-blocking request.
 - Fonts subsetted and preloaded for the critical path; hashed assets cached immutably for a year.
 - Audio served as efficient `.opus` with lazy `preload` semantics in the player.
 
