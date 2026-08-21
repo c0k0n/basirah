@@ -84,6 +84,8 @@ export default defineConfig({
 						"menu_book",
 						"pause",
 						"play_arrow",
+						"replay_10",
+						"forward_10",
 						"search",
 						"search_off",
 						"star",

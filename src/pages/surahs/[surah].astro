@@ -191,7 +191,13 @@ const prostration = meta.prostration_verse;
 		</dl>
 	</header>
 
-	{audioUrl && <AudioPlayer src={audioUrl} title={meta.name_transliteration} />}
+	{
+		audioUrl && (
+			<div class="audio-player-wrap" data-audio-wrap>
+				<AudioPlayer src={audioUrl} title={meta.name_transliteration} />
+			</div>
+		)
+	}
 
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<h2 class="visually-hidden">ဗစ်မီလ္လာဟ်</h2>
@@ -207,7 +213,7 @@ const prostration = meta.prostration_verse;
 	</section>
 
 	<h2 class="verse-section-title">အာယသ်များ</h2>
-	<ol class="verse-list">
+	<ol class="verse-list" data-verse-observe>
 		{
 			surah.data.verses.map((verse: SurahVerse) => (
 				<li class="verse">
@@ -274,4 +280,77 @@ const prostration = meta.prostration_verse;
 			)
 		}
 	</nav>
+
+	<script>
+		const wrap = document.querySelector<HTMLElement>("[data-audio-wrap]");
+		const player = document.querySelector<HTMLElement>("[data-audio-player]");
+		const verses = document.querySelector<HTMLElement>("[data-verse-observe]");
+		const docEl = document.documentElement;
+
+		if (wrap && player && verses && "IntersectionObserver" in window) {
+			let isFloating = false;
+			let versesVisible = false;
+			let wrapVisible = true;
+			let resizeTimer: number | undefined;
+
+			const setFloating = (shouldFloat: boolean) => {
+				if (shouldFloat === isFloating) return;
+				isFloating = shouldFloat;
+
+				if (shouldFloat) {
+					const height = player.offsetHeight;
+					wrap.style.height = `${height}px`;
+					player.classList.add("is-floating");
+					docEl.classList.add("has-floating-audio");
+				} else {
+					player.classList.remove("is-floating");
+					docEl.classList.remove("has-floating-audio");
+					wrap.style.height = "";
+				}
+			};
+
+			const update = () => {
+				// Floating while verses are in viewport but the original
+				// inline player has scrolled out of view. This prevents an
+				// immediate dock on large viewports where the first ayat is
+				// already visible at load, and matches the quran.com pattern
+				// where the dock appears after the hero/bismillah scroll past.
+				const shouldFloat = versesVisible && !wrapVisible;
+				setFloating(shouldFloat);
+			};
+
+			const versesObserver = new IntersectionObserver(
+				(entries) => {
+					const entry = entries[0];
+					if (!entry) return;
+					versesVisible = entry.isIntersecting;
+					update();
+				},
+				{ threshold: 0 },
+			);
+
+			const wrapObserver = new IntersectionObserver(
+				(entries) => {
+					const entry = entries[0];
+					if (!entry) return;
+					wrapVisible = entry.isIntersecting;
+					update();
+				},
+				{ threshold: 0 },
+			);
+
+			versesObserver.observe(verses);
+			wrapObserver.observe(wrap);
+
+			const onResize = () => {
+				if (!isFloating) return;
+				window.clearTimeout(resizeTimer);
+				resizeTimer = window.setTimeout(() => {
+					wrap.style.height = `${player.offsetHeight}px`;
+				}, 100);
+			};
+
+			window.addEventListener("resize", onResize, { passive: true });
+		}
+	</script>
 </Layout>

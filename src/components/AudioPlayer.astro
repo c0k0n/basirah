@@ -20,6 +20,15 @@ const { src, title } = Astro.props;
 		</p>
 	</audio>
 	<button
+		class="audio-skip"
+		type="button"
+		data-audio-rewind
+		aria-label={`${title} — ၁၀ စက္ကန့် နောက်ဆုတ်ရန်`}
+		title="10s back"
+	>
+		<span class="material-symbols-outlined" aria-hidden="true">replay_10</span>
+	</button>
+	<button
 		class="audio-play"
 		type="button"
 		data-audio-play
@@ -27,6 +36,15 @@ const { src, title } = Astro.props;
 		aria-label={`${title} ကို ဖွင့်ရန်/ရပ်ရန်`}
 	>
 		<span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
+	</button>
+	<button
+		class="audio-skip"
+		type="button"
+		data-audio-forward
+		aria-label={`${title} — ၁၀ စက္ကန့် ရှေ့သို့`}
+		title="10s forward"
+	>
+		<span class="material-symbols-outlined" aria-hidden="true">forward_10</span>
 	</button>
 	<output class="audio-times" aria-hidden="true">
 		<time data-audio-current>0:00</time>
@@ -62,6 +80,12 @@ const { src, title } = Astro.props;
 				"[data-audio-duration]",
 			);
 			const seek = player.querySelector<HTMLInputElement>("[data-audio-seek]");
+			const rewindButton = player.querySelector<HTMLButtonElement>(
+				"[data-audio-rewind]",
+			);
+			const forwardButton = player.querySelector<HTMLButtonElement>(
+				"[data-audio-forward]",
+			);
 			if (!audio || !playButton || !current || !duration || !seek) return;
 
 			const icon = playButton.querySelector<HTMLElement>(
@@ -74,10 +98,33 @@ const { src, title } = Astro.props;
 			};
 			let seeking = false;
 
+			const SKIP_SECONDS = 10;
+
+			const skip = (delta: number) => {
+				// Clamp to valid range; duration may be NaN before metadata.
+				const currentTime = Number.isFinite(audio.currentTime)
+					? audio.currentTime
+					: 0;
+				const durationValue = Number.isFinite(audio.duration)
+					? audio.duration
+					: null;
+				let next = currentTime + delta;
+				next = Math.max(0, next);
+				if (durationValue !== null) next = Math.min(durationValue, next);
+				audio.currentTime = next;
+				// Update UI immediately (timeupdate may not fire instantly when paused).
+				current.textContent = formatTime(next);
+				if (durationValue) {
+					seek.value = String((next / durationValue) * 1000);
+				}
+			};
+
 			playButton.addEventListener("click", () => {
 				if (audio.paused) void audio.play().catch(() => {});
 				else audio.pause();
 			});
+			rewindButton?.addEventListener("click", () => skip(-SKIP_SECONDS));
+			forwardButton?.addEventListener("click", () => skip(SKIP_SECONDS));
 			audio.addEventListener("play", updateState);
 			audio.addEventListener("pause", updateState);
 			audio.addEventListener("ended", updateState);

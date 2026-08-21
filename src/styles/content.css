@@ -321,6 +321,10 @@
 
 /* Audio player */
 
+.audio-player-wrap {
+	margin-top: 1.5rem;
+}
+
 .audio-player {
 	display: flex;
 	align-items: center;
@@ -330,7 +334,96 @@
 	border-radius: var(--radius);
 	box-shadow: var(--shadow);
 	padding: 1rem 1.25rem;
-	margin-top: 1.5rem;
+	transition:
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+/* Floating dock — appears when verses are in viewport, sticks to bottom */
+.audio-player.is-floating {
+	position: fixed;
+	inset-inline: 0;
+	bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+	left: 50%;
+	right: auto;
+	transform: translateX(-50%);
+	width: min(calc(100% - 1.5rem), 44rem);
+	z-index: 40;
+	box-shadow:
+		0 8px 32px rgb(0 0 0 / 0.18),
+		0 2px 8px rgb(0 0 0 / 0.12);
+	border-color: color-mix(in srgb, var(--border) 80%, var(--primary) 20%);
+	animation: audio-float-in 0.28s ease;
+}
+
+@keyframes audio-float-in {
+	from {
+		transform: translateX(-50%) translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(-50%) translateY(0);
+		opacity: 1;
+	}
+}
+
+html.has-floating-audio {
+	scroll-padding-bottom: 5rem;
+}
+
+html.has-floating-audio .verse-list {
+	padding-bottom: 6rem;
+}
+
+@media (max-width: 40rem) {
+	.audio-player {
+		gap: 0.6rem;
+		padding: 0.85rem 1rem;
+	}
+
+	.audio-player.is-floating {
+		width: calc(100% - 1rem);
+		bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+		border-radius: 12px;
+		padding: 0.85rem 1rem;
+	}
+
+	html.has-floating-audio .verse-list {
+		padding-bottom: 5.5rem;
+	}
+
+	.audio-play {
+		width: 2.75rem;
+		height: 2.75rem;
+	}
+
+	.audio-skip {
+		width: 2.2rem;
+		height: 2.2rem;
+	}
+
+	.audio-skip .material-symbols-outlined {
+		font-size: 20px;
+	}
+
+	.audio-times {
+		font-size: 0.8rem;
+	}
+
+	.audio-seek {
+		/* keep seek usable even when controls are wider */
+		min-width: 3rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.audio-player.is-floating {
+		animation: none;
+	}
+
+	.audio-player {
+		transition: none;
+	}
 }
 
 .audio-play {
@@ -356,6 +449,38 @@
 
 .audio-play .material-symbols-outlined {
 	font-size: 28px;
+}
+
+.audio-skip {
+	display: grid;
+	place-items: center;
+	flex-shrink: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 1px solid var(--border);
+	border-radius: 50%;
+	background: var(--surface);
+	color: var(--text-muted);
+	cursor: pointer;
+	transition:
+		background-color 0.15s ease,
+		color 0.15s ease,
+		border-color 0.15s ease,
+		transform 0.15s ease;
+}
+
+.audio-skip:hover {
+	background: var(--surface-muted);
+	color: var(--text);
+	border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
+}
+
+.audio-skip:active {
+	transform: scale(0.96);
+}
+
+.audio-skip .material-symbols-outlined {
+	font-size: 22px;
 }
 
 .audio-times {
