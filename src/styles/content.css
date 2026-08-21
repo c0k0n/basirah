@@ -654,6 +654,80 @@ html.has-floating-audio .verse-list {
 	font-size: 0.95rem;
 }
 
+/* Surah quick jump — top bar + center bar triggers */
+.surah-top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 1.25rem;
+	flex-wrap: wrap;
+}
+
+.surah-top-bar .back-link {
+	margin-bottom: 0;
+}
+
+.quick-trigger {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.5rem 0.9rem;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	background: var(--surface);
+	color: var(--text-muted);
+	font: inherit;
+	font-size: 0.88rem;
+	font-weight: 500;
+	cursor: pointer;
+	white-space: nowrap;
+	transition:
+		background-color 0.15s ease,
+		color 0.15s ease,
+		border-color 0.15s ease,
+		transform 0.15s ease;
+}
+
+.quick-trigger:hover {
+	background: var(--surface-muted);
+	color: var(--text);
+	border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
+}
+
+.quick-trigger:active {
+	transform: scale(0.98);
+}
+
+.quick-trigger .material-symbols-outlined {
+	font-size: 18px;
+}
+
+.quick-nav-bar {
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.quick-trigger--center {
+	padding: 0.65rem 1.1rem;
+	font-size: 0.92rem;
+}
+
+@media (max-width: 30rem) {
+	.quick-trigger span:not(.material-symbols-outlined):not([lang="en"]) {
+		display: none;
+	}
+
+	.quick-trigger span[lang="en"] {
+		display: none;
+	}
+
+	.surah-top-bar .quick-trigger {
+		padding: 0.5rem 0.75rem;
+	}
+}
+
 /* Dua index — editorial list */
 
 .dua-list {

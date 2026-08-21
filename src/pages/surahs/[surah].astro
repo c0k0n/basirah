@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import AudioPlayer from "../../components/AudioPlayer.astro";
+import SurahJumpDialog from "../../components/SurahJumpDialog.astro";
 import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -69,6 +70,11 @@ const { surah, prev, next, audioUrl } = Astro.props;
 const meta = surah.data.surah_metadata;
 const bismillah = surah.data.bismillah;
 const prostration = meta.prostration_verse;
+
+const allSurahs = (await getCollection("surahs")).sort(
+	(a, b) =>
+		a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
+);
 ---
 
 <Layout
@@ -118,11 +124,26 @@ const prostration = meta.prostration_verse;
 			}),
 		}}
 	/>
-	<a class="back-link" href="/surahs/">
-		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		စူရဟ်အားလုံး
-		<span lang="en">· All surahs</span>
-	</a>
+	<div class="surah-top-bar">
+		<a class="back-link" href="/surahs/">
+			<span class="material-symbols-outlined" aria-hidden="true"
+				>arrow_back</span
+			>
+			စူရဟ်အားလုံး
+			<span lang="en">· All surahs</span>
+		</a>
+		<button
+			class="quick-trigger"
+			type="button"
+			data-quick-open
+			aria-label="စူရဟ်ရွေးချယ်ရန် · Jump to surah"
+		>
+			<span class="material-symbols-outlined" aria-hidden="true">menu_book</span
+			>
+			<span>စူရဟ်ရွေးရန်</span>
+			<span lang="en">· Jump</span>
+		</button>
+	</div>
 
 	<header class="surah-hero">
 		<span class="surah-hero-number">စူရဟ် {meta.surah_number}</span>
@@ -280,6 +301,23 @@ const prostration = meta.prostration_verse;
 			)
 		}
 	</nav>
+
+	<div class="quick-nav-bar">
+		<button
+			class="quick-trigger quick-trigger--center"
+			type="button"
+			data-quick-open
+			aria-label="စူရဟ်စာရင်းမှ ရွေးချယ်ရန် · Choose from list"
+		>
+			<span class="material-symbols-outlined" aria-hidden="true"
+				>format_list_numbered</span
+			>
+			<span>စူရဟ်စာရင်းမှ ရွေးရန်</span>
+			<span lang="en">· All 46</span>
+		</button>
+	</div>
+
+	<SurahJumpDialog surahs={allSurahs} currentId={surah.id} />
 
 	<script>
 		const wrap = document.querySelector<HTMLElement>("[data-audio-wrap]");
