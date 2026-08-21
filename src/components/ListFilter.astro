@@ -5,13 +5,14 @@ interface Props {
 }
 
 const { label, placeholder = label } = Astro.props;
+const inputId = `list-filter-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${Math.random().toString(36).slice(2, 6)}`;
 ---
 
 <search class="list-filter">
 	<span class="material-symbols-outlined" aria-hidden="true">search</span>
-	<label class="visually-hidden" for="list-filter-input">{label}</label>
+	<label class="visually-hidden" for={inputId}>{label}</label>
 	<input
-		id="list-filter-input"
+		id={inputId}
 		type="search"
 		class="list-filter-input"
 		data-list-filter

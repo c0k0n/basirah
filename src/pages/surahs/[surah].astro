@@ -16,6 +16,7 @@ interface Props {
 	prev: NavEntry | null;
 	next: NavEntry | null;
 	audioUrl: string | null;
+	allSurahs: CollectionEntry<"surahs">[];
 }
 
 type SurahVerse = CollectionEntry<"surahs">["data"]["verses"][number];
@@ -61,20 +62,16 @@ export async function getStaticPaths() {
 						}
 					: null,
 				audioUrl: audioBySurahId.get(surah.id) ?? null,
+				allSurahs: surahs,
 			},
 		};
 	});
 }
 
-const { surah, prev, next, audioUrl } = Astro.props;
+const { surah, prev, next, audioUrl, allSurahs } = Astro.props;
 const meta = surah.data.surah_metadata;
 const bismillah = surah.data.bismillah;
 const prostration = meta.prostration_verse;
-
-const allSurahs = (await getCollection("surahs")).sort(
-	(a, b) =>
-		a.data.surah_metadata.surah_number - b.data.surah_metadata.surah_number,
-);
 ---
 
 <Layout
@@ -223,18 +220,19 @@ const allSurahs = (await getCollection("surahs")).sort(
 	<section class="bismillah" aria-label="ဗစ်မီလ္လာဟ်">
 		<h2 class="visually-hidden">ဗစ်မီလ္လာဟ်</h2>
 		<p class="bismillah-arabic" lang="ar" dir="rtl">{bismillah.arabic}</p>
-		<section
+		<div
 			class="bismillah-translations"
+			role="group"
 			aria-label="ဗစ်မီလ္လာဟ် ဘာသာပြန်များ"
 		>
 			<p>{bismillah.burmese_transliteration}</p>
 			<p lang="en">{bismillah.english_translation}</p>
 			<p>{bismillah.burmese_translation}</p>
-		</section>
+		</div>
 	</section>
 
-	<h2 class="verse-section-title">အာယသ်များ</h2>
-	<ol class="verse-list" data-verse-observe>
+	<h2 id="verse-title" class="verse-section-title">အာယသ်များ</h2>
+	<ol class="verse-list" data-verse-observe aria-labelledby="verse-title">
 		{
 			surah.data.verses.map((verse: SurahVerse) => (
 				<li class="verse">

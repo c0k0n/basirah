@@ -29,6 +29,8 @@ const meta = names[0]!.data.meta;
 				"@type": "ListItem",
 				position: name.data.number,
 				name: `${name.data.transliteration} (${name.data.english_meaning})`,
+				url: new URL(`/names-of-allah/#name-${name.data.number}`, Astro.site)
+					.href,
 			})),
 			breadcrumb: {
 				"@type": "BreadcrumbList",
@@ -85,7 +87,7 @@ const meta = names[0]!.data.meta;
 				<tbody>
 					{
 						names.map((name) => (
-							<tr data-filter-item>
+							<tr id={`name-${name.data.number}`} data-filter-item>
 								<th scope="row" class="name-col-num" data-label="စဉ်">
 									{name.data.number}
 								</th>

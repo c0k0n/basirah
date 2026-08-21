@@ -47,7 +47,7 @@ const { src, title } = Astro.props;
 		<span class="material-symbols-outlined" aria-hidden="true">forward_10</span>
 	</button>
 	<output class="audio-times" aria-hidden="true">
-		<time data-audio-current>0:00</time>
+		<time data-audio-current datetime="PT0S">0:00</time>
 		/
 		<time data-audio-duration>–:––</time>
 	</output>
@@ -68,6 +68,9 @@ const { src, title } = Astro.props;
 		Number.isFinite(seconds)
 			? `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`
 			: "–:––";
+
+	const formatDuration = (seconds: number) =>
+		Number.isFinite(seconds) ? `PT${Math.floor(seconds)}S` : "";
 
 	document
 		.querySelectorAll<HTMLElement>("[data-audio-player]")
@@ -98,6 +101,20 @@ const { src, title } = Astro.props;
 			};
 			let seeking = false;
 
+			const setCurrent = (seconds: number) => {
+				current.textContent = formatTime(seconds);
+				const dur = formatDuration(seconds);
+				if (dur) current.setAttribute("datetime", dur);
+				else current.removeAttribute("datetime");
+			};
+
+			const setDuration = (seconds: number) => {
+				duration.textContent = formatTime(seconds);
+				const dur = formatDuration(seconds);
+				if (dur) duration.setAttribute("datetime", dur);
+				else duration.removeAttribute("datetime");
+			};
+
 			const SKIP_SECONDS = 10;
 
 			const skip = (delta: number) => {
@@ -113,7 +130,7 @@ const { src, title } = Astro.props;
 				if (durationValue !== null) next = Math.min(durationValue, next);
 				audio.currentTime = next;
 				// Update UI immediately (timeupdate may not fire instantly when paused).
-				current.textContent = formatTime(next);
+				setCurrent(next);
 				if (durationValue) {
 					seek.value = String((next / durationValue) * 1000);
 				}
@@ -129,18 +146,17 @@ const { src, title } = Astro.props;
 			audio.addEventListener("pause", updateState);
 			audio.addEventListener("ended", updateState);
 			audio.addEventListener("loadedmetadata", () => {
-				duration.textContent = formatTime(audio.duration);
+				setDuration(audio.duration);
 			});
 			audio.addEventListener("timeupdate", () => {
-				current.textContent = formatTime(audio.currentTime);
+				setCurrent(audio.currentTime);
 				if (!seeking && audio.duration)
 					seek.value = String((audio.currentTime / audio.duration) * 1000);
 			});
 			seek.addEventListener("input", () => {
 				seeking = true;
-				current.textContent = formatTime(
-					(Number(seek.value) / 1000) * (audio.duration || 0),
-				);
+				const preview = (Number(seek.value) / 1000) * (audio.duration || 0);
+				setCurrent(preview);
 			});
 			seek.addEventListener("change", () => {
 				if (audio.duration)

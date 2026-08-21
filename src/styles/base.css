@@ -34,6 +34,8 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scrollbar-gutter: stable;
+	scroll-padding-top: 5rem;
+	scroll-padding-bottom: 5rem;
 }
 
 body {
