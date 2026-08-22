@@ -31,3 +31,6 @@ yarn-error.log*
 # package manager files
 pnpm-lock.yaml
 pnpm-workspace.yaml
+
+# generated codebase-scan artifact (regenerate with the scan script)
+docs/codebase/.codebase-scan.txt

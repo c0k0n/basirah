@@ -1,0 +1,79 @@
+---
+interface Props {
+	variant?: "star" | "divider";
+	class?: string;
+}
+
+const { variant = "star", class: className } = Astro.props;
+---
+
+{
+	variant === "star" ? (
+		<svg
+			class:list={["ornament-star", className]}
+			viewBox="0 0 100 100"
+			aria-hidden="true"
+		>
+			<circle cx="50" cy="50" r="47" />
+			<rect
+				x="23.2"
+				y="23.2"
+				width="53.6"
+				height="53.6"
+				transform="rotate(45 50 50)"
+			/>
+			<rect x="23.2" y="23.2" width="53.6" height="53.6" />
+			<circle cx="50" cy="50" r="21" />
+			<circle cx="50" cy="50" r="3.5" class="ornament-fill" />
+		</svg>
+	) : (
+		<svg
+			class:list={["ornament-divider", className]}
+			viewBox="0 0 240 16"
+			aria-hidden="true"
+		>
+			<line x1="0" y1="8" x2="98" y2="8" />
+			<line x1="142" y1="8" x2="240" y2="8" />
+			<circle cx="105" cy="8" r="1.8" class="ornament-fill" />
+			<circle cx="135" cy="8" r="1.8" class="ornament-fill" />
+			<rect
+				x="115.5"
+				y="3.5"
+				width="9"
+				height="9"
+				transform="rotate(45 120 8)"
+			/>
+		</svg>
+	)
+}
+
+<style>
+	svg {
+		display: block;
+	}
+
+	circle,
+	rect,
+	line {
+		fill: none;
+		stroke: currentColor;
+	}
+
+	.ornament-star circle,
+	.ornament-star rect {
+		stroke-width: 2;
+	}
+
+	.ornament-divider line {
+		stroke-width: 1.5;
+	}
+
+	.ornament-divider rect {
+		stroke-width: 1.5;
+	}
+
+	.ornament-fill {
+		fill: currentColor;
+		stroke: none;
+	}
+</style>

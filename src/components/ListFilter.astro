@@ -2,10 +2,20 @@
 interface Props {
 	label: string;
 	placeholder?: string;
+	id?: string;
 }
 
-const { label, placeholder = label } = Astro.props;
-const inputId = `list-filter-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${Math.random().toString(36).slice(2, 6)}`;
+const { label, placeholder = label, id } = Astro.props;
+// Deterministic id: allow explicit id, otherwise derive from label preserving
+// Myanmar characters (U+1000–U+109F). Avoids random suffix / hydration mismatch.
+const slug =
+	id ??
+	(label
+		.toLowerCase()
+		.replace(/[^a-z0-9\u1000-\u109f]+/g, "-")
+		.replace(/^-+|-+$/g, "") ||
+		"search");
+const inputId = `list-filter-${slug}`;
 ---
 
 <search class="list-filter">
@@ -17,21 +27,16 @@ const inputId = `list-filter-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-
 		class="list-filter-input"
 		data-list-filter
 		placeholder={placeholder}
+		autocomplete="off"
+		autocapitalize="off"
+		spellcheck="false"
+		inputmode="search"
 	/>
 	<p class="visually-hidden" data-filter-live aria-live="polite"></p>
 </search>
 
 <script>
-	const foldText = (text: string) =>
-		text
-			.toLowerCase()
-			.normalize("NFD")
-			.replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g, "")
-			.replace(/[\u0622\u0623\u0625\u0671]/g, "ا")
-			.replace(/\u0649/g, "ي")
-			.replace(/\u0629/g, "ه")
-			.replace(/\u0640/g, "")
-			.replace(/\s+/g, " ");
+	import { filterList } from "../utils/filterList";
 
 	document.addEventListener("input", (event) => {
 		const input = event.target;
@@ -44,21 +49,11 @@ const inputId = `list-filter-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-
 		const list = scope?.querySelector("[data-filter-list]");
 		if (!scope || !list) return;
 
-		const term = foldText(input.value);
-		const items = [...list.querySelectorAll<HTMLElement>("[data-filter-item]")];
-		let visible = 0;
-		for (const item of items) {
-			const match =
-				!term ||
-				(item.textContent ? foldText(item.textContent).includes(term) : false);
-			item.hidden = !match;
-			if (match) visible++;
-		}
-		scope
-			.querySelector<HTMLElement>("[data-filter-empty]")
-			?.toggleAttribute("hidden", visible !== 0);
-		const live = scope.querySelector<HTMLElement>("[data-filter-live]");
-		if (live)
-			live.textContent = visible === 0 ? "ရလဒ် မတွေ့ပါ" : `ရလဒ် ${visible} ခု`;
+		filterList({
+			term: input.value,
+			items: [...list.querySelectorAll<HTMLElement>("[data-filter-item]")],
+			empty: scope.querySelector<HTMLElement>("[data-filter-empty]"),
+			live: scope.querySelector<HTMLElement>("[data-filter-live]"),
+		});
 	});
 </script>

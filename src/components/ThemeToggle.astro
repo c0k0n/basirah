@@ -34,7 +34,7 @@
 	const applyTheme = (theme: "light" | "dark") => {
 		document.documentElement.dataset.theme = theme;
 		if (themeColor)
-			themeColor.content = theme === "dark" ? "#101613" : "#fdfbf7";
+			themeColor.content = theme === "dark" ? "#16130e" : "#f7f2e7";
 		if (toggle) {
 			toggle.setAttribute("aria-pressed", String(theme === "dark"));
 			toggle.setAttribute(

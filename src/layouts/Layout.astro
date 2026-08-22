@@ -2,7 +2,7 @@
 import { Font } from "astro:assets";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE } from "../site.config";
+import { SITE } from "../utils/constants";
 import "../styles/tokens.css";
 import "../styles/base.css";
 import "../styles/components.css";
@@ -41,6 +41,7 @@ const robots = noindex
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light dark" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -50,7 +51,8 @@ const robots = noindex
 			href="/apple-touch-icon-180x180.png"
 		/>
 		<link rel="manifest" href="/manifest.webmanifest" />
-		<meta name="theme-color" content="#fdfbf7" data-theme-color />
+		<meta name="theme-color" content="#f7f2e7" data-theme-color />
+		<meta name="format-detection" content="telephone=no" />
 		<script is:inline>
 			try {
 				const k = "basirah-theme";
@@ -63,7 +65,7 @@ const robots = noindex
 							: "light";
 				document.documentElement.dataset.theme = t;
 				const m = document.querySelector("meta[data-theme-color]");
-				if (m) m.content = t === "dark" ? "#101613" : "#fdfbf7";
+				if (m) m.content = t === "dark" ? "#16130e" : "#f7f2e7";
 			} catch {}
 		</script>
 
@@ -116,22 +118,19 @@ const robots = noindex
 		    font-display:swap. Over-preloading blocks other critical resources. */
 		}
 		<Font
-			cssVariable="--font-myanmar-sans"
-			preload={[{ subset: "myanmar", style: "normal", weight: "400" }]}
+			cssVariable="--font-my"
+			preload={[
+				{ subset: "myanmar", style: "normal", weight: "400" },
+				{ subset: "myanmar", style: "normal", weight: "700" },
+			]}
 		/>
 		<Font
-			cssVariable="--font-myanmar-serif"
-			preload={[{ subset: "myanmar", style: "normal", weight: "700" }]}
-		/>
-		<Font
-			cssVariable="--font-arabic"
+			cssVariable="--font-ar"
 			preload={[{ subset: "arabic", style: "normal", weight: "700" }]}
 		/>
 
-		<Font cssVariable="--font-icons" />
-		<Font cssVariable="--font-sans" />
-		<Font cssVariable="--font-serif" />
-		<Font cssVariable="--font-mono" />
+		<Font cssVariable="--font-icon" />
+		<Font cssVariable="--font-en" />
 	</head>
 	<body>
 		<a class="skip-link" href="#main">အကြောင်းအရာသို့ သွားရန်</a>

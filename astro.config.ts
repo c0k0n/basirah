@@ -4,20 +4,12 @@ import { defineConfig, fontProviders } from "astro/config";
 export default defineConfig({
 	output: "static",
 	site: "https://basirah.pages.dev",
+	trailingSlash: "always",
 	integrations: [sitemap()],
 	fonts: [
 		{
-			name: "Noto Serif Myanmar",
-			cssVariable: "--font-myanmar-serif",
-			provider: fontProviders.google(),
-			weights: [400, 700],
-			styles: ["normal"],
-			subsets: ["myanmar"],
-			fallbacks: ["serif"],
-		},
-		{
 			name: "Noto Sans Myanmar",
-			cssVariable: "--font-myanmar-sans",
+			cssVariable: "--font-my",
 			provider: fontProviders.google(),
 			weights: ["400 700"],
 			styles: ["normal"],
@@ -26,7 +18,7 @@ export default defineConfig({
 		},
 		{
 			name: "Noto Naskh Arabic",
-			cssVariable: "--font-arabic",
+			cssVariable: "--font-ar",
 			provider: fontProviders.google(),
 			weights: ["400 700"],
 			styles: ["normal"],
@@ -34,32 +26,27 @@ export default defineConfig({
 			fallbacks: ["serif"],
 		},
 		{
-			name: "Noto Serif",
-			cssVariable: "--font-serif",
+			name: "Recursive",
+			cssVariable: "--font-en",
 			provider: fontProviders.google(),
 			weights: ["400 700"],
 			styles: ["normal"],
-			fallbacks: ["serif"],
-		},
-		{
-			name: "Noto Sans",
-			cssVariable: "--font-sans",
-			provider: fontProviders.google(),
-			weights: ["400 700"],
-			styles: ["normal"],
+			subsets: ["latin"],
 			fallbacks: ["sans-serif"],
-		},
-		{
-			name: "Noto Sans Mono",
-			cssVariable: "--font-mono",
-			provider: fontProviders.google(),
-			weights: ["400 700"],
-			styles: ["normal"],
-			fallbacks: ["monospace"],
+			options: {
+				experimental: {
+					variableAxis: {
+						MONO: [["0", "1"]],
+						CASL: [["0", "1"]],
+						CRSV: ["1"],
+						slnt: [["-15", "0"]],
+					},
+				},
+			},
 		},
 		{
 			name: "Material Symbols Outlined",
-			cssVariable: "--font-icons",
+			cssVariable: "--font-icon",
 			provider: fontProviders.googleicons(),
 			weights: [400],
 			styles: ["normal"],

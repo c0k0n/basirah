@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <title>Basirah — ဗဆီရဟ်</title>
-  <rect width="64" height="64" rx="14" fill="#0e6b4a"/>
-  <g fill="#e8c268">
-    <rect x="22" y="22" width="20" height="20" rx="3"/>
-    <rect x="22" y="22" width="20" height="20" rx="3" transform="rotate(45 32 32)"/>
+  <rect width="64" height="64" rx="14" fill="#27408b"/>
+  <g fill="none" stroke="#c9a227" stroke-width="2.5">
+    <circle cx="32" cy="32" r="21"/>
+    <rect x="17.5" y="17.5" width="29" height="29" transform="rotate(45 32 32)"/>
+    <rect x="17.5" y="17.5" width="29" height="29"/>
   </g>
+  <circle cx="32" cy="32" r="4" fill="#c9a227"/>
 </svg>

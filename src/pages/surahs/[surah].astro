@@ -5,6 +5,7 @@ import SurahJumpDialog from "../../components/SurahJumpDialog.astro";
 import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import { truncate } from "../../utils/truncate";
 
 interface NavEntry {
 	id: string;
@@ -72,11 +73,14 @@ const { surah, prev, next, audioUrl, allSurahs } = Astro.props;
 const meta = surah.data.surah_metadata;
 const bismillah = surah.data.bismillah;
 const prostration = meta.prostration_verse;
+// Keep SEO description within ~155 chars to avoid SERP truncation (word-aware).
+const rawDescription = `စူရဟ် ${meta.name_transliteration} — ${meta.meaning_of_title.burmese}။ ${meta.revelation_place.burmese}၌ ကျရောက်သော စူရဟ်ဖြစ်ပြီး အာယသ် ${meta.total_verses} ပါဝင်ကာ မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံတို့ ပါဝင်ပါသည်။`;
+const seoDescription = truncate(rawDescription, 155);
 ---
 
 <Layout
 	title={`${meta.name_transliteration} (${meta.surah_number}) — Basirah`}
-	description={`စူရဟ် ${meta.name_transliteration} — ${meta.meaning_of_title.burmese}။ ${meta.revelation_place.burmese}၌ ကျရောက်သော စူရဟ်ဖြစ်ပြီး အာယသ် ${meta.total_verses} ပါဝင်ကာ မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံတို့ ပါဝင်ပါသည်။`}
+	description={seoDescription}
 	ogType="article"
 >
 	<JsonLd
@@ -85,7 +89,7 @@ const prostration = meta.prostration_verse;
 			"@type": "WebPage",
 			name: `Surah ${meta.name_transliteration} (${meta.surah_number})`,
 			url: new URL(`/surahs/${surah.id}/`, Astro.site).href,
-			description: `စူရဟ် ${meta.name_transliteration} — ${meta.meaning_of_title.burmese}။ ${meta.revelation_place.burmese}၌ ကျရောက်သော စူရဟ်ဖြစ်ပြီး အာယသ် ${meta.total_verses} ပါဝင်ကာ မြန်မာဘာသာပြန်၊ အသံထွက်နှင့် ရွတ်ဖတ်သံတို့ ပါဝင်ပါသည်။`,
+			description: seoDescription,
 			inLanguage: ["my", "en", "ar"],
 			breadcrumb: {
 				"@type": "BreadcrumbList",
@@ -239,7 +243,7 @@ const prostration = meta.prostration_verse;
 					<header class="verse-head">
 						<span class="verse-number">အာယသ် {verse.verse_number}</span>
 						{verse.arabic_marker && (
-							<span class="verse-prostration" lang="ar">
+							<span class="verse-prostration" lang="ar" dir="rtl">
 								{verse.arabic_marker} سَجْدَة
 							</span>
 						)}
@@ -270,7 +274,7 @@ const prostration = meta.prostration_verse;
 	<nav class="pager" aria-label="စူရဟ်များအကြား သွားရန်">
 		{
 			prev && (
-				<a href={`/surahs/${prev.id}/`}>
+				<a href={`/surahs/${prev.id}/`} rel="prev">
 					<span class="pager-label">
 						<span class="material-symbols-outlined" aria-hidden="true">
 							chevron_left
@@ -285,7 +289,7 @@ const prostration = meta.prostration_verse;
 		}
 		{
 			next && (
-				<a class="pager-next" href={`/surahs/${next.id}/`}>
+				<a class="pager-next" href={`/surahs/${next.id}/`} rel="next">
 					<span class="pager-label">
 						နောက်စူရဟ်
 						<span class="material-symbols-outlined" aria-hidden="true">
@@ -311,7 +315,7 @@ const prostration = meta.prostration_verse;
 				>format_list_numbered</span
 			>
 			<span>စူရဟ်စာရင်းမှ ရွေးရန်</span>
-			<span lang="en">· All 46</span>
+			<span lang="en">· All {allSurahs.length}</span>
 		</button>
 	</div>
 

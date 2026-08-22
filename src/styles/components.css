@@ -11,10 +11,10 @@
 	inset-block-start: 0.5rem;
 	inset-inline-start: 0.5rem;
 	z-index: 100;
-	background: var(--primary);
+	background: var(--primary-fill);
 	color: var(--primary-contrast);
 	padding: 0.6rem 1rem;
-	border-radius: 8px;
+	border-radius: var(--radius-sm);
 	text-decoration: none;
 	transform: translateY(-200%);
 	transition: transform 0.15s ease;
@@ -28,7 +28,7 @@
 
 .hero {
 	text-align: center;
-	padding-block: 4.5rem 3rem;
+	padding-block: 3.5rem 3rem;
 }
 
 .hero h1 {
@@ -37,7 +37,7 @@
 }
 
 .hero-arabic {
-	font-family: var(--font-arabic);
+	font-family: var(--font-ar);
 	color: var(--primary);
 }
 
@@ -53,6 +53,64 @@
 	color: var(--text-muted);
 	max-width: 40rem;
 	margin-inline: auto;
+}
+
+/* Orchestrated entrance for the home hero. */
+@keyframes rise-in {
+	from {
+		opacity: 0;
+		transform: translateY(14px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.hero-emblem {
+	width: clamp(4.5rem, 9vw, 6rem);
+	margin-inline: auto;
+	margin-block-end: 1.5rem;
+	color: var(--gold-leaf);
+	filter: drop-shadow(
+		0 1px 6px color-mix(in srgb, var(--gold-leaf) 30%, transparent)
+	);
+	animation: rise-in 0.7s ease both;
+}
+
+.hero-emblem svg {
+	width: 100%;
+	height: auto;
+	animation: emblem-turn 90s linear infinite;
+}
+
+@keyframes emblem-turn {
+	to {
+		rotate: 360deg;
+	}
+}
+
+.home-hero .hero-brand,
+.home-hero .hero-tagline,
+.home-hero .hero-intro,
+.home-hero .hero-sub {
+	animation: rise-in 0.7s ease both;
+}
+
+.home-hero .hero-brand {
+	animation-delay: 0.08s;
+}
+
+.home-hero .hero-tagline {
+	animation-delay: 0.18s;
+}
+
+.home-hero .hero-intro {
+	animation-delay: 0.28s;
+}
+
+.home-hero .hero-sub {
+	animation-delay: 0.38s;
 }
 
 /* Cards */
@@ -75,20 +133,38 @@
 	padding: 1.75rem;
 	background: var(--surface);
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-1);
 	text-decoration: none;
 	color: inherit;
+	overflow: hidden;
 	transition:
 		transform 0.18s ease,
 		border-color 0.18s ease,
 		box-shadow 0.18s ease;
 }
 
+/* Gold ribbon — the manuscript illumination cue. */
+.card::before {
+	content: "";
+	position: absolute;
+	inset-inline: 0;
+	top: 0;
+	height: 3px;
+	background: var(--gradient-gold);
+	opacity: 0.35;
+	transition: opacity 0.18s ease;
+}
+
 .card:hover {
 	transform: translateY(-4px);
-	border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
-	box-shadow: var(--shadow);
+	border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+	box-shadow: var(--shadow-2);
 	color: inherit;
+}
+
+.card:hover::before {
+	opacity: 1;
 }
 
 .card-top {
@@ -103,8 +179,8 @@
 	place-items: center;
 	width: 2.75rem;
 	height: 2.75rem;
-	border-radius: 12px;
-	background: color-mix(in srgb, var(--primary) 10%, transparent);
+	border-radius: var(--radius-sm);
+	background: color-mix(in srgb, var(--primary) 11%, transparent);
 	color: var(--primary);
 	font-size: 24px;
 }
@@ -113,11 +189,14 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 0.2rem 0.7rem;
-	border: 1px solid color-mix(in srgb, var(--primary) 22%, transparent);
+	border: 1px solid color-mix(in srgb, var(--gold-leaf) 45%, transparent);
 	border-radius: 999px;
-	background: color-mix(in srgb, var(--primary) 8%, transparent);
-	color: var(--primary);
-	font-family: var(--font-mono);
+	background: color-mix(in srgb, var(--gold-leaf) 12%, transparent);
+	color: var(--accent-strong);
+	font-family: var(--font-en);
+	font-variation-settings:
+		"MONO" 1,
+		"CASL" 0;
 	font-size: 0.8rem;
 	font-weight: 700;
 }
@@ -127,17 +206,17 @@
 	flex-direction: column;
 	gap: 0.15rem;
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	line-height: 1.4;
 }
 
 .card-title-en {
-	font-family: var(--font-serif);
-	font-size: 0.78rem;
-	font-weight: 500;
-	letter-spacing: 0.04em;
+	font-family: var(--font-en);
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.14em;
 	text-transform: uppercase;
-	color: var(--text-muted);
+	color: var(--accent-strong);
 }
 
 .card-desc {
@@ -154,7 +233,7 @@
 	gap: 0.4rem;
 	margin-top: auto;
 	padding-top: 0.85rem;
-	border-top: 1px dashed var(--border);
+	border-top: 1px solid var(--border);
 	color: var(--primary);
 	font-weight: 600;
 	font-size: 0.9rem;
@@ -176,28 +255,37 @@
 	align-items: center;
 	gap: 0.45rem;
 	margin-top: 1.75rem;
-	background: var(--primary);
+	background: var(--gradient-lapis);
 	color: var(--primary-contrast);
 	padding: 0.7rem 1.4rem;
 	border-radius: 999px;
 	font-weight: 600;
 	text-decoration: none;
+	box-shadow: var(--shadow-1);
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease,
+		filter 0.15s ease;
 }
 
 .btn:hover {
-	background: var(--primary-strong);
 	color: var(--primary-contrast);
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-2);
+	filter: brightness(1.08);
 }
 
 .btn-secondary {
 	background: var(--surface);
-	border: 1px solid var(--border);
+	border: 1px solid var(--border-strong);
 	color: var(--primary);
+	box-shadow: none;
 }
 
 .btn-secondary:hover {
 	background: var(--surface-muted);
 	color: var(--primary-strong);
+	filter: none;
 }
 
 .btn .material-symbols-outlined {
@@ -214,9 +302,9 @@
 }
 
 .not-found-code {
-	font-family: var(--font-serif);
+	font-family: var(--font-en);
 	font-size: clamp(5rem, 20vw, 9rem);
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 0.9;
 	color: var(--primary);
 	text-wrap: nowrap;
@@ -228,10 +316,10 @@
 	width: 3.5rem;
 	height: 3.5rem;
 	margin: 1.75rem auto 1rem;
-	border: 1px solid var(--border);
+	border: 1px solid color-mix(in srgb, var(--gold-leaf) 50%, var(--border));
 	border-radius: 50%;
-	background: color-mix(in srgb, var(--primary) 10%, var(--surface));
-	color: var(--primary);
+	background: color-mix(in srgb, var(--gold-leaf) 12%, var(--surface));
+	color: var(--accent-strong);
 	font-size: 28px;
 }
 
@@ -267,16 +355,28 @@
 	}
 }
 
-/* Header */
+/* Header — glass bar over a manuscript double rule. */
 
 .site-header {
 	position: sticky;
 	inset-block-start: 0;
 	z-index: 50;
 	background: var(--header-bg);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
 	border-bottom: 1px solid var(--border);
+}
+
+.site-header::after {
+	content: "";
+	display: block;
+	height: 1px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		color-mix(in srgb, var(--gold-leaf) 55%, transparent),
+		transparent
+	);
 }
 
 .header-inner {
@@ -324,6 +424,9 @@
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 0.95rem;
+	transition:
+		color 0.15s ease,
+		background-color 0.15s ease;
 }
 
 .nav-icon {
@@ -339,6 +442,7 @@
 .site-nav a[aria-current="page"] {
 	color: var(--primary);
 	font-weight: 700;
+	background: color-mix(in srgb, var(--primary) 9%, transparent);
 }
 
 .menu-toggle {
@@ -374,7 +478,8 @@
 
 .theme-toggle:hover {
 	background: var(--surface-muted);
-	color: var(--text);
+	color: var(--accent-strong);
+	border-color: color-mix(in srgb, var(--gold-leaf) 40%, var(--border));
 }
 
 .theme-toggle .material-symbols-outlined {
@@ -385,6 +490,9 @@
 	display: none;
 }
 
+/* Theme-icon swap. The :root:not([data-theme]) branches are the no-JS
+   system-preference fallback — the inline theme script always sets
+   data-theme for JS users, so they only apply without JavaScript. */
 :root[data-theme="dark"] .theme-icon-light,
 :root:not([data-theme]) .theme-icon-light {
 	display: none;
@@ -432,9 +540,14 @@ body.nav-open .menu-icon-open {
 .site-footer::before {
 	content: "";
 	display: block;
-	height: 2px;
-	background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
-	opacity: 0.7;
+	height: 1px;
+	margin-bottom: 2px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		color-mix(in srgb, var(--gold-leaf) 55%, transparent),
+		transparent
+	);
 }
 
 .footer-top {
@@ -445,9 +558,10 @@ body.nav-open .menu-icon-open {
 }
 
 .footer-brand {
-	font-family: var(--font-serif);
-	font-size: 1.3rem;
-	font-weight: 700;
+	font-family: var(--font-en);
+	font-size: 1.45rem;
+	font-weight: 600;
+	letter-spacing: 0.01em;
 }
 
 .footer-note {
@@ -464,15 +578,18 @@ body.nav-open .menu-icon-open {
 
 .footer-col h2 {
 	margin-block: 0 1rem;
-	font-size: 0.8rem;
+	font-family: var(--font-en);
+	font-size: 0.72rem;
 	font-weight: 700;
-	letter-spacing: 0.08em;
-	color: var(--text-muted);
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--accent-strong);
 }
 
 .footer-col h2 span {
 	font-weight: 400;
 	letter-spacing: normal;
+	text-transform: none;
 }
 
 .footer-col ul {
@@ -528,17 +645,18 @@ body.nav-open .menu-icon-open {
 }
 
 .hero-name {
-	font-family: var(--font-serif);
-	font-size: clamp(2.75rem, 6vw, 4.25rem);
-	font-weight: 700;
-	letter-spacing: 0.01em;
+	font-family: var(--font-en);
+	font-size: clamp(3rem, 7vw, 4.75rem);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1.1;
 }
 
 .hero-brand .hero-arabic {
 	display: block;
-	font-size: clamp(2rem, 4.5vw, 3rem);
+	font-size: clamp(2.1rem, 4.5vw, 3.1rem);
 	line-height: 1.5;
-	color: var(--accent);
+	color: var(--accent-strong);
 }
 
 .hero-burmese {
@@ -573,7 +691,7 @@ body.nav-open .menu-icon-open {
 		inset-block-start: 100%;
 		background: var(--surface);
 		border-bottom: 1px solid var(--border);
-		box-shadow: var(--shadow);
+		box-shadow: var(--shadow-2);
 		padding: 0.5rem 1.25rem 1rem;
 	}
 

@@ -4,17 +4,18 @@ import PageHeader from "../../components/PageHeader.astro";
 import ListFilter from "../../components/ListFilter.astro";
 import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
+import { truncate } from "../../utils/truncate";
 
 const names = (await getCollection("names")).sort(
 	(a, b) => a.data.number - b.data.number,
 );
 const meta = names[0]!.data.meta;
+// SEO: keep meta description within ~150 chars for clean SERP snippets.
+// Content file is read-only; truncate here with word-aware helper.
+const metaDescription = truncate(meta.summary_burmese, 150);
 ---
 
-<Layout
-	title={`${meta.title_burmese} — Basirah`}
-	description={meta.summary_burmese}
->
+<Layout title={`${meta.title_burmese} — Basirah`} description={metaDescription}>
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
@@ -22,7 +23,7 @@ const meta = names[0]!.data.meta;
 			name: meta.title_burmese,
 			alternateName: meta.title_transliteration,
 			url: new URL("/names-of-allah/", Astro.site).href,
-			description: meta.summary_burmese,
+			description: metaDescription,
 			inLanguage: ["my", "en", "ar"],
 			numberOfItems: names.length,
 			itemListElement: names.map((name) => ({
@@ -63,6 +64,7 @@ const meta = names[0]!.data.meta;
 		aria-label="အလ္လာဟ်၏ နာမတော်များကို ရှာဖွေရန်နှင့် ကြည့်ရှုရန်"
 	>
 		<ListFilter
+			id="names"
 			label="နာမတော်ရှာဖွေရန်"
 			placeholder="အာရဗီ၊ အသံထွက် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
 		/>

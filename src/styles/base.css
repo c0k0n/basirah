@@ -1,5 +1,8 @@
 /* Base — reset, element defaults, and multilingual typography.
-   Font stacks are provided by Astro's <Font /> component (astro.config.ts). */
+   Font stacks are provided by Astro's <Font /> component (astro.config.ts).
+   Burmese: Noto Sans Myanmar (--font-my) — Arabic: Noto Naskh Arabic
+   (--font-ar) — English: Recursive (--font-en) for sans, display, and mono
+   (MONO 0/1, CASL 0/1). */
 
 *,
 *::before,
@@ -29,20 +32,27 @@
 }
 
 html {
-	font-family: var(--font-sans);
-	line-height: 1.6;
+	font-family: var(--font-en);
+	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scrollbar-gutter: stable;
 	scroll-padding-top: 5rem;
 	scroll-padding-bottom: 5rem;
+	scroll-behavior: smooth;
 }
 
 body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	background: var(--bg);
+	background:
+		radial-gradient(
+			120% 90% at 50% 0%,
+			color-mix(in srgb, var(--surface) 55%, transparent),
+			transparent 60%
+		),
+		var(--bg);
 	color: var(--text);
 	transition:
 		background-color 0.2s ease,
@@ -55,14 +65,19 @@ main {
 	padding-block: 2rem 4rem;
 }
 
+main:focus {
+	outline: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: var(--font-serif);
-	line-height: 1.3;
+	font-family: var(--font-en);
+	font-weight: 600;
+	line-height: 1.25;
 	text-wrap: balance;
 }
 
@@ -74,7 +89,11 @@ code,
 pre,
 kbd,
 samp {
-	font-family: var(--font-mono);
+	font-family: var(--font-en);
+	font-variation-settings:
+		"MONO" 1,
+		"CASL" 0;
+	font-variant-ligatures: none;
 }
 
 a {
@@ -87,11 +106,11 @@ a:hover {
 }
 
 ::selection {
-	background: color-mix(in srgb, var(--accent) 30%, transparent);
+	background: color-mix(in srgb, var(--gold-leaf) 35%, transparent);
 }
 
 :focus-visible {
-	outline: 2px solid var(--accent);
+	outline: 2px solid var(--primary);
 	outline-offset: 2px;
 	border-radius: 4px;
 }
@@ -103,31 +122,33 @@ a:hover {
    content opt out with lang="en" / lang="ar" attributes. */
 
 :lang(my) {
-	font-family: var(--font-myanmar-sans);
+	font-family: var(--font-my);
 	line-height: 1.8;
 }
 
 :is(h1, h2, h3, h4, h5, h6):lang(my) {
-	font-family: var(--font-myanmar-serif);
-	line-height: 1.4;
+	font-family: var(--font-my);
+	line-height: 1.45;
+	font-weight: 600;
 }
 
 :lang(en) {
-	font-family: var(--font-sans);
+	font-family: var(--font-en);
 }
 
 :is(h1, h2, h3, h4, h5, h6):lang(en) {
-	font-family: var(--font-serif);
+	font-family: var(--font-en);
 }
 
 :lang(ar) {
-	font-family: var(--font-arabic);
-	line-height: 1.8;
+	font-family: var(--font-ar);
+	line-height: 1.9;
 }
 
 :is(h1, h2, h3, h4, h5, h6):lang(ar) {
-	font-family: var(--font-arabic);
-	line-height: 1.4;
+	font-family: var(--font-ar);
+	font-weight: 700;
+	line-height: 1.6;
 }
 
 /* Isolated RTL for inline Arabic words inside LTR text (e.g. the logo glyph). */
@@ -140,7 +161,7 @@ a:hover {
    Declared after the :lang() rules so the icon font wins the equal-
    specificity tie: icon elements inherit the page's resolved language. */
 .material-symbols-outlined {
-	font-family: var(--font-icons);
+	font-family: var(--font-icon);
 	font-weight: normal;
 	font-style: normal;
 	font-size: 24px;

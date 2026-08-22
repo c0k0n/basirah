@@ -1,57 +1,98 @@
 /* Design tokens — single source of truth for the Basirah visual language.
-   Warm paper + emerald + gold in light mode; deep green-black in dark mode. */
+   "Manuscript Ivory & Lapis": ivory vellum, lapis-lazuli ink, burnished gold.
+   Light mode is a daylight scriptorium; dark mode is a candlelit one. */
 
 :root {
 	color-scheme: light;
-	--bg: #fdfbf7;
-	--surface: #ffffff;
-	--surface-muted: #f3efe6;
-	--text: #1f2924;
-	--text-muted: #5c6b63;
-	--border: #e5dfd2;
-	--primary: #0e6b4a;
-	--primary-strong: #0a5238;
-	--primary-contrast: #ffffff;
-	--accent: #b8860b;
-	--accent-strong: #8a6406;
-	--header-bg: rgb(253 251 247 / 0.88);
-	--shadow: 0 1px 2px rgb(31 41 36 / 0.06), 0 8px 24px rgb(31 41 36 / 0.08);
+
+	/* Vellum & ink */
+	--bg: #f7f2e7;
+	--surface: #fffcf4;
+	--surface-muted: #efe8d5;
+	--text: #292018;
+	--text-muted: #6f6250;
+	--border: #e0d6bd;
+	--border-strong: #cfc2a1;
+
+	/* Lapis lazuli */
+	--primary: #27408b;
+	--primary-strong: #1d3170;
+	--primary-fill: #27408b;
+	--primary-contrast: #fdfbf3;
+
+	/* Burnished gold */
+	--accent: #8a6a14;
+	--accent-strong: #6e5410;
+	--gold-leaf: #c9a227;
+
+	/* Surfaces & depth */
+	--header-bg: rgb(247 242 231 / 0.82);
+	--glass: rgb(255 252 244 / 0.86);
+	--shadow-1: 0 1px 2px rgb(41 32 24 / 0.05), 0 4px 14px rgb(41 32 24 / 0.07);
+	--shadow-2: 0 2px 6px rgb(41 32 24 / 0.08), 0 14px 34px rgb(41 32 24 / 0.12);
+	--shadow-3: 0 6px 18px rgb(20 16 10 / 0.16), 0 24px 60px rgb(20 16 10 / 0.2);
+
+	/* Ornaments */
+	--gradient-lapis: linear-gradient(135deg, #2e4a9e, #1d3170);
+	--gradient-gold: linear-gradient(100deg, #caa53d, #8a6a14);
+
+	--radius-sm: 9px;
 	--radius: 14px;
+	--radius-lg: 18px;
 	--container: 72rem;
 }
 
+/* System-dark fallback for visitors with JavaScript disabled: the inline
+   theme script always sets data-theme for JS users, so this branch applies
+   only without it. Keep in sync with [data-theme="dark"] below. */
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme]) {
 		color-scheme: dark;
-		--bg: #101613;
-		--surface: #1a241f;
-		--surface-muted: #141c18;
-		--text: #e9e7df;
-		--text-muted: #9faca4;
-		--border: #2b3731;
-		--primary: #3ecf8e;
-		--primary-strong: #2fb37a;
-		--primary-contrast: #0b241a;
-		--accent: #d9b45c;
-		--accent-strong: #e4c87f;
-		--header-bg: rgb(16 22 19 / 0.88);
-		--shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.4);
+		--bg: #16130e;
+		--surface: #201b13;
+		--surface-muted: #1a1610;
+		--text: #ede3cc;
+		--text-muted: #a3947a;
+		--border: #38301f;
+		--border-strong: #4a4028;
+		--primary: #a5b5ec;
+		--primary-strong: #c1cdf3;
+		--primary-fill: #33478f;
+		--primary-contrast: #f8f5ec;
+		--accent: #d9bc6a;
+		--accent-strong: #e7d194;
+		--gold-leaf: #d9bc6a;
+		--header-bg: rgb(22 19 14 / 0.82);
+		--glass: rgb(32 27 19 / 0.86);
+		--shadow-1: 0 1px 2px rgb(0 0 0 / 0.35), 0 4px 14px rgb(0 0 0 / 0.35);
+		--shadow-2: 0 2px 6px rgb(0 0 0 / 0.4), 0 14px 34px rgb(0 0 0 / 0.45);
+		--shadow-3: 0 6px 18px rgb(0 0 0 / 0.5), 0 24px 60px rgb(0 0 0 / 0.55);
+		--gradient-lapis: linear-gradient(135deg, #3b539f, #26356b);
+		--gradient-gold: linear-gradient(100deg, #d9bc6a, #a8842e);
 	}
 }
 
 :root[data-theme="dark"] {
 	color-scheme: dark;
-	--bg: #101613;
-	--surface: #1a241f;
-	--surface-muted: #141c18;
-	--text: #e9e7df;
-	--text-muted: #9faca4;
-	--border: #2b3731;
-	--primary: #3ecf8e;
-	--primary-strong: #2fb37a;
-	--primary-contrast: #0b241a;
-	--accent: #d9b45c;
-	--accent-strong: #e4c87f;
-	--header-bg: rgb(16 22 19 / 0.88);
-	--shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.4);
+	--bg: #16130e;
+	--surface: #201b13;
+	--surface-muted: #1a1610;
+	--text: #ede3cc;
+	--text-muted: #a3947a;
+	--border: #38301f;
+	--border-strong: #4a4028;
+	--primary: #a5b5ec;
+	--primary-strong: #c1cdf3;
+	--primary-fill: #33478f;
+	--primary-contrast: #f8f5ec;
+	--accent: #d9bc6a;
+	--accent-strong: #e7d194;
+	--gold-leaf: #d9bc6a;
+	--header-bg: rgb(22 19 14 / 0.82);
+	--glass: rgb(32 27 19 / 0.86);
+	--shadow-1: 0 1px 2px rgb(0 0 0 / 0.35), 0 4px 14px rgb(0 0 0 / 0.35);
+	--shadow-2: 0 2px 6px rgb(0 0 0 / 0.4), 0 14px 34px rgb(0 0 0 / 0.45);
+	--shadow-3: 0 6px 18px rgb(0 0 0 / 0.5), 0 24px 60px rgb(0 0 0 / 0.55);
+	--gradient-lapis: linear-gradient(135deg, #3b539f, #26356b);
+	--gradient-gold: linear-gradient(100deg, #d9bc6a, #a8842e);
 }

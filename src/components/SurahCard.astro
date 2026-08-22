@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import Ornament from "./Ornament.astro";
 
 interface Props {
 	surah: CollectionEntry<"surahs">;
@@ -15,7 +16,10 @@ const toArabicIndic = (n: number) =>
 <li data-filter-item>
 	<a class="surah-tile" href={`/surahs/${surah.id}/`}>
 		<span class="surah-tile-num" aria-hidden="true">
-			{toArabicIndic(meta.surah_number)}
+			<Ornament variant="star" />
+			<span class="surah-tile-num-value">
+				{toArabicIndic(meta.surah_number)}
+			</span>
 		</span>
 		<span class="surah-tile-arabic" lang="ar" dir="rtl">{meta.name_arabic}</span
 		>

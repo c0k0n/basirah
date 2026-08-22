@@ -11,13 +11,13 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 0.75rem;
-	font-size: clamp(1.75rem, 4vw, 2.5rem);
+	font-size: clamp(1.9rem, 4vw, 2.75rem);
 }
 
 .page-header-arabic {
-	font-family: var(--font-arabic);
-	font-size: 0.9em;
-	color: var(--primary);
+	font-family: var(--font-ar);
+	font-size: 0.95em;
+	color: var(--accent-strong);
 }
 
 .page-header-meta {
@@ -28,7 +28,7 @@
 }
 
 .page-header-meta .page-header-arabic {
-	font-size: 1.15rem;
+	font-size: 1.2rem;
 	line-height: 1.6;
 }
 
@@ -37,11 +37,23 @@
 	align-items: center;
 	padding: 0.2rem 0.75rem;
 	border-radius: 999px;
-	background: color-mix(in srgb, var(--primary) 12%, transparent);
+	background: color-mix(in srgb, var(--primary) 10%, transparent);
 	color: var(--primary);
-	font-family: var(--font-mono);
+	font-family: var(--font-en);
+	font-variation-settings:
+		"MONO" 1,
+		"CASL" 0;
 	font-size: 0.8rem;
 	font-weight: 700;
+}
+
+.page-header-divider {
+	width: min(13rem, 80%);
+	height: auto;
+	aspect-ratio: 240 / 16;
+	margin-block: 0.9rem 0.1rem;
+	color: var(--gold-leaf);
+	opacity: 0.75;
 }
 
 .page-sub {
@@ -60,6 +72,7 @@
 	color: var(--text-muted);
 	font-weight: 500;
 	text-decoration: none;
+	transition: color 0.15s ease;
 }
 
 .back-link:hover {
@@ -68,6 +81,11 @@
 
 .back-link .material-symbols-outlined {
 	font-size: 18px;
+	transition: transform 0.15s ease;
+}
+
+.back-link:hover .material-symbols-outlined {
+	transform: translateX(-2px);
 }
 
 /* List filter */
@@ -83,7 +101,7 @@
 	inset-inline-start: 0.95rem;
 	top: 50%;
 	translate: 0 -50%;
-	color: var(--text-muted);
+	color: var(--accent-strong);
 	font-size: 20px;
 	pointer-events: none;
 }
@@ -93,10 +111,16 @@
 	padding: 0.65rem 1rem 0.65rem 2.6rem;
 	border: 1px solid var(--border);
 	border-radius: 999px;
-	background: var(--surface);
+	background: var(--glass);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
 	color: var(--text);
 	font: inherit;
 	font-size: 0.95rem;
+	box-shadow: var(--shadow-1);
+	transition:
+		border-color 0.15s ease,
+		box-shadow 0.15s ease;
 }
 
 .list-filter-input::placeholder {
@@ -107,6 +131,7 @@
 	outline: 2px solid var(--primary);
 	outline-offset: 0;
 	border-color: transparent;
+	box-shadow: var(--shadow-2);
 }
 
 .filter-empty {
@@ -115,7 +140,7 @@
 	color: var(--text-muted);
 }
 
-/* Surah index — ornamental chapter tiles */
+/* Surah index — illuminated chapter tiles */
 
 .surah-grid {
 	list-style: none;
@@ -127,6 +152,7 @@
 }
 
 .surah-tile {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -135,57 +161,91 @@
 	gap: 0.2rem;
 	padding: 1.4rem 1.1rem 1.25rem;
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
+	border-radius: var(--radius-lg);
 	background: var(--surface);
+	box-shadow: var(--shadow-1);
 	text-align: center;
 	text-decoration: none;
 	color: inherit;
+	overflow: hidden;
 	transition:
 		transform 0.15s ease,
 		border-color 0.15s ease,
 		box-shadow 0.15s ease;
 }
 
+.surah-tile::before {
+	content: "";
+	position: absolute;
+	inset-inline: 0;
+	top: 0;
+	height: 3px;
+	background: var(--gradient-gold);
+	opacity: 0;
+	transition: opacity 0.18s ease;
+}
+
 .surah-tile:hover {
 	transform: translateY(-3px);
-	border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
-	box-shadow: var(--shadow);
+	border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+	box-shadow: var(--shadow-2);
 	color: inherit;
 }
 
-.surah-tile-num {
-	display: grid;
-	place-items: center;
-	width: 2.15rem;
-	height: 2.15rem;
-	margin-bottom: 0.5rem;
-	border: 1px solid var(--border);
-	border-radius: 50%;
-	background: var(--surface-muted);
-	font-family: var(--font-arabic);
-	font-size: 1rem;
-	line-height: 1;
-	color: var(--text-muted);
-	transition:
-		color 0.15s ease,
-		border-color 0.15s ease;
+.surah-tile:hover::before {
+	opacity: 1;
 }
 
-.surah-tile:hover .surah-tile-num {
-	color: var(--primary);
-	border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+/* Shamsa medallion holding the surah number. */
+.surah-tile-num {
+	position: relative;
+	display: grid;
+	place-items: center;
+	width: 2.8rem;
+	height: 2.8rem;
+	margin-bottom: 0.55rem;
+	color: var(--gold-leaf);
+}
+
+.surah-tile-num svg {
+	position: absolute;
+	inset: 0;
+	opacity: 0.55;
+	transition:
+		opacity 0.18s ease,
+		rotate 0.4s ease;
+}
+
+.surah-tile-num-value {
+	position: relative;
+	font-family: var(--font-ar);
+	font-size: 1.05rem;
+	line-height: 1;
+	color: var(--text-muted);
+	transition: color 0.15s ease;
+}
+
+.surah-tile:hover .surah-tile-num svg {
+	opacity: 1;
+	rotate: 22deg;
+}
+
+.surah-tile:hover .surah-tile-num-value {
+	color: var(--accent-strong);
 }
 
 .surah-tile-arabic {
-	font-family: var(--font-arabic);
-	font-size: 1.5rem;
+	font-family: var(--font-ar);
+	font-size: 1.6rem;
+	font-weight: 700;
 	line-height: 1.6;
 }
 
 .surah-tile-name {
-	font-family: var(--font-serif);
-	font-size: 0.9rem;
+	font-family: var(--font-en);
+	font-size: 0.95rem;
 	font-weight: 700;
+	letter-spacing: 0.01em;
 	margin-top: 0.1rem;
 }
 
@@ -198,27 +258,39 @@
 /* Surah detail hero */
 
 .surah-hero {
+	position: relative;
 	background: var(--surface);
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
-	box-shadow: var(--shadow);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-1);
 	padding: clamp(1.5rem, 4vw, 2.5rem);
+	overflow: hidden;
+}
+
+.surah-hero::before {
+	content: "";
+	position: absolute;
+	inset-inline: 0;
+	top: 0;
+	height: 3px;
+	background: var(--gradient-gold);
+	opacity: 0.7;
 }
 
 .surah-hero-number {
 	display: inline-block;
 	padding: 0.25rem 0.85rem;
 	border-radius: 999px;
-	background: color-mix(in srgb, var(--accent) 16%, transparent);
+	background: color-mix(in srgb, var(--gold-leaf) 16%, transparent);
 	color: var(--accent-strong);
-	font-family: var(--font-mono);
+	font-family: var(--font-my);
 	font-size: 0.8rem;
 	font-weight: 700;
 }
 
 .surah-hero h1 {
 	margin-top: 0.9rem;
-	font-size: clamp(2rem, 6vw, 3rem);
+	font-size: clamp(2.4rem, 7vw, 3.6rem);
 }
 
 .surah-hero-translit {
@@ -245,7 +317,7 @@
 	gap: 0.5rem;
 	padding: 0.8rem 1rem;
 	border: 1px solid var(--border);
-	border-radius: 12px;
+	border-radius: var(--radius-sm);
 	background: var(--surface-muted);
 }
 
@@ -266,7 +338,7 @@
 	flex-shrink: 0;
 	width: 1.6rem;
 	height: 1.6rem;
-	border-radius: 8px;
+	border-radius: 7px;
 	background: color-mix(in srgb, var(--primary) 12%, transparent);
 	color: var(--primary);
 }
@@ -294,16 +366,17 @@
 .bismillah {
 	background: var(--surface);
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
-	padding: clamp(1.25rem, 3vw, 1.75rem);
+	border-radius: var(--radius-lg);
+	padding: clamp(1.5rem, 3.5vw, 2.25rem);
 	margin-top: 1.5rem;
 	text-align: center;
+	box-shadow: var(--shadow-1);
 }
 
 .bismillah-arabic {
-	font-family: var(--font-arabic);
-	font-size: clamp(1.35rem, 3.5vw, 1.9rem);
+	font-size: clamp(1.6rem, 4vw, 2.3rem);
 	line-height: 2.1;
+	color: var(--primary-strong);
 }
 
 .bismillah-translations {
@@ -315,8 +388,23 @@
 }
 
 .verse-section-title {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
 	margin-block: clamp(2rem, 5vw, 3rem) 0.9rem;
 	text-align: center;
+}
+
+.verse-section-title::before,
+.verse-section-title::after {
+	content: "";
+	height: 1px;
+	flex: 1;
+	background: linear-gradient(to right, transparent, var(--border-strong));
+}
+
+.verse-section-title::after {
+	background: linear-gradient(to left, transparent, var(--border-strong));
 }
 
 /* Audio player */
@@ -329,10 +417,12 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	background: var(--surface);
+	background: var(--glass);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
-	box-shadow: var(--shadow);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-1);
 	padding: 1rem 1.25rem;
 	transition:
 		border-color 0.2s ease,
@@ -349,10 +439,8 @@
 	transform: translateX(-50%);
 	width: min(calc(100% - 1.5rem), 44rem);
 	z-index: 40;
-	box-shadow:
-		0 8px 32px rgb(0 0 0 / 0.18),
-		0 2px 8px rgb(0 0 0 / 0.12);
-	border-color: color-mix(in srgb, var(--border) 80%, var(--primary) 20%);
+	box-shadow: var(--shadow-3);
+	border-color: color-mix(in srgb, var(--gold-leaf) 30%, var(--border));
 	animation: audio-float-in 0.28s ease;
 }
 
@@ -365,10 +453,6 @@
 		transform: translateX(-50%) translateY(0);
 		opacity: 1;
 	}
-}
-
-html.has-floating-audio {
-	scroll-padding-bottom: 5rem;
 }
 
 html.has-floating-audio .verse-list {
@@ -434,16 +518,17 @@ html.has-floating-audio .verse-list {
 	height: 3rem;
 	border: none;
 	border-radius: 50%;
-	background: var(--primary);
+	background: var(--gradient-lapis);
 	color: var(--primary-contrast);
 	cursor: pointer;
+	box-shadow: var(--shadow-1);
 	transition:
-		background-color 0.15s ease,
+		filter 0.15s ease,
 		transform 0.15s ease;
 }
 
 .audio-play:hover {
-	background: var(--primary-strong);
+	filter: brightness(1.12);
 	transform: scale(1.05);
 }
 
@@ -471,8 +556,8 @@ html.has-floating-audio .verse-list {
 
 .audio-skip:hover {
 	background: var(--surface-muted);
-	color: var(--text);
-	border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
+	color: var(--accent-strong);
+	border-color: color-mix(in srgb, var(--gold-leaf) 40%, var(--border));
 }
 
 .audio-skip:active {
@@ -487,7 +572,10 @@ html.has-floating-audio .verse-list {
 	display: flex;
 	gap: 0.4rem;
 	align-items: baseline;
-	font-family: var(--font-mono);
+	font-family: var(--font-en);
+	font-variation-settings:
+		"MONO" 1,
+		"CASL" 0;
 	font-size: 0.85rem;
 	color: var(--text-muted);
 	white-space: nowrap;
@@ -496,7 +584,7 @@ html.has-floating-audio .verse-list {
 .audio-seek {
 	flex: 1;
 	min-width: 0;
-	accent-color: var(--primary);
+	accent-color: var(--primary-fill);
 }
 
 .audio-fallback {
@@ -514,9 +602,10 @@ html.has-floating-audio .verse-list {
 }
 
 .verse {
+	position: relative;
 	background: var(--surface);
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
+	border-radius: var(--radius-lg);
 	padding: clamp(1.25rem, 3vw, 1.75rem);
 }
 
@@ -531,9 +620,9 @@ html.has-floating-audio .verse-list {
 .verse-number {
 	padding: 0.2rem 0.8rem;
 	border-radius: 999px;
-	background: color-mix(in srgb, var(--primary) 12%, transparent);
+	background: color-mix(in srgb, var(--primary) 10%, transparent);
 	color: var(--primary);
-	font-family: var(--font-myanmar-sans);
+	font-family: var(--font-my);
 	font-size: 0.85rem;
 	font-weight: 700;
 }
@@ -544,25 +633,15 @@ html.has-floating-audio .verse-list {
 	gap: 0.3rem;
 	padding: 0.2rem 0.8rem;
 	border-radius: 999px;
-	background: color-mix(in srgb, var(--accent) 16%, transparent);
+	background: color-mix(in srgb, var(--gold-leaf) 16%, transparent);
 	color: var(--accent-strong);
 	font-size: 0.8rem;
 	font-weight: 600;
 }
 
-.verse-prostration .material-symbols-outlined {
-	font-size: 16px;
-}
-
-/* Burmese text inside compact labels needs the Myanmar stack. */
-.surah-hero-number {
-	font-family: var(--font-myanmar-sans);
-}
-
 .verse-arabic {
-	font-family: var(--font-arabic);
-	font-size: clamp(1.3rem, 3vw, 1.7rem);
-	line-height: 2.1;
+	font-size: clamp(1.45rem, 3.2vw, 1.9rem);
+	line-height: 2.15;
 }
 
 .verse-translit {
@@ -586,10 +665,20 @@ html.has-floating-audio .verse-list {
 .verse-note {
 	margin-top: 1rem;
 	padding: 0.75rem 1rem;
-	border-inline-start: 3px solid var(--accent);
-	border-radius: 8px;
+	border-inline-start: 3px solid var(--gold-leaf);
+	border-radius: var(--radius-sm);
 	background: var(--surface-muted);
 	font-size: 0.9rem;
+}
+
+details.verse-note summary {
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--accent-strong);
+}
+
+details.verse-note[open] summary {
+	margin-bottom: 0.4rem;
 }
 
 /* Pager (previous / next) */
@@ -608,19 +697,22 @@ html.has-floating-audio .verse-list {
 	min-width: 0;
 	padding: 1rem 1.25rem;
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
+	border-radius: var(--radius-lg);
 	background: var(--surface);
+	box-shadow: var(--shadow-1);
 	color: var(--text);
 	text-decoration: none;
 	transition:
 		border-color 0.15s ease,
-		transform 0.15s ease;
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
 }
 
 .pager a:hover {
 	border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
 	color: var(--text);
 	transform: translateY(-2px);
+	box-shadow: var(--shadow-2);
 }
 
 .pager a:only-child {
@@ -649,9 +741,9 @@ html.has-floating-audio .verse-list {
 }
 
 .pager-name {
-	font-family: var(--font-serif);
+	font-family: var(--font-en);
 	font-weight: 700;
-	font-size: 0.95rem;
+	font-size: 1rem;
 }
 
 /* Surah quick jump — top bar + center bar triggers */
@@ -682,6 +774,7 @@ html.has-floating-audio .verse-list {
 	font-weight: 500;
 	cursor: pointer;
 	white-space: nowrap;
+	box-shadow: var(--shadow-1);
 	transition:
 		background-color 0.15s ease,
 		color 0.15s ease,
@@ -691,8 +784,8 @@ html.has-floating-audio .verse-list {
 
 .quick-trigger:hover {
 	background: var(--surface-muted);
-	color: var(--text);
-	border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
+	color: var(--primary);
+	border-color: color-mix(in srgb, var(--primary) 30%, var(--border));
 }
 
 .quick-trigger:active {
@@ -748,16 +841,19 @@ html.has-floating-audio .verse-list {
 }
 
 .dua-row:hover {
-	background: var(--surface-muted);
+	background: color-mix(in srgb, var(--surface-muted) 70%, transparent);
 }
 
 .dua-row-number {
 	flex-shrink: 0;
 	width: 1.8rem;
-	font-family: var(--font-mono);
-	font-size: 0.85rem;
-	font-weight: 600;
-	color: var(--text-muted);
+	font-family: var(--font-en);
+	font-variation-settings:
+		"MONO" 1,
+		"CASL" 0;
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: var(--accent-strong);
 	text-align: right;
 }
 
@@ -769,7 +865,7 @@ html.has-floating-audio .verse-list {
 }
 
 .dua-row-title {
-	font-family: var(--font-myanmar-serif);
+	font-family: var(--font-my);
 	font-size: 1.05rem;
 	font-weight: 700;
 }
@@ -783,8 +879,7 @@ html.has-floating-audio .verse-list {
 	margin-inline-start: auto;
 	flex-shrink: 1;
 	min-width: 0;
-	font-family: var(--font-arabic);
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	line-height: 1.8;
 	color: var(--text-muted);
 	white-space: nowrap;
@@ -836,17 +931,28 @@ html.has-floating-audio .verse-list {
 /* Dua detail */
 
 .dua-detail-arabic {
+	position: relative;
 	background: var(--surface);
 	border: 1px solid var(--border);
-	border-radius: var(--radius);
-	box-shadow: var(--shadow);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-1);
 	padding: clamp(1.5rem, 4vw, 2.5rem);
 	text-align: center;
+	overflow: hidden;
+}
+
+.dua-detail-arabic::before {
+	content: "";
+	position: absolute;
+	inset-inline: 0;
+	top: 0;
+	height: 3px;
+	background: var(--gradient-gold);
+	opacity: 0.7;
 }
 
 .dua-detail-arabic h1 {
-	font-family: var(--font-arabic);
-	font-size: clamp(1.4rem, 3.5vw, 2rem);
+	font-size: clamp(1.5rem, 3.8vw, 2.2rem);
 	font-weight: 400;
 	line-height: 2.1;
 }
@@ -855,7 +961,7 @@ html.has-floating-audio .verse-list {
 	display: block;
 	margin-top: 1rem;
 	color: var(--text-muted);
-	font-family: var(--font-myanmar-sans);
+	font-family: var(--font-my);
 	font-size: 0.85rem;
 	line-height: 1.8;
 }
@@ -869,16 +975,13 @@ html.has-floating-audio .verse-list {
 	display: flex;
 	align-items: center;
 	gap: 0.4rem;
+	font-family: var(--font-en);
 	font-size: 0.72rem;
 	font-weight: 600;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: var(--text-muted);
+	color: var(--accent-strong);
 	margin-bottom: 0.55rem;
-}
-
-.dua-meaning h2 .material-symbols-outlined {
-	font-size: 16px;
 }
 
 .dua-meaning p {
@@ -911,20 +1014,24 @@ html.has-floating-audio .verse-list {
 }
 
 .name-table thead th {
+	font-family: var(--font-en);
 	font-size: 0.72rem;
-	font-weight: 600;
-	letter-spacing: 0.05em;
-	color: var(--text-muted);
-	border-bottom: 2px solid var(--border);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--accent-strong);
+	border-bottom: 2px solid
+		color-mix(in srgb, var(--gold-leaf) 45%, var(--border));
 	white-space: nowrap;
 }
 
 .name-table tbody tr {
 	border-bottom: 1px solid var(--border);
+	transition: background 0.12s ease;
 }
 
 .name-table tbody tr:hover {
-	background: var(--surface-muted);
+	background: color-mix(in srgb, var(--primary) 6%, transparent);
 }
 
 .name-table tbody tr:nth-child(even) {
@@ -932,22 +1039,24 @@ html.has-floating-audio .verse-list {
 }
 
 .name-table tbody tr:nth-child(even):hover {
-	background: var(--surface-muted);
+	background: color-mix(in srgb, var(--primary) 6%, transparent);
 }
 
 .name-col-num {
 	width: 3.2rem;
-	font-family: var(--font-mono);
-	font-size: 0.85rem;
-	font-weight: 600;
-	color: var(--text-muted);
+	font-family: var(--font-en);
+	font-variation-settings:
+		"MONO" 1,
+		"CASL" 0;
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: var(--accent-strong);
 	white-space: nowrap;
 }
 
 .name-cell-arabic {
 	width: 13rem;
-	font-family: var(--font-arabic);
-	font-size: 1.25rem;
+	font-size: 1.4rem;
 	line-height: 1.7;
 }
 
@@ -957,7 +1066,7 @@ html.has-floating-audio .verse-list {
 
 .name-cell-pronunciation span:first-child {
 	display: block;
-	font-family: var(--font-myanmar-serif);
+	font-family: var(--font-my);
 	font-weight: 600;
 }
 

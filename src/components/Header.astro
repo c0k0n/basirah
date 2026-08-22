@@ -1,5 +1,5 @@
 ---
-import { SITE } from "../site.config";
+import { SITE } from "../utils/constants";
 import ThemeToggle from "./ThemeToggle.astro";
 
 const path = Astro.url.pathname;
@@ -10,7 +10,13 @@ const isCurrent = (href: string) =>
 <header class="site-header">
 	<div class="container header-inner">
 		<a href="/" class="brand" aria-label="Basirah — မူလစာမျက်နှာ">
-			<img src="/favicon.svg" alt="Basirah" width="32" height="32" />
+			<img
+				src="/favicon.svg"
+				alt="Basirah"
+				width="32"
+				height="32"
+				decoding="async"
+			/>
 		</a>
 
 		<nav id="primary-nav" class="site-nav" data-nav aria-label="ပင်မလမ်းညွှန်">
@@ -59,30 +65,30 @@ const isCurrent = (href: string) =>
 	</div>
 </header>
 
-<script>
-	if ("serviceWorker" in navigator) {
-		void navigator.serviceWorker
-			.getRegistrations()
-			.then((registrations) =>
-				Promise.all(
-					registrations.map((registration) => registration.unregister()),
-				),
-			);
-	}
-	if ("caches" in window) {
-		void caches
-			.keys()
-			.then((keys) =>
-				Promise.all(
-					keys
-						.filter(
-							(key) => key.includes("workbox") || key.includes("precache"),
-						)
-						.map((key) => caches.delete(key)),
-				),
-			);
-	}
+<noscript>
+	<style>
+		/* Graceful no-JS fallback: keep navigation visible on mobile and hide toggle. */
+		@media (max-width: 52rem) {
+			.site-nav {
+				display: block;
+				position: static;
+				background: transparent;
+				border: 0;
+				box-shadow: none;
+				padding: 0;
+			}
+			.site-nav ul {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			.menu-toggle {
+				display: none;
+			}
+		}
+	</style>
+</noscript>
 
+<script>
 	const closeNav = () => {
 		document.body.classList.remove("nav-open");
 		document
@@ -112,5 +118,14 @@ const isCurrent = (href: string) =>
 			return;
 		closeNav();
 		document.querySelector<HTMLElement>("[data-menu-toggle]")?.focus();
+	});
+
+	// Tap/click outside the nav or its toggle closes the open menu.
+	document.addEventListener("click", (event) => {
+		if (!document.body.classList.contains("nav-open")) return;
+		const target = event.target;
+		if (!(target instanceof Element)) return;
+		if (target.closest("[data-menu-toggle], [data-nav]")) return;
+		closeNav();
 	});
 </script>

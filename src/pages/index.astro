@@ -1,40 +1,53 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import JsonLd from "../components/JsonLd.astro";
+import Ornament from "../components/Ornament.astro";
 import { getCollection } from "astro:content";
-import { SITE } from "../site.config";
+import { SITE } from "../utils/constants";
 
 const surahCount = (await getCollection("surahs")).length;
 const duaCount = (await getCollection("duas")).length;
 const nameCount = (await getCollection("names")).length;
 
 const siteUrl = new URL("/", Astro.site).href;
-const logoUrl = new URL("/og-image.png", Astro.site).href;
+const logoUrl = new URL("/pwa-512x512.png", Astro.site).href;
+// Burmese digits for display copy — derived so content growth can't stale it.
+const myDigits = (n: number) =>
+	String(n).replace(/\d/g, (d) => "၀၁၂၃၄၅၆၇၈၉".charAt(Number(d)));
 ---
 
 <Layout title={SITE.title} description={SITE.description}>
 	<JsonLd
 		data={{
 			"@context": "https://schema.org",
-			"@type": ["WebSite", "Organization"],
-			"@id": `${siteUrl}#site`,
-			name: "Basirah",
-			alternateName: "ဗဆီရဟ်",
-			url: siteUrl,
-			logo: {
-				"@type": "ImageObject",
-				url: logoUrl,
-			},
-			publisher: {
-				"@type": "Organization",
-				name: "Basirah",
-				logo: { "@type": "ImageObject", url: logoUrl },
-			},
-			inLanguage: ["my", "en", "ar"],
-			description: SITE.description,
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"@id": `${siteUrl}#site`,
+					name: "Basirah",
+					alternateName: "ဗဆီရဟ်",
+					url: siteUrl,
+					inLanguage: ["my", "en", "ar"],
+					description: SITE.description,
+					publisher: { "@id": `${siteUrl}#org` },
+				},
+				{
+					"@type": "Organization",
+					"@id": `${siteUrl}#org`,
+					name: "Basirah",
+					url: siteUrl,
+					logo: {
+						"@type": "ImageObject",
+						url: logoUrl,
+					},
+				},
+			],
 		}}
 	/>
-	<section class="hero">
+	<section class="hero home-hero">
+		<div class="hero-emblem">
+			<Ornament variant="star" />
+		</div>
 		<h1 class="hero-brand">
 			<span class="hero-name" lang="en">Basirah</span>
 			<span class="hero-arabic isolated-rtl" lang="ar">بَصِيرَة</span>
@@ -46,8 +59,8 @@ const logoUrl = new URL("/og-image.png", Astro.site).href;
 		</p>
 		<p class="hero-intro">
 			မရှိမဖြစ် စူရဟ်များ (အသံဖတ်ကြားချက်နှင့်တကွ)၊ နေ့စဉ်ဘဝအတွက် ဒိုအာများနှင့်
-			အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးတို့ကို တစ်နေရာတည်းတွင်
-			စုစည်းထားပါသည်။
+			အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် ({myDigits(nameCount)}) ပါးတို့ကို
+			တစ်နေရာတည်းတွင် စုစည်းထားပါသည်။
 		</p>
 		<p class="hero-sub" lang="en">
 			Basirah gathers the wisdom of the Qur'an and Sunnah into clear, accessible
@@ -119,7 +132,8 @@ const logoUrl = new URL("/og-image.png", Astro.site).href;
 						<span class="card-title-en" lang="en">Names of Allah</span>
 					</h2>
 					<p class="card-desc">
-						အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် (၁၀၀) ပါးကို အဓိပ္ပာယ်နှင့်တကွ။
+						အလ္လာဟ်အရှင်မြတ်၏ အလှပဆုံး နာမတော် ({myDigits(nameCount)}) ပါးကို
+						အဓိပ္ပာယ်နှင့်တကွ။
 					</p>
 					<footer class="card-cta">
 						လေ့လာရန်

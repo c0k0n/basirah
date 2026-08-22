@@ -46,11 +46,14 @@ const { surahs, currentId } = Astro.props;
 			data-quick-filter
 			placeholder="အမည်၊ အသံထွက် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
 			autocomplete="off"
+			autocapitalize="off"
+			spellcheck="false"
+			inputmode="search"
 		/>
 		<p class="visually-hidden" data-quick-live aria-live="polite"></p>
 	</search>
 
-	<div class="quick-list-wrap" data-quick-list-wrap>
+	<div class="quick-list-wrap">
 		<ul class="quick-list" data-quick-list>
 			{
 				surahs.map((surah) => {
@@ -108,6 +111,8 @@ const { surahs, currentId } = Astro.props;
 </dialog>
 
 <script>
+	import { filterList } from "../utils/filterList";
+
 	const dialog = document.querySelector<HTMLDialogElement>(
 		"[data-quick-dialog]",
 	);
@@ -118,19 +123,12 @@ const { surahs, currentId } = Astro.props;
 	const empty = document.querySelector<HTMLElement>("[data-quick-empty]");
 	const live = document.querySelector<HTMLElement>("[data-quick-live]");
 
-	const foldText = (text: string) =>
-		text
-			.toLowerCase()
-			.normalize("NFD")
-			.replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g, "")
-			.replace(/[\u0622\u0623\u0625\u0671]/g, "ا")
-			.replace(/\u0649/g, "ي")
-			.replace(/\u0629/g, "ه")
-			.replace(/\u0640/g, "")
-			.replace(/\s+/g, " ");
+	let currentTrigger: HTMLElement | null = null;
 
-	const openDialog = () => {
+	const openDialog = (event?: Event) => {
 		if (!dialog || dialog.open) return;
+		currentTrigger =
+			event?.currentTarget instanceof HTMLElement ? event.currentTarget : null;
 		dialog.showModal();
 		// Focus filter after open for immediate typing
 		requestAnimationFrame(() => filterInput?.focus());
@@ -163,35 +161,20 @@ const { surahs, currentId } = Astro.props;
 		for (const item of items) item.hidden = false;
 		empty.hidden = true;
 		live.textContent = "";
-		// Return focus to the trigger that opened it (last active)
-		const trigger = document.querySelector<HTMLElement>(
-			"[data-quick-open]:focus",
-		);
-		if (!trigger) {
-			// Fallback: first trigger
-			document
-				.querySelector<HTMLElement>("[data-quick-open]")
-				?.focus({ preventScroll: true });
-		}
+		// Return focus to the trigger that opened the dialog.
+		currentTrigger?.focus({ preventScroll: true });
+		currentTrigger = null;
 	});
 
 	// Live filter inside dialog
 	filterInput?.addEventListener("input", () => {
 		if (!list || !empty) return;
-		const term = foldText(filterInput.value);
-		const items = [...list.querySelectorAll<HTMLElement>("[data-filter-item]")];
-		let visible = 0;
-		for (const item of items) {
-			const match =
-				!term ||
-				(item.textContent ? foldText(item.textContent).includes(term) : false);
-			item.hidden = !match;
-			if (match) visible++;
-		}
-		empty.hidden = visible !== 0;
-		if (live) {
-			live.textContent = visible === 0 ? "ရလဒ် မတွေ့ပါ" : `ရလဒ် ${visible} ခု`;
-		}
+		filterList({
+			term: filterInput.value,
+			items: [...list.querySelectorAll<HTMLElement>("[data-filter-item]")],
+			empty,
+			live,
+		});
 	});
 
 	// Keyboard: quick jump with "/" when not in input
@@ -218,13 +201,11 @@ const { surahs, currentId } = Astro.props;
 		max-height: min(82vh, 52rem);
 		margin: auto;
 		padding: 0;
-		border: 1px solid var(--border);
-		border-radius: 16px;
+		border: 1px solid var(--border-strong);
+		border-radius: var(--radius-lg);
 		background: var(--surface);
 		color: var(--text);
-		box-shadow:
-			0 12px 40px rgb(0 0 0 / 0.18),
-			0 4px 16px rgb(0 0 0 / 0.12);
+		box-shadow: var(--shadow-3);
 		overflow: hidden;
 	}
 
@@ -238,7 +219,7 @@ const { surahs, currentId } = Astro.props;
 	}
 
 	.surah-jump-dialog::backdrop {
-		background: rgb(16 22 19 / 0.45);
+		background: rgb(22 19 14 / 0.55);
 		backdrop-filter: blur(6px);
 		-webkit-backdrop-filter: blur(6px);
 	}
@@ -404,7 +385,10 @@ const { surahs, currentId } = Astro.props;
 		border-radius: 50%;
 		background: var(--surface-muted);
 		border: 1px solid var(--border);
-		font-family: var(--font-mono);
+		font-family: var(--font-en);
+		font-variation-settings:
+			"MONO" 1,
+			"CASL" 0;
 		font-size: 0.8rem;
 		font-weight: 700;
 		color: var(--text-muted);
@@ -427,7 +411,7 @@ const { surahs, currentId } = Astro.props;
 
 	.quick-item-arabic {
 		width: 5.5rem;
-		font-family: var(--font-arabic);
+		font-family: var(--font-ar);
 		font-size: 1.25rem;
 		line-height: 1.4;
 		color: var(--text);
@@ -447,7 +431,7 @@ const { surahs, currentId } = Astro.props;
 	}
 
 	.quick-item-translit {
-		font-family: var(--font-serif);
+		font-family: var(--font-en);
 		font-weight: 700;
 		font-size: 0.92rem;
 		line-height: 1.3;
@@ -510,10 +494,6 @@ const { surahs, currentId } = Astro.props;
 	}
 
 	@media (min-width: 32rem) {
-		.quick-item {
-			grid-template-columns: 2rem 1fr auto auto;
-		}
-
 		.quick-item-meta {
 			display: flex;
 		}
