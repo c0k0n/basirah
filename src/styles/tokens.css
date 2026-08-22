@@ -21,7 +21,6 @@
 	--primary-contrast: #fdfbf3;
 
 	/* Burnished gold */
-	--accent: #8a6a14;
 	--accent-strong: #6e5410;
 	--gold-leaf: #c9a227;
 
@@ -37,7 +36,6 @@
 	--gradient-gold: linear-gradient(100deg, #caa53d, #8a6a14);
 
 	--radius-sm: 9px;
-	--radius: 14px;
 	--radius-lg: 18px;
 	--container: 72rem;
 }
@@ -59,7 +57,6 @@
 		--primary-strong: #c1cdf3;
 		--primary-fill: #33478f;
 		--primary-contrast: #f8f5ec;
-		--accent: #d9bc6a;
 		--accent-strong: #e7d194;
 		--gold-leaf: #d9bc6a;
 		--header-bg: rgb(22 19 14 / 0.82);
@@ -85,7 +82,6 @@
 	--primary-strong: #c1cdf3;
 	--primary-fill: #33478f;
 	--primary-contrast: #f8f5ec;
-	--accent: #d9bc6a;
 	--accent-strong: #e7d194;
 	--gold-leaf: #d9bc6a;
 	--header-bg: rgb(22 19 14 / 0.82);

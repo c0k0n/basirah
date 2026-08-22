@@ -135,6 +135,14 @@ const { src, title } = Astro.props;
 				syncSeekText();
 			};
 
+			// Progress fill for the custom-styled range track.
+			const paintSeek = () => {
+				seek.style.setProperty(
+					"--fill",
+					`${(Number(seek.value) / 10).toFixed(2)}%`,
+				);
+			};
+
 			const SKIP_SECONDS = 10;
 
 			const skip = (delta: number) => {
@@ -153,6 +161,7 @@ const { src, title } = Astro.props;
 				setCurrent(next);
 				if (durationValue) {
 					seek.value = String((next / durationValue) * 1000);
+					paintSeek();
 				}
 			};
 
@@ -170,13 +179,16 @@ const { src, title } = Astro.props;
 			});
 			audio.addEventListener("timeupdate", () => {
 				setCurrent(audio.currentTime);
-				if (!seeking && audio.duration)
+				if (!seeking && audio.duration) {
 					seek.value = String((audio.currentTime / audio.duration) * 1000);
+					paintSeek();
+				}
 			});
 			seek.addEventListener("input", () => {
 				seeking = true;
 				const preview = (Number(seek.value) / 1000) * (audio.duration || 0);
 				setCurrent(preview);
+				paintSeek();
 			});
 			seek.addEventListener("change", () => {
 				if (audio.duration)

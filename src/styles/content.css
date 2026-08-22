@@ -582,9 +582,72 @@ html.has-floating-audio .verse-list {
 }
 
 .audio-seek {
+	--fill: 0%;
 	flex: 1;
 	min-width: 0;
-	accent-color: var(--primary-fill);
+	height: 1.15rem;
+	appearance: none;
+	-webkit-appearance: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.audio-seek::-webkit-slider-runnable-track {
+	height: 0.375rem;
+	border-radius: 999px;
+	background:
+		var(--gradient-lapis) 0 0 / var(--fill) 100% no-repeat,
+		color-mix(in srgb, var(--primary) 14%, transparent);
+}
+
+.audio-seek::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1rem;
+	height: 1rem;
+	margin-top: calc((0.375rem - 1rem) / 2);
+	border-radius: 50%;
+	background: var(--primary-fill);
+	border: 2px solid var(--surface);
+	box-shadow:
+		0 0 0 1.5px color-mix(in srgb, var(--gold-leaf) 65%, transparent),
+		var(--shadow-1);
+	transition: box-shadow 0.15s ease;
+}
+
+.audio-seek:hover::-webkit-slider-thumb {
+	box-shadow:
+		0 0 0 2.5px color-mix(in srgb, var(--gold-leaf) 80%, transparent),
+		var(--shadow-2);
+}
+
+.audio-seek::-moz-range-track {
+	height: 0.375rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--primary) 14%, transparent);
+}
+
+.audio-seek::-moz-range-progress {
+	height: 0.375rem;
+	border-radius: 999px;
+	background: var(--gradient-lapis);
+}
+
+.audio-seek::-moz-range-thumb {
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	background: var(--primary-fill);
+	border: 2px solid var(--surface);
+	box-shadow:
+		0 0 0 1.5px color-mix(in srgb, var(--gold-leaf) 65%, transparent),
+		var(--shadow-1);
+}
+
+.audio-seek:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 4px;
+	border-radius: 999px;
 }
 
 .audio-fallback {

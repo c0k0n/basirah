@@ -15,16 +15,21 @@ const { variant = "star", class: className } = Astro.props;
 			aria-hidden="true"
 		>
 			<circle cx="50" cy="50" r="47" />
-			<rect
-				x="23.2"
-				y="23.2"
-				width="53.6"
-				height="53.6"
-				transform="rotate(45 50 50)"
-			/>
-			<rect x="23.2" y="23.2" width="53.6" height="53.6" />
-			<circle cx="50" cy="50" r="21" />
-			<circle cx="50" cy="50" r="3.5" class="ornament-fill" />
+			<g class="star-spin">
+				<rect
+					x="23.2"
+					y="23.2"
+					width="53.6"
+					height="53.6"
+					transform="rotate(45 50 50)"
+				/>
+				<rect x="23.2" y="23.2" width="53.6" height="53.6" />
+			</g>
+			<g class="halo-spin">
+				<circle cx="50" cy="50" r="21" />
+				<circle cx="71" cy="50" r="1.8" class="ornament-fill" />
+			</g>
+			<circle cx="50" cy="50" r="3.5" class="ornament-core ornament-fill" />
 		</svg>
 	) : (
 		<svg
@@ -62,6 +67,49 @@ const { variant = "star", class: className } = Astro.props;
 	.ornament-star circle,
 	.ornament-star rect {
 		stroke-width: 2;
+	}
+
+	/* Layered celestial motion: the eight-point star turns slowly while the
+	   halo ring counter-rotates its marker around the still center light.
+	   prefers-reduced-motion disables these via the global rule in base.css. */
+	.star-spin,
+	.halo-spin {
+		transform-box: view-box;
+		transform-origin: 50% 50%;
+	}
+
+	.star-spin {
+		animation: star-turn 28s linear infinite;
+	}
+
+	.halo-spin {
+		animation: halo-turn 44s linear infinite reverse;
+	}
+
+	.ornament-core {
+		animation: core-breathe 5.5s ease-in-out infinite alternate;
+	}
+
+	@keyframes star-turn {
+		to {
+			transform: rotate(1turn);
+		}
+	}
+
+	@keyframes halo-turn {
+		to {
+			transform: rotate(1turn);
+		}
+	}
+
+	@keyframes core-breathe {
+		from {
+			opacity: 0.45;
+		}
+
+		to {
+			opacity: 1;
+		}
 	}
 
 	.ornament-divider line {

@@ -81,14 +81,9 @@
 .hero-emblem svg {
 	width: 100%;
 	height: auto;
-	animation: emblem-turn 90s linear infinite;
 }
 
-@keyframes emblem-turn {
-	to {
-		rotate: 360deg;
-	}
-}
+/* Star rotation and halo motion live inside Ornament.astro's scoped styles. */
 
 .home-hero .hero-brand,
 .home-hero .hero-tagline,
