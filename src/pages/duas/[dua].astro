@@ -1,19 +1,46 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import DuaJumpDialog from "../../components/DuaJumpDialog.astro";
 import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
+interface NavEntry {
+	id: string;
+	title: string;
+}
+
 interface Props {
 	dua: CollectionEntry<"duas">;
+	prev: NavEntry | null;
+	next: NavEntry | null;
+	allDuas: CollectionEntry<"duas">[];
 }
 
 export async function getStaticPaths() {
-	const duas = await getCollection("duas");
-	return duas.map((dua) => ({ params: { dua: dua.id }, props: { dua } }));
+	const duas = (await getCollection("duas")).sort(
+		(a, b) => Number(a.id) - Number(b.id),
+	);
+	return duas.map((dua, index) => {
+		const prevEntry = duas[index - 1];
+		const nextEntry = duas[index + 1];
+		return {
+			params: { dua: dua.id },
+			props: {
+				dua,
+				prev: prevEntry
+					? { id: prevEntry.id, title: prevEntry.data.title_mm }
+					: null,
+				next: nextEntry
+					? { id: nextEntry.id, title: nextEntry.data.title_mm }
+					: null,
+				allDuas: duas,
+			},
+		};
+	});
 }
 
-const { dua } = Astro.props;
+const { dua, prev, next, allDuas } = Astro.props;
 ---
 
 <Layout
@@ -54,11 +81,23 @@ const { dua } = Astro.props;
 			},
 		}}
 	/>
-	<a class="back-link" href="/duas/">
-		<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-		ဒိုအာများအားလုံး
-		<span lang="en">· All duas</span>
-	</a>
+	<div class="surah-top-bar">
+		<a class="back-link" href="/duas/">
+			<span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+			ဒိုအာများအားလုံး
+			<span lang="en">· All duas</span>
+		</a>
+		<button
+			class="quick-trigger"
+			type="button"
+			data-quick-open
+			aria-label="ဒိုအာရွေးချယ်ရန် · Jump to dua"
+		>
+			<span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
+			<span>ဒိုအာရွေးရန်</span>
+			<span lang="en">· Jump</span>
+		</button>
+	</div>
 
 	<article class="dua-detail-arabic">
 		<h1 lang="ar" dir="rtl">
@@ -83,4 +122,50 @@ const { dua } = Astro.props;
 		<h2 lang="en">Translation</h2>
 		<p class="dua-translation" lang="en">{dua.data.english_meaning}</p>
 	</section>
+
+	<nav class="pager" aria-label="ဒိုအာများအကြား သွားရန်">
+		{
+			prev && (
+				<a href={`/duas/${prev.id}/`} rel="prev">
+					<span class="pager-label">
+						<span class="material-symbols-outlined" aria-hidden="true">
+							chevron_left
+						</span>
+						ရှေ့ဒိုအာ
+					</span>
+					<span class="pager-name">{prev.title}</span>
+				</a>
+			)
+		}
+		{
+			next && (
+				<a class="pager-next" href={`/duas/${next.id}/`} rel="next">
+					<span class="pager-label">
+						နောက်ဒိုအာ
+						<span class="material-symbols-outlined" aria-hidden="true">
+							chevron_right
+						</span>
+					</span>
+					<span class="pager-name">{next.title}</span>
+				</a>
+			)
+		}
+	</nav>
+
+	<div class="quick-nav-bar">
+		<button
+			class="quick-trigger quick-trigger--center"
+			type="button"
+			data-quick-open
+			aria-label="ဒိုအာစာရင်းမှ ရွေးချယ်ရန် · Choose from list"
+		>
+			<span class="material-symbols-outlined" aria-hidden="true"
+				>format_list_numbered</span
+			>
+			<span>ဒိုအာစာရင်းမှ ရွေးရန်</span>
+			<span lang="en">· All {allDuas.length}</span>
+		</button>
+	</div>
+
+	<DuaJumpDialog duas={allDuas} currentId={dua.id} />
 </Layout>

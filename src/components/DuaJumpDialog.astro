@@ -2,18 +2,18 @@
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-	surahs: CollectionEntry<"surahs">[];
+	duas: CollectionEntry<"duas">[];
 	currentId: string;
 }
 
-const { surahs, currentId } = Astro.props;
+const { duas, currentId } = Astro.props;
 ---
 
 <dialog
-	id="surah-jump-dialog"
-	class="surah-jump-dialog"
+	id="dua-jump-dialog"
+	class="dua-jump-dialog"
 	data-quick-dialog
-	aria-labelledby="quick-dialog-title"
+	aria-labelledby="dua-quick-dialog-title"
 >
 	<div class="quick-dialog-head">
 		<div class="quick-dialog-title-wrap">
@@ -21,8 +21,8 @@ const { surahs, currentId } = Astro.props;
 				class="material-symbols-outlined quick-dialog-icon"
 				aria-hidden="true">menu_book</span
 			>
-			<h2 id="quick-dialog-title" class="quick-dialog-title">
-				စူရဟ်ရွေးချယ်ရန် <span lang="en">· Jump to surah</span>
+			<h2 id="dua-quick-dialog-title" class="quick-dialog-title">
+				ဒိုအာရွေးချယ်ရန် <span lang="en">· Jump to dua</span>
 			</h2>
 		</div>
 		<button
@@ -37,14 +37,13 @@ const { surahs, currentId } = Astro.props;
 
 	<search class="quick-filter">
 		<span class="material-symbols-outlined" aria-hidden="true">search</span>
-		<label class="visually-hidden" for="surah-jump-filter">စူရဟ်ရှာဖွေရန်</label
-		>
+		<label class="visually-hidden" for="dua-jump-filter">ဒိုအာရှာဖွေရန်</label>
 		<input
-			id="surah-jump-filter"
+			id="dua-jump-filter"
 			type="search"
 			class="quick-filter-input"
 			data-quick-filter
-			placeholder="အမည်၊ အသံထွက် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
+			placeholder="အမည် သို့မဟုတ် အဓိပ္ပာယ်ဖြင့် ရှာဖွေရန်…"
 			autocomplete="off"
 			autocapitalize="off"
 			spellcheck="false"
@@ -56,35 +55,32 @@ const { surahs, currentId } = Astro.props;
 	<div class="quick-list-wrap">
 		<ul class="quick-list" data-quick-list>
 			{
-				surahs.map((surah) => {
-					const m = surah.data.surah_metadata;
-					const isCurrent = surah.id === currentId;
+				duas.map((dua) => {
+					const isCurrent = dua.id === currentId;
 					return (
 						<li data-filter-item>
 							<a
 								class:list={["quick-item", { "is-current": isCurrent }]}
-								href={`/surahs/${surah.id}/`}
+								href={`/duas/${dua.id}/`}
 								aria-current={isCurrent ? "page" : undefined}
 							>
 								<span class="quick-item-num" aria-hidden="true">
-									{m.surah_number}
+									{dua.id}
 								</span>
 								<span class="quick-item-main">
-									<span class="quick-item-arabic" lang="ar" dir="rtl">
-										{m.name_arabic}
-									</span>
-									<span class="quick-item-text">
-										<span class="quick-item-translit" lang="en">
-											{m.name_transliteration}
-										</span>
-										<span class="quick-item-burmese">
-											{m.name_burmese_title}
+									<span class="dua-jump-titles">
+										<span class="dua-jump-title-mm">{dua.data.title_mm}</span>
+										<span class="dua-jump-title-en" lang="en">
+											{dua.data.title_en}
 										</span>
 									</span>
 								</span>
-								<span class="quick-item-meta">
-									<span>{m.meaning_of_title.burmese}</span>
-									<span lang="en">{m.meaning_of_title.english}</span>
+								<span
+									class="quick-item-meta dua-jump-arabic"
+									lang="ar"
+									dir="rtl"
+								>
+									{dua.data.arabic}
 								</span>
 								{isCurrent && (
 									<span class="quick-item-current" aria-hidden="true">
@@ -98,15 +94,15 @@ const { surahs, currentId } = Astro.props;
 			}
 		</ul>
 		<p class="quick-empty" data-quick-empty hidden>
-			သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော စူရဟ်မတွေ့ပါ။
-			<span lang="en">No surahs found.</span>
+			သင့်ရှာဖွေမှုနှင့် ကိုက်ညီသော ဒိုအာမတွေ့ပါ။
+			<span lang="en">No duas found.</span>
 		</p>
 	</div>
 
 	<p class="quick-dialog-foot">
 		<span class="material-symbols-outlined" aria-hidden="true">search_off</span>
-		<span>စုစုပေါင်း {surahs.length} စူရဟ်</span>
-		<span lang="en">· {surahs.length} surahs</span>
+		<span>စုစုပေါင်း {duas.length} ဒိုအာ</span>
+		<span lang="en">· {duas.length} duas</span>
 	</p>
 </dialog>
 
@@ -130,7 +126,6 @@ const { surahs, currentId } = Astro.props;
 		currentTrigger =
 			event?.currentTarget instanceof HTMLElement ? event.currentTarget : null;
 		dialog.showModal();
-		// Focus filter after open for immediate typing
 		requestAnimationFrame(() => filterInput?.focus());
 	};
 
@@ -138,22 +133,18 @@ const { surahs, currentId } = Astro.props;
 		dialog?.close();
 	};
 
-	// Open triggers — any element with data-quick-open
 	document.querySelectorAll<HTMLElement>("[data-quick-open]").forEach((btn) => {
 		btn.addEventListener("click", openDialog);
 	});
 
-	// Close triggers
 	document
 		.querySelectorAll<HTMLElement>("[data-quick-close]")
 		.forEach((btn) => btn.addEventListener("click", closeDialog));
 
-	// Backdrop click: click on dialog itself (not children) closes
 	dialog?.addEventListener("click", (event) => {
 		if (event.target === dialog) closeDialog();
 	});
 
-	// Reset filter on close
 	dialog?.addEventListener("close", () => {
 		if (!filterInput || !list || !empty || !live) return;
 		filterInput.value = "";
@@ -161,12 +152,10 @@ const { surahs, currentId } = Astro.props;
 		for (const item of items) item.hidden = false;
 		empty.hidden = true;
 		live.textContent = "";
-		// Return focus to the trigger that opened the dialog.
 		currentTrigger?.focus({ preventScroll: true });
 		currentTrigger = null;
 	});
 
-	// Live filter inside dialog
 	filterInput?.addEventListener("input", () => {
 		if (!list || !empty) return;
 		filterList({
@@ -177,7 +166,6 @@ const { surahs, currentId } = Astro.props;
 		});
 	});
 
-	// Keyboard: quick jump with "/" when not in input
 	document.addEventListener("keydown", (event) => {
 		if (
 			event.key === "/" &&

@@ -715,3 +715,432 @@ body.nav-open .menu-icon-open {
 		padding-block: 2.5rem 2rem;
 	}
 }
+
+/* Jump dialog — shared by SurahJumpDialog and DuaJumpDialog.
+   Global styles keep both dialogs DRY and avoid duplicated scoped blocks. */
+
+.surah-jump-dialog,
+.dua-jump-dialog {
+	position: fixed;
+	inset: 0;
+	width: min(calc(100% - 2rem), 36rem);
+	max-width: calc(100% - 2rem);
+	height: fit-content;
+	max-height: min(82vh, 52rem);
+	margin: auto;
+	padding: 0;
+	border: 1px solid var(--border-strong);
+	border-radius: var(--radius-lg);
+	background: var(--surface);
+	color: var(--text);
+	box-shadow: var(--shadow-3);
+	overflow: hidden;
+}
+
+.surah-jump-dialog:not([open]),
+.dua-jump-dialog:not([open]) {
+	display: none;
+}
+
+.surah-jump-dialog[open],
+.dua-jump-dialog[open] {
+	display: flex;
+	flex-direction: column;
+}
+
+.surah-jump-dialog::backdrop,
+.dua-jump-dialog::backdrop {
+	background: rgb(22 19 14 / 0.55);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+}
+
+.quick-dialog-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem 1.25rem;
+	border-bottom: 1px solid var(--border);
+	background: var(--surface);
+	flex-shrink: 0;
+}
+
+.quick-dialog-title-wrap {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	min-width: 0;
+}
+
+.quick-dialog-icon {
+	display: grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 8px;
+	background: color-mix(in srgb, var(--primary) 10%, transparent);
+	color: var(--primary);
+	font-size: 20px;
+	flex-shrink: 0;
+}
+
+.quick-dialog-title {
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.quick-dialog-title span {
+	font-weight: 400;
+	color: var(--text-muted);
+	font-size: 0.85rem;
+}
+
+.quick-dialog-close {
+	display: grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border: 1px solid var(--border);
+	border-radius: 50%;
+	background: var(--surface);
+	color: var(--text-muted);
+	cursor: pointer;
+	flex-shrink: 0;
+	transition:
+		background-color 0.15s ease,
+		color 0.15s ease,
+		border-color 0.15s ease;
+}
+
+.quick-dialog-close:hover {
+	background: var(--surface-muted);
+	color: var(--text);
+	border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
+}
+
+.quick-dialog-close .material-symbols-outlined {
+	font-size: 20px;
+}
+
+.quick-filter {
+	position: relative;
+	padding: 0.85rem 1.25rem;
+	border-bottom: 1px solid var(--border);
+	background: var(--surface-muted);
+	flex-shrink: 0;
+}
+
+.quick-filter > .material-symbols-outlined {
+	position: absolute;
+	inset-inline-start: 2.1rem;
+	top: 50%;
+	translate: 0 -50%;
+	color: var(--text-muted);
+	font-size: 20px;
+	pointer-events: none;
+}
+
+.quick-filter-input {
+	width: 100%;
+	padding: 0.65rem 1rem 0.65rem 2.6rem;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	background: var(--surface);
+	color: var(--text);
+	font: inherit;
+	font-size: 0.95rem;
+}
+
+.quick-filter-input::placeholder {
+	color: var(--text-muted);
+}
+
+.quick-filter-input:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 0;
+	border-color: transparent;
+}
+
+.quick-list-wrap {
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	flex: 1;
+	min-height: 0;
+	padding: 0.5rem;
+	background: var(--surface);
+}
+
+.quick-list {
+	list-style: none;
+	display: grid;
+	gap: 0.25rem;
+}
+
+.quick-item {
+	display: grid;
+	grid-template-columns: 2rem 1fr auto auto;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.7rem 0.85rem;
+	border-radius: 12px;
+	border: 1px solid transparent;
+	text-decoration: none;
+	color: inherit;
+	transition:
+		background-color 0.15s ease,
+		border-color 0.15s ease;
+}
+
+.quick-item:hover {
+	background: var(--surface-muted);
+	border-color: var(--border);
+}
+
+.quick-item.is-current {
+	background: color-mix(in srgb, var(--primary) 10%, var(--surface));
+	border-color: color-mix(in srgb, var(--primary) 22%, transparent);
+}
+
+.quick-item.is-current:hover {
+	background: color-mix(in srgb, var(--primary) 14%, var(--surface));
+}
+
+.quick-item-num {
+	display: grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background: var(--surface-muted);
+	border: 1px solid var(--border);
+	font-family: var(--font-en);
+	font-variation-settings:
+		"MONO" 1,
+		"CASL" 0;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--text-muted);
+	flex-shrink: 0;
+}
+
+.quick-item.is-current .quick-item-num {
+	background: var(--primary);
+	color: var(--primary-contrast);
+	border-color: var(--primary);
+}
+
+/* Surah variant: grid with Arabic + text */
+.surah-jump-dialog .quick-item-main {
+	display: grid;
+	grid-template-columns: 5.5rem 1fr;
+	align-items: center;
+	gap: 0.75rem;
+	min-width: 0;
+}
+
+.quick-item-arabic {
+	width: 5.5rem;
+	font-family: var(--font-ar);
+	font-size: 1.25rem;
+	line-height: 1.4;
+	color: var(--text);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.quick-item-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.05rem;
+	min-width: 0;
+	text-align: left;
+	justify-content: center;
+}
+
+.quick-item-translit {
+	font-family: var(--font-en);
+	font-weight: 700;
+	font-size: 0.92rem;
+	line-height: 1.3;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.quick-item-burmese {
+	font-size: 0.82rem;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Dua variant: flexible title stack */
+.dua-jump-dialog .quick-item-main {
+	display: flex;
+	align-items: center;
+	min-width: 0;
+}
+
+.dua-jump-titles {
+	display: flex;
+	flex-direction: column;
+	gap: 0.05rem;
+	min-width: 0;
+	text-align: left;
+}
+
+.dua-jump-title-mm {
+	font-family: var(--font-my);
+	font-weight: 700;
+	font-size: 0.88rem;
+	line-height: 1.35;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dua-jump-title-en {
+	font-family: var(--font-en);
+	font-size: 0.78rem;
+	line-height: 1.3;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.quick-item-meta {
+	display: none;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	gap: 0.05rem;
+	min-width: 0;
+	margin-inline-start: auto;
+	padding-inline-start: 0.5rem;
+}
+
+.quick-item-meta span:first-child {
+	font-size: 0.78rem;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 9rem;
+}
+
+.quick-item-meta span:last-child {
+	font-size: 0.72rem;
+	color: color-mix(in srgb, var(--text-muted) 80%, transparent);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 9rem;
+}
+
+.dua-jump-arabic {
+	font-family: var(--font-ar);
+	font-size: 1rem;
+	line-height: 1.6;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 9rem;
+	display: block;
+}
+
+.quick-item:hover .dua-jump-arabic {
+	color: var(--text);
+}
+
+.quick-item-current {
+	display: grid;
+	place-items: center;
+	color: var(--primary);
+	flex-shrink: 0;
+}
+
+.quick-item-current .material-symbols-outlined {
+	font-size: 18px;
+	font-variation-settings:
+		"FILL" 1,
+		"wght" 400,
+		"GRAD" 0,
+		"opsz" 24;
+}
+
+@media (min-width: 32rem) {
+	.quick-item-meta {
+		display: flex;
+	}
+}
+
+@media (max-width: 31.99rem) {
+	.quick-item {
+		grid-template-columns: 2rem 1fr auto;
+	}
+}
+
+.quick-empty {
+	padding: 2rem 1.25rem;
+	text-align: center;
+	color: var(--text-muted);
+	font-size: 0.95rem;
+}
+
+.quick-dialog-foot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	padding: 0.75rem 1.25rem;
+	border-top: 1px solid var(--border);
+	background: var(--surface-muted);
+	color: var(--text-muted);
+	font-size: 0.8rem;
+	flex-shrink: 0;
+}
+
+.quick-dialog-foot .material-symbols-outlined {
+	font-size: 16px;
+}
+
+@media (max-width: 30rem) {
+	.surah-jump-dialog,
+	.dua-jump-dialog {
+		width: calc(100% - 1rem);
+		max-height: 85vh;
+		border-radius: 14px;
+	}
+
+	.quick-item {
+		padding: 0.6rem 0.75rem;
+	}
+
+	.quick-item-arabic {
+		font-size: 1.1rem;
+	}
+
+	.dua-jump-title-mm {
+		font-size: 0.84rem;
+	}
+
+	.dua-jump-arabic {
+		font-size: 0.95rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.surah-jump-dialog::backdrop,
+	.dua-jump-dialog::backdrop {
+		backdrop-filter: none;
+		-webkit-backdrop-filter: none;
+	}
+}
