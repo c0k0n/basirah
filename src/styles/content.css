@@ -939,7 +939,10 @@ details.verse-note[open] summary {
 }
 
 .dua-row-arabic {
-	margin-inline-start: auto;
+	/* Physical margin-left: this span carries dir="rtl", so the logical
+	   margin-inline-start would resolve to the wrong (right) side and let
+	   short Arabic drift toward the Burmese title instead of the row edge. */
+	margin-left: auto;
 	flex-shrink: 1;
 	min-width: 0;
 	font-size: 1.25rem;
