@@ -2,9 +2,15 @@
 interface Props {
 	src: string;
 	title: string;
+	duration?: number | null;
 }
 
-const { src, title } = Astro.props;
+const { src, title, duration } = Astro.props;
+
+const hasDuration =
+	typeof duration === "number" && Number.isFinite(duration) && duration > 0;
+const formatTime = (seconds: number) =>
+	`${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
 ---
 
 <section
@@ -12,7 +18,10 @@ const { src, title } = Astro.props;
 	data-audio-player
 	aria-label={`${title} ၏ အသံဖွင့်စက်`}
 	data-title={title}
+	data-duration={duration}
 >
+	<span class="visually-hidden">ဖွင့်ပြီးချိန်</span>
+	<time class="audio-time" data-audio-current datetime="PT0S">0:00</time>
 	<audio preload="none" src={src}>
 		<p class="audio-fallback">
 			သင့်ဘရောက်ဆာသည် အသံဖွင့်ခြင်းကို မပံ့ပိုးပါ။
@@ -45,21 +54,24 @@ const { src, title } = Astro.props;
 	>
 		<span class="material-symbols-outlined" aria-hidden="true">forward_10</span>
 	</button>
-	<output class="audio-times" aria-hidden="true">
-		<time data-audio-current datetime="PT0S">0:00</time>
-		/
-		<time data-audio-duration>–:––</time>
-	</output>
-	<input
-		class="audio-seek"
-		type="range"
-		min="0"
-		max="1000"
-		step="1"
-		value="0"
-		data-audio-seek
-		aria-label={`${title} ၏ အချိန်ကို ရွှေ့ရန်`}
-	/>
+	<span class="visually-hidden">ကျန်ရှိချိန်</span>
+	{
+		hasDuration ? (
+			<time
+				class="audio-time"
+				data-audio-remaining
+				datetime={`PT${Math.floor(duration!)}S`}
+			>
+				-{formatTime(duration!)}
+			</time>
+		) : (
+			/* A <time> without a parseable datetime would be invalid HTML, so the
+		   unknown-duration placeholder is a plain span. */
+			<span class="audio-time" data-audio-remaining>
+				–:––
+			</span>
+		)
+	}
 </section>
 
 <script>
@@ -68,9 +80,6 @@ const { src, title } = Astro.props;
 			? `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`
 			: "–:––";
 
-	const formatDuration = (seconds: number) =>
-		Number.isFinite(seconds) ? `PT${Math.floor(seconds)}S` : "";
-
 	document
 		.querySelectorAll<HTMLElement>("[data-audio-player]")
 		.forEach((player) => {
@@ -78,22 +87,55 @@ const { src, title } = Astro.props;
 			const playButton =
 				player.querySelector<HTMLButtonElement>("[data-audio-play]");
 			const current = player.querySelector<HTMLElement>("[data-audio-current]");
-			const duration = player.querySelector<HTMLElement>(
-				"[data-audio-duration]",
+			const remaining = player.querySelector<HTMLElement>(
+				"[data-audio-remaining]",
 			);
-			const seek = player.querySelector<HTMLInputElement>("[data-audio-seek]");
 			const rewindButton = player.querySelector<HTMLButtonElement>(
 				"[data-audio-rewind]",
 			);
 			const forwardButton = player.querySelector<HTMLButtonElement>(
 				"[data-audio-forward]",
 			);
-			if (!audio || !playButton || !current || !duration || !seek) return;
+			if (!audio || !playButton || !current || !remaining) return;
 
 			const icon = playButton.querySelector<HTMLElement>(
 				".material-symbols-outlined",
 			);
 			const title = player.dataset.title ?? "";
+			// Duration baked at build time (utils/audioDuration.ts): hosts
+			// without HTTP Range support never resolve audio.duration on their
+			// own, so the real one is preferred only once it exists.
+			const bakedDuration = Number(player.dataset.duration);
+			const getDuration = () => {
+				if (Number.isFinite(audio.duration) && audio.duration > 0)
+					return audio.duration;
+				return Number.isFinite(bakedDuration) && bakedDuration > 0
+					? bakedDuration
+					: NaN;
+			};
+
+			const setTimes = (seconds: number) => {
+				current.textContent = formatTime(seconds);
+				if (current instanceof HTMLTimeElement) {
+					if (Number.isFinite(seconds))
+						current.setAttribute("datetime", `PT${Math.floor(seconds)}S`);
+					else current.removeAttribute("datetime");
+				}
+
+				const durationValue = getDuration();
+				if (!Number.isFinite(durationValue)) {
+					// No duration known at all — keep the placeholder.
+					remaining.textContent = "–:––";
+					if (remaining instanceof HTMLTimeElement)
+						remaining.removeAttribute("datetime");
+					return;
+				}
+				const left = Math.max(0, durationValue - seconds);
+				remaining.textContent = left > 0 ? `-${formatTime(left)}` : "0:00";
+				if (remaining instanceof HTMLTimeElement)
+					remaining.setAttribute("datetime", `PT${Math.floor(left)}S`);
+			};
+
 			const updateState = () => {
 				const playing = !audio.paused;
 				// Dynamic accessible name only — no aria-pressed alongside a
@@ -105,64 +147,20 @@ const { src, title } = Astro.props;
 				playButton.title = playing ? "Pause" : "Play";
 				if (icon) icon.textContent = playing ? "pause" : "play_arrow";
 			};
-			let seeking = false;
-
-			// Expose position/duration to screen readers via the seek slider.
-			const syncSeekText = () => {
-				if (!Number.isFinite(audio.duration) || audio.duration === 0) {
-					seek.removeAttribute("aria-valuetext");
-					return;
-				}
-				seek.setAttribute(
-					"aria-valuetext",
-					`${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`,
-				);
-			};
-
-			const setCurrent = (seconds: number) => {
-				current.textContent = formatTime(seconds);
-				const dur = formatDuration(seconds);
-				if (dur) current.setAttribute("datetime", dur);
-				else current.removeAttribute("datetime");
-				syncSeekText();
-			};
-
-			const setDuration = (seconds: number) => {
-				duration.textContent = formatTime(seconds);
-				const dur = formatDuration(seconds);
-				if (dur) duration.setAttribute("datetime", dur);
-				else duration.removeAttribute("datetime");
-				syncSeekText();
-			};
-
-			// Progress fill for the custom-styled range track.
-			const paintSeek = () => {
-				seek.style.setProperty(
-					"--fill",
-					`${(Number(seek.value) / 10).toFixed(2)}%`,
-				);
-			};
 
 			const SKIP_SECONDS = 10;
 
 			const skip = (delta: number) => {
-				// Clamp to valid range; duration may be NaN before metadata.
+				// Clamp to valid range; duration may be unknown before playback.
 				const currentTime = Number.isFinite(audio.currentTime)
 					? audio.currentTime
 					: 0;
-				const durationValue = Number.isFinite(audio.duration)
-					? audio.duration
-					: null;
-				let next = currentTime + delta;
-				next = Math.max(0, next);
-				if (durationValue !== null) next = Math.min(durationValue, next);
+				let next = Math.max(0, currentTime + delta);
+				const durationValue = getDuration();
+				if (Number.isFinite(durationValue))
+					next = Math.min(durationValue, next);
 				audio.currentTime = next;
-				// Update UI immediately (timeupdate may not fire instantly when paused).
-				setCurrent(next);
-				if (durationValue) {
-					seek.value = String((next / durationValue) * 1000);
-					paintSeek();
-				}
+				setTimes(next);
 			};
 
 			playButton.addEventListener("click", () => {
@@ -174,26 +172,9 @@ const { src, title } = Astro.props;
 			audio.addEventListener("play", updateState);
 			audio.addEventListener("pause", updateState);
 			audio.addEventListener("ended", updateState);
-			audio.addEventListener("loadedmetadata", () => {
-				setDuration(audio.duration);
-			});
-			audio.addEventListener("timeupdate", () => {
-				setCurrent(audio.currentTime);
-				if (!seeking && audio.duration) {
-					seek.value = String((audio.currentTime / audio.duration) * 1000);
-					paintSeek();
-				}
-			});
-			seek.addEventListener("input", () => {
-				seeking = true;
-				const preview = (Number(seek.value) / 1000) * (audio.duration || 0);
-				setCurrent(preview);
-				paintSeek();
-			});
-			seek.addEventListener("change", () => {
-				if (audio.duration)
-					audio.currentTime = (Number(seek.value) / 1000) * audio.duration;
-				seeking = false;
-			});
+			audio.addEventListener("loadedmetadata", () =>
+				setTimes(audio.currentTime),
+			);
+			audio.addEventListener("timeupdate", () => setTimes(audio.currentTime));
 		});
 </script>

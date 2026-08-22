@@ -413,31 +413,36 @@
 	margin-top: 1.5rem;
 }
 
+/* Controls-only player: elapsed / trio / remaining, centered and sized
+   fluidly across viewports via clamp(); the panel hugs its content instead
+   of stretching to the column edge. Only the floating dock keeps a
+   small-screen padding override below. */
 .audio-player {
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	width: fit-content;
+	margin-inline: auto;
+	gap: clamp(0.8rem, 2.5vw, 1.25rem);
 	background: var(--glass);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid var(--border);
 	border-radius: var(--radius-lg);
 	box-shadow: var(--shadow-1);
-	padding: 1rem 1.25rem;
+	padding: clamp(0.85rem, 2.5vw, 1.1rem) clamp(1rem, 3vw, 1.4rem);
 	transition:
 		border-color 0.2s ease,
 		box-shadow 0.2s ease;
 }
 
-/* Floating dock — appears when verses are in viewport, sticks to bottom */
+/* Floating dock — appears when verses are in viewport, sticks to bottom.
+   Fixed elements shrink-to-fit, so no explicit width is needed. */
 .audio-player.is-floating {
 	position: fixed;
-	inset-inline: 0;
-	bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
 	left: 50%;
-	right: auto;
+	bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
 	transform: translateX(-50%);
-	width: min(calc(100% - 1.5rem), 44rem);
+	max-width: calc(100vw - 1.5rem);
 	z-index: 40;
 	box-shadow: var(--shadow-3);
 	border-color: color-mix(in srgb, var(--gold-leaf) 30%, var(--border));
@@ -460,43 +465,15 @@ html.has-floating-audio .verse-list {
 }
 
 @media (max-width: 40rem) {
-	.audio-player {
-		gap: 0.6rem;
-		padding: 0.85rem 1rem;
-	}
-
 	.audio-player.is-floating {
-		width: calc(100% - 1rem);
 		bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+		max-width: calc(100vw - 1rem);
 		border-radius: 12px;
 		padding: 0.85rem 1rem;
 	}
 
 	html.has-floating-audio .verse-list {
 		padding-bottom: 5.5rem;
-	}
-
-	.audio-play {
-		width: 2.75rem;
-		height: 2.75rem;
-	}
-
-	.audio-skip {
-		width: 2.2rem;
-		height: 2.2rem;
-	}
-
-	.audio-skip .material-symbols-outlined {
-		font-size: 20px;
-	}
-
-	.audio-times {
-		font-size: 0.8rem;
-	}
-
-	.audio-seek {
-		/* keep seek usable even when controls are wider */
-		min-width: 3rem;
 	}
 }
 
@@ -514,8 +491,8 @@ html.has-floating-audio .verse-list {
 	display: grid;
 	place-items: center;
 	flex-shrink: 0;
-	width: 3rem;
-	height: 3rem;
+	width: clamp(2.875rem, 7vw, 3.25rem);
+	height: clamp(2.875rem, 7vw, 3.25rem);
 	border: none;
 	border-radius: 50%;
 	background: var(--gradient-lapis);
@@ -533,15 +510,15 @@ html.has-floating-audio .verse-list {
 }
 
 .audio-play .material-symbols-outlined {
-	font-size: 28px;
+	font-size: clamp(26px, 6vw, 30px);
 }
 
 .audio-skip {
 	display: grid;
 	place-items: center;
 	flex-shrink: 0;
-	width: 2.5rem;
-	height: 2.5rem;
+	width: clamp(2.375rem, 6vw, 2.625rem);
+	height: clamp(2.375rem, 6vw, 2.625rem);
 	border: 1px solid var(--border);
 	border-radius: 50%;
 	background: var(--surface);
@@ -565,89 +542,23 @@ html.has-floating-audio .verse-list {
 }
 
 .audio-skip .material-symbols-outlined {
-	font-size: 22px;
+	font-size: clamp(20px, 5vw, 23px);
 }
 
-.audio-times {
-	display: flex;
-	gap: 0.4rem;
-	align-items: baseline;
+/* Elapsed / remaining readouts flanking the controls. Equal min-widths on
+   both sides keep the button trio optically centered as digits change. */
+.audio-time {
+	flex-shrink: 0;
+	min-width: 5ch;
+	text-align: center;
 	font-family: var(--font-en);
 	font-variation-settings:
 		"MONO" 1,
 		"CASL" 0;
-	font-size: 0.85rem;
+	font-size: clamp(0.78rem, 2vw, 0.9rem);
 	color: var(--text-muted);
 	white-space: nowrap;
-}
-
-.audio-seek {
-	--fill: 0%;
-	flex: 1;
-	min-width: 0;
-	height: 1.15rem;
-	appearance: none;
-	-webkit-appearance: none;
-	background: transparent;
-	cursor: pointer;
-}
-
-.audio-seek::-webkit-slider-runnable-track {
-	height: 0.375rem;
-	border-radius: 999px;
-	background:
-		var(--gradient-lapis) 0 0 / var(--fill) 100% no-repeat,
-		color-mix(in srgb, var(--primary) 14%, transparent);
-}
-
-.audio-seek::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 1rem;
-	height: 1rem;
-	margin-top: calc((0.375rem - 1rem) / 2);
-	border-radius: 50%;
-	background: var(--primary-fill);
-	border: 2px solid var(--surface);
-	box-shadow:
-		0 0 0 1.5px color-mix(in srgb, var(--gold-leaf) 65%, transparent),
-		var(--shadow-1);
-	transition: box-shadow 0.15s ease;
-}
-
-.audio-seek:hover::-webkit-slider-thumb {
-	box-shadow:
-		0 0 0 2.5px color-mix(in srgb, var(--gold-leaf) 80%, transparent),
-		var(--shadow-2);
-}
-
-.audio-seek::-moz-range-track {
-	height: 0.375rem;
-	border-radius: 999px;
-	background: color-mix(in srgb, var(--primary) 14%, transparent);
-}
-
-.audio-seek::-moz-range-progress {
-	height: 0.375rem;
-	border-radius: 999px;
-	background: var(--gradient-lapis);
-}
-
-.audio-seek::-moz-range-thumb {
-	width: 0.7rem;
-	height: 0.7rem;
-	border-radius: 50%;
-	background: var(--primary-fill);
-	border: 2px solid var(--surface);
-	box-shadow:
-		0 0 0 1.5px color-mix(in srgb, var(--gold-leaf) 65%, transparent),
-		var(--shadow-1);
-}
-
-.audio-seek:focus-visible {
-	outline: 2px solid var(--primary);
-	outline-offset: 4px;
-	border-radius: 999px;
+	font-variant-numeric: tabular-nums;
 }
 
 .audio-fallback {

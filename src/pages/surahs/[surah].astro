@@ -6,6 +6,8 @@ import JsonLd from "../../components/JsonLd.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { truncate } from "../../utils/truncate";
+import { oggOpusDurationSeconds } from "../../utils/audioDuration";
+import { join } from "node:path";
 
 interface NavEntry {
 	id: string;
@@ -17,6 +19,7 @@ interface Props {
 	prev: NavEntry | null;
 	next: NavEntry | null;
 	audioUrl: string | null;
+	audioDuration: number | null;
 	allSurahs: CollectionEntry<"surahs">[];
 }
 
@@ -30,14 +33,23 @@ export async function getStaticPaths() {
 		query: "?url",
 		import: "default",
 	}) as Record<string, string>;
-	const audioBySurahId = new Map(
-		Object.entries(audioFiles).map(([path, url]) => [
-			path
+	// One id → { url, duration } record per recitation. Durations are parsed
+	// from each file's Ogg granule position at build time because hosts
+	// without HTTP Range support (Cloudflare Pages) never let the browser
+	// resolve audio.duration on its own. Astro builds run from the project
+	// root, so cwd-relative paths are stable in bundled code.
+	const audioDir = join(process.cwd(), "src", "assets", "audio", "surahs");
+	const audioById = new Map(
+		Object.entries(audioFiles).map(([path, url]) => {
+			const id = path
 				.split("/")
 				.at(-1)!
-				.replace(/\.opus$/, ""),
-			url,
-		]),
+				.replace(/\.opus$/, "");
+			const duration = oggOpusDurationSeconds(join(audioDir, `${id}.opus`));
+			if (duration === undefined)
+				console.warn(`[audio] could not parse duration for ${id}.opus`);
+			return [id, { url, duration: duration ?? null }];
+		}),
 	);
 	const surahs = (await getCollection("surahs")).sort(
 		(a, b) =>
@@ -46,6 +58,7 @@ export async function getStaticPaths() {
 	return surahs.map((surah, index) => {
 		const prevEntry = surahs[index - 1];
 		const nextEntry = surahs[index + 1];
+		const audio = audioById.get(surah.id);
 		return {
 			params: { surah: surah.id },
 			props: {
@@ -62,14 +75,15 @@ export async function getStaticPaths() {
 							name: nextEntry.data.surah_metadata.name_transliteration,
 						}
 					: null,
-				audioUrl: audioBySurahId.get(surah.id) ?? null,
+				audioUrl: audio?.url ?? null,
+				audioDuration: audio?.duration ?? null,
 				allSurahs: surahs,
 			},
 		};
 	});
 }
 
-const { surah, prev, next, audioUrl, allSurahs } = Astro.props;
+const { surah, prev, next, audioUrl, audioDuration, allSurahs } = Astro.props;
 const meta = surah.data.surah_metadata;
 const bismillah = surah.data.bismillah;
 const prostration = meta.prostration_verse;
@@ -216,7 +230,11 @@ const seoDescription = truncate(rawDescription, 155);
 	{
 		audioUrl && (
 			<div class="audio-player-wrap" data-audio-wrap>
-				<AudioPlayer src={audioUrl} title={meta.name_transliteration} />
+				<AudioPlayer
+					src={audioUrl}
+					title={meta.name_transliteration}
+					duration={audioDuration}
+				/>
 			</div>
 		)
 	}
